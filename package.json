@@ -12,6 +12,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "vitepress": "^1.0.0-rc.45"
+    "@types/markdown-it": "^13.0.7",
+    "feed": "^4.2.2",
+    "tailwindcss": "^3.4.1",
+    "vitepress": "^1.0.0-rc.45",
+    "@types/node": "^20.11.28",
+    "vue": "^3.4.21"
+  },
+  "dependencies": {
+    "vitepress-plugin-rss": "^0.2.2"
   }
 }
