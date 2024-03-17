@@ -10,7 +10,8 @@ import ArticleComment from "./components/ArticleComment.vue";
 import TweetCard from "./components/TweetCard.vue";
 import { customConfigProvider } from "./configProvider";
 export default {
-  ...DefaultTheme,
+  extends: DefaultTheme,
+  // ...DefaultTheme,
   Layout: customConfigProvider(Layout),
   enhanceApp({ app }) {
     Sentry.init({
