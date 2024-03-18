@@ -1,19 +1,13 @@
-import { useData, useRoute, withBase } from "vitepress";
 import {
   Component,
-  computed,
   defineComponent,
   h,
   inject,
   InjectionKey,
   provide,
   Ref,
-  onMounted,
-  onUnmounted,
-  reactive,
   ref,
 } from "vue";
-
 const currentPageKey: InjectionKey<Ref<number>> = Symbol("currentPage");
 const currentCategoryKey: InjectionKey<Ref<string>> = Symbol("currentCategory");
 
