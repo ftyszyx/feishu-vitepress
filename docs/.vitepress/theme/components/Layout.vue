@@ -9,86 +9,10 @@ import ArticleList from "./ArticleList.vue";
 import ArticleComment from "./ArticleComment.vue";
 import ArticleBottomNav from "./ArticleBottomNav.vue";
 import ArticleCopyright from "./ArticleCopyright.vue";
-import { getArticleLazyImage, getFaviconUrl } from "../utils";
+import { getFaviconUrl } from "../utils";
 const { Layout } = DefaultTheme;
 
-let observer: IntersectionObserver | null = null;
-let timeoutId: ReturnType<typeof setTimeout> | null = null;
 const router = useRouter();
-
-let imagesToLoad: HTMLImageElement[] = [];
-
-const handleImageError = (event: Event) => {
-  const imgElement = event.target as HTMLImageElement;
-  const originalSrc = imgElement.getAttribute("data-original-src");
-  if (originalSrc) {
-    imgElement.src = originalSrc;
-  }
-  imgElement.removeEventListener("error", handleImageError); // 只尝试加载备用资源一次
-};
-
-const lazyLoadImages = () => {
-  const allImages = Array.from(document.querySelectorAll("img[data-src]")); // 转换 NodeList 为数组
-  imagesToLoad = imagesToLoad.concat(allImages);
-
-  observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const img = entry.target as HTMLImageElement;
-          img.addEventListener("error", handleImageError);
-          img.src = getArticleLazyImage(img.dataset.src!);
-          img.removeAttribute("data-src");
-          observer!.unobserve(img);
-
-          imagesToLoad = imagesToLoad.filter((image) => image !== img);
-        }
-      });
-    },
-    {
-      rootMargin: "1080px",
-    },
-  );
-
-  if (imagesToLoad.length < 10) {
-    forceLoadImages(0, imagesToLoad.length);
-  } else {
-    imagesToLoad.forEach((img) => observer!.observe(img));
-  }
-};
-
-const forceLoadImages = (startIndex = 0, batchSize = 10) => {
-  let loadedCount = 0;
-
-  for (
-    let i = startIndex;
-    i < imagesToLoad.length && loadedCount < batchSize;
-    i++
-  ) {
-    const imageElement = imagesToLoad[i] as HTMLImageElement;
-    imageElement.addEventListener("error", handleImageError);
-    imageElement.src = getArticleLazyImage(imageElement.dataset.src!);
-    imageElement.removeAttribute("data-src");
-
-    if (observer) {
-      observer.unobserve(imageElement);
-    }
-
-    loadedCount++;
-  }
-
-  imagesToLoad = imagesToLoad.slice(loadedCount);
-
-  if (imagesToLoad.length > 0) {
-    timeoutId = setTimeout(() => {
-      forceLoadImages(0);
-    }, 10000);
-  } else if (timeoutId) {
-    clearTimeout(timeoutId);
-    timeoutId = null;
-  }
-};
-
 const initImagesZoom = () => {
   mediumZoom(".main img", {
     background: "var(--vp-c-bg)",
@@ -98,7 +22,6 @@ const initImagesZoom = () => {
 const addFavicon = () => {
   // 选择所有的 a 标签,不包括  .tweet-card 里面的 a 标签
   const aTags = document.querySelectorAll(".main a:not(.tweet-card a)");
-
   aTags.forEach((aTag) => {
     const domain = aTag.getAttribute("href")?.split("/")[2];
     // 如果域名存在且无 favicon 的 img 标签
@@ -125,10 +48,6 @@ const addFavicon = () => {
 
 onMounted(() => {
   nextTick(() => {
-    lazyLoadImages();
-    timeoutId = setTimeout(() => {
-      forceLoadImages();
-    }, 5000); // 5 秒开始提前加载图片
     if (
       localStorage.theme === "dark" ||
       (!("theme" in localStorage) &&
@@ -144,7 +63,6 @@ onMounted(() => {
 
     // Whenever the user explicitly chooses dark mode
     localStorage.theme = "dark";
-
     // Whenever the user explicitly chooses to respect the OS preference
     localStorage.removeItem("theme");
     initImagesZoom();
@@ -153,31 +71,12 @@ onMounted(() => {
 });
 watch(router.route, () => {
   // 清除上一次的监听
-  if (observer) {
-    observer.disconnect();
-    observer = null;
-  }
-  if (timeoutId) {
-    clearTimeout(timeoutId);
-    timeoutId = null;
-  }
-
   nextTick(() => {
-    lazyLoadImages();
     initImagesZoom();
     addFavicon();
   });
 });
-onUnmounted(() => {
-  if (observer) {
-    observer.disconnect();
-    observer = null;
-  }
-  if (timeoutId) {
-    clearTimeout(timeoutId);
-    timeoutId = null;
-  }
-});
+onUnmounted(() => {});
 </script>
 
 <template>
@@ -195,9 +94,8 @@ onUnmounted(() => {
     <!-- 文章尾部 -->
     <template #doc-after>
       <!-- 评论模块 -->
-      <ClientOnly>
-        <ArticleComment />
-      </ClientOnly>
+
+      <ArticleComment />
     </template>
     <template #aside-outline-before> </template>
     <template #home-hero-before>

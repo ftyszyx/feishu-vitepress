@@ -1,26 +1,8 @@
 import { createContentLoader } from "vitepress";
 import { formatShowDate } from "./utils";
-import { categoryMap } from "./constant";
-interface Post {
-  title: string;
-  url: string;
-  date: {
-    time: number;
-    string: string;
-    formatShowDate: string;
-  };
-  cover: string;
-  categories: string[];
-  excerpt: string | undefined;
-}
-
+import { Post } from "./type_def";
 declare const data: Post[];
-
-// 声明一个全局所有文章分类的数组,结构是 {name:"分类名",text:"分类单词",count:"分类文章数量"}
-declare const categoriesMeta: { name: string; text: string; count: number }[];
-
-export { data, categoriesMeta };
-
+export { data };
 export default createContentLoader("/*.md", {
   excerpt: true,
   transform(raw): Post[] {

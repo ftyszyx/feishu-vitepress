@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { data as posts } from "../posts.data.js";
 import { useData, withBase, useRoute, useRouter } from "vitepress";
 const { frontmatter } = useData();
 import { watch, nextTick, ref, onMounted, computed } from "vue";
@@ -41,39 +40,10 @@ const previewImageUrl = computed(() => {
     console.error("Cover image URL is not provided!");
     return "";
   }
-
   return getPreviewImage(props.cover);
 });
-const retryLoadImage = () => {
-  // 清除旧的超时句柄
-  clearTimeout(timeoutHandle);
-  // 设置超时逻辑
-  timeoutHandle = setTimeout(() => {
-    if (!imageLoaded.value) {
-      onImageError();
-    }
-  }, 15000);
-};
 
-const goCategory = (category: string) => {
-  router.go(`?category=${category}`);
-};
-
-const hasNavQuery = computed(() => {
-  // 如果url中有category或者 page 参数,则返回true
-  const { searchParams } = new URL(window.location.href!);
-  return searchParams.has("category") || searchParams.has("page");
-});
-
-onMounted(() => {
-  // 当组件被挂载后
-  nextTick(() => {
-    if (imgRef.value?.complete) {
-      imageLoaded.value = true;
-    }
-    retryLoadImage();
-  });
-});
+onMounted(() => {});
 </script>
 
 <template>
@@ -81,63 +51,62 @@ onMounted(() => {
     class="flex-1 h-64 overflow-hidden duration-300 ease-in-out bg-white rounded-t shadow-lg dark:bg-zinc-800 hover:shadow-2xl"
   >
     <div class="flex flex-wrap no-underline hover:no-underline">
-      <ClientOnly>
-        <a
-          :href="articleUrl"
-          class="relative w-full overflow-hidden h-60 md:h-40 ld:h-40 bg-zinc-100 dark:bg-neutral-900"
-        >
-          <img
-            ref="imgRef"
-            :src="previewImageUrl"
-            @load="onImageLoad"
-            @error="onImageError"
-            :class="[
-              'absolute',
-              'top-0',
-              'left-0',
-              'object-cover',
-              'w-full',
-              'h-full',
-              'duration-300',
-              'ease-in',
-              'rounded-t',
-              'hover:scale-105',
-              {
-                'opacity-0': !imageLoaded || (imageLoaded && imageError),
-                'opacity-100': imageLoaded && !imageError,
-              },
-            ]"
-          />
+      <a
+        :href="articleUrl"
+        class="relative w-full overflow-hidden h-60 md:h-40 ld:h-40 bg-zinc-100 dark:bg-neutral-900"
+      >
+        <img
+          ref="imgRef"
+          :src="previewImageUrl"
+          @load="onImageLoad"
+          @error="onImageError"
+          :class="[
+            'absolute',
+            'top-0',
+            'left-0',
+            'object-cover',
+            'w-full',
+            'h-full',
+            'duration-300',
+            'ease-in',
+            'rounded-t',
+            'hover:scale-105',
+            {
+              'opacity-0': !imageLoaded || (imageLoaded && imageError),
+              'opacity-100': imageLoaded && !imageError,
+            },
+          ]"
+        />
 
-          <!-- 如果分类中有zuoluotv或者视频,则展示youtube图标 -->
-          <div>
-            <svg
-              v-if="categories.includes('zuoluotv')"
-              class="absolute left-6 bottom-2 h-7 w-7 md:h-5 md:w-5"
-              viewBox="0 0 473.931 473.931"
-              xml:space="preserve"
-            >
-              <circle
-                style="fill: #d42428"
-                cx="236.966"
-                cy="236.966"
-                r="236.966"
-              />
-              <path
-                style="fill: #cc202d"
-                d="M404.518,69.38c92.541,92.549,92.549,242.593,0,335.142c-92.541,92.541-242.593,92.545-335.142,0
+        <!-- 如果分类中有zuoluotv或者视频,则展示youtube图标 -->
+        <div>
+          <svg
+            v-if="categories.includes('zuoluotv')"
+            class="absolute left-6 bottom-2 h-7 w-7 md:h-5 md:w-5"
+            viewBox="0 0 473.931 473.931"
+            xml:space="preserve"
+          >
+            <circle
+              style="fill: #d42428"
+              cx="236.966"
+              cy="236.966"
+              r="236.966"
+            />
+            <path
+              style="fill: #cc202d"
+              d="M404.518,69.38c92.541,92.549,92.549,242.593,0,335.142c-92.541,92.541-242.593,92.545-335.142,0
 	L404.518,69.38z"
-              />
-              <path
-                style="fill: #ba202e"
-                d="M470.321,277.964L310.843,118.487l-12.864,12.864l-12.864-12.864l-14.099,14.099l9.47,9.47
+            />
+            <path
+              style="fill: #ba202e"
+              d="M470.321,277.964L310.843,118.487l-12.864,12.864l-12.864-12.864l-14.099,14.099l9.47,9.47
 	l-3.091,3.091l-24.557-24.557l-1.048,1.055l-33.092-33.092l-14.099,14.099l3.858,3.858l-5.665,5.665l-23.854-23.854l-9.889,9.889
 	l23.255,56.003l-10.473,42.997l28.632,28.639l-72.418,5.066l-1.096,125.667l116.537,116.679
 	C362.678,465.505,451.836,383.833,470.321,277.964z"
-              />
-              <path
-                style="fill: #ffffff"
-                d="M321.724,291.91h-15.289l0.075-8.875c0-3.948,3.237-7.169,7.199-7.169h0.98
+            />
+            <path
+              style="fill: #ffffff"
+              d="M321.724,291.91h-15.289l0.075-8.875c0-3.948,3.237-7.169,7.199-7.169h0.98
 	c3.963,0,7.214,3.222,7.214,7.169L321.724,291.91z M264.404,272.89c-3.865,0-7.038,2.608-7.038,5.796v43.161
 	c0,3.188,3.173,5.781,7.038,5.781c3.895,0,7.068-2.593,7.068-5.781v-43.165C271.472,275.498,268.299,272.89,264.404,272.89z
 	 M357.473,248.752v82.102c0,19.697-17.077,35.809-37.96,35.809H163.444c-20.887,0-37.96-16.116-37.96-35.809v-82.102
@@ -163,57 +132,55 @@ onMounted(() => {
 	c0,4.325,3.229,7.861,7.154,7.861s7.132-3.532,7.132-7.861v-40.71c0-4.325-3.207-7.861-7.132-7.861s-7.154,3.532-7.154,7.861
 	V176.716z M181.722,197.269h16.969l0.015-58.648l20.045-50.241h-18.555l-10.657,37.324l-10.81-37.421h-18.357l21.324,50.372
 	L181.722,197.269z"
-              />
-            </svg>
-          </div>
-          <div
-            v-if="!imageLoaded || imageError"
-            :class="{ 'animate-pulse': !imageLoaded }"
-            class="flex p-2 mt-6 space-x-4"
-          >
-            <span v-if="!imageError" class="relative flex w-10 h-10">
-              <span
-                class="absolute inline-flex w-full h-full rounded-full opacity-75 animate-ping bg-sky-100"
-              ></span>
-              <span
-                class="relative inline-flex w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-600"
-              ></span>
-            </span>
+            />
+          </svg>
+        </div>
+        <div
+          v-if="!imageLoaded || imageError"
+          :class="{ 'animate-pulse': !imageLoaded }"
+          class="flex p-2 mt-6 space-x-4"
+        >
+          <span v-if="!imageError" class="relative flex w-10 h-10">
+            <span
+              class="absolute inline-flex w-full h-full rounded-full opacity-75 animate-ping bg-sky-100"
+            ></span>
+            <span
+              class="relative inline-flex w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-600"
+            ></span>
+          </span>
 
+          <div
+            v-if="imageError"
+            class="md:block w-0 h-0 mt-1 border-l-[20px] border-l-transparent border-t-[30px] border-t-slate-200 dark:border-t-slate-600 border-r-[20px] border-r-transparent"
+          ></div>
+          <div class="flex-1 py-1 space-y-6">
             <div
-              v-if="imageError"
-              class="md:block w-0 h-0 mt-1 border-l-[20px] border-l-transparent border-t-[30px] border-t-slate-200 dark:border-t-slate-600 border-r-[20px] border-r-transparent"
+              class="h-8 rounded md:h-4 bg-slate-200 dark:bg-slate-600"
             ></div>
-            <div class="flex-1 py-1 space-y-6">
+            <div class="space-y-3">
+              <div class="grid grid-cols-3 gap-4">
+                <div
+                  class="h-8 col-span-2 rounded md:h-4 bg-slate-200 dark:bg-slate-600"
+                ></div>
+                <div
+                  class="h-8 col-span-1 rounded md:h-4 bg-slate-200 dark:bg-slate-600"
+                ></div>
+              </div>
               <div
                 class="h-8 rounded md:h-4 bg-slate-200 dark:bg-slate-600"
               ></div>
-              <div class="space-y-3">
-                <div class="grid grid-cols-3 gap-4">
-                  <div
-                    class="h-8 col-span-2 rounded md:h-4 bg-slate-200 dark:bg-slate-600"
-                  ></div>
-                  <div
-                    class="h-8 col-span-1 rounded md:h-4 bg-slate-200 dark:bg-slate-600"
-                  ></div>
-                </div>
-                <div
-                  class="h-8 rounded md:h-4 bg-slate-200 dark:bg-slate-600"
-                ></div>
-              </div>
             </div>
           </div>
-        </a>
-      </ClientOnly>
+        </div>
+      </a>
+
       <div class="w-full px-6 mt-5">
-        <ClientOnly>
-          <a
-            :href="articleUrl"
-            class="h-auto text-base antialiased font-medium text-gray-800 break-normal md:h-12 sd:text-lg md:text-base dark:text-slate-300 line-clamp-2 font-fira"
-          >
-            {{ title }}
-          </a>
-        </ClientOnly>
+        <a
+          :href="articleUrl"
+          class="h-auto text-base antialiased font-medium text-gray-800 break-normal md:h-12 sd:text-lg md:text-base dark:text-slate-300 line-clamp-2 font-fira"
+        >
+          {{ title }}
+        </a>
       </div>
     </div>
   </div>

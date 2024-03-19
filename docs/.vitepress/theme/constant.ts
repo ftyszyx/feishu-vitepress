@@ -1,29 +1,15 @@
-// 定义一个分类英文名和中文名的映射,text 表示category 的英文名,name 表示category 的中文名,isHome 标示是否是首页显示的分类
+import { CategoryInfo } from "./type_def";
 
-export const categoryMap = [
+// 定义一个分类英文名和中文名的映射,text 表示category 的英文名,name 表示category 的中文名,isHome 标示是否是首页显示的分类
+export const categoryMap: CategoryInfo[] = [
   {
     text: "hot",
     name: "热门",
     isHome: true,
   },
   {
-    text: "zuoluotv",
-    name: "视频",
-    isHome: true,
-  },
-  {
-    text: "code",
-    name: "编程",
-    isHome: true,
-  },
-  {
-    text: "tech",
-    name: "数码",
-    isHome: true,
-  },
-  {
-    text: "travel",
-    name: "旅行",
+    text: "video",
+    name: "技术",
     isHome: true,
   },
   {
@@ -32,13 +18,15 @@ export const categoryMap = [
     isHome: true,
   },
   {
-    text: "photography",
-    name: "摄影",
-    isHome: false,
-  },
-  {
-    text: "run",
-    name: "跑步",
-    isHome: false,
+    text: "work",
+    name: "工作",
+    isHome: true,
   },
 ];
+
+//一些配置
+export const BlogConfig = {
+  arttalk: {
+    server: "",
+  },
+};
