@@ -1,19 +1,19 @@
 import { defineConfig, HeadConfig } from "vitepress";
-import { RssPlugin, RSSOptions } from "vitepress-plugin-rss";
+import { RSSOptions } from "vitepress-plugin-rss";
 import { rss } from "./genFeed";
-
+import { BlogConfig } from "./theme/constant.js";
 import markdownImagePlugin from "./markdownPlugin";
 
 const RSS: RSSOptions = {
-  title: "小白看世界",
-  baseUrl: `https://luolei.org`,
-  copyright: "Copyright (c) 小白看世界",
+  title: BlogConfig.name,
+  baseUrl: BlogConfig.baseUrl,
+  copyright: BlogConfig.copyright,
   filename: "rss.xml",
 };
 
 export default defineConfig({
-  title: "小白看世界",
-  description: "luolei.org",
+  title: BlogConfig.name,
+  description: BlogConfig.desc,
   cleanUrls: true,
   appearance: false,
   ignoreDeadLinks: true,
@@ -41,18 +41,6 @@ export default defineConfig({
         content:
           "我叫罗磊，来自中国深圳，程序员，前端工程师，视频节目 ZUOLUOTV 制作人，旅行摄影玩家和内容创作者，中文 Vlog 拍摄者，内容主题涉及科技、数码、互联网、摄影、旅行、生活方式等领域。",
       },
-    ],
-    [
-      "script",
-      {
-        async: "",
-        src: "https://www.googletagmanager.com/gtag/js?id=G-TG5VK8GPSG",
-      },
-    ],
-    [
-      "script",
-      {},
-      "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-TG5VK8GPSG');",
     ],
   ],
   transformHead: ({ pageData }) => {

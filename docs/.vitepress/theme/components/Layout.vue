@@ -86,7 +86,6 @@ onUnmounted(() => {});
       <ArticleMeta />
     </template>
     <template #doc-bottom> </template>
-
     <template #doc-footer-before>
       <ArticleCopyright />
       <ArticleBottomNav />
@@ -94,7 +93,6 @@ onUnmounted(() => {});
     <!-- 文章尾部 -->
     <template #doc-after>
       <!-- 评论模块 -->
-
       <ArticleComment />
     </template>
     <template #aside-outline-before> </template>

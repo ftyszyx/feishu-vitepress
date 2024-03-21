@@ -7,14 +7,10 @@ const route = useRoute();
 const router = useRouter();
 const title = computed(() => frontmatter.value.title);
 const date = computed(() => frontmatter.value.date);
-const categories = computed(() => frontmatter.value.categories);
 const bannerImageUrl = computed(() => {
   return getBannerImage(frontmatter.value.cover);
 });
 
-const goCategory = (category: string) => {
-  router.go(`/?category=${category}`);
-};
 const pageHits = ref<number>(0);
 const isPageHitsFetched = ref<boolean>(false);
 
