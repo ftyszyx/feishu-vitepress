@@ -1,0 +1,28 @@
+on:
+  push:
+    tags:
+      - 'feishu-docx/v*'
+
+jobs:
+  release:
+    name: Release NPM (feishu-docx)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 21
+      - name: Install dependencies & Build
+        run: |
+          cd feishu-docx
+          yarn
+          yarn build
+          yarn test
+      - name: Publish
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          cd feishu-docx
+          echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+          npm publish --access public

@@ -1,0 +1,25 @@
+on:
+  push:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 21
+          check-latest: true
+          cache: yarn
+          cache-dependency-path: 'yarn.lock'
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      - name: Test
+        env:
+          FEISHU_APP_ID: fake-app-id
+          FEISHU_APP_SECRET: fake-app-secret
+          FEISHU_SPACE_ID: fake-space-id
+        run: |
+          yarn build
+          yarn autocorrect --lint
+          yarn test

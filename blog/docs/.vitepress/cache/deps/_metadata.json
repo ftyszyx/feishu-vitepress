@@ -1,0 +1,61 @@
+{
+  "hash": "f67ecd71",
+  "configHash": "f4071ba3",
+  "lockfileHash": "6fc99237",
+  "browserHash": "2ac83ecd",
+  "optimized": {
+    "vue": {
+      "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "1daea19f",
+      "needsInterop": false
+    },
+    "vitepress > @vue/devtools-api": {
+      "src": "../../../../node_modules/@vue/devtools-api/lib/esm/index.js",
+      "file": "vitepress___@vue_devtools-api.js",
+      "fileHash": "dd023062",
+      "needsInterop": false
+    },
+    "vitepress > @vueuse/core": {
+      "src": "../../../../node_modules/@vueuse/core/index.mjs",
+      "file": "vitepress___@vueuse_core.js",
+      "fileHash": "c4f96446",
+      "needsInterop": false
+    },
+    "@sentry/vue": {
+      "src": "../../../../node_modules/@sentry/vue/esm/index.js",
+      "file": "@sentry_vue.js",
+      "fileHash": "77f6db90",
+      "needsInterop": false
+    },
+    "@sentry/tracing": {
+      "src": "../../../../node_modules/@sentry/tracing/esm/index.js",
+      "file": "@sentry_tracing.js",
+      "fileHash": "a514f114",
+      "needsInterop": false
+    },
+    "artalk": {
+      "src": "../../../../node_modules/artalk/dist/Artalk.mjs",
+      "file": "artalk.js",
+      "fileHash": "0b7aaf37",
+      "needsInterop": false
+    },
+    "medium-zoom": {
+      "src": "../../../../node_modules/medium-zoom/dist/medium-zoom.esm.js",
+      "file": "medium-zoom.js",
+      "fileHash": "a43a4cef",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-CKQ4TNQ3": {
+      "file": "chunk-CKQ4TNQ3.js"
+    },
+    "chunk-DQEOCLYA": {
+      "file": "chunk-DQEOCLYA.js"
+    },
+    "chunk-CSAU5B4Q": {
+      "file": "chunk-CSAU5B4Q.js"
+    }
+  }
+}

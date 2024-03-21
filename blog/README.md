@@ -19,4 +19,6 @@ pnpm run docs:dev
 
 ## 参考
 
+https://github.com/longbridgeapp/feishu-pages?tab=readme-ov-file
+https://artalk.js.org/guide/intro.html
 https://github.com/foru17/luoleiorg/tree/main

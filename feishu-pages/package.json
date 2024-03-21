@@ -1,0 +1,39 @@
+{
+  "name": "feishu-pages",
+  "version": "0.6.10",
+  "description": "Generate Feishu Wiki into a Markdown for work with Static Page Generators.",
+  "repository": {
+    "url": "https://github.com/longbridgeapp/feishu-pages"
+  },
+  "license": "MIT",
+  "readme": "../README.md",
+  "author": {
+    "name": "Jason Lee",
+    "email": "huacnlee@gmail.com"
+  },
+  "main": "dist/index.js",
+  "bin": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -d",
+    "dev": "yarn build && node dist/index.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@larksuiteoapi/node-sdk": "^1.20.0",
+    "@types/node": "^20.5.7",
+    "axios": "^1.5.0",
+    "dotenv": "^16.3.1",
+    "feishu-docx": "^0.6.3",
+    "marked": "^11.1.0",
+    "marked-xhtml": "^1.0.8",
+    "mime-types": "^2.1.35",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.6.4",
+    "jest": "^29.6.4",
+    "js-yaml": "^4.1.0",
+    "ts-jest": "^29.1.1"
+  }
+}
