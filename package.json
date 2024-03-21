@@ -7,7 +7,7 @@
     "website"
   ],
   "scripts": {
-    "build": "yarn workspace feishu-docx build",
+    "build": "npm run  build --workspace feishu-docx ",
     "test": "yarn workspace feishu-docx test && yarn workspace feishu-pages test",
     "export": "yarn workspace feishu-pages dev",
     "dev": "yarn workspace website dev",
