@@ -1,15 +1,6 @@
 import { defineConfig, HeadConfig } from "vitepress";
-import { RSSOptions } from "vitepress-plugin-rss";
-import { rss } from "./genFeed";
 import { BlogConfig } from "./theme/constant.js";
 import markdownImagePlugin from "./markdownPlugin";
-
-const RSS: RSSOptions = {
-  title: BlogConfig.name,
-  baseUrl: BlogConfig.baseUrl,
-  copyright: BlogConfig.copyright,
-  filename: "rss.xml",
-};
 
 export default defineConfig({
   title: BlogConfig.name,
@@ -18,7 +9,7 @@ export default defineConfig({
   appearance: false,
   ignoreDeadLinks: true,
   base: "/",
-  buildEnd: rss,
+  // buildEnd: rss,
   markdown: {
     lineNumbers: true,
     config: (md) => {

@@ -5,8 +5,6 @@ import Layout from "./components/Layout.vue";
 import "./css/style.css";
 // import "./css/code.css";
 // import "./css/my_style.css";
-import ArticleComment from "./components/ArticleComment.vue";
-import TweetCard from "./components/TweetCard.vue";
 import { customConfigProvider } from "./configProvider";
 export default {
   extends: DefaultTheme,
