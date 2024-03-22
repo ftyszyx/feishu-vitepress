@@ -4,13 +4,13 @@
   "workspaces": [
     "feishu-docx",
     "feishu-pages",
-    "website"
+    "blog"
   ],
   "scripts": {
-    "build": "npm run  build --workspace feishu-docx ",
-    "test": "yarn workspace feishu-docx test && yarn workspace feishu-pages test",
-    "export": "yarn workspace feishu-pages dev",
-    "dev": "yarn workspace website dev",
+    "build": "npm run  build -w feishu-docx ",
+    "test": "npm run test -w feishu-docx && npm run test -w feishu-pages",
+    "export": "npm run dev -w feishu-pages",
+    "dev": "npm run dev -w blog",
     "clean": "rm -Rf dist/"
   },
   "devDependencies": {

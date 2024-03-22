@@ -1,44 +1,45 @@
 #!/usr/bin/env node
-import { FileToken } from 'feishu-docx';
-import fs from 'fs';
-import path from 'path';
-import { fetchDocBody, generateFrontmatter } from './doc';
-import {
-  BASE_URL,
-  DOCS_DIR,
-  OUTPUT_DIR,
-  ROOT_NODE_TOKEN,
-  SKIP_ASSETS,
-  feishuConfig,
-  feishuDownload,
-  fetchTenantAccessToken,
-} from './feishu';
-import { FileDoc, generateSummary, prepareDocSlugs } from './summary';
-import {
-  cleanupDocsForJSON,
-  cleanupTmpFiles,
-  humanizeFileSize,
-  replaceLinks,
-} from './utils';
-import { fetchAllDocs } from './wiki';
+import { FileToken } from "feishu-docx";
+import fs from "fs";
+import path from "path";
+import "dotenv/config";
+import { fetchDocBody, generateFrontmatter } from "./doc";
+import { FileDoc, generateSummary, prepareDocSlugs } from "./summary";
+import { cleanupDocsForJSON, cleanupTmpFiles, humanizeFileSize, replaceLinks } from "./utils";
+import { fetchAllDocs } from "./wiki";
+import { FeishuHelp } from "./feishu";
 
+const appconfig = {
+  appId: process.env.FEISHU_APP_ID,
+  appSecret: process.env.FEISHU_APP_SECRET,
+  spaceId: process.env.FEISHU_SPACE_ID,
+  output_dir: path.resolve(process.env.OUTPUT_DIR || "./dist"),
+  docs_dir:path.resolve(process.env.DOCS_DIR||"./dist/docs")
+};
+
+const checkEnv = () => {
+  if (!appconfig.appId) {
+    throw new Error("FEISHU_APP_ID is required");
+  }
+  if (!appconfig.appSecret) {
+    throw new Error("FEISHU_APP_SECRET is required");
+  }
+  if (!appconfig.spaceId) {
+    throw new Error("FEISHU_SPACE_ID is required");
+  }
+};
+
+checkEnv();
+const feishu_help = new FeishuHelp(appconfig.appId, appconfig.appSecret);
 // App entry
 (async () => {
-  await fetchTenantAccessToken();
-
-  console.info('OUTPUT_DIR:', OUTPUT_DIR);
-  console.info('FEISHU_APP_ID:', feishuConfig.appId);
-  console.info('FEISHU_SPACE_ID:', feishuConfig.spaceId);
-  console.info('ROOT_NODE_TOKEN:', ROOT_NODE_TOKEN);
-  console.info('-------------------------------------------\n');
-
+  console.log("config",appconfig)
+  await feishu_help.getToken();
   // Create docs dir
   fs.mkdirSync(DOCS_DIR, { recursive: true });
-
   // Map file_token to slug
   let slugMap = {};
-
-  const docs = await fetchAllDocs(feishuConfig.spaceId, 0, ROOT_NODE_TOKEN);
+  const docs = await fetchAllDocs(appconfig.spaceId, 0, ROOT_NODE_TOKEN);
 
   await fetchDocBodies(docs as FileDoc[]);
 
@@ -49,16 +50,13 @@ import { fetchAllDocs } from './wiki';
 
   // Write SUMMARY.md
   const summary = generateSummary(docs as FileDoc[]);
-  fs.writeFileSync(path.join(DOCS_DIR, 'SUMMARY.md'), summary);
+  fs.writeFileSync(path.join(DOCS_DIR, "SUMMARY.md"), summary);
 
   // Omit hide docs
   cleanupDocsForJSON(docs as FileDoc[]);
 
   // Write docs.json
-  fs.writeFileSync(
-    path.join(OUTPUT_DIR, 'docs.json'),
-    JSON.stringify(docs, null, 2)
-  );
+  fs.writeFileSync(path.join(OUTPUT_DIR, "docs.json"), JSON.stringify(docs, null, 2));
 
   cleanupTmpFiles();
 })();
@@ -76,11 +74,7 @@ const fetchDocBodies = async (docs: FileDoc[]) => {
   }
 };
 
-const fetchDocAndWriteFile = async (
-  outputDir: string,
-  docs: FileDoc[],
-  slugMap: Record<string, string>
-) => {
+const fetchDocAndWriteFile = async (outputDir: string, docs: FileDoc[], slugMap: Record<string, string>) => {
   if (docs.length === 0) {
     return;
   }
@@ -99,35 +93,26 @@ const fetchDocAndWriteFile = async (
 
     let { cotnent_file, fileTokens } = doc;
 
-    let content = fs.readFileSync(cotnent_file, 'utf-8');
+    let content = fs.readFileSync(cotnent_file, "utf-8");
 
     // Replace node_token to slug
 
     for (const node_token in slugMap) {
       if (slugMap[node_token]) {
-        content = replaceLinks(
-          content,
-          node_token,
-          `${BASE_URL}${slugMap[node_token]}`
-        );
+        content = replaceLinks(content, node_token, `${BASE_URL}${slugMap[node_token]}`);
       }
     }
 
     const metaInfo = generateFrontmatter(doc, doc.slug, doc.position);
 
-    let out = '';
-    out += metaInfo + '\n\n';
+    let out = "";
+    out += metaInfo + "\n\n";
 
     content = await downloadFiles(content, fileTokens, folder);
 
     out += content;
 
-    console.info(
-      'Writing doc',
-      doc.filename,
-      humanizeFileSize(content.length),
-      '...'
-    );
+    console.info("Writing doc", doc.filename, humanizeFileSize(content.length), "...");
     fs.writeFileSync(filename, out);
 
     await fetchDocAndWriteFile(outputDir, doc.children, slugMap);
@@ -142,21 +127,14 @@ const fetchDocAndWriteFile = async (
  * @param docFolder
  * @returns
  */
-const downloadFiles = async (
-  content: string,
-  fileTokens: Record<string, FileToken>,
-  docFolder: string
-) => {
+const downloadFiles = async (content: string, fileTokens: Record<string, FileToken>, docFolder: string) => {
   if (SKIP_ASSETS) {
-    console.info('skip assets download.');
+    console.info("skip assets download.");
     return content;
   }
 
   for (const fileToken in fileTokens) {
-    const filePath = await feishuDownload(
-      fileToken,
-      path.join(path.join(DOCS_DIR, 'assets'), fileToken)
-    );
+    const filePath = await feishuDownload(fileToken, path.join(path.join(DOCS_DIR, "assets"), fileToken));
     if (!filePath) {
       continue;
     }

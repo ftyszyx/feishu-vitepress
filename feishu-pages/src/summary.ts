@@ -1,6 +1,6 @@
-import path from 'path';
-import { Doc, URL_STYLE } from './feishu';
-import { normalizeSlug } from './utils';
+import path from "path";
+import { Doc, URL_STYLE } from "./feishu";
+import { normalizeSlug } from "./utils";
 
 export interface FileDoc extends Doc {
   slug: string;
@@ -18,11 +18,7 @@ export interface FileDoc extends Doc {
  * @param docs
  * @param parentSlug
  */
-export const prepareDocSlugs = (
-  docs: FileDoc[],
-  slugMap: Record<string, string>,
-  parentSlug: string = ''
-) => {
+export const prepareDocSlugs = (docs: FileDoc[], slugMap: Record<string, string>, parentSlug: string = "") => {
   for (let i = 0; i < docs.length; i++) {
     const doc = docs[i];
     const fileKey = normalizeSlug(doc.meta?.slug || doc.node_token);
@@ -30,10 +26,10 @@ export const prepareDocSlugs = (
 
     // Use Feishu original URL style, use node_token as URL slug.
     // https://your-host.com/Rd52wbrZ1ifWmXkEUQpcXnf4ntT
-    if (URL_STYLE === 'original') {
+    if (URL_STYLE === "original") {
       fileSlug = doc.node_token;
     }
-
+    fileSlug = fileSlug.replaceAll("\\", "/");
     doc.slug = fileSlug;
     doc.position = i;
     doc.filename = `${fileSlug}.md`;
@@ -50,9 +46,9 @@ export const prepareDocSlugs = (
  * Generate SUMMARY.md
  */
 export const generateSummary = (docs: FileDoc[]): string => {
-  let output = '';
+  let output = "";
   for (const doc of docs) {
-    let indent = '  '.repeat(doc.depth);
+    let indent = "  ".repeat(doc.depth);
     output += `${indent}- [${doc.title}](${doc.filename})\n`;
 
     if (doc.children.length > 0) {
