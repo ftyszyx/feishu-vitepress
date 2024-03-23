@@ -4,3 +4,4 @@ node_modules
 /feishu_pages/dist/
 .env
 dist
+blog/test/

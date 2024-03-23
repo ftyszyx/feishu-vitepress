@@ -1,24 +1,10 @@
+import { FileToken } from "feishu-docx";
 
-export interface Doc {
-  title: string;
-  meta?: Record<string, any>;
-  node_token: string;
-  parent_node_token?: string;
-  depth: number;
-  obj_create_time?: string;
-  obj_edit_time?: string;
-  obj_token?: string;
-  children: Doc[];
-  has_child?: boolean;
-}
-
-/**
- * 节点信息
- *
- * https://open.feishu.cn/document/server-docs/docs/wiki-v2/space-node/get_node
- * https://open.feishu.cn/document/server-docs/docs/wiki-v2/space-node/list
- */
 export interface WikiNode {
+  depth: number;
+  children: WikiNode[];
+  fileTokens: Record<string, FileToken>;
+  file_tmp_path: string;
   /**
    * 知识空间 id
    */
