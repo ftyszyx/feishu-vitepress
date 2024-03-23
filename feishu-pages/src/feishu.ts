@@ -3,17 +3,19 @@ import { MarkdownRenderer } from "feishu-docx";
 import fs from "fs";
 import mime from "mime-types";
 import path from "path";
-import { humanizeFileSize, isValidCacheExist } from "./utils";
+import { humanizeFileSize, isValidCacheExist, replaceLinks } from "./utils";
 import { WikiNode } from "./type.def";
 import MyFetch from "./my_fetch";
 export class FeishuHelp {
   tenantAccessToken: string = "";
-  tmp_path: string = "";
   base_url: string = "https://open.feishu.cn";
   constructor(
     private appId: string,
-    private appSecret: string
-  ) {}
+    private appSecret: string,
+    private tmp_path: string
+  ) {
+    if (!fs.existsSync(this.tmp_path)) fs.mkdirSync(this.tmp_path);
+  }
   async getToken() {
     console.log("get token...");
     const res = await this.fetch("post", "/open-apis/auth/v3/tenant_access_token/internal", {
@@ -22,11 +24,6 @@ export class FeishuHelp {
     });
     console.log("get token ok:", res);
     this.tenantAccessToken = res || "";
-  }
-  initTmpPath(tmppath) {
-    this.tmp_path = tmppath;
-    console.log("tmppath", tmppath);
-    if (!fs.existsSync(tmppath)) fs.mkdirSync(tmppath);
   }
   async fetch(method, path, payload): Promise<any> {
     const headers = {
@@ -87,7 +84,7 @@ export class FeishuHelp {
     localPath = path.join(localPath, fileToken);
     const cacheFilePath = path.join(this.tmp_path, fileToken);
     const cacheFileMetaPath = path.join(this.tmp_path, `${fileToken}.headers.json`);
-    let res: { data?: fs.ReadStream; headers?: Record<string, any> } = {};
+    let res: { headers?: Record<string, any> } = {};
     let hasCache = false;
     if (isValidCacheExist(cacheFilePath) && isValidCacheExist(cacheFileMetaPath)) {
       hasCache = true;
@@ -195,11 +192,15 @@ export class FeishuHelp {
       blocks: blocks,
     };
     const render = new MarkdownRenderer(render_doc);
-    const content = render.parse();
-    for (const fileitem in render.fileTokens) {
-      await this.downloadFile(fileitem, pic_path);
+    let content = render.parse();
+    for (const filetoken in render.fileTokens) {
+      const file_res = await this.downloadFile(filetoken, pic_path);
+      let extension = mime.extension(file_res.headers["content-type"]);
+      let pic_full_path = path.join(pic_path, `${filetoken}.${extension}`);
+      let assetURL = path.relative(path.dirname(filepath), pic_full_path);
+      // console.log("get url", pic_full_path, assetURL, path.dirname(filepath));
+      content = replaceLinks(content, filetoken, assetURL);
     }
-    // const meta = render.meta;
     fs.writeFileSync(filepath, content);
   }
 }
