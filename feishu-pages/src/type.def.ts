@@ -3,8 +3,8 @@ import { FileToken } from "feishu-docx";
 export interface WikiNode {
   depth: number;
   children: WikiNode[];
-  fileTokens: Record<string, FileToken>;
-  file_tmp_path: string;
+  doc_path: string;
+  wiki_path_arr: string[];
   /**
    * 知识空间 id
    */

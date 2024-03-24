@@ -6,6 +6,10 @@ import path from "path";
 import { humanizeFileSize, isValidCacheExist, replaceLinks } from "./utils";
 import { WikiNode } from "./type.def";
 import MyFetch from "./my_fetch";
+export interface SaveDocOption {
+  save_style: "nested" | "flat";
+}
+export const FeiShuDoc_pre = "feishu_";
 export class FeishuHelp {
   tenantAccessToken: string = "";
   base_url: string = "https://open.feishu.cn";
@@ -74,12 +78,6 @@ export class FeishuHelp {
     return results;
   }
 
-  async fetchAllDocs(doc_path: string, pic_path: string, spaceId: string, parent_node_token?: string) {
-    let docs: WikiNode[] = [];
-    await this._fetchAllDocs(doc_path, pic_path, docs, 0, spaceId, parent_node_token);
-    return docs;
-  }
-
   private async downloadFile(fileToken: string, localPath: string) {
     localPath = path.join(localPath, fileToken);
     const cacheFilePath = path.join(this.tmp_path, fileToken);
@@ -145,7 +143,13 @@ export class FeishuHelp {
     fs.copyFileSync(cacheFilePath, localPath);
     return res;
   }
-  private async _fetchAllDocs(doc_path: string, pic_path: string, docs: WikiNode[], depth: number, spaceId: string, parent_node_token: string) {
+  async fetchAllDocs(doc_path: string, pic_path: string, spaceId: string, parent_node: string = "", option: SaveDocOption = { save_style: "nested" }) {
+    let docs: WikiNode[] = [];
+    await this._fetchAllDocs(doc_path, pic_path, [], docs, 0, spaceId, parent_node, option);
+    return docs;
+  }
+
+  private async _fetchAllDocs(doc_path: string, pic_path: string, parent_path_arr: string[], docs: WikiNode[], depth: number, spaceId: string, parent_node_token: string, option: SaveDocOption) {
     console.log("begin get all docs");
     let items = await this.getList<WikiNode>("GET", `/open-apis/wiki/v2/spaces/${spaceId}/nodes`, { parent_node_token, page_size: 50 });
     items
@@ -156,13 +160,22 @@ export class FeishuHelp {
         if (!title.includes("[hide]") && !title.includes("[隐藏]")) {
           console.log("get doc", item.title);
           docs.push(item);
-          this.fetchDocBody(path.join(doc_path, item.title + ".md"), pic_path, item);
           console.info("Writing doc", item.title);
           item.children = [];
+          item.wiki_path_arr = parent_path_arr;
           if (item.has_child) {
-            const parent_dir = path.join(doc_path, item.title);
-            if (!fs.existsSync(parent_dir)) fs.mkdirSync(parent_dir);
-            await this._fetchAllDocs(parent_dir, pic_path, item.children, depth + 1, spaceId, item.node_token);
+            let parent_dir = doc_path;
+            if (option.save_style == "nested") {
+              parent_dir = path.join(doc_path, item.title);
+              if (!fs.existsSync(parent_dir)) fs.mkdirSync(parent_dir);
+            }
+            var new_parent = item.wiki_path_arr.concat(item.title);
+            await this._fetchAllDocs(parent_dir, pic_path, new_parent, item.children, depth + 1, spaceId, item.node_token, option);
+          } else {
+            //根目录不下载
+            let create_time = new Date(parseInt(item.node_create_time) * 1000);
+            let time_str = `${create_time.getFullYear()}_${create_time.getMonth()}_${create_time.getDate()}`;
+            this.fetchDocBody(path.join(doc_path, `${FeiShuDoc_pre}_${time_str}_${parent_path_arr.join("_")}_${item.title}.md`), pic_path, item);
           }
         }
       });

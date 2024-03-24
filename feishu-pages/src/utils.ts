@@ -7,43 +7,6 @@ import path from "path";
 
 marked.use(markedXhtml());
 
-export const normalizeSlug = (slug: string | number) => {
-  // force convert slug into string
-  slug = String(slug);
-  return slug.replace(/^wik(cn|en)/, "");
-};
-
-/**
- * Format bytes as human-readable text.
- *
- * @param bytes Number of bytes.
- * @param dp Number of decimal places to display.
- *
- * @return Formatted string.
- */
-export const humanizeFileSize = (bytes, dp = 1) => {
-  if (typeof bytes === "string") {
-    bytes = parseInt(bytes);
-  }
-
-  const thresh = 1024;
-
-  if (Math.abs(bytes) < thresh) {
-    return bytes + " B";
-  }
-
-  const units = ["kB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"];
-  let u = -1;
-  const r = 10 ** dp;
-
-  do {
-    bytes /= thresh;
-    ++u;
-  } while (Math.round(Math.abs(bytes) * r) / r >= thresh && u < units.length - 1);
-
-  return bytes.toFixed(dp) + " " + units[u];
-};
-
 const allowKeys = ["depth", "title", "slug", "filename", "node_token", "parent_node_token", "children", "obj_create_time", "obj_edit_time", "obj_token", "has_child", "meta", "position"];
 
 export function replaceLinks(content: string, node_token: string, newLink?: string): string {
@@ -101,3 +64,35 @@ export function isValidCacheExist(filepath: string) {
   }
   return false;
 }
+export function walkSync(currentDirPath: string, callback: (filepath: string, fileItem: fs.Dirent) => boolean) {
+  fs.readdirSync(currentDirPath, { withFileTypes: true }).forEach(function (dirent) {
+    var filePath = path.join(currentDirPath, dirent.name);
+    if (dirent.isFile()) {
+      callback(filePath, dirent);
+    } else if (dirent.isDirectory()) {
+      if (callback(filePath, dirent)) walkSync(filePath, callback);
+    }
+  });
+}
+export const humanizeFileSize = (bytes, dp = 1) => {
+  if (typeof bytes === "string") {
+    bytes = parseInt(bytes);
+  }
+
+  const thresh = 1024;
+
+  if (Math.abs(bytes) < thresh) {
+    return bytes + " B";
+  }
+
+  const units = ["kB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"];
+  let u = -1;
+  const r = 10 ** dp;
+
+  do {
+    bytes /= thresh;
+    ++u;
+  } while (Math.round(Math.abs(bytes) * r) / r >= thresh && u < units.length - 1);
+
+  return bytes.toFixed(dp) + " " + units[u];
+};
