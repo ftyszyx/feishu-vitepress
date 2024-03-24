@@ -29,6 +29,8 @@ export const BlogConfig = {
   baseUrl: "http://127.0.0.1",
   author: "张雨鑫",
   copyright: "Copyright (c) 小白看世界",
+  github: "https://github.com/ftyszyx",
+  twitter: "https://twitter.com/zhangyuxin_new",
   name: "小白看世界",
   desc: "你好",
   arttalk: {

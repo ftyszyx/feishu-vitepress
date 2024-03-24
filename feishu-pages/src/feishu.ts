@@ -11,7 +11,7 @@ export interface SaveDocOption {
   save_style: "nested" | "flat";
 }
 export const FeiShuDoc_pre = "feishu_";
-export class FeishuHelp {
+export class FeishuDocHelp {
   tenantAccessToken: string = "";
   base_url: string = "https://open.feishu.cn";
   constructor(
