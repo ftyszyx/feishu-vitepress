@@ -9,6 +9,7 @@
 Algolia 搜索这个需要去官网https://docsearch.algolia.com/apply申请key才可以，这里自己就不申请配置了，网上也有相关的文档说明。
 访问量统计：https://richard-docs.netlify.app/blogs/b-026
 评论:arttalk:https://github.com/ArtalkJS/Artalk
+自动发到公众号
 
 ## Start
 

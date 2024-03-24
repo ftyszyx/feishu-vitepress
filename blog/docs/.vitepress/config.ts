@@ -7,6 +7,7 @@ export default defineConfig({
   description: BlogConfig.desc,
   cleanUrls: true,
   appearance: false,
+  // assetsDir: "assets",
   ignoreDeadLinks: true,
   base: "/",
   // buildEnd: rss,

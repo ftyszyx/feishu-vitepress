@@ -222,7 +222,7 @@ export class FeishuHelp {
       const file_res = await this.downloadFile(filetoken, pic_path);
       let extension = mime.extension(file_res.headers["content-type"]);
       let pic_full_path = path.join(pic_path, `${filetoken}.${extension}`);
-      let assetURL = path.relative(path.dirname(filepath), pic_full_path);
+      let assetURL = "/" + path.relative(path.dirname(filepath), pic_full_path);
       // console.log("get url", pic_full_path, assetURL, path.dirname(filepath));
       content = replaceLinks(content, filetoken, assetURL);
     }
