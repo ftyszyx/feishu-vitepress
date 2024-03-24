@@ -5,3 +5,5 @@ node_modules
 .env
 dist
 blog/test/
+blog/tmp
+blog/docs/.vitepress/cache/

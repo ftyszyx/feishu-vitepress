@@ -2,6 +2,7 @@ import axios, { AxiosResponse } from "axios";
 import { MarkdownRenderer } from "feishu-docx";
 import fs from "fs";
 import mime from "mime-types";
+import yaml from "js-yaml";
 import path from "path";
 import { humanizeFileSize, isValidCacheExist, replaceLinks } from "./utils";
 import { WikiNode } from "./type.def";
@@ -87,7 +88,7 @@ export class FeishuHelp {
     if (isValidCacheExist(cacheFilePath) && isValidCacheExist(cacheFileMetaPath)) {
       hasCache = true;
       res.headers = JSON.parse(fs.readFileSync(cacheFileMetaPath, "utf-8"));
-      console.info(" -> Cache hit:", fileToken);
+      // console.info(" -> Cache hit:", fileToken);
     } else {
       console.info("Downloading file", fileToken, "...");
       res = await axios
@@ -139,7 +140,7 @@ export class FeishuHelp {
     if (extension) {
       localPath = localPath + "." + extension;
     }
-    console.info(" -> Writing file:", localPath);
+    // console.info(" -> Writing file:", localPath);
     fs.copyFileSync(cacheFilePath, localPath);
     return res;
   }
@@ -194,6 +195,15 @@ export class FeishuHelp {
     });
     return blocks as any;
   }
+  private genMetaText(meta) {
+    let meta_yaml = yaml.dump(meta, {
+      skipInvalid: true,
+    });
+    let output = `---\n`;
+    output += meta_yaml;
+    output += `---\n`;
+    return output;
+  }
 
   private async fetchDocBody(filepath: string, pic_path: string, fileDoc: WikiNode) {
     let document_id = fileDoc.obj_token;
@@ -206,6 +216,8 @@ export class FeishuHelp {
     };
     const render = new MarkdownRenderer(render_doc);
     let content = render.parse();
+    const meta = render.meta;
+    console.log("meta", meta);
     for (const filetoken in render.fileTokens) {
       const file_res = await this.downloadFile(filetoken, pic_path);
       let extension = mime.extension(file_res.headers["content-type"]);
@@ -213,6 +225,9 @@ export class FeishuHelp {
       let assetURL = path.relative(path.dirname(filepath), pic_full_path);
       // console.log("get url", pic_full_path, assetURL, path.dirname(filepath));
       content = replaceLinks(content, filetoken, assetURL);
+    }
+    if (meta) {
+      content = this.genMetaText(meta) + "\n\n" + content;
     }
     fs.writeFileSync(filepath, content);
   }

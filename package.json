@@ -10,7 +10,7 @@
     "build": "npm run  build -w feishu-docx ",
     "test": "npm run test -w feishu-docx && npm run test -w feishu-pages",
     "export": "npm run dev -w feishu-pages",
-    "dev": "npm run dev -w blog",
+    "dev": "npm run docs:dev -w blog",
     "clean": "rm -Rf dist/"
   },
   "devDependencies": {
