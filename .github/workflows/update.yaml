@@ -9,7 +9,11 @@ jobs:
   export:
     name: get feishu pages
     runs-on: ubuntu-latest
+    environment: myblog
     steps:
+      - name: listenv
+        run: env
+        
       - name: Checkout
         uses: actions/checkout@v4
         with:
@@ -26,10 +30,7 @@ jobs:
         run: npm ci # or pnpm install / yarn install / bun install
 
       - name: build feishu doc
-        run: npm run build # or pnpm install / yarn install / bun install
-
-      - name: listenv
-        run: env
+        run: npm run build # or pnpm install / yarn install / bun install 
 
       - name: Exporting
         env:
