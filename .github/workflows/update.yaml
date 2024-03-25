@@ -50,7 +50,7 @@ jobs:
           message: commit docs
           committer_name: GitHub Actions
           committer_email: whyzi@qq.com
-          add: blog/.docs
+          add: blog/docs
 
       # - name: upload blog
       #   run: |
