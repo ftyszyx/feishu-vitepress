@@ -3,11 +3,11 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
   schedule:
-   # Every 3 days at 00:00
+    # Every 3 days at 00:00
     - cron: "0 0 */3 * *"
 jobs:
   export:
-    name: get feishu pages 
+    name: get feishu pages
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -42,10 +42,9 @@ jobs:
 
       - name: upload blog
         run: |
-        git add blog/.cache
-        git add blog/docs/
-        git config --global user.name "ftyszyx"
-        git config --global user.email "whyzi@qq.com"
-        git commit -m "update .cache"
-        git push origin main
-        
+          git add blog/.cache
+          git add blog/docs/
+          git config --global user.name "ftyszyx"
+          git config --global user.email "whyzi@qq.com"
+          git commit -m "update .cache"
+          git push origin main
