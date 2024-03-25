@@ -11,9 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     environment: myblog
     steps:
-      - name: listenv
-        run: env
-        
+      # - name: listenv
+      #   run: env
       - name: Checkout
         uses: actions/checkout@v4
         with:
@@ -30,14 +29,14 @@ jobs:
         run: npm ci # or pnpm install / yarn install / bun install
 
       - name: build feishu doc
-        run: npm run build # or pnpm install / yarn install / bun install 
+        run: npm run build # or pnpm install / yarn install / bun install
 
       - name: Exporting
         env:
           FEISHU_APP_ID: ${{ vars.FEISHU_APP_ID }}
           FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
           FEISHU_SPACE_ID: "${{ vars.FEISHU_SPACE_ID}}"
-          OUTPUT_DIR: ./blog
+          OUTPUT_DIR: ../blog
           DOC_DIR_NAME: docs
         run: npm run export
 
