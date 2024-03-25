@@ -11,8 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     environment: myblog
     steps:
-      # - name: listenv
-      #   run: env
       - name: Checkout
         uses: actions/checkout@v4
         with:
@@ -41,18 +39,18 @@ jobs:
         run: npm run export
 
       - uses: EndBug/add-and-commit@v9
-      with:
-        message: commit cache 
-        committer_name: GitHub Actions
-        committer_email: whyzi@qq.com
-        add: blog/.cache 
+        with:
+          message: commit cache
+          committer_name: GitHub Actions
+          committer_email: whyzi@qq.com
+          add: blog/.cache
 
       - uses: EndBug/add-and-commit@v9
-      with:
-        message: commit docs 
-        committer_name: GitHub Actions
-        committer_email: whyzi@qq.com
-        add: blog/.docs
+        with:
+          message: commit docs
+          committer_name: GitHub Actions
+          committer_email: whyzi@qq.com
+          add: blog/.docs
 
       # - name: upload blog
       #   run: |
