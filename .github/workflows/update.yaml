@@ -28,6 +28,9 @@ jobs:
       - name: build feishu doc
         run: npm run build # or pnpm install / yarn install / bun install
 
+      - name: listenv
+        run: env
+
       - name: Exporting
         environment: myblog
         env:
