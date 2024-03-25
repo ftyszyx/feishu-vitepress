@@ -2,8 +2,6 @@
 import { computed } from "vue";
 import { useData, withBase, useRoute } from "vitepress";
 import { data as posts } from "../posts.data.js";
-import { getPreviewImage } from "../utils";
-const { frontmatter: data } = useData();
 
 const route = useRoute();
 function findCurrentIndex() {
@@ -20,14 +18,14 @@ const nextPostPreviewImageUrl = computed(() => {
   if (!nextPost.value.cover) {
     return "";
   }
-  return getPreviewImage(nextPost.value.cover);
+  return nextPost.value.cover;
 });
 
 const prevPostPreviewImageUrl = computed(() => {
   if (!prevPost.value.cover) {
     return "";
   }
-  return getPreviewImage(prevPost.value.cover);
+  return prevPost.value.cover;
 });
 </script>
 

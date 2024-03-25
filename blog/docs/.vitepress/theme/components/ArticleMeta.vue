@@ -1,14 +1,14 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, watch, nextTick } from "vue";
 import { useData, withBase, useRoute, useRouter } from "vitepress";
-import { getBannerImage, getFormatNumber } from "../utils";
+import { getFormatNumber } from "../utils";
 const { frontmatter } = useData();
 const route = useRoute();
 const router = useRouter();
 const title = computed(() => frontmatter.value.title);
 const date = computed(() => frontmatter.value.date);
 const bannerImageUrl = computed(() => {
-  return getBannerImage(frontmatter.value.cover);
+  return frontmatter.value.cover;
 });
 
 const pageHits = ref<number>(0);

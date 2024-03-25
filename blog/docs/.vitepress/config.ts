@@ -1,8 +1,6 @@
 import { defineConfig, HeadConfig } from "vitepress";
 import { BlogConfig } from "./theme/constant.js";
-import markdownImagePlugin from "./markdownPlugin";
-import { config } from "process";
-
+import sidebar from "../sider.json";
 export default defineConfig({
   title: BlogConfig.name,
   description: BlogConfig.desc,
@@ -14,9 +12,10 @@ export default defineConfig({
   // buildEnd: rss,
   markdown: {
     lineNumbers: true,
-    config: (md) => {
-      md.use(markdownImagePlugin);
+    image: {
+      lazyLoading: true,
     },
+    config: (md) => {},
   },
   head: [
     [
@@ -24,7 +23,7 @@ export default defineConfig({
       {
         name: "keywords",
         content:
-          "ZUOLUOTV,科技,旅行,生活方式,程序员,互联网,自媒体,摄影师,编程,前端,前端工程师,罗磊,独立博客,LUOLEI,Vlog,YouTuber",
+          "科技,旅行,生活方式,程序员,互联网,自媒体,摄影师,编程,前端,前端工程师,独立博客,LUOLEI,Vlog,YouTuber",
       },
     ],
   ],
@@ -49,7 +48,7 @@ export default defineConfig({
       { icon: "github", link: BlogConfig.github },
     ],
 
-    sidebar: [],
+    sidebar: sidebar,
     outlineTitle: "本文导览",
     lastUpdatedText: "最后更新时间",
     footer: {

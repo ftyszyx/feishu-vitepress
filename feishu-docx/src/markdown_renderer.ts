@@ -7,21 +7,7 @@ import { getEmojiChar } from "./emoji";
 import { Buffer } from "./string_buffer";
 
 import { Renderer, escapeHTMLTags, trimLastNewline } from "./renderer";
-import {
-  Block,
-  BlockType,
-  CalloutBackgroundColorMap,
-  CalloutBorderColorMap,
-  FontColorMap,
-  ImageBlock,
-  TableBlock,
-  TableMergeInfo,
-  TextBlock,
-  TextElement,
-  TextRun,
-  getAlignStyle,
-  getCodeLanguage,
-} from "./types";
+import { Block, BlockType, CalloutBackgroundColorMap, CalloutBorderColorMap, FontColorMap, ImageBlock, TableBlock, TableMergeInfo, TextBlock, TextElement, TextRun, getAlignStyle, getCodeLanguage } from "./types";
 
 marked.use(markedXhtml());
 
@@ -166,6 +152,10 @@ export class MarkdownRenderer extends Renderer {
    * @returns
    */
   parsePageMeta(block: Block) {
+    if (block?.block_type == BlockType.Image) {
+      this.head_img = this.parseImage(block.image).toString().trim();
+      return true;
+    }
     if (block?.block_type !== BlockType.Code) {
       if (block.children?.length > 0) {
         return this.parsePageMeta(this.blockMap[block.children[0]]);
@@ -210,7 +200,7 @@ export class MarkdownRenderer extends Renderer {
       this.nextBlock = this.blockMap[block.children[idx + 1]];
 
       // Extract PageMeta from first code block
-      if (idx == 0) {
+      if (idx == 0 || idx == 1) {
         if (this.parsePageMeta(child)) {
           return;
         }
@@ -248,11 +238,7 @@ export class MarkdownRenderer extends Renderer {
 
     buf.write("- ");
     let itemText = this.parseTextBlock(block.bullet).toString();
-    if (
-      this.nextBlock?.block_type == block.block_type &&
-      this.nextBlock?.parent_id == block.parent_id &&
-      !block.children?.length
-    ) {
+    if (this.nextBlock?.block_type == block.block_type && this.nextBlock?.parent_id == block.parent_id && !block.children?.length) {
       itemText = trimLastNewline(itemText);
     }
 
@@ -279,9 +265,7 @@ export class MarkdownRenderer extends Renderer {
     parent?.children?.forEach((childId, idx) => {
       if (childId == block.block_id) {
         for (let i = idx - 1; i >= 0; i--) {
-          if (
-            this.blockMap[parent.children[i]].block_type == BlockType.Ordered
-          ) {
+          if (this.blockMap[parent.children[i]].block_type == BlockType.Ordered) {
             order++;
           } else {
             break;
@@ -292,11 +276,7 @@ export class MarkdownRenderer extends Renderer {
 
     buf.write(`${order}. `);
     let itemText = this.parseTextBlock(block.ordered).toString();
-    if (
-      this.nextBlock?.block_type == block.block_type &&
-      this.nextBlock?.parent_id == block.parent_id &&
-      !block.children?.length
-    ) {
+    if (this.nextBlock?.block_type == block.block_type && this.nextBlock?.parent_id == block.parent_id && !block.children?.length) {
       itemText = trimLastNewline(itemText);
     }
     buf.write(itemText);
@@ -642,9 +622,7 @@ export class MarkdownRenderer extends Renderer {
     const buf = new Buffer();
     const { column_size } = block.grid;
 
-    buf.writeln(
-      `<div class="flex gap-3 columns-${column_size}" column-size="${column_size}">`,
-    );
+    buf.writeln(`<div class="flex gap-3 columns-${column_size}" column-size="${column_size}">`);
 
     block.children?.forEach((childId) => {
       const child = this.blockMap[childId];
@@ -660,9 +638,7 @@ export class MarkdownRenderer extends Renderer {
 
     let { width_ratio } = block.grid_column;
 
-    buf.writeln(
-      `<div class="w-[${width_ratio}%]" width-ratio="${width_ratio}">`,
-    );
+    buf.writeln(`<div class="w-[${width_ratio}%]" width-ratio="${width_ratio}">`);
 
     let inner = "";
 
@@ -688,8 +664,7 @@ export class MarkdownRenderer extends Renderer {
     const classNames = ["callout"];
 
     if (block.callout.background_color) {
-      const backgroundColor =
-        CalloutBackgroundColorMap[block.callout.background_color];
+      const backgroundColor = CalloutBackgroundColorMap[block.callout.background_color];
       style["background"] = backgroundColor;
       classNames.push(`callout-bg-${block.callout.background_color}`);
     }
@@ -728,7 +703,7 @@ export class MarkdownRenderer extends Renderer {
             const child = this.blockMap[childId];
             return this.parseBlock(child, 0);
           })
-          .join("\n"),
+          .join("\n")
       );
     });
 

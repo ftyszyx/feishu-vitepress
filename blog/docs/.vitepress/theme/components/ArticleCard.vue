@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import { useData, withBase, useRoute, useRouter } from "vitepress";
-const { frontmatter } = useData();
-import { watch, nextTick, ref, onMounted, computed } from "vue";
-import { getPreviewImage, getFormatNumber } from "../utils";
+import { nextTick, ref, onMounted, computed } from "vue";
+import { getFormatNumber } from "../utils";
 const props = defineProps<{
   url: string;
   title: string;
@@ -40,7 +39,7 @@ const previewImageUrl = computed(() => {
     console.error("Cover image URL is not provided!");
     return "";
   }
-  return getPreviewImage(props.cover);
+  return props.cover;
 });
 
 onMounted(() => {});

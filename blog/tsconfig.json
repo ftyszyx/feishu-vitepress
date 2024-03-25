@@ -5,6 +5,7 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "resolveJsonModule": true,
     "jsx": "preserve"
   },
   "include": ["./docs/.vitepress/**/*.ts"]

@@ -1,8 +1,9 @@
-import { Block, FileToken } from './types';
+import { Block, FileToken } from "./types";
 
 export class Renderer {
   documentId: string;
   meta?: Record<string, any>;
+  head_img?: string;
   blockMap: Record<string, Block> = {};
   parentId?: string;
   fileTokens: Record<string, FileToken> = {};
@@ -15,13 +16,10 @@ export class Renderer {
   debug: boolean;
   outputUnsupported: boolean = false;
 
-  constructor(
-    doc: any,
-    options: { debug?: boolean; outputUnsupported?: boolean } = {}
-  ) {
+  constructor(doc: any, options: { debug?: boolean; outputUnsupported?: boolean } = {}) {
     const { debug = false, outputUnsupported } = options;
 
-    this.documentId = doc?.document?.document_id || '';
+    this.documentId = doc?.document?.document_id || "";
     this.fileTokens = {};
     doc?.blocks?.forEach((block) => {
       this.blockMap[block?.block_id] = block;
@@ -40,7 +38,7 @@ export class Renderer {
   }
 
   parseBlock(block: Block, indent: number): string {
-    throw new Error('Not implemented');
+    throw new Error("Not implemented");
   }
 
   /**
@@ -59,7 +57,7 @@ export class Renderer {
    * @param type
    * @param token
    */
-  addFileToken(type: 'file' | 'image', token: string) {
+  addFileToken(type: "file" | "image", token: string) {
     this.fileTokens[token] = {
       token,
       type,
@@ -73,7 +71,7 @@ export class Renderer {
  * @returns
  */
 export const trimLastNewline = (str: string) => {
-  return str.replace(/\n$/, '');
+  return str.replace(/\n$/, "");
 };
 
 /**
@@ -93,10 +91,10 @@ export const trimLastNewline = (str: string) => {
 export const escapeHTMLTags = (plainText: string) => {
   return plainText.replace(/<|>/g, (m) => {
     switch (m) {
-      case '<':
-        return '&lt;';
-      case '>':
-        return '&gt;';
+      case "<":
+        return "&lt;";
+      case ">":
+        return "&gt;";
       default:
         return m;
     }

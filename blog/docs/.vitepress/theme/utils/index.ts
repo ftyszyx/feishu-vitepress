@@ -28,30 +28,6 @@ export function formatDate(d: any, fmt = "yyyy-MM-dd hh:mm:ss") {
   return fmt;
 }
 
-export function getFaviconUrl(domain: string) {
-  return `https://img.is26.com/https://static.is26.com/favicon/${domain}/w=32`;
-}
-
-export function getOriginalImage(url: string) {
-  return `https://img.is26.com/${url}`;
-}
-
-export function getPreviewImage(url: string) {
-  return `https://img.is26.com/${url}/w=800`;
-}
-
-export function getBannerImage(url: string) {
-  return `https://img.is26.com/${url}/w=800`;
-}
-
-export function getArticleLazyImage(url: string) {
-  return `https://img.is26.com/${url}/w=1200`;
-}
-
-export function getArticleBlurImage(url: string) {
-  return `https://img.is26.com/${url}/w=800,blur=10`;
-}
-
 export function getFormatNumber(num: number) {
   // 给数字加上逗号分隔符，例如：12345678 => 12,345,678
   return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");

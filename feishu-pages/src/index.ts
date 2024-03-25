@@ -11,8 +11,6 @@ const feishu_help = new FeishuDocHelp(appconfig.appId, appconfig.appSecret, path
   console.log("app config", appconfig);
   let doc_path = path.join(appconfig.output_dir, process.env.DOC_DIR_NAME);
   fs.mkdirSync(doc_path, { recursive: true });
-  let asset_path = path.join(doc_path, appconfig.asset_name);
-  fs.mkdirSync(asset_path, { recursive: true });
   walkSync(doc_path, (file_path, file_dirent) => {
     if (file_dirent.isDirectory && file_dirent.path.endsWith(appconfig.asset_name)) return false;
     if (file_dirent.isFile && file_dirent.name.startsWith(FeiShuDoc_pre) && file_dirent.name.endsWith(".md")) {
@@ -21,5 +19,5 @@ const feishu_help = new FeishuDocHelp(appconfig.appId, appconfig.appSecret, path
     return true;
   });
   await feishu_help.getToken();
-  await feishu_help.fetchAllDocs(doc_path, asset_path, appconfig.spaceId, "", { save_style: appconfig.save_style == "flat" ? "flat" : "nested" });
+  await feishu_help.fetchAllDocs(appconfig.spaceId, "", { doc_root_path: doc_path, pic_dir_name: appconfig.asset_name, save_sider_name: "sider.json" });
 })();

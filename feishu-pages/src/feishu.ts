@@ -8,7 +8,14 @@ import { humanizeFileSize, isValidCacheExist, replaceLinks } from "./utils";
 import { WikiNode } from "./type.def";
 import MyFetch from "./my_fetch";
 export interface SaveDocOption {
-  save_style: "nested" | "flat";
+  save_sider_name?: string;
+  doc_root_path: string;
+  pic_dir_name: string;
+}
+export interface SideBarItem {
+  text: string;
+  items?: SideBarItem[];
+  link?: string;
 }
 export const FeiShuDoc_pre = "feishu_";
 export class FeishuDocHelp {
@@ -19,6 +26,7 @@ export class FeishuDocHelp {
     private appSecret: string,
     private tmp_path: string
   ) {
+    // console.log("tmppath", this.tmp_path);
     if (!fs.existsSync(this.tmp_path)) fs.mkdirSync(this.tmp_path);
   }
   async getToken() {
@@ -101,7 +109,7 @@ export class FeishuDocHelp {
         })
         .then((res: AxiosResponse) => {
           if (res.status !== 200) {
-            console.error(" -> ERROR: Failed to download image:", fileToken, res.status);
+            console.error(" -> ERROR: Failed to download image:", fileToken, res.status, res.data);
             return null;
           }
           fs.writeFileSync(cacheFileMetaPath, JSON.stringify(res.headers));
@@ -120,7 +128,7 @@ export class FeishuDocHelp {
         })
         .catch((err) => {
           const { message } = err;
-          console.error(" -> ERROR: Failed to download image:", fileToken, message);
+          console.error(" -> catch ERROR: Failed to download image:", fileToken, message, err);
           // If status is 403
           // https://open.feishu.cn/document/server-docs/docs/drive-v1/faq#6e38a6de
           if (message.includes("403")) {
@@ -144,19 +152,26 @@ export class FeishuDocHelp {
     fs.copyFileSync(cacheFilePath, localPath);
     return res;
   }
-  async fetchAllDocs(doc_path: string, pic_path: string, spaceId: string, parent_node: string = "", option: SaveDocOption = { save_style: "nested" }) {
+  async fetchAllDocs(spaceId: string, parent_node: string = "", option: SaveDocOption = { doc_root_path: "./docs", pic_dir_name: "pic", save_sider_name: "sider.json" }) {
     let docs: WikiNode[] = [];
-    await this._fetchAllDocs(doc_path, pic_path, [], docs, 0, spaceId, parent_node, option);
+    let sider_items: SideBarItem[] = [];
+    let parent_path_arr = [];
+    const pic_path = path.join(option.doc_root_path, option.pic_dir_name);
+    fs.mkdirSync(pic_path, { recursive: true });
+    await this._fetchAllDocs(parent_path_arr, sider_items, docs, spaceId, parent_node, option);
+    // console.log("get sideritem", sider_items);
+    const sider_path = path.join(option.doc_root_path, option.save_sider_name);
+    fs.writeFileSync(sider_path, JSON.stringify(sider_items, null, 2));
     return docs;
   }
 
-  private async _fetchAllDocs(doc_path: string, pic_path: string, parent_path_arr: string[], docs: WikiNode[], depth: number, spaceId: string, parent_node_token: string, option: SaveDocOption) {
-    console.log("begin get all docs");
+  private async _fetchAllDocs(parent_path_arr: string[], sider_items: SideBarItem[], docs: WikiNode[], spaceId: string, parent_node_token: string, option: SaveDocOption) {
+    // console.log("begin get all docs");
+    const pic_path = path.join(option.doc_root_path, option.pic_dir_name);
     let items = await this.getList<WikiNode>("GET", `/open-apis/wiki/v2/spaces/${spaceId}/nodes`, { parent_node_token, page_size: 50 });
-    items
-      .filter((item) => item.obj_type == "doc" || item.obj_type == "docx")
-      .forEach(async (item) => {
-        item.depth = depth;
+    for (let i = 0; i < items.length; i++) {
+      const item = items[i];
+      if (item.obj_type == "doc" || item.obj_type == "docx") {
         let title = item.title.toLocaleLowerCase();
         if (!title.includes("[hide]") && !title.includes("[隐藏]")) {
           console.log("get doc", item.title);
@@ -165,21 +180,21 @@ export class FeishuDocHelp {
           item.children = [];
           item.wiki_path_arr = parent_path_arr;
           if (item.has_child) {
-            let parent_dir = doc_path;
-            if (option.save_style == "nested") {
-              parent_dir = path.join(doc_path, item.title);
-              if (!fs.existsSync(parent_dir)) fs.mkdirSync(parent_dir);
-            }
-            var new_parent = item.wiki_path_arr.concat(item.title);
-            await this._fetchAllDocs(parent_dir, pic_path, new_parent, item.children, depth + 1, spaceId, item.node_token, option);
+            const new_parents = item.wiki_path_arr.concat(item.title);
+            const sider_item = { text: item.title, items: [] };
+            await this._fetchAllDocs(new_parents, sider_item.items, item.children, spaceId, item.node_token, option);
+            sider_items.push(sider_item);
           } else {
             //根目录不下载
             let create_time = new Date(parseInt(item.node_create_time) * 1000);
             let time_str = `${create_time.getFullYear()}_${create_time.getMonth()}_${create_time.getDate()}`;
-            this.fetchDocBody(path.join(doc_path, `${FeiShuDoc_pre}_${time_str}_${parent_path_arr.join("_")}_${item.title}.md`), pic_path, item);
+            const filename = `${FeiShuDoc_pre}_${time_str}_${parent_path_arr.join("_")}_${item.title}`;
+            await this.fetchDocBody(path.join(option.doc_root_path, `${filename}.md`), pic_path, item);
+            sider_items.push({ text: item.title, link: `/${filename}` });
           }
         }
-      });
+      }
+    }
   }
 
   /**
@@ -188,7 +203,7 @@ export class FeishuDocHelp {
    * @returns
    */
   private async feitchDocBlocks(document_id: string) {
-    console.info("Fetching doc block: ", document_id);
+    // console.info("Fetching doc block: ", document_id);
     const blocks = await this.getList("GET", `/open-apis/docx/v1/documents/${document_id}/blocks`, {
       page_size: 500,
       document_revision_id: -1,
@@ -216,19 +231,33 @@ export class FeishuDocHelp {
     };
     const render = new MarkdownRenderer(render_doc);
     let content = render.parse();
-    const meta = render.meta;
-    console.log("meta", meta);
+    let meta = render.meta;
+    let cover_token = "";
+    if (render.head_img) {
+      const reg_patt = /<img[^>]+src[\s]*=[\s]*"([^"]+)"/;
+      const match_res = reg_patt.exec(render.head_img);
+      if (match_res.length >= 2) cover_token = match_res[1].trim();
+      // console.log("get token", cover_token, match_res, match_res.length);
+    }
     for (const filetoken in render.fileTokens) {
       const file_res = await this.downloadFile(filetoken, pic_path);
       let extension = mime.extension(file_res.headers["content-type"]);
       let pic_full_path = path.join(pic_path, `${filetoken}.${extension}`);
       let assetURL = "/" + path.relative(path.dirname(filepath), pic_full_path);
+      assetURL = assetURL.replace("\\", "/");
       // console.log("get url", pic_full_path, assetURL, path.dirname(filepath));
+      if (filetoken == cover_token) {
+        meta = meta || {};
+        meta["cover"] = assetURL;
+        continue;
+      }
       content = replaceLinks(content, filetoken, assetURL);
     }
     if (meta) {
       content = this.genMetaText(meta) + "\n\n" + content;
     }
+    console.log("meta", meta);
+    // console.log("headimg", render.head_img);
     fs.writeFileSync(filepath, content);
   }
 }
