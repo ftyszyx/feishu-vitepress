@@ -24,8 +24,6 @@
     "vue": "^3.4.5"
   },
   "dependencies": {
-    "@sentry/tracing": "^7.92.0",
-    "@sentry/vue": "^7.92.0",
     "@tailwindcss/nesting": "0.0.0-insiders.565cd3e",
     "@vueuse/core": "^10.7.1",
     "artalk": "^2.7.3",
