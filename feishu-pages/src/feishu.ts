@@ -26,7 +26,6 @@ export class FeishuDocHelp {
     private appSecret: string,
     private tmp_path: string
   ) {
-    // console.log("tmppath", this.tmp_path);
     if (!fs.existsSync(this.tmp_path)) fs.mkdirSync(this.tmp_path);
   }
   async getToken() {
@@ -256,7 +255,7 @@ export class FeishuDocHelp {
     if (meta) {
       content = this.genMetaText(meta) + "\n\n" + content;
     }
-    console.log("meta", meta);
+    // console.log("meta", meta);
     // console.log("headimg", render.head_img);
     fs.writeFileSync(filepath, content);
   }

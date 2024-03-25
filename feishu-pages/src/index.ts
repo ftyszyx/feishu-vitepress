@@ -5,7 +5,7 @@ import { appconfig } from "./config";
 import path from "path";
 import { walkSync } from "./utils";
 
-const feishu_help = new FeishuDocHelp(appconfig.appId, appconfig.appSecret, path.join(appconfig.output_dir, "tmp"));
+const feishu_help = new FeishuDocHelp(appconfig.appId, appconfig.appSecret, path.join(appconfig.output_dir, ".cache"));
 // App entry
 (async () => {
   console.log("app config", appconfig);

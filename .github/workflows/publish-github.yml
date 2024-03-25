@@ -37,20 +37,6 @@ jobs:
       - name: Install dependencies
         run: npm ci # or pnpm install / yarn install / bun install
 
-      - name: build feishu doc
-        run: npm run build # or pnpm install / yarn install / bun install
-
-      - name: Exporting
-        env:
-          FEISHU_APP_ID: ${{ secrets.FEISHU_APP_ID }}
-          FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
-          FEISHU_SPACE_ID: "7347575571146096668"
-          OUTPUT_DIR: ./blog
-          DOC_DIR_NAME: docs
-        uses: ftyszyx/myblog@main
-      - name: Build blog
-        run: npm run export
-
       - name: Build with VitePress
         run: npm run build:blog
 
