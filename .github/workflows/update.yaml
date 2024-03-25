@@ -30,9 +30,9 @@ jobs:
 
       - name: Exporting
         env:
-          FEISHU_APP_ID: ${{ secrets.FEISHU_APP_ID }}
+          FEISHU_APP_ID: ${{ vars.FEISHU_APP_ID }}
           FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
-          FEISHU_SPACE_ID: "7347575571146096668"
+          FEISHU_SPACE_ID: "${{ vars.FEISHU_SPACE_ID}}"
           OUTPUT_DIR: ./blog
           DOC_DIR_NAME: docs
         run: npm run export
