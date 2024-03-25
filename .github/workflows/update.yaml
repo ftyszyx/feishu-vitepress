@@ -32,7 +32,6 @@ jobs:
         run: env
 
       - name: Exporting
-        environment: myblog
         env:
           FEISHU_APP_ID: ${{ vars.FEISHU_APP_ID }}
           FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
