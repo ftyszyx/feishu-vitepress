@@ -42,17 +42,10 @@ jobs:
 
       - uses: EndBug/add-and-commit@v9
         with:
-          message: commit cache
+          message: commit
           committer_name: GitHub Actions
           committer_email: whyzi@qq.com
-          add: blog/.cache
-
-      - uses: EndBug/add-and-commit@v9
-        with:
-          message: commit docs
-          committer_name: GitHub Actions
-          committer_email: whyzi@qq.com
-          add: blog/docs
+          add: blog
 
       # - name: upload blog
       #   run: |
