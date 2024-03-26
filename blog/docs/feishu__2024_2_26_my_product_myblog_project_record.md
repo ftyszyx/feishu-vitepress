@@ -21,5 +21,15 @@
 
 查看permision 文档：https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs
 
+加了permision：
+
+<img src="/assets/OeyXb9q53oWH4axfsLtcdlAgnSf.png" src-width="449" src-height="212" align="center"/>
+
+又有新的报错
+
+```sql
+error: failed to push some refs to '<u>https://github.com/ftyszyx/myblog</u>'
+```
+
 - [ ] 问题2：需要将图片上传到一个图床
 
