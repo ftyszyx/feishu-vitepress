@@ -46,12 +46,3 @@ jobs:
           committer_name: GitHub Actions
           committer_email: whyzi@qq.com
           add: blog
-
-      # - name: upload blog
-      #   run: |
-      #     git add blog/.cache
-      #     git add blog/docs/
-      #     git config --global user.name "ftyszyx"
-      #     git config --global user.email "whyzi@qq.com"
-      #     git commit -m "update .cache"
-      #     git push origin main
