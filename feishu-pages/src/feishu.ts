@@ -7,6 +7,7 @@ import path from "path";
 import { humanizeFileSize, isValidCacheExist, replaceLinks } from "./utils";
 import { WikiNode } from "./type.def";
 import MyFetch from "./my_fetch";
+import { appconfig } from "./config";
 export interface SaveDocOption {
   save_sider_name?: string;
   doc_root_path: string;
@@ -20,7 +21,7 @@ export interface SideBarItem {
 export const FeiShuDoc_pre = "feishu_";
 export class FeishuDocHelp {
   tenantAccessToken: string = "";
-  base_url: string = "https://open.feishu.cn";
+  feishu_baseurl: string = "https://open.feishu.cn";
   constructor(
     private appId: string,
     private appSecret: string,
@@ -46,7 +47,7 @@ export class FeishuDocHelp {
       const authorization = `Bearer ${this.tenantAccessToken}`;
       headers["Authorization"] = authorization;
     }
-    const url = `${this.base_url}${path}`;
+    const url = `${this.feishu_baseurl}${path}`;
     try {
       const respdata = await MyFetch.request({
         method,
@@ -99,7 +100,7 @@ export class FeishuDocHelp {
     } else {
       console.info("Downloading file", fileToken, "...");
       res = await axios
-        .get(`${this.base_url}/open-apis/drive/v1/medias/${fileToken}/download`, {
+        .get(`${this.feishu_baseurl}/open-apis/drive/v1/medias/${fileToken}/download`, {
           responseType: "stream",
           headers: {
             Authorization: `Bearer ${this.tenantAccessToken}`,
@@ -242,7 +243,7 @@ export class FeishuDocHelp {
       const file_res = await this.downloadFile(filetoken, pic_path);
       let extension = mime.extension(file_res.headers["content-type"]);
       let pic_full_path = path.join(pic_path, `${filetoken}.${extension}`);
-      let assetURL = "/" + path.relative(path.dirname(filepath), pic_full_path);
+      let assetURL = appconfig.res_base_url + path.relative(path.dirname(filepath), pic_full_path);
       assetURL = assetURL.replace("\\", "/");
       // console.log("get url", pic_full_path, assetURL, path.dirname(filepath));
       if (filetoken == cover_token) {

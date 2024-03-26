@@ -11,6 +11,7 @@
     "test": "npm run test -w feishu-docx && npm run test -w feishu-pages",
     "export": "npm run dev -w feishu-pages",
     "run:blog": "npm run docs:dev -w blog",
+    "preview:blog": "npm run docs:preview -w blog",
     "build:blog": "npm run docs:build -w blog",
     "clean": "npm run clean -w feishu-pages"
   },
