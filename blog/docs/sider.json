@@ -1,14 +1,40 @@
 [
   {
-    "text": "Skill",
+    "text": "learn_skill",
     "items": [
       {
         "text": "vim使用",
-        "link": "/feishu__2023_1_21_Skill_vim使用"
+        "link": "/feishu__2023_1_21_learn_skill_vim使用"
       },
       {
         "text": "test",
-        "link": "/feishu__2024_2_25_Skill_test"
+        "link": "/feishu__2024_2_25_learn_skill_test"
+      }
+    ]
+  },
+  {
+    "text": "daily_life",
+    "link": "/feishu__2024_2_25__daily_life"
+  },
+  {
+    "text": "Sport",
+    "link": "/feishu__2024_2_25__Sport"
+  },
+  {
+    "text": "Financing",
+    "link": "/feishu__2024_2_25__Financing"
+  },
+  {
+    "text": "my_product",
+    "items": [
+      {
+        "text": "myblog",
+        "items": [
+          {
+            "text": "project_record",
+            "link": "/feishu__2024_2_26_my_product_myblog_project_record"
+          }
+        ]
       }
     ]
   }
