@@ -20,13 +20,10 @@ export default defineConfig({
         return rawData
           .filter(({ frontmatter }) => frontmatter.cover)
           .map(({ frontmatter }) => {
-            // console.log("get url", frontmatter.cover);
             return frontmatter.cover;
-            // return { covers: frontmatter.cover };
           });
       },
     }).load();
-    // console.log("urls", coverurls, siteconfig);
     coverurls.forEach((item) => {
       const picpath = path.join(siteconfig.root, item);
       const picfile_name = path.basename(picpath);
