@@ -35,10 +35,10 @@ const articleUrl = computed(() => {
   return withBase(props.url);
 });
 const previewImageUrl = computed(() => {
-  if (!props.cover) {
-    console.error("Cover image URL is not provided!");
-    return "";
-  }
+  // if (!props.cover) {
+  //   console.error("Cover image URL is not provided!");
+  //   return "";
+  // }
   return props.cover;
 });
 

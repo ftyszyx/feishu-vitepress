@@ -1,6 +1,8 @@
-import { defineConfig, HeadConfig } from "vitepress";
+import { createContentLoader, defineConfig, HeadConfig } from "vitepress";
 import { BlogConfig } from "./theme/constant.js";
 import sidebar from "../sider.json";
+import { copyFileSync } from "fs";
+import path from "path";
 export default defineConfig({
   title: BlogConfig.name,
   description: BlogConfig.desc,
@@ -9,6 +11,34 @@ export default defineConfig({
   ignoreDeadLinks: true,
   base: "/",
   // outDir: "../public",
+  buildEnd: async (siteconfig) => {
+    const coverurls: string[] = await createContentLoader("/*.md", {
+      excerpt: true,
+      includeSrc: false,
+      render: false,
+      transform: (rawData) => {
+        return rawData
+          .filter(({ frontmatter }) => frontmatter.cover)
+          .map(({ frontmatter }) => {
+            // console.log("get url", frontmatter.cover);
+            return frontmatter.cover;
+            // return { covers: frontmatter.cover };
+          });
+      },
+    }).load();
+    // console.log("urls", coverurls, siteconfig);
+    coverurls.forEach((item) => {
+      const picpath = path.join(siteconfig.root, item);
+      const picfile_name = path.basename(picpath);
+      const destpath = path.join(
+        siteconfig.outDir,
+        siteconfig.assetsDir,
+        picfile_name,
+      );
+      // console.log("write", picpath, destpath);
+      copyFileSync(picpath, destpath);
+    });
+  },
   markdown: {
     lineNumbers: true,
     image: {

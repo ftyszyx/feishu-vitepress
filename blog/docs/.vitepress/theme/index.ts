@@ -1,4 +1,3 @@
-import * as Sentry from "@sentry/vue";
 import { Theme } from "vitepress";
 import DefaultTheme from "vitepress/theme";
 import Layout from "./components/Layout.vue";
