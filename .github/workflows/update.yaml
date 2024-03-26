@@ -5,6 +5,8 @@ on:
   schedule:
     # Every 3 days at 00:00
     - cron: "0 0 */3 * *"
+permissions:
+  contents: write
 jobs:
   export:
     name: get feishu pages
