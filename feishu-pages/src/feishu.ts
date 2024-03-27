@@ -188,7 +188,8 @@ export class FeishuDocHelp {
             //根目录不下载
             let create_time = new Date(parseInt(item.node_create_time) * 1000);
             let time_str = `${create_time.getFullYear()}_${create_time.getMonth()}_${create_time.getDate()}`;
-            const filename = `${FeiShuDoc_pre}_${time_str}_${parent_path_arr.join("_")}_${item.title}`;
+            let filename = `${FeiShuDoc_pre}_${time_str}_${parent_path_arr.join("_")}_${item.title}`.toLowerCase();
+            if (parent_path_arr.length == 0 && item.title.toLowerCase() == "index") filename = "index";
             await this.fetchDocBody(path.join(option.doc_root_path, `${filename}.md`), pic_path, item);
             sider_items.push({ text: item.title, link: `/${filename}` });
           }
