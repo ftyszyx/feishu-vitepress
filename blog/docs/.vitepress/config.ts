@@ -3,13 +3,14 @@ import { BlogConfig } from "./theme/constant.js";
 import sidebar from "../sider.json";
 import { copyFileSync } from "fs";
 import path from "path";
+import "dotenv/config";
 export default defineConfig({
   title: BlogConfig.name,
   description: BlogConfig.desc,
   cleanUrls: true,
   appearance: false,
   ignoreDeadLinks: true,
-  base: "/myblog/",
+  base: process.env.BLOG_BASE_URL || "/",
   buildEnd: async (siteconfig) => {
     const coverurls: string[] = await createContentLoader("/*.md", {
       excerpt: true,
@@ -34,6 +35,14 @@ export default defineConfig({
       // console.log("write", picpath, destpath);
       copyFileSync(picpath, destpath);
     });
+  },
+  async transformPageData(pageData, ctx) {
+    const { frontmatter } = pageData;
+    const baseurl = ctx.siteConfig.userConfig.base;
+    if (frontmatter && frontmatter.cover) {
+      frontmatter.cover = `${baseurl}${frontmatter.cover}`.replace("//", "/");
+      console.log("change cover", frontmatter.cover, baseurl);
+    }
   },
   markdown: {
     lineNumbers: true,

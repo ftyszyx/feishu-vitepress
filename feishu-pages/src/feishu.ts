@@ -243,7 +243,8 @@ export class FeishuDocHelp {
       const file_res = await this.downloadFile(filetoken, pic_path);
       let extension = mime.extension(file_res.headers["content-type"]);
       let pic_full_path = path.join(pic_path, `${filetoken}.${extension}`);
-      let assetURL = appconfig.res_base_url + path.relative(path.dirname(filepath), pic_full_path);
+      const base_url = "/";
+      let assetURL = base_url + path.relative(path.dirname(filepath), pic_full_path);
       assetURL = assetURL.replace("\\", "/");
       // console.log("get url", pic_full_path, assetURL, path.dirname(filepath));
       if (filetoken == cover_token) {
