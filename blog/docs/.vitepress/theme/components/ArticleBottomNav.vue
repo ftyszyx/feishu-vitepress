@@ -14,19 +14,6 @@ const nextPost = computed(() => posts[findCurrentIndex() + 1]);
 const prevPost = computed(() => posts[findCurrentIndex() - 1]);
 
 // 分别获得上一篇和下一篇文章的 getPreviewImage 后的图片地址
-const nextPostPreviewImageUrl = computed(() => {
-  if (!nextPost.value.cover) {
-    return "";
-  }
-  return nextPost.value.cover;
-});
-
-const prevPostPreviewImageUrl = computed(() => {
-  if (!prevPost.value.cover) {
-    return "";
-  }
-  return prevPost.value.cover;
-});
 </script>
 
 <template>
@@ -38,9 +25,7 @@ const prevPostPreviewImageUrl = computed(() => {
     >
       <a
         :href="withBase(prevPost.url)"
-        class="flex items-center w-full h-full bg-center bg-cover hover:text-blue-600"
-        :style="`
-        background-image: url(${prevPostPreviewImageUrl})`"
+        class="flex items-center w-full h-full hover:text-blue-600"
       >
         <div
           class="flex items-center w-full h-40 max-w-xl px-2 duration-300 ease-in bg-gray-900 rounded-md md:px-10 bg-opacity-30 hover:bg-opacity-10"
@@ -59,9 +44,7 @@ const prevPostPreviewImageUrl = computed(() => {
     >
       <a
         :href="withBase(nextPost.url)"
-        class="flex items-center w-full h-full bg-center bg-cover hover:text-blue-600"
-        :style="`
-        background-image: url(${nextPostPreviewImageUrl})`"
+        class="flex items-center w-full h-full hover:text-blue-600"
       >
         <div
           class="flex items-center w-full h-40 px-2 duration-300 ease-in bg-gray-900 rounded-md max-w-7xl md:px-10 bg-opacity-30 hover:bg-opacity-10"

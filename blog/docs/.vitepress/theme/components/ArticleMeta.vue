@@ -8,7 +8,8 @@ const router = useRouter();
 const title = computed(() => frontmatter.value.title);
 const date = computed(() => frontmatter.value.date);
 const bannerImageUrl = computed(() => {
-  return frontmatter.value.cover;
+  if (frontmatter.value.cover) return withBase(frontmatter.value.cover);
+  return "";
 });
 
 const pageHits = ref<number>(0);

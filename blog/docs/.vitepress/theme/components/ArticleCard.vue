@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { useData, withBase, useRoute, useRouter } from "vitepress";
-import { nextTick, ref, onMounted, computed } from "vue";
+import { withBase, useRoute, useRouter } from "vitepress";
+import { ref, onMounted, computed } from "vue";
 import { getFormatNumber } from "../utils";
 const props = defineProps<{
   url: string;
@@ -39,7 +39,8 @@ const previewImageUrl = computed(() => {
   //   console.error("Cover image URL is not provided!");
   //   return "";
   // }
-  return props.cover;
+  if (props.cover) return withBase(props.cover);
+  return "";
 });
 
 onMounted(() => {});
