@@ -8,7 +8,7 @@ cover: /assets/BQmfb4IfnohBwJx9Y4Wcjeienhg.png
 ---
 
 
-# vim使用
+# vim
 
 <img src="/assets/NgRJblUKCo3KLBx0Zw1c1nFRn0b.png" src-width="932" src-height="610" align="center"/>
 
