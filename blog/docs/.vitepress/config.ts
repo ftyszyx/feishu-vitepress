@@ -9,7 +9,7 @@ export default defineConfig({
   cleanUrls: true,
   appearance: false,
   ignoreDeadLinks: true,
-  base: "/",
+  base: "/myblog/",
   // outDir: "../public",
   buildEnd: async (siteconfig) => {
     const coverurls: string[] = await createContentLoader("/*.md", {
