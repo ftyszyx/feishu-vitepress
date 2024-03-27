@@ -1,4 +1,4 @@
-import { createContentLoader } from "vitepress";
+import { createContentLoader, withBase } from "vitepress";
 import { formatShowDate } from "./utils";
 import { Post } from "./type_def";
 declare const data: Post[];
@@ -12,7 +12,7 @@ export default createContentLoader("/*.md", {
         title: frontmatter.title,
         url,
         excerpt,
-        cover: frontmatter.cover,
+        cover: withBase(frontmatter.cover),
         categories: frontmatter.categories,
         date: formatDate(frontmatter.date),
         layout: frontmatter.layout,

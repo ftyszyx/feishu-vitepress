@@ -36,14 +36,6 @@ export default defineConfig({
       copyFileSync(picpath, destpath);
     });
   },
-  async transformPageData(pageData, ctx) {
-    const { frontmatter } = pageData;
-    const baseurl = ctx.siteConfig.userConfig.base;
-    if (frontmatter && frontmatter.cover) {
-      frontmatter.cover = `${baseurl}${frontmatter.cover}`.replace("//", "/");
-      console.log("change cover", frontmatter.cover, baseurl);
-    }
-  },
   markdown: {
     lineNumbers: true,
     image: {
