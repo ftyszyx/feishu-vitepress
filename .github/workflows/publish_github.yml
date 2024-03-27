@@ -16,8 +16,8 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  feishu-pages:
-    name: Publish Website
+  build:
+    name: build pages
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -43,8 +43,16 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "./blog/docs/.vitepress/dist"
+          path: "blog/docs/.vitepress/dist"
 
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
+    name: Deploy
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
