@@ -101,5 +101,49 @@ buildEnd: async (siteconfig) => {
   },
 ```
 
-## 需要将图片上传到一个图床
+# 2024/3/27
+
+## github部署后，因为base路径不对，导致 网页显示异常
+
+因为github page网址是https://ftyszyx.github.io/myblog
+
+所以 baseurl要修改一下
+
+<img src="/assets/IMLfb0iCooB8AfxcROWcxNIFnmh.png" src-width="613" src-height="331" align="center"/>
+
+<img src="/assets/Muc0bjrToooEIfxscKScmKWunVb.png" src-width="781" src-height="256" align="center"/>
+
+还有问题，这个basepath修改了后，vitepress不会处理cover的链接
+
+Vitepress有接口，可以在网页中获取base
+
+https://vitepress.dev/guide/asset-handling#base-url
+
+<img src="/assets/UDP3bkjoGoHs09xpEHacLV6EnBg.png" src-width="757" src-height="547" align="center"/>
+
+# 2024/3/28
+
+## 页面样式太丑，需要调整
+
+尤其是siderbar太宽，内容太窄
+
+## 怎么同步到公众号
+
+## 怎么cloude page
+
+## 增加评论
+
+## 增加点击统计
+
+## 增加浏览统计
+
+（之前有个可以记录用户全程）
+
+## 增加搜索
+
+## 如果图片变成图床中的地址
+
+会不会有问题
+
+图片地址变绝对链接有优势，可以
 

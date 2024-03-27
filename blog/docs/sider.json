@@ -18,11 +18,11 @@
   },
   {
     "text": "Sport",
-    "link": "/feishu__2024_2_25__Sport"
+    "link": "/feishu__2024_2_25__sport"
   },
   {
     "text": "Financing",
-    "link": "/feishu__2024_2_25__Financing"
+    "link": "/feishu__2024_2_25__financing"
   },
   {
     "text": "my_product",
@@ -37,5 +37,9 @@
         ]
       }
     ]
+  },
+  {
+    "text": "Index",
+    "link": "/index"
   }
 ]
