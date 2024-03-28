@@ -7,7 +7,6 @@ import CategoryNav from "./CategoryNav.vue";
 import ArticleMeta from "./ArticleMeta.vue";
 import ArticleList from "./ArticleList.vue";
 import ArticleComment from "./ArticleComment.vue";
-import ArticleBottomNav from "./ArticleBottomNav.vue";
 import ArticleCopyright from "./ArticleCopyright.vue";
 const { Layout } = DefaultTheme;
 
@@ -58,7 +57,6 @@ onUnmounted(() => {});
     <template #doc-bottom> </template>
     <template #doc-footer-before>
       <ArticleCopyright />
-      <ArticleBottomNav />
     </template>
     <!-- 文章尾部 -->
     <template #doc-after>

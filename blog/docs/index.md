@@ -2,12 +2,7 @@
 date: '2013-06-03'
 layout: home
 title: 首页
-index: true
 hide: true
+hide_child: false
+create_time: 1711551874
 ---
-
-
-# Index
-
-test，这是首页
-

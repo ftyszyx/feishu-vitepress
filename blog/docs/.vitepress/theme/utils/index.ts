@@ -55,12 +55,6 @@ export function formatShowDate(date: Date | string) {
   const oneWeek = oneDay * 7;
   const oneMonth = oneDay * 30;
   const oneYear = oneDay * 365;
-  // if (diff < oneMinute) {
-  //   return `${Math.floor(diff / oneSeconds)}秒前`;
-  // }
-  // if (diff < oneHour) {
-  //   return `${Math.floor(diff / oneMinute)}分钟前`;
-  // }
   if (diff < oneDay) {
     return `今天`;
   }

@@ -17,6 +17,7 @@ export interface SideBarItem {
   text: string;
   items?: SideBarItem[];
   link?: string;
+  collapsed?: boolean;
 }
 export const FeiShuDoc_pre = "feishu_";
 export class FeishuDocHelp {
@@ -172,27 +173,27 @@ export class FeishuDocHelp {
     for (let i = 0; i < items.length; i++) {
       const item = items[i];
       if (item.obj_type == "doc" || item.obj_type == "docx") {
-        let title = item.title.toLocaleLowerCase();
-        if (!title.includes("[hide]") && !title.includes("[隐藏]")) {
-          console.log("get doc", item.title);
-          docs.push(item);
+        let post_title = item.title.toLocaleLowerCase();
+        console.log("get doc info", item.title);
+        docs.push(item);
+        item.children = [];
+        item.wiki_path_arr = parent_path_arr;
+        let create_time = new Date(parseInt(item.node_create_time) * 1000);
+        let time_str = `${create_time.getFullYear()}_${create_time.getMonth()}_${create_time.getDate()}`;
+        let filename = `${FeiShuDoc_pre}_${time_str}_${parent_path_arr.join("_")}_${item.title}`.toLowerCase();
+        if (parent_path_arr.length == 0 && item.title.toLowerCase() == "index") filename = "index";
+        const { hide, hide_child, title } = await this.fetchDocBody(path.join(option.doc_root_path, `${filename}.md`), pic_path, item);
+        const sider_item: SideBarItem = { text: title || item.title };
+        if (hide !== true) {
           console.info("Writing doc", item.title);
-          item.children = [];
-          item.wiki_path_arr = parent_path_arr;
-          if (item.has_child) {
-            const new_parents = item.wiki_path_arr.concat(item.title);
-            const sider_item = { text: item.title, items: [] };
-            await this._fetchAllDocs(new_parents, sider_item.items, item.children, spaceId, item.node_token, option);
-            sider_items.push(sider_item);
-          } else {
-            //根目录不下载
-            let create_time = new Date(parseInt(item.node_create_time) * 1000);
-            let time_str = `${create_time.getFullYear()}_${create_time.getMonth()}_${create_time.getDate()}`;
-            let filename = `${FeiShuDoc_pre}_${time_str}_${parent_path_arr.join("_")}_${item.title}`.toLowerCase();
-            if (parent_path_arr.length == 0 && item.title.toLowerCase() == "index") filename = "index";
-            await this.fetchDocBody(path.join(option.doc_root_path, `${filename}.md`), pic_path, item);
-            sider_items.push({ text: item.title, link: `/${filename}` });
-          }
+          sider_item.link = `/${filename}`;
+          sider_items.push(sider_item);
+        }
+        if (item.has_child && hide_child !== true) {
+          const new_parents = item.wiki_path_arr.concat(item.title);
+          sider_item.items = [];
+          sider_item.collapsed = false;
+          await this._fetchAllDocs(new_parents, sider_item.items, item.children, spaceId, item.node_token, option);
         }
       }
     }
@@ -232,13 +233,14 @@ export class FeishuDocHelp {
     };
     const render = new MarkdownRenderer(render_doc);
     let content = render.parse();
-    let meta = render.meta;
+    let meta = render.meta || {};
     let cover_token = "";
+    let isindex = path.basename(filepath) == "index.md";
+    if (meta.hide == true && isindex == false) return { ...meta };
     if (render.head_img) {
       const reg_patt = /<img[^>]+src[\s]*=[\s]*"([^"]+)"/;
       const match_res = reg_patt.exec(render.head_img);
       if (match_res.length >= 2) cover_token = match_res[1].trim();
-      // console.log("get token", cover_token, match_res, match_res.length);
     }
     for (const filetoken in render.fileTokens) {
       const file_res = await this.downloadFile(filetoken, pic_path);
@@ -247,19 +249,18 @@ export class FeishuDocHelp {
       const base_url = "/";
       let assetURL = base_url + path.relative(path.dirname(filepath), pic_full_path);
       assetURL = assetURL.replace("\\", "/");
-      // console.log("get url", pic_full_path, assetURL, path.dirname(filepath));
       if (filetoken == cover_token) {
-        meta = meta || {};
         meta["cover"] = assetURL;
         continue;
       }
       content = replaceLinks(content, filetoken, assetURL);
     }
-    if (meta) {
-      content = this.genMetaText(meta) + "\n\n" + content;
-    }
-    // console.log("meta", meta);
-    // console.log("headimg", render.head_img);
+    // const create_time = new Date(parseInt(fileDoc.node_create_time) * 1000);
+    meta["create_time"] = parseInt(fileDoc.node_create_time);
+    meta["title"] = meta.title || fileDoc.title;
+    content = this.genMetaText(meta);
+    if (!meta.hide || isindex == false) content = +"\n\n" + content;
     fs.writeFileSync(filepath, content);
+    return { ...meta };
   }
 }

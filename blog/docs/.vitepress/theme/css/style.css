@@ -1,5 +1,6 @@
 :root {
-  --vp-layout-max-width: 1280px;
+  --vp-layout-max-width: 1600px;
+  --vp-sidebar-width: 300px;
   --vp-c-bg: #fafafa;
   --c-brand: #3eaf7c;
   --c-brand-light: #4abf8a;

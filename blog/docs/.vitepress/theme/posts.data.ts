@@ -14,18 +14,18 @@ export default createContentLoader("/*.md", {
         excerpt,
         cover: frontmatter.cover,
         categories: frontmatter.categories,
-        date: formatDate(frontmatter.date),
+        date: formatDate(frontmatter.create_time),
         layout: frontmatter.layout,
       }))
       .sort((a, b) => b.date.time - a.date.time);
   },
 });
 
-function formatDate(raw: string): Post["date"] {
-  const date = new Date(raw);
+function formatDate(raw: number): Post["date"] {
+  const date = new Date(raw * 1000);
   date.setUTCHours(12);
   return {
-    time: +date,
+    time: date,
     formatShowDate: formatShowDate(date),
     string: date.toLocaleDateString("en-US", {
       year: "numeric",

@@ -46,6 +46,7 @@ const pageKey = useCurrentPageKey()!;
 const articleList = computed(() => {
   const start = (pageKey.value - 1) * pageSize;
   const end = start + pageSize;
+  // console.log("posted", filteredPosts);
   return filteredPosts.value.slice(start, end);
 });
 
@@ -140,11 +141,11 @@ onMounted(() => {
         >
           <ArticleCard
             :url="url"
-            :title="title"
+            :title="title || ''"
             :date="date"
-            :cover="cover"
-            :categories="categories"
-            :hit="hit"
+            :cover="cover || ''"
+            :categories="categories || []"
+            :hit="hit || 0"
             :isArticleListHitsFetched="isArticleListHitsFetched"
           />
         </li>

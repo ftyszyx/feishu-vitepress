@@ -44,6 +44,7 @@ export default defineConfig({
     config: (md) => {},
   },
   head: [
+    ["link", { rel: "icon", href: "/logo.png" }],
     [
       "meta",
       {
@@ -67,13 +68,15 @@ export default defineConfig({
     return head;
   },
   themeConfig: {
+    search: {
+      provider: "local",
+    },
     logo: "./logo.png",
     nav: [{ text: "关于", link: BlogConfig.github }],
     socialLinks: [
       { icon: "twitter", link: BlogConfig.twitter },
       { icon: "github", link: BlogConfig.github },
     ],
-
     sidebar: sidebar,
     outlineTitle: "本文导览",
     lastUpdatedText: "最后更新时间",
