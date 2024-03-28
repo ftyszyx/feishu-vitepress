@@ -1,14 +1,23 @@
 import { createContentLoader, defineConfig, HeadConfig } from "vitepress";
-import { BlogConfig } from "./theme/constant.js";
-import sidebar from "../sider.json";
+import { BlogConfig } from "../theme/constant.js";
+import sidebar from "../../sider.json";
 import { copyFileSync } from "fs";
 import path from "path";
 import "dotenv/config";
-export default defineConfig({
+export interface ArtTalk {
+  site: string;
+  server: string;
+}
+export const arttalk: ArtTalk = {
+  site: "myblog",
+  server: "http://8.134.157.107:8080/",
+};
+
+export const shared = defineConfig({
   title: BlogConfig.name,
   description: BlogConfig.desc,
   cleanUrls: true,
-  appearance: false,
+  appearance: true,
   ignoreDeadLinks: true,
   base: process.env.BLOG_BASE_URL || "/",
   buildEnd: async (siteconfig) => {
@@ -68,6 +77,10 @@ export default defineConfig({
     return head;
   },
   themeConfig: {
+    arttalk: {
+      site: "myblog",
+      server: "http://8.134.157.107:8080/",
+    },
     search: {
       provider: "local",
     },
