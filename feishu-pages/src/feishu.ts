@@ -258,8 +258,9 @@ export class FeishuDocHelp {
     // const create_time = new Date(parseInt(fileDoc.node_create_time) * 1000);
     meta["create_time"] = parseInt(fileDoc.node_create_time);
     meta["title"] = meta.title || fileDoc.title;
-    content = this.genMetaText(meta);
-    if (!meta.hide || isindex == false) content = +"\n\n" + content;
+    const head_text = this.genMetaText(meta);
+    if (meta.hide == true && isindex) content = head_text;
+    else content = head_text + "\n\n" + content;
     fs.writeFileSync(filepath, content);
     return { ...meta };
   }
