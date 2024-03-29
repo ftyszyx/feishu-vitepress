@@ -1,6 +1,5 @@
 import { createContentLoader, defineConfig, HeadConfig } from "vitepress";
 import { BlogConfig } from "../theme/constant.js";
-import sidebar from "../../sider.json";
 import { copyFileSync } from "fs";
 import path from "path";
 import "dotenv/config";
@@ -13,6 +12,8 @@ export const arttalk: ArtTalk = {
   server: "http://8.134.157.107:8080/",
 };
 
+export const github_url = "https://github.com/ftyszyx";
+export const twitter_url = "https://twitter.com/zhangyuxin_new";
 export const shared = defineConfig({
   title: BlogConfig.name,
   description: BlogConfig.desc,
@@ -52,17 +53,6 @@ export const shared = defineConfig({
     },
     config: (md) => {},
   },
-  head: [
-    ["link", { rel: "icon", href: "/logo.png" }],
-    [
-      "meta",
-      {
-        name: "keywords",
-        content:
-          "科技,旅行,生活方式,程序员,互联网,自媒体,摄影师,编程,前端,前端工程师,独立博客,LUOLEI,Vlog,YouTuber",
-      },
-    ],
-  ],
   transformHead: ({ pageData }) => {
     const head: HeadConfig[] = [];
     head.push([
@@ -77,24 +67,13 @@ export const shared = defineConfig({
     return head;
   },
   themeConfig: {
-    arttalk: {
-      site: "myblog",
-      server: "http://8.134.157.107:8080/",
-    },
     search: {
       provider: "local",
     },
     logo: "./logo.png",
-    nav: [{ text: "关于", link: BlogConfig.github }],
     socialLinks: [
-      { icon: "twitter", link: BlogConfig.twitter },
-      { icon: "github", link: BlogConfig.github },
+      { icon: "twitter", link: twitter_url },
+      { icon: "github", link: github_url },
     ],
-    sidebar: sidebar,
-    outlineTitle: "本文导览",
-    lastUpdatedText: "最后更新时间",
-    footer: {
-      message: `Powered By <a href="${BlogConfig.github}">VitePress</a>`,
-    },
   },
 });

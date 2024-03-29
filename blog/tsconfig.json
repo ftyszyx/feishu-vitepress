@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
-    "module": "NodeNext",
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleResolution": "node",
     "allowJs": true,
     "strict": true,
     "noUnusedLocals": true,

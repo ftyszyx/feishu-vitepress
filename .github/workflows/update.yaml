@@ -28,9 +28,6 @@ jobs:
       - name: Install dependencies
         run: npm ci # or pnpm install / yarn install / bun install
 
-      - name: build feishu doc
-        run: npm run build # or pnpm install / yarn install / bun install
-
       - name: Exporting
         env:
           FEISHU_APP_ID: ${{ vars.FEISHU_APP_ID }}

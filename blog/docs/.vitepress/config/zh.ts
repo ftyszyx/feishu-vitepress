@@ -1,25 +1,32 @@
-import { createRequire } from "module";
-import { defineConfig, type DefaultTheme } from "vitepress";
-const require = createRequire(import.meta.url);
+import { defineConfig } from "vitepress";
+import sidebar from "../../sider.json";
 export const zh = defineConfig({
   lang: "zh-Hans",
   description: "个人博客",
+  head: [
+    ["link", { rel: "icon", href: "/logo.png" }],
+    [
+      "meta",
+      {
+        name: "keywords",
+        content:
+          "科技,旅行,生活方式,程序员,互联网,自媒体,摄影师,编程,前端,前端工程师,独立博客,LUOLEI,Vlog,YouTuber",
+      },
+    ],
+  ],
 
   themeConfig: {
     nav: [{ text: "关于", link: "https://github.com/ftyszyx" }],
-    sidebar: {
-      "/zh/guide/": { base: "/zh/guide/", items: sidebarGuide() },
-      "/zh/reference/": { base: "/zh/reference/", items: sidebarReference() },
-    },
-
+    outlineTitle: "本文导览",
+    lastUpdatedText: "最后更新时间",
     editLink: {
       pattern: "https://github.com/vuejs/vitepress/edit/main/docs/:path",
       text: "在 GitHub 上编辑此页面",
     },
-
+    sidebar: sidebar,
     footer: {
       message: "基于 MIT 许可发布",
-      copyright: `版权所有 © 2019-${new Date().getFullYear()} 尤雨溪`,
+      copyright: `版权所有 © 2019-${new Date().getFullYear()} 张雨鑫`,
     },
 
     docFooter: {

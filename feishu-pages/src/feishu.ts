@@ -1,23 +1,16 @@
 import axios, { AxiosResponse } from "axios";
-import { MarkdownRenderer } from "feishu-docx";
+import { MarkdownRenderer } from "./feishu_docx";
 import fs from "fs";
 import mime from "mime-types";
 import yaml from "js-yaml";
 import path from "path";
 import { humanizeFileSize, isValidCacheExist, replaceLinks } from "./utils";
-import { WikiNode } from "./type.def";
+import { SideBarItem, WikiNode } from "./type.def";
 import MyFetch from "./my_fetch";
-import { appconfig } from "./config";
 export interface SaveDocOption {
   save_sider_name?: string;
   doc_root_path: string;
   pic_dir_name: string;
-}
-export interface SideBarItem {
-  text: string;
-  items?: SideBarItem[];
-  link?: string;
-  collapsed?: boolean;
 }
 export const FeiShuDoc_pre = "feishu_";
 export class FeishuDocHelp {

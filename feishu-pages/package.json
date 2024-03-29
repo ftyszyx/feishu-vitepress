@@ -16,21 +16,25 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc -d",
-    "dev": "npm run build && node dist/index.js",
+    "export": "npm run build && node dist/index.js export",
+    "trans_en": "npm run build && node dist/index.js trans --tolan en",
     "test": "jest"
   },
   "dependencies": {
     "axios": "^1.5.0",
+    "bing-translate-api": "^4.0.1",
+    "commander": "^12.0.0",
     "dotenv": "^16.3.1",
-    "feishu-docx": "^0.6.3",
+    "js-yaml": "^4.1.0",
+    "jsdom": "^22.1.0",
     "marked": "^11.1.0",
     "marked-xhtml": "^1.0.8",
     "mime-types": "^2.1.35",
     "typescript": "^5.2.2"
   },
   "devDependencies": {
-    "@types/node": "^20.5.7",
     "@jest/globals": "^29.6.4",
+    "@types/node": "^20.5.7",
     "jest": "^29.6.4",
     "js-yaml": "^4.1.0",
     "ts-jest": "^29.1.1"

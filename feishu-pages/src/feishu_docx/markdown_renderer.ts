@@ -1,4 +1,4 @@
-import { CodeLanguage } from "feishu-docx";
+import { CodeLanguage } from "./types";
 import YAML from "js-yaml";
 import { marked } from "marked";
 import { markedXhtml } from "marked-xhtml";
@@ -756,7 +756,7 @@ export class MarkdownRenderer extends Renderer {
 
   markdownToHTML(markdown: string): string {
     let html = marked.parse(markdown, { gfm: true, breaks: true });
-    return html;
+    return html as string;
   }
 
   tableCellAttrHTML(mergeInfos: TableMergeInfo[], idx: number): string {

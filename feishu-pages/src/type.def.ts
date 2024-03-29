@@ -1,5 +1,3 @@
-import { FileToken } from "feishu-docx";
-
 export interface WikiNode {
   depth: number;
   children: WikiNode[];
@@ -35,4 +33,11 @@ export interface WikiNode {
   node_create_time: string;
   creator: string;
   owner: string;
+}
+
+export interface SideBarItem {
+  text: string;
+  items?: SideBarItem[];
+  link?: string;
+  collapsed?: boolean;
 }

@@ -1,43 +1,37 @@
-import { createRequire } from "module";
-import { defineConfig, type DefaultTheme } from "vitepress";
-const require = createRequire(import.meta.url);
-const pkg = require("vitepress/package.json");
-export const zh = defineConfig({
-  lang: "zh-Hans",
-  description: "由 Vite 和 Vue 驱动的静态站点生成器",
+import { defineConfig } from "vitepress";
+import sidebar from "../../en/sider.json";
+export const en = defineConfig({
+  lang: "en",
+  description: "my blog",
+  head: [
+    ["link", { rel: "icon", href: "/logo.png" }],
+    [
+      "meta",
+      {
+        name: "keywords",
+        content:
+          "科技,旅行,生活方式,程序员,互联网,自媒体,摄影师,编程,前端,前端工程师,独立博客,LUOLEI,Vlog,YouTuber",
+      },
+    ],
+  ],
 
   themeConfig: {
-    nav: [{ text: "关于", link: "https://github.com/ftyszyx" }],
-    sidebar: {
-      "/zh/guide/": { base: "/zh/guide/", items: sidebarGuide() },
-      "/zh/reference/": { base: "/zh/reference/", items: sidebarReference() },
-    },
-
+    nav: [{ text: "about", link: "https://github.com/ftyszyx" }],
+    outlineTitle: "guide",
+    lastUpdatedText: "last update time",
     editLink: {
       pattern: "https://github.com/vuejs/vitepress/edit/main/docs/:path",
-      text: "在 GitHub 上编辑此页面",
+      text: "edit on this page",
     },
-
+    sidebar: sidebar,
     footer: {
-      message: "基于 MIT 许可发布",
-      copyright: `版权所有 © 2019-${new Date().getFullYear()} 尤雨溪`,
+      message: "MIT",
+      copyright: `© 2019-${new Date().getFullYear()} zhang.yuxin`,
     },
 
     docFooter: {
-      prev: "上一页",
-      next: "下一页",
-    },
-
-    outline: {
-      label: "页面导航",
-    },
-
-    lastUpdated: {
-      text: "最后更新于",
-      formatOptions: {
-        dateStyle: "short",
-        timeStyle: "medium",
-      },
+      prev: "pre",
+      next: "next",
     },
 
     langMenuLabel: "多语言",

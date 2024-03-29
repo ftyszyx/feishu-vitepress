@@ -7,7 +7,6 @@ export const appconfig = {
   spaceId: process.env.FEISHU_SPACE_ID,
   output_dir: path.resolve(process.env.OUTPUT_DIR || "./dist"),
   asset_name: "assets",
-  sider_js_name: process.env.SIDER_NAME || "sider.ts",
 };
 
 const checkEnv = () => {
