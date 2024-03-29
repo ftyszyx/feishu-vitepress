@@ -1,21 +1,23 @@
 <script setup lang="ts">
 import "artalk/dist/Artalk.css";
 import Artalk from "artalk";
-import { BlogConfig } from "../constant";
-import { watch, nextTick, ref, onMounted } from "vue";
-import { useData, useRouter, PageData } from "vitepress";
+import { watch, nextTick, ref, onMounted, computed } from "vue";
+import { useData, useRouter, PageData, withBase, useRoute } from "vitepress";
+import { ArttalkConfig } from "../constant";
 const artalkEl = ref<HTMLElement>();
-const router = useRouter();
+const route = useRoute();
 const page = useData().page;
-
+const articleLink = computed(() => {
+  return `${window.location.host}${withBase(route.path)}`;
+});
 onMounted(async () => {
   await nextTick();
   initArtalk(page.value);
 });
 
-console.log("router path", router.route.data.relativePath);
+console.log("router path", articleLink.value, route.path);
 watch(
-  () => router.route.data.relativePath,
+  () => route.data.relativePath,
   async (path) => {
     console.log("page", page.value);
     await nextTick();
@@ -27,10 +29,10 @@ watch(
 
 function initArtalk(page: PageData) {
   const artalk = Artalk.init({
-    pageKey: `${BlogConfig.baseDom}${location.pathname}/`,
+    pageKey: `${articleLink}`,
     pageTitle: page.title,
     el: artalkEl.value,
-    ...BlogConfig.arttalk,
+    ...ArttalkConfig,
   });
 
   // 夜间模式

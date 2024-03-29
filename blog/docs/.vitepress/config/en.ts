@@ -2,6 +2,7 @@ import { defineConfig } from "vitepress";
 import sidebar from "../../en/sider.json";
 
 export const en = defineConfig({
+  title: "my blog2",
   lang: "en",
   description: "my blog",
   head: [

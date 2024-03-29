@@ -26,3 +26,11 @@ export const categoryMap: CategoryInfo[] = [
 export const get_lang_text = (key: string, lan: string): string => {
   return landic[lan][key];
 };
+export interface ArtTalk {
+  site: string;
+  server: string;
+}
+export const ArttalkConfig: ArtTalk = {
+  site: "myblog",
+  server: "http://8.134.157.107:8080/",
+};

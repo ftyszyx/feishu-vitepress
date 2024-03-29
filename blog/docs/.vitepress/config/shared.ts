@@ -1,22 +1,11 @@
 import { createContentLoader, defineConfig, HeadConfig } from "vitepress";
-import { BlogConfig } from "../theme/constant.js";
 import { copyFileSync } from "fs";
 import path from "path";
 import "dotenv/config";
-export interface ArtTalk {
-  site: string;
-  server: string;
-}
-export const arttalk: ArtTalk = {
-  site: "myblog",
-  server: "http://8.134.157.107:8080/",
-};
 
 export const github_url = "https://github.com/ftyszyx";
 export const twitter_url = "https://twitter.com/zhangyuxin_new";
 export const shared = defineConfig({
-  title: BlogConfig.name,
-  description: BlogConfig.desc,
   cleanUrls: true,
   appearance: true,
   ignoreDeadLinks: true,

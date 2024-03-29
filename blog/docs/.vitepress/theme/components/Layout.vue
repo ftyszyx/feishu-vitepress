@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, watch, nextTick } from "vue";
 import DefaultTheme from "vitepress/theme";
-import { useRouter, withBase } from "vitepress";
+import { useRoute, useRouter, withBase } from "vitepress";
 import mediumZoom from "medium-zoom";
 import CategoryNav from "./CategoryNav.vue";
 import ArticleMeta from "./ArticleMeta.vue";
@@ -11,6 +11,8 @@ import ArticleCopyright from "./ArticleCopyright.vue";
 const { Layout } = DefaultTheme;
 
 const router = useRouter();
+const route = useRoute();
+console.log("path", route.path);
 const initImagesZoom = () => {
   mediumZoom(".main img", {
     background: "var(--vp-c-bg)",
