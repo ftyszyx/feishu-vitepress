@@ -26,9 +26,9 @@ const categoriesMeta = computed(() => {
   return categoryMap
     .map((categoryDetail) => {
       return {
-        name: categoryDetail.name,
-        text: categoryDetail.text,
-        count: categoryCounts[categoryDetail.text] || 0,
+        name: categoryDetail.label,
+        text: categoryDetail.name,
+        count: categoryCounts[categoryDetail.name] || 0,
         isHome: categoryDetail.isHome,
       };
     })
@@ -40,7 +40,7 @@ const isCategoryExist = computed(() => {
 });
 
 function getCategoryDetail(text: string) {
-  const category = categoryMap.find((cat) => cat.text === text);
+  const category = categoryMap.find((cat) => cat.name === text);
   if (category) {
     return category;
   } else {

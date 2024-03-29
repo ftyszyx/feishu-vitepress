@@ -248,7 +248,6 @@ export class FeishuDocHelp {
       }
       content = replaceLinks(content, filetoken, assetURL);
     }
-    // const create_time = new Date(parseInt(fileDoc.node_create_time) * 1000);
     meta["create_time"] = parseInt(fileDoc.node_create_time);
     meta["title"] = meta.title || fileDoc.title;
     const head_text = this.genMetaText(meta);

@@ -1,15 +1,11 @@
 [
   {
     "text": "Learn technology",
-    "link": "/feishu__2024_2_22__learn_skill",
+    "link": "/en/feishu__2024_2_22__learn_skill",
     "items": [
       {
-        "text": "2014 NetEase Front-end Development Written Exam Notes",
-        "link": "/feishu__2023_1_21_learn_skill_vim"
-      },
-      {
-        "text": "test",
-        "link": "/feishu__2024_2_25_learn_skill_test"
+        "text": "vim study notes",
+        "link": "/en/feishu__2023_1_21_learn_skill_vim"
       }
     ],
     "collapsed": false

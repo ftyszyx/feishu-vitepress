@@ -11,6 +11,7 @@ export default createContentLoader("/*.md", {
       .map(({ url, frontmatter, excerpt }) => ({
         title: frontmatter.title,
         url,
+        hit: 0,
         excerpt,
         cover: frontmatter.cover,
         categories: frontmatter.categories,
@@ -21,11 +22,11 @@ export default createContentLoader("/*.md", {
   },
 });
 
-function formatDate(raw: number): Post["date"] {
-  const date = new Date(raw * 1000);
+function formatDate(create_time: number): Post["date"] {
+  const date = new Date(create_time * 1000);
   date.setUTCHours(12);
   return {
-    time: date,
+    time: create_time,
     formatShowDate: formatShowDate(date),
     string: date.toLocaleDateString("en-US", {
       year: "numeric",

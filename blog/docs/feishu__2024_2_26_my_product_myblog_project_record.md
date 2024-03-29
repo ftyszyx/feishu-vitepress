@@ -1,6 +1,7 @@
 ---
 create_time: 1711417448
 title: project_record
+creator: ou_8cb1a95e5b1beb29a8771423c207a767
 ---
 
 
@@ -139,7 +140,37 @@ vitepress内部支持
 
 ## 增加评论
 
-用artalk
+用artalk实现，需要自己搭服务器
+
+# 2024/3/29
+
+## 多语言支持
+
+毕竟是展示自己用的，还是要加英语，
+
+英文可以通过机器生成，框架参考官方。
+
+先找个参考的软件，我经常使用一款插件：沉浸式翻译
+
+https://immersivetranslate.com/
+
+https://github.com/immersive-translate/immersive-translate/
+
+他是用google翻译的，效果还行
+
+找一下相关的gogole 翻译npm 库
+
+用这个库https://github.com/vitalets/google-translate-api?tab=readme-ov-file#readme
+
+但免费的google 翻译有限制
+
+如果提示有次数限制了，需要用代理，这里有免费的代理
+
+https://free-proxy-list.net/
+
+太麻烦了，换微软件 的
+
+https://github.com/plainheart/bing-translate-api
 
 ## 增加点击统计
 

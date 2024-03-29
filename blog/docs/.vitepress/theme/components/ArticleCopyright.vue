@@ -1,17 +1,16 @@
 <script setup lang="ts">
 import { computed, onMounted } from "vue";
-import { useData, useRoute } from "vitepress";
-import { BlogConfig } from "../constant";
-const { frontmatter } = useData();
+import { useData, useRoute, withBase } from "vitepress";
+import { get_lang_text } from "../constant";
+const { frontmatter, lang } = useData();
 const route = useRoute();
 const title = computed(() => frontmatter.value.title);
 const date = computed(() => frontmatter.value.date);
-const authorLink = computed(() => {
-  return `${BlogConfig.baseUrl}`;
-});
-
+const author = computed(
+  () => frontmatter.value.author || get_lang_text("author", lang.value),
+);
 const articleLink = computed(() => {
-  return `${BlogConfig.baseUrl}${route.path}`;
+  return `${window.location.host}${withBase(route.path)}`;
 });
 
 onMounted(() => {});
@@ -39,31 +38,30 @@ onMounted(() => {});
           <path d="M14.5 9a3.5 4 0 1 0 0 6" />
         </svg>
         <div>
-          <span class="mr-1 font-medium">作者:</span>
-          <span>
-            <a
-              :href="authorLink"
-              class="text-blue-600 dark:text-blue-300 hover:text-blue-500"
-              rel="noreferrer"
-              target="_blank"
-            >
-              {{ BlogConfig.author }}
-            </a>
-          </span>
+          <span class="mr-1 font-medium"
+            >{{ get_lang_text("autor_lan", lang) }}:</span
+          >
+          <span> {{}} </span>
         </div>
 
         <div>
-          <span class="mr-1 font-medium">文章标题:</span>
+          <span class="mr-1 font-medium"
+            >{{ get_lang_text("title", lang) }}:</span
+          >
           <span> {{ title }} </span>
         </div>
         <div>
-          <span class="mr-1 font-medium">发表时间:</span>
+          <span class="mr-1 font-medium"
+            >{{ get_lang_text("create_time", lang) }}:</span
+          >
           <span>
             <span> {{ date }} </span>
           </span>
         </div>
         <div>
-          <span class="mr-1 font-medium">文章链接:</span>
+          <span class="mr-1 font-medium"
+            >{{ get_lang_text("url_link", lang) }}:</span
+          >
           <span>
             <a
               :href="articleLink"

@@ -13,8 +13,10 @@ export interface Post {
 }
 
 export interface CategoryInfo {
-  text: string;
   name: string;
   count?: number;
   isHome: boolean;
+}
+export interface MySiteInfo {
+  author: string;
 }
