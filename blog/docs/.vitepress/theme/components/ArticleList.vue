@@ -1,15 +1,18 @@
 <script setup lang="ts">
 import { computed, ref, watch, onMounted } from "vue";
-import { useRoute, useRouter } from "vitepress";
+import { useData, useRouter } from "vitepress";
 import { useBrowserLocation } from "@vueuse/core";
 import { data } from "../posts.data.js";
 import { useCurrentCategoryKey, useCurrentPageKey } from "../configProvider";
 import ArticleCard from "./ArticleCard.vue";
 import { Post } from "../type_def.js";
+import { get_lang_text } from "../constant";
 
+const { lang } = useData();
 const router = useRouter();
 const location = useBrowserLocation();
 // 获得当前页面的分类
+// const posts = page;
 const categoryKey = useCurrentCategoryKey()!;
 const isArticleListHitsFetched = ref<boolean>(false);
 const currentCategory = computed(() => categoryKey.value);
@@ -162,7 +165,11 @@ onMounted(() => {
         "
         class="inline-block bg-white dark:text-slate-300 shadow-md rounded px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal transition duration-150 ease-in-out"
       >
-        {{ !hasPrevPage ? "第一页" : "上一页" }}
+        {{
+          !hasPrevPage
+            ? get_lang_text("home_first", lang)
+            : get_lang_text("home_prev", lang)
+        }}
       </button>
       <p class="text-center font-medium md:text-sm mt-2.5 w-12">
         <a
@@ -186,7 +193,11 @@ onMounted(() => {
         }"
         class="inline-block bg-white rounded dark:text-slate-300 shadow-md px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-neutral-800 transition duration-150 ease-in-out"
       >
-        {{ !hasNextPage ? "结束" : "下一页" }}
+        {{
+          !hasNextPage
+            ? get_lang_text("home_end", lang)
+            : get_lang_text("home_next", lang)
+        }}
       </button>
     </div>
   </div>

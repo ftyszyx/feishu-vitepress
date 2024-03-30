@@ -3,8 +3,13 @@
     "category_hot":"热门",
     "category_lifestyle":"生活",
     "category_work":"工作",
+      "category_new": "最新",
     "autor_lan":"作者",
     "create_time":"发表时间",
     "url_link":"文章链接",
-    "title":"文章标题"
+    "title":"文章标题",
+    "home_end":"结束",
+    "home_next":"下一页",
+    "home_prev":"上一页",
+    "home_first":"第一页"
 }

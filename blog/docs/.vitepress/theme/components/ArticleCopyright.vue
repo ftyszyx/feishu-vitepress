@@ -2,12 +2,19 @@
 import { computed, onMounted } from "vue";
 import { useData, useRoute, withBase } from "vitepress";
 import { get_lang_text } from "../constant";
-const { frontmatter, lang } = useData();
+const { frontmatter, lang, page } = useData();
+const { create_time } = frontmatter.value;
 const route = useRoute();
 const title = computed(() => frontmatter.value.title);
-const date = computed(() => frontmatter.value.date);
+const date = computed(() => {
+  return new Date(create_time * 1000).toLocaleDateString();
+});
+const cur_lang = computed(() => {
+  return lang.value;
+});
+console.log("article right", page.value);
 const author = computed(
-  () => frontmatter.value.author || get_lang_text("author", lang.value),
+  () => frontmatter.value.author || get_lang_text("author", cur_lang.value),
 );
 const articleLink = computed(() => {
   return `${window.location.host}${withBase(route.path)}`;
@@ -41,7 +48,7 @@ onMounted(() => {});
           <span class="mr-1 font-medium"
             >{{ get_lang_text("autor_lan", lang) }}:</span
           >
-          <span> {{}} </span>
+          <span> {{ author }} </span>
         </div>
 
         <div>

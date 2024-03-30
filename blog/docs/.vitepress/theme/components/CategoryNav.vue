@@ -1,18 +1,17 @@
 <script setup lang="ts">
 import { computed, ref, watch, onMounted, watchEffect, nextTick } from "vue";
-import { useRoute, useRouter } from "vitepress";
+import { useData, useRoute, useRouter } from "vitepress";
 import { useBrowserLocation } from "@vueuse/core";
 import { data } from "../posts.data.js";
 import { useCurrentCategoryKey, useCurrentPageKey } from "../configProvider";
-import { categoryMap } from "../constant"; // 导入分类映射
-const route = useRoute();
+import { categoryMap, get_lang_text } from "../constant"; // 导入分类映射
+const { lang } = useData();
 const router = useRouter();
 const location = useBrowserLocation();
 
 const pageKey = useCurrentPageKey()!;
 const currentCategory = useCurrentCategoryKey()!;
 const categoriesMeta = computed(() => {
-  // console.log("categories", data);
   const categoryCounts: Record<string, number> = {};
   for (const post of data) {
     for (const category of post.categories || []) {
@@ -26,10 +25,9 @@ const categoriesMeta = computed(() => {
   return categoryMap
     .map((categoryDetail) => {
       return {
-        name: categoryDetail.label,
-        text: categoryDetail.name,
+        ...categoryDetail,
+        text: get_lang_text(categoryDetail.name, lang.value),
         count: categoryCounts[categoryDetail.name] || 0,
-        isHome: categoryDetail.isHome,
       };
     })
     .filter((category) => category.isHome);
@@ -100,7 +98,8 @@ watch(
             }"
             class="relative px-3 py-1 ml-0 mr-0 text-sm text-center home-nav-title hover:text-rose-400 rounded-xl md:text-base md:ml-1 md:mr-2"
           >
-            最新<i class="hidden ml-3 md:inline-block text-slate-300">/</i>
+            {{ get_lang_text("category_new", lang)
+            }}<i class="hidden ml-3 md:inline-block text-slate-300">/</i>
           </a>
 
           <a
@@ -112,7 +111,7 @@ watch(
               'text-rose-400': category.text === currentCategory,
             }"
           >
-            {{ category.name }}
+            {{ category.text }}
             <i
               class="hidden ml-3 md:inline-block text-slate-300"
               :class="{ 'md:hidden': index === categoriesMeta.length - 1 }"

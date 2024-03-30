@@ -12,7 +12,6 @@ const { Layout } = DefaultTheme;
 
 const router = useRouter();
 const route = useRoute();
-console.log("path", route.path);
 const initImagesZoom = () => {
   mediumZoom(".main img", {
     background: "var(--vp-c-bg)",

@@ -7,19 +7,15 @@ import { ArttalkConfig } from "../constant";
 const artalkEl = ref<HTMLElement>();
 const route = useRoute();
 const page = useData().page;
-const articleLink = computed(() => {
-  return `${window.location.host}${withBase(route.path)}`;
-});
 onMounted(async () => {
   await nextTick();
   initArtalk(page.value);
 });
 
-console.log("router path", articleLink.value, route.path);
 watch(
-  () => route.data.relativePath,
+  () => route.path,
   async (path) => {
-    console.log("page", page.value);
+    // console.log("page", page.value);
     await nextTick();
     if (artalkEl.value) {
       initArtalk(page.value);
@@ -29,7 +25,7 @@ watch(
 
 function initArtalk(page: PageData) {
   const artalk = Artalk.init({
-    pageKey: `${articleLink}`,
+    pageKey: `${route.path}`,
     pageTitle: page.title,
     el: artalkEl.value,
     ...ArttalkConfig,

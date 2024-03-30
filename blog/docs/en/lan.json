@@ -3,8 +3,13 @@
   "category_hot": "Hot",
   "category_lifestyle": "life",
   "category_work": "Job",
+  "category_new": "New",
   "autor_lan": "author",
   "create_time": "Publication time",
   "url_link": "Link to article",
-  "title": "Title of the article"
+  "title": "Title of the article",
+      "home_end":"end",
+    "home_next":"next",
+    "home_prev":"prev",
+    "home_first":"first"
 }

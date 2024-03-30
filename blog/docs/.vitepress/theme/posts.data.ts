@@ -4,25 +4,27 @@ import { Post } from "./type_def";
 declare const data: Post[];
 export { data };
 export default createContentLoader("/*.md", {
+  render: true,
   excerpt: true,
   transform(raw): Post[] {
+    // console.log("transform ");
     return raw
       .filter(({ frontmatter }) => !frontmatter.hide)
-      .map(({ url, frontmatter, excerpt }) => ({
-        title: frontmatter.title,
-        url,
-        hit: 0,
-        excerpt,
-        cover: frontmatter.cover,
-        categories: frontmatter.categories,
-        date: formatDate(frontmatter.create_time),
-        layout: frontmatter.layout,
-      }))
+      .map(
+        ({ url, frontmatter, excerpt }) =>
+          ({
+            ...frontmatter,
+            url,
+            hit: 0,
+            excerpt,
+            date: formatDate(frontmatter.create_time),
+          }) as Post,
+      )
       .sort((a, b) => b.date.time - a.date.time);
   },
 });
 
-function formatDate(create_time: number): Post["date"] {
+export function formatDate(create_time: number): Post["date"] {
   const date = new Date(create_time * 1000);
   date.setUTCHours(12);
   return {

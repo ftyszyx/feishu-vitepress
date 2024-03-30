@@ -1,7 +1,7 @@
 import { CategoryInfo } from "./type_def.ts";
 
 import cn_lan from "../../lan.json";
-import en_lan from "../../lan.json";
+import en_lan from "../../en/lan.json";
 
 const landic: Record<string, Record<string, string>> = {
   en: en_lan,
