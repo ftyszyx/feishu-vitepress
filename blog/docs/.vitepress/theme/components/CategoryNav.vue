@@ -26,7 +26,7 @@ const categoriesMeta = computed(() => {
     .map((categoryDetail) => {
       return {
         ...categoryDetail,
-        text: get_lang_text(categoryDetail.name, lang.value),
+        text: get_lang_text(`category_${categoryDetail.name}`, lang.value),
         count: categoryCounts[categoryDetail.name] || 0,
       };
     })
