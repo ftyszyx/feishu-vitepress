@@ -10,6 +10,17 @@ export const shared = defineConfig({
   appearance: true,
   ignoreDeadLinks: true,
   base: process.env.BLOG_BASE_URL || "/",
+  head: [
+    ["link", { rel: "icon", href: "/logo.png" }],
+    [
+      "meta",
+      {
+        name: "keywords",
+        content:
+          "科技,旅行,生活方式,程序员,互联网,自媒体,摄影师,编程,前端,前端工程师,独立博客,LUOLEI,Vlog,YouTuber",
+      },
+    ],
+  ],
   buildEnd: async (siteconfig) => {
     const coverurls: string[] = await createContentLoader("/*.md", {
       excerpt: true,

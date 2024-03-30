@@ -4,17 +4,6 @@ export const zh = defineConfig({
   title: "小白看世界",
   lang: "zh-Hans",
   description: "个人博客",
-  head: [
-    ["link", { rel: "icon", href: "/logo.png" }],
-    [
-      "meta",
-      {
-        name: "keywords",
-        content:
-          "科技,旅行,生活方式,程序员,互联网,自媒体,摄影师,编程,前端,前端工程师,独立博客,LUOLEI,Vlog,YouTuber",
-      },
-    ],
-  ],
 
   themeConfig: {
     nav: [{ text: "关于", link: "https://github.com/ftyszyx" }],

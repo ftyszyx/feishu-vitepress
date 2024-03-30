@@ -175,7 +175,7 @@ onMounted(() => {
         <a
           class="inline-block underline decoration-pink-500 text-neutral-500 dark:text-neutral-500"
           >{{ pageKey }}</a
-        ><span class="text-neutral-900 dark:text-neutral-500">/</span
+        ><span class="text-neutral-900 dark:text-neutral-100">/</span
         ><a
           class="inline-block underline decoration-indigo-500 text-neutral-500 dark:text-neutral-500"
           >{{ pageTotal }}</a
