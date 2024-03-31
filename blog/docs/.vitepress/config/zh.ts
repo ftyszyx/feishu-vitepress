@@ -24,9 +24,6 @@ export const zh = defineConfig({
       next: "下一页",
     },
 
-    outline: {
-      label: "页面导航",
-    },
 
     lastUpdated: {
       text: "最后更新于",

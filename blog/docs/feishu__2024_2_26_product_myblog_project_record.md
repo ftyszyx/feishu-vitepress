@@ -175,6 +175,14 @@ https://github.com/plainheart/bing-translate-api
 
 ## 增加点击统计
 
+目前找到的只能统计点击 数，但我还想看到整 个网站的所有点击，并能排序
+
+这就需要一个汇总功能 
+
+看有一个开源项目https://github.com/ftyszyx/umami
+
+看能不能在上面改一下实现 
+
 ## 增加浏览统计
 
 （之前有个可以记录用户全程）

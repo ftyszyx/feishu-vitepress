@@ -74,6 +74,10 @@ export const shared = defineConfig({
     return head;
   },
   themeConfig: {
+    aside:true,
+    outline: {
+      level:[2,6]
+    },
     search: {
       provider: "local",
     },

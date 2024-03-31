@@ -25,56 +25,6 @@
   }
 }
 
-/* 暗夜模式 */
-.dark:root {
-  --vp-c-bg: #1e1e20;
-  --vp-c-mute: #9ca3af;
-  --vp-code-bg: #0f0f0f;
-}
-
-html {
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-a:active,
-&:visited,
-&:link,
-&:hover,
-&:focus {
-  -webkit-tap-highlight-color: transparent;
-}
-.Layout {
-  overflow-x: hidden;
-}
-.container {
-  max-width: calc(var(--vp-layout-max-width) - 32px) !important;
-  margin-right: calc(100% - 100vw);
-}
-
-nav img {
-  vertical-align: middle;
-}
-
-p img {
-  margin: 0px auto;
-}
-
-.prose hr {
-  border-top: 1px solid #e5e7eb;
-}
-
-.link {
-  color: var(--c-brand);
-}
-
-.link:hover {
-  color: var(--c-brand-light);
-}
-
-.header-anchor {
-  display: none;
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
