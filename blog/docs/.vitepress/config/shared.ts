@@ -15,7 +15,7 @@ export const shared = defineConfig({
       "script",
       {
         src: "http://8.134.157.107:8030/script.js",
-        "data-website-id": "6692d45c-9b38-482e-93e9-90c7941b736e",
+        "data-website-id": "1481cea1-06d4-4065-9b35-f8a7cd9cdbc1",
       },
     ],
     ["link", { rel: "icon", href: "/logo.png" }],

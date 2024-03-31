@@ -13,9 +13,6 @@ const props = defineProps<{
 }>();
 
 const hotArticleViews = 5000;
-const route = useRoute();
-const router = useRouter();
-let timeoutHandle = null;
 const imgRef = ref<HTMLImageElement | null>(null);
 
 const imageLoaded = ref(false);
