@@ -180,8 +180,8 @@ export class FeishuDocHelp {
         if (hide !== true) {
           console.info("Writing doc", item.title);
           sider_item.link = `/${filename}`;
-          sider_items.push(sider_item);
         }
+        sider_items.push(sider_item);
         if (item.has_child && hide_child !== true) {
           const new_parents = item.wiki_path_arr.concat(item.title);
           sider_item.items = [];

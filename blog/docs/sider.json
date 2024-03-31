@@ -1,7 +1,6 @@
 [
   {
     "text": "学技术",
-    "link": "/feishu__2024_2_22__learn_skill",
     "items": [
       {
         "text": "vim学习笔记",
@@ -11,37 +10,36 @@
     "collapsed": false
   },
   {
-    "text": "daily_life",
-    "link": "/feishu__2024_2_25__daily_life"
+    "text": "daily_life"
   },
   {
-    "text": "Sport",
-    "link": "/feishu__2024_2_25__sport"
+    "text": "Sport"
   },
   {
-    "text": "Financing",
-    "link": "/feishu__2024_2_25__financing"
+    "text": "Financing"
   },
   {
-    "text": "my_product",
-    "link": "/feishu__2024_2_25__my_product",
+    "text": "product",
     "items": [
       {
         "text": "myblog",
-        "link": "/feishu__2024_2_25_my_product_myblog",
+        "link": "/feishu__2024_2_25_product_myblog",
         "items": [
           {
             "text": "project_record",
-            "link": "/feishu__2024_2_26_my_product_myblog_project_record"
+            "link": "/feishu__2024_2_26_product_myblog_project_record"
           },
           {
             "text": "feishu_write_tips",
-            "link": "/feishu__2024_2_28_my_product_myblog_feishu_write_tips"
+            "link": "/feishu__2024_2_28_product_myblog_feishu_write_tips"
           }
         ],
         "collapsed": false
       }
     ],
     "collapsed": false
+  },
+  {
+    "text": "首页"
   }
 ]

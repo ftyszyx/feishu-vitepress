@@ -3,7 +3,6 @@ import fs from "fs";
 import { FeiShuDoc_pre, FeishuDocHelp } from "./feishu";
 import { appconfig } from "./config";
 import path from "path";
-import { walkSync } from "./utils";
 import { program } from "commander";
 import { translate } from "bing-translate-api";
 import { SideBarItem } from "./type.def";
@@ -33,12 +32,11 @@ const save_sider_name = "sider.json";
 const exportDoc = async () => {
   console.log("app config", appconfig);
   fs.mkdirSync(doc_path, { recursive: true });
-  walkSync(doc_path, (file_path, file_dirent) => {
-    // if (file_dirent.isDirectory && file_dirent.path.endsWith(appconfig.asset_name)) return false;
-    if (file_dirent.isFile && file_dirent.name.startsWith(FeiShuDoc_pre) && file_dirent.name.endsWith(".md")) {
-      fs.rmSync(file_path);
+  fs.readdirSync(doc_path, { withFileTypes: true }).forEach(function (dirent) {
+    var filePath = path.join(doc_path, dirent.name);
+    if (dirent.isFile && dirent.name.startsWith(FeiShuDoc_pre) && dirent.name.endsWith(".md")) {
+      fs.rmSync(filePath);
     }
-    return true;
   });
   await feishu_help.getToken();
   await feishu_help.fetchAllDocs(appconfig.spaceId, "", { doc_root_path: doc_path, pic_dir_name: appconfig.asset_name, save_sider_name });
@@ -62,17 +60,16 @@ const translateDoc = async (lan: string) => {
       const docitem = docitems[i];
       const doc_itempath = path.join(doc_path, docitem.link + ".md");
       const dest_itemPath = path.join(lan_doc_path, docitem.link + ".md");
-      if (docitem.link) {
-        docitem.link = `/${lan}${docitem.link}`;
-      }
       if (docitem.items?.length > 0) {
         await checkItem(docitem.items);
       }
+      if (!docitem.link) continue;
+      docitem.link = `/${lan}${docitem.link}`;
       if (fs.existsSync(dest_itemPath)) return;
       const doc_text = fs.readFileSync(doc_itempath, "utf-8").toString();
       console.log(`begin trans ${doc_itempath} cn->${lan}`);
-      const res = await translate(doc_text, "zh-Hans", lan);
-      fs.writeFileSync(dest_itemPath, res.translation);
+      const res = await translateText(doc_text, lan);
+      fs.writeFileSync(dest_itemPath, res);
       console.log(`translate ok ${doc_itempath} cn->${lan}`);
     }
   };
@@ -80,8 +77,8 @@ const translateDoc = async (lan: string) => {
   //process sider.json
   const dest_json = path.join(lan_doc_path, save_sider_name);
   console.log(`begin trans ${dest_json} cn->${lan}`);
-  const res = await translate(JSON.stringify(sider_cn_json, null, 2), "zh-Hans", lan);
-  fs.writeFileSync(dest_json, res.translation);
+  const res = await translateText(JSON.stringify(sider_cn_json, null, 2), lan);
+  fs.writeFileSync(dest_json, res);
   console.log(`translate ok ${dest_json} cn->${lan}`);
   //process lan.json
   const lan_json_path = path.join(doc_path, "lan.json");
@@ -94,10 +91,20 @@ const translateDoc = async (lan: string) => {
   const lan_json = JSON.parse(lan_text);
   for (var key in lan_json) {
     if (lan_dest_json[key]) continue;
-    lan_dest_json[key] = (await translate(lan_json[key], "zh-Hans", lan)).translation;
+    lan_dest_json[key] = await translateText(lan_text, lan);
   }
   fs.writeFileSync(lan_dest_path, JSON.stringify(lan_dest_json, null, 2));
   console.log(`translate ok ${lan_dest_path} cn->${lan}`);
 };
 
+async function translateText(text: string, lan: string) {
+  const batch_size = 4000;
+  let tran_res = "";
+  let batch = Math.ceil(text.length / batch_size);
+  for (let i = 0; i < batch; i++) {
+    const batch_txt = text.substring(i * batch_size, (i + 1) * batch_size);
+    tran_res += (await translate(batch_txt, "zh-Hans", lan)).translation;
+  }
+  return tran_res;
+}
 program.parse();

@@ -14,11 +14,23 @@ export const categoryMap: CategoryInfo[] = [
     isHome: true,
   },
   {
-    name: "lifestyle",
+    name: "daily_life",
     isHome: true,
   },
   {
-    name: "work",
+    name: "sport",
+    isHome: true,
+  },
+  {
+    name: "skill",
+    isHome: true,
+  },
+  {
+    name: "financing",
+    isHome: true,
+  },
+  {
+    name: "product",
     isHome: true,
   },
 ];

@@ -1,8 +1,11 @@
 {
     "author":"张雨鑫",
     "category_hot":"热门",
-    "category_lifestyle":"生活",
-    "category_work":"工作",
+    "category_daily_life":"生活",
+    "category_sport":"运动",
+    "category_skill":"技术",
+    "category_financing":"理财",
+    "category_product":"我的项目",
       "category_new": "最新",
     "autor_lan":"作者",
     "create_time":"发表时间",

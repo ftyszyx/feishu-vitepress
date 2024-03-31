@@ -1,25 +1,23 @@
 ---
-title: 2014 NetEase front-end development written test questions notes
+title: vim study notes
 categories:
-  -code
+  - code
 tags:
   - develop
 cover: /assets/BQmfb4IfnohBwJx9Y4Wcjeienhg.png
 create_time: 1676970303
 ---
 
-
 # vim
 
 <img src="/assets/NgRJblUKCo3KLBx0Zw1c1nFRn0b.png" src-width="932" src-height="610" align="center"/>
-
 https://github.com/wsdjeg/Learn-Vim_zh_cn
 
-vim:
+Vim:
 
 https://vimdoc.sourceforge.net/htmldoc
 
-# vim in Vscode
+# Vscode vim
 
 https://www.bilibili.com/video/BV1z541177Jy?p=6&vd_source=1cfe4f7c9bf04285f79b848e60f55aea
 
@@ -27,7 +25,7 @@ After installing the plug-in, copy the default configuration
 
 <img src="/assets/boxcnGyPNkuXNSnCFqm0OUw1pbe.png" src-width="723" src-height="635" align="center"/>
 
-## model
+## Patterns
 
 <img src="/assets/boxcnv6H6dU64NajYaJUN6wQwed.png" src-width="254" src-height="370" align="center"/>
 
@@ -39,7 +37,7 @@ After installing the plug-in, copy the default configuration
 
 <img src="/assets/boxcniLTuzNGJlYpsuC2VmYricf.png" src-width="860" src-height="148" align="center"/>
 
-jj is related to settings
+jj has to do with the settings
 
 <img src="/assets/boxcn1l7I6OQ7qH33PoycMoaXEf.png" src-width="323" src-height="106" align="center"/>
 
@@ -55,103 +53,99 @@ jj is related to settings
 
 ## Cursor movement
 
-All are normal mode
+It's all normal mode
 
-### Normal movement
+### Normal Move
 
 <img src="/assets/boxcn0ZPu2ibBaWuflEVJRvNMlb.png" src-width="883" src-height="328" align="center"/>
 
-### Word movement
+### Word moves
 
 <img src="/assets/boxcnyBAboJwUobMNzHJBMqRIQc.png" src-width="909" src-height="291" align="center"/>
 
-### Row movement
+### Row moves
 
 <img src="/assets/boxcnKzs5UUtizc1h28ADftaTj4.png" src-width="585" src-height="345" align="center"/>
 
-- `|` moves to the first character at the beginning of the line.
+- '|' moves to the first character at the beginning of the line.
 
 ### Other moves
 
 <img src="/assets/boxcnoFTPRhDcGmQf4gfSl5jpJ5.png" src-width="845" src-height="252" align="center"/>
 
-- `ctrl-e` scrolls the screen down one line.
-- `ctrl-y` scrolls the screen up one line.
+- 'Ctrl-E' screen scrolls down one line.
+- 'Ctrl-Y' screen scrolls up a line.
 
 <img src="/assets/MQpsba1yFoC0CXxE2qzcgMQtnNd.png" src-width="346" src-height="230" align="center"/>
 
 <img src="/assets/boxcn2h1UtsnGVIeoJmHOMgE6bc.png" src-width="798" src-height="275" align="center"/>
 
-## Find and replace
+## Find and Replace
 
 https://harttle.land/2016/08/08/vim-search-in-file.html
 
 <img src="/assets/boxcnqjClccIkv4pd0TZYpYYAyc.png" src-width="749" src-height="360" align="center"/>
-
-  
-
-
-People always ask me if they can search in Vim, of course they can! And it’s a super powerful search! This article will introduce in detail the settings and usage related to search in Vim. Including find and replace, search for the word under the cursor, highlight foreground/background color, switch highlight status, case-sensitive search, etc.
+People always ask me if I can find it in Vim, and of course I can! And it's super strong! This article will take a closer look at the settings and usage methods of Vim. These include Find & Replace, Find Cursor Words, Highlight Foreground/Background Color, Toggle Highlight Status, Case Sensitive Lookup, and more.
 
 ## Find
 
-Press `/` in normal mode to enter search mode, enter the string you want to find and press Enter. Vim will jump to the first match. Press `n` to find next, `N` to find previous.
+Press '/' in normal mode to enter find mode, enter the string you want to find and press enter. Vim jumps to the first match. Press 'N' to find the next one and 'N' to find the previous one.
 
-Vim search supports regular expressions, for example `/vim$` matches `"vim"` at the end of a line. Need to find special characters that need to be escaped, for example `/vim\$` matches `"vim$"`.
+Vim lookup supports regular expressions, such as '/vim$' matching '''vim'' at the end of a line. You need to find special characters that need to be escaped, e.g. '/vim\$' matches ''vim$"'.
 
-> Note that `\n` should be used to find a carriage return, and `\r` should be used to replace a carriage return (equivalent to `<CR>`).
+> Note that '\n' should be used to find carriage returns, and '\r' (equivalent to ''') should be used to replace carriage returns with carriage returns<CR>.
 
-**Other search modes**
+**Other Find Modes**
 
-- `?` (Shift + `/`) to search up.
-- `q/` View search history, select an item and press Enter to search again.
-- `q?` View upward search history.
+- '?' (Shift + '/') to look up.
+- 'Q/' to view the search history, select one item and press enter to search again.
+- 'q?' to view the lookup history.
 
-### Case sensitive search
+### Case-sensitive lookups
 
-Adding `\c` to the search mode means case-insensitive search, and `\C` means case-sensitive search. For example:
+Add '\c' to the lookup pattern for case-insensitive lookups and '\c' for case-sensitive lookups. For example:
 
 ```
 /foo\c
 ```
 
-Will find all `"foo"`, `"FOO"`, `"Foo"` and other strings.
+All strings such as '''foo'', ''FOO'', ''Foo'' will be found.
 
-### Case sensitive configuration
+### Case-sensitive configuration
 
-Vim uses case-sensitive search by default. For convenience, we often configure it to be case-insensitive:
+Vim defaults to case-sensitive lookups, which we often configure to be case-insensitive:
 
 ```
-"Set the default case-insensitive search set ignorecase" If there is an uppercase letter, switch to case-sensitive search set smartcase
+Set IgnoreCase by default for case-insensitive lookup If there is an uppercase letter, switch to a case-sensitive lookup Set Smartcase
 ```
 
-> Paste the above settings into your `~/.vimrc` and reopen Vim to take effect.
+> Paste the above settings into your '~/.vimrc' and reopen Vim to take effect.
 
 ### Find the current word
 
-In normal mode, press `*` to search for the word where the cursor is located. Each occurrence is required to be preceded and followed by blank characters or punctuation marks. For example, currently `foo` can match `foo` in `foo bar`, but cannot match `foo` in `foobar`. This is very useful when looking up function names and variable names.
+Press '*' in normal mode to find the word where the cursor is located, and require white space characters or punctuation marks before and after each occurrence. For example, if it is currently 'foo', it can match the 'foo' in 'foo bar', but not the 'foo' in 'foobar'. This is useful when looking up function names, variable names.
 
-Press `g*` to find the character sequence of the word where the cursor is located. There is no requirement for the characters before and after each occurrence. That is, both `foo bar` and `foo` in `foobar` can be matched.
+Press 'g*' to find the character sequence of the word where the cursor is located, and there is no requirement for characters before and after each occurrence. That is, both 'foo bar' and 'foo' in 'foobar' can be matched.
 
-### other settings
+### Other settings
 
-`:set incsearch` allows you to search while typing. Press Enter to move the cursor to the matching word; press Esc to cancel the search.
+':set incsearch' can search while pressing the key, press enter to move the cursor to the matching word; Press Esc to cancel the search.
 
-`:set wrapscan` is used to set whether to restart the search from the beginning of the file after reaching the end of the file.
+':set wrapscan' is used to set whether to start the search again from the header of the file after reaching the end of the file.
 
-## Find and replace
+## Find & Replace
 
-The `:s` (substitute) command is used to find and replace strings. The syntax is as follows:
+The ':s' (substitute) command is used to find and replace strings. The syntax is as follows:
 
 ```
-:{scope}s/{target}/{replacement}/{replacement flag}
+:{Scope}s/{target}/{Replace}/{Replace}/{Replace}
 ```
 
-For example `:%s/foo/bar/g` will look for `foo` in the global scope (`%`) and replace it with `bar`, all occurrences of which will be replaced with `g`.
+For example, ':%s/foo/bar/g' will look for 'foo' in the global scope ('%') and replace it with 'bar', and all occurrences will be replaced with ('g').
 
 ### Scope
 
-The scope of effect is divided into current line, full text, selection, etc.
+The scope of action is divided into current line, full text, selection, and so on.
 
 Current line:
 
@@ -159,13 +153,13 @@ Current line:
 :s/foo/bar/g
 ```
 
-full text:
+Full text:
 
 ```
 :%s/foo/bar/g
 ```
 
-To select a selection, enter `:` after selecting the area in Visual mode, and Vim will automatically complete it as `:'<,'>`.
+Select the area, enter ':' after selecting the area in Visual mode, Vim will autocomplete to ':'<, '>'.
 
 ```
 :'<,'>s/foo/bar/g
@@ -177,66 +171,63 @@ Lines 2-11:
 :5,12s/foo/bar/g
 ```
 
-The current line `.` and the next two lines `+2`:
+The current line '.' and the next two lines '+2':
 
 ```
 :.,+2s/foo/bar/g
 ```
 
-## Select (visual mode)
+## Checked (visual mode)
 
 V:
 
-ctrl+v block selection,
+Ctrl+V block selection,
 
-shift+v row selection
+Shift+V row selection
 
-Press Shift + < again to move the code to the left; Shift + > to move the code to the right.
+Press Shift + &lt; again to move the code to the left, and Shift + &gt; to move the code to the right
 
-### Multi-line editing (ctrl+v) block selection
+### Multi-line editing (Ctrl+V) block selection
 
 https://www.jianshu.com/p/50d5b6cfd73b
 
- 
+## operator
 
-## Operator
+The first letter is the action: C (Modify) D (Delete) Y (Copy) V is checked
 
-The first letter is the action: c (modify) d (delete) y (copy) v select
+The second is the range i (inside) a (contains the boundary) t (from where to where)
 
-The second is the range i (inside) a (including the boundary) t (from where to where)
+This is followed by the identifier of the boundary ( [
 
-followed by the boundary identifier ([
-
-Then it will enter the insertion
+Then you will enter the insertion
 
 normal mode
 
-Press d and move the cursor to delete
+Press d to move the cursor to delete
 
-dd deletes a line
+dd to delete one line
 
-cc cut a line
+cc cut a row
 
-yyCopy a line
+yy copy oneYes
 
-U means undo,
+U is undone,
 
-Ppaste
+P paste
 
 ctrl+r redo
 
 <img src="/assets/boxcnsP0Kq9WZNzdBgKgiQJ9yZc.png" src-width="766" src-height="261" align="center"/>
 
 <img src="/assets/boxcn6Oi7kiyYdzhf18wmWLeiEc.png" src-width="644" src-height="118" align="center"/>
-
-di[ deletes all characters in a pair of []
-di( deletes all characters in a pair of ()
-di< deletes all characters in a pair of <>
-di{ deletes all characters in a pair of {}
+di[ removes all characters from a pair of [].
+di( removes all characters in a pair ().
+di&lt; removes all characters from a pair of &lt;&gt;
+di{ removes all characters in a pair of {}
 dit removes all characters inside a pair of HTML/XML tags
-di" di' di` deletes all characters within a pair of quote characters (" or ' or `)
+di" di' di' removes all characters in a pair of quotation mark characters (" or ' or ').
 
-## Replacement pattern
+## Replace mode
 
 http://yyq123.github.io/learn-vim/learn-vi-44-ReplaceMode.html
 
@@ -244,7 +235,7 @@ http://yyq123.github.io/learn-vim/learn-vi-44-ReplaceMode.html
 
 ## Surround mode
 
-[VIM study notes Surround character editing (surround)](http://yyq123.github.io/learn-vim/learn-vim-plugin-surround.html)
+[VIM Study Notes: Surround] (http://yyq123.github.io/learn-vim/learn-vim-plugin-surround.html)
 
 <img src="/assets/boxcnQrvlULFMs64ptAEI29EOHe.png" src-width="980" src-height="253" align="center"/>
 
@@ -258,7 +249,7 @@ http://yyq123.github.io/learn-vim/learn-vi-44-ReplaceMode.html
 
 ## easymode
 
-The leader is allocated with spaces
+The leader is equipped with a space
 
 <img src="/assets/boxcnmQqrUDxH4PKVb9TDF3bvJe.png" src-width="208" src-height="27" align="center"/>
 
@@ -267,20 +258,19 @@ The leader is allocated with spaces
 ## Change sourround
 
 <img src="/assets/boxcnpr7hcgItfgamg8AoI5vGrb.png" src-width="625" src-height="314" align="center"/>
-
 ## Multiple cursors
 
 ctrl+d
 
-## Command line mode [: enter]
+## Command Line Mode [:Enter]
 
-n jump to which line
+n Skip to the first row
 
-## Search pattern
+## Find Patterns
 
 https://harttle.land/2016/08/08/vim-search-in-file.html
 
-Current line:
+Current line:  
 
 ```json
 :s/foo/bar/g
@@ -292,7 +282,7 @@ full text
 :%s/foo/bar/g
 ```
 
-To select a selection, enter `:` after selecting the area in Visual mode, and Vim will automatically complete it as `:'<,'>`.
+Select the area, enter ':' after selecting the area in Visual mode, Vim will autocomplete to ':'<, '>'.
 
 ```
 :'<,'>s/foo/bar/g
@@ -304,53 +294,51 @@ Lines 2-11:
 :5,12s/foo/bar/g
 ```
 
-The current line `.` and the next two lines `+2`:
+The current line '.' and the next two lines '+2':
 
 ```
 :.,+2s/foo/bar/g
 ```
 
-### Replacement identifier
+### Replace the marker
 
-The `g` at the end of the command above is one of the replacement flags, indicating global `global` replacement (that is, replacing all occurrences of the target). There are many other useful replacement flags:
+The 'g' at the end of the command above is one of the substitution flags, representing the global 'global' substitution (i.e., all occurrences of the substitution target). There are a lot of other useful replacement flags:
 
-An empty replacement flag means that only the first occurrence of the target, starting at the cursor position, will be replaced:
+The empty replacement flag indicates that only the first occurrence of the target is replaced from the cursor position:
 
 ```
 :%s/foo/bar
 ```
 
-`i` means case-insensitive search, `I` means case-sensitive search:
+'i' for case-insensitive lookups, and 'i' for case-sensitive:
 
 ```
 :%s/foo/bar/i
-# Equivalent to \c (insensitive) or \C (sensitive) in pattern
+# Equivalent to \c (insensitive) or \c (sensitive) in the pattern
 :%s/foo\c/bar
 ```
 
-`c` means confirmation is required, for example, the global search `"foo"` is replaced by `"bar"` and confirmation is required:
+'c' indicates that confirmation is required, e.g. global lookup '''foo'' is replaced with '''bar'' and confirmation:
 
 ```
 :%s/foo/bar/gc
 ```
 
- 
-
-## Macro
+## Macros
 
 1. Position the cursor on the first line;
 
-2. Enter qa in normal mode (of course you can also enter qb, qc, etc. Here a, b, c refer to the register name, vim will put the recorded macro in this register)
+2. Enter qa in normal mode (of course, you can also enter qb, qc, etc, where a, b, c refers to the register name, vim will put the recorded macro in this register) 
 
-3. Under normal circumstances, the vim command line will display the words "Start recording". At this time, position the cursor on the first character (press 0 or |), then press x to delete, and press j to jump to the next line;
+3. Under normal circumstances, the command line of vim will display the words "start recording", at this time, position the cursor to the first character (press 0 or |), then press x to delete, press j to jump to the next line;
 
-4. Enter q in normal mode to end macro recording.
+4.Enter Q in normal mode to end macro recording.
 
-Then 99@a uses macro 99 times
+Then 99@a use the macro 99 times
 
-## Register
+## Registers
 
-View all registers:
+View all registers: 
 
 ```json
 :reg command
@@ -359,12 +347,10 @@ View all registers:
 Use a register:
 
 ```json
-<ctrl>r Add register name
+<ctrl>r plus the name of the register
 ```
 
- 
-
-Special register:
+Special Registers:
 
 <table>
 <colgroup>
@@ -372,62 +358,60 @@ Special register:
 <col width="253"/>
 </colgroup>
 <tbody>
-<tr><td><p>.</p></td><td><p>The last command executed</p></td></tr>
-<tr><td><p><code>%</code></p></td><td><p>The path of the current file</p></td></tr>
-<tr><td><p><code>:</code></p></td><td><p>The most recently executed command</p></td></tr>
-<tr><td><p><code>#</code></p></td><td><p>Replace the name of the file, you can think of it as the most recently edited file</p ></td></tr>
+<tr><td><p>.</p></td><td><p>The last executed command</p></td></tr>
+<tr><td><p><code>%</code></p></td><td><p>The path to the current file</p></td></tr>
+<tr><td><p><code>: The</code></p></td> <td><p>most recent command executed</p></td></tr>
+<tr><td><p><code>#</code></p></td> <td><p>Replace the name of the file, you can think of it as the most recently edited file</p></td></tr>
 </tbody>
 </table>
 
-#·Others
+# Miscellaneous
 
 ## Relative line number
 
-Display the corresponding line number
+Displays the corresponding line number for The number plus J and K can correspond to jumps
 
-Adding j and k to the number can correspond to the jump
+"editor.lineNumbers": "relative",
 
-  "editor.lineNumbers": "relative",
+## Tab toggle
 
-## Tab switch
+Use 'gt' to switch to the next tab, 'gT' to switch to the previous tab, and 'n+gt' to go to the n' tab. Of course, you can use the VS Code shortcut 'Alt+n' to switch to the 'n' tab.
 
-Use `gt` to switch to the next Tab, `gT` to switch to the previous Tab, and `n+gt` to switch to the `n`th Tab. Of course, you can use the VS Code shortcut key `Alt+n` to switch to the `n`th Tab.
+## Jump definition 
 
-## Jump definition
+Jump definition ctrl+[
 
-Jump to definition ctrl+[
+(Fallback & Jump)
 
-(Rewind and jump back)
+Jump out of Ctrl+O
 
-Jump out ctrl+o
+Jump into Ctrl+I
 
-Jump into ctrl+i
+Jump Definition **gd**
 
-Jump definition **gd**
+Show Definition tip **gh**
 
-Show definition tip **gh**
+Toggle tab gt tab g2ts
 
-Switch tabs gt Which tab page g2ts
-
-## Panel switching
+## Panel toggle
 
 Switch to the sidebar cmd+0
 
-ctrl+~ open terminal
+Ctrl+~ to open the terminal
 
-ctrl+P opens the command line panel
+ctrl+P to open the command line panel 
 
-ctrl+r to view function list
+Ctrl+r to view the list of functions 
 
 ## Cursor movement
 
-Move the cursor to the middle of the screen zz
+Move the cursor to zz in the middle of the screen
 
-Move the cursor to the top of the screen zt
+Move the cursor to zt at the top of the screen
 
-Move the cursor to the bottom of the screen zb
+Move the cursor to the bottom of the screen, zb
 
-## Other jumps
+## Other redirects
 
 https://www.jianshu.com/p/cbfa86c8d8a5
 
@@ -437,94 +421,91 @@ https://vimdoc.sourceforge.net/htmldoc/motion.html#%
 
 Select an entire function
 
-ctrl+v, enter % at the beginning of the function
+Ctrl+V, at the beginning of the function, enter %
 
-Copy and paste a function
+Copy and paste a piece of function
 
 ```json
 V%y
 %pe
 ```
 
- [[ :beginning of module
+[[ : The beginning of the module.]
 
-]]: end of module
+]]: The end of the module
 
-[{:Previous{Starts with
+[{:Previous { prefix.] 
 
-]}: next} end
+]}: Next} end
 
-[m:Previous function
+[m: Previous function.]
 
-]m: next function
+m: the next function
 
 <img src="/assets/Lvc6bqClQoUpIRxJByUcGrBMnId.png" src-width="700" src-height="248" align="center"/>
-
 ## Code comments
 
-Code comment vsc uses operations similar to vim-commentary.
- Instructions:
+Code Comment VSC uses something like vim-commentary.
+ How to Use:
 
-- `gc` - Turn on or off comments. Enter `gcc` to turn on or off comments for a line of code, `gc2j` to turn on or off comments for two lines of code.
-- `gC` - Block code comment. Enter `gCi)` to comment the code in brackets ().
+- 'gc' - turns annotations on or off.  Enter 'gcc' to turn on or off a line of comments, and 'gc2j' to turn on or off two lines of comments.
+- 'gC' - Block code comment.Enter 'gCi)' comment code in parentheses ().
  
+## Other shortcuts
 
-## Other shortcut keys
-
-shift+j connects two lines
+Shift+J joins the two lines
 
 ## Input method switching
 
 https://github.com/daipeihust/im-select
 
-https://www.zhihu.com/question/303850876
+https://www.zhihu.com/question/303850876 
 
 ### Window
 
 Download imselect.exe
 
-To view the current input method encoding, use gitbash
+To view the current input method encoding, you need to use gitbash
 
 <img src="/assets/boxcnUNjLdKEOSd4HohcapJMVT7.png" src-width="856" src-height="469" align="center"/>
 
-Get the input method encoding of English
+Get the input method encoding in English
 
 <img src="/assets/boxcnAxwbJDlhWWH1pnfOvgnvtd.png" src-width="332" src-height="50" align="center"/>
 
-switch english
+Toggle English
 
 <img src="/assets/boxcnbB5NBNKsJuE9fZnY32lG7g.png" src-width="314" src-height="34" align="center"/>
 
-## Keymap
+## Keymapping
 
 <img src="/assets/boxcnQpXYSmcqWMWqqE8sJM0j6c.png" src-width="787" src-height="459" align="center"/>
 
-Paste
+stickup
 
 <img src="/assets/boxcn2W6A9WMuHsXgruMk5um6pb.png" src-width="561" src-height="106" align="center"/>
 
 <img src="/assets/boxcnEgFj19gJlfLLWGJXzsSg3b.png" src-width="290" src-height="171" align="center"/>
 
-## Code prompt selection
+## Selection of code hints
 
 <img src="/assets/boxcnxGXQxkbIYIPBrr9pSEto5e.png" src-width="996" src-height="747" align="center"/>
-
 I chose alt+j and alt+k
 
 # Linux vim
 
-set nu! "Display line number
+set nu!                                    displays the line number
 
-# Some practical uses
+# Some practical usage
 
 ## Copy a word
 
 ```json
-yiwCopy this word
-viw selects the word to be replaced
+yiw copy the word
+viw to select the word to be replaced
 ```
 
-## Copy and paste a function
+## Copy and paste a piece of function
 
 ```json
 V%y
@@ -548,20 +529,19 @@ ctrl+[
 ## Operator plus command
 
 <img src="/assets/DUJPbQXDsoEPHZxNydJcJxpDnBd.png" src-width="707" src-height="464" align="center"/>
-
-Capital E, B, and W correspond to the beginning and end of the string. The string is separated by spaces.
+Uppercase E, B, and W correspond to the beginning and end of the string, and the string is separated by a space
 
 ## Code folding
 
-**za: fold the current line**
-**zM: Collapse all code**
-**zR: Expand all codes**
+**za: Collapse current row**
+**zM: Collapse All Code**
+**zR: Expand all code**
 **zc: Collapse the currently selected code block**
 
-zo:**Expand the currently collapsed code block (only expand one level)**
-**zO: Expand the currently collapsed code block (all)**
+zo: **Expand the currently collapsed block of code (expand only one layer)**
+zO: Expand the currently collapsed block of code (all)
 
-After folding, moving up and down does not automatically open the fold.
+Moving up and down after folding does not automatically open the fold
 
 ```text
 "vim.foldfix": true
