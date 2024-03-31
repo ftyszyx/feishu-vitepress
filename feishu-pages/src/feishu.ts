@@ -175,7 +175,7 @@ export class FeishuDocHelp {
         let time_str = `${create_time.getFullYear()}_${create_time.getMonth()}_${create_time.getDate()}`;
         let filename = `${FeiShuDoc_pre}_${time_str}_${parent_path_arr.join("_")}_${item.title}`.toLowerCase();
         if (parent_path_arr.length == 0 && item.title.toLowerCase() == "index") filename = "index";
-        const { hide, hide_child, title } = await this.fetchDocBody(path.join(option.doc_root_path, `${filename}.md`), pic_path, item);
+        const { hide, hide_child, title } = await this.fetchDocBody(path.join(option.doc_root_path, `${filename}.md`), pic_path, item, parent_path_arr.length >= 1 ? parent_path_arr[0] : "");
         const sider_item: SideBarItem = { text: title || item.title };
         if (hide !== true) {
           console.info("Writing doc", item.title);
@@ -215,7 +215,7 @@ export class FeishuDocHelp {
     return output;
   }
 
-  private async fetchDocBody(filepath: string, pic_path: string, fileDoc: WikiNode) {
+  private async fetchDocBody(filepath: string, pic_path: string, fileDoc: WikiNode, category: string) {
     let document_id = fileDoc.obj_token;
     const blocks = await this.feitchDocBlocks(document_id);
     const render_doc = {
@@ -250,6 +250,7 @@ export class FeishuDocHelp {
     }
     meta["create_time"] = parseInt(fileDoc.node_create_time);
     meta["title"] = meta.title || fileDoc.title;
+    if (category) meta["categories"] = meta.categories || [category];
     const head_text = this.genMetaText(meta);
     if (meta.hide == true && isindex) content = head_text;
     else content = head_text + "\n\n" + content;

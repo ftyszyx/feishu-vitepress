@@ -1,12 +1,13 @@
 ---
 title: vim学习笔记
-categories:
-  - code
 tags:
   - develop
 cover: /assets/BQmfb4IfnohBwJx9Y4Wcjeienhg.png
 create_time: 1676970303
+categories:
+  - skill
 ---
+
 
 # vim
 
@@ -83,10 +84,12 @@ jj和设置有关
 
 ## 查找替换
 
-https://harttle.l
-and/2016/08/08/vim-search-in-file.html
+https://harttle.land/2016/08/08/vim-search-in-file.html
 
 <img src="/assets/boxcnqjClccIkv4pd0TZYpYYAyc.png" src-width="749" src-height="360" align="center"/>
+
+  
+
 
 总有人问我 Vim 中能不能查找，当然能！而且是超级强的查找！ 这篇文章来详细介绍 Vim 中查找相关的设置和使用方法。 包括查找与替换、查找光标所在词、高亮前景/背景色、切换高亮状态、大小写敏感查找等。
 
@@ -184,7 +187,7 @@ Vim 默认采用大小写敏感的查找，为了方便我们常常将其配置�
 
 V:
 
-ctrl+v块选择 ，
+ctrl+v块选择  ，
 
 shift+v 行选择
 
@@ -193,6 +196,8 @@ shift+v 行选择
 ### 多行编辑（ctrl+v)块选择
 
 https://www.jianshu.com/p/50d5b6cfd73b
+
+ 
 
 ## 操作符
 
@@ -229,7 +234,7 @@ di( 删除一对 () 中的所有字符
 di&lt; 删除一对 &lt;&gt; 中的所有字符
 di{ 删除一对 {} 中的所有字符
 dit 删除一对 HTML/XML 的标签内部的所有字符
-di" di' di`删除一对引号字符 (" 或 ' 或`) 中所有字符
+di"  di'  di` 删除一对引号字符 (" 或 ' 或 `) 中所有字符
 
 ## 替换模式
 
@@ -269,13 +274,13 @@ ctrl+d
 
 ## 命令行模式 【：进入]
 
-n 跳转到第几行
+n   跳转到第几行
 
 ## 查找模式
 
 https://harttle.land/2016/08/08/vim-search-in-file.html
 
-当前行：
+当前行：  
 
 ```json
 :s/foo/bar/g
@@ -329,11 +334,13 @@ https://harttle.land/2016/08/08/vim-search-in-file.html
 :%s/foo/bar/gc
 ```
 
+ 
+
 ## 宏
 
 1.把光标定位在第一行；
 
-2.在normal模式下输入qa(当然也可以输入qb, qc, etc，这里的a, b, c是指寄存器名称，vim会把录制好的宏放在这个寄存器中)
+2.在normal模式下输入qa(当然也可以输入qb, qc, etc，这里的a, b, c是指寄存器名称，vim会把录制好的宏放在这个寄存器中) 
 
 3.正常情况下，vim的命令行会显示“开始录制”的字样，这时候，把光标定位到第一个字符（按0或者|），再按x删除，按j跳到下一行；
 
@@ -343,17 +350,19 @@ https://harttle.land/2016/08/08/vim-search-in-file.html
 
 ## 寄存器
 
-查看所有寄存器：
+查看所有寄存器： 
 
 ```json
 :reg 命令
 ```
 
-使用某个寄存器 ：
+使用某个寄存器  ：
 
 ```json
 <ctrl>r 加寄存器的名字
 ```
+
+ 
 
 特殊寄存器：
 
@@ -378,13 +387,13 @@ https://harttle.land/2016/08/08/vim-search-in-file.html
 
 数字加j,k可以对应跳转
 
-"editor.lineNumbers": "relative",
+  "editor.lineNumbers": "relative",
 
 ## Tab切换
 
 使用 `gt` 切换至下一个 Tab，`gT` 切换至上一个 Tab，使用 `n+gt` 切换至第 `n` 个 Tab。当然，你可以使用 VS Code 的快捷键 `Alt+n` 切换至第 `n` 个 Tab。
 
-## 跳转定义
+## 跳转定义 
 
 跳转定义 ctrl+[
 
@@ -398,7 +407,7 @@ https://harttle.land/2016/08/08/vim-search-in-file.html
 
 显示定义tip **gh**
 
-切换标签 gt 第几个标签页 g2ts
+切换标签  gt  第几个标签页 g2ts
 
 ## 面板切换
 
@@ -406,9 +415,9 @@ https://harttle.land/2016/08/08/vim-search-in-file.html
 
 ctrl+~ 打开终端
 
-ctrl+P打开命令行面板
+ctrl+P打开命令行面板 
 
-ctrl+r查看函数列表
+ctrl+r查看函数列表 
 
 ## 光标移动
 
@@ -437,11 +446,11 @@ V%y
 %pe
 ```
 
-[[ :模块的开头
+ [[ :模块的开头
 
 ]]：模块的结尾
 
-[{:上一个{开头
+[{:上一个{开头 
 
 ]}：下一个}结尾
 
@@ -454,10 +463,11 @@ V%y
 ## 代码注释
 
 代码注释vsc使用了类似vim-commentary的操作。
-使用方法:
+ 使用方法:
 
-- `gc` - 打开或关闭注释. 输入 `gcc` 打开或关闭某一行代码注释， `gc2j` 打开或关闭两行代码注释。
+- `gc` - 打开或关闭注释.  输入 `gcc` 打开或关闭某一行代码注释，   `gc2j`  打开或关闭两行代码注释。
 - `gC` - 块代码注释.输入 `gCi)` 注释 括号()中的代码。
+ 
 
 ## 其它快捷键
 
@@ -467,7 +477,7 @@ shift+j 连接两行
 
 https://github.com/daipeihust/im-select
 
-https://www.zhihu.com/question/303850876
+https://www.zhihu.com/question/303850876 
 
 ### Window
 
@@ -503,7 +513,7 @@ https://www.zhihu.com/question/303850876
 
 # Linux vim
 
-set nu! "显示行号
+set nu!                                    "显示行号
 
 # 一些实际用法
 
@@ -539,7 +549,7 @@ ctrl+[
 
 <img src="/assets/DUJPbQXDsoEPHZxNydJcJxpDnBd.png" src-width="707" src-height="464" align="center"/>
 
-大写的E,B,W对应字串的开头和结尾 字串以空格分开
+大写的E,B,W对应字串的开头和结尾  字串以空格分开
 
 ## 代码折叠
 
@@ -556,3 +566,4 @@ zo:**展开当前折叠的代码块（只展开一层）**
 ```text
 "vim.foldfix": true
 ```
+

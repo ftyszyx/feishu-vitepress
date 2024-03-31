@@ -56,6 +56,7 @@ onMounted(() => {});
         class="relative w-full overflow-hidden h-60 md:h-40 ld:h-40 bg-zinc-100 dark:bg-neutral-900"
       >
         <img
+          v-if="previewImageUrl != ''"
           ref="imgRef"
           :src="previewImageUrl"
           @load="onImageLoad"

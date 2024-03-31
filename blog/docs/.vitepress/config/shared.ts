@@ -11,13 +11,20 @@ export const shared = defineConfig({
   ignoreDeadLinks: true,
   base: process.env.BLOG_BASE_URL || "/",
   head: [
+    [
+      "script",
+      {
+        src: "http://8.134.157.107:8030/script.js",
+        "data-website-id": "6692d45c-9b38-482e-93e9-90c7941b736e",
+      },
+    ],
     ["link", { rel: "icon", href: "/logo.png" }],
     [
       "meta",
       {
         name: "keywords",
         content:
-          "科技,旅行,生活方式,程序员,互联网,自媒体,摄影师,编程,前端,前端工程师,独立博客,LUOLEI,Vlog,YouTuber",
+          "科技,旅行,生活方式,程序员,互联网,自媒体,摄影师,编程,前端,前端工程师,独立博客,Vlog",
       },
     ],
   ],
