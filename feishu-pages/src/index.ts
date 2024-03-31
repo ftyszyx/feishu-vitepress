@@ -98,12 +98,21 @@ const translateDoc = async (lan: string) => {
 };
 
 async function translateText(text: string, lan: string) {
-  const batch_size = 4000;
+  const linearr = text.split("\n");
+  // console.log("line", linearr.length);
+  const bathsize = 200;
+  const batch = Math.ceil(linearr.length / bathsize);
   let tran_res = "";
-  let batch = Math.ceil(text.length / batch_size);
   for (let i = 0; i < batch; i++) {
-    const batch_txt = text.substring(i * batch_size, (i + 1) * batch_size);
-    tran_res += (await translate(batch_txt, "zh-Hans", lan)).translation;
+    const start = i * bathsize;
+    const end = (i + 1) * bathsize;
+    let src_text = "";
+    for (let line = start; line < end && line < linearr.length; line++) {
+      src_text += linearr[line];
+      src_text += "\n";
+    }
+    // console.log("src", src_text);
+    tran_res += (await translate(src_text, "zh-Hans", lan)).translation;
   }
   return tran_res;
 }

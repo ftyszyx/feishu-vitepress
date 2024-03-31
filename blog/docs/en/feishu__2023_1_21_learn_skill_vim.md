@@ -57,7 +57,7 @@ It's all normal mode
 
 ### Normal Move
 
-<img src="/assets/boxcn0ZPu2ibBaWuflEVJRvNMlb.png" src-width="883" src-height="328" align="center"/>
+<img src="/assets/boxcn0ZPu2ibBaWuflEVJRvNMlb.png" src-width="883" src-height="328" align="center" />
 
 ### Word moves
 
@@ -93,8 +93,6 @@ Press '/' in normal mode to enter find mode, enter the string you want to find a
 
 Vim lookup supports regular expressions, such as '/vim$' matching '''vim'' at the end of a line. You need to find special characters that need to be escaped, e.g. '/vim\$' matches ''vim$"'.
 
-> Note that '\n' should be used to find carriage returns, and '\r' (equivalent to ''') should be used to replace carriage returns with carriage returns<CR>.
-
 **Other Find Modes**
 
 - '?' (Shift + '/') to look up.
@@ -123,9 +121,9 @@ Set IgnoreCase by default for case-insensitive lookup If there is an uppercase l
 
 ### Find the current word
 
-Press '*' in normal mode to find the word where the cursor is located, and require white space characters or punctuation marks before and after each occurrence. For example, if it is currently 'foo', it can match the 'foo' in 'foo bar', but not the 'foo' in 'foobar'. This is useful when looking up function names, variable names.
+Press '\*' in normal mode to find the word where the cursor is located, and require white space characters or punctuation marks before and after each occurrence. For example, if it is currently 'foo', it can match the 'foo' in 'foo bar', but not the 'foo' in 'foobar'. This is useful when looking up function names, variable names.
 
-Press 'g*' to find the character sequence of the word where the cursor is located, and there is no requirement for characters before and after each occurrence. That is, both 'foo bar' and 'foo' in 'foobar' can be matched.
+Press 'g\*' to find the character sequence of the word where the cursor is located, and there is no requirement for characters before and after each occurrence. That is, both 'foo bar' and 'foo' in 'foobar' can be matched.
 
 ### Other settings
 
@@ -189,9 +187,7 @@ Press Shift + &lt; again to move the code to the left, and Shift + &gt; to move 
 
 ### Multi-line editing (Ctrl+V) block selection
 
-https://www.jianshu.com/p/50d5b6cfd73b
-
-## operator
+https://www.jianshu.com/p/50d5b6cfd73b## operator
 
 The first letter is the action: C (Modify) D (Delete) Y (Copy) V is checked
 
@@ -209,7 +205,7 @@ dd to delete one line
 
 cc cut a row
 
-yy copy oneYes
+yy to copy a line
 
 U is undone,
 
@@ -270,7 +266,7 @@ n Skip to the first row
 
 https://harttle.land/2016/08/08/vim-search-in-file.html
 
-Current line:  
+Current line:
 
 ```json
 :s/foo/bar/g
@@ -328,7 +324,7 @@ The empty replacement flag indicates that only the first occurrence of the targe
 
 1. Position the cursor on the first line;
 
-2. Enter qa in normal mode (of course, you can also enter qb, qc, etc, where a, b, c refers to the register name, vim will put the recorded macro in this register) 
+2. Enter qa in normal mode (of course, you can also enter qb, qc, etc, where a, b, c refers to the register name, vim will put the recorded macro in this register)
 
 3. Under normal circumstances, the command line of vim will display the words "start recording", at this time, position the cursor to the first character (press 0 or |), then press x to delete, press j to jump to the next line;
 
@@ -338,7 +334,7 @@ Then 99@a use the macro 99 times
 
 ## Registers
 
-View all registers: 
+View all registers:
 
 ```json
 :reg command
@@ -377,13 +373,11 @@ Displays the corresponding line number for The number plus J and K can correspon
 
 Use 'gt' to switch to the next tab, 'gT' to switch to the previous tab, and 'n+gt' to go to the n' tab. Of course, you can use the VS Code shortcut 'Alt+n' to switch to the 'n' tab.
 
-## Jump definition 
+## Jump definition
 
 Jump definition ctrl+[
 
-(Fallback & Jump)
-
-Jump out of Ctrl+O
+(Fallback & Jump)Jump out of Ctrl+O
 
 Jump into Ctrl+I
 
@@ -399,9 +393,9 @@ Switch to the sidebar cmd+0
 
 Ctrl+~ to open the terminal
 
-ctrl+P to open the command line panel 
+ctrl+P to open the command line panel
 
-Ctrl+r to view the list of functions 
+Ctrl+r to view the list of functions
 
 ## Cursor movement
 
@@ -434,7 +428,7 @@ V%y
 
 ]]: The end of the module
 
-[{:Previous { prefix.] 
+[{:Previous { prefix.]
 
 ]}: Next} end
 
@@ -446,11 +440,11 @@ m: the next function
 ## Code comments
 
 Code Comment VSC uses something like vim-commentary.
- How to Use:
+How to Use:
 
-- 'gc' - turns annotations on or off.  Enter 'gcc' to turn on or off a line of comments, and 'gc2j' to turn on or off two lines of comments.
+- 'gc' - turns annotations on or off. Enter 'gcc' to turn on or off a line of comments, and 'gc2j' to turn on or off two lines of comments.
 - 'gC' - Block code comment.Enter 'gCi)' comment code in parentheses ().
- 
+
 ## Other shortcuts
 
 Shift+J joins the two lines
@@ -459,7 +453,7 @@ Shift+J joins the two lines
 
 https://github.com/daipeihust/im-select
 
-https://www.zhihu.com/question/303850876 
+https://www.zhihu.com/question/303850876
 
 ### Window
 
@@ -494,7 +488,7 @@ I chose alt+j and alt+k
 
 # Linux vim
 
-set nu!                                    displays the line number
+set nu! displays the line number
 
 # Some practical usage
 
