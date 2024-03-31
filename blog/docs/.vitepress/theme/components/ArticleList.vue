@@ -172,14 +172,8 @@ onMounted(() => {
         }}
       </button>
       <p class="text-center font-medium md:text-sm mt-2.5 w-12">
-        <a
-          class="inline-block underline decoration-pink-500 text-neutral-500 dark:text-neutral-500"
-          >{{ pageKey }}</a
-        ><span class="text-neutral-900 dark:text-neutral-100">/</span
-        ><a
-          class="inline-block underline decoration-indigo-500 text-neutral-500 dark:text-neutral-500"
-          >{{ pageTotal }}</a
-        >
+        <a class="inline-block underline">{{ pageKey }}</a
+        ><span>/</span><a class="inline-block underline">{{ pageTotal }}</a>
       </p>
       <button
         type="button"

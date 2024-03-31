@@ -1,4 +1,5 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-    darkMode: 'class',
-    important: true,
-}
+  darkMode: ["selector", '[data-mode="dark"]'],
+  important: true,
+};

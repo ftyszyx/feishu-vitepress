@@ -92,11 +92,7 @@ watch(
         <div class="flex m-auto">
           <a
             @click="goHome()"
-            :class="{
-              'text-rose-400 dark:text-rose-400': !isCategoryExist,
-              'text-black dark:text-slate-300': isCategoryExist,
-            }"
-            class="relative px-3 py-1 ml-0 mr-0 text-sm text-center home-nav-title hover:text-rose-400 rounded-xl md:text-base md:ml-1 md:mr-2"
+            class="relative px-3 py-1 ml-0 mr-0 text-sm text-center hover:cursor-pointer home-nav-title hover:text-rose-400 rounded-xl md:text-base md:ml-1 md:mr-2"
           >
             {{ get_lang_text("category_new", lang)
             }}<i class="hidden ml-3 md:inline-block text-slate-300">/</i>
@@ -106,7 +102,7 @@ watch(
             v-for="(category, index) of categoriesMeta"
             :key="category.text"
             @click="goCategory(category.text)"
-            class="inline-block px-3 py-1 ml-0 mr-0 text-sm text-center home-nav-title hover:text-rose-400 rounded-xl md:px-3 md:text-base md:ml-1 md:mr-2"
+            class="inline-block px-3 py-1 ml-0 mr-0 text-sm text-center hover:cursor-pointer home-nav-title hover:text-rose-400 rounded-xl md:px-3 md:text-base md:ml-1 md:mr-2"
             :class="{
               'text-rose-400': category.text === currentCategory,
             }"
