@@ -4,7 +4,8 @@ import { useData, useRoute, useRouter } from "vitepress";
 import { useBrowserLocation } from "@vueuse/core";
 import { data } from "../posts.data.js";
 import { useCurrentCategoryKey, useCurrentPageKey } from "../configProvider";
-import { categoryMap, get_lang_text } from "../constant"; // 导入分类映射
+import { get_lang_text } from "../constant"; // 导入分类映射
+import { SiteConfig } from "../site_config";
 const { lang } = useData();
 const router = useRouter();
 const location = useBrowserLocation();
@@ -22,33 +23,15 @@ const categoriesMeta = computed(() => {
     }
   }
 
-  return categoryMap
-    .map((categoryDetail) => {
-      return {
-        ...categoryDetail,
-        text: get_lang_text(`category_${categoryDetail.name}`, lang.value),
-        count: categoryCounts[categoryDetail.name] || 0,
-      };
-    })
-    .filter((category) => category.isHome);
-});
-
-const isCategoryExist = computed(() => {
-  return categoriesMeta.value.some((cat) => cat.text === currentCategory.value);
-});
-
-function getCategoryDetail(text: string) {
-  const category = categoryMap.find((cat) => cat.name === text);
-  if (category) {
-    return category;
-  } else {
+  return SiteConfig.categorys.map((categoryDetail) => {
     return {
-      text,
-      name: text,
-      isHome: false,
+      ...categoryDetail,
+      text: get_lang_text(`category_${categoryDetail.name}`, lang.value),
+      count: categoryCounts[categoryDetail.name] || 0,
     };
-  }
-}
+  });
+  // .filter((category) => category.isHome);
+});
 
 const goHome = () => {
   currentCategory.value = "";

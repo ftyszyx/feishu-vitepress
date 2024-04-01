@@ -3,7 +3,7 @@ import "artalk/dist/Artalk.css";
 import Artalk from "artalk";
 import { watch, nextTick, ref, onMounted, computed } from "vue";
 import { useData, useRouter, PageData, withBase, useRoute } from "vitepress";
-import { ArttalkConfig } from "../constant";
+import { SiteConfig } from "../site_config";
 const artalkEl = ref<HTMLElement>();
 const route = useRoute();
 const page = useData().page;
@@ -24,15 +24,18 @@ watch(
 );
 
 function initArtalk(page: PageData) {
+  console.log("artalk", SiteConfig);
+  if (SiteConfig.artalk.server == "") return;
   const artalk = Artalk.init({
     pageKey: `${route.path}`,
     pageTitle: page.title,
     el: artalkEl.value,
-    ...ArttalkConfig,
+    ...SiteConfig.artalk,
   });
 
   // 夜间模式
-  const darkMode = document.querySelector("html").classList.contains("dark");
+  const darkMode =
+    document.querySelector("html")?.classList.contains("dark") || false;
   artalk.setDarkMode(darkMode);
   new MutationObserver((mList) => {
     mList.forEach((m) => {

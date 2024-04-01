@@ -12,11 +12,13 @@ export interface Post {
   hit: number;
 }
 
-export interface CategoryInfo {
-  name: string;
-  count?: number;
-  isHome: boolean;
-}
 export interface MySiteInfo {
   author: string;
+}
+export interface CategoryInfo {
+  name: string;
+}
+export interface ArtTalk {
+  site: string;
+  server: string;
 }

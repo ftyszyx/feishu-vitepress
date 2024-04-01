@@ -10,9 +10,9 @@
     "export": "npm run export -w feishu-pages",
     "trans_en": "npm run trans_en -w feishu-pages",
 
-    "dev:blog": "npm run docs:dev -w blog",
-    "build:blog": "npm run docs:build -w blog",
-    "preview:blog": "npm run docs:preview -w blog",
+    "dev": "npm run dev -w blog",
+    "build": "npm run build -w blog",
+    "preview": "npm run preview -w blog",
 
     "clean": "npm run clean -w feishu-pages"
   },

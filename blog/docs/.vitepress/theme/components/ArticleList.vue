@@ -195,3 +195,4 @@ onMounted(() => {
     </div>
   </div>
 </template>
+../site_config.js

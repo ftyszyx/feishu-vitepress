@@ -7,14 +7,14 @@
     "url": "https://github.com/ftyszyx/myblog"
   },
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "build:github": "cross-env BASE_URL=myblog vitepress build docs",
+    "preview": "vitepress preview docs"
   },
   "devDependencies": {
     "@types/markdown-it": "^12.2.3",
     "@types/node": "^18.19.4",
-    "dotenv": "^16.3.1",
     "feed": "^4.2.2",
     "gray-matter": "^4.0.3",
     "postcss-nesting": "^12.0.2",
@@ -22,7 +22,8 @@
     "prettier-plugin-tailwindcss": "^0.5.11",
     "tailwindcss": "^3.4.3",
     "vitepress": "^1.0.1",
-    "vue": "^3.4.5"
+    "vue": "^3.4.5",
+    "cross-env": "^7.0.3"
   },
   "dependencies": {
     "@tailwindcss/nesting": "0.0.0-insiders.565cd3e",

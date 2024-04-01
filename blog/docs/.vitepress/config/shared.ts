@@ -1,21 +1,22 @@
 import { createContentLoader, defineConfig, HeadConfig } from "vitepress";
 import { copyFileSync } from "fs";
 import path from "path";
-import "dotenv/config";
+import { SiteConfig } from "../theme/site_config";
 
-export const github_url = "https://github.com/ftyszyx";
-export const twitter_url = "https://twitter.com/zhangyuxin_new";
+const umami_url = process.env.umami_url || "";
+const umami_website = process.env.umami_website_id || "";
+
 export const shared = defineConfig({
   cleanUrls: true,
   appearance: true,
   ignoreDeadLinks: true,
-  base: process.env.BLOG_BASE_URL || "/",
+  base: process.env.BASEURL || "/",
   head: [
     [
       "script",
       {
-        src: "http://8.134.157.107:8030/script.js",
-        "data-website-id": "1481cea1-06d4-4065-9b35-f8a7cd9cdbc1",
+        src: umami_url,
+        "data-website-id": umami_website,
       },
     ],
     ["link", { rel: "icon", href: "/logo.png" }],
@@ -74,17 +75,17 @@ export const shared = defineConfig({
     return head;
   },
   themeConfig: {
-    aside:true,
+    aside: true,
     outline: {
-      level:[2,6]
+      level: [2, 6],
     },
     search: {
       provider: "local",
     },
     logo: "./logo.png",
     socialLinks: [
-      { icon: "twitter", link: twitter_url },
-      { icon: "github", link: github_url },
+      { icon: "twitter", link: SiteConfig.twitter_url },
+      { icon: "github", link: SiteConfig.github_url },
     ],
   },
 });
