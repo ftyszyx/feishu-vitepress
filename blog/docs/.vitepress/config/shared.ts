@@ -3,9 +3,6 @@ import { copyFileSync } from "fs";
 import path from "path";
 import { SiteConfig } from "../theme/site_config";
 
-const umami_url = process.env.umami_url || "";
-const umami_website = process.env.umami_website_id || "";
-
 export const shared = defineConfig({
   cleanUrls: true,
   appearance: true,
@@ -15,8 +12,8 @@ export const shared = defineConfig({
     [
       "script",
       {
-        src: umami_url,
-        "data-website-id": umami_website,
+        src: SiteConfig.umami_url || "",
+        "data-website-id": SiteConfig.umami_website_id || "",
       },
     ],
     ["link", { rel: "icon", href: "/logo.png" }],
