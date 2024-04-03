@@ -57,7 +57,9 @@ onUnmounted(() => {});
     </template>
     <template #doc-bottom> </template>
     <template #doc-footer-before>
-      <ArticleCopyright />
+      <ClientOnly>
+        <ArticleCopyright />
+      </ClientOnly>
     </template>
     <!-- 文章尾部 -->
     <template #doc-after>
@@ -66,7 +68,9 @@ onUnmounted(() => {});
     </template>
     <template #aside-outline-before> </template>
     <template #home-hero-before>
-      <CategoryNav />
+      <ClientOnly>
+        <CategoryNav />
+      </ClientOnly>
     </template>
     <!-- 主页模块 -->
     <template #home-hero-after>
