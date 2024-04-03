@@ -12,7 +12,7 @@ export const shared = defineConfig({
     [
       "script",
       {
-        src: SiteConfig.umami_url || "",
+        src: SiteConfig.umami_script || "",
         "data-website-id": SiteConfig.umami_website_id || "",
       },
     ],

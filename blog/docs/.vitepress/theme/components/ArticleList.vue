@@ -7,6 +7,7 @@ import { useCurrentCategoryKey, useCurrentPageKey } from "../configProvider";
 import ArticleCard from "./ArticleCard.vue";
 import { Post } from "../type_def.js";
 import { get_lang_text } from "../constant";
+import { SiteConfig } from "../site_config";
 
 const { lang } = useData();
 const router = useRouter();
@@ -54,6 +55,7 @@ const articleList = computed(() => {
 
 const hasNextPage = computed(() => pageKey.value < pageTotal.value);
 const hasPrevPage = computed(() => pageKey.value > 1);
+const showHit = computed(() => !!SiteConfig.umami_website_id);
 
 const scrollToTop = () => {
   if (typeof window !== "undefined") {
@@ -92,16 +94,22 @@ const nextPage = () => {
 };
 
 const fetchArticleListHits = async () => {
+  if (!showHit) {
+    isArticleListHitsFetched.value = true;
+    return;
+  }
   try {
-    const response = await fetch(`https://st.luolei.org/ga`);
-    const { data } = await response.json();
-    data.forEach((item) => {
-      const post = posts.value.find((p) => p.url === item.page);
+    const response = await fetch(
+      `${SiteConfig.umami_url}/api/websites/${SiteConfig.umami_website_id}/blogpage`,
+    );
+    const { views } = await response.json();
+    // console.log("get views", views);
+    views.forEach((item) => {
+      const post = posts.value.find((p) => p.url === item.url_path);
       if (post) {
-        post.hit = item.hit;
+        post.hit = item.num;
       }
     });
-    // 设置 isArticleListHitsFetched 为 true
     isArticleListHitsFetched.value = true;
   } catch (error) {
     console.error("Error fetching page hits:", error);
@@ -124,7 +132,7 @@ watch(
 );
 
 onMounted(() => {
-  // fetchArticleListHits();
+  fetchArticleListHits();
 });
 </script>
 
