@@ -41,7 +41,7 @@ jobs:
       - name: Build with VitePress
         env:
           BASE_URL: ${{vars.BLOG_BASE_URL}}
-        run: npm run build:github
+        run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
