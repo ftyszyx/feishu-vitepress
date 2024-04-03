@@ -16,7 +16,12 @@ export const shared = defineConfig({
         "data-website-id": SiteConfig.umami_website_id || "",
       },
     ],
-    ["link", { rel: "icon", href: "/logo.png" }],
+    [
+      "script",
+      {},
+      '(function(c,l,a,r,i,t,y){ c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)}; t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i; y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y); })(window, document, "clarity", "script", "lqpzet81i6");',
+    ],
+    ["link", { rel: "icon", href: " / logo.png" }],
     [
       "meta",
       {
