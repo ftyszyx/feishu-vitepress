@@ -1,6 +1,6 @@
 import { createContentLoader, defineConfig, HeadConfig } from "vitepress";
 import { copyFileSync } from "fs";
-import path from "path";
+import path, { basename } from "path";
 import { SiteConfig } from "../theme/site_config";
 
 export const shared = defineConfig({
@@ -52,7 +52,7 @@ export const shared = defineConfig({
         siteconfig.assetsDir,
         picfile_name,
       );
-      // console.log("write", picpath, destpath);
+      console.log("write", picpath, destpath, siteconfig.root);
       copyFileSync(picpath, destpath);
     });
   },
