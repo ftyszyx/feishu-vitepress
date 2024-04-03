@@ -7,7 +7,7 @@ export const shared = defineConfig({
   cleanUrls: true,
   appearance: true,
   ignoreDeadLinks: true,
-  base: process.env.BASEURL || "/",
+  base: process.env.BASE_URL || "/",
   head: [
     [
       "script",
@@ -52,7 +52,7 @@ export const shared = defineConfig({
         siteconfig.assetsDir,
         picfile_name,
       );
-      console.log("write", picpath, destpath, siteconfig.root);
+      // console.log("write", picpath, destpath, siteconfig.root);
       copyFileSync(picpath, destpath);
     });
   },
