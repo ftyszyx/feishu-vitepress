@@ -183,9 +183,65 @@ https://github.com/plainheart/bing-translate-api
 
 看能不能在上面改一下实现 
 
+umami挺强大，功能很完善。值得学习，使用next.js，前后端一套代码
+
+而且数据库是在yarn build时就初始化了，很优秀
+
+参考其代码增加api
+
+```ts
+export interface MyblogWebInfo {
+  url_path: string;
+  num: number;
+}
+export interface MyBlogResp {
+  list: MyblogWebInfo[];
+}
+export default async (
+  req: NextApiRequestQueryBody<MyblogReq>,
+  res: NextApiResponse<MyBlogResp>,
+) => {
+  const views = await getBlogStats(req.query);
+  // console.log('get views', views);
+  return ok(res, { views });
+};
+```
+
+同时要处理跨域问题
+
+修改next.config.js的headers返回
+
+```ts
+{
+        source: '/api/:path*',
+        headers: [
+          { key: 'Access-Control-Allow-Credentials', value: 'true' },
+          { key: 'Access-Control-Allow-Origin', value: '*' }, // replace this your actual origin
+          { key: 'Access-Control-Allow-Methods', value: 'GET,DELETE,PATCH,POST,PUT' },
+          {
+            key: 'Access-Control-Allow-Headers',
+            value:
+              'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version',
+          },
+        ],
+      },
+```
+
+这里还有一个点是要去注册一个自己的container账号
+
+这个cotainer 是上传到ghcr.io这是github cotainer
+
+https://www.chenshaowen.com/blog/github-container-registry.html
+
+官方文档
+
+https://docs.github.com/en/actions/publishing-packages/publishing-docker-images
+
 ## 增加浏览统计
 
-（之前有个可以记录用户全程）
+参考这个
+
+https://clarity.microsoft.com/
 
 ## 怎么同步到公众号
 
