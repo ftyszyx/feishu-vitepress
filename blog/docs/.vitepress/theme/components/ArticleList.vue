@@ -103,11 +103,11 @@ const fetchArticleListHits = async () => {
       `${SiteConfig.umami_url}/api/websites/${SiteConfig.umami_website_id}/blogpage`,
     );
     const { views } = await response.json();
-    console.log("get views", views);
+    // console.log("get views", views);
     views.forEach((item) => {
       const post = posts.value.find((p) => {
         const page_url = withBase(p.url);
-        console.log("item url", post, page_url);
+        console.log("item url", p.url, page_url);
         return page_url == item.url_path;
       });
       if (post) {
