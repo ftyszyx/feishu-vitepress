@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, ref, watch, onMounted } from "vue";
-import { useData, useRouter } from "vitepress";
+import { useData, useRouter, withBase } from "vitepress";
 import { useBrowserLocation } from "@vueuse/core";
 import { data } from "../posts.data.js";
 import { useCurrentCategoryKey, useCurrentPageKey } from "../configProvider";
@@ -105,7 +105,7 @@ const fetchArticleListHits = async () => {
     const { views } = await response.json();
     // console.log("get views", views);
     views.forEach((item) => {
-      const post = posts.value.find((p) => p.url === item.url_path);
+      const post = posts.value.find((p) => p.url === withBase(item.url_path));
       if (post) {
         post.hit = item.num;
       }
