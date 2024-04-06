@@ -3,11 +3,12 @@ import { copyFileSync } from "fs";
 import path, { basename } from "path";
 import { SiteConfig } from "../theme/site_config";
 
+const base_url = process.env.BASE_URL || "/";
 export const shared = defineConfig({
   cleanUrls: true,
   appearance: true,
   ignoreDeadLinks: true,
-  base: process.env.BASE_URL || "/",
+  base: base_url,
   head: [
     [
       "script",
@@ -21,7 +22,7 @@ export const shared = defineConfig({
     //   {},
     //   '(function(c,l,a,r,i,t,y){ c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)}; t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i; y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y); })(window, document, "clarity", "script", "lqpzet81i6");',
     // ],
-    ["link", { rel: "icon", href: "/logo.png" }],
+    ["link", { rel: "icon", href: `${base_url}logo.png` }],
     [
       "meta",
       {
