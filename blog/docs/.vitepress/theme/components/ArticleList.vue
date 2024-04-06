@@ -107,7 +107,7 @@ const fetchArticleListHits = async () => {
     views.forEach((item) => {
       const post = posts.value.find((p) => {
         const page_url = withBase(p.url);
-        console.log("item url", p.url, page_url);
+        // console.log("item url", p.url, page_url);
         return page_url == item.url_path;
       });
       if (post) {
