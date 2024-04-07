@@ -237,11 +237,35 @@ https://www.chenshaowen.com/blog/github-container-registry.html
 
 https://docs.github.com/en/actions/publishing-packages/publishing-docker-images
 
+Github cotainer reg
+
+https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry
+
+<img src="/assets/PbAabyFktoGBKex4ZRicN4dxnkf.png" src-width="740" src-height="126" align="center"/>
+
+所以先要搞acess tokens
+
+https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens
+
 ## 增加浏览统计
 
 参考这个
 
 https://clarity.microsoft.com/
+
+使用了一下，也正常能用了，就是在chrome上发现很多报错
+
+vitepress third-party cookie will be blocked. clarity
+
+<img src="/assets/Ul4jb4wYcoQ7MlxD4EJc1fc5nCg.png" src-width="1588" src-height="49" align="center"/>
+
+在network上看到
+
+<img src="/assets/ILMqbdRSsog8gYxr76ocllwPnwe.png" src-width="878" src-height="348" align="center"/>
+
+感觉应该是clarity导致 的
+
+先关了，看到报错有不心烦
 
 ## 怎么同步到公众号
 
