@@ -74,7 +74,12 @@ export const shared = defineConfig({
       "meta",
       { property: "og:description", content: pageData.frontmatter.title },
     ]);
-
+    if (pageData.frontmatter.keywords) {
+      head.push([
+        "meta",
+        { name: "keywords", content: pageData.frontmatter.keywords },
+      ]);
+    }
     return head;
   },
   themeConfig: {
