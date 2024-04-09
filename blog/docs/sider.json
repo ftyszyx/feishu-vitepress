@@ -22,16 +22,17 @@
     "text": "product",
     "items": [
       {
-        "text": "myblog",
-        "link": "/feishu__2024_2_25_product_myblog",
+        "text": "我的博客-飞书博客",
         "items": [
           {
-            "text": "project_record",
-            "link": "/feishu__2024_2_26_product_myblog_project_record"
+            "text": "临时记录"
           },
           {
             "text": "feishu_write_tips",
             "link": "/feishu__2024_2_28_product_myblog_feishu_write_tips"
+          },
+          {
+            "text": "飞书静态博客转换"
           }
         ],
         "collapsed": false
