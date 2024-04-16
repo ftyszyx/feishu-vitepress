@@ -81,12 +81,14 @@ Here is a 3 column grid example:
 <div class="flex gap-3 columns-3" column-size="3">
 <div class="w-[17%]" width-ratio="17">
 <img src="/assets/FOn4b6wLxoO2hjxKaW5cQt0Qn5g.jpeg" src-width="440" src-height="440" align="center"/>
+
 </div>
 <div class="w-[52%]" width-ratio="52">
 <img src="/assets/LzHObMYtBoGifpxyTOfccxi3nKb.png" src-width="440" src-height="440" align="center"/>
 </div>
 <div class="w-[29%]" width-ratio="29">
 <img src="/assets/DEkxbo02yoTPuIxING3cSEMMn2b.jpeg" src-width="440" src-height="440" align="center"/>
+
 </div>
 </div>
 
@@ -175,6 +177,8 @@ An example of an image with caption.
 
 ## File
 
+[test.zip](/assets/NEOWbiOKOo7xbJxsWaJctjTJnFh.zip)
+
 [test-file.zip](/assets/IfrlbIQ24owNtRxFeySc6bwWnjf.zip)
 
 ## Table
@@ -202,6 +206,10 @@ Currently, feishu-docx only supports pure Table.
 ## Equation
 
 $$E = mc^2$$
+
+When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are
+
+$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 
 # 流程图，画板，思维导图
 

@@ -59,6 +59,7 @@ export const shared = defineConfig({
   },
   markdown: {
     lineNumbers: true,
+    math: true,
     image: {
       lazyLoading: true,
     },
