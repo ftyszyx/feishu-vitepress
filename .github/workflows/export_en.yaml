@@ -1,0 +1,42 @@
+name: translate blog to en 
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  export:
+    name: get feishu pages
+    runs-on: ubuntu-latest
+    environment: myblog
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          branch: main
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm # or pnpm / yarn
+
+      - name: Install dependencies
+        run: npm ci # or pnpm install / yarn install / bun install
+
+      - name: Exporting
+        env:
+          FEISHU_APP_ID: ${{ vars.FEISHU_APP_ID }}
+          FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
+          FEISHU_SPACE_ID: "${{ vars.FEISHU_SPACE_ID}}"
+          OUTPUT_DIR: ../blog
+          DOC_DIR_NAME: docs
+        run: npm run trans_en
+
+      - uses: EndBug/add-and-commit@v9
+        with:
+          message: commit by robot translate en
+          committer_name: GitHub Actions
+          committer_email: whyzi@qq.com
+          add: blog
