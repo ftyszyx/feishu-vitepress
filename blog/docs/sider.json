@@ -25,14 +25,24 @@
         "text": "我的博客-飞书博客",
         "items": [
           {
-            "text": "临时记录"
+            "text": "项目开发日志",
+            "link": "/feishu__2024_2_26_product_myblog_project_record"
           },
           {
-            "text": "feishu_write_tips",
-            "link": "/feishu__2024_2_28_product_myblog_feishu_write_tips"
+            "text": "飞书静态博客转换",
+            "link": "/feishu__2024_3_7_product_myblog_intro"
           },
           {
-            "text": "飞书静态博客转换"
+            "text": "演示",
+            "link": "/feishu__2024_3_16_product_myblog_demo"
+          },
+          {
+            "text": "blog_set",
+            "link": "/feishu__2024_3_16_product_myblog_blog_set"
+          },
+          {
+            "text": "github action自动化流程说明",
+            "link": "/feishu__2024_3_16_product_myblog_github action intro"
           }
         ],
         "collapsed": false
