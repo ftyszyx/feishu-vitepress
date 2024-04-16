@@ -35,6 +35,7 @@ const exportDoc = async () => {
   fs.readdirSync(doc_path, { withFileTypes: true }).forEach(function (dirent) {
     var filePath = path.join(doc_path, dirent.name);
     if (dirent.isFile && dirent.name.startsWith(FeiShuDoc_pre) && dirent.name.endsWith(".md")) {
+      console.log(`remove file:${filePath}`);
       fs.rmSync(filePath);
     }
   });
