@@ -1,5 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: ["selector", '[data-mode="dark"]'],
+  content: ["./docs/.vitepress/**/*.{vue,js,ts,jsx,tsx,html}","./docs/**/*.md"],
+  theme: {
+    extend: { },
+  },
+  plugins:[],
+  darkMode:"class", 
   important: true,
 };

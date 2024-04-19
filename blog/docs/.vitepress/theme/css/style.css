@@ -25,6 +25,10 @@
   }
 }
 
+.w-\[17\%\] {
+    width: 11% !important;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

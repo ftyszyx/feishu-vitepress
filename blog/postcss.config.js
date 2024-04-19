@@ -1,12 +1,9 @@
-import tailwinddcssNesting from "@tailwindcss/nesting";
-import tailwind from "tailwindcss";
+import tailwindcss from "tailwindcss";
+import autoprefixer from "autoprefixer";
 
 export default {
   plugins: [
-    tailwinddcssNesting,
-    tailwind({
-      content: ["./docs/.vitepress/theme/**/*.vue"],
-      plugins: [],
-    }),
+    tailwindcss,
+    autoprefixer,
   ],
 };
