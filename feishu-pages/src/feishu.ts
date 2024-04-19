@@ -250,6 +250,7 @@ export class FeishuDocHelp {
     }
     meta["create_time"] = parseInt(fileDoc.node_create_time);
     meta["title"] = meta.title || fileDoc.title;
+    meta["cover"]=meta.cover||"/normal_cover.png"
     if (category) meta["categories"] = meta.categories || [category.trim().toLowerCase()];
     const head_text = this.genMetaText(meta);
     if (meta.hide == true && isindex) content = head_text;

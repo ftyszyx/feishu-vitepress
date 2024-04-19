@@ -1,6 +1,5 @@
 import { createContentLoader, defineConfig, HeadConfig } from "vitepress";
 import { copyFileSync } from "fs";
-import path, { basename } from "path";
 import { SiteConfig } from "../theme/site_config";
 
 const base_url = process.env.BASE_URL || "/";
@@ -32,6 +31,11 @@ export const shared = defineConfig({
       },
     ],
   ],
+  transformPageData: async (pageData) => { 
+    if(pageData.frontmatter.cover){
+      pageData.frontmatter.cover = "/normal_cover.png";
+    }
+  },
   buildEnd: async (siteconfig) => {
     const coverurls: string[] = await createContentLoader("/*.md", {
       excerpt: true,

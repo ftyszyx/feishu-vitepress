@@ -36,6 +36,7 @@ const previewImageUrl = computed(() => {
   //   console.error("Cover image URL is not provided!");
   //   return "";
   // }
+  // console.log("cover", props.cover);
   if (props.cover) return withBase(props.cover);
   return "";
 });
