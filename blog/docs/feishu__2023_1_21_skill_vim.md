@@ -1,15 +1,19 @@
 ---
-title: vim学习笔记
-tags:
-  - develop
-cover: /assets/BQmfb4IfnohBwJx9Y4Wcjeienhg.png
+cover: /assets/Hru8bHtL6oEQzvxKBEicvCbKnEb.png
 create_time: 1676970303
+title: Vim
 categories:
   - skill
 ---
 
 
-# vim
+# Vim
+
+```yaml
+title: vim学习笔记
+tags:
+  - develop
+```
 
 <img src="/assets/NgRJblUKCo3KLBx0Zw1c1nFRn0b.png" src-width="932" src-height="610" align="center"/>
 

@@ -207,10 +207,6 @@ Currently, feishu-docx only supports pure Table.
 
 $$E = mc^2$$
 
-When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are
-
-$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
-
 # 流程图，画板，思维导图
 
 在飞书编辑器里面，有流程图导出图片或复制图片的功能，将流程图的图片插入到文档中即可
