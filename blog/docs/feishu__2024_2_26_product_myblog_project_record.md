@@ -343,6 +343,18 @@ https://pages.cloudflare.com/
 
 ## 首页的图片经常不加载
 
+## 翻译后，编译文档报错
+
+SyntaxError: Element is missing end tag.
+
+看不出是哪个文档编译错误
+
+<img src="/assets/Ymnzbsol1oovoKxQf9YczYC5nVe.png" src-width="987" src-height="329" align="center"/>
+
+只能一个个删除,找到对应问题文档
+
+发现里面有&lt;这种符号。删除就Ok了
+
 # 待处理问题
 
 ## 怎么同步到公众号

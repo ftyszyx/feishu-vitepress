@@ -10,6 +10,7 @@ categories:
   - product
 ---
 
+
 # 为什么做这个
 
 目前的静态博客如vitepress，主要是用markdown来写内容。markdown虽然可读性比较好，但是在文章中贴图片有点麻烦，需要先保存图片到asset目录下，再在markdown中写图片地址。
@@ -19,7 +20,7 @@ categories:
 # 主要功能介绍
 
 1. 将飞书文档导出成markdown文件
-2. 生成导出的文章的静态博客系统(使用vitepress)
+2. 生成导出的文章的静态博客系统（使用vitepress)
 3. 自动翻译中文文档为英文
 4. 集成了umami访问统计
 5. 集成了artalk评论系统
@@ -35,9 +36,9 @@ categories:
 通过下面步骤后可以获取下面三个参数：
 
 ```ts
-FEISHU_APP_ID = 飞书应用的appid;
-FEISHU_APP_SECRET = 飞书应用的secret;
-FEISHU_SPACE_ID = 知识库的id;
+FEISHU_APP_ID=飞书应用的appid
+FEISHU_APP_SECRET=飞书应用的secret
+FEISHU_SPACE_ID=知识库的id
 ```
 
 ### 新建应用
@@ -81,6 +82,8 @@ https://open.feishu.cn/app
 建立群，并接入机器人
 
 <img src="/assets/BDjkbEwESoRMpVxW5lacSSFFnbb.png" src-width="329" src-height="445" align="center"/>
+
+ 
 
 <img src="/assets/A60LbBZ3ZoivhGxX9gacdiFUnmg.png" src-width="328" src-height="177" align="center"/>
 
@@ -185,8 +188,8 @@ npm run dev
 layout: home  #指明用home layout（非必须。vitepress属性，如果是首页就用home.非首页不用填）
 title: 学技术   #标题
 hide: false   #是否不导出当前页，非必须
-hide_child: true #是否导出子节点，非必须
-keywords:  #用于搜索和网站seo，非必须
+hide_child: true #是否导出子节点，非必须 
+keywords:  #用于搜索和网站seo，非必须 
   - feishu
   - vitepress
 ```
@@ -200,14 +203,11 @@ keywords:  #用于搜索和网站seo，非必须
 在导出文章时，会自动分配
 
 ```ts
-if (category)
-  meta["categories"] = meta.categories || [category.trim().toLowerCase()];
+if (category) meta["categories"] = meta.categories || [category.trim().toLowerCase()];
 ```
 
-###
-
-#
-
+### 
+# 
 # 参考项目
 
 导出飞书文档参考：
@@ -221,3 +221,4 @@ https://github.com/foru17/luoleiorg/tree/main
 本人博客演示效果
 
 https://ftyszyx.github.io/feishu-vitepress/
+
