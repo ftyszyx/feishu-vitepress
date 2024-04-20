@@ -33,6 +33,7 @@ export const shared = defineConfig({
     ],
   ],
   transformPageData: async (pageData) => {
+    // console.log("transformPageData", pageData.frontmatter.cover);
     if (!pageData.frontmatter.cover) {
       pageData.frontmatter.cover = "/normal_cover.png";
     }

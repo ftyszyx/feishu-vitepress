@@ -15,6 +15,7 @@ export default createContentLoader("/*.md", {
           ...frontmatter,
           url,
           hit: 0,
+          cover: frontmatter.cover || "/normal_cover.png",
           excerpt,
           date: formatDate(frontmatter.create_time),
         } as Post;
