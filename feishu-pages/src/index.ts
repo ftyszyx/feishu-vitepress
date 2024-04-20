@@ -101,7 +101,7 @@ const translateDoc = async (lan: string) => {
 async function translateText(text: string, lan: string) {
   const linearr = text.split("\n");
   // console.log("line", linearr.length);
-  const bathsize = 200;
+  const bathsize = 50;
   const batch = Math.ceil(linearr.length / bathsize);
   let tran_res = "";
   for (let i = 0; i < batch; i++) {
