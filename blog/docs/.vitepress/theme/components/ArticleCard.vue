@@ -65,6 +65,8 @@ onMounted(() => {});
             'absolute',
             'duration-300',
             'ease-in',
+            'top-0',
+            'left-0',
             'rounded-t',
             'hover:scale-105',
           ]"
