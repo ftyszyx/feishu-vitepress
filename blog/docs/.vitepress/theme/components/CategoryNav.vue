@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { computed, ref, watch, onMounted, watchEffect, nextTick } from "vue";
-import { useData, useRoute, useRouter } from "vitepress";
+import { computed, watch } from "vue";
+import { useData, useRouter } from "vitepress";
 import { useBrowserLocation } from "@vueuse/core";
 import { data } from "../posts.data.js";
 import { useCurrentCategoryKey, useCurrentPageKey } from "../configProvider";

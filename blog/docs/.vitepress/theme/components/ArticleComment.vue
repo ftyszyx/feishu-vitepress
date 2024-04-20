@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import "artalk/dist/Artalk.css";
 import Artalk from "artalk";
-import { watch, nextTick, ref, onMounted, computed } from "vue";
-import { useData, useRouter, PageData, withBase, useRoute } from "vitepress";
+import { watch, nextTick, ref, onMounted } from "vue";
+import { useData, PageData, useRoute } from "vitepress";
 import { SiteConfig } from "../site_config";
 const artalkEl = ref<HTMLElement>();
 const route = useRoute();
@@ -14,7 +14,7 @@ onMounted(async () => {
 
 watch(
   () => route.path,
-  async (path) => {
+  async () => {
     // console.log("page", page.value);
     await nextTick();
     if (artalkEl.value) {

@@ -1,21 +1,17 @@
 ---
+title: 项目日志
+keywords:
+  - feishu
+  - vitepress
+  - log
 cover: /assets/LFBVb2RCPoun7NxaQhecqO4nnyh.png
 create_time: 1711417448
-title: project_record
 categories:
   - product
 ---
 
 
 # project_record
-
-```yaml
-title: 项目日志
-keywords:
-  - feishu
-  - vitepress
-  - log
-```
 
 # 问题处理
 

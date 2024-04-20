@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, onMounted } from "vue";
-import { useData, useRoute, withBase } from "vitepress";
+import { useData, useRoute } from "vitepress";
 import { get_lang_text } from "../constant";
 const { frontmatter, lang, page } = useData();
 const { create_time } = frontmatter.value;

@@ -82,7 +82,8 @@ watch(
               <line x1="16" y1="3" x2="16" y2="7" />
               <line x1="8" y1="3" x2="8" y2="7" />
               <line x1="4" y1="11" x2="20" y2="11" />
-              <rect x="8" y="15" width="2" height="2" /></svg
+              <rect x="8" y="15" width="2" height="2" />
+            </svg>
             >{{ date }}
           </p>
 
