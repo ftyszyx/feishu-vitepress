@@ -10,22 +10,22 @@
     "collapsed": false
   },
   {
-    "text": "daily_life"
+    "text": "生活"
   },
   {
-    "text": "Sport"
+    "text": "运动"
   },
   {
-    "text": "Financing"
+    "text": "理财"
   },
   {
-    "text": "product",
+    "text": "项目",
     "items": [
       {
         "text": "我的博客-飞书博客",
         "items": [
           {
-            "text": "project_record",
+            "text": "项目日志",
             "link": "/en/feishu__2024_2_26_product_myblog_project_record"
           },
           {
@@ -51,9 +51,7 @@
     "collapsed": false
   },
   {
-    "text": "首页"
-  },
-  {
-    "text": "测试"
+    "text": "首页",
+    "link": "/en/index"
   }
 ]
