@@ -177,10 +177,12 @@ export class FeishuDocHelp {
         if (parent_path_arr.length == 0 && item.title.toLowerCase() == "index") filename = "index";
         const { hide, hide_child, title } = await this.fetchDocBody(path.join(option.doc_root_path, `${filename}.md`), pic_path, item, parent_path_arr.length >= 1 ? parent_path_arr[0] : "");
         const sider_item: SideBarItem = { text: title || item.title };
-        if (hide !== true) {
+        if (hide !== true || filename == "index") {
           console.info("Writing doc", item.title);
           sider_item.link = `/${filename}`;
         }
+        if (hide == true && hide_child == true) continue;
+        // console.log("add item", hide, hide_child);
         sider_items.push(sider_item);
         if (item.has_child && hide_child !== true) {
           const new_parents = item.wiki_path_arr.concat(item.title);
@@ -250,7 +252,7 @@ export class FeishuDocHelp {
     }
     meta["create_time"] = parseInt(fileDoc.node_create_time);
     meta["title"] = meta.title || fileDoc.title;
-    meta["cover"]=meta.cover||"/normal_cover.png"
+    meta["cover"] = meta.cover || "/normal_cover.png";
     if (category) meta["categories"] = meta.categories || [category.trim().toLowerCase()];
     const head_text = this.genMetaText(meta);
     if (meta.hide == true && isindex) content = head_text;

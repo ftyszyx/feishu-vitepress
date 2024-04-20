@@ -18,7 +18,7 @@ categories:
 
 目前有三个自动化流程
 
-export_en.yaml:将文章转成英文 (手动执行）
+export_en.yaml:将文章转成英文 (手动执行)
 
 update.yaml: 导出飞书文章（手动加自动：每天一次）
 

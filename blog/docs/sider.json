@@ -51,9 +51,7 @@
     "collapsed": false
   },
   {
-    "text": "首页"
-  },
-  {
-    "text": "测试"
+    "text": "首页",
+    "link": "/index"
   }
 ]
