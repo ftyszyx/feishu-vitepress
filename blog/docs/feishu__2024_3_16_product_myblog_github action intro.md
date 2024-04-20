@@ -6,6 +6,7 @@ keywords:
   - blog
   - github action
 create_time: 1713257619
+cover: /normal_cover.png
 categories:
   - product
 ---

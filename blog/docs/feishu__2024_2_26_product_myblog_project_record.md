@@ -1,17 +1,21 @@
 ---
-title: 项目开发日志
-keywords:
-  - feishu
-  - vitepress
-  - log
-cover: /assets/Qxx9bXfDYoSzyPxVRXhcmZsAnL5.png
+cover: /assets/LFBVb2RCPoun7NxaQhecqO4nnyh.png
 create_time: 1711417448
+title: project_record
 categories:
   - product
 ---
 
 
 # project_record
+
+```yaml
+title: 项目开发日志
+keywords:
+  - feishu
+  - vitepress
+  - log
+```
 
 # 问题处理
 
@@ -321,9 +325,27 @@ https://pages.cloudflare.com/
 
 过一个月后再看
 
-# 待处理问题
+# 2024/4/19
 
 ## markdown中的tailwind样式不生效
+
+已处理，也不清楚啥问题，照着别人的项目改了一下就Ok了
+
+# 待处理问题
+
+## 图片加载被截：
+
+参考公众号的图片：
+
+需要两种大小：一是1:1 一是2.35:1
+
+所以我们先2.35:1吧，大小 
+
+高度是160宽度就是376
+
+高度是320宽度就是752
+
+高度是800宽度就是1880
 
 ## 首页的图片经常不加载
 
