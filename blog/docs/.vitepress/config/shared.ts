@@ -1,4 +1,5 @@
 import { createContentLoader, defineConfig, HeadConfig } from "vitepress";
+import path from "path";
 import { copyFileSync } from "fs";
 import { SiteConfig } from "../theme/site_config";
 
@@ -31,8 +32,8 @@ export const shared = defineConfig({
       },
     ],
   ],
-  transformPageData: async (pageData) => { 
-    if(pageData.frontmatter.cover){
+  transformPageData: async (pageData) => {
+    if (pageData.frontmatter.cover) {
       pageData.frontmatter.cover = "/normal_cover.png";
     }
   },
@@ -52,6 +53,7 @@ export const shared = defineConfig({
     coverurls.forEach((item) => {
       const picpath = path.join(siteconfig.root, item);
       const picfile_name = path.basename(picpath);
+      if (picfile_name === "normal_cover.png") return;
       const destpath = path.join(
         siteconfig.outDir,
         siteconfig.assetsDir,
