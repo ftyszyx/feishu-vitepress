@@ -3,7 +3,6 @@ title: vim学习笔记
 tags:
   - develop
 create_time: 1676970303
-cover: /normal_cover.png
 categories:
   - skill
 ---
@@ -93,11 +92,10 @@ https://harttle.land/2016/08/08/vim-search-in-file.html
 
 ## 查找
 
-在 normal 模式下按下 `/` 即可进入查找模式，输入要查找的字符串并按下回车。 Vim 会跳转到第一个匹配。按下 `n` 查找下一个，按下 `N` 查找上一个。
-
-Vim 查找支持正则表达式，例如 `/vim$` 匹配行尾的 `"vim"`。 需要查找特殊字符需要转义，例如 `/vim\$` 匹配 `"vim$"`。
-
-> 注意查找回车应当用 `\n`，而替换为回车应当用 `\r`（相当于 `<CR>`）。
+```yaml
+在 normal 模式下按下 / 即可进入查找模式，输入要查找的字符串并按下回车。 Vim 会跳转到第一个匹配。按下 n 查找下一个，按下 N 查找上一个。
+Vim 查找支持正则表达式，例如 /vim$ 匹配行尾的 "vim"。 需要查找特殊字符需要转义，例如 /vim\$ 匹配 "vim$"。
+```
 
 **其他查找模式**
 
@@ -227,12 +225,14 @@ ctrl+r redo
 
 <img src="/assets/boxcn6Oi7kiyYdzhf18wmWLeiEc.png" src-width="644" src-height="118" align="center"/>
 
+```yaml
 di[ 删除一对 [] 中的所有字符
 di( 删除一对 () 中的所有字符
-di&lt; 删除一对 &lt;&gt; 中的所有字符
+di< 删除一对 <> 中的所有字符
 di{ 删除一对 {} 中的所有字符
 dit 删除一对 HTML/XML 的标签内部的所有字符
-di"  di'  di` 删除一对引号字符 (" 或 ' 或 `) 中所有字符
+di"  di'  di 删除一对引号字符 (" 或 ' 或 ) 中所有字符
+```
 
 ## 替换模式
 
