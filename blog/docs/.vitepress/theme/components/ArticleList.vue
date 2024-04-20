@@ -145,11 +145,9 @@ onMounted(() => {
     <div
       class="w-full text-xl leading-normal text-gray-800 rounded-t md:text-2xl"
     >
-      <ul
-        class="flex flex-wrap justify-between pt-6 -mx-3 md:pt-12 sd:mx-1 md:mx-0"
-      >
+      <ul class="flex flex-wrap pt-6 -mx-3 md:pt-12 sd:mx-1 md:mx-0">
         <li
-          class="flex flex-col flex-grow flex-shrink w-full px-4 py-3 w-1/1 sd:w-1/3 md:w-1/4 sd:px-3 h-100 md:h-100 ld:h-40"
+          class="flex flex-col w-full px-4 py-3 w-1/1 sd:w-1/3 md:w-1/4 sd:px-3 h-100 md:h-100 ld:h-40"
           v-for="{ url, title, date, cover, categories, hit } of articleList"
           :key="url"
         >
