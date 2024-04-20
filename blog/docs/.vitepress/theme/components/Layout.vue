@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, watch, nextTick } from "vue";
 import DefaultTheme from "vitepress/theme";
-import { useRoute, useRouter } from "vitepress";
+import { useRouter } from "vitepress";
 import mediumZoom from "medium-zoom";
 import CategoryNav from "./CategoryNav.vue";
 import ArticleMeta from "./ArticleMeta.vue";
