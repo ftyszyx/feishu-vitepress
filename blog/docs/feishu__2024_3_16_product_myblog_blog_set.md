@@ -1,19 +1,15 @@
 ---
-cover: /assets/NFlNbNOcVoXU2qxgtiRcFCw8nof.png
+title: 博客配置说明
+keywords:
+  - feishu
+  - vitepress
+  - blog
 create_time: 1713255839
-title: blog_set
+cover: /normal_cover.png
 categories:
   - product
 ---
 
 
 # blog_set
-
-```yaml
-title: 博客配置说明
-keywords:
-  - feishu
-  - vitepress
-  - blog
-```
 
