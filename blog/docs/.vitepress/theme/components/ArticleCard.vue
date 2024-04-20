@@ -51,7 +51,7 @@ onMounted(() => {});
     <div class="flex flex-col no-underline hover:no-underline">
       <a
         :href="articleUrl"
-        class="relative overflow-hidden w-[376px] h-[120px] bg-zinc-100 dark:bg-neutral-900"
+        class="relative overflow-hidden w-[376px] h-[160px] bg-zinc-100 dark:bg-neutral-900"
       >
         <img
           v-if="previewImageUrl != ''"
@@ -65,8 +65,8 @@ onMounted(() => {});
             'absolute',
             'duration-300',
             'ease-in',
-            'top-0',
-            'left-0',
+            'w-full',
+            'h-full',
             'rounded-t',
             'hover:scale-105',
           ]"
