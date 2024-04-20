@@ -10,7 +10,7 @@ categories:
 # project_record
 
 ```yaml
-title: 项目开发日志
+title: 项目日志
 keywords:
   - feishu
   - vitepress
@@ -331,7 +331,7 @@ https://pages.cloudflare.com/
 
 已处理，也不清楚啥问题，照着别人的项目改了一下就Ok了
 
-# 待处理问题
+# 2024/4/20
 
 ## 图片加载被截：
 
@@ -348,6 +348,8 @@ https://pages.cloudflare.com/
 高度是800宽度就是1880
 
 ## 首页的图片经常不加载
+
+# 待处理问题
 
 ## 怎么同步到公众号
 
