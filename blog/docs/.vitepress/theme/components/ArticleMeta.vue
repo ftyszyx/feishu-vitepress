@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed, onMounted, watch, nextTick } from "vue";
+import { ref, computed, onMounted, watch } from "vue";
 import { useData, withBase, useRoute, useRouter } from "vitepress";
 import { getFormatNumber } from "../utils";
 import { SiteConfig } from "../site_config";
@@ -10,6 +10,7 @@ const title = computed(() => frontmatter.value.title);
 const date = computed(() => frontmatter.value.date);
 const showHit = computed(() => !!SiteConfig.umami_website_id);
 const bannerImageUrl = computed(() => {
+  console.log("get url", frontmatter.value);
   if (frontmatter.value.cover) return withBase(frontmatter.value.cover);
   return "";
 });
@@ -28,7 +29,7 @@ const fetchPageHits = async () => {
     );
     const { views } = await response.json();
     // console.log("get hit views", route.path, views);
-    if (views) {
+    if (views && views.length > 0) {
       pageHits.value = views[0].num;
     }
     isPageHitsFetched.value = true;

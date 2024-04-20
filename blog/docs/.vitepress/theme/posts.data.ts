@@ -7,20 +7,18 @@ export default createContentLoader("/*.md", {
   render: true,
   excerpt: true,
   transform(raw): Post[] {
-    // console.log("transform ");
     return raw
       .filter(({ frontmatter }) => !frontmatter.hide)
-      .map(
-        ({ url, frontmatter, excerpt }) =>
-          ({
-            ...frontmatter,
-            url,
-            hit: 0,
-            cover: frontmatter.cover || "/normal_cover.png",
-            excerpt,
-            date: formatDate(frontmatter.create_time),
-          }) as Post,
-      )
+      .map(({ url, frontmatter, excerpt }) => {
+        // console.log("formater2", frontmatter.cover);
+        return {
+          ...frontmatter,
+          url,
+          hit: 0,
+          excerpt,
+          date: formatDate(frontmatter.create_time),
+        } as Post;
+      })
       .sort((a, b) => b.date.time - a.date.time);
   },
 });
