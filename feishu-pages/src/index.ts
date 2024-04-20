@@ -78,8 +78,8 @@ const translateDoc = async (lan: string) => {
   //process sider.json
   const dest_json = path.join(lan_doc_path, save_sider_name);
   console.log(`begin trans ${dest_json} cn->${lan}`);
-  const res = await translateText(JSON.stringify(sider_cn_json, null, 2), lan);
-  fs.writeFileSync(dest_json, res);
+  // const res = await translateText(JSON.stringify(sider_cn_json, null, 2), lan);
+  fs.writeFileSync(dest_json, JSON.stringify(sider_cn_json, null, 2));
   console.log(`translate ok ${dest_json} cn->${lan}`);
   //process lan.json
   const lan_json_path = path.join(doc_path, "lan.json");
@@ -112,7 +112,7 @@ async function translateText(text: string, lan: string) {
       src_text += linearr[line];
       src_text += "\n";
     }
-    // console.log("src", src_text);
+    console.log("src", src_text);
     tran_res += (await translate(src_text, "zh-Hans", lan)).translation;
   }
   return tran_res;

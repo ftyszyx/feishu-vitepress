@@ -1,10 +1,10 @@
 [
   {
-    "text": "Learn technology",
+    "text": "学技术",
     "items": [
       {
-        "text": "vim study notes",
-        "link": "/en/feishu__2023_1_21_learn_skill_vim"
+        "text": "vim学习笔记",
+        "link": "/en/feishu__2023_1_21_skill_vim"
       }
     ],
     "collapsed": false
@@ -22,16 +22,27 @@
     "text": "product",
     "items": [
       {
-        "text": "myblog",
-        "link": "/en/feishu__2024_2_25_product_myblog",
+        "text": "我的博客-飞书博客",
         "items": [
           {
             "text": "project_record",
             "link": "/en/feishu__2024_2_26_product_myblog_project_record"
           },
           {
-            "text": "feishu_write_tips",
-            "link": "/en/feishu__2024_2_28_product_myblog_feishu_write_tips"
+            "text": "飞书自动生成静态博客系统",
+            "link": "/feishu__2024_3_7_product_myblog_intro"
+          },
+          {
+            "text": "演示",
+            "link": "/feishu__2024_3_16_product_myblog_demo"
+          },
+          {
+            "text": "博客配置说明",
+            "link": "/feishu__2024_3_16_product_myblog_blog_set"
+          },
+          {
+            "text": "github action自动化流程说明",
+            "link": "/feishu__2024_3_16_product_myblog_github action intro"
           }
         ],
         "collapsed": false
@@ -40,6 +51,9 @@
     "collapsed": false
   },
   {
-    "text": "Home"
+    "text": "首页"
+  },
+  {
+    "text": "测试"
   }
 ]
