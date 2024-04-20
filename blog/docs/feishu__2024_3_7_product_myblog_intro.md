@@ -11,8 +11,6 @@ categories:
 ---
 
 
-# intro
-
 # 为什么做这个
 
 目前的静态博客如vitepress，主要是用markdown来写内容。markdown虽然可读性比较好，但是在文章中贴图片有点麻烦，需要先保存图片到asset目录下，再在markdown中写图片地址。

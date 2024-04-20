@@ -191,9 +191,10 @@ export class MarkdownRenderer extends Renderer {
   parsePageBlock(block: Block): Buffer | string {
     const buf = new Buffer();
 
-    buf.write("# ");
-    buf.write(this.parseTextBlock(block.page));
-    buf.write("\n");
+    //不要头
+    // buf.write("# ");
+    // buf.write(this.parseTextBlock(block.page));
+    // buf.write("\n");
 
     block.children?.forEach((childId, idx) => {
       const child = this.blockMap[childId];

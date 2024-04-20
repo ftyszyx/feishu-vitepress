@@ -11,5 +11,3 @@ categories:
 ---
 
 
-# blog_set
-

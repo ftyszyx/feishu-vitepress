@@ -9,8 +9,6 @@ categories:
 ---
 
 
-# Vim
-
 <img src="/assets/NgRJblUKCo3KLBx0Zw1c1nFRn0b.png" src-width="932" src-height="610" align="center"/>
 
 https://github.com/wsdjeg/Learn-Vim_zh_cn
