@@ -22,15 +22,15 @@
     "text": "项目",
     "items": [
       {
-        "text": "我的博客-飞书博客",
+        "text": "我的博客-飞书转博客系统",
         "items": [
+          {
+            "text": "项目简介",
+            "link": "/feishu__2024_3_7_product_myblog_intro"
+          },
           {
             "text": "项目日志",
             "link": "/feishu__2024_2_26_product_myblog_project_record"
-          },
-          {
-            "text": "飞书自动生成静态博客系统",
-            "link": "/feishu__2024_3_7_product_myblog_intro"
           },
           {
             "text": "演示",

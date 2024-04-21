@@ -8,11 +8,9 @@ categories:
 ---
 
 
-<img src="/assets/NgRJblUKCo3KLBx0Zw1c1nFRn0b.png" src-width="932" src-height="610" align="center"/>
+参考文档:
 
 https://github.com/wsdjeg/Learn-Vim_zh_cn
-
-Vim:
 
 https://vimdoc.sourceforge.net/htmldoc
 

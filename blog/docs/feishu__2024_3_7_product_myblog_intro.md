@@ -1,5 +1,5 @@
 ---
-title: 飞书自动生成静态博客系统
+title: 项目简介
 keywords:
   - feishu
   - vitepress
