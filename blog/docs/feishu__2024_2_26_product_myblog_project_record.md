@@ -355,7 +355,21 @@ SyntaxError: Element is missing end tag.
 
 发现里面有&lt;这种符号。删除就Ok了
 
+# 2024/4/21
+
+## 备案通过
+
+<img src="/assets/D3nUbSF17oLSYax9hMYcB96nnIh.png" src-width="793" src-height="175" align="center"/>
+
+还没完，要去下app
+
+<img src="/assets/DftvbuYz2oF0CCxo61Wc6A1lnzb.png" src-width="810" src-height="457" align="center"/>
+
+必须要手机上注册，因为需要人脸识别
+
 # 待处理问题
+
+markdown中图片希望居中
 
 ## 怎么同步到公众号
 
