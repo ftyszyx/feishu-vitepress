@@ -40,7 +40,7 @@ BASE_URL: ${{vars.BLOG_BASE_URL}}
 
 需要在你的github后台增加环境变量myblog
 
-<img src="/assets/X7OibIoBYoQmVAx8rjPcjhTTnxb.png" src-width="828" src-height="515" align="center"/>
+<img src="/assets/X7OibIoBYoQmVAx8rjPcjhTTnxb.png" src-width="828" class="m-auto" src-height="515" align="center"/>
 
 具体说明参考github文档
 

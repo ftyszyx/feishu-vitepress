@@ -20,33 +20,33 @@ https://www.bilibili.com/video/BV1z541177Jy?p=6&vd_source=1cfe4f7c9bf04285f79b84
 
 安装好插件后，拷贝默认配置
 
-<img src="/assets/boxcnGyPNkuXNSnCFqm0OUw1pbe.png" src-width="723" src-height="635" align="center"/>
+<img src="/assets/boxcnGyPNkuXNSnCFqm0OUw1pbe.png" src-width="723" class="m-auto" src-height="635" align="center"/>
 
 ## 模式
 
-<img src="/assets/boxcnv6H6dU64NajYaJUN6wQwed.png" src-width="254" src-height="370" align="center"/>
+<img src="/assets/boxcnv6H6dU64NajYaJUN6wQwed.png" src-width="254" class="m-auto" src-height="370" align="center"/>
 
 ### normal转insert
 
-<img src="/assets/boxcnomR6fqIMTj7S7FpsZQnA8c.png" src-width="845" src-height="385" align="center"/>
+<img src="/assets/boxcnomR6fqIMTj7S7FpsZQnA8c.png" src-width="845" class="m-auto" src-height="385" align="center"/>
 
 ### Insert to normal
 
-<img src="/assets/boxcniLTuzNGJlYpsuC2VmYricf.png" src-width="860" src-height="148" align="center"/>
+<img src="/assets/boxcniLTuzNGJlYpsuC2VmYricf.png" src-width="860" class="m-auto" src-height="148" align="center"/>
 
 jj和设置有关
 
-<img src="/assets/boxcn1l7I6OQ7qH33PoycMoaXEf.png" src-width="323" src-height="106" align="center"/>
+<img src="/assets/boxcn1l7I6OQ7qH33PoycMoaXEf.png" src-width="323" class="m-auto" src-height="106" align="center"/>
 
 ### Normal 转visual
 
-<img src="/assets/boxcnhtXkw3qVrrGfjJ6J1IIowb.png" src-width="838" src-height="83" align="center"/>
+<img src="/assets/boxcnhtXkw3qVrrGfjJ6J1IIowb.png" src-width="838" class="m-auto" src-height="83" align="center"/>
 
-<img src="/assets/boxcnD3GdHqxOIsKTbqXUKiy3fb.png" src-width="839" src-height="123" align="center"/>
+<img src="/assets/boxcnD3GdHqxOIsKTbqXUKiy3fb.png" src-width="839" class="m-auto" src-height="123" align="center"/>
 
 ### normal转命令模式
 
-<img src="/assets/boxcnDBPQfQEphMbUvF9Qp6L1tb.png" src-width="822" src-height="122" align="center"/>
+<img src="/assets/boxcnDBPQfQEphMbUvF9Qp6L1tb.png" src-width="822" class="m-auto" src-height="122" align="center"/>
 
 ## 光标移动
 
@@ -54,34 +54,34 @@ jj和设置有关
 
 ### 普通移动
 
-<img src="/assets/boxcn0ZPu2ibBaWuflEVJRvNMlb.png" src-width="883" src-height="328" align="center"/>
+<img src="/assets/boxcn0ZPu2ibBaWuflEVJRvNMlb.png" src-width="883" class="m-auto" src-height="328" align="center"/>
 
 ### 单词移动
 
-<img src="/assets/boxcnyBAboJwUobMNzHJBMqRIQc.png" src-width="909" src-height="291" align="center"/>
+<img src="/assets/boxcnyBAboJwUobMNzHJBMqRIQc.png" src-width="909" class="m-auto" src-height="291" align="center"/>
 
 ### 行移动
 
-<img src="/assets/boxcnKzs5UUtizc1h28ADftaTj4.png" src-width="585" src-height="345" align="center"/>
+<img src="/assets/boxcnKzs5UUtizc1h28ADftaTj4.png" src-width="585" class="m-auto" src-height="345" align="center"/>
 
 - `|` 移动到行首第一个字符。
 
 ### 其它移动
 
-<img src="/assets/boxcnoFTPRhDcGmQf4gfSl5jpJ5.png" src-width="845" src-height="252" align="center"/>
+<img src="/assets/boxcnoFTPRhDcGmQf4gfSl5jpJ5.png" src-width="845" class="m-auto" src-height="252" align="center"/>
 
 - `ctrl-e` 屏幕向下滚动一行。
 - `ctrl-y` 屏幕向上滚动一行。
 
-<img src="/assets/MQpsba1yFoC0CXxE2qzcgMQtnNd.png" src-width="346" src-height="230" align="center"/>
+<img src="/assets/MQpsba1yFoC0CXxE2qzcgMQtnNd.png" src-width="346" class="m-auto" src-height="230" align="center"/>
 
-<img src="/assets/boxcn2h1UtsnGVIeoJmHOMgE6bc.png" src-width="798" src-height="275" align="center"/>
+<img src="/assets/boxcn2h1UtsnGVIeoJmHOMgE6bc.png" src-width="798" class="m-auto" src-height="275" align="center"/>
 
 ## 查找替换
 
 https://harttle.land/2016/08/08/vim-search-in-file.html
 
-<img src="/assets/boxcnqjClccIkv4pd0TZYpYYAyc.png" src-width="749" src-height="360" align="center"/>
+<img src="/assets/boxcnqjClccIkv4pd0TZYpYYAyc.png" src-width="749" class="m-auto" src-height="360" align="center"/>
 
   
 
@@ -219,9 +219,9 @@ P粘贴
 
 ctrl+r redo
 
-<img src="/assets/boxcnsP0Kq9WZNzdBgKgiQJ9yZc.png" src-width="766" src-height="261" align="center"/>
+<img src="/assets/boxcnsP0Kq9WZNzdBgKgiQJ9yZc.png" src-width="766" class="m-auto" src-height="261" align="center"/>
 
-<img src="/assets/boxcn6Oi7kiyYdzhf18wmWLeiEc.png" src-width="644" src-height="118" align="center"/>
+<img src="/assets/boxcn6Oi7kiyYdzhf18wmWLeiEc.png" src-width="644" class="m-auto" src-height="118" align="center"/>
 
 ```yaml
 di[ 删除一对 [] 中的所有字符
@@ -236,33 +236,33 @@ di"  di'  di 删除一对引号字符 (" 或 ' 或 ) 中所有字符
 
 http://yyq123.github.io/learn-vim/learn-vi-44-ReplaceMode.html
 
-<img src="/assets/boxcn0egYf7Ygiot4USMQMrfagc.png" src-width="855" src-height="57" align="center"/>
+<img src="/assets/boxcn0egYf7Ygiot4USMQMrfagc.png" src-width="855" class="m-auto" src-height="57" align="center"/>
 
 ## 环绕模式
 
 [VIM学习笔记 环绕字符编辑(surround)](http://yyq123.github.io/learn-vim/learn-vim-plugin-surround.html)
 
-<img src="/assets/boxcnQrvlULFMs64ptAEI29EOHe.png" src-width="980" src-height="253" align="center"/>
+<img src="/assets/boxcnQrvlULFMs64ptAEI29EOHe.png" src-width="980" class="m-auto" src-height="253" align="center"/>
 
-<img src="/assets/boxcnqFrJzzUO2BKTouAuaxYH0b.png" src-width="879" src-height="598" align="center"/>
+<img src="/assets/boxcnqFrJzzUO2BKTouAuaxYH0b.png" src-width="879" class="m-auto" src-height="598" align="center"/>
 
-<img src="/assets/boxcnaSLseOeyWVPrUX0P3cO6Pe.png" src-width="393" src-height="261" align="center"/>
+<img src="/assets/boxcnaSLseOeyWVPrUX0P3cO6Pe.png" src-width="393" class="m-auto" src-height="261" align="center"/>
 
 ## 大小写转换
 
-<img src="/assets/boxcnkGIxNPA9ZqZPARepVO4zgf.png" src-width="592" src-height="431" align="center"/>
+<img src="/assets/boxcnkGIxNPA9ZqZPARepVO4zgf.png" src-width="592" class="m-auto" src-height="431" align="center"/>
 
 ## easymode
 
 leader配的是空格
 
-<img src="/assets/boxcnmQqrUDxH4PKVb9TDF3bvJe.png" src-width="208" src-height="27" align="center"/>
+<img src="/assets/boxcnmQqrUDxH4PKVb9TDF3bvJe.png" src-width="208" class="m-auto" src-height="27" align="center"/>
 
-<img src="/assets/boxcnlfGyJuQFfUmoWnjlbYu4qc.png" src-width="640" src-height="551" align="center"/>
+<img src="/assets/boxcnlfGyJuQFfUmoWnjlbYu4qc.png" src-width="640" class="m-auto" src-height="551" align="center"/>
 
 ## Change sourround
 
-<img src="/assets/boxcnpr7hcgItfgamg8AoI5vGrb.png" src-width="625" src-height="314" align="center"/>
+<img src="/assets/boxcnpr7hcgItfgamg8AoI5vGrb.png" src-width="625" class="m-auto" src-height="314" align="center"/>
 
 ## 多光标
 
@@ -454,7 +454,7 @@ V%y
 
 ]m:下一个函数
 
-<img src="/assets/Lvc6bqClQoUpIRxJByUcGrBMnId.png" src-width="700" src-height="248" align="center"/>
+<img src="/assets/Lvc6bqClQoUpIRxJByUcGrBMnId.png" src-width="700" class="m-auto" src-height="248" align="center"/>
 
 ## 代码注释
 
@@ -481,29 +481,29 @@ https://www.zhihu.com/question/303850876
 
 查看当前输入法编码，要用gitbash
 
-<img src="/assets/boxcnUNjLdKEOSd4HohcapJMVT7.png" src-width="856" src-height="469" align="center"/>
+<img src="/assets/boxcnUNjLdKEOSd4HohcapJMVT7.png" src-width="856" class="m-auto" src-height="469" align="center"/>
 
 获取英语的输入法编码
 
-<img src="/assets/boxcnAxwbJDlhWWH1pnfOvgnvtd.png" src-width="332" src-height="50" align="center"/>
+<img src="/assets/boxcnAxwbJDlhWWH1pnfOvgnvtd.png" src-width="332" class="m-auto" src-height="50" align="center"/>
 
 切换英语
 
-<img src="/assets/boxcnbB5NBNKsJuE9fZnY32lG7g.png" src-width="314" src-height="34" align="center"/>
+<img src="/assets/boxcnbB5NBNKsJuE9fZnY32lG7g.png" src-width="314" class="m-auto" src-height="34" align="center"/>
 
 ## 键盘映射
 
-<img src="/assets/boxcnQpXYSmcqWMWqqE8sJM0j6c.png" src-width="787" src-height="459" align="center"/>
+<img src="/assets/boxcnQpXYSmcqWMWqqE8sJM0j6c.png" src-width="787" class="m-auto" src-height="459" align="center"/>
 
 粘贴
 
-<img src="/assets/boxcn2W6A9WMuHsXgruMk5um6pb.png" src-width="561" src-height="106" align="center"/>
+<img src="/assets/boxcn2W6A9WMuHsXgruMk5um6pb.png" src-width="561" class="m-auto" src-height="106" align="center"/>
 
-<img src="/assets/boxcnEgFj19gJlfLLWGJXzsSg3b.png" src-width="290" src-height="171" align="center"/>
+<img src="/assets/boxcnEgFj19gJlfLLWGJXzsSg3b.png" src-width="290" class="m-auto" src-height="171" align="center"/>
 
 ## 代码提示的选择
 
-<img src="/assets/boxcnxGXQxkbIYIPBrr9pSEto5e.png" src-width="996" src-height="747" align="center"/>
+<img src="/assets/boxcnxGXQxkbIYIPBrr9pSEto5e.png" src-width="996" class="m-auto" src-height="747" align="center"/>
 
 我选择了alt+j和alt+k
 
@@ -535,15 +535,15 @@ ctrl+[
 
 ## 光标移动
 
-<img src="/assets/FLifbvrqCofZdAx1y38c8IiFnoc.png" src-width="615" src-height="248" align="center"/>
+<img src="/assets/FLifbvrqCofZdAx1y38c8IiFnoc.png" src-width="615" class="m-auto" src-height="248" align="center"/>
 
 ## 插入：
 
-<img src="/assets/JJ3VbMaVloGSBXxKfL8cf49hnOg.png" src-width="453" src-height="256" align="center"/>
+<img src="/assets/JJ3VbMaVloGSBXxKfL8cf49hnOg.png" src-width="453" class="m-auto" src-height="256" align="center"/>
 
 ## 操作符加命令
 
-<img src="/assets/DUJPbQXDsoEPHZxNydJcJxpDnBd.png" src-width="707" src-height="464" align="center"/>
+<img src="/assets/DUJPbQXDsoEPHZxNydJcJxpDnBd.png" src-width="707" class="m-auto" src-height="464" align="center"/>
 
 大写的E,B,W对应字串的开头和结尾  字串以空格分开
 

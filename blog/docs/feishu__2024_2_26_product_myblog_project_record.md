@@ -19,7 +19,7 @@ categories:
 
 解决需要在jobs上加上环境变量名
 
-<img src="/assets/L7UWbibvXoQSwxxqJg3cl9h5ncj.png" src-width="308" src-height="104" align="center"/>
+<img src="/assets/L7UWbibvXoQSwxxqJg3cl9h5ncj.png" src-width="308" class="m-auto" src-height="104" align="center"/>
 
 ## 2024/3/26
 
@@ -36,7 +36,7 @@ categories:
 
 加了permision：
 
-<img src="/assets/OeyXb9q53oWH4axfsLtcdlAgnSf.png" src-width="449" src-height="212" align="center"/>
+<img src="/assets/OeyXb9q53oWH4axfsLtcdlAgnSf.png" src-width="449" class="m-auto" src-height="212" align="center"/>
 
 又有新的报错
 
@@ -46,29 +46,29 @@ error: failed to push some refs to '<u>https://github.com/ftyszyx/myblog</u>'
 
 知道原因了，我搞了两次提交，
 
-<img src="/assets/WBBWbyyrCoepLuxUohucjTq6nBd.png" src-width="499" src-height="282" align="center"/>
+<img src="/assets/WBBWbyyrCoepLuxUohucjTq6nBd.png" src-width="499" class="m-auto" src-height="282" align="center"/>
 
 导致异常，合并成一次提交，就好了
 
-<img src="/assets/J0E8bmHUlo0idPxWAR0cdMdMnZc.png" src-width="410" src-height="148" align="center"/>
+<img src="/assets/J0E8bmHUlo0idPxWAR0cdMdMnZc.png" src-width="410" class="m-auto" src-height="148" align="center"/>
 
 ###  <u>pages build and deployment</u> 怎么去掉
 
 Github 上配了pages。会自动加了一个workflow
 
-<img src="/assets/XERKbDeATog68jxZ2SWcmypjnjd.png" src-width="866" src-height="210" align="center"/>
+<img src="/assets/XERKbDeATog68jxZ2SWcmypjnjd.png" src-width="866" class="m-auto" src-height="210" align="center"/>
 
 我想定制这一流程，选这个
 
-<img src="/assets/JhhWbKuiqo5SbqxLdspc1Nphnhe.png" src-width="532" src-height="274" align="center"/>
+<img src="/assets/JhhWbKuiqo5SbqxLdspc1Nphnhe.png" src-width="532" class="m-auto" src-height="274" align="center"/>
 
 然后把这个workflow右边的run log全删除
 
-<img src="/assets/KED6b8FGIowVszxjxptcw8fGn5d.png" src-width="971" src-height="266" align="center"/>
+<img src="/assets/KED6b8FGIowVszxjxptcw8fGn5d.png" src-width="971" class="m-auto" src-height="266" align="center"/>
 
 这个workflow就消失了，世界清静了！
 
-<img src="/assets/ZR5TbQAisoRNJwxx8L8cx0GGn5d.png" src-width="372" src-height="172" align="center"/>
+<img src="/assets/ZR5TbQAisoRNJwxx8L8cx0GGn5d.png" src-width="372" class="m-auto" src-height="172" align="center"/>
 
 ### preview时发现cover图片找不到
 
@@ -122,9 +122,9 @@ buildEnd: async (siteconfig) => {
 
 所以 baseurl要修改一下
 
-<img src="/assets/IMLfb0iCooB8AfxcROWcxNIFnmh.png" src-width="613" src-height="331" align="center"/>
+<img src="/assets/IMLfb0iCooB8AfxcROWcxNIFnmh.png" src-width="613" class="m-auto" src-height="331" align="center"/>
 
-<img src="/assets/Muc0bjrToooEIfxscKScmKWunVb.png" src-width="781" src-height="256" align="center"/>
+<img src="/assets/Muc0bjrToooEIfxscKScmKWunVb.png" src-width="781" class="m-auto" src-height="256" align="center"/>
 
 还有问题，这个basepath修改了后，vitepress不会处理cover的链接
 
@@ -132,7 +132,7 @@ Vitepress有接口，可以在网页中获取base
 
 https://vitepress.dev/guide/asset-handling#base-url
 
-<img src="/assets/UDP3bkjoGoHs09xpEHacLV6EnBg.png" src-width="757" src-height="547" align="center"/>
+<img src="/assets/UDP3bkjoGoHs09xpEHacLV6EnBg.png" src-width="757" class="m-auto" src-height="547" align="center"/>
 
 ## 2024/3/28
 
@@ -246,7 +246,7 @@ Github cotainer reg
 
 https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry
 
-<img src="/assets/PbAabyFktoGBKex4ZRicN4dxnkf.png" src-width="740" src-height="126" align="center"/>
+<img src="/assets/PbAabyFktoGBKex4ZRicN4dxnkf.png" src-width="740" class="m-auto" src-height="126" align="center"/>
 
 所以先要搞acess tokens
 
@@ -262,11 +262,11 @@ https://clarity.microsoft.com/
 
 vitepress third-party cookie will be blocked. clarity
 
-<img src="/assets/Ul4jb4wYcoQ7MlxD4EJc1fc5nCg.png" src-width="1588" src-height="49" align="center"/>
+<img src="/assets/Ul4jb4wYcoQ7MlxD4EJc1fc5nCg.png" src-width="1588" class="m-auto" src-height="49" align="center"/>
 
 在network上看到
 
-<img src="/assets/ILMqbdRSsog8gYxr76ocllwPnwe.png" src-width="878" src-height="348" align="center"/>
+<img src="/assets/ILMqbdRSsog8gYxr76ocllwPnwe.png" src-width="878" class="m-auto" src-height="348" align="center"/>
 
 感觉应该是clarity导致 的
 
@@ -297,25 +297,25 @@ https://pages.cloudflare.com/
 
 遇到个填空，要写网站名
 
-<img src="/assets/SOU6bVj2UocvlOxir0acCoNMnxb.png" src-width="696" src-height="160" align="center"/>
+<img src="/assets/SOU6bVj2UocvlOxir0acCoNMnxb.png" src-width="696" class="m-auto" src-height="160" align="center"/>
 
 但里面有名称指引：
 
 好奇怪哦，个人网站为什么不能用“博客”这个关键字。有点奇葩
 
-<img src="/assets/R7ZnbDlx3oVBnVxAGq6cW20Qnog.png" src-width="1211" src-height="706" align="center"/>
+<img src="/assets/R7ZnbDlx3oVBnVxAGq6cW20Qnog.png" src-width="1211" class="m-auto" src-height="706" align="center"/>
 
 算了，服了，随便取一个吧，星城起点
 
 点提交，提示
 
-<img src="/assets/K0oSb7GIbohHmax37Opch9BDnxe.png" src-width="607" src-height="66" align="center"/>
+<img src="/assets/K0oSb7GIbohHmax37Opch9BDnxe.png" src-width="607" class="m-auto" src-height="66" align="center"/>
 
 好吧，效率真是低下。买 了域名，已经实名过了，还要等2到3天。那只能2到3天后再试了
 
 已经提交了，
 
-<img src="/assets/IDkibfqMwoLQyLx4RSvcugHznB8.png" src-width="354" src-height="113" align="center"/>
+<img src="/assets/IDkibfqMwoLQyLx4RSvcugHznB8.png" src-width="354" class="m-auto" src-height="113" align="center"/>
 
 过一个月后再看
 
@@ -349,7 +349,7 @@ SyntaxError: Element is missing end tag.
 
 看不出是哪个文档编译错误
 
-<img src="/assets/Ymnzbsol1oovoKxQf9YczYC5nVe.png" src-width="987" src-height="329" align="center"/>
+<img src="/assets/Ymnzbsol1oovoKxQf9YczYC5nVe.png" src-width="987" class="m-auto" src-height="329" align="center"/>
 
 只能一个个删除,找到对应问题文档
 
@@ -359,11 +359,11 @@ SyntaxError: Element is missing end tag.
 
 ## 备案通过
 
-<img src="/assets/D3nUbSF17oLSYax9hMYcB96nnIh.png" src-width="793" src-height="175" align="center"/>
+<img src="/assets/D3nUbSF17oLSYax9hMYcB96nnIh.png" src-width="793" class="m-auto" src-height="175" align="center"/>
 
 还没完，要去下app
 
-<img src="/assets/DftvbuYz2oF0CCxo61Wc6A1lnzb.png" src-width="810" src-height="457" align="center"/>
+<img src="/assets/DftvbuYz2oF0CCxo61Wc6A1lnzb.png" src-width="810" class="m-auto" src-height="457" align="center"/>
 
 必须要手机上注册，因为需要人脸识别
 

@@ -78,14 +78,14 @@ Here is a 3 column grid example:
 
 <div class="flex gap-3 columns-3" column-size="3">
 <div class="w-[17%]" width-ratio="17">
-<img src="/assets/FOn4b6wLxoO2hjxKaW5cQt0Qn5g.jpeg" src-width="440" src-height="440" align="center"/>
+<img src="/assets/FOn4b6wLxoO2hjxKaW5cQt0Qn5g.jpeg" src-width="440" class="m-auto" src-height="440" align="center"/>
 
 </div>
 <div class="w-[52%]" width-ratio="52">
-<img src="/assets/LzHObMYtBoGifpxyTOfccxi3nKb.png" src-width="440" src-height="440" align="center"/>
+<img src="/assets/LzHObMYtBoGifpxyTOfccxi3nKb.png" src-width="440" class="m-auto" src-height="440" align="center"/>
 </div>
 <div class="w-[29%]" width-ratio="29">
-<img src="/assets/DEkxbo02yoTPuIxING3cSEMMn2b.jpeg" src-width="440" src-height="440" align="center"/>
+<img src="/assets/DEkxbo02yoTPuIxING3cSEMMn2b.jpeg" src-width="440" class="m-auto" src-height="440" align="center"/>
 
 </div>
 </div>
@@ -171,7 +171,7 @@ To split contents.
 
 An example of an image with caption.
 
-<img src="/assets/LAHrbunRMoEmtFxjk3wc46rvnQV.png" src-width="1280" src-height="720" align="center"/>
+<img src="/assets/LAHrbunRMoEmtFxjk3wc46rvnQV.png" src-width="1280" class="m-auto" src-height="720" align="center"/>
 
 ## File
 
@@ -213,9 +213,9 @@ $$E = mc^2$$
 
 选复制到粘贴板，再插入图片即可
 
-<img src="/assets/XOrdbT96AoqESuxLdzycuqzAnNd.png" src-width="557" src-height="202" align="center"/>
+<img src="/assets/XOrdbT96AoqESuxLdzycuqzAnNd.png" src-width="557" class="m-auto" src-height="202" align="center"/>
 
 下面是插入的
 
-<img src="/assets/GbdhbPrN6oBtO7xJZTlcMETvnRh.png" src-width="816" src-height="256" align="center"/>
+<img src="/assets/GbdhbPrN6oBtO7xJZTlcMETvnRh.png" src-width="816" class="m-auto" src-height="256" align="center"/>
 
