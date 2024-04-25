@@ -30,14 +30,18 @@ const posts = ref(
 );
 
 const filteredPosts = computed(() => {
+  // console.log("get posts", posts.value, "curtag", currentCategory.value);
   if (currentCategory.value === "hot" && isArticleListHitsFetched.value) {
     return sortPostsByHit(posts.value);
   } else {
-    return currentCategory.value
+    var filter_posts = currentCategory.value
       ? posts.value.filter((post) =>
           post.categories.includes(currentCategory.value),
         )
       : posts.value;
+    return filter_posts.sort((a, b) => {
+      return b.date.time - a.date.time;
+    });
   }
 });
 
@@ -67,7 +71,7 @@ const scrollToTop = () => {
 };
 
 const sortPostsByHit = (posts: Post[]) => {
-  return posts.filter((post) => post.hit > 0).sort((a, b) => b.hit - a.hit); // 根据 hit 字段大小从大到小排列
+  return posts.filter((post) => post.hit > 0).sort((a, b) => b.hit - a.hit);
 };
 
 const changePage = (page: number) => {
