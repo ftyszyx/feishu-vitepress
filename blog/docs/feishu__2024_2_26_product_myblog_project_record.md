@@ -367,9 +367,11 @@ SyntaxError: Element is missing end tag.
 
 必须要手机上注册，因为需要人脸识别
 
-# 待处理问题
+## markdown中图片希望居中
 
-markdown中图片希望居中
+给imag 加一个tailwind属性 m-auto
+
+# 待处理问题
 
 ## 怎么同步到公众号
 
