@@ -11,6 +11,25 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm # or pnpm / yarn
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Install dependencies
+        run: npm ci # or pnpm install / yarn install / bun install
+
+      - name: Build with VitePress
+        env:
+          BASE_URL: "/"
+        run: npm run build
+      - name: zip dist
+        run: zip -r dist.zip blog/docs/.vitepress/dist/*
+
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -18,10 +37,21 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
         with:
           tag_name: ${{ github.run_number}}
-          release_name: Release ${{ github.run_number}}
+          release_name: Release_${{ github.run_number}}
           body: |
             Changes in this Release
             - First Change
             - Second Change
           draft: false
           prerelease: false
+
+      - name: Upload Release Asset
+        id: upload-release-asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./dist.zip
+          asset_name: dist.zip
+          asset_content_type: application/zip
