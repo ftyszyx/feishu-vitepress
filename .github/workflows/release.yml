@@ -1,6 +1,8 @@
 on:
   workflow_dispatch:
 name: create release
+permissions:
+  contents: write
 jobs:
   build:
     name: Create Release
