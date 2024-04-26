@@ -371,6 +371,22 @@ SyntaxError: Element is missing end tag.
 
 给imag 加一个tailwind属性 m-auto
 
+# 2024/4/25
+
+# 服务器国内自部署
+
+博客分类不对
+
+## https证书
+
+阿里云：
+
+https://www.aliyun.com/product/cas?spm=a2c4g.11186623.0.0.510f3974an3WXp&scm=20140722.S_product@@%E4%BA%91%E4%BA%A7%E5%93%81@@104379._.RL_https-LOC_menu~UND~product-OR_ser-V_3-RE_productNew-P0_1
+
+选免费
+
+<img src="/assets/OCxdbwFiOowvn7xMyo0chW6Un3b.png" src-width="1016" class="m-auto" src-height="395" align="center"/>
+
 # 待处理问题
 
 ## 怎么同步到公众号

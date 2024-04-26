@@ -1,10 +1,18 @@
 [
   {
+    "text": "首页",
+    "link": "/index"
+  },
+  {
     "text": "学技术",
     "items": [
       {
         "text": "vim学习笔记",
         "link": "/feishu__2023_1_21_skill_vim"
+      },
+      {
+        "text": "nginx服务搭建",
+        "link": "/feishu__2024_3_25_skill_nginx"
       }
     ],
     "collapsed": false
@@ -43,15 +51,15 @@
           {
             "text": "github action自动化流程说明",
             "link": "/feishu__2024_3_16_product_myblog_github action intro"
+          },
+          {
+            "text": "第三方工具的配置",
+            "link": "/feishu__2024_3_25_product_myblog_third_lib"
           }
         ],
         "collapsed": false
       }
     ],
     "collapsed": false
-  },
-  {
-    "text": "首页",
-    "link": "/index"
   }
 ]
