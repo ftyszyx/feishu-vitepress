@@ -13,6 +13,14 @@
       {
         "text": "nginx服务搭建",
         "link": "/feishu__2024_3_25_skill_nginx"
+      },
+      {
+        "text": "github_action学习",
+        "link": "/feishu__2024_3_26_skill_github_actions"
+      },
+      {
+        "text": "青龙自动化工具(自动运维）",
+        "link": "/feishu__2024_3_26_skill_qinglong_auto"
       }
     ],
     "collapsed": false

@@ -44,3 +44,29 @@ BASE_URL: ${{vars.BLOG_BASE_URL}}
 
 具体说明参考github文档
 
+# 任务说明
+
+## relase.yml
+
+手动执行
+
+会将博客编译成zip，上传到relase中
+
+## pub_github_page.yml
+
+自动执行
+
+编译博客，并部署到github page 
+
+## export_en.yml
+
+自动将博客中的文档翻译成英文
+
+手动执行
+
+## pull_feishu_doc.yml
+
+自动和手动（每天一天）
+
+拉取最新的飞书文档，生成博客
+
