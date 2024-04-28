@@ -1,5 +1,5 @@
 ---
-title: 博客配置说明
+title: 飞书博客-博客配置说明
 keywords:
   - feishu
   - vitepress

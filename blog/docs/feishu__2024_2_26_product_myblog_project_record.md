@@ -1,5 +1,5 @@
 ---
-title: 项目日志
+title: 飞书博客-项目日志
 keywords:
   - feishu
   - vitepress

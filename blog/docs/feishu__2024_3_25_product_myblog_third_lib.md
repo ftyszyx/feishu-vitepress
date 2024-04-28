@@ -1,5 +1,5 @@
 ---
-title: 第三方工具的配置
+title: 飞书博客-第三方工具的配置
 keywords:
   - feishu
   - vitepress

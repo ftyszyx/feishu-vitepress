@@ -41,27 +41,27 @@
         "text": "我的博客-飞书转博客系统",
         "items": [
           {
-            "text": "项目简介",
+            "text": "飞书博客-项目简介",
             "link": "/feishu__2024_3_7_product_myblog_intro"
           },
           {
-            "text": "项目日志",
+            "text": "飞书博客-项目日志",
             "link": "/feishu__2024_2_26_product_myblog_project_record"
           },
           {
-            "text": "演示",
+            "text": "飞书博客-演示",
             "link": "/feishu__2024_3_16_product_myblog_demo"
           },
           {
-            "text": "博客配置说明",
+            "text": "飞书博客-博客配置说明",
             "link": "/feishu__2024_3_16_product_myblog_blog_set"
           },
           {
-            "text": "github action自动化流程说明",
+            "text": "飞书博客-github action自动化流程说明",
             "link": "/feishu__2024_3_16_product_myblog_github action intro"
           },
           {
-            "text": "第三方工具的配置",
+            "text": "飞书博客-第三方工具的配置",
             "link": "/feishu__2024_3_25_product_myblog_third_lib"
           }
         ],
