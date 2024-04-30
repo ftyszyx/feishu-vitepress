@@ -38,3 +38,15 @@ https://cloud.tencent.com/developer/article/2087378
 
 https://sitoi.github.io/dailycheckin/
 
+我参考这个，写一个自动获取博客的更新zip
+
+github的api,获取当前项目的最新release
+
+https://docs.github.com/en/rest/releases/releases?apiVersion=2022-11-28#get-the-latest-release
+
+这个api需要一个token
+
+有三种方式，选最后一种吧**Personal access tokens**
+
+https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token
+
