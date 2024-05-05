@@ -401,11 +401,11 @@ https://www.aliyun.com/product/cas?spm=a2c4g.11186623.0.0.510f3974an3WXp&scm=201
 
 # 待处理问题
 
+Github action触发资源提交不会触发另一个github action
+
 ## 怎么同步到公众号
 
-## 如果图片变成图床中的地址
-
-会不会有问题
+## 如果图片变成图床中的地址 
 
 图片地址变绝对链接有优势，可以
 
