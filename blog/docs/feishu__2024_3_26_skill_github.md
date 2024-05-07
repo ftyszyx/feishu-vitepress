@@ -1,5 +1,5 @@
 ---
-title: github_action学习
+title: github相关学习
 tags:
   - develop
 create_time: 1714113741
@@ -8,15 +8,17 @@ categories:
 ---
 
 
+# Github actions
+
 Github actions简直是一个免费的计算资源，不好好好利用，简直是浪费
 
 Github actions官方库：
 
 https://github.com/actions
 
-# 创建一个release
+## 创建一个release
 
-## Create relase
+### Create relase
 
 官方有个api:
 
@@ -60,7 +62,7 @@ jobs:
           prerelease: false
 ```
 
-## Upload release asset
+### Upload release asset
 
 但这时还没有东西，只是把源码压缩了，不是最终的编译产物
 
@@ -84,9 +86,17 @@ jobs:
       asset_content_type: application/zip
 ```
 
-## Release comment
+### Release comment
 
-# Github actions permissions
+## Github actions permissions
 
 https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs
+
+# github加速
+
+目前发现比较好的是
+
+https://gitmirror.com/files.html
+
+只用在github地址前加个前缀即可
 

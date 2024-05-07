@@ -50,3 +50,53 @@ https://docs.github.com/en/rest/releases/releases?apiVersion=2022-11-28#get-the-
 
 https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token
 
+## 我的第一个脚本
+
+### 脚本地址：
+
+https://github.com/ftyszyx/qinglong
+
+### 拉取代码
+
+增加订阅：
+
+<img src="/assets/Lp2Rb5ZNUo2qrAxSu3ocL6cmnrc.png" src-width="493" class="m-auto" src-height="348" align="center"/>
+
+自动添加任务全关掉
+
+<img src="/assets/OAL5b8O7uoczr7xLFF3cPHfWnEf.png" src-width="475" class="m-auto" src-height="104" align="center"/>
+
+### 添加配置
+
+<img src="/assets/ZKt4bRl0uoE6XRxHDMhcuRCxnGd.png" src-width="1023" class="m-auto" src-height="355" align="center"/>
+
+新建一个config.json,内容参考config.bak
+
+<img src="/assets/GnsybkeHqoTIy6x2AUQcGNDOnIe.png" src-width="507" class="m-auto" src-height="311" align="center"/>
+
+### 添加任务
+
+<img src="/assets/QdPNbzKCsovRQsxCVP0cNqXSnZf.png" src-width="1001" class="m-auto" src-height="235" align="center"/>
+
+<img src="/assets/C46obAfrwoGr76xYfD1cupENnOb.png" src-width="462" class="m-auto" src-height="390" align="center"/>
+
+### 添加依赖
+
+<img src="/assets/H48YbieXro4gtnx9uJ7cHafJn2e.png" src-width="905" class="m-auto" src-height="320" align="center"/>
+
+# 问题
+
+生成的文件，只能在docker映射的目录下
+
+无法被其它用户访问，需要加一个目录映射
+
+<img src="/assets/ILYqbFjQToCbikx2G5Xc0paxnih.png" src-width="346" class="m-auto" src-height="73" align="center"/>
+
+# 总结
+
+qinglong类似于一个简化版本的jenkins.
+
+主要功能就是管理定时任务,
+
+定时执行外部的脚本
+
