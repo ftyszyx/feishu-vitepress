@@ -73,5 +73,25 @@ docker-compose up -d
 
 <img src="/assets/MopJbQS5aoM3vpxkRKicr46wnQh.png" src-width="181" class="m-auto" src-height="268" align="center"/>
 
+## 自动签发证书
+
+- 一键申请和自动续签 Let's encrypt 证书
+
+#### Let's encrypt
+
+官网：https://letsencrypt.org/
+
+如何使用：
+
+https://letsencrypt.org/getting-started/
+
+先安装[cerbot](https://certbot.eff.org/instructions?ws=nginx&os=centosrhel7)
+
+这里有个助手：
+
+<img src="/assets/XBlGbIVgJonm8zxXuNLcnrArnzg.png" src-width="1088" class="m-auto" src-height="93" align="center"/>
+
+- https://cloud.tencent.com/developer/article/2203944
+
 # Nginx配置学习
 
