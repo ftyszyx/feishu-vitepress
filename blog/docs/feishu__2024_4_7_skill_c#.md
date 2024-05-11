@@ -38,3 +38,19 @@ Parallel
 Parallel.ForEach(sourceCollection, item => Process(item));
 ```
 
+# Net core
+
+gitHub  runtime
+
+https://github.com/dotnet/core
+
+https://github.com/dotnet/runtime
+
+网
+
+https://docs.microsoft.com/dotnet/core/
+
+当前的版本
+
+https://github.com/dotnet/core/blob/main/releases.md
+
