@@ -85,13 +85,11 @@ docker-compose up -d
 
 https://letsencrypt.org/getting-started/
 
+https://diamondfsd.com/lets-encrytp-hand-https/
+
 先安装[cerbot](https://certbot.eff.org/instructions?ws=nginx&os=centosrhel7)
 
-这里有个助手：
-
-<img src="/assets/XBlGbIVgJonm8zxXuNLcnrArnzg.png" src-width="1088" class="m-auto" src-height="93" align="center"/>
-
-- https://cloud.tencent.com/developer/article/2203944
+官方文档：https://eff-certbot.readthedocs.io/
 
 # Nginx配置学习
 
