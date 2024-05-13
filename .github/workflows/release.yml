@@ -1,5 +1,7 @@
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "30 2 * * *"
 name: create release
 permissions:
   contents: write
