@@ -12,7 +12,7 @@ const date = computed(() => {
 const cur_lang = computed(() => {
   return lang.value;
 });
-console.log("article right", page.value);
+// console.log("article right", page.value);
 const author = computed(
   () => frontmatter.value.author || get_lang_text("author", cur_lang.value),
 );
