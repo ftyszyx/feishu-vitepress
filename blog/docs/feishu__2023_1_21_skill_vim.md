@@ -14,6 +14,16 @@ https://github.com/wsdjeg/Learn-Vim_zh_cn
 
 https://vimdoc.sourceforge.net/htmldoc
 
+# Visual studio中的vim
+
+使用插件https://github.com/VsVim
+
+vim中的粘贴板和系统粘贴板共用：
+
+```
+:set clipboard=unnamed
+```
+
 # Vscode 中vim
 
 https://www.bilibili.com/video/BV1z541177Jy?p=6&vd_source=1cfe4f7c9bf04285f79b848e60f55aea

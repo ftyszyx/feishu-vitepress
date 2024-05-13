@@ -15,12 +15,16 @@
         "link": "/feishu__2024_3_25_skill_nginx"
       },
       {
-        "text": "github_action学习",
-        "link": "/feishu__2024_3_26_skill_github_actions"
+        "text": "github相关学习",
+        "link": "/feishu__2024_3_26_skill_github"
       },
       {
         "text": "青龙自动化工具(自动运维）",
         "link": "/feishu__2024_3_26_skill_qinglong_auto"
+      },
+      {
+        "text": "c#",
+        "link": "/feishu__2024_4_7_skill_c#"
       }
     ],
     "collapsed": false
@@ -63,6 +67,10 @@
           {
             "text": "飞书博客-第三方工具的配置",
             "link": "/feishu__2024_3_25_product_myblog_third_lib"
+          },
+          {
+            "text": "博客自动同步到阿里云",
+            "link": "/feishu__2024_4_6_product_myblog_aliyun_auto"
           }
         ],
         "collapsed": false
