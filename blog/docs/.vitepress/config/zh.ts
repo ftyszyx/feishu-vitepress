@@ -16,14 +16,16 @@ export const zh = defineConfig({
     sidebar: sidebar,
     footer: {
       message: "基于 MIT 许可发布",
-      copyright: `版权所有 © 2019-${new Date().getFullYear()} 张雨鑫`,
+      copyright: `版权所有 © 2019-${new Date().getFullYear()} 张雨鑫<br/>
+          <a href="http://beian.miit.gov.cn/" target="_blank" rel="nofollow" class="d-none d-lg-inline-block">
+粤ICP备2024236057号</a>
+      `,
     },
 
     docFooter: {
       prev: "上一页",
       next: "下一页",
     },
-
 
     lastUpdated: {
       text: "最后更新于",
