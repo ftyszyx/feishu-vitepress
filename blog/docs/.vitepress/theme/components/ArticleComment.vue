@@ -24,7 +24,7 @@ watch(
 );
 
 function initArtalk(page: PageData) {
-  console.log("artalk", SiteConfig);
+  // console.log("artalk", SiteConfig);
   if (SiteConfig.artalk.server == "") return;
   const artalk = Artalk.init({
     pageKey: `${route.path}`,
