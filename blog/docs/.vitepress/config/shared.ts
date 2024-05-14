@@ -1,7 +1,8 @@
 import { createContentLoader, defineConfig, HeadConfig } from "vitepress";
 import path from "path";
-import { copyFileSync } from "fs";
+import fs from "fs";
 import { SiteConfig } from "../theme/site_config";
+import { assert } from "console";
 
 const base_url = process.env.BASE_URL || "/";
 export const shared = defineConfig({
@@ -32,12 +33,6 @@ export const shared = defineConfig({
       },
     ],
   ],
-  transformPageData: async (pageData) => {
-    // console.log("transformPageData", pageData.frontmatter.cover);
-    if (!pageData.frontmatter.cover) {
-      pageData.frontmatter.cover = "/normal_cover.png";
-    }
-  },
   buildEnd: async (siteconfig) => {
     const coverurls: string[] = await createContentLoader("/*.md", {
       excerpt: true,
@@ -51,6 +46,19 @@ export const shared = defineConfig({
           });
       },
     }).load();
+    const assert_path = path.join(siteconfig.root, siteconfig.assetsDir);
+    const out_path = path.join(siteconfig.outDir, siteconfig.assetsDir);
+    fs.readdirSync(assert_path, { withFileTypes: true }).forEach(
+      function (dirent) {
+        var filePath = path.join(assert_path, dirent.name);
+        if (dirent.isFile && dirent.name.endsWith(".zip")) {
+          var destpath = path.join(out_path, dirent.name);
+          fs.copyFileSync(filePath, destpath);
+          console.log(`copy zip file:${filePath}->${destpath}`);
+        }
+      },
+    );
+
     coverurls.forEach((item) => {
       const picpath = path.join(siteconfig.root, item);
       const picfile_name = path.basename(picpath);
@@ -60,8 +68,8 @@ export const shared = defineConfig({
         siteconfig.assetsDir,
         picfile_name,
       );
-      // console.log("write", picpath, destpath, siteconfig.root);
-      copyFileSync(picpath, destpath);
+      console.log("copy pic", picpath, destpath);
+      fs.copyFileSync(picpath, destpath);
     });
   },
   markdown: {
