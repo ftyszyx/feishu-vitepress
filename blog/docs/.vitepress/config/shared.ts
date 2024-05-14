@@ -2,7 +2,6 @@ import { createContentLoader, defineConfig, HeadConfig } from "vitepress";
 import path from "path";
 import fs from "fs";
 import { SiteConfig } from "../theme/site_config";
-import { assert } from "console";
 
 const base_url = process.env.BASE_URL || "/";
 export const shared = defineConfig({
@@ -34,6 +33,7 @@ export const shared = defineConfig({
     ],
   ],
   buildEnd: async (siteconfig) => {
+    console.log("build end");
     const coverurls: string[] = await createContentLoader("/*.md", {
       excerpt: true,
       includeSrc: false,
