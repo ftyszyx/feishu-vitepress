@@ -24,6 +24,15 @@ vim中的粘贴板和系统粘贴板共用：
 :set clipboard=unnamed
 ```
 
+切换选项卡
+
+```yaml
+上一个
+Ctrl+Alt+PgUp  or  Ctrl+PgUp
+下一个
+Ctrl+Alt+PgDown  or  Ctrl+PgDown
+```
+
 # Vscode 中vim
 
 https://www.bilibili.com/video/BV1z541177Jy?p=6&vd_source=1cfe4f7c9bf04285f79b848e60f55aea

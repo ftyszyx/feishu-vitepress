@@ -81,7 +81,7 @@ docker-compose up -d
 
 官网：https://letsencrypt.org/
 
-如何使用： 
+如何使用(手工配置）： 
 
 https://diamondfsd.com/lets-encrytp-hand-https/
 
@@ -89,27 +89,29 @@ https://andyyou.github.io/2019/04/13/how-to-use-certbot/
 
 官方文档：https://eff-certbot.readthedocs.io/
 
-先安装[cerbot](https://certbot.eff.org/instructions?ws=nginx&os=centosrhel7)
+ 在nginx ui中如何操作
 
-```yaml
-yum install certbot
-```
+##### 配置acme用户
 
-使用webroot模式获取证书：
+<img src="/assets/M6yCbO6j7oqaUmx2A8UceN9Nn6L.png" src-width="1309" class="m-auto" src-height="348" align="center"/>
 
-```yaml
-certbot certonly --webroot -w /var/www/example -d [example.com](http://example.com/) -d [www.example.com](http://www.example.com/)
-```
+##### 为站点启用tls
 
-_这个命令会为 example.com 和 www.example.com 这两个域名生成一个证书，使用 --webroot 模式会在 /var/www/example 中创建 .well-known 文件夹，这个文件夹里面包含了一些验证文件，certbot 会通过访问 example.com/.well-known/acme-challenge 来验证你的域名是否绑定的这个服务器。这个命令在大多数情况下都可以满足需求，_
+<img src="/assets/X6mkbmUQoow2UnxQqmZccLHMnXd.png" src-width="867" class="m-auto" src-height="303" align="center"/>
 
-需要写你的邮件
+系统为会你增加一个server2，此时开始下方的let's encrypt加密
 
-<img src="/assets/LOJkb6eg9orOatx1oSpcvdudnZd.png" src-width="618" class="m-auto" src-height="108" align="center"/>
+<img src="/assets/KgMLbDgkYofMw1xNB3McdT4gncb.png" src-width="876" class="m-auto" src-height="570" align="center"/>
 
-<img src="/assets/RyeLbjeOwoaMRzx2BDnccamrnB5.png" src-width="563" class="m-auto" src-height="186" align="center"/>
+选择acme用户，点下一步
 
-<img src="/assets/Xxowb9cMCofth2xuaMfcBIV9nwc.png" src-width="571" class="m-auto" src-height="214" align="center"/>
+<img src="/assets/Srujb0ocwokp38xn1aqcbduhn2R.png" src-width="621" class="m-auto" src-height="542" align="center"/>
+
+成功后就ok
+
+注意事项：
+
+nginx_ui不要设置反向代理。否则为不成功
 
 # Nginx配置学习
 
