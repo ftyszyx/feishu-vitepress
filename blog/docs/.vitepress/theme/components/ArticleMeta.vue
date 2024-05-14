@@ -12,7 +12,7 @@ const showHit = computed(() => !!SiteConfig.umami_website_id);
 const bannerImageUrl = computed(() => {
   // console.log("get url", frontmatter.value.cover);
   if (frontmatter.value.cover) return withBase(frontmatter.value.cover);
-  return "/normal_cover.png";
+  return withBase("/normal_cover.png");
 });
 
 const pageHits = ref<number>(0);
