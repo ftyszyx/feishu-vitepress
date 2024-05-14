@@ -10,5 +10,5 @@
 
 /* 标题栏填满  */
 .VPNavBar.has-sidebar .content {
-  padding-left: var(--vp-sidebar-width) !important ;
+  /* padding-left: var(--vp-sidebar-width) !important ; */
 }
