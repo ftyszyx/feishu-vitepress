@@ -33,7 +33,6 @@ export const shared = defineConfig({
     ],
   ],
   buildEnd: async (siteconfig) => {
-    console.log("build end");
     const coverurls: string[] = await createContentLoader("/*.md", {
       excerpt: true,
       includeSrc: false,
