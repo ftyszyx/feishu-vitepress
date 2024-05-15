@@ -66,9 +66,6 @@ onMounted(() => {});
           </span>
         </div>
         <div>
-          <span class="mr-1 font-medium"
-            >{{ get_lang_text("url_link", lang) }}:</span
-          >
           <span>
             <a
               :href="articleLink"
@@ -76,7 +73,7 @@ onMounted(() => {});
               rel="noreferrer"
               target="_blank"
             >
-              {{ articleLink }}
+              {{ get_lang_text("url_link", lang) }}
             </a>
           </span>
         </div>
