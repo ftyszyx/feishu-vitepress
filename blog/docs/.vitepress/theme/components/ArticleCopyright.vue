@@ -17,7 +17,9 @@ const author = computed(
   () => frontmatter.value.author || get_lang_text("author", cur_lang.value),
 );
 const articleLink = computed(() => {
-  return `${window.location.host}${route.path}`;
+  // console.log("widows", window.location);
+  // return `${window.location.host}${route.path}`;
+  return `${window.location.href}`;
 });
 
 onMounted(() => {});
