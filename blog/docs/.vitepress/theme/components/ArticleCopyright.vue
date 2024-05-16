@@ -18,8 +18,7 @@ const author = computed(
 );
 const articleLink = computed(() => {
   // console.log("widows", window.location);
-  // return `${window.location.host}${route.path}`;
-  return `${window.location.href}`;
+  return `${window.location.protocol}//${window.location.host}${route.path}`;
 });
 
 onMounted(() => {});
