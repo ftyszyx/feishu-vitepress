@@ -1,7 +1,7 @@
 import { defineConfig } from "vitepress";
 import sidebar from "../../sider.json";
 export const zh = defineConfig({
-  title: "小白看世界",
+  title: "超级小朋友日常",
   lang: "zh-Hans",
   description: "个人博客",
 
