@@ -18,13 +18,25 @@ https://vimdoc.sourceforge.net/htmldoc
 
 使用插件https://github.com/VsVim
 
-vim中的粘贴板和系统粘贴板共用：
+配置文件说明文档：
+
+https://github.com/VsVim/VsVim/wiki/Settings-Reference
+
+## 查看本地的配置文件：
+
+```yaml
+:set
+```
+
+<img src="/assets/AKbUbQkfloooOUxbCm5cp0iFnqS.png" src-width="578" class="m-auto" src-height="203" align="center"/>
+
+## vim中的粘贴板和系统粘贴板共用：
 
 ```
 :set clipboard=unnamed
 ```
 
-切换选项卡
+## 切换选项卡
 
 ```yaml
 上一个

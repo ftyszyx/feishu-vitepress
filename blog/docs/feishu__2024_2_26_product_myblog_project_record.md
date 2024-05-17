@@ -417,3 +417,7 @@ vitepress编译时，把服务器搞崩了
 
 1、如何同步到公众号
 
+目前已知有
+
+[蚁小二](https://www.yixiaoer.cn/)和[融媒宝](https://www.rmeibao.com/)
+
