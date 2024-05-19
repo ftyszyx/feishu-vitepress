@@ -59,7 +59,9 @@ const articleList = computed(() => {
 
 const hasNextPage = computed(() => pageKey.value < pageTotal.value);
 const hasPrevPage = computed(() => pageKey.value > 1);
-const showHit = computed(() => !!SiteConfig.umami_website_id);
+const showHit = computed(() => {
+  return !!SiteConfig.get_umami_website_id();
+});
 
 const scrollToTop = () => {
   if (typeof window !== "undefined") {
@@ -104,7 +106,7 @@ const fetchArticleListHits = async () => {
   }
   try {
     const response = await fetch(
-      `${SiteConfig.umami_url}/api/websites/${SiteConfig.umami_website_id}/blogpage`,
+      `${SiteConfig.umami_url}/api/websites/${SiteConfig.get_umami_website_id()}/blogpage`,
     );
     const { views } = await response.json();
     // console.log("get views", views);

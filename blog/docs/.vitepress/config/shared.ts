@@ -7,6 +7,9 @@ const base_url = process.env.BASE_URL || "/";
 export const shared = defineConfig({
   cleanUrls: true,
   appearance: true,
+  sitemap: {
+    hostname: "https://blog.bytefuse.cn/",
+  },
   ignoreDeadLinks: true,
   base: base_url,
   head: [
@@ -14,7 +17,7 @@ export const shared = defineConfig({
       "script",
       {
         src: SiteConfig.umami_script || "",
-        "data-website-id": SiteConfig.umami_website_id || "",
+        "data-website-id": SiteConfig.byte_fuse_website_id || "",
       },
     ],
     // [
