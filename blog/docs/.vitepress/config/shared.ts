@@ -22,12 +22,21 @@ export const shared = defineConfig({
         "data-website-id": get_uami_id_by_host(host_name) || "",
       },
     ],
-    // [
-    //   "script",
-    //   {},
-    //   '(function(c,l,a,r,i,t,y){ c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)}; t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i; y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y); })(window, document, "clarity", "script", "lqpzet81i6");',
-    // ],
-    ["link", { rel: "icon", href: `${base_url}logo.png` }],
+    [
+      "meta",
+      {
+        name: "baidu-site-verification",
+        content: "codeva-KpXMMPlGpy",
+      },
+    ],
+    [
+      // [
+      //   "script",
+      //   {},
+      //   '(function(c,l,a,r,i,t,y){ c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)}; t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i; y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y); })(window, document, "clarity", "script", "lqpzet81i6");',
+      // ],
+      ("link", { rel: "icon", href: `${base_url}logo.png` }),
+    ],
     [
       "meta",
       {
