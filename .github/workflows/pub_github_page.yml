@@ -38,9 +38,9 @@ jobs:
         run: npm ci # or pnpm install / yarn install / bun install
 
       - name: Build with VitePress
-        env:
-          BASE_URL: ${{vars.BLOG_BASE_URL}}
-        run: npm run build
+        # env:
+        # BASE_URL: ${{vars.BLOG_BASE_URL}}
+        run: npm run build:github
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

@@ -1,3 +1,12 @@
+export const get_uami_id_by_host = (hostname: string) => {
+  if (hostname.indexOf("bytefuse") > 0) {
+    return SiteConfig.byte_fuse_website_id;
+  }
+  if (hostname.indexOf("github") > 0) {
+    return SiteConfig.github_umami_website_id;
+  }
+  return "";
+};
 export const SiteConfig = {
   categorys: [
     {
@@ -38,13 +47,7 @@ export const SiteConfig = {
   github_umami_website_id: "8cf20240-e118-4863-8665-598549bec563",
   get_umami_website_id: () => {
     const hostname = window.location.hostname;
-    if (hostname.indexOf("bytefuse") > 0) {
-      return SiteConfig.byte_fuse_website_id;
-    }
-    if (hostname.indexOf("github") > 0) {
-      return SiteConfig.github_umami_website_id;
-    }
-    return "";
+    return get_uami_id_by_host(hostname);
   },
   github_url: "https://github.com/ftyszyx",
   twitter_url: "https://twitter.com/zhangyuxin_new",

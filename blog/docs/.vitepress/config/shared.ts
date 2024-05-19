@@ -1,14 +1,16 @@
 import { createContentLoader, defineConfig, HeadConfig } from "vitepress";
 import path from "path";
 import fs from "fs";
-import { SiteConfig } from "../theme/site_config";
+import { get_uami_id_by_host, SiteConfig } from "../theme/site_config";
 
 const base_url = process.env.BASE_URL || "/";
+console.log("get env", process.env.HOST_NAME, process.env.BASE_URL);
+const host_name = process.env.HOST_NAME || "https://blog.bytefuse.cn/";
 export const shared = defineConfig({
   cleanUrls: true,
   appearance: true,
   sitemap: {
-    hostname: "https://blog.bytefuse.cn/",
+    hostname: host_name,
   },
   ignoreDeadLinks: true,
   base: base_url,
@@ -17,7 +19,7 @@ export const shared = defineConfig({
       "script",
       {
         src: SiteConfig.umami_script || "",
-        "data-website-id": SiteConfig.byte_fuse_website_id || "",
+        "data-website-id": get_uami_id_by_host(host_name) || "",
       },
     ],
     // [

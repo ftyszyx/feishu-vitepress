@@ -9,7 +9,8 @@
   "scripts": {
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
-    "build:github": "cross-env BASE_URL=myblog vitepress build docs",
+    "build:github": "cross-env BASE_URL=/feishu-vitepress/ HOST_NAME=https://ftyszyx.github.io/feishu-vitepress/ vitepress build docs",
+    "build:blog": "cross-env BASE_URL=/ HOST_NAME=https://blog.bytefuse.cn/ vitepress build docs",
     "preview": "vitepress preview docs"
   },
   "devDependencies": {
