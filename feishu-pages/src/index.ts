@@ -1,11 +1,12 @@
 #!/usr/bin/env node
-import fs from "fs";
+import fs, { readSync } from "fs";
 import { FeiShuDoc_pre, FeishuDocHelp } from "./feishu";
 import { appconfig } from "./config";
 import path from "path";
 import { program } from "commander";
 import { translate } from "bing-translate-api";
 import { SideBarItem } from "./type.def";
+import axios from "axios";
 const feishu_help = new FeishuDocHelp(appconfig.appId, appconfig.appSecret, path.join(appconfig.output_dir, ".cache"));
 // App entry
 
@@ -27,6 +28,48 @@ program
   });
 
 let doc_path = path.join(appconfig.output_dir, process.env.DOC_DIR_NAME);
+program
+  .command("seo")
+  .description("upload for seo")
+  .action(async () => {
+    const baidu_url = process.env.BAIDU_SITE_URL;
+    const blog_url = process.env.BLOG_URL;
+    console.log("seo upload start");
+    if (baidu_url) {
+      console.log("push baidu", baidu_url);
+      const sider_path = path.join(doc_path, save_sider_name);
+      const jsontxt = fs.readFileSync(sider_path, { encoding: "utf-8" }).toString();
+      const sider_cn_json = JSON.parse(jsontxt) as SideBarItem[];
+      // process markdown
+      const url_list = [];
+      const checkItem = (docitems: SideBarItem[]) => {
+        for (let i = 0; i < docitems.length; i++) {
+          const docitem = docitems[i];
+          if (docitem.link) {
+            url_list.push(`${blog_url}${docitem.link}`);
+          }
+          if (docitem.items?.length > 0) {
+            checkItem(docitem.items);
+          }
+        }
+      };
+      checkItem(sider_cn_json);
+      const sendtext = url_list.join("\n");
+      console.log("send text", sendtext);
+      const res = await axios
+        .post(baidu_url, sendtext, {
+          headers: {
+            "Content-Type": "text/plain",
+          },
+        })
+        .then((res) => {
+          console.log("get res ok", res.data, sendtext);
+        })
+        .catch((reason) => {
+          console.log("send err", reason.response.data);
+        });
+    }
+  });
 
 const save_sider_name = "sider.json";
 const exportDoc = async () => {

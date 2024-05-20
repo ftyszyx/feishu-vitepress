@@ -18,6 +18,7 @@
     "build": "tsc -d",
     "export": "npm run build && node dist/index.js export",
     "trans_en": "npm run build && node dist/index.js trans --tolan en",
+    "seo":"npm run build && node dist/index.js seo",
     "test": "jest"
   },
   "dependencies": {

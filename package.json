@@ -9,6 +9,7 @@
     "test": " npm run test -w feishu-pages",
     "export": "npm run export -w feishu-pages",
     "trans_en": "npm run trans_en -w feishu-pages",
+    "seo": "npm run seo -w feishu-pages",
 
     "dev": "npm run dev -w blog",
     "build:blog": "npm run build:blog -w blog",
