@@ -1,6 +1,6 @@
 ---
 create_time: 1715931285
-title: android内存
+title: android_mem
 categories:
   - skill
 ---

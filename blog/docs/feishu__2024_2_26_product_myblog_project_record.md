@@ -455,6 +455,14 @@ https://ftyszyx.github.io/feishu-vitepress/sitemap.xml
 
 等待一天后，会显示认证成功：
 
+但是有个问题：
+
+普通收录的sitemap方式提交没有次数，不知道是不是要交钱
+
+<img src="/assets/PThKbaLpMocfWpxlAKNcxHMenjh.png" src-width="1256" class="m-auto" src-height="649" align="center"/>
+
+只能api提交
+
 ## **谷歌收录**
 
 https://search.google.com/
