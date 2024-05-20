@@ -413,6 +413,64 @@ vitepress编译时，把服务器搞崩了
 
 已处理
 
+# 2024/5/19
+
+需要给博客搞seo，不然没人访问
+
+ 首先要生成sitemap站点地图
+
+vitepress自带支持
+
+https://vitepress.dev/guide/sitemap-generation
+
+生成后sitemap.xml就可以直接访问了
+
+https://ftyszyx.github.io/feishu-vitepress/sitemap.xml
+
+参考：https://github.com/mqyqingfeng/Blog/issues/272
+
+## 去百度收录
+
+登陆<u>百度搜索资源平台</u>，进入<u>用户中心</u>：
+
+点击「添加站点」，可能需要你完善下账户信息，然后会进入站点信息填写页面，分为三步：
+
+**第一步：输入站点**
+
+**第三步：验证网站**
+
+之所以需要验证网站，是为了证明你是该域名的拥有者，验证成功后，可以快捷批量添加子站点，查看所有子站数据，无需再一一验证子站点。
+
+使用html验证
+
+<img src="/assets/GQNUbNp7gox4drxjBRWcRzCKn9f.png" src-width="876" class="m-auto" src-height="308" align="center"/>
+
+然后点击「完成验证」，就会出现：
+
+<img src="/assets/Je7GbyTRCo4kOax5YuncZNx9ndE.png" src-width="1348" src-height="668"/>
+
+点击「我知道了」，就会跳转到 HTTPS 认证这里：
+
+<img src="/assets/VBFtbwBguoPxOqx5szscSXwpnts.png" src-width="2446" class="m-auto" src-height="1464" align="center"/>
+
+等待一天后，会显示认证成功：
+
+## **谷歌收录**
+
+https://search.google.com/
+
+添加域名： 
+
+<img src="/assets/QXJbbXp5TomIbkxdLH0cvDm4nwd.png" src-width="376" class="m-auto" src-height="490" align="center"/>
+
+添加dns解析
+
+去阿里去添加
+
+最后去添加索引
+
+<img src="/assets/ESIXbuPgJoitoExZddWcsxYfnPh.png" src-width="1777" class="m-auto" src-height="629" align="center"/>
+
 # 待处理问题 
 
 1、如何同步到公众号
