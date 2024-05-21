@@ -463,6 +463,14 @@ https://ftyszyx.github.io/feishu-vitepress/sitemap.xml
 
 只能api提交
 
+写了代码，但是提交时提示
+
+{"error":400,"message":"over quota"}
+
+网上说是因为没有提交次数了
+
+在百度后台也查看不昨天提交的审核状态
+
 ## **谷歌收录**
 
 https://search.google.com/
@@ -479,11 +487,19 @@ https://search.google.com/
 
 <img src="/assets/ESIXbuPgJoitoExZddWcsxYfnPh.png" src-width="1777" class="m-auto" src-height="629" align="center"/>
 
+一直提示无法抓取
+
+<img src="/assets/VO41bYRGqo9kfsxK3R1chJiqnFf.png" src-width="884" class="m-auto" src-height="237" align="center"/>
+
 # 待处理问题 
 
-1、如何同步到公众号
+1、如何同步到公众号，知乎，csdn
 
 目前已知有
 
 [蚁小二](https://www.yixiaoer.cn/)和[融媒宝](https://www.rmeibao.com/)
+
+通过服务器推送文章到公众号：
+
+https://blog.csdn.net/david_Xuan/article/details/136036756
 
