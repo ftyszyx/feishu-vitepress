@@ -33,11 +33,25 @@ timer=setInterval(()=>{
         if(windows.length>0){
                 windows.forEach(v=>{
                         if(v){
+                                //v.close=()=>{};
+                                v.webContents.removeAllListeners('devtools-opened');
                                 v.webContents.openDevTools();
                         }
                 })
                 clearInterval(timer);
         }
 },5000);
+```
+
+打包
+
+```ts
+sar p test app.asar
+```
+
+解包
+
+```ts
+asar e app.asar test
 ```
 

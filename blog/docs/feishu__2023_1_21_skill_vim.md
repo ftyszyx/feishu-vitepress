@@ -45,6 +45,16 @@ Ctrl+Alt+PgUp  or  Ctrl+PgUp
 Ctrl+Alt+PgDown  or  Ctrl+PgDown
 ```
 
+## 快速格式化
+
+ctrl+K ctrl+d
+
+<img src="/assets/MRSKbulGSoCE0qxtTDHchHunnZo.png" src-width="391" class="m-auto" src-height="56" align="center"/>
+
+## 快捷键
+
+选中一个段落  vsp
+
 # Vscode 中vim
 
 https://www.bilibili.com/video/BV1z541177Jy?p=6&vd_source=1cfe4f7c9bf04285f79b848e60f55aea
@@ -99,10 +109,7 @@ jj和设置有关
 
 ### 其它移动
 
-<img src="/assets/boxcnoFTPRhDcGmQf4gfSl5jpJ5.png" src-width="845" class="m-auto" src-height="252" align="center"/>
-
-- `ctrl-e` 屏幕向下滚动一行。
-- `ctrl-y` 屏幕向上滚动一行。
+<img src="/assets/Bd8yb2E7Roodgxx8F3mcwi5znLg.png" src-width="760" class="m-auto" src-height="704" align="center"/>
 
 <img src="/assets/MQpsba1yFoC0CXxE2qzcgMQtnNd.png" src-width="346" class="m-auto" src-height="230" align="center"/>
 
