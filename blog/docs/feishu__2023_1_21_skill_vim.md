@@ -51,9 +51,15 @@ ctrl+K ctrl+d
 
 <img src="/assets/MRSKbulGSoCE0qxtTDHchHunnZo.png" src-width="391" class="m-auto" src-height="56" align="center"/>
 
+注释  ctrl+k  ctrl+/
+
 ## 快捷键
 
 选中一个段落  vsp
+
+上一个段落 shift+[
+
+下一个段落 shift+]
 
 # Vscode 中vim
 
