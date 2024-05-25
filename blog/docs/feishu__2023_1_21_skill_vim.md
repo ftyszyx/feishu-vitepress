@@ -61,6 +61,8 @@ ctrl+K ctrl+d
 
 下一个段落 shift+]
 
+打开文档大纲：ctrl+alt+t  (视图-》其它窗口-》文档大纲 ）
+
 # Vscode 中vim
 
 https://www.bilibili.com/video/BV1z541177Jy?p=6&vd_source=1cfe4f7c9bf04285f79b848e60f55aea
