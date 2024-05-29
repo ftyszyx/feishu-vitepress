@@ -37,6 +37,10 @@
       {
         "text": "Electron 开发学习",
         "link": "/feishu__2024_4_23_skill_electron"
+      },
+      {
+        "text": "Rustdesk",
+        "link": "/feishu__2024_4_28_skill_rustdesk"
       }
     ],
     "collapsed": false
@@ -83,6 +87,16 @@
           {
             "text": "博客自动同步到阿里云",
             "link": "/feishu__2024_4_6_product_myblog_aliyun_auto"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "融号宝",
+        "items": [
+          {
+            "text": "融小宝-项目简介",
+            "link": "/feishu__2024_4_28_product_bytefuse_intro"
           }
         ],
         "collapsed": false
