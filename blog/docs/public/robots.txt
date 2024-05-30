@@ -1,2 +1,0 @@
-Sitemap: https://blog.bytefuse.cn/sitemap.xml
-User-agent: *
