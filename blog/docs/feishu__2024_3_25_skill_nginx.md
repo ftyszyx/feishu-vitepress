@@ -115,3 +115,11 @@ nginx_ui不要设置反向代理。否则为不成功
 
 # Nginx配置学习
 
+官方文档：
+
+https://docs.nginx.com/nginx/admin-guide/web-server/we
+
+静态网站配置
+
+https://docs.nginx.com/nginx/admin-guide/web-server/serving-static-content/
+
