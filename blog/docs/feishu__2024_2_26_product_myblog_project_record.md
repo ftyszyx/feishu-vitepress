@@ -493,6 +493,34 @@ https://search.google.com/
 
 # 待处理问题 
 
+问题1：
+
+访问单独某一页时会404
+
+nginx配置错误：
+
+之前是
+
+```csharp
+root /usr/share/nginx/html/appname/;
+
+location / {
+       index index.html index.htm;
+}
+```
+
+需要改成
+
+```csharp
+root /usr/share/nginx/html/appname/;
+index index.html index.htm;
+location / {
+         try_files $uri $uri/ /index.html;
+}
+```
+
+原理是，当配置`try_files`找不到某个页面资源，这时，nginx会尝试加载index.html，加载index.html之后，react-router就能起作用并匹配我们输入的`/home`路由，从而显示正确的home页面。
+
 1、如何同步到公众号，知乎，csdn
 
 目前已知有
