@@ -11,7 +11,7 @@
         "link": "/feishu__2023_1_21_skill_vim"
       },
       {
-        "text": "nginx服务搭建",
+        "text": "Nginx",
         "link": "/feishu__2024_3_25_skill_nginx"
       },
       {
@@ -39,8 +39,11 @@
         "link": "/feishu__2024_4_23_skill_electron"
       },
       {
-        "text": "Rustdesk",
+        "text": "Rustdesk使用",
         "link": "/feishu__2024_4_28_skill_rustdesk"
+      },
+      {
+        "text": "网站的seo加强"
       }
     ],
     "collapsed": false

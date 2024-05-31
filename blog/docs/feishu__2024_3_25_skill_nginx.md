@@ -1,8 +1,6 @@
 ---
-title: nginx服务搭建
-tags:
-  - develop
 create_time: 1714032130
+title: Nginx
 categories:
   - skill
 ---
@@ -122,4 +120,49 @@ https://docs.nginx.com/nginx/admin-guide/web-server/we
 静态网站配置
 
 https://docs.nginx.com/nginx/admin-guide/web-server/serving-static-content/
+
+## 问题1：单页面应用要怎么配
+
+[参考文章](https://www.barwe.cc/2022/06/20/nginxtryfilesinspa)
+
+之前我的博客是这么配的
+
+```csharp
+location / {
+    root /usr/share/nginx/html;
+    index index.html index.htm;
+}
+```
+
+但是在访问
+
+首页时正常：[链接](https://blog.bytefuse.cn/)
+
+在首页中点开子页面正常 [链接](https://blog.bytefuse.cn/feishu__2024_4_28_product_bytefuse_intro)
+
+但如果直接访问[链接](https://blog.bytefuse.cn/feishu__2024_4_28_product_bytefuse_intro) 就不正常，显示404
+
+这是因为上面的配置只会去匹配 根目录下的 $root/feishu__2024_4_28_product_bytefuse_intro 文件 
+
+所以 报错
+
+目标是匹配到$root/feishu__2024_4_28_product_bytefuse_intro.html
+
+```csharp
+root /usr/share/nginx/html;
+index index.html
+location / {
+    try_files $uri $uri.html $uri/ =404;
+}
+```
+
+这样，url:/feishu__2024_4_28_product_bytefuse_intro
+
+会匹配$oot/feishu__2024_4_28_product_bytefuse_intro
+
+再匹配$oot/feishu__2024_4_28_product_bytefuse_intro.html
+
+再匹配$oot/feishu__2024_4_28_product_bytefuse_intro/index.html
+
+如果都匹配不到，再匹配404
 

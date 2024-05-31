@@ -512,11 +512,28 @@ location / {
 需要改成
 
 ```csharp
-root /usr/share/nginx/html/appname/;
-index index.html index.htm;
-location / {
-         try_files $uri $uri/ /index.html;
-}
+#open gzip
+    gzip on;
+    gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript;
+ 
+    #
+    index index.html;
+
+    location / {
+        # content location
+        root /app;
+
+        # exact matches -> reverse clean urls -> folders -> not found
+        try_files $uri $uri.html $uri/ =404;
+ 
+       #因为资源文件的名字都是hash,如果有修改名字会变，所以开启永久缓存
+        # adjust caching headers
+        # files in the assets folder have hashes filenames
+        location ~* ^/assets/ {
+            expires 1y;
+            add_header Cache-Control "public, immutable";
+        }
+    }
 ```
 
 原理是，当配置`try_files`找不到某个页面资源，这时，nginx会尝试加载index.html，加载index.html之后，react-router就能起作用并匹配我们输入的`/home`路由，从而显示正确的home页面。
