@@ -60,3 +60,5 @@ https://github.com/tldraw/tldraw
 
 还有一个完全免费，代码部分开源的画流程图的项目：[drawio](https://github.com/jgraph/drawio)
 
+开源的markdown编辑器[marktext](https://github.com/marktext/marktext)
+

@@ -44,6 +44,16 @@
       },
       {
         "text": "网站的seo加强"
+      },
+      {
+        "text": "学飞源码",
+        "items": [
+          {
+            "text": "vscode源码学习",
+            "link": "/feishu__2024_4_31_skill_learn_open_souce_vscode"
+          }
+        ],
+        "collapsed": false
       }
     ],
     "collapsed": false
@@ -109,6 +119,15 @@
         "items": [
           {
             "text": "密码通"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "bugly分析工具",
+        "items": [
+          {
+            "text": "bugly分析工具说明"
           }
         ],
         "collapsed": false
