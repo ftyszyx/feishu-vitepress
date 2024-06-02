@@ -70,7 +70,7 @@ yarn watch
 
 ```csharp
 .\scripts\code.bat
-.\scripts\code-cli.bat
+.\scripts\code-cli.bat #这一步不知道干啥的
 ```
 
 ### 调试
@@ -79,7 +79,16 @@ yarn watch
 
 <img src="/assets/KhJVbN4gKoYttsx4YIqcOcI6nae.png" src-width="872" class="m-auto" src-height="175" align="center"/>
 
-## 代码结构
+## 启动分析
 
-https://github.com/microsoft/vscode/wiki/Source-Code-Organization
+程序的启动主要是两个命令
+
+```ts
+yarn watch
+code.bat
+```
+
+ 我们依次分析
+
+### Yarn watch
 
