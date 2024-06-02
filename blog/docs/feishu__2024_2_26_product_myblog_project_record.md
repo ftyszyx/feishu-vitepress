@@ -465,7 +465,9 @@ https://ftyszyx.github.io/feishu-vitepress/sitemap.xml
 
 写了代码，但是提交时提示
 
+```ts
 {"error":400,"message":"over quota"}
+```
 
 网上说是因为没有提交次数了
 
