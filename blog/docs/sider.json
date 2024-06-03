@@ -118,7 +118,8 @@
         "text": "密码通",
         "items": [
           {
-            "text": "密码通"
+            "text": "密码通",
+            "link": "/feishu__2024_4_29_product_onepassword_intro"
           }
         ],
         "collapsed": false
@@ -127,7 +128,12 @@
         "text": "bugly分析工具",
         "items": [
           {
-            "text": "bugly分析工具说明"
+            "text": "bugly分析工具说明",
+            "link": "/feishu__2024_4_31_product_bugly_tool_intro"
+          },
+          {
+            "text": "bugly分析工具-开发记录",
+            "link": "/feishu__2024_5_3_product_bugly_tool_develop_log"
           }
         ],
         "collapsed": false

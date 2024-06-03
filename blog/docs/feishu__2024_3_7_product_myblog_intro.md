@@ -216,15 +216,13 @@ if (category) meta["categories"] = meta.categories || [category.trim().toLowerCa
 
 ### 参考项目
 
-导出飞书文档参考：
+导出飞书文档参考：[链接](https://github.com/longbridgeapp/feishu-pages)
 
-https://github.com/longbridgeapp/feishu-pages
-
-博客样式参考：
-
-https://github.com/foru17/luoleiorg/tree/main
+博客样式参考：[链接](https://github.com/foru17/luoleiorg/tree/main)
 
 本人博客演示效果
 
-https://ftyszyx.github.io/feishu-vitepress/
+[github_page地址](https://ftyszyx.github.io/feishu-vitepress/)
+
+[阿里云地址](https://blog.bytefuse.cn/)
 
