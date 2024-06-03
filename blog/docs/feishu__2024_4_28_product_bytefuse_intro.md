@@ -22,7 +22,7 @@ categories:
 
 写文章功能
 
-一键发布文章和视频到各大知识平台：抖音，微信公众号，csdn,知乎,小红书,twitter,facebook等等。
+一键发布文章和视频到各大知识平台：抖音，微信公众号，csdn,知乎,小红书,简书，twitter,facebook等等。
 
 管理已发布的文章
 
