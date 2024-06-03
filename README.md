@@ -88,24 +88,18 @@ npm run dev
 
 访问http://localhost:5173/ 即可
 
-# 参考网站：
+### 参考项目
 
-导出飞书文档参考：
+导出飞书文档参考：[链接](https://github.com/longbridgeapp/feishu-pages)
 
-https://github.com/longbridgeapp/feishu-pages
-
-博客样式参考：
-
-https://github.com/foru17/luoleiorg/tree/main
+博客样式参考：[链接](https://github.com/foru17/luoleiorg/tree/main)
 
 本人博客演示效果
 
-https://ftyszyx.github.io/feishu-vitepress/
+[github_page地址](https://ftyszyx.github.io/feishu-vitepress/)
 
-# 演示站点：
-
-https://ftyszyx.github.io/feishu-vitepress/
+[阿里云地址](https://blog.bytefuse.cn/)
 
 # 详细说明
+[地址](https://blog.bytefuse.cn/feishu__2024_3_7_product_myblog_intro)
 
-https://ftyszyx.github.io/feishu-vitepress/feishu__2024_3_7_product_myblog_intro
