@@ -55,3 +55,12 @@ sar p test app.asar
 asar e app.asar test
 ```
 
+### 如何还原webpack（带map)
+
+用[reverse-sourcemap](https://github.com/davidkevork/reverse-sourcemap)这个包就行
+
+```ts
+npm install --global reverse-sourcemap
+reverse-sourcemap js/
+```
+
