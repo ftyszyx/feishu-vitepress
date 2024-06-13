@@ -62,6 +62,10 @@
       {
         "text": "vpn",
         "link": "/feishu__2024_5_5_skill_vpn"
+      },
+      {
+        "text": "duckdb学习",
+        "link": "/feishu__2024_5_12_skill_duckdb"
       }
     ],
     "collapsed": false
@@ -145,6 +149,26 @@
           }
         ],
         "collapsed": false
+      },
+      {
+        "text": "游戏性能检测工具",
+        "items": [
+          {
+            "text": "游戏性能检测工具（说明）",
+            "link": "/feishu__2024_5_12_product_gamepref_intro"
+          }
+        ],
+        "collapsed": false
+      }
+    ],
+    "collapsed": false
+  },
+  {
+    "text": "其它平台",
+    "items": [
+      {
+        "text": "怎么让ai辅助你写文章",
+        "link": "/feishu__2024_5_12_other_platform_2024-6-12"
       }
     ],
     "collapsed": false

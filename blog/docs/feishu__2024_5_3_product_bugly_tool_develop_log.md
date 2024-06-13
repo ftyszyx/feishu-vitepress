@@ -80,6 +80,14 @@ export function openAuthorize() {
 }
 ```
 
+# 2024-6-12
+
+增加本地数据库
+
+本来是想用sqlite，但最近发现一个开源项目[ duckdb](https://github.com/duckdb/duckdb).网上评论说性能很好，而且功能强大。
+
+反正这两个相对于我来说都是新的东西，还不如用后者
+
 # 待做
 
 1、bugly登陆

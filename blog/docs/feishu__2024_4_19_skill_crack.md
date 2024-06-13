@@ -55,6 +55,16 @@ sar p test app.asar
 asar e app.asar test
 ```
 
+注意如果resouce目录下有app.asar.unpacked目录，需要在打包时将其排除
+
+<img src="/assets/Iabrb9Y2CoYiU6x83DacmpAMncg.png" src-width="444" class="m-auto" src-height="58" align="center"/>
+
+```csharp
+asar pack app app.asar --unpack **/node_modules/sharp/**/*
+```
+
+否则程序运行不了
+
 ### 如何还原webpack（带map)
 
 用[reverse-sourcemap](https://github.com/davidkevork/reverse-sourcemap)这个包就行
