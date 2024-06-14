@@ -88,6 +88,18 @@ export function openAuthorize() {
 
 反正这两个相对于我来说都是新的东西，还不如用后者
 
+# 2024-6-13
+
+在拿到token后，使用axios库在prender中去请求数据
+
+但是报错
+
+<img src="/assets/YuZNbGbk7oVqduxz7dRcOHQrnSh.png" src-width="1369" class="m-auto" src-height="218" align="center"/>
+
+这是跨域问题，参考：
+
+https://www.cnblogs.com/zhouyun-yx/p/17921692.html
+
 # 待做
 
 1、bugly登陆

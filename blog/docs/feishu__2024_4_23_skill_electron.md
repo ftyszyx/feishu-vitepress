@@ -108,3 +108,15 @@ npm run make
 
 打好的包在out/目录下
 
+# 一些知识点
+
+## cookie的httponly
+
+`httponly`的`cookie`，网页代码中的`js`无法获得相关信息。`xss`的必需语句，`document.cookie`是无法获得`httponly`的`cookie`的。但是，服务器端是可以照常获得的。
+
+https://newsn.net/say/cookie-httponly.html
+
+## Content Security Policy (CSP)
+
+https://www.electronjs.org/docs/latest/tutorial/security#7-define-a-content-security-policy
+
