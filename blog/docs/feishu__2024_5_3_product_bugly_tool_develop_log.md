@@ -100,6 +100,14 @@ export function openAuthorize() {
 
 https://www.cnblogs.com/zhouyun-yx/p/17921692.html
 
+简单做法就是
+
+```csharp
+webPreferences: {
+    webSecurity: false
+  }
+```
+
 # 待做
 
 1、bugly登陆
