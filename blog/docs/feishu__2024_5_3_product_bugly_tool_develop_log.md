@@ -108,6 +108,46 @@ webPreferences: {
   }
 ```
 
+但实际使用时还是有问题，不能设置header的参数
+
+所以还是需要将请求改到main 进程中，render进程只负责显示页面
+
+electron有net库。http请求可以用net.request或者net.fetch
+
+但发现用net.fetch时无法修改header的referer。
+
+在session.defaultSession.webRequest.onBeforeSendHeaders里设置了也没有用。其它的header都可以就是referer不行。很是奇怪
+
+于是改用net.request。发现这个可以修改referer header
+
+但是cookie丢了。真是奇葩
+
+只能自己写一下cookie
+
+终于能取到了
+
+<img src="/assets/VbZdb1EJBo6brQxIBT0cOBLxn5c.png" src-width="669" class="m-auto" src-height="296" align="center"/>
+
+## console.log中文乱码
+
+控制台
+
+```ts
+chcp
+```
+
+显示当前编码是936
+
+gb2312是936  utf8是65001
+
+需要在package.json中修改编码
+
+```ts
+"dev": "chcp 65001&&electron-vite dev --inspect=9229",
+```
+
+终于能请求到数据了
+
 # 待做
 
 1、bugly登陆
