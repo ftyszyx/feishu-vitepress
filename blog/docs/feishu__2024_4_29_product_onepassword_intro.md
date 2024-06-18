@@ -30,9 +30,35 @@ categories:
 5. 定时清除粘贴板内容，可以调整清除时间间隔
 6. 加密本地文件。
 
+这类型的软件，
+
+1、东西最好存本地（不需要和服务器交互）
+
+2、最好开源（受大家监督）
+
+3、通过同步用户资料收费
+
 # 现有的软件
 
-https://keepass.info/  免费。不够简洁
+##  Bitwarden 
+
+https://bitwarden.com/
+
+开源网站：
+
+https://github.com/bitwarden
+
+厉害从前端到后端，完全开源。
+
+##  proton pass
+
+官网：https://proton.me/pass
+
+部分开源：
+
+https://github.com/protonpass
+
+## KeePass 
 
 ## 1password
 

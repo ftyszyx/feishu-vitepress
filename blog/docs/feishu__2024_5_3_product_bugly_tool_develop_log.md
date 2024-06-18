@@ -148,6 +148,36 @@ gb2312是936  utf8是65001
 
 终于能请求到数据了
 
+# 2024-6-17
+
+## 首页：
+
+搜索条目：
+
+应用（可以全部）  版本（可以全部） 
+
+  四个tap页：
+
+<img src="/assets/EmT2b7Nsfof8caxMGlmc7oyvnza.png" src-width="252" class="m-auto" src-height="34" align="center"/>
+
+日期选择：（最小单位是天）
+
+内容：
+
+显示一个图表：
+
+使用ant charts
+
+安装：
+
+```csharp
+pm install @ant-design/charts
+```
+
+用多拆线图。
+
+如果是多app可以显示
+
 # 待做
 
 1、bugly登陆
