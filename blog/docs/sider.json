@@ -132,6 +132,10 @@
           {
             "text": "密码通",
             "link": "/feishu__2024_4_29_product_onepassword_intro"
+          },
+          {
+            "text": "密码管理器",
+            "link": "/feishu__2024_5_21_product_onepassword_develop_log"
           }
         ],
         "collapsed": false
