@@ -89,11 +89,50 @@ JwtModule.registerAsync({
 
 1. 主密码（master password)  用户输入的（用户记住）
 
-2、密钥  secret key  （软件生成的）（存在用户的电脑上，不会外传）
+2、密钥  secret key  （软件生成的）（存在用户的电脑上，不会外传，一个随机生成的字符串）
 
 白皮书：
 
 <img src="/assets/At63bOjRSoIUEBxvtAccTZgknke.png" src-width="7199" class="m-auto" src-height="3141" align="center"/>
 
-pbkdf2
+ master_key和secert key
+
+这里用到一个叫dh算法的概念：
+
+这里有个视频讲的好：https://www.bilibili.com/video/BV1sY4y1p78s/?spm_id_from=333.788&vd_source=1cfe4f7c9bf04285f79b848e60f55aea
+
+<img src="/assets/I6yUb3XtLoTviQxgZQycnejwnEe.png" src-width="828" class="m-auto" src-height="355" align="center"/>
+
+ 流程如下：
+
+1、通过主密码（master password) 和密钥  secret key   拼起来生成一个A
+
+2、通过A进行hash运算（MD5或者 SHA）算出一个B
+
+3、把B发送服务器
+
+4、通过dh算法，客户端通过 A算出一个C。服务器根据B也算出一个C（两边相同的加密密钥）
+
+5、客户端每次给服务器发数据，都要用C加密。服务器也用C解密，
+
+这个步骤得到共同的c是干啥的，好像没啥用啊
+
+我们的目的是啥：
+
+把我们保存的数据进行加密，存储到网盘里方便同步到你自己的其它设备里。
+
+那我们就用aes对称加密算法就行了。我们不需要复杂的分享之类的功能。我们的功能只需要简单的保存，自己用
+
+流程如下：
+1、进入app,用户输入一个主密码（用户记住）。同时为用户生成一个密钥（存本地）。拼起来生成一个A
+
+2、通过A进行hash运算（MD5或者 SHA）算出一个B
+
+3、用户存的所有数据，都用B通过aes进行加密后存入本地数据库
+
+4、用户获取数据时，通过B对数据库的数据解密后展示给用户。
+
+同步到其它设备时，只用把加密后的数据发到那个设备上。同时把密钥发给那个设备（可以通过二维码发送）
+
+即可。用户就可以在那个设备上通过输入主密码来解密数据库的文件。
 
