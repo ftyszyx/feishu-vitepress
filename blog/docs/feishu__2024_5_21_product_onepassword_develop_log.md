@@ -97,6 +97,8 @@ JwtModule.registerAsync({
 
  master_key和secert key
 
+<img src="/assets/G7DXbB2uuo5caFxIu6kc5Dcentd.png" src-width="856" class="m-auto" src-height="240" align="center"/>
+
 这里用到一个叫dh算法的概念：
 
 这里有个视频讲的好：https://www.bilibili.com/video/BV1sY4y1p78s/?spm_id_from=333.788&vd_source=1cfe4f7c9bf04285f79b848e60f55aea
@@ -135,4 +137,18 @@ JwtModule.registerAsync({
 同步到其它设备时，只用把加密后的数据发到那个设备上。同时把密钥发给那个设备（可以通过二维码发送）
 
 即可。用户就可以在那个设备上通过输入主密码来解密数据库的文件。
+
+# 2024-6-27
+
+## 初始化密码功能
+
+软件启动时检查本地有没有生成scert.key,如果没有，弹出对话框,让用户输入初始密码，
+
+用户点确定后生成Key：一个随机数,保存本地
+
+将用户的密码和key拼起来，做hash,生成一个B，
+
+将用户名和B存到数据库中（本地数据库）
+
+需要一个user表
 

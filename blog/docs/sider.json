@@ -158,8 +158,7 @@
         "text": "游戏性能检测工具",
         "items": [
           {
-            "text": "游戏性能检测工具（说明）",
-            "link": "/feishu__2024_5_12_product_gamepref_intro"
+            "text": "游戏性能检测工具（说明）"
           }
         ],
         "collapsed": false
@@ -173,6 +172,10 @@
       {
         "text": "怎么让ai辅助你写文章",
         "link": "/feishu__2024_5_12_other_platform_2024-6-12"
+      },
+      {
+        "text": "为什么夏承曦想退学这么难",
+        "link": "/feishu__2024_5_27_other_platform_2024-6-27"
       }
     ],
     "collapsed": false
