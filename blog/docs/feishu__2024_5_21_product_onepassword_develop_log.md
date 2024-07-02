@@ -150,5 +150,27 @@ JwtModule.registerAsync({
 
 将用户名和B存到数据库中（本地数据库）
 
-需要一个user表
+# 2024-7-1
+
+新建一个user表用于存储用户信息，和加密后的key_hash
+
+建一个保险库表：vault
+
+保险库中存对应的密码信息：vault_item
+
+1、home主页：
+
+保险库列表：
+
+展示如右：
+
+<img src="/assets/WBi6bR2SZouWc0xZbNycC57Gnlf.png" src-width="821" class="m-auto" src-height="242" align="center"/>
+
+可以，修改，设置和删除
+
+2、点进入，可以进入账号列表
+
+类似这样：上方可以直接切换密码库：
+
+<img src="/assets/EfR0b1Gq7oANjPxpnppc1J1VnOf.png" src-width="1185" class="m-auto" src-height="512" align="center"/>
 
