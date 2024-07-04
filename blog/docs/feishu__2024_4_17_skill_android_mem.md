@@ -36,7 +36,7 @@ Others：您的应用使用的系统不确定如何分类的内存
 
 Allocated：您的应用分配的 Java/Kotlin 对象数。此数字没有计入 C 或 C++ 中分配的对象
 
-#  获取实际内存占用
+#  获取应用实际内存占用
 
 https://zhuanlan.zhihu.com/p/372883142
 
@@ -160,4 +160,18 @@ Debug.MemoryInfo memoryInfo = new Debug.MemoryInfo();
 优点：获取的是PSS，并且没有限频，可以获取到 PSS 的组成部分
 
 缺点：获取的 PSS 不包括 Graphics。Android 6 以下不能通过 Debug.MemoryInfo.getmemoryStat 接口获取组成部分的占用内存，只能通过反射方法获取
+
+# 获取手机内存信息
+
+1. 查看内存占用信息
+
+Adb shell free
+
+<img src="/assets/G9b6bJo9loEBigxjgkQcaQxVnyh.png" src-width="684" class="m-auto" src-height="97" align="center"/>
+
+1. 查看内存占用详情
+
+Adb shell cat /proc/meminfo
+
+<img src="/assets/ZLwMb3sLjoSlXQxbbRecoQ03nzc.png" src-width="522" class="m-auto" src-height="377" align="center"/>
 
