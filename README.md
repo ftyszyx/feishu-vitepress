@@ -25,7 +25,7 @@ keywords:
 
 1. 将飞书文档导出成markdown文件
 2. 生成导出的文章的静态博客系统(使用vitepress)
-3. 自动翻译中文文档为英文
+3. 自动翻译中文文档为英文(目前不是自动，因为机器翻译的文章经常会把一些空格或者符号搞乱，导致编译不过，需要手动修改，所以暂时先手动)
 4. 集成了umami访问统计
 5. 集成了artalk评论系统
 
@@ -101,5 +101,5 @@ npm run dev
 [阿里云地址](https://blog.bytefuse.cn/)
 
 # 详细说明
-[地址](https://blog.bytefuse.cn/feishu__2024_3_7_product_myblog_intro)
 
+[地址](https://blog.bytefuse.cn/feishu__2024_3_7_product_myblog_intro)
