@@ -6,7 +6,7 @@ permissions:
   contents: write
 jobs:
   export:
-    name: get feishu pages
+    name: trans feishu doc to en
     runs-on: ubuntu-latest
     environment: myblog
     steps:
