@@ -1,10 +1,71 @@
 [
   {
+    "text": "首页",
+    "link": "/en/index"
+  },
+  {
     "text": "学技术",
     "items": [
       {
         "text": "vim学习笔记",
-        "link": "/en/feishu__2023_1_21_skill_vim"
+        "link": "/feishu__2023_1_21_skill_vim"
+      },
+      {
+        "text": "Nginx",
+        "link": "/feishu__2024_3_25_skill_nginx"
+      },
+      {
+        "text": "github相关学习",
+        "link": "/feishu__2024_3_26_skill_github"
+      },
+      {
+        "text": "青龙自动化工具(自动运维）",
+        "link": "/feishu__2024_3_26_skill_qinglong_auto"
+      },
+      {
+        "text": "C#语言学习",
+        "link": "/feishu__2024_4_7_skill_c_sharp"
+      },
+      {
+        "text": "android_mem",
+        "link": "/feishu__2024_4_17_skill_android_mem"
+      },
+      {
+        "text": "软件破解",
+        "link": "/feishu__2024_4_19_skill_crack"
+      },
+      {
+        "text": "Electron 开发学习",
+        "link": "/feishu__2024_4_23_skill_electron"
+      },
+      {
+        "text": "Rustdesk使用",
+        "link": "/feishu__2024_4_28_skill_rustdesk"
+      },
+      {
+        "text": "网站的seo加强"
+      },
+      {
+        "text": "学飞源码",
+        "items": [
+          {
+            "text": "vscode源码学习",
+            "link": "/feishu__2024_4_31_skill_learn_open_souce_vscode"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "爬虫",
+        "link": "/feishu__2024_5_4_skill_spider"
+      },
+      {
+        "text": "vpn",
+        "link": "/feishu__2024_5_5_skill_vpn"
+      },
+      {
+        "text": "duckdb学习",
+        "link": "/feishu__2024_5_12_skill_duckdb"
       }
     ],
     "collapsed": false
@@ -22,27 +83,82 @@
     "text": "项目",
     "items": [
       {
-        "text": "我的博客-飞书博客",
+        "text": "我的博客-飞书转博客系统",
         "items": [
           {
-            "text": "项目日志",
-            "link": "/en/feishu__2024_2_26_product_myblog_project_record"
-          },
-          {
-            "text": "飞书自动生成静态博客系统",
+            "text": "飞书博客-项目简介",
             "link": "/feishu__2024_3_7_product_myblog_intro"
           },
           {
-            "text": "演示",
+            "text": "飞书博客-项目日志",
+            "link": "/feishu__2024_2_26_product_myblog_project_record"
+          },
+          {
+            "text": "飞书博客-演示",
             "link": "/feishu__2024_3_16_product_myblog_demo"
           },
           {
-            "text": "博客配置说明",
+            "text": "飞书博客-博客配置说明",
             "link": "/feishu__2024_3_16_product_myblog_blog_set"
           },
           {
-            "text": "github action自动化流程说明",
+            "text": "飞书博客-github action自动化流程说明",
             "link": "/feishu__2024_3_16_product_myblog_github action intro"
+          },
+          {
+            "text": "飞书博客-第三方工具的配置",
+            "link": "/feishu__2024_3_25_product_myblog_third_lib"
+          },
+          {
+            "text": "博客自动同步到阿里云",
+            "link": "/feishu__2024_4_6_product_myblog_aliyun_auto"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "融号宝",
+        "items": [
+          {
+            "text": "融小宝-项目简介",
+            "link": "/feishu__2024_4_28_product_bytefuse_intro"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "密码通",
+        "items": [
+          {
+            "text": "密码通",
+            "link": "/feishu__2024_4_29_product_onepassword_intro"
+          },
+          {
+            "text": "密码管理器",
+            "link": "/feishu__2024_5_21_product_onepassword_develop_log"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "bugly分析工具",
+        "items": [
+          {
+            "text": "bugly分析工具说明",
+            "link": "/feishu__2024_4_31_product_bugly_tool_intro"
+          },
+          {
+            "text": "bugly分析工具-开发记录",
+            "link": "/feishu__2024_5_3_product_bugly_tool_develop_log"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "游戏性能检测工具",
+        "items": [
+          {
+            "text": "游戏性能检测工具（说明）"
           }
         ],
         "collapsed": false
@@ -51,7 +167,21 @@
     "collapsed": false
   },
   {
-    "text": "首页",
-    "link": "/en/index"
+    "text": "其它平台",
+    "items": [
+      {
+        "text": "怎么让ai辅助你写文章",
+        "link": "/feishu__2024_5_12_other_platform_2024-6-12"
+      },
+      {
+        "text": "为什么夏承曦想退学这么难",
+        "link": "/feishu__2024_5_27_other_platform_2024-6-27"
+      },
+      {
+        "text": "从姜萍事件我看到的人性丑陋",
+        "link": "/feishu__2024_6_2_other_platform_2024-7-2"
+      }
+    ],
+    "collapsed": false
   }
 ]
