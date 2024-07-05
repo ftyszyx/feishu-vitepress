@@ -91,11 +91,13 @@ Let's analyze them in turn
 "watch": "npm-run-all -lp watch-client watch-extensions",
 ```
 
-npm-run-all```
--l, --print-label  - - - - Set the flag to print the task name as a prefix
-                               on each line of output. Tools in tasks may s
--p, --parallel <tasks>   - Run a group of tasks in parallel.
-                               e.g. 'npm-run-all -p foo bar' is similar to
+```ts
+npm-run-all
+-l, --print-label - - - - Set the flag to print the task name as a prefix
+on each line of output. Tools in tasks may s
+-p, --parallel <tasks> - Run a group of tasks in parallel.
+e.g. 'npm-run-all -p foo bar' is similar to
+
 ```
 
 It's all about doing it at the same time
@@ -116,7 +118,9 @@ Then execute [gulp] (https://gulpjs.com/)
 
 After a quick look, watch-client is mainly compiled
 
-src/** to the out/ directory
+```ts
+src/\*\* to the out/ directory
+```
 
 <img src="/assets/Z7JbbgO9WoRBJxx7Kz4ceQ3znde.png" src-width="1367" class="m-auto" src-height="79" align="center"/>
 
@@ -139,7 +143,8 @@ node build/lib/preLaunch.js
 
 The main thing is to execute
 
-```tsyarn electron
+```ts
+yarn electron
 ```
 
 Then find the product name

@@ -5,7 +5,7 @@ tags:
 keywords:
   - spider
   - python
-  -crawler
+  - crawler
 create_time: 1717503814
 categories:
   - skill
@@ -34,7 +34,7 @@ res = session.get(url, headers=headers, params={"fsn": get_fsn()})
 requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, 'The remote host forcibly closed an existing connection. ', None, 10054, None))
 ```
 
-Tip_The remote host forcibly closes an existing connection_
+Tip*The remote host forcibly closes an existing connection*
 
 But I used a browser to access it, and I was able to access it normally. It's weird how the bugly server determines that my request isn't a browser.
 

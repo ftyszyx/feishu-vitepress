@@ -5,9 +5,9 @@ tags:
 keywords:
   - rustdesk
   - todesk
-  -remote
-  -gratis
-  -open source
+  - remote
+  - gratis
+  - open source
   - Mac Remote
   - Windows Remote
   - teamviwer
@@ -94,7 +94,8 @@ hbbr:
 
 initiate
 
-```csharpdocker-compose up -d
+```csharp
+docker-compose up -d
 ```
 
 After starting, a certificate file will be generated in the current directory

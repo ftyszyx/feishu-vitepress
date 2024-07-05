@@ -37,13 +37,13 @@ https://www.cnblogs.com/flydean/p/15292400.html
 
 When the player's login is verified, a token is returned to the player, and the token is stored in Redis for easy verification
 
-```csharp
+````csharp
 const payload: TokenPayload = { user_name: user.user_name, id: user.id };
 const access_token = this.jwtService.sign(payload);
 const http_config = this.config.get<AppHttpConfig>('http');
 await this.redis.set(getTokenRedisKey(user.id), access_token, http_config.token_expire_in);
-```
 
+```ts
 You need to set a password to encrypt JWT data
 
 JWT uses a signature algorithm: https://www.cnblogs.com/kirito-c/p/12402066.html```csharp
@@ -60,7 +60,7 @@ JwtModule.registerAsync({
         };
       },
     }),
-```
+````
 
 ### Let's review the security mechanism of https again
 
@@ -119,6 +119,7 @@ Encrypt the data we save and store it in the network disk for easy synchronizati
 Then we can use AES symmetric encryption algorithm. We don't need features like complicated sharing. Our features simply need to be saved and used for your own use
 
 The process is as follows:
+
 1. Enter the APP, and the user enters a master password (the user remembers). At the same time, a key is generated for the user (stored locally). Put together to generate an A
 
 2. Perform hash operation (MD5 or SHA) through A to calculate a B
