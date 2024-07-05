@@ -107,9 +107,10 @@ const translateDoc = async (lan: string) => {
       if (docitem.items?.length > 0) {
         await checkItem(docitem.items);
       }
+      // console.log(`check:${JSON.stringify(docitem)} path:${doc_itempath}`);
       if (!docitem.link) continue;
       docitem.link = `/${lan}${docitem.link}`;
-      if (fs.existsSync(dest_itemPath)) return;
+      if (fs.existsSync(dest_itemPath)) continue;
       const doc_text = fs.readFileSync(doc_itempath, "utf-8").toString();
       console.log(`begin trans ${doc_itempath} cn->${lan}`);
       const res = await translateText(doc_text, lan);
