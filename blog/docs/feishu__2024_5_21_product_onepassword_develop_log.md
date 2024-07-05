@@ -150,7 +150,7 @@ JwtModule.registerAsync({
 
 将用户名和B存到数据库中（本地数据库）
 
-# 2024-7-1
+# 2024-7-4
 
 新建一个user表用于存储用户信息，和加密后的key_hash
 

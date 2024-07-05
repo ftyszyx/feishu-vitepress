@@ -493,11 +493,7 @@ https://search.google.com/
 
 <img src="/assets/VO41bYRGqo9kfsxK3R1chJiqnFf.png" src-width="884" class="m-auto" src-height="237" align="center"/>
 
-# 待处理问题 
-
-问题1：
-
-访问单独某一页时会404
+## 访问单独某一页时会404
 
 nginx配置错误：
 
@@ -539,6 +535,46 @@ location / {
 ```
 
 原理是，当配置`try_files`找不到某个页面资源，这时，nginx会尝试加载index.html，加载index.html之后，react-router就能起作用并匹配我们输入的`/home`路由，从而显示正确的home页面。
+
+# 2024/7/4
+
+## blog.bytefuse.cn无法访问
+
+好几天没上去看了，发现自己部署在阿里云上的博客无法访问了。
+
+登陆上nginx_ui看了下，访问正常
+
+登陆到服务器上看资源目录：发现/var/www/qinglong/web下的资源目录是空的。
+
+<img src="/assets/Q93PbsNSPovSXWxc7ubcTk5an8x.png" src-width="1174" class="m-auto" src-height="133" align="center"/>
+
+上青云的自动任务看执行日志，发现有报错：
+
+<img src="/assets/D5pTbc4ugoJbAmxs8b5cW5yPnMc.png" src-width="914" class="m-auto" src-height="353" align="center"/>
+
+好像是从github上下载的zip文件包是坏的。
+
+进入github账号看了下项目下的发布资源，打包是正常的
+
+<img src="/assets/J1MybguExoC0UqxSndHclJgUnng.png" src-width="1248" class="m-auto" src-height="450" align="center"/>
+
+打的包是12M。但是青云脚本下的是16K。我怀疑是我用的github镜像地址出了问题。当时为了加速github资源下载，使用了https://hub.gitmirror.com/。看来这个镜像现在不能用了。
+
+上ghproxy上看了一下，原来被墙了。
+
+<img src="/assets/CGypbXG9Wo6O65xFC0WcGt5Snpf.png" src-width="842" class="m-auto" src-height="150" align="center"/>
+
+需要使用新的地址：https://mirror.ghproxy.com。
+
+现在Ok了。
+
+<img src="/assets/Z0wKbjP3ZoNkcZxbJfKcptN9nhB.png" src-width="1328" class="m-auto" src-height="460" align="center"/>
+
+不过还有一个问题就是，这个青云同步脚本，在zip文件没下载好，就把web目录下内容清空了，的确不友好。
+
+要加一下判断，如果zip下下来的文件是坏的，就不清空web目录。
+
+# 待处理问题 
 
 1、如何同步到公众号，知乎，csdn
 

@@ -17,7 +17,11 @@ categories:
 
 https://github.com/mkaring/ConfuserEx/
 
-## electron react 
+反编译神器：dnspy
+
+https://github.com/dnSpyEx/dnSpy
+
+# electron react 
 
 https://www.youtube.com/watch?v=yTEryF1IvD0
 
