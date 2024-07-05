@@ -27,6 +27,9 @@ export const SiteConfig = {
     {
       name: "product",
     },
+    {
+      name: "other_platform",
+    },
   ],
   artalk: {
     site: "myblog",
