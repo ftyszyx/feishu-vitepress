@@ -152,6 +152,8 @@ JwtModule.registerAsync({
 
 # 2024-7-4
 
+# 2024-7-5
+
 新建一个user表用于存储用户信息，和加密后的key_hash
 
 建一个保险库表：vault

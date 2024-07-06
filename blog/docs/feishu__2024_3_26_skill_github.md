@@ -7,6 +7,7 @@ categories:
   - skill
 ---
 
+
 # Github actions
 
 Github actions简直是一个免费的计算资源，不好好好利用，简直是浪费
@@ -23,7 +24,7 @@ https://github.com/actions
 
 https://docs.github.com/en/rest/releases/releases?apiVersion=2022-11-28#create-a-release
 
-可以直接用github action库[create-relase](https://github.com/actions/create-release)
+ 可以直接用github action库[create-relase](https://github.com/actions/create-release)
 
 <img src="/assets/YdIvb7DnDoiLeUxHHZFcS7Dan7c.png" src-width="781" class="m-auto" src-height="161" align="center"/>
 
@@ -71,7 +72,8 @@ jobs:
 
 ```yaml
 - name: zip dist
-    run: zip -r dist.zip blog/docs/.vitepress/dist/*
+    run: zip -r dist.zip blog/docs/.vitepress/dist/* 
+        
 - name: Upload Release Asset
     id: upload-release-asset
     uses: actions/upload-release-asset@v1
@@ -97,3 +99,4 @@ https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs
 https://gitmirror.com/files.html
 
 只用在github地址前加个前缀即可
+
