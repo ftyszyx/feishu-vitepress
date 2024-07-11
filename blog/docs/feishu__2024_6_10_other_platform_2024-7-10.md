@@ -1,6 +1,12 @@
 ---
+title: 使用wildcard注册openai个人账号及充值新手教程
+keywords:
+  - wildcard
+  - openai
+  - chatgpt
+  - openai key
+cover: /assets/Q9EAbUv76oDs0kxd5z4cfFRhnxf.png
 create_time: 1720591905
-title: 2024-7-10
 categories:
   - other_platform
 ---
