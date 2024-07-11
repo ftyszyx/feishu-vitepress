@@ -6,9 +6,15 @@ categories:
 ---
 
 
+# 简介
+
+现在chat gpt很火，并且出现了很多第三方应用（其实就是在open ai的接口上套了一层ui而已）。这些第三方应用有很多开源的，但是都需要open ai的key。
+
+但open ai 封锁了国内用户，限制必须要有**国外手机号**和**国外银行卡**才行。之前我一直没找到好方法，直到前几天发现了[wildcard](https://wildcard.com.cn/i/FRQUAUVU)，才成功注册成功了open ai的账号充值成功，感谢[wildcard](https://wildcard.com.cn/i/FRQUAUVU)。
+
 # 准备工具
 
-vpn软件
+vpn软件(必须，或者在开通wildcard后使用其免费的vpn服务，有三次免费机会）
 
 # 步骤
 
@@ -30,7 +36,7 @@ wildcard是一种美国的虚拟银行卡，同时平台还集成虚拟手机和
 
 <img src="/assets/AFEtb0VFzojsE1xBKEzcypbEnXb.png" src-width="1187" class="m-auto" src-height="301" align="center"/>
 
-开通银行卡，需要手续费，使用邀请码FRQUAUVU可以立减2美金
+开通银行卡，需要手续费11.99美元，使用邀请码**FRQUAUVU**可以立减2美金（此开通费用不可退）
 
 <img src="/assets/Q4IKbJjhdosratxm8KScpIqpnOf.png" src-width="943" class="m-auto" src-height="539" align="center"/>
 
@@ -154,9 +160,41 @@ google账号注册很简单，打开[google](https://www.google.com/)首页，�
 
 <img src="/assets/NtmibZEsgo1NpHxVniNcfMZ2nrg.png" src-width="487" class="m-auto" src-height="440" align="center"/>
 
-注意，此时有可能会提示支付失败
+注意，此时有可能会提示支付失败，提示
 
-<img src="/assets/KGoWbNXCMo7aoSxP9bnc65pFn3d.png" src-width="938" class="m-auto" src-height="416" align="center"/>
+your card has been declined
 
-# 遇到的问题处理
+不用担心，因为你已经绑定过卡了。
+
+<img src="/assets/FxV1bGMGioM9Zwx1oL0ct8Knn1e.png" src-width="467" class="m-auto" src-height="350" align="center"/>
+
+只需要关闭充值弹窗。点开Payment methods查看是否已经绑定成功了卡
+
+<img src="/assets/E991bbdysoQHZfxGGgncjSTYnUd.png" src-width="639" class="m-auto" src-height="324" align="center"/>
+
+然后开启自动充值
+
+<img src="/assets/E1JgbF3oWogwToxTr27crA2Ln6b.png" src-width="735" class="m-auto" src-height="903" align="center"/>
+
+ 开启自动充值后，卡片余额足够的情况下（自动充值最低10美金，可能还需要绑卡预扣款5美金，卡片最好至少有**15美金**），一般过一段时间会自动充值到api里面，可以稍等一段时间看看
+
+## 6、获取openai 接口key
+
+打开your profiler-&gt;user api keys
+
+点create new secert key
+
+<img src="/assets/TSC5bbWz8oep8FxMENmck5nLnad.png" src-width="1361" class="m-auto" src-height="459" align="center"/>
+
+随便取个名字
+
+<img src="/assets/LHtJb021So6jaUx3cj0cnRZJnad.png" src-width="494" class="m-auto" src-height="272" align="center"/>
+
+然后保存好你的key
+
+<img src="/assets/F1gibyukjoG9q2xarhBcaUQWnHg.png" src-width="407" class="m-auto" src-height="222" align="center"/>
+
+现在你可以使用这个Key去玩各种chat gpt的应用了。
+
+## 全文完
 
