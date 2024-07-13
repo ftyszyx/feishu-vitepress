@@ -151,7 +151,7 @@ onMounted(() => {
     <div
       class="w-full text-xl leading-normal text-gray-800 rounded-t md:text-2xl"
     >
-      <ul class="flex flex-wrap pt-6 -mx-3 md:pt-12 sd:mx-1 md:mx-0">
+      <ul class="flex flex-wrap pt-6 mx-3 sd:mx-1 md:mx-0">
         <li
           class="flex flex-col px-4 py-3"
           v-for="{ url, title, date, cover, categories, hit } of articleList"

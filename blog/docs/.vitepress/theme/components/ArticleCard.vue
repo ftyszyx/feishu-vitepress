@@ -48,7 +48,7 @@ onMounted(() => {});
   <div
     class="flex-1 h-64 overflow-hidden duration-300 ease-in-out bg-white rounded-t shadow-lg dark:bg-zinc-800 hover:shadow-2xl"
   >
-    <div class="flex flex-col no-underline hover:no-underline">
+    <div class="flex flex-col no-underline hover:no-underline align-middle">
       <a
         :href="articleUrl"
         class="relative overflow-hidden w-[376px] h-[160px] bg-zinc-100 dark:bg-neutral-900"
@@ -72,7 +72,7 @@ onMounted(() => {});
           ]"
         />
       </a>
-      <div class="w-full px-6 mt-5">
+      <div class="w-[376px] px-6 mt-5">
         <a
           :href="articleUrl"
           class="h-auto text-base antialiased font-medium text-gray-800 break-normal md:h-12 sd:text-lg md:text-base dark:text-slate-300 line-clamp-2 font-fira"
