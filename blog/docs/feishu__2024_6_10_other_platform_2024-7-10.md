@@ -1,6 +1,7 @@
 ---
-title: 使用wildcard注册openai个人账号及充值新手教程
+title: 3分钟开通openai plus账号教程（2024年亲测有效）
 keywords:
+  - 如何获取OpenAI API Key
   - wildcard
   - openai
   - chatgpt
@@ -12,11 +13,11 @@ categories:
 ---
 
 
-# 简介
+# 为什么要开通OpenAI
 
-现在chat gpt很火，并且出现了很多第三方应用（其实就是在open ai的接口上套了一层ui而已）。这些第三方应用有很多开源的，但是都需要open ai的key。
+现在是一个AI的时代。AI可以帮你翻译语言，生成文章，生成图片，生成ui，基本无所不能。
 
-但open ai 封锁了国内用户，限制必须要有**国外手机号**和**国外银行卡**才行。之前我一直没找到好方法，直到前几天发现了[wildcard](https://wildcard.com.cn/i/FRQUAUVU)，才成功注册成功了open ai的账号充值成功，感谢[wildcard](https://wildcard.com.cn/i/FRQUAUVU)。
+而目前最强大的AI平台就是OpenAI。可惜的是OpenAI对国内是封锁的。你如果想要开通OpenAI。需要准备一个**国外的手机号**和**国外银行卡**才行。之前我一直没找到好方法，直到前几天发现了[wildcard](https://wildcard.com.cn/i/FRQUAUVU)，才成功注册成功了open ai的账号充值成功，感谢[wildcard](https://wildcard.com.cn/i/FRQUAUVU)。 
 
 # 准备工具
 
@@ -54,7 +55,7 @@ wildcard是一种美国的虚拟银行卡，同时平台还集成虚拟手机和
 
 google账号可以用来直接登陆openai。这样就可以省去openai的注册过程。
 
-当然前提是你需要翻墙。wildcard自带翻墙，请参考[这里](https://help.bewildcard.com/zh-CN/articles/8689913-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E5%AE%B6%E5%BA%AD%E7%8E%AF%E5%A2%83%E7%9A%84%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6)：
+当然前提是你需要科学上网。wildcard自带科学上网，请参考[这里](https://help.bewildcard.com/zh-CN/articles/8689913-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E5%AE%B6%E5%BA%AD%E7%8E%AF%E5%A2%83%E7%9A%84%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6)：
 
 google账号注册很简单，打开[google](https://www.google.com/)首页，点登陆，
 
@@ -203,4 +204,12 @@ your card has been declined
 现在你可以使用这个Key去玩各种chat gpt的应用了。
 
 ## 全文完
+
+# 回复
+
+1. 充值openai需要使用美国银行卡。推荐使用[wildcard](https://wildcard.com.cn/i/FRQUAUVU)来开通美国银行卡，开通立即生效。不过需要开通费用11.99美元，可以使用我的邀请码FRQUAUVU立减2美金。我写了一个[教程](https://zhuanlan.zhihu.com/p/708346653)，可以参考。
+
+2、推荐使用[wildcard](https://wildcard.com.cn/i/FRQUAUVU)来开通美国银行卡,wildcard还有虚拟电话号码和虚拟网络功能，避免被封，可以使用我的邀请码FRQUAUVU立减2美金。
+
+3、如果想要开通OpenAI。需要准备一个**国外的手机号**和**国外银行卡**才行，推荐使用[wildcard](https://wildcard.com.cn/i/FRQUAUVU),[wildcard](https://wildcard.com.cn/i/FRQUAUVU)有虚拟电话号码、虚拟美国银行卡、虚拟网络等功能，可以使用我的邀请码FRQUAUVU立减2美金。
 
