@@ -29,6 +29,13 @@ export const shared = defineConfig({
         content: "codeva-KpXMMPlGpy",
       },
     ],
+    [
+      "meta",
+      {
+        name: "360-site-verification",
+        content: "d8dbb00e86292f00d342f12e11ca613b",
+      },
+    ],
     ["link", { rel: "icon", href: `${base_url}logo.png` }],
     [
       "meta",
