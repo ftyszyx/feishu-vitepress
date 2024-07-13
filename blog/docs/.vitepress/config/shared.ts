@@ -40,7 +40,7 @@ export const shared = defineConfig({
       "meta",
       {
         name: "sogou_site_verification",
-        content: "",
+        content: "V0YDh3BMvX",
       },
     ],
     ["link", { rel: "icon", href: `${base_url}logo.png` }],
