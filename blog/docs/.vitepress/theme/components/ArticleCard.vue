@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import { withBase } from "vitepress";
+import { useData, withBase } from "vitepress";
 import { ref, onMounted, computed } from "vue";
 import { getFormatNumber } from "../utils";
+const { lang } = useData();
 const props = defineProps<{
   url: string;
   title: string;

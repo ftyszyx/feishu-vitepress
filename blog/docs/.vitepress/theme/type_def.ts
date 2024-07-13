@@ -1,4 +1,6 @@
+export type PostLang = "zh" | "en";
 export interface Post {
+  lanuage: PostLang;
   title: string;
   url: string;
   date: {

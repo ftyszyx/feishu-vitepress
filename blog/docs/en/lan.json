@@ -16,5 +16,10 @@
   "home_end": "end",
   "home_next": "next",
   "home_prev": "prev",
-  "home_first": "first"
+  "home_first": "first",
+      "time_today":"today",
+    "time_days_ago":"{0} days ago",
+    "time_weeks_ago":"{0} weeks ago",
+    "time_months_ago":"{0} months ago",
+    "time_years_ago":"{0} years ago"
 }

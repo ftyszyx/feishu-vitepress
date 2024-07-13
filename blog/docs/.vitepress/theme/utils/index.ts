@@ -1,3 +1,7 @@
+import { get } from "http";
+import { get_lang_text, get_lang_text_format } from "../constant";
+import { LangDef } from "../type_def";
+
 export function formatDate(d: any, fmt = "yyyy-MM-dd hh:mm:ss") {
   if (!(d instanceof Date)) {
     d = new Date(d);
@@ -44,7 +48,7 @@ export function isCurrentWeek(date: Date, target?: Date) {
   return +date >= startWeek && +date <= startWeek + 7 * oneDay;
 }
 
-export function formatShowDate(date: Date | string) {
+export function formatShowDate(lan: LangDef, date: Date | string) {
   const source = date ? +new Date(date) : +new Date();
   const now = +new Date();
   const diff = now - source > 0 ? now - source : 60 * 1000;
@@ -56,24 +60,32 @@ export function formatShowDate(date: Date | string) {
   const oneMonth = oneDay * 30;
   const oneYear = oneDay * 365;
   if (diff < oneDay) {
-    return `今天`;
+    return get_lang_text(lan, "time_today");
   }
   if (diff < oneWeek) {
-    return `${Math.floor(diff / oneDay)}天前`;
+    return get_lang_text_format(
+      "time_days_ago",
+      lan,
+      Math.floor(diff / oneDay),
+    );
   }
   if (diff < oneMonth) {
-    return `${Math.floor(diff / oneWeek)}周前`;
+    return get_lang_text_format(
+      "time_weeks_ago",
+      lan,
+      Math.floor(diff / oneWeek),
+    );
   }
   if (diff < oneYear) {
     const months = Math.floor(diff / oneMonth);
     if (months > 0) {
-      return `${months}月前`;
+      return get_lang_text_format("time_months_ago", lan, months);
     }
   }
 
   const years = Math.floor(diff / oneYear);
   if (years > 0 && years < 3) {
-    return `${years}年前`;
+    return get_lang_text_format("time_years_ago", lan, years);
   } else {
     return formatDate(new Date(date), "yyyy-MM-dd");
   }

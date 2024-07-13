@@ -6,7 +6,7 @@ import { data } from "../posts.data.js";
 import { useCurrentCategoryKey, useCurrentPageKey } from "../configProvider";
 import ArticleCard from "./ArticleCard.vue";
 import { Post } from "../type_def.js";
-import { get_lang_text } from "../constant";
+import { get_lang_text, get_true_lan } from "../constant";
 import { SiteConfig } from "../site_config";
 
 const { lang } = useData();
@@ -18,16 +18,11 @@ const categoryKey = useCurrentCategoryKey()!;
 const isArticleListHitsFetched = ref<boolean>(false);
 const currentCategory = computed(() => categoryKey.value);
 const pageSize = 12;
-const posts = ref(
-  data.map((post) => ({
-    url: post.url,
-    title: post.title,
-    cover: post.cover,
-    date: post.date,
-    categories: post.categories || [],
-    hit: 0, // 添加 hit 字段并初始化为 0
-  })) as Post[],
-);
+
+const posts = computed(() => {
+  const true_lan = get_true_lan(lang.value);
+  return data.filter((post) => post.lanuage == true_lan);
+});
 
 const filteredPosts = computed(() => {
   // console.log("get posts", posts.value, "curtag", currentCategory.value);

@@ -15,5 +15,10 @@
     "home_end":"结束",
     "home_next":"下一页",
     "home_prev":"上一页",
-    "home_first":"第一页"
+    "home_first":"第一页",
+    "time_today":"今天",
+    "time_days_ago":"{0}天前",
+    "time_weeks_ago":"{0}周前",
+    "time_months_ago":"{0}月前",
+    "time_years_ago":"{0}年前"
 }
