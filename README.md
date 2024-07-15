@@ -89,7 +89,9 @@ npm run dev
 访问http://localhost:5173/ 即可
 
 ## 说明
+
 以上流程都已集成到github action,可以实现自动化，具体参考 [github action自动化流程](https://ftyszyx.github.io/feishu-vitepress/feishu__2024_3_16_product_myblog_github%20action%20intro)
+
 同时也实现了自动同步到国内阿里云流程，具体参考[博客自动同步到阿里云](https://ftyszyx.github.io/feishu-vitepress/feishu__2024_4_6_product_myblog_aliyun_auto)
 
 ### 参考项目
