@@ -150,9 +150,9 @@ JwtModule.registerAsync({
 
 将用户名和B存到数据库中（本地数据库）
 
-# 2024-7-4
+# 2024-7-4、2024-7-5、2024-7-14
 
-# 2024-7-5
+# 保险库功能
 
 新建一个user表用于存储用户信息，和加密后的key_hash
 
@@ -170,7 +170,17 @@ JwtModule.registerAsync({
 
 可以，修改，设置和删除
 
-2、点进入，可以进入账号列表
+**这个功能算完成**
+
+增删改搞定
+
+<img src="/assets/CTlUbkakPosg2IxOKmpcK5s8nRe.gif" src-width="918" class="m-auto" src-height="614" align="center"/>
+
+# 待处理
+
+密码功能：
+
+点进入，可以进入账号列表
 
 类似这样：上方可以直接切换密码库：
 
