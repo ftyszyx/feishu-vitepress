@@ -19,7 +19,7 @@ categories:
 
 2、姜萍在视频中的板书中有符号写错，这不是一个数学高才生的水准。（如下图，标红的是错误处）
 
-<img src="/assets/BeWzbB8Taohcw2x3ZCDcvORWnKg.png" src-width="720" class="m-auto" src-height="531" align="center"/>
+<img src="/assets/BeWzbB8Taohcw2x3ZCDcvORWnKg.png" src-width="720" class="markdown-img m-auto" src-height="531" align="center"/>
 
 3、一个中专生不可能熟练的使用数学专用的公式软件“LaTex”来写公式。可疑！
 

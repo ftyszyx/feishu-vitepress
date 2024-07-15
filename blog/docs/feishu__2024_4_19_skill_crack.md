@@ -61,7 +61,7 @@ asar e app.asar test
 
 注意如果resouce目录下有app.asar.unpacked目录，需要在打包时将其排除
 
-<img src="/assets/Iabrb9Y2CoYiU6x83DacmpAMncg.png" src-width="444" class="m-auto" src-height="58" align="center"/>
+<img src="/assets/Iabrb9Y2CoYiU6x83DacmpAMncg.png" src-width="444" class="markdown-img m-auto" src-height="58" align="center"/>
 
 ```csharp
 asar pack app app.asar --unpack **/node_modules/sharp/**/*

@@ -79,7 +79,7 @@ JwtModule.registerAsync({
 
  参考：https://segmentfault.com/a/1190000021494676
 
-<img src="/assets/JBBabFfzZohIlExlWBocGOrpnIg.png" src-width="1704" class="m-auto" src-height="1424" align="center"/>
+<img src="/assets/JBBabFfzZohIlExlWBocGOrpnIg.png" src-width="1704" class="markdown-img m-auto" src-height="1424" align="center"/>
 
 ### 1password原理
 
@@ -93,17 +93,17 @@ JwtModule.registerAsync({
 
 白皮书：
 
-<img src="/assets/At63bOjRSoIUEBxvtAccTZgknke.png" src-width="7199" class="m-auto" src-height="3141" align="center"/>
+<img src="/assets/At63bOjRSoIUEBxvtAccTZgknke.png" src-width="7199" class="markdown-img m-auto" src-height="3141" align="center"/>
 
  master_key和secert key
 
-<img src="/assets/G7DXbB2uuo5caFxIu6kc5Dcentd.png" src-width="856" class="m-auto" src-height="240" align="center"/>
+<img src="/assets/G7DXbB2uuo5caFxIu6kc5Dcentd.png" src-width="856" class="markdown-img m-auto" src-height="240" align="center"/>
 
 这里用到一个叫dh算法的概念：
 
 这里有个视频讲的好：https://www.bilibili.com/video/BV1sY4y1p78s/?spm_id_from=333.788&vd_source=1cfe4f7c9bf04285f79b848e60f55aea
 
-<img src="/assets/I6yUb3XtLoTviQxgZQycnejwnEe.png" src-width="828" class="m-auto" src-height="355" align="center"/>
+<img src="/assets/I6yUb3XtLoTviQxgZQycnejwnEe.png" src-width="828" class="markdown-img m-auto" src-height="355" align="center"/>
 
  流程如下：
 
@@ -166,7 +166,7 @@ JwtModule.registerAsync({
 
 展示如右：
 
-<img src="/assets/WBi6bR2SZouWc0xZbNycC57Gnlf.png" src-width="821" class="m-auto" src-height="242" align="center"/>
+<img src="/assets/WBi6bR2SZouWc0xZbNycC57Gnlf.png" src-width="821" class="markdown-img m-auto" src-height="242" align="center"/>
 
 可以，修改，设置和删除
 
@@ -174,7 +174,7 @@ JwtModule.registerAsync({
 
 增删改搞定
 
-<img src="/assets/CTlUbkakPosg2IxOKmpcK5s8nRe.gif" src-width="918" class="m-auto" src-height="614" align="center"/>
+<img src="/assets/CTlUbkakPosg2IxOKmpcK5s8nRe.gif" src-width="918" class="markdown-img m-auto" src-height="614" align="center"/>
 
 # 待处理
 
@@ -184,5 +184,5 @@ JwtModule.registerAsync({
 
 类似这样：上方可以直接切换密码库：
 
-<img src="/assets/EfR0b1Gq7oANjPxpnppc1J1VnOf.png" src-width="1185" class="m-auto" src-height="512" align="center"/>
+<img src="/assets/EfR0b1Gq7oANjPxpnppc1J1VnOf.png" src-width="1185" class="markdown-img m-auto" src-height="512" align="center"/>
 

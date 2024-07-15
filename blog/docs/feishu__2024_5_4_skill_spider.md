@@ -69,7 +69,7 @@ python的话原生是不支持的，需要用到库，这个文章有介绍[curl
 
 没找到免费的
 
-<img src="/assets/Q1CBboSJXoVy34xX4vocBB1Hnqm.png" src-width="627" class="m-auto" src-height="312" align="center"/>
+<img src="/assets/Q1CBboSJXoVy34xX4vocBB1Hnqm.png" src-width="627" class="markdown-img m-auto" src-height="312" align="center"/>
 
 目前我使用vpn做代理
 

@@ -89,7 +89,7 @@ app.on("window-all-closed", () => {
 npm run start
 ```
 
-<img src="/assets/CX9Jb1f3Oo3QauxaryPc6icbnYc.png" src-width="775" class="m-auto" src-height="292" align="center"/>
+<img src="/assets/CX9Jb1f3Oo3QauxaryPc6icbnYc.png" src-width="775" class="markdown-img m-auto" src-height="292" align="center"/>
 
 ## 发布
 

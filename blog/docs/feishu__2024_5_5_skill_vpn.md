@@ -23,11 +23,11 @@ https://docs.gtk.pw/
 
 所以要开启mixin
 
-<img src="/assets/S5BIbtMHqoqBikx3qbEcjo6XnSJ.png" src-width="780" class="m-auto" src-height="464" align="center"/>
+<img src="/assets/S5BIbtMHqoqBikx3qbEcjo6XnSJ.png" src-width="780" class="markdown-img m-auto" src-height="464" align="center"/>
 
 然后在设置中mixin中增加配置
 
-<img src="/assets/DHgAbIMSFo3jM8xbqgKch2cQnub.png" src-width="899" class="m-auto" src-height="472" align="center"/>
+<img src="/assets/DHgAbIMSFo3jM8xbqgKch2cQnub.png" src-width="899" class="markdown-img m-auto" src-height="472" align="center"/>
 
 ```ts
 mixin: # 注意下面缩进

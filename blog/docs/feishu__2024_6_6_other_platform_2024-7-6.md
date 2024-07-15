@@ -9,9 +9,9 @@ categories:
 
 最近看了一篇“阮一峰”的文章，里面说到一个观点叫互联网封建主义，说现在的互联网被一些大的平台垄断了。网民自以为是互联网的主人，其实只是各大平台的免费奴隶。不论你在微信里发表文章，还是在抖音里发布视频，都是给平台打工，被平台榨取价值。而且各大平台都有很强的领地意识，为了防止这些免费奴隶（用户）叛逃到其它平台，他们会设置各种账号壁垒，比如：不让你轻易的带走你的个人资料，不与其它平台共享资源。这种情况像极了封建社会地主和农民的关系。只不过是现在转换了场景而已。
 
-<img src="/assets/QVw3bcPc5oA7yyxX8jsc1noGnmb.png" src-width="1127" class="m-auto" src-height="52" align="center"/>
+<img src="/assets/QVw3bcPc5oA7yyxX8jsc1noGnmb.png" src-width="1127" class="markdown-img m-auto" src-height="52" align="center"/>
 
-<img src="/assets/CQikbAFoUoiIEKxGAN8c25Ocn7b.png" src-width="1127" class="m-auto" src-height="626" align="center"/>
+<img src="/assets/CQikbAFoUoiIEKxGAN8c25Ocn7b.png" src-width="1127" class="markdown-img m-auto" src-height="626" align="center"/>
 
 这个观点很有道理，比如现在的腾讯之所以能垄断社交平台，就是因为我们已经成为了它的奴隶。因为平台的不开放和领地意识，个人想离开平台是要付出很大代价的。你以为你是用户，你是主人。你如果细想，你其实只是一个平台的奴隶。
 

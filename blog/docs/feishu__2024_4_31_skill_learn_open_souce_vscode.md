@@ -48,15 +48,15 @@ yarn
 
 build error "MSB8040: Spectre-mitigated libraries are required
 
-<img src="/assets/CaRtbJvUbojQqSxTK2YcbhTQnce.png" src-width="968" class="m-auto" src-height="321" align="center"/>
+<img src="/assets/CaRtbJvUbojQqSxTK2YcbhTQnce.png" src-width="968" class="markdown-img m-auto" src-height="321" align="center"/>
 
 上面有写
 
-<img src="/assets/CJmsbm0vnoXR0sxxNg4cHQs6nGh.png" src-width="800" class="m-auto" src-height="228" align="center"/>
+<img src="/assets/CJmsbm0vnoXR0sxxNg4cHQs6nGh.png" src-width="800" class="markdown-img m-auto" src-height="228" align="center"/>
 
 安装一下
 
-<img src="/assets/HUkeb4IIvovrEax3TSCc7SiTn7c.png" src-width="799" class="m-auto" src-height="561" align="center"/>
+<img src="/assets/HUkeb4IIvovrEax3TSCc7SiTn7c.png" src-width="799" class="markdown-img m-auto" src-height="561" align="center"/>
 
 ### Build 脚本
 
@@ -77,7 +77,7 @@ yarn watch
 
 打开chrome调试面板
 
-<img src="/assets/KhJVbN4gKoYttsx4YIqcOcI6nae.png" src-width="872" class="m-auto" src-height="175" align="center"/>
+<img src="/assets/KhJVbN4gKoYttsx4YIqcOcI6nae.png" src-width="872" class="markdown-img m-auto" src-height="175" align="center"/>
 
 ## 编译启动分析
 
@@ -125,9 +125,9 @@ npm-run-all的lp
 
 src/**下面的ts，到out/目录下
 
-<img src="/assets/Z7JbbgO9WoRBJxx7Kz4ceQ3znde.png" src-width="1367" class="m-auto" src-height="79" align="center"/>
+<img src="/assets/Z7JbbgO9WoRBJxx7Kz4ceQ3znde.png" src-width="1367" class="markdown-img m-auto" src-height="79" align="center"/>
 
-<img src="/assets/GmRdbQ7cAohrtSx2fB8cJ9Sangh.png" src-width="628" class="m-auto" src-height="392" align="center"/>
+<img src="/assets/GmRdbQ7cAohrtSx2fB8cJ9Sangh.png" src-width="628" class="markdown-img m-auto" src-height="392" align="center"/>
 
 同理watch-extensions应该是编译插件
 
@@ -155,7 +155,7 @@ yarn electron
 
 在product.json中找nameShort字段就是之前编译出来的二进制程序
 
-<img src="/assets/QdLkbnMmdoACSpxtrXKcILP5nde.png" src-width="961" class="m-auto" src-height="116" align="center"/>
+<img src="/assets/QdLkbnMmdoACSpxtrXKcILP5nde.png" src-width="961" class="markdown-img m-auto" src-height="116" align="center"/>
 
 然后执行
 
@@ -165,7 +165,7 @@ yarn electron
 
 相当于
 
-<img src="/assets/E4U1b5DVqo2SO3xzStjc0CfDngf.png" src-width="499" class="m-auto" src-height="26" align="center"/>
+<img src="/assets/E4U1b5DVqo2SO3xzStjc0CfDngf.png" src-width="499" class="markdown-img m-auto" src-height="26" align="center"/>
 
 总结：
 

@@ -70,75 +70,75 @@ https://1password.com/zh-cn ：
 
 第一步：生成一个私钥匙
 
-<img src="/assets/EEWnbXLz9oXaqJx9iJtcDJnHnjc.png" src-width="702" class="m-auto" src-height="291" align="center"/>
+<img src="/assets/EEWnbXLz9oXaqJx9iJtcDJnHnjc.png" src-width="702" class="markdown-img m-auto" src-height="291" align="center"/>
 
 让你保存
 
-<img src="/assets/DQA4bJnoKovk6ox2q0ZcFb8onve.png" src-width="402" class="m-auto" src-height="375" align="center"/>
+<img src="/assets/DQA4bJnoKovk6ox2q0ZcFb8onve.png" src-width="402" class="markdown-img m-auto" src-height="375" align="center"/>
 
 会生成一个pdf给你
 
-<img src="/assets/KWj6bIh9nop0Q7x1Eq9ctGNnnOg.png" src-width="860" class="m-auto" src-height="396" align="center"/>
+<img src="/assets/KWj6bIh9nop0Q7x1Eq9ctGNnnOg.png" src-width="860" class="markdown-img m-auto" src-height="396" align="center"/>
 
-<img src="/assets/AMjPbf8X8oxNEGxZko4cFdNZnWf.png" src-width="786" class="m-auto" src-height="281" align="center"/>
+<img src="/assets/AMjPbf8X8oxNEGxZko4cFdNZnWf.png" src-width="786" class="markdown-img m-auto" src-height="281" align="center"/>
 
 下一步
 
-<img src="/assets/Xc5WbqmqRo2ZTAxjBMzcJNh9nXb.png" src-width="528" class="m-auto" src-height="339" align="center"/>
+<img src="/assets/Xc5WbqmqRo2ZTAxjBMzcJNh9nXb.png" src-width="528" class="markdown-img m-auto" src-height="339" align="center"/>
 
 主页面
 
-<img src="/assets/IQVIbZhRSo1gPIxtX9scJuWInbg.png" src-width="1503" class="m-auto" src-height="464" align="center"/>
+<img src="/assets/IQVIbZhRSo1gPIxtX9scJuWInbg.png" src-width="1503" class="markdown-img m-auto" src-height="464" align="center"/>
 
 新建一个保险库
 
-<img src="/assets/NRjpb9h9ZorQSFxopJ8cxhlqnqd.png" src-width="591" class="m-auto" src-height="571" align="center"/>
+<img src="/assets/NRjpb9h9ZorQSFxopJ8cxhlqnqd.png" src-width="591" class="markdown-img m-auto" src-height="571" align="center"/>
 
 这里就列出来了
 
-<img src="/assets/FHz4bEAYVoTuxAxuvRLcmTSKnmQ.png" src-width="1283" class="m-auto" src-height="483" align="center"/>
+<img src="/assets/FHz4bEAYVoTuxAxuvRLcmTSKnmQ.png" src-width="1283" class="markdown-img m-auto" src-height="483" align="center"/>
 
 保险库页面
 
-<img src="/assets/XSkWbViYUo5MZdxdiZXcMEtBnph.png" src-width="1789" class="m-auto" src-height="603" align="center"/>
+<img src="/assets/XSkWbViYUo5MZdxdiZXcMEtBnph.png" src-width="1789" class="markdown-img m-auto" src-height="603" align="center"/>
 
 新一个账号login
 
-<img src="/assets/RFrMbWoSvo4BfXxIhF2ch5LEntd.png" src-width="336" class="m-auto" src-height="568" align="center"/>
+<img src="/assets/RFrMbWoSvo4BfXxIhF2ch5LEntd.png" src-width="336" class="markdown-img m-auto" src-height="568" align="center"/>
 
 项目：
 
-<img src="/assets/TMfTbWJV6oTn8hxOVsOc3KbynuX.png" src-width="939" class="m-auto" src-height="494" align="center"/>
+<img src="/assets/TMfTbWJV6oTn8hxOVsOc3KbynuX.png" src-width="939" class="markdown-img m-auto" src-height="494" align="center"/>
 
 还可以导入密码
 
-<img src="/assets/BZeJbY10voEopBxesm8cj8SfnBh.png" src-width="310" class="m-auto" src-height="199" align="center"/>
+<img src="/assets/BZeJbY10voEopBxesm8cj8SfnBh.png" src-width="310" class="markdown-img m-auto" src-height="199" align="center"/>
 
 选chrome
 
-<img src="/assets/LuSIbTs2joz23Gx8J9Ncf167nie.png" src-width="1377" class="m-auto" src-height="687" align="center"/>
+<img src="/assets/LuSIbTs2joz23Gx8J9Ncf167nie.png" src-width="1377" class="markdown-img m-auto" src-height="687" align="center"/>
 
 选择chrome
 
-<img src="/assets/UsdAb7dRDohNOhxRv45cA1DPn4c.png" src-width="1492" class="m-auto" src-height="633" align="center"/>
+<img src="/assets/UsdAb7dRDohNOhxRv45cA1DPn4c.png" src-width="1492" class="markdown-img m-auto" src-height="633" align="center"/>
 
 在你导出密码文件 后
 
-<img src="/assets/Wid2b4nPPo4laLxY9FhcOPXanTd.png" src-width="1505" class="m-auto" src-height="440" align="center"/>
+<img src="/assets/Wid2b4nPPo4laLxY9FhcOPXanTd.png" src-width="1505" class="markdown-img m-auto" src-height="440" align="center"/>
 
 上传文件 
 
-<img src="/assets/WsyWbdTDZoGAldx68fJcImbFnVg.png" src-width="1498" class="m-auto" src-height="644" align="center"/>
+<img src="/assets/WsyWbdTDZoGAldx68fJcImbFnVg.png" src-width="1498" class="markdown-img m-auto" src-height="644" align="center"/>
 
-<img src="/assets/WrwBbminBohyHyxELBFcUvb9nDb.png" src-width="1466" class="m-auto" src-height="666" align="center"/>
+<img src="/assets/WrwBbminBohyHyxELBFcUvb9nDb.png" src-width="1466" class="markdown-img m-auto" src-height="666" align="center"/>
 
 重新设置 label
 
-<img src="/assets/LyvHbxOIvo4EYUxwTjQcwdLTnbb.png" src-width="1450" class="m-auto" src-height="497" align="center"/>
+<img src="/assets/LyvHbxOIvo4EYUxwTjQcwdLTnbb.png" src-width="1450" class="markdown-img m-auto" src-height="497" align="center"/>
 
 10分钟不操作就会锁
 
-<img src="/assets/FZ9Ibcd4lo3yBGxkeyIcjlPWnMc.png" src-width="967" class="m-auto" src-height="451" align="center"/>
+<img src="/assets/FZ9Ibcd4lo3yBGxkeyIcjlPWnMc.png" src-width="967" class="markdown-img m-auto" src-height="451" align="center"/>
 
 ### 安全机制
 
@@ -152,23 +152,23 @@ David Schuetz 在他的[博客](https://darthnull.org/security/2018/11/09/1pass-
 
 **Secret key（即图中的 Account key）在且仅在本地生成，不会上传到服务器。**
 
-<img src="/assets/W4pGb4wuFoozEzx0waccjPVZnTb.png" src-width="694" class="m-auto" src-height="479" align="center"/>
+<img src="/assets/W4pGb4wuFoozEzx0waccjPVZnTb.png" src-width="694" class="markdown-img m-auto" src-height="479" align="center"/>
 
 ## 客户端流程
 
 登陆
 
-<img src="/assets/RP51bHALboVVdPxYck0cKBvMnGn.png" src-width="978" class="m-auto" src-height="705" align="center"/>
+<img src="/assets/RP51bHALboVVdPxYck0cKBvMnGn.png" src-width="978" class="markdown-img m-auto" src-height="705" align="center"/>
 
-<img src="/assets/U9Azb3YntoAtgXxFHSuc327onuf.png" src-width="593" class="m-auto" src-height="200" align="center"/>
+<img src="/assets/U9Azb3YntoAtgXxFHSuc327onuf.png" src-width="593" class="markdown-img m-auto" src-height="200" align="center"/>
 
-<img src="/assets/Pb9IbZEI8oH0bBxjtH7ceFvVnWf.png" src-width="959" class="m-auto" src-height="776" align="center"/>
+<img src="/assets/Pb9IbZEI8oH0bBxjtH7ceFvVnWf.png" src-width="959" class="markdown-img m-auto" src-height="776" align="center"/>
 
-<img src="/assets/QB1tboT2LojVAixcA20czgBgnAg.png" src-width="995" class="m-auto" src-height="774" align="center"/>
+<img src="/assets/QB1tboT2LojVAixcA20czgBgnAg.png" src-width="995" class="markdown-img m-auto" src-height="774" align="center"/>
 
-<img src="/assets/Fy0Ab1K9boXXm1xuQ5cc5i7bnBg.png" src-width="993" class="m-auto" src-height="798" align="center"/>
+<img src="/assets/Fy0Ab1K9boXXm1xuQ5cc5i7bnBg.png" src-width="993" class="markdown-img m-auto" src-height="798" align="center"/>
 
-<img src="/assets/RrlhbOU6votu2dxjlFacowXQnDf.png" src-width="682" class="m-auto" src-height="814" align="center"/>
+<img src="/assets/RrlhbOU6votu2dxjlFacowXQnDf.png" src-width="682" class="markdown-img m-auto" src-height="814" align="center"/>
 
 ## flowerpassword
 

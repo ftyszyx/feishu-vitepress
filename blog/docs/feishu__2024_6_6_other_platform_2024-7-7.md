@@ -23,5 +23,5 @@ categories:
 
 所以，打工人，活出自己就行，不要太把领导当回事。因为人家根本也没把你当回事。
 
-<img src="/assets/Kf3dbrfgko3HE2x21n5cbQhUnHg.png" src-width="1114" class="m-auto" src-height="1550" align="center"/>
+<img src="/assets/Kf3dbrfgko3HE2x21n5cbQhUnHg.png" src-width="1114" class="markdown-img m-auto" src-height="1550" align="center"/>
 

@@ -9,11 +9,11 @@ categories:
 
 夏承曦是复旦大学法学院的一名台湾籍毕业生。在2023年6月19日复旦大学法学院的毕业典礼上。他上台扇了学校的教授一巴掌，上了各大新闻头条。他之所以这么做，是因为他想退学。而且他已经被北大医学部录取了。难怪夏承曦看不上复旦。
 
-<img src="/assets/DEmkbBBMooQ9nExHhBWckQG8nPg.png" src-width="623" class="m-auto" src-height="511" align="center"/>
+<img src="/assets/DEmkbBBMooQ9nExHhBWckQG8nPg.png" src-width="623" class="markdown-img m-auto" src-height="511" align="center"/>
 
 夏承曦是人才吗？并不是。只是因为他身份特殊，作为港澳台同胞，他想上复旦都不用通过考试。只需要达到顶标级即可。什么是顶标，顶标只用在台湾高考中前12%即可。而且只要达到顶标，基本上我国的985大学（包括清化北大）都可以随便上。好羡慕啊，难怪夏承曦看不上复旦，因为人家可以上清华北大啊。
 
-<img src="/assets/Q0HxbCY9qoO77qx3XQxctGoWnBg.png" src-width="755" class="m-auto" src-height="529" align="center"/>
+<img src="/assets/Q0HxbCY9qoO77qx3XQxctGoWnBg.png" src-width="755" class="markdown-img m-auto" src-height="529" align="center"/>
 
 想想我们的高考，能上清华北大，一个省也没几个。只有状元才能随便挑。
 

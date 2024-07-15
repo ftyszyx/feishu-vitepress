@@ -94,7 +94,7 @@ export function openAuthorize() {
 
 但是报错
 
-<img src="/assets/YuZNbGbk7oVqduxz7dRcOHQrnSh.png" src-width="1369" class="m-auto" src-height="218" align="center"/>
+<img src="/assets/YuZNbGbk7oVqduxz7dRcOHQrnSh.png" src-width="1369" class="markdown-img m-auto" src-height="218" align="center"/>
 
 这是跨域问题，参考：
 
@@ -126,7 +126,7 @@ electron有net库。http请求可以用net.request或者net.fetch
 
 终于能取到了
 
-<img src="/assets/VbZdb1EJBo6brQxIBT0cOBLxn5c.png" src-width="669" class="m-auto" src-height="296" align="center"/>
+<img src="/assets/VbZdb1EJBo6brQxIBT0cOBLxn5c.png" src-width="669" class="markdown-img m-auto" src-height="296" align="center"/>
 
 ## console.log中文乱码
 
@@ -158,7 +158,7 @@ gb2312是936  utf8是65001
 
   四个tap页：
 
-<img src="/assets/EmT2b7Nsfof8caxMGlmc7oyvnza.png" src-width="252" class="m-auto" src-height="34" align="center"/>
+<img src="/assets/EmT2b7Nsfof8caxMGlmc7oyvnza.png" src-width="252" class="markdown-img m-auto" src-height="34" align="center"/>
 
 日期选择：（最小单位是天）
 

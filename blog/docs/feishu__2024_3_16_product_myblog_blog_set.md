@@ -39,7 +39,7 @@ npm run dev
 
 ## 文档目录
 
-<img src="/assets/Vu8Eb0WYaoJYDBxZm5HcLlPlnCf.png" src-width="280" class="m-auto" src-height="395" align="center"/>
+<img src="/assets/Vu8Eb0WYaoJYDBxZm5HcLlPlnCf.png" src-width="280" class="markdown-img m-auto" src-height="395" align="center"/>
 
 截图中为中文文档，其中md后缀
 
@@ -59,5 +59,5 @@ shared.ts是共享的配置
 
 首页分类,altalk配置，umami配置，
 
-<img src="/assets/VpfcbJL9Gozw57xVKHkcfkI1n0b.png" src-width="512" class="m-auto" src-height="412" align="center"/>
+<img src="/assets/VpfcbJL9Gozw57xVKHkcfkI1n0b.png" src-width="512" class="markdown-img m-auto" src-height="412" align="center"/>
 

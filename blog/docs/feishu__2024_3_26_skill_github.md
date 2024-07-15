@@ -26,7 +26,7 @@ https://docs.github.com/en/rest/releases/releases?apiVersion=2022-11-28#create-a
 
  可以直接用github action库[create-relase](https://github.com/actions/create-release)
 
-<img src="/assets/YdIvb7DnDoiLeUxHHZFcS7Dan7c.png" src-width="781" class="m-auto" src-height="161" align="center"/>
+<img src="/assets/YdIvb7DnDoiLeUxHHZFcS7Dan7c.png" src-width="781" class="markdown-img m-auto" src-height="161" align="center"/>
 
 所以要加一个permission
 

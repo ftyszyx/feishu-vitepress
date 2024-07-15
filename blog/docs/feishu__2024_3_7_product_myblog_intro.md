@@ -49,11 +49,11 @@ https://open.feishu.cn/app
 
 ### 为应用添加机器人能力
 
-<img src="/assets/ThhAba6CPo8ZwyxOLjDcUHTBnFb.png" src-width="306" class="m-auto" src-height="321" align="center"/>
+<img src="/assets/ThhAba6CPo8ZwyxOLjDcUHTBnFb.png" src-width="306" class="markdown-img m-auto" src-height="321" align="center"/>
 
 添加好后，菜单中会有机器人项
 
-<img src="/assets/XK09b0UXZoDT8Rx8W4TcHAQXnGx.png" src-width="244" class="m-auto" src-height="327" align="center"/>
+<img src="/assets/XK09b0UXZoDT8Rx8W4TcHAQXnGx.png" src-width="244" class="markdown-img m-auto" src-height="327" align="center"/>
 
 ### 增加飞书文档权限
 
@@ -61,45 +61,45 @@ https://open.feishu.cn/app
 
 为应用开启 `docx:document:readonly` 和 `wiki:wiki:readonly` 权限。
 
-<img src="/assets/BmPLbo84DobeTXxEMmQcFXFmnBg.png" src-width="259" class="m-auto" src-height="109" align="center"/>
+<img src="/assets/BmPLbo84DobeTXxEMmQcFXFmnBg.png" src-width="259" class="markdown-img m-auto" src-height="109" align="center"/>
 
 ### 获取应用凭证
 
 在应用凭证甚而信息中，获取appid和app secret
 
-<img src="/assets/JQWfb98Agoinicxr3cmc8xTSnQb.png" src-width="236" class="m-auto" src-height="225" align="center"/>
+<img src="/assets/JQWfb98Agoinicxr3cmc8xTSnQb.png" src-width="236" class="markdown-img m-auto" src-height="225" align="center"/>
 
 ### 发布应用
 
 点创建版本
 
-<img src="/assets/ZwIxb5fmQon35TxNe5bccLL3nEc.png" src-width="480" class="m-auto" src-height="83" align="center"/>
+<img src="/assets/ZwIxb5fmQon35TxNe5bccLL3nEc.png" src-width="480" class="markdown-img m-auto" src-height="83" align="center"/>
 
 确保应用是审核通过状态
 
-<img src="/assets/Uk7tbeTGboKElhxxDD9cxdxenGg.png" src-width="339" class="m-auto" src-height="64" align="center"/>
+<img src="/assets/Uk7tbeTGboKElhxxDD9cxdxenGg.png" src-width="339" class="markdown-img m-auto" src-height="64" align="center"/>
 
 建立群，并接入机器人
 
-<img src="/assets/BDjkbEwESoRMpVxW5lacSSFFnbb.png" src-width="329" class="m-auto" src-height="445" align="center"/>
+<img src="/assets/BDjkbEwESoRMpVxW5lacSSFFnbb.png" src-width="329" class="markdown-img m-auto" src-height="445" align="center"/>
 
  
 
-<img src="/assets/A60LbBZ3ZoivhGxX9gacdiFUnmg.png" src-width="328" class="m-auto" src-height="177" align="center"/>
+<img src="/assets/A60LbBZ3ZoivhGxX9gacdiFUnmg.png" src-width="328" class="markdown-img m-auto" src-height="177" align="center"/>
 
 ### 将群设成飞书文档库的管理员
 
 打开「知识空间设置」
 
-<img src="/assets/QjzVbOYV1oHuEJx0ePacehR2nHb.png" src-width="178" class="m-auto" src-height="259" align="center"/>
+<img src="/assets/QjzVbOYV1oHuEJx0ePacehR2nHb.png" src-width="178" class="markdown-img m-auto" src-height="259" align="center"/>
 
 「成员设置」-&gt;「添加管理员」中添加，把这个 群加成 **管理员**。
 
-<img src="/assets/VXMNbc9g7ogqEHxeFnWc8uejnng.png" src-width="1041" class="m-auto" src-height="520" align="center"/>
+<img src="/assets/VXMNbc9g7ogqEHxeFnWc8uejnng.png" src-width="1041" class="markdown-img m-auto" src-height="520" align="center"/>
 
 并记住知识库的地址，在浏览器地址栏中。下方截图中的框选部分
 
-<img src="/assets/AxwvbdUqyoP2WjxPy1Rc68HynBd.png" src-width="843" class="m-auto" src-height="47" align="center"/>
+<img src="/assets/AxwvbdUqyoP2WjxPy1Rc68HynBd.png" src-width="843" class="markdown-img m-auto" src-height="47" align="center"/>
 
 ## 导出飞书文档
 
@@ -150,7 +150,7 @@ npm run trans_en
 
 生成的文档在
 
-<img src="/assets/KabZbcHZfo8uMlxxelccMyOjn5f.png" src-width="358" class="m-auto" src-height="133" align="center"/>
+<img src="/assets/KabZbcHZfo8uMlxxelccMyOjn5f.png" src-width="358" class="markdown-img m-auto" src-height="133" align="center"/>
 
 ## 本地运行博客
 
@@ -170,7 +170,7 @@ npm run dev
 
 成功后，显示
 
-<img src="/assets/NPi7biYogolFhPxYWi7c9ms0ntb.png" src-width="406" class="m-auto" src-height="100" align="center"/>
+<img src="/assets/NPi7biYogolFhPxYWi7c9ms0ntb.png" src-width="406" class="markdown-img m-auto" src-height="100" align="center"/>
 
 访问http://localhost:5173/ 即可
 

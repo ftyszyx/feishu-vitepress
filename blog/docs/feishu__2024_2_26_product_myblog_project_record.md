@@ -19,7 +19,7 @@ categories:
 
 解决需要在jobs上加上环境变量名
 
-<img src="/assets/L7UWbibvXoQSwxxqJg3cl9h5ncj.png" src-width="308" class="m-auto" src-height="104" align="center"/>
+<img src="/assets/L7UWbibvXoQSwxxqJg3cl9h5ncj.png" src-width="308" class="markdown-img m-auto" src-height="104" align="center"/>
 
 ## 2024/3/26
 
@@ -36,7 +36,7 @@ categories:
 
 加了permision：
 
-<img src="/assets/OeyXb9q53oWH4axfsLtcdlAgnSf.png" src-width="449" class="m-auto" src-height="212" align="center"/>
+<img src="/assets/OeyXb9q53oWH4axfsLtcdlAgnSf.png" src-width="449" class="markdown-img m-auto" src-height="212" align="center"/>
 
 又有新的报错
 
@@ -46,29 +46,29 @@ error: failed to push some refs to '<u>https://github.com/ftyszyx/myblog</u>'
 
 知道原因了，我搞了两次提交，
 
-<img src="/assets/WBBWbyyrCoepLuxUohucjTq6nBd.png" src-width="499" class="m-auto" src-height="282" align="center"/>
+<img src="/assets/WBBWbyyrCoepLuxUohucjTq6nBd.png" src-width="499" class="markdown-img m-auto" src-height="282" align="center"/>
 
 导致异常，合并成一次提交，就好了
 
-<img src="/assets/J0E8bmHUlo0idPxWAR0cdMdMnZc.png" src-width="410" class="m-auto" src-height="148" align="center"/>
+<img src="/assets/J0E8bmHUlo0idPxWAR0cdMdMnZc.png" src-width="410" class="markdown-img m-auto" src-height="148" align="center"/>
 
 ###  <u>pages build and deployment</u> 怎么去掉
 
 Github 上配了pages。会自动加了一个workflow
 
-<img src="/assets/XERKbDeATog68jxZ2SWcmypjnjd.png" src-width="866" class="m-auto" src-height="210" align="center"/>
+<img src="/assets/XERKbDeATog68jxZ2SWcmypjnjd.png" src-width="866" class="markdown-img m-auto" src-height="210" align="center"/>
 
 我想定制这一流程，选这个
 
-<img src="/assets/JhhWbKuiqo5SbqxLdspc1Nphnhe.png" src-width="532" class="m-auto" src-height="274" align="center"/>
+<img src="/assets/JhhWbKuiqo5SbqxLdspc1Nphnhe.png" src-width="532" class="markdown-img m-auto" src-height="274" align="center"/>
 
 然后把这个workflow右边的run log全删除
 
-<img src="/assets/KED6b8FGIowVszxjxptcw8fGn5d.png" src-width="971" class="m-auto" src-height="266" align="center"/>
+<img src="/assets/KED6b8FGIowVszxjxptcw8fGn5d.png" src-width="971" class="markdown-img m-auto" src-height="266" align="center"/>
 
 这个workflow就消失了，世界清静了！
 
-<img src="/assets/ZR5TbQAisoRNJwxx8L8cx0GGn5d.png" src-width="372" class="m-auto" src-height="172" align="center"/>
+<img src="/assets/ZR5TbQAisoRNJwxx8L8cx0GGn5d.png" src-width="372" class="markdown-img m-auto" src-height="172" align="center"/>
 
 ### preview时发现cover图片找不到
 
@@ -122,9 +122,9 @@ buildEnd: async (siteconfig) => {
 
 所以 baseurl要修改一下
 
-<img src="/assets/IMLfb0iCooB8AfxcROWcxNIFnmh.png" src-width="613" class="m-auto" src-height="331" align="center"/>
+<img src="/assets/IMLfb0iCooB8AfxcROWcxNIFnmh.png" src-width="613" class="markdown-img m-auto" src-height="331" align="center"/>
 
-<img src="/assets/Muc0bjrToooEIfxscKScmKWunVb.png" src-width="781" class="m-auto" src-height="256" align="center"/>
+<img src="/assets/Muc0bjrToooEIfxscKScmKWunVb.png" src-width="781" class="markdown-img m-auto" src-height="256" align="center"/>
 
 还有问题，这个basepath修改了后，vitepress不会处理cover的链接
 
@@ -132,7 +132,7 @@ Vitepress有接口，可以在网页中获取base
 
 https://vitepress.dev/guide/asset-handling#base-url
 
-<img src="/assets/UDP3bkjoGoHs09xpEHacLV6EnBg.png" src-width="757" class="m-auto" src-height="547" align="center"/>
+<img src="/assets/UDP3bkjoGoHs09xpEHacLV6EnBg.png" src-width="757" class="markdown-img m-auto" src-height="547" align="center"/>
 
 ## 2024/3/28
 
@@ -246,7 +246,7 @@ Github cotainer reg
 
 https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry
 
-<img src="/assets/PbAabyFktoGBKex4ZRicN4dxnkf.png" src-width="740" class="m-auto" src-height="126" align="center"/>
+<img src="/assets/PbAabyFktoGBKex4ZRicN4dxnkf.png" src-width="740" class="markdown-img m-auto" src-height="126" align="center"/>
 
 所以先要搞acess tokens
 
@@ -262,11 +262,11 @@ https://clarity.microsoft.com/
 
 vitepress third-party cookie will be blocked. clarity
 
-<img src="/assets/Ul4jb4wYcoQ7MlxD4EJc1fc5nCg.png" src-width="1588" class="m-auto" src-height="49" align="center"/>
+<img src="/assets/Ul4jb4wYcoQ7MlxD4EJc1fc5nCg.png" src-width="1588" class="markdown-img m-auto" src-height="49" align="center"/>
 
 在network上看到
 
-<img src="/assets/ILMqbdRSsog8gYxr76ocllwPnwe.png" src-width="878" class="m-auto" src-height="348" align="center"/>
+<img src="/assets/ILMqbdRSsog8gYxr76ocllwPnwe.png" src-width="878" class="markdown-img m-auto" src-height="348" align="center"/>
 
 感觉应该是clarity导致 的
 
@@ -297,25 +297,25 @@ https://pages.cloudflare.com/
 
 遇到个填空，要写网站名
 
-<img src="/assets/SOU6bVj2UocvlOxir0acCoNMnxb.png" src-width="696" class="m-auto" src-height="160" align="center"/>
+<img src="/assets/SOU6bVj2UocvlOxir0acCoNMnxb.png" src-width="696" class="markdown-img m-auto" src-height="160" align="center"/>
 
 但里面有名称指引：
 
 好奇怪哦，个人网站为什么不能用“博客”这个关键字。有点奇葩
 
-<img src="/assets/R7ZnbDlx3oVBnVxAGq6cW20Qnog.png" src-width="1211" class="m-auto" src-height="706" align="center"/>
+<img src="/assets/R7ZnbDlx3oVBnVxAGq6cW20Qnog.png" src-width="1211" class="markdown-img m-auto" src-height="706" align="center"/>
 
 算了，服了，随便取一个吧，星城起点
 
 点提交，提示
 
-<img src="/assets/K0oSb7GIbohHmax37Opch9BDnxe.png" src-width="607" class="m-auto" src-height="66" align="center"/>
+<img src="/assets/K0oSb7GIbohHmax37Opch9BDnxe.png" src-width="607" class="markdown-img m-auto" src-height="66" align="center"/>
 
 好吧，效率真是低下。买 了域名，已经实名过了，还要等2到3天。那只能2到3天后再试了
 
 已经提交了，
 
-<img src="/assets/IDkibfqMwoLQyLx4RSvcugHznB8.png" src-width="354" class="m-auto" src-height="113" align="center"/>
+<img src="/assets/IDkibfqMwoLQyLx4RSvcugHznB8.png" src-width="354" class="markdown-img m-auto" src-height="113" align="center"/>
 
 过一个月后再看
 
@@ -349,7 +349,7 @@ SyntaxError: Element is missing end tag.
 
 看不出是哪个文档编译错误
 
-<img src="/assets/Ymnzbsol1oovoKxQf9YczYC5nVe.png" src-width="987" class="m-auto" src-height="329" align="center"/>
+<img src="/assets/Ymnzbsol1oovoKxQf9YczYC5nVe.png" src-width="987" class="markdown-img m-auto" src-height="329" align="center"/>
 
 只能一个个删除,找到对应问题文档
 
@@ -359,11 +359,11 @@ SyntaxError: Element is missing end tag.
 
 ## 备案通过
 
-<img src="/assets/D3nUbSF17oLSYax9hMYcB96nnIh.png" src-width="793" class="m-auto" src-height="175" align="center"/>
+<img src="/assets/D3nUbSF17oLSYax9hMYcB96nnIh.png" src-width="793" class="markdown-img m-auto" src-height="175" align="center"/>
 
 还没完，要去下app
 
-<img src="/assets/DftvbuYz2oF0CCxo61Wc6A1lnzb.png" src-width="810" class="m-auto" src-height="457" align="center"/>
+<img src="/assets/DftvbuYz2oF0CCxo61Wc6A1lnzb.png" src-width="810" class="markdown-img m-auto" src-height="457" align="center"/>
 
 必须要手机上注册，因为需要人脸识别
 
@@ -443,15 +443,15 @@ https://ftyszyx.github.io/feishu-vitepress/sitemap.xml
 
 使用html验证
 
-<img src="/assets/GQNUbNp7gox4drxjBRWcRzCKn9f.png" src-width="876" class="m-auto" src-height="308" align="center"/>
+<img src="/assets/GQNUbNp7gox4drxjBRWcRzCKn9f.png" src-width="876" class="markdown-img m-auto" src-height="308" align="center"/>
 
 然后点击「完成验证」，就会出现：
 
-<img src="/assets/Je7GbyTRCo4kOax5YuncZNx9ndE.png" src-width="1348" src-height="668"/>
+<img src="/assets/Je7GbyTRCo4kOax5YuncZNx9ndE.png" src-width="1348" class="markdown-img" src-height="668"/>
 
 点击「我知道了」，就会跳转到 HTTPS 认证这里：
 
-<img src="/assets/VBFtbwBguoPxOqx5szscSXwpnts.png" src-width="2446" class="m-auto" src-height="1464" align="center"/>
+<img src="/assets/VBFtbwBguoPxOqx5szscSXwpnts.png" src-width="2446" class="markdown-img m-auto" src-height="1464" align="center"/>
 
 等待一天后，会显示认证成功：
 
@@ -459,7 +459,7 @@ https://ftyszyx.github.io/feishu-vitepress/sitemap.xml
 
 普通收录的sitemap方式提交没有次数，不知道是不是要交钱
 
-<img src="/assets/PThKbaLpMocfWpxlAKNcxHMenjh.png" src-width="1256" class="m-auto" src-height="649" align="center"/>
+<img src="/assets/PThKbaLpMocfWpxlAKNcxHMenjh.png" src-width="1256" class="markdown-img m-auto" src-height="649" align="center"/>
 
 只能api提交
 
@@ -479,7 +479,7 @@ https://search.google.com/
 
 添加域名： 
 
-<img src="/assets/QXJbbXp5TomIbkxdLH0cvDm4nwd.png" src-width="376" class="m-auto" src-height="490" align="center"/>
+<img src="/assets/QXJbbXp5TomIbkxdLH0cvDm4nwd.png" src-width="376" class="markdown-img m-auto" src-height="490" align="center"/>
 
 添加dns解析
 
@@ -487,11 +487,11 @@ https://search.google.com/
 
 最后去添加索引
 
-<img src="/assets/ESIXbuPgJoitoExZddWcsxYfnPh.png" src-width="1777" class="m-auto" src-height="629" align="center"/>
+<img src="/assets/ESIXbuPgJoitoExZddWcsxYfnPh.png" src-width="1777" class="markdown-img m-auto" src-height="629" align="center"/>
 
 一直提示无法抓取
 
-<img src="/assets/VO41bYRGqo9kfsxK3R1chJiqnFf.png" src-width="884" class="m-auto" src-height="237" align="center"/>
+<img src="/assets/VO41bYRGqo9kfsxK3R1chJiqnFf.png" src-width="884" class="markdown-img m-auto" src-height="237" align="center"/>
 
 ## 访问单独某一页时会404
 
@@ -546,29 +546,29 @@ location / {
 
 登陆到服务器上看资源目录：发现/var/www/qinglong/web下的资源目录是空的。
 
-<img src="/assets/Q93PbsNSPovSXWxc7ubcTk5an8x.png" src-width="1174" class="m-auto" src-height="133" align="center"/>
+<img src="/assets/Q93PbsNSPovSXWxc7ubcTk5an8x.png" src-width="1174" class="markdown-img m-auto" src-height="133" align="center"/>
 
 上青云的自动任务看执行日志，发现有报错：
 
-<img src="/assets/D5pTbc4ugoJbAmxs8b5cW5yPnMc.png" src-width="914" class="m-auto" src-height="353" align="center"/>
+<img src="/assets/D5pTbc4ugoJbAmxs8b5cW5yPnMc.png" src-width="914" class="markdown-img m-auto" src-height="353" align="center"/>
 
 好像是从github上下载的zip文件包是坏的。
 
 进入github账号看了下项目下的发布资源，打包是正常的
 
-<img src="/assets/J1MybguExoC0UqxSndHclJgUnng.png" src-width="1248" class="m-auto" src-height="450" align="center"/>
+<img src="/assets/J1MybguExoC0UqxSndHclJgUnng.png" src-width="1248" class="markdown-img m-auto" src-height="450" align="center"/>
 
 打的包是12M。但是青云脚本下的是16K。我怀疑是我用的github镜像地址出了问题。当时为了加速github资源下载，使用了https://hub.gitmirror.com/。看来这个镜像现在不能用了。
 
 上ghproxy上看了一下，原来被墙了。
 
-<img src="/assets/CGypbXG9Wo6O65xFC0WcGt5Snpf.png" src-width="842" class="m-auto" src-height="150" align="center"/>
+<img src="/assets/CGypbXG9Wo6O65xFC0WcGt5Snpf.png" src-width="842" class="markdown-img m-auto" src-height="150" align="center"/>
 
 需要使用新的地址：https://mirror.ghproxy.com。
 
 现在Ok了。
 
-<img src="/assets/Z0wKbjP3ZoNkcZxbJfKcptN9nhB.png" src-width="1328" class="m-auto" src-height="460" align="center"/>
+<img src="/assets/Z0wKbjP3ZoNkcZxbJfKcptN9nhB.png" src-width="1328" class="markdown-img m-auto" src-height="460" align="center"/>
 
 不过还有一个问题就是，这个青云同步脚本，在zip文件没下载好，就把web目录下内容清空了，的确不友好。
 

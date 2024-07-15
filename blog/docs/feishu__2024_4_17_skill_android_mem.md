@@ -14,11 +14,11 @@ categories:
 
 依次选择 **View &gt; Tool Windows &gt; Profiler** 或点击工具栏中的 Profile图标
 
-<img src="/assets/UTjKb2ykyod7sXxAdUvcWXZ6nCh.png" src-width="827" class="m-auto" src-height="330" align="center"/>
+<img src="/assets/UTjKb2ykyod7sXxAdUvcWXZ6nCh.png" src-width="827" class="markdown-img m-auto" src-height="330" align="center"/>
 
 点击 MEMORY 时间轴上的任意位置以打开内存性能分析器
 
-<img src="/assets/RC52bj5IQo6GyJxCXNEc4dLHnZb.png" src-width="809" class="m-auto" src-height="372" align="center"/>
+<img src="/assets/RC52bj5IQo6GyJxCXNEc4dLHnZb.png" src-width="809" class="markdown-img m-auto" src-height="372" align="center"/>
 
 内存分类：
 
@@ -56,15 +56,15 @@ USS - Unique Set Size 进程独自占用的物理内存（不包含共享库占�
 
 1. adb shell
 
-<img src="/assets/ZfYzb7Sr8ogO7VxwcXGcIPufnTh.png" src-width="279" src-height="61"/>
+<img src="/assets/ZfYzb7Sr8ogO7VxwcXGcIPufnTh.png" src-width="279" class="markdown-img" src-height="61"/>
 
 1. top
 
-<img src="/assets/A2mYbmbujoDNLMxWaRjck16DnOd.png" src-width="287" src-height="58"/>
+<img src="/assets/A2mYbmbujoDNLMxWaRjck16DnOd.png" src-width="287" class="markdown-img" src-height="58"/>
 
 1. 根据包名查看pid
 
-<img src="/assets/Mq8xbYQvnouhJExX6uUcyekwnmd.png" src-width="821" class="m-auto" src-height="138" align="center"/>
+<img src="/assets/Mq8xbYQvnouhJExX6uUcyekwnmd.png" src-width="821" class="markdown-img m-auto" src-height="138" align="center"/>
 
 1. adb shell dumpsys meminfo 包名或者进程id
 
@@ -72,13 +72,13 @@ USS - Unique Set Size 进程独自占用的物理内存（不包含共享库占�
 adb shell dumpsys meminfo com.tencent.mobileqq:mini3
 ```
 
-<img src="/assets/ArlTbW8o6oi9ENx6kR9cVK4Bnac.png" src-width="1064" class="m-auto" src-height="846" align="center"/>
+<img src="/assets/ArlTbW8o6oi9ENx6kR9cVK4Bnac.png" src-width="1064" class="markdown-img m-auto" src-height="846" align="center"/>
 
 1. 如果想查看一个app的所有进程的内存开销
 
 使用命令 adb shell dumpsys meminfo | findstr 包名 （win10  cmd），如图可以知道qq有哪些进程以及相应进程的内存占用。
 
-<img src="/assets/IhYJbTo8coD5qyxEYSCcINL2nNQ.png" src-width="756" src-height="210"/>
+<img src="/assets/IhYJbTo8coD5qyxEYSCcINL2nNQ.png" src-width="756" class="markdown-img" src-height="210"/>
 
  
 
@@ -167,11 +167,11 @@ Debug.MemoryInfo memoryInfo = new Debug.MemoryInfo();
 
 Adb shell free
 
-<img src="/assets/G9b6bJo9loEBigxjgkQcaQxVnyh.png" src-width="684" class="m-auto" src-height="97" align="center"/>
+<img src="/assets/G9b6bJo9loEBigxjgkQcaQxVnyh.png" src-width="684" class="markdown-img m-auto" src-height="97" align="center"/>
 
 1. 查看内存占用详情
 
 Adb shell cat /proc/meminfo
 
-<img src="/assets/ZLwMb3sLjoSlXQxbbRecoQ03nzc.png" src-width="522" class="m-auto" src-height="377" align="center"/>
+<img src="/assets/ZLwMb3sLjoSlXQxbbRecoQ03nzc.png" src-width="522" class="markdown-img m-auto" src-height="377" align="center"/>
 

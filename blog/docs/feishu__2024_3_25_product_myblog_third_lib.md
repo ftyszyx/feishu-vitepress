@@ -89,7 +89,7 @@ umami虽然有api,但是有两个问题：
 
 但是搭完后，这个后台页面真是丑啊，请看：
 
-<img src="/assets/SOAmbW19Bouo78xyfENc6CKjnvc.png" src-width="1202" class="m-auto" src-height="532" align="center"/>
+<img src="/assets/SOAmbW19Bouo78xyfENc6CKjnvc.png" src-width="1202" class="markdown-img m-auto" src-height="532" align="center"/>
 
 第一次进后台，我都不知道怎么用有点迷糊,具体使用请看[官方文档](https://artalk.js.org/guide/intro.html)
 
@@ -103,7 +103,7 @@ umami虽然有api,但是有两个问题：
 
 添加账号密码
 
-<img src="/assets/TKTObVrHMo6FFJx9Q9kc52NRnSf.png" src-width="471" class="m-auto" src-height="134" align="center"/>
+<img src="/assets/TKTObVrHMo6FFJx9Q9kc52NRnSf.png" src-width="471" class="markdown-img m-auto" src-height="134" align="center"/>
 
 同时需要重启docker
 

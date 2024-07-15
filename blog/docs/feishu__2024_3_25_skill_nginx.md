@@ -60,7 +60,7 @@ docker-compose up -d
 
 先要配置一下nginx日志路径 
 
-<img src="/assets/HYSBb3E9doRNegxoPRFclIGbnif.png" src-width="565" class="m-auto" src-height="233" align="center"/>
+<img src="/assets/HYSBb3E9doRNegxoPRFclIGbnif.png" src-width="565" class="markdown-img m-auto" src-height="233" align="center"/>
 
 ```yaml
 /var/log/nginx/access.local.log
@@ -69,7 +69,7 @@ docker-compose up -d
 
 再配置站点：
 
-<img src="/assets/MopJbQS5aoM3vpxkRKicr46wnQh.png" src-width="181" class="m-auto" src-height="268" align="center"/>
+<img src="/assets/MopJbQS5aoM3vpxkRKicr46wnQh.png" src-width="181" class="markdown-img m-auto" src-height="268" align="center"/>
 
 ## 自动签发证书
 
@@ -91,19 +91,19 @@ https://andyyou.github.io/2019/04/13/how-to-use-certbot/
 
 ##### 配置acme用户
 
-<img src="/assets/M6yCbO6j7oqaUmx2A8UceN9Nn6L.png" src-width="1309" class="m-auto" src-height="348" align="center"/>
+<img src="/assets/M6yCbO6j7oqaUmx2A8UceN9Nn6L.png" src-width="1309" class="markdown-img m-auto" src-height="348" align="center"/>
 
 ##### 为站点启用tls
 
-<img src="/assets/X6mkbmUQoow2UnxQqmZccLHMnXd.png" src-width="867" class="m-auto" src-height="303" align="center"/>
+<img src="/assets/X6mkbmUQoow2UnxQqmZccLHMnXd.png" src-width="867" class="markdown-img m-auto" src-height="303" align="center"/>
 
 系统为会你增加一个server2，此时开始下方的let's encrypt加密
 
-<img src="/assets/KgMLbDgkYofMw1xNB3McdT4gncb.png" src-width="876" class="m-auto" src-height="570" align="center"/>
+<img src="/assets/KgMLbDgkYofMw1xNB3McdT4gncb.png" src-width="876" class="markdown-img m-auto" src-height="570" align="center"/>
 
 选择acme用户，点下一步
 
-<img src="/assets/Srujb0ocwokp38xn1aqcbduhn2R.png" src-width="621" class="m-auto" src-height="542" align="center"/>
+<img src="/assets/Srujb0ocwokp38xn1aqcbduhn2R.png" src-width="621" class="markdown-img m-auto" src-height="542" align="center"/>
 
 成功后就ok
 

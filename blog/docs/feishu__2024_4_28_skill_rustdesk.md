@@ -103,7 +103,7 @@ docker-compose up -d
 
 启动后，当前目录会有证书文件生成
 
-<img src="/assets/H0Qvb3YFBo6inwxg56fcMBcyn1f.png" src-width="653" class="m-auto" src-height="175" align="center"/>
+<img src="/assets/H0Qvb3YFBo6inwxg56fcMBcyn1f.png" src-width="653" class="markdown-img m-auto" src-height="175" align="center"/>
 
 将.pub文件复制下来
 
@@ -111,15 +111,15 @@ docker-compose up -d
 
 解锁网络配置
 
-<img src="/assets/TEehbX77so38uaxDOP2cUrFknag.png" src-width="822" class="m-auto" src-height="322" align="center"/>
+<img src="/assets/TEehbX77so38uaxDOP2cUrFknag.png" src-width="822" class="markdown-img m-auto" src-height="322" align="center"/>
 
 填入你的服务器地址和密钥
 
-<img src="/assets/Z1CsbATDsoX43qxyGQFcw4D0nBd.png" src-width="561" class="m-auto" src-height="318" align="center"/>
+<img src="/assets/Z1CsbATDsoX43qxyGQFcw4D0nBd.png" src-width="561" class="markdown-img m-auto" src-height="318" align="center"/>
 
 连接客户端
 
-<img src="/assets/A60VbgI33oPabdxWHTRczBXtn0d.png" src-width="793" class="m-auto" src-height="350" align="center"/>
+<img src="/assets/A60VbgI33oPabdxWHTRczBXtn0d.png" src-width="793" class="markdown-img m-auto" src-height="350" align="center"/>
 
 # 总结
 
