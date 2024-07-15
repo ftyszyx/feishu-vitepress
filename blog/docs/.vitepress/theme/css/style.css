@@ -19,6 +19,15 @@
   }
 }
 
+.markdown-img {
+  border-radius: 8px;
+  /* border: 1px solid; */
+  -webkit-filter: drop-shadow(
+    10px 10px 10px rgba(0, 0, 0, 0.5)
+  ); /*考虑浏览器兼容性：兼容 Chrome, Safari, Opera */
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

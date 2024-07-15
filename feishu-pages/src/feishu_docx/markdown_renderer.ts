@@ -369,15 +369,16 @@ export class MarkdownRenderer extends Renderer {
       alignAttr = ` align="${align}"`;
     }
 
-
     const el = createElement("img");
+    let class_attr = "markdown-img";
     el.setAttribute("src", image.token);
     if (image.width) {
       el.setAttribute("src-width", image.width.toString());
     }
     if (align == "center") {
-      el.setAttribute("class", "m-auto");
+      class_attr += " m-auto";
     }
+    el.setAttribute("class", class_attr);
     // Only give height when width is not given
     if (image.height) {
       el.setAttribute("src-height", image.height.toString());
