@@ -154,6 +154,10 @@ JwtModule.registerAsync({
 
 # 保险库功能
 
+图标：
+
+<img src="/assets/DLDWbaGn9oy3v3xiwknciUBYnVb.jpeg" src-width="580" class="markdown-img m-auto" src-height="580" align="center"/>
+
 新建一个user表用于存储用户信息，和加密后的key_hash
 
 建一个保险库表：vault

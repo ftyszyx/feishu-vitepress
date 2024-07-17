@@ -140,6 +140,30 @@ https://1password.com/zh-cn ：
 
 <img src="/assets/FZ9Ibcd4lo3yBGxkeyIcjlPWnMc.png" src-width="967" class="markdown-img m-auto" src-height="451" align="center"/>
 
+### 新建密码
+
+<img src="/assets/GuHnbdIjLogZo0xNQO7c7wtinIe.png" src-width="969" class="markdown-img m-auto" src-height="669" align="center"/>
+
+<img src="/assets/XNwtbcXyCowmFkxzkeZcBrFsn4c.png" src-width="562" class="markdown-img m-auto" src-height="311" align="center"/>
+
+<img src="/assets/TwqEbEjM0oh8RCxuuT3cmMC1nfh.png" src-width="357" class="markdown-img m-auto" src-height="303" align="center"/>
+
+<img src="/assets/DIRKbLTzroIFI9xNmwacSGBanFh.png" src-width="780" class="markdown-img m-auto" src-height="316" align="center"/>
+
+<img src="/assets/Vz5CbB4GmoMdRAxdT8EcNWxWnmg.png" src-width="607" class="markdown-img m-auto" src-height="185" align="center"/>
+
+<img src="/assets/ZV82bZdQzoIrZMx6sLXcLVlZnJg.png" src-width="575" class="markdown-img m-auto" src-height="528" align="center"/>
+
+### 修改密码
+
+<img src="/assets/Amh4bTzQmowoGuxkPyLcw75knBK.png" src-width="1158" class="markdown-img m-auto" src-height="554" align="center"/>
+
+<img src="/assets/GLBZbdwjnohFn5x08cBcA0DEnHe.png" src-width="835" class="markdown-img m-auto" src-height="566" align="center"/>
+
+### 首页：
+
+<img src="/assets/BJH9bCwkRoUjt1xWQo3c4IAjnFe.png" src-width="1344" class="markdown-img m-auto" src-height="575" align="center"/>
+
 ### 安全机制
 
 1Password 并非开源，但它遵循公开规范（[安全模型的白皮书](https://1password.com/files/1Password-White-Paper.pdf)），任何开发者都可以对其进行黑箱测试。
