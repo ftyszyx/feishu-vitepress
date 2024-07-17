@@ -20,6 +20,7 @@ export const get_true_lan = (lan: string): string => {
   if (lan == "zh-Hans") lan = "zh";
   return lan;
 };
+
 export const get_lang_text = (key: string, lan: string): string => {
   lan = get_true_lan(lan);
   return landic[lan][key];

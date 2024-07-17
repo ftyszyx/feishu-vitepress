@@ -1,6 +1,5 @@
-import { get } from "http";
 import { get_lang_text, get_lang_text_format } from "../constant";
-import { LangDef } from "../type_def";
+import { PostLang } from "../type_def";
 
 export function formatDate(d: any, fmt = "yyyy-MM-dd hh:mm:ss") {
   if (!(d instanceof Date)) {
@@ -48,7 +47,7 @@ export function isCurrentWeek(date: Date, target?: Date) {
   return +date >= startWeek && +date <= startWeek + 7 * oneDay;
 }
 
-export function formatShowDate(lan: LangDef, date: Date | string) {
+export function formatShowDate(lan: PostLang, date: Date | string) {
   const source = date ? +new Date(date) : +new Date();
   const now = +new Date();
   const diff = now - source > 0 ? now - source : 60 * 1000;
@@ -60,7 +59,7 @@ export function formatShowDate(lan: LangDef, date: Date | string) {
   const oneMonth = oneDay * 30;
   const oneYear = oneDay * 365;
   if (diff < oneDay) {
-    return get_lang_text(lan, "time_today");
+    return get_lang_text("time_today", lan);
   }
   if (diff < oneWeek) {
     return get_lang_text_format(
