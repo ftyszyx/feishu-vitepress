@@ -3,5 +3,14 @@
   "prettier.printWidth": 10000,
   "prettier.bracketSameLine": true,
   "prettier.jsxSingleQuote": true,
-  "prettier.enable": true
+  "prettier.enable": true,
+  "cSpell.words": [
+    "Feishu",
+    "respdata",
+    "sider",
+    "sideritem",
+    "tailwindcss",
+    "uami",
+    "vitepress"
+  ]
 }
