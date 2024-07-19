@@ -9,11 +9,13 @@ categories:
 ---
 
 
-# 官方文档
+# Unity mem profiler
+
+## 官方文档
 
 [地址](https://docs.unity3d.com/Packages/com.unity.memoryprofiler@1.0/manual/memory-profiler-window-reference.html)
 
-## Summary 窗口
+Summary 窗口
 
 ### Memory usage on device
 
@@ -55,12 +57,47 @@ Displays which types of Unity Objects use the most memory in the snapshot.
 
 ## 如何分析
 
-## 1、先了解应用占了多少内存
+### 先了解应用占了多少内存
 
-## 查看总内存中占比最多的明细
+因为我们使用unity profiler工具来分析内存，所以我们只关心unity能跟踪到的内存使用，也就是**Allocated Memory Distribution中的数据  减去 untracked**
 
-## 查看unity objects最多的分类
+```yaml
+3.94-1.22=2.72G
+```
 
-从上面解释可以看出，我们只用从**Allocated Memory Distribution**的inspect点进去看明细就行。因为这是Unity能分析的所有内存占用。xcode的内存，我们可以先忽略
+### 关注总内存中占比最多的明细
 
-# 
+在**Top Unity Objects Categories分类中，unity已经列出的前几项内存大头，可以点进去inspect去看看明细。**
+
+其中RenderTexuture有174M。
+
+**这个有可能和后处理、抗拒齿，或者hdr相关，可以尝试一个个关掉排除**
+
+### 查看all of memorys
+
+All of memorys列出了unity跟踪到的所有内存分配明细，很有参考价值。
+
+<img src="/assets/VApsbvEI7oIAtyxWSxpcZPW2nZd.png" src-width="1393" class="markdown-img m-auto" src-height="319" align="center"/>
+
+<img src="/assets/LWRXbU1dnovGqcxNNkCcq9bEnmg.png" src-width="1263" class="markdown-img m-auto" src-height="201" align="center"/>
+
+从上图看出，executes &mapped占用很大。
+
+这是游戏使用的所有库的占用内存。
+
+我这里打了一个空的Unity包，方便做对比
+
+<img src="/assets/ST8abvlLto987yxvcPzc9svcnfd.png" src-width="1454" class="markdown-img m-auto" src-height="482" align="center"/>
+
+离谱吧，一个是224M一个是1.11G。
+
+**排查方向：**
+
+**1、有没有开启unity库裁剪**
+
+<img src="/assets/KUOabYOHDoQZTpxmZiXcqUtwnJc.png" src-width="1412" class="markdown-img m-auto" src-height="392" align="center"/>
+
+**2、接入的其它sdk库是否过多**
+
+可以把其它的sdk第三库去掉，再测，看有没有优化
+
