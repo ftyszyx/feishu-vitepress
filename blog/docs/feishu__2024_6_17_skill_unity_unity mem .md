@@ -3,6 +3,8 @@ title: unity 内存分析工具
 keywords:
   - unity
   - memory profiler
+  - 内存占用
+  - unity内存占用分析
 create_time: 1721205501
 categories:
   - skill
@@ -99,5 +101,5 @@ All of memorys列出了unity跟踪到的所有内存分配明细，很有参考�
 
 **2、接入的其它sdk库是否过多**
 
-可以把其它的sdk第三库去掉，再测，看有没有优化
+**可以把其它的sdk第三库去掉，再测，看有没有优化**
 
