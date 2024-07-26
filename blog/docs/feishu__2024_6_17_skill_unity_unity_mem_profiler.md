@@ -103,3 +103,24 @@ All of memorys列出了unity跟踪到的所有内存分配明细，很有参考�
 
 **可以把其它的sdk第三库去掉，再测，看有没有优化**
 
+### 排查Managed Shell Objects内存泄露
+
+参考：https://docs.unity3d.com/Packages/com.unity.memoryprofiler@1.1/manual/managed-shell-objects.html
+
+unity的很多object对象，是用c++实现的，内存是unity分配的且不能被垃圾回收。在profiler中归类为Unity Objects
+
+如下：
+
+<img src="/assets/FtYwbx0H3oc7Brxg6yYcMCSEnkh.png" src-width="1293" class="markdown-img m-auto" src-height="429" align="center"/>
+
+什么是Leaked Managed Shells
+
+每一个unity object都对应一个c++对象。同时unity会new一个managed wrapper object来接管对native对象的调用。
+
+如果一个unity object的c++对象已经被释放了，但是c#引用还没有释放，这就会导致Leaked Managed Shells也不会释放。（看了几遍，没具体明白）
+
+在all of memorys中搜索leaked managed字样，就可以找到。
+
+<img src="/assets/YV3cbKu5JomfX2xO2MdcHWLineg.png" src-width="715" class="markdown-img m-auto" src-height="296" align="center"/>
+
+# 

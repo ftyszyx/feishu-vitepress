@@ -190,3 +190,27 @@ JwtModule.registerAsync({
 
 <img src="/assets/EfR0b1Gq7oANjPxpnppc1J1VnOf.png" src-width="1185" class="markdown-img m-auto" src-height="512" align="center"/>
 
+新增账号
+
+<img src="/assets/D4NkbFTCroGftZxfwflcotUFnXe.png" src-width="591" class="markdown-img m-auto" src-height="690" align="center"/>
+
+账号
+
+<img src="/assets/JbN1bTYg2oeboKxcuJ0cfoElnFC.png" src-width="591" class="markdown-img m-auto" src-height="709" align="center"/>
+
+银行账号
+
+<img src="/assets/BfcYb0tktoKS68x0aOEcZiWfnVg.png" src-width="586" class="markdown-img m-auto" src-height="711" align="center"/>
+
+信用卡
+
+<img src="/assets/Bc3rbk9wdoSx50xV3D1cTVdVnhf.png" src-width="590" class="markdown-img m-auto" src-height="707" align="center"/>
+
+文档
+
+<img src="/assets/IW5ZbB720obVg4x2t6jcMQeNnIb.png" src-width="586" class="markdown-img m-auto" src-height="694" align="center"/>
+
+<img src="/assets/YBLpbuNvto9BJ2x8WLlcbNQnndb.png" src-width="589" class="markdown-img m-auto" src-height="716" align="center"/>
+
+<img src="/assets/D73WbWtHKoZUElxYu5ZcV2Vgnvz.png" src-width="578" class="markdown-img m-auto" src-height="490" align="center"/>
+

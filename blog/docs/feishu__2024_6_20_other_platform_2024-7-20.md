@@ -1,5 +1,6 @@
 ---
 title: 选择比努力重要
+cover: /assets/UaYxbhGvLogZa6xsaB3cHPT7nDg.png
 create_time: 1721434560
 categories:
   - other_platform

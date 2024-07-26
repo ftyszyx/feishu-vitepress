@@ -73,7 +73,15 @@
         "items": [
           {
             "text": "unity 内存分析工具",
-            "link": "/feishu__2024_6_17_skill_unity_unity_mem"
+            "link": "/feishu__2024_6_17_skill_unity_unity_mem_profiler"
+          },
+          {
+            "text": "定制unity profiler指标",
+            "link": "/feishu__2024_6_22_skill_unity_unity_profiler"
+          },
+          {
+            "text": "unity 内存定制内存分配",
+            "link": "/feishu__2024_6_24_skill_unity_unity_customize_mem_allocator"
           }
         ],
         "collapsed": false
@@ -82,7 +90,14 @@
     "collapsed": false
   },
   {
-    "text": "生活"
+    "text": "生活",
+    "items": [
+      {
+        "text": "历史",
+        "link": "/feishu__2024_6_20_daily_life_history"
+      }
+    ],
+    "collapsed": false
   },
   {
     "text": "运动"
@@ -207,6 +222,22 @@
       {
         "text": "选择比努力重要",
         "link": "/feishu__2024_6_20_other_platform_2024-7-20"
+      },
+      {
+        "text": "中国奥运代表团的精心准备：带空调出征巴黎",
+        "link": "/feishu__2024_6_20_other_platform_2024-7-21"
+      },
+      {
+        "text": "用飞书写个人博客",
+        "link": "/feishu__2024_6_22_other_platform_2024-7-22"
+      },
+      {
+        "text": "董宇辉：从打工者到老板的华丽转身",
+        "link": "/feishu__2024_6_25_other_platform_2024-7-25"
+      },
+      {
+        "text": "俞敏洪：将上市公司核心拱手相让，还自吹自擂，够奇葩",
+        "link": "/feishu__2024_6_26_other_platform_2024-7-26"
       }
     ],
     "collapsed": false
