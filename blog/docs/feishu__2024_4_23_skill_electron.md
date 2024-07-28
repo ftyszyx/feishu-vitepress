@@ -19,7 +19,7 @@ https://www.electronjs.org/docs/latest/tutorial/quick-start
 
 https://github.com/topics/electron
 
-## 新项目start
+# 新项目start
 
 ```yaml
 mkdir my-electron-app && cd my-electron-app
@@ -91,7 +91,7 @@ npm run start
 
 <img src="/assets/CX9Jb1f3Oo3QauxaryPc6icbnYc.png" src-width="775" class="markdown-img m-auto" src-height="292" align="center"/>
 
-## 发布
+# 发布
 
 安装依赖
 
@@ -108,15 +108,50 @@ npm run make
 
 打好的包在out/目录下
 
-# 一些知识点
+# 其它
 
-## cookie的httponly
+## Ipc invoke的错误信息
 
-`httponly`的`cookie`，网页代码中的`js`无法获得相关信息。`xss`的必需语句，`document.cookie`是无法获得`httponly`的`cookie`的。但是，服务器端是可以照常获得的。
+当render进程调用main进程的方法 
 
-https://newsn.net/say/cookie-httponly.html
+```yaml
+ipcMain.handle(webToManMsg.Register, async (_, info) => {
+    return await AppModel.getInstance().user?.Register(info)
+  })
+```
 
-## Content Security Policy (CSP)
+如果此时main进程中的方法rigister发生异常
 
-https://www.electronjs.org/docs/latest/tutorial/security#7-define-a-content-security-policy
+<img src="/assets/NN94b6CUJoJ7zixQgUDc0PpQnNb.png" src-width="750" class="markdown-img m-auto" src-height="135" align="center"/>
 
+此时主进制中捕获到的错误信息是
+
+<img src="/assets/Ehddb8wvSoOSf6xVrCEc9pZ5nRd.png" src-width="624" class="markdown-img m-auto" src-height="53" align="center"/>
+
+**为什么我的错误信息被污染了呢？**
+
+我查了官方的文档，有人有同样的疑问
+
+https://github.com/electron/electron/issues/24427
+
+这个用户，查看了electron的源码，发现这源码是这么写的
+
+<img src="/assets/P8nnbvIRBo9NNKxjIOJcXgP6nDe.png" src-width="664" class="markdown-img m-auto" src-height="148" align="center"/>
+
+如果有错误，底层会将错误内容改掉
+
+他建议官方像如下这么写，就没问题了
+
+<img src="/assets/ThYkbO5m4okTCExUnlDcbhf1nqf.png" src-width="601" class="markdown-img m-auto" src-height="147" align="center"/>
+
+这个问题讨论了半天，官方最后给了一个解决方法，就是自己把error包装一下。文档如下：
+
+https://github.com/ash0x0/electron/commit/a22bc080a5cc4bea31c60bbd2d45706109a819ee
+
+**这个解决方案有点恶心，相当于，你自己把error捕获，把error当一个正确的参数返回。**
+
+**这样你的很多写法都有点受影响 。**
+
+**官方意思是说应该把main进程当服务端，服务端如果有异常，直接发给客户端，是不安全的，这样会暴露隐私。所以官方还是建议，如果要给错误信息给前端，应该要自己包装一下。**
+
+### 

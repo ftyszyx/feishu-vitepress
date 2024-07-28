@@ -75,3 +75,5 @@ db.all('SELECT 42 AS fortytwo', function(err, res) {
 const con = db.connect();
 ```
 
+注意每个连接是有自己单独的上下文的，如果你想每次执行共享上下文，需要直接用db
+
