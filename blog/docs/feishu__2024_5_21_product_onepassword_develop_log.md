@@ -140,7 +140,7 @@ JwtModule.registerAsync({
 
 # 2024-6-27
 
-## 初始化密码功能
+## 初始化密码功能(完成）
 
 软件启动时检查本地有没有生成scert.key,如果没有，弹出对话框,让用户输入初始密码，
 
@@ -150,7 +150,27 @@ JwtModule.registerAsync({
 
 将用户名和B存到数据库中（本地数据库）
 
-# 2024-7-4、2024-7-5、2024-7-14
+# 2024-7-29
+
+不知道改了啥，一启动就崩
+
+<img src="/assets/Ye7AbkgV2oPMmXx4S5Mc0Xvzn1y.gif" src-width="1420" class="markdown-img m-auto" src-height="874" align="center"/>
+
+本来想使用electron捕捉的crash文件来分析，但发现有点麻烦，没有一个开箱即用的工具。
+
+还好现在代码比较简单，直接加日志跟进。发现是因为调用node.js的密码解密时崩溃
+
+<img src="/assets/IRvrbpjHcoo8K8x8NK7cKBYfn2c.png" src-width="1289" class="markdown-img m-auto" src-height="196" align="center"/>
+
+decode时没有判断空
+
+<img src="/assets/XFpEbwTo8o1CxnxDDGLc7RbRntz.png" src-width="556" class="markdown-img m-auto" src-height="265" align="center"/>
+
+## 用户设置功能（完成）
+
+## 定时自动锁定功能(完成)
+
+## 关闭默认缩小到托盘（完成）
 
 # 保险库功能
 
@@ -158,59 +178,55 @@ JwtModule.registerAsync({
 
 <img src="/assets/DLDWbaGn9oy3v3xiwknciUBYnVb.jpeg" src-width="580" class="markdown-img m-auto" src-height="580" align="center"/>
 
-新建一个user表用于存储用户信息，和加密后的key_hash
-
-建一个保险库表：vault
-
-保险库中存对应的密码信息：vault_item
-
-1、home主页：
-
-保险库列表：
-
-展示如右：
-
-<img src="/assets/WBi6bR2SZouWc0xZbNycC57Gnlf.png" src-width="821" class="markdown-img m-auto" src-height="242" align="center"/>
-
-可以，修改，设置和删除
-
-**这个功能算完成**
-
-增删改搞定
-
 <img src="/assets/CTlUbkakPosg2IxOKmpcK5s8nRe.gif" src-width="918" class="markdown-img m-auto" src-height="614" align="center"/>
 
-# 待处理
+# todo
 
-密码功能：
+## 预览
 
-点进入，可以进入账号列表
+<img src="/assets/Pjztb012noJBeexJWl2cLxc8nWo.png" src-width="835" class="markdown-img m-auto" src-height="579" align="center"/>
 
-类似这样：上方可以直接切换密码库：
+## 编辑
 
-<img src="/assets/EfR0b1Gq7oANjPxpnppc1J1VnOf.png" src-width="1185" class="markdown-img m-auto" src-height="512" align="center"/>
+<img src="/assets/JkflbfhBComvopxZTUwcFG0xnf2.png" src-width="540" class="markdown-img m-auto" src-height="685" align="center"/>
 
-新增账号
+## 新增：
 
-<img src="/assets/D4NkbFTCroGftZxfwflcotUFnXe.png" src-width="591" class="markdown-img m-auto" src-height="690" align="center"/>
+<img src="/assets/UwZNbVCRyoCQZwxV17GcXygqnpd.png" src-width="589" class="markdown-img m-auto" src-height="715" align="center"/>
 
-账号
+## 导入：
 
-<img src="/assets/JbN1bTYg2oeboKxcuJ0cfoElnFC.png" src-width="591" class="markdown-img m-auto" src-height="709" align="center"/>
+<img src="/assets/AE97bcGHuolw4MxMZ5Jcxo3xnVd.png" src-width="383" class="markdown-img m-auto" src-height="717" align="center"/>
 
-银行账号
+<img src="/assets/QA4cbE3PmooTPmxCnISc3EEynNh.png" src-width="393" class="markdown-img m-auto" src-height="593" align="center"/>
 
-<img src="/assets/BfcYb0tktoKS68x0aOEcZiWfnVg.png" src-width="586" class="markdown-img m-auto" src-height="711" align="center"/>
+## 导出
 
-信用卡
+<img src="/assets/RQYSbPggmopyNrxDlrkcUU6qnGc.png" src-width="414" class="markdown-img m-auto" src-height="189" align="center"/>
 
-<img src="/assets/Bc3rbk9wdoSx50xV3D1cTVdVnhf.png" src-width="590" class="markdown-img m-auto" src-height="707" align="center"/>
+## 自动输入
 
-文档
+<img src="/assets/JYkUbHRq7oGyS1xj2o3cqk2VnQc.png" src-width="756" class="markdown-img m-auto" src-height="587" align="center"/>
 
-<img src="/assets/IW5ZbB720obVg4x2t6jcMQeNnIb.png" src-width="586" class="markdown-img m-auto" src-height="694" align="center"/>
+<img src="/assets/Wr1kb2TVvo4mJCxwjVHcwv8znvf.png" src-width="577" class="markdown-img m-auto" src-height="129" align="center"/>
 
-<img src="/assets/YBLpbuNvto9BJ2x8WLlcbNQnndb.png" src-width="589" class="markdown-img m-auto" src-height="716" align="center"/>
+<img src="/assets/BAxfbJ87To6Cp1x5V88czUywnSz.png" src-width="644" class="markdown-img m-auto" src-height="272" align="center"/>
 
-<img src="/assets/D73WbWtHKoZUElxYu5ZcV2Vgnvz.png" src-width="578" class="markdown-img m-auto" src-height="490" align="center"/>
+## 快捷键列表，并可修改
+
+<img src="/assets/OKYhboDaRoUb0WxtCOTc1Gf6nQg.png" src-width="491" class="markdown-img m-auto" src-height="602" align="center"/>
+
+<img src="/assets/BBeabn7jvoIh3bxWHKxc7z8fnih.png" src-width="388" class="markdown-img m-auto" src-height="665" align="center"/>
+
+<img src="/assets/HNmgbMDKRoGAkyxcaKPcEHnenzf.png" src-width="477" class="markdown-img m-auto" src-height="212" align="center"/>
+
+## 关于
+
+<img src="/assets/PV7HbHWv0oAMDYxXfeYcP0uinsc.png" src-width="732" class="markdown-img m-auto" src-height="577" align="center"/>
+
+## 多账号支持
+
+账号信息
+
+<img src="/assets/ILinblXTOou4tfxXs4KcoIdunjd.png" src-width="703" class="markdown-img m-auto" src-height="518" align="center"/>
 

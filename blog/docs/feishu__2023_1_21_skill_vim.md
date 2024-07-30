@@ -14,6 +14,8 @@ https://github.com/wsdjeg/Learn-Vim_zh_cn
 
 https://vimdoc.sourceforge.net/htmldoc
 
+https://vim.nauxscript.com/
+
 # Visual studio中的vim
 
 使用插件https://github.com/VsVim
@@ -309,6 +311,8 @@ leader配的是空格
 ## Change sourround
 
 <img src="/assets/boxcnpr7hcgItfgamg8AoI5vGrb.png" src-width="625" class="markdown-img m-auto" src-height="314" align="center"/>
+
+`cst<p>` replaces whole tag, while `cst<p` (without closing bracket) keeps attributes.
 
 ## 多光标
 

@@ -154,4 +154,37 @@ https://github.com/ash0x0/electron/commit/a22bc080a5cc4bea31c60bbd2d45706109a819
 
 **官方意思是说应该把main进程当服务端，服务端如果有异常，直接发给客户端，是不安全的，这样会暴露隐私。所以官方还是建议，如果要给错误信息给前端，应该要自己包装一下。**
 
-### 
+## Crash捕捉
+
+可以设置闪退的存储路径 
+
+```yaml
+app.setPath('crashDumps', 'crashs')
+```
+
+然后启动闪退捕捉
+
+```yaml
+crashReporter.start({
+      productName: 'MyElectron',
+      companyName: 'MyCompany',
+      uploadToServer: false
+    })
+```
+
+解析
+
+https://blog.vincentqiao.com/electron-crash
+
+目前没有开箱即用的工具，有点不方便 
+
+## 调试
+
+https://www.electronjs.org/zh/docs/latest/tutorial/debugging-main-process
+
+在启动electron命令后加 --inspect或者 --inspect-brk（表示第一行就暂停）
+
+然后打开chrome浏览器
+
+- 通过访问 `chrome://inspect` 来连接 Chrome 并在那里选择需要检查的Electron 应用程序。
+
