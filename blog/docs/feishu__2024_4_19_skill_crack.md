@@ -74,7 +74,7 @@ npm install --global reverse-sourcemap
 reverse-sourcemap js/
 ```
 
-# 微信网页调度
+# 微信网页调试
 
 1、在微信打开debugmm.qq.com/?forcex5=true开启调试
 

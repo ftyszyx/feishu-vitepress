@@ -32,7 +32,14 @@
       },
       {
         "text": "软件破解",
-        "link": "/feishu__2024_4_19_skill_crack"
+        "link": "/feishu__2024_4_19_skill_crack",
+        "items": [
+          {
+            "text": "怎么破解android包",
+            "link": "/feishu__2024_6_31_skill_crack_android"
+          }
+        ],
+        "collapsed": false
       },
       {
         "text": "Electron 开发学习",
@@ -248,7 +255,7 @@
         "link": "/feishu__2024_6_26_other_platform_2024-7-26"
       },
       {
-        "text": "2024-7-29",
+        "text": "乐怡，希望你能有不一样的人生",
         "link": "/feishu__2024_6_29_other_platform_2024-7-29"
       }
     ],

@@ -121,6 +121,14 @@ docker-compose up -d
 
 <img src="/assets/A60VbgI33oPabdxWHTRczBXtn0d.png" src-width="793" class="markdown-img m-auto" src-height="350" align="center"/>
 
+# 问题处理
+
+## Docker 启动报错
+
+```yaml
+Registered email required (-m option). Please pay and register
+```
+
 # 总结
 
 完全免费：当然你可以使用server pro版本，但感觉个人版本就可以满足需求了。
