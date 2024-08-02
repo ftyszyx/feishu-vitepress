@@ -166,8 +166,6 @@ decode时没有判断空
 
 <img src="/assets/XFpEbwTo8o1CxnxDDGLc7RbRntz.png" src-width="556" class="markdown-img m-auto" src-height="265" align="center"/>
 
-## 用户设置功能（完成）
-
 ## 定时自动锁定功能(完成)
 
 ## 关闭默认缩小到托盘（完成）
@@ -180,19 +178,21 @@ decode时没有判断空
 
 <img src="/assets/CTlUbkakPosg2IxOKmpcK5s8nRe.gif" src-width="918" class="markdown-img m-auto" src-height="614" align="center"/>
 
+## 新增保密信息（完成）
+
+<img src="/assets/WbyrbyGbvozOSwxzaw6cobZMnfh.gif" src-width="874" class="markdown-img m-auto" src-height="654" align="center"/>
+
+## 保密信息预览（完成）
+
+<img src="/assets/Nh66bJQJuo1F57xAefxcwtbMnAc.gif" src-width="974" class="markdown-img m-auto" src-height="728" align="center"/>
+
+## 保密信息编辑（完成）
+
+<img src="/assets/UMy1bhJ9KojpUaxa5JVciPs4nEd.gif" src-width="878" class="markdown-img m-auto" src-height="652" align="center"/>
+
 # todo
 
-## 预览
-
-<img src="/assets/Pjztb012noJBeexJWl2cLxc8nWo.png" src-width="835" class="markdown-img m-auto" src-height="579" align="center"/>
-
-## 编辑
-
-<img src="/assets/JkflbfhBComvopxZTUwcFG0xnf2.png" src-width="540" class="markdown-img m-auto" src-height="685" align="center"/>
-
-## 新增：
-
-<img src="/assets/UwZNbVCRyoCQZwxV17GcXygqnpd.png" src-width="589" class="markdown-img m-auto" src-height="715" align="center"/>
+## 用户设置功能（完成）
 
 ## 导入：
 
