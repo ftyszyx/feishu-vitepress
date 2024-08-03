@@ -58,7 +58,7 @@ https://github.com/bitwarden
 
 https://github.com/protonpass
 
-## KeePass 
+##  
 
 ## 1password
 

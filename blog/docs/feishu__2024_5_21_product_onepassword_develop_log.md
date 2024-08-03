@@ -194,6 +194,8 @@ decode时没有判断空
 
 ## 用户设置功能（完成）
 
+## 密码生成
+
 ## 导入：
 
 <img src="/assets/AE97bcGHuolw4MxMZ5Jcxo3xnVd.png" src-width="383" class="markdown-img m-auto" src-height="717" align="center"/>
@@ -235,4 +237,24 @@ decode时没有判断空
 数据库更新
 
 软件更新
+
+## 密钥生成流程优化
+
+<img src="/assets/EJLKbxFWbonNFwx3aVbchY9Mnme.png" src-width="528" class="markdown-img m-auto" src-height="278" align="center"/>
+
+<img src="/assets/Bxeab3ihVoQ2v8xeCiZcRuqnnmd.png" src-width="394" class="markdown-img m-auto" src-height="341" align="center"/>
+
+## 填密码时强密码生成器
+
+<img src="/assets/XzGqbG7isolBktxpBeyc6munnWg.png" src-width="608" class="markdown-img m-auto" src-height="249" align="center"/>
+
+<img src="/assets/Byq4bYAYhogaSSxWdEucFnmlnmc.png" src-width="561" class="markdown-img m-auto" src-height="410" align="center"/>
+
+<img src="/assets/IlcLbKgS0oKtzAxiu7lce6zenJg.png" src-width="351" class="markdown-img m-auto" src-height="282" align="center"/>
+
+<img src="/assets/TD4Tbc5pXoaC9LxGPUzczvzInWb.png" src-width="324" class="markdown-img m-auto" src-height="213" align="center"/>
+
+## 修改密码
+
+## 修改密钥
 
