@@ -190,9 +190,11 @@ decode时没有判断空
 
 <img src="/assets/UMy1bhJ9KojpUaxa5JVciPs4nEd.gif" src-width="878" class="markdown-img m-auto" src-height="652" align="center"/>
 
-# todo
+# 用户设置功能（完成）
 
-## 用户设置功能（完成）
+<img src="/assets/VC5cb3xESoWfwIxRQiFcpuM4njf.gif" src-width="872" class="markdown-img m-auto" src-height="612" align="center"/>
+
+# todo
 
 ## 密码生成
 
