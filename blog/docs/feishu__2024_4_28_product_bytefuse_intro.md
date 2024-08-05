@@ -44,6 +44,12 @@ https://github.com/ctripcorp/tripdocs
 
 https://github.com/tldraw/tldraw
 
+完全开源：
+
+https://github.com/AppFlowy-IO/AppFlowy
+
+开源的markdown编辑器[marktext](https://github.com/marktext/marktext)
+
 写文章，需要像飞书一样写，这个功能目前没找到开源方案
 
 网上有介绍notion在线文档的实现文章[notion](https://zhuanlan.zhihu.com/p/359122473)
@@ -59,6 +65,4 @@ https://github.com/tldraw/tldraw
 画图开源项目：[tldraw](https://github.com/tldraw/tldraw)和[excalidraw](https://github.com/excalidraw/excalidraw)
 
 还有一个完全免费，代码部分开源的画流程图的项目：[drawio](https://github.com/jgraph/drawio)
-
-开源的markdown编辑器[marktext](https://github.com/marktext/marktext)
 

@@ -194,9 +194,12 @@ decode时没有判断空
 
 <img src="/assets/VC5cb3xESoWfwIxRQiFcpuM4njf.gif" src-width="872" class="markdown-img m-auto" src-height="612" align="center"/>
 
-# todo
+# 
+# 密码生成（完成）
 
-## 密码生成
+<img src="/assets/U7Q0baB1Hodz1Cx9k4gc55isnId.gif" src-width="1028" class="markdown-img m-auto" src-height="656" align="center"/>
+
+# todo
 
 ## 导入：
 
@@ -215,14 +218,6 @@ decode时没有判断空
 <img src="/assets/Wr1kb2TVvo4mJCxwjVHcwv8znvf.png" src-width="577" class="markdown-img m-auto" src-height="129" align="center"/>
 
 <img src="/assets/BAxfbJ87To6Cp1x5V88czUywnSz.png" src-width="644" class="markdown-img m-auto" src-height="272" align="center"/>
-
-## 快捷键列表，并可修改
-
-<img src="/assets/OKYhboDaRoUb0WxtCOTc1Gf6nQg.png" src-width="491" class="markdown-img m-auto" src-height="602" align="center"/>
-
-<img src="/assets/BBeabn7jvoIh3bxWHKxc7z8fnih.png" src-width="388" class="markdown-img m-auto" src-height="665" align="center"/>
-
-<img src="/assets/HNmgbMDKRoGAkyxcaKPcEHnenzf.png" src-width="477" class="markdown-img m-auto" src-height="212" align="center"/>
 
 ## 关于
 
@@ -245,16 +240,6 @@ decode时没有判断空
 <img src="/assets/EJLKbxFWbonNFwx3aVbchY9Mnme.png" src-width="528" class="markdown-img m-auto" src-height="278" align="center"/>
 
 <img src="/assets/Bxeab3ihVoQ2v8xeCiZcRuqnnmd.png" src-width="394" class="markdown-img m-auto" src-height="341" align="center"/>
-
-## 填密码时强密码生成器
-
-<img src="/assets/XzGqbG7isolBktxpBeyc6munnWg.png" src-width="608" class="markdown-img m-auto" src-height="249" align="center"/>
-
-<img src="/assets/Byq4bYAYhogaSSxWdEucFnmlnmc.png" src-width="561" class="markdown-img m-auto" src-height="410" align="center"/>
-
-<img src="/assets/IlcLbKgS0oKtzAxiu7lce6zenJg.png" src-width="351" class="markdown-img m-auto" src-height="282" align="center"/>
-
-<img src="/assets/TD4Tbc5pXoaC9LxGPUzczvzInWb.png" src-width="324" class="markdown-img m-auto" src-height="213" align="center"/>
 
 ## 修改密码
 
