@@ -201,6 +201,10 @@ decode时没有判断空
 
 # todo
 
+## tray托盘
+
+<img src="/assets/Wkzubf4d4oNgVSxptqQcISzunqB.png" src-width="250" class="markdown-img m-auto" src-height="168" align="center"/>
+
 ## 导入：
 
 <img src="/assets/AE97bcGHuolw4MxMZ5Jcxo3xnVd.png" src-width="383" class="markdown-img m-auto" src-height="717" align="center"/>
@@ -214,6 +218,8 @@ decode时没有判断空
 ## 自动输入
 
 <img src="/assets/JYkUbHRq7oGyS1xj2o3cqk2VnQc.png" src-width="756" class="markdown-img m-auto" src-height="587" align="center"/>
+
+<img src="/assets/LuVbbFIrAotm1xxDNezcVY4Dnyc.png" src-width="555" class="markdown-img m-auto" src-height="218" align="center"/>
 
 <img src="/assets/Wr1kb2TVvo4mJCxwjVHcwv8znvf.png" src-width="577" class="markdown-img m-auto" src-height="129" align="center"/>
 
@@ -244,4 +250,8 @@ decode时没有判断空
 ## 修改密码
 
 ## 修改密钥
+
+## 其它设备上如何登陆
+
+<img src="/assets/EH5IbCktvoxMgHxiEV2cbtown3e.png" src-width="421" class="markdown-img m-auto" src-height="543" align="center"/>
 
