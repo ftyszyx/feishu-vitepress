@@ -108,6 +108,54 @@ npm run make
 
 打好的包在out/目录下
 
+# Rebuild native
+
+参考：
+
+https://www.electronjs.org/docs/latest/tutorial/using-native-node-modules
+
+因为electron对node.js做了修改，如果你遇到下面这种错误，就需要重新编译
+
+```js
+Error: The module '/path/to/native/module.node'
+was compiled against a different Node.js version using
+NODE_MODULE_VERSION $XYZ. This version of Node.js requires
+NODE_MODULE_VERSION $ABC. Please try re-compiling or re-installing
+the module (for instance, using `npm rebuild` or `npm install`).
+```
+
+## 安装系统编译环境
+
+<img src="/assets/E2KBbdUcQo17tUxTOImcSgHvnYg.png" src-width="886" class="markdown-img m-auto" src-height="345" align="center"/>
+
+## 安装node-gyp
+
+```js
+npm install -g node-gyp
+```
+
+## 安装electron/rebuild
+
+https://github.com/electron/rebuild?tab=readme-ov-file
+
+```js
+npm install --save-dev @electron/rebuild
+```
+
+重新编译
+
+可以在package.json的scripts中加一条
+
+```js
+"rebuild": "electron-rebuild -f -o robotjs"
+```
+
+编译
+
+```js
+npm run rebuild
+```
+
 # 其它
 
 ## Ipc invoke的错误信息

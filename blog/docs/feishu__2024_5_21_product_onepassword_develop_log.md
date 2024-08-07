@@ -217,6 +217,28 @@ decode时没有判断空
 
 ## 自动输入
 
+需要使用robotjs
+
+启动时报错，提示版本不对：
+
+<img src="/assets/JpVFbjIhVoHtfNxIfPWckQIingg.png" src-width="516" class="markdown-img m-auto" src-height="292" align="center"/>
+
+需要重新编译，有说明文档
+
+https://github.com/octalmage/robotjs/wiki/Electron
+
+意思是说两边用的node.js编译版本不一样，electron用的是119
+
+robotjs用的是115
+
+这里可以看node.js对应的版本号：
+
+https://github.com/mapbox/node-pre-gyp/blob/master/lib/util/abi_crosswalk.json
+
+可以看到115对应node.js  20.15.0
+
+<img src="/assets/WNiebcGwQoXrzrxV3kvcMWoAnBp.png" src-width="502" class="markdown-img m-auto" src-height="119" align="center"/>
+
 <img src="/assets/JYkUbHRq7oGyS1xj2o3cqk2VnQc.png" src-width="756" class="markdown-img m-auto" src-height="587" align="center"/>
 
 <img src="/assets/LuVbbFIrAotm1xxDNezcVY4Dnyc.png" src-width="555" class="markdown-img m-auto" src-height="218" align="center"/>
