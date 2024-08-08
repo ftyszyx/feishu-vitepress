@@ -199,6 +199,22 @@ decode时没有判断空
 
 <img src="/assets/U7Q0baB1Hodz1Cx9k4gc55isnId.gif" src-width="1028" class="markdown-img m-auto" src-height="656" align="center"/>
 
+# 异常错误
+
+Module "path" has been externalized for browser compatibility. Cannot access "path.join" in client code
+
+今天改代码，不知道改了什么地方，搞出这个报错，render启动不起来了。
+
+看意思好像是render代码引用 了node.js的一些库。
+
+但我找了半天也没找到具体是哪个代码引入的。从堆栈看不出来
+
+<img src="/assets/TazTbeMzIo0pWexXXxncSQkgnYd.png" src-width="1291" class="markdown-img m-auto" src-height="234" align="center"/>
+
+通过一句句代码的排查，终于找到了，自动导入太坑人了
+
+<img src="/assets/Wty7bfCFMojk7KxR1Abc7GaWned.png" src-width="740" class="markdown-img m-auto" src-height="428" align="center"/>
+
 # todo
 
 ## tray托盘
