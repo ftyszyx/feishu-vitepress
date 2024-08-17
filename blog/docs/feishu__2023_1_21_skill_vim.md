@@ -16,6 +16,12 @@ https://vimdoc.sourceforge.net/htmldoc
 
 https://vim.nauxscript.com/
 
+# Ideavim
+
+https://github.com/JetBrains/ideavim
+
+ctrl+shift +/ 注释
+
 # Visual studio中的vim
 
 使用插件https://github.com/VsVim

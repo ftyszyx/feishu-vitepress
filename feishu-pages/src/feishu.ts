@@ -122,7 +122,7 @@ export class FeishuDocHelp {
         })
         .catch((err) => {
           const { message } = err;
-          console.error(" -> catch ERROR: Failed to download image:", fileToken, message, err);
+          console.error(" -> catch ERROR: Failed to download image:", fileToken, message);
           // If status is 403
           // https://open.feishu.cn/document/server-docs/docs/drive-v1/faq#6e38a6de
           if (message.includes("403")) {
@@ -238,17 +238,22 @@ export class FeishuDocHelp {
       if (match_res.length >= 2) cover_token = match_res[1].trim();
     }
     for (const filetoken in render.fileTokens) {
-      const file_res = await this.downloadFile(filetoken, pic_path);
-      let extension = mime.extension(file_res.headers["content-type"]);
-      let pic_full_path = path.join(pic_path, `${filetoken}.${extension}`);
-      const base_url = "/";
-      let assetURL = base_url + path.relative(path.dirname(filepath), pic_full_path);
-      assetURL = assetURL.replace("\\", "/");
-      if (filetoken == cover_token) {
-        meta["cover"] = assetURL;
-        continue;
+      if (filetoken) {
+        const file_res = await this.downloadFile(filetoken, pic_path);
+        if (file_res == null) {
+          console.error("download file error", filetoken, filepath);
+        }
+        let extension = mime.extension(file_res.headers["content-type"]);
+        let pic_full_path = path.join(pic_path, `${filetoken}.${extension}`);
+        const base_url = "/";
+        let assetURL = base_url + path.relative(path.dirname(filepath), pic_full_path);
+        assetURL = assetURL.replace("\\", "/");
+        if (filetoken == cover_token) {
+          meta["cover"] = assetURL;
+          continue;
+        }
+        content = replaceLinks(content, filetoken, assetURL);
       }
-      content = replaceLinks(content, filetoken, assetURL);
     }
     meta["create_time"] = parseInt(fileDoc.node_create_time);
     meta["title"] = meta.title || fileDoc.title;

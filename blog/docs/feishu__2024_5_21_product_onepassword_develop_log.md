@@ -170,7 +170,7 @@ decode时没有判断空
 
 ## 关闭默认缩小到托盘（完成）
 
-# 保险库功能
+# 保险库功能（完成）
 
 图标：
 
@@ -199,7 +199,11 @@ decode时没有判断空
 
 <img src="/assets/U7Q0baB1Hodz1Cx9k4gc55isnId.gif" src-width="1028" class="markdown-img m-auto" src-height="656" align="center"/>
 
-# 异常错误
+# tray托盘(完成）
+
+<img src="/assets/ByzobEyFao4Av1xZP6zcHOZDnch.png" src-width="244" class="markdown-img m-auto" src-height="140" align="center"/>
+
+#  been externalized for browser compatibility异常错误（解决）
 
 Module "path" has been externalized for browser compatibility. Cannot access "path.join" in client code
 
@@ -211,33 +215,19 @@ Module "path" has been externalized for browser compatibility. Cannot access "pa
 
 <img src="/assets/TazTbeMzIo0pWexXXxncSQkgnYd.png" src-width="1291" class="markdown-img m-auto" src-height="234" align="center"/>
 
+## 找到问题
+
 通过一句句代码的排查，终于找到了，自动导入太坑人了
 
 <img src="/assets/Wty7bfCFMojk7KxR1Abc7GaWned.png" src-width="740" class="markdown-img m-auto" src-height="428" align="center"/>
 
-# todo
-
-## tray托盘
-
-<img src="/assets/Wkzubf4d4oNgVSxptqQcISzunqB.png" src-width="250" class="markdown-img m-auto" src-height="168" align="center"/>
-
-## 导入：
-
-<img src="/assets/AE97bcGHuolw4MxMZ5Jcxo3xnVd.png" src-width="383" class="markdown-img m-auto" src-height="717" align="center"/>
-
-<img src="/assets/QA4cbE3PmooTPmxCnISc3EEynNh.png" src-width="393" class="markdown-img m-auto" src-height="593" align="center"/>
-
-## 导出
-
-<img src="/assets/RQYSbPggmopyNrxDlrkcUU6qnGc.png" src-width="414" class="markdown-img m-auto" src-height="189" align="center"/>
-
-## 自动输入
+# robotjs库的导入问题（解决）
 
 需要使用robotjs
 
 启动时报错，提示版本不对：
 
-<img src="/assets/JpVFbjIhVoHtfNxIfPWckQIingg.png" src-width="516" class="markdown-img m-auto" src-height="292" align="center"/>
+<img src="/assets/PP2gbAIHjok939xMfbbcuDwFnMf.png" src-width="516" class="markdown-img m-auto" src-height="292" align="center"/>
 
 需要重新编译，有说明文档
 
@@ -253,15 +243,166 @@ https://github.com/mapbox/node-pre-gyp/blob/master/lib/util/abi_crosswalk.json
 
 可以看到115对应node.js  20.15.0
 
-<img src="/assets/WNiebcGwQoXrzrxV3kvcMWoAnBp.png" src-width="502" class="markdown-img m-auto" src-height="119" align="center"/>
+<img src="/assets/A97PbXmfBoneBPxCgFwcphmtn5g.png" src-width="502" class="markdown-img m-auto" src-height="119" align="center"/>
 
-<img src="/assets/JYkUbHRq7oGyS1xj2o3cqk2VnQc.png" src-width="756" class="markdown-img m-auto" src-height="587" align="center"/>
+## 解决方法：
 
-<img src="/assets/LuVbbFIrAotm1xxDNezcVY4Dnyc.png" src-width="555" class="markdown-img m-auto" src-height="218" align="center"/>
+安装elctron rebuild
 
-<img src="/assets/Wr1kb2TVvo4mJCxwjVHcwv8znvf.png" src-width="577" class="markdown-img m-auto" src-height="129" align="center"/>
+```sql
+npm install @electron/rebuild -S
+```
 
-<img src="/assets/BAxfbJ87To6Cp1x5V88czUywnSz.png" src-width="644" class="markdown-img m-auto" src-height="272" align="center"/>
+在package.json中加入编译命令：这里要注意只能编译robotjs。因为默认会把node_module下所有的c++库全重新编译一遍，会出问题。（我这里用到了duckdb，是官方编译好的，自己编译会报错）
+
+```sql
+"rebuild": "electron-rebuild -f -o robotjs"
+```
+
+编译完后就Ok了。
+
+## 自动输入（完成）
+
+自动输入有点慢，需要改进
+
+<img src="/assets/RERwbwRs6o6fz4xbpiVcPjPUn9f.gif" src-width="864" class="markdown-img m-auto" src-height="436" align="center"/>
+
+# 数据备份时duckdb无法关掉 （换sqlite了）
+
+数据备份时需要将duckdb生成的数据库复制出来，我先调用duckdb的close。
+
+```js
+public async CloseDb() {
+    if (this.db == null) return
+    return new Promise<void>((resolve, reject) => {
+      this.db.close!((error) => {
+        if (error) {
+          Log.error('close db err', error)
+          reject(error)
+          return
+        }
+        this.db = null
+        Log.info('close db ok')
+        resolve()
+      })
+    })
+  }
+```
+
+Opendb的代码
+
+```js
+public async OpenDb() {
+    if (this.db) return
+    return new Promise<void>((resolve, reject) => {
+      const dbpath = this.getDbPath()
+      this.db = new duckdb.Database(
+        dbpath,
+        {
+          access_mode: 'READ_WRITE',
+          max_memory: '512MB'
+        },
+        (err) => {
+          if (err) {
+            Log.error('open db err', err)
+            this.db = null
+            reject(err)
+            return
+          }
+          Log.info('open db ok')
+          resolve()
+        }
+      )
+    })
+  }
+```
+
+但是发现还是会提示文件被占用
+
+```js
+Error: EBUSY: resource busy or locked, copyfile
+```
+
+在官方没找到解决方案，感觉duckdb有bug,应该是有东西没释放
+
+## 解决方案
+
+目前已经给官方提了bug
+
+https://github.com/duckdb/duckdb-node/issues/111
+
+目前还没人处理，
+
+同时也考虑到duckdb的库太大了：25M,还是先换到sqlite这个成熟的本地数据库吧.(而且有人反馈duckdb有内存泄露，请求越多，内存占用一直在升高。）
+
+<img src="/assets/WyYDbaGReofporxgHPyc4ePlnBe.png" src-width="708" class="markdown-img m-auto" src-height="458" align="center"/>
+
+sqlite只有1.8M
+
+<img src="/assets/Twglb001doGctRx1QDjcNhDpnGe.png" src-width="686" class="markdown-img m-auto" src-height="139" align="center"/>
+
+#  数据备份和恢复（完成）
+
+方案就是：
+
+备份：将duckdb数据和key及set.json全打包压缩成zip
+
+还原：将数据解压，放到程序目录下
+
+<img src="" src-width="782" class="markdown-img m-auto" src-height="428" align="center"/>
+
+# robot.js自动输入过慢的问题(解决）
+
+查了一下github上的issue,发现这个问题很多个问https://github.com/octalmage/robotjs/issues/530
+
+有人已经知道怎么修复了，但是官方的npm包还没有修复 。
+
+没办法 ，我就把robot.js直接放在包里了， 
+
+<img src="/assets/P88mbljDGo1b0IxAHy8csOYinof.png" src-width="221" class="markdown-img m-auto" src-height="198" align="center"/>
+
+安装本地库
+
+```sql
+npm install ./third_lib/robotjs
+```
+
+编译
+
+```sql
+npm run build
+```
+
+使用了最新的robotjs后，发现问题更严重了，输入是变快了，但是两个输入会互相穿插，比如下面代码
+
+```sql
+robot.typeString("sss")
+robot.typeString("dddd")
+```
+
+当时我就好奇，为什么robot这个库提供的接口没有回调函数。
+
+原来是他代码中加了时间延时。但如果把这个延时去掉，就有问题，除非要改接口。
+
+看了一下这个开源项目，从2020年后就没有人维护了。开源免费的项目，维护人的动力的确是不足，不是很靠谱。
+
+# todo
+
+## 导入：
+
+云存储：https://x-file-storage.xuyanwu.cn/#/
+
+java写的，不太好，需要一个客户端node.js版本
+
+不找了，先直接使用百度云吧
+
+<img src="/assets/AE97bcGHuolw4MxMZ5Jcxo3xnVd.png" src-width="383" class="markdown-img m-auto" src-height="717" align="center"/>
+
+<img src="/assets/QA4cbE3PmooTPmxCnISc3EEynNh.png" src-width="393" class="markdown-img m-auto" src-height="593" align="center"/>
+
+## 导出
+
+<img src="/assets/RQYSbPggmopyNrxDlrkcUU6qnGc.png" src-width="414" class="markdown-img m-auto" src-height="189" align="center"/>
 
 ## 关于
 
@@ -289,7 +430,19 @@ https://github.com/mapbox/node-pre-gyp/blob/master/lib/util/abi_crosswalk.json
 
 ## 修改密钥
 
+## 同步阿里网盘
+
+## 同步百度网盘
+
 ## 其它设备上如何登陆
 
 <img src="/assets/EH5IbCktvoxMgHxiEV2cbtown3e.png" src-width="421" class="markdown-img m-auto" src-height="543" align="center"/>
+
+## github自动打包
+
+参考：
+
+https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web
+
+https://github.com/lyswhut/lx-music-desktop
 

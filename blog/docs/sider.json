@@ -46,10 +46,6 @@
         "link": "/feishu__2024_4_23_skill_electron"
       },
       {
-        "text": "Rustdesk使用",
-        "link": "/feishu__2024_4_28_skill_rustdesk"
-      },
-      {
         "text": "网站的seo加强",
         "link": "/feishu__2024_4_30_skill_website_seo"
       },
@@ -59,6 +55,14 @@
           {
             "text": "vscode源码学习",
             "link": "/feishu__2024_4_31_skill_learn_open_souce_vscode"
+          },
+          {
+            "text": "appflowy体验",
+            "link": "/feishu__2024_7_15_skill_learn_open_souce_appflowy"
+          },
+          {
+            "text": "Rustdesk使用",
+            "link": "/feishu__2024_4_28_skill_learn_open_souce_rustdesk"
           }
         ],
         "collapsed": false
@@ -72,7 +76,7 @@
         "link": "/feishu__2024_5_5_skill_vpn"
       },
       {
-        "text": "duckdb学习",
+        "text": "duckdb学习（目前1.0版本还不太稳定，有内存泄露风险，不推荐用于实际产品）",
         "link": "/feishu__2024_5_12_skill_duckdb"
       },
       {
@@ -89,6 +93,10 @@
           {
             "text": "unity 内存定制内存分配",
             "link": "/feishu__2024_6_24_skill_unity_unity_customize_mem_allocator"
+          },
+          {
+            "text": "il2cpp学习",
+            "link": "/feishu__2024_7_14_skill_unity_il2cpp"
           }
         ],
         "collapsed": false
@@ -100,6 +108,10 @@
       {
         "text": "node.js学习",
         "link": "/feishu__2024_6_29_skill_node"
+      },
+      {
+        "text": "flutter学习",
+        "link": "/feishu__2024_7_15_skill_flutter"
       }
     ],
     "collapsed": false
@@ -110,6 +122,10 @@
       {
         "text": "历史",
         "link": "/feishu__2024_6_20_daily_life_history"
+      },
+      {
+        "text": "有用的东西收集",
+        "link": "/feishu__2024_7_14_daily_life_useful"
       }
     ],
     "collapsed": false
@@ -177,6 +193,14 @@
           {
             "text": "密码管理器",
             "link": "/feishu__2024_5_21_product_onepassword_develop_log"
+          },
+          {
+            "text": "给自己做一个1password",
+            "link": "/feishu__2024_7_15_product_onepassword_begin"
+          },
+          {
+            "text": "密码管理器的设计方案",
+            "link": "/feishu__2024_7_16_product_onepassword_encode"
           }
         ],
         "collapsed": false
@@ -240,7 +264,7 @@
       },
       {
         "text": "中国奥运代表团的精心准备：带空调出征巴黎",
-        "link": "/feishu__2024_6_20_other_platform_2024-7-21"
+        "link": "/feishu__2024_6_21_other_platform_2024-7-21"
       },
       {
         "text": "用飞书写个人博客",
