@@ -446,3 +446,7 @@ https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web
 
 https://github.com/lyswhut/lx-music-desktop
 
+https://github.com/gaozhangmin/aliyunpan/releases
+
+https://molunerfinn.com/PicGo/
+
