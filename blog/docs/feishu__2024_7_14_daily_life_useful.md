@@ -156,3 +156,23 @@ https://github.com/JiepengTan
 
 https://github.com/krahets/hello-algo
 
+# 下载
+
+## aria2
+
+https://github.com/aria2/aria2
+
+## aria-ng-gui
+
+aria2gui封装
+
+https://github.com/Xmader/aria-ng-gui
+
+# 投资
+
+## openbb
+
+The first financial Platform that is free and fully open source.
+
+https://github.com/OpenBB-finance/OpenBB
+
