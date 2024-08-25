@@ -156,6 +156,38 @@ npm install --save-dev @electron/rebuild
 npm run rebuild
 ```
 
+# Build
+
+打包推荐使用Electron Forge
+
+github:https://github.com/electron/forge
+
+安装库和创建模板
+
+```sql
+npm install -g @electron-forge/cli
+npx electron-forge init --template=vite-typescript
+npm install electron -D
+```
+
+运行
+
+```sql
+npm run start
+```
+
+打包
+
+```sql
+npm run make
+```
+
+发布
+
+```sql
+npm install --save-dev @electron-forge/publisher-github
+```
+
 # 其它
 
 ## Ipc invoke的错误信息

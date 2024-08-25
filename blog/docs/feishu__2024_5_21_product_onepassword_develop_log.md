@@ -386,39 +386,34 @@ robot.typeString("dddd")
 
 看了一下这个开源项目，从2020年后就没有人维护了。开源免费的项目，维护人的动力的确是不足，不是很靠谱。
 
+# 
+# 导入（完成）：
+
+<img src="/assets/Msffb949sooeUQxqEuIcH6jnnRD.gif" src-width="876" class="markdown-img m-auto" src-height="656" align="center"/>
+
+# 导出（完成）
+
+<img src="/assets/OAbmbGRj6op7qPxg3M3cEwYjnTh.gif" src-width="874" class="markdown-img m-auto" src-height="644" align="center"/>
+
+# 关于（完成）
+
+<img src="/assets/NlBob8oQGoEvGIxLd0tcSUgGn1e.png" src-width="768" class="markdown-img m-auto" src-height="261" align="center"/>
+
+# 多账号支持
+
+<img src="/assets/FE1tb0XFGoJpFdx4zZqcaYoYnSb.gif" src-width="860" class="markdown-img m-auto" src-height="642" align="center"/>
+
+# 阿里网盘备份和还原
+
+<img src="/assets/FQekbR6OpoXoHnxE24pc2pEAnBc.gif" src-width="858" class="markdown-img m-auto" src-height="636" align="center"/>
+
 # todo
 
-## 导入：
+## 打包
 
-云存储：https://x-file-storage.xuyanwu.cn/#/
+https://www.electronforge.io/advanced/auto-update
 
-java写的，不太好，需要一个客户端node.js版本
-
-不找了，先直接使用百度云吧
-
-<img src="/assets/AE97bcGHuolw4MxMZ5Jcxo3xnVd.png" src-width="383" class="markdown-img m-auto" src-height="717" align="center"/>
-
-<img src="/assets/QA4cbE3PmooTPmxCnISc3EEynNh.png" src-width="393" class="markdown-img m-auto" src-height="593" align="center"/>
-
-## 导出
-
-<img src="/assets/RQYSbPggmopyNrxDlrkcUU6qnGc.png" src-width="414" class="markdown-img m-auto" src-height="189" align="center"/>
-
-## 关于
-
-<img src="/assets/PV7HbHWv0oAMDYxXfeYcP0uinsc.png" src-width="732" class="markdown-img m-auto" src-height="577" align="center"/>
-
-## 多账号支持
-
-账号信息
-
-<img src="/assets/ILinblXTOou4tfxXs4KcoIdunjd.png" src-width="703" class="markdown-img m-auto" src-height="518" align="center"/>
-
-## 软件更新
-
-数据库更新
-
-软件更新
+## 软件更新  
 
 ## 密钥生成流程优化
 
@@ -430,14 +425,7 @@ java写的，不太好，需要一个客户端node.js版本
 
 ## 修改密钥
 
-## 同步阿里网盘
-
-## 同步百度网盘
-
-## 其它设备上如何登陆
-
-<img src="/assets/EH5IbCktvoxMgHxiEV2cbtown3e.png" src-width="421" class="markdown-img m-auto" src-height="543" align="center"/>
-
+## 
 ## github自动打包
 
 参考：
