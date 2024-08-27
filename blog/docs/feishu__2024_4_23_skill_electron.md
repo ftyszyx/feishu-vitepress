@@ -166,7 +166,7 @@ github:https://github.com/electron/forge
 
 ```sql
 npm install -g @electron-forge/cli
-npx electron-forge init --template=vite-typescript
+npx electron-forge init forge --template=vite-typescript
 npm install electron -D
 ```
 
@@ -187,6 +187,26 @@ npm run make
 ```sql
 npm install --save-dev @electron-forge/publisher-github
 ```
+
+# Forge build注意事项 
+
+## 最后打开日志，不然不清楚错误在哪
+
+DEBUG=electron-packager
+
+```sql
+"make": "npm run typecheck&& cross-env DEBUG=electron-packager electron-forge make",
+```
+
+## 错误1：EPERM: operation not permitted, symlink
+
+<img src="/assets/BlC5bMzeIoRhhZxyglqc1E3dn5e.png" src-width="1412" class="markdown-img m-auto" src-height="54" align="center"/>
+
+解决：
+
+win10需要开启开发者模式
+
+<img src="/assets/REEUbHY53oGbsfxCP6tcSPeYnzg.png" src-width="961" class="markdown-img m-auto" src-height="566" align="center"/>
 
 # 其它
 

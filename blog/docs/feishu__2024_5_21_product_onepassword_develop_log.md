@@ -415,6 +415,8 @@ https://www.electronforge.io/advanced/auto-update
 
 ## 软件更新  
 
+# 密码项目优化
+
 ## 密钥生成流程优化
 
 <img src="/assets/EJLKbxFWbonNFwx3aVbchY9Mnme.png" src-width="528" class="markdown-img m-auto" src-height="278" align="center"/>

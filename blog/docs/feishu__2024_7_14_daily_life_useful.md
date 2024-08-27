@@ -176,3 +176,9 @@ The first financial Platform that is free and fully open source.
 
 https://github.com/OpenBB-finance/OpenBB
 
+# Vpn
+
+## amnezia-client
+
+https://github.com/amnezia-vpn/amnezia-client
+
