@@ -189,6 +189,8 @@ napi_value init(napi_env env, napi_value exports)
 NAPI_MODULE(NODE_GYP_MODULE_NAME, init)
 ```
 
+# node-pre-gyg使用
+
 # 细节
 
 ## async函数堆栈打印不完整
