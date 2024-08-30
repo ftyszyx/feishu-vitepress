@@ -386,7 +386,12 @@ robot.typeString("dddd")
 
 看了一下这个开源项目，从2020年后就没有人维护了。开源免费的项目，维护人的动力的确是不足，不是很靠谱。
 
-# 
+# robot.js修改一个独立库（已解决）
+
+费了九牛二虎之力。node.js的native module终于入了点门
+
+https://github.com/ftyszyx/robotjs
+
 # 导入（完成）：
 
 <img src="/assets/Msffb949sooeUQxqEuIcH6jnnRD.gif" src-width="876" class="markdown-img m-auto" src-height="656" align="center"/>

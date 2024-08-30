@@ -50,6 +50,10 @@ https://nodejs.org/api/n-api.html
 
 https://github.com/nodejs/node-addon-api/blob/main/doc/setup.md
 
+示例：
+
+https://github.com/nodejs/node-addon-example
+
 为了兼容不同的node.js版本，最好只包含一个头文件
 
 ```sql
