@@ -66,30 +66,46 @@ export const shared = defineConfig({
           });
       },
     }).load();
-    const assert_path = path.join(siteconfig.root, siteconfig.assetsDir);
-    const out_path = path.join(siteconfig.outDir, siteconfig.assetsDir);
-    fs.readdirSync(assert_path, { withFileTypes: true }).forEach(
-      function (dirent) {
-        var filePath = path.join(assert_path, dirent.name);
-        if (dirent.isFile && dirent.name.endsWith(".zip")) {
-          var destpath = path.join(out_path, dirent.name);
-          fs.copyFileSync(filePath, destpath);
-          console.log(`copy zip file:${filePath}->${destpath}`);
-        }
-      },
-    );
+    // const assert_path = path.join(siteconfig.root, siteconfig.assetsDir);
+    // const out_path = path.join(siteconfig.outDir, siteconfig.assetsDir);
+    // fs.readdirSync(assert_path, { withFileTypes: true }).forEach(
+    //   function (dirent) {
+    //     var filePath = path.join(assert_path, dirent.name);
+    //     if (dirent.isFile && dirent.name.endsWith(".zip")) {
+    //       var destpath = path.join(out_path, dirent.name);
+    //       fs.copyFileSync(filePath, destpath);
+    //       console.log(`copy zip file:${filePath}->${destpath}`);
+    //     }
+    //   },
+    // );
 
-    coverurls.forEach((item) => {
-      const picpath = path.join(siteconfig.root, item);
-      const picfile_name = path.basename(picpath);
-      if (picfile_name === "normal_cover.png") return;
+    // coverurls.forEach((item) => {
+    //   // console.log("item", item, siteconfig.root);
+    //   const picpath = path.join(siteconfig.root, item);
+    //   const picfile_name = path.basename(picpath);
+    //   if (picfile_name === "normal_cover.png") return;
+    //   const destpath = path.join(
+    //     siteconfig.outDir,
+    //     siteconfig.assetsDir,
+    //     picfile_name,
+    //   );
+    //   // console.log("copy pic", picpath, destpath);
+    //   fs.copyFileSync(picpath, destpath);
+    // });
+    //copy all asset file to dist
+    const assetsrcpath = path.join(siteconfig.root, siteconfig.assetsDir);
+    const items = fs.readdirSync(assetsrcpath, { withFileTypes: true });
+    items.forEach((item) => {
+      const srcpath = path.join(assetsrcpath, item.name);
       const destpath = path.join(
         siteconfig.outDir,
         siteconfig.assetsDir,
-        picfile_name,
+        item.name,
       );
-      console.log("copy pic", picpath, destpath);
-      fs.copyFileSync(picpath, destpath);
+      if (item.isFile) {
+        // console.log("copy file", srcpath, destpath);
+        fs.copyFileSync(srcpath, destpath);
+      }
     });
   },
   markdown: {
