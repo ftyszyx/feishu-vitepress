@@ -1,14 +1,10 @@
 ---
+title: 密码管理器github说明
 create_time: 1725104206
-title: Github
 categories:
   - product
 ---
 
-
-```sql
-
-```
 
 一个密码管理器
 
