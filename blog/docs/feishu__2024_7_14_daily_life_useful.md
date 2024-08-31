@@ -12,9 +12,17 @@ https://github.com/logto-io/logto
 
 # 笔记软件 
 
+## AppFlowy
+
 https://github.com/AppFlowy-IO/AppFlowy
 
+## notion
+
 https://www.notion.so/
+
+## AFFiNE
+
+https://github.com/toeverything/<u>AFFiNE</u>
 
 # Unity
 
@@ -73,6 +81,12 @@ https://blackforestlabs.ai/
 文字生成视频的开源模型
 
 https://huggingface.co/THUDM/CogVideoX-2b
+
+## Cogvideo
+
+Text to video
+
+https://github.com/THUDM/CogVideo
 
 ## deplivecam
 
@@ -181,4 +195,36 @@ https://github.com/OpenBB-finance/OpenBB
 ## amnezia-client
 
 https://github.com/amnezia-vpn/amnezia-client
+
+# Docker
+
+## docker-oxsx
+
+在docker上运行os系统
+
+https://github.com/sickcodes/Docker-OSX
+
+# C++库
+
+## Folly
+
+An open-source C++ library developed and used at Facebook.
+
+https://github.com/facebook/folly
+
+# 数据库
+
+## Nocodb
+
+数据库可视化工具
+
+https://github.com/nocodb/nocodb
+
+# 服务器管理
+
+## dokku
+
+https://github.com/dokku/dokku
+
+## Heroku
 
