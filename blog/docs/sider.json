@@ -201,6 +201,10 @@
           {
             "text": "密码管理器的设计方案",
             "link": "/feishu__2024_7_16_product_onepassword_encode"
+          },
+          {
+            "text": "Github",
+            "link": "/feishu__2024_7_31_product_onepassword_github"
           }
         ],
         "collapsed": false
