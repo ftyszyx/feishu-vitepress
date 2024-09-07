@@ -412,36 +412,3 @@ https://github.com/ftyszyx/robotjs
 
 <img src="/assets/FQekbR6OpoXoHnxE24pc2pEAnBc.gif" src-width="858" class="markdown-img m-auto" src-height="636" align="center"/>
 
-# todo
-
-## 打包
-
-https://www.electronforge.io/advanced/auto-update
-
-## 软件更新  
-
-# 密码项目优化
-
-## 密钥生成流程优化
-
-<img src="/assets/EJLKbxFWbonNFwx3aVbchY9Mnme.png" src-width="528" class="markdown-img m-auto" src-height="278" align="center"/>
-
-<img src="/assets/Bxeab3ihVoQ2v8xeCiZcRuqnnmd.png" src-width="394" class="markdown-img m-auto" src-height="341" align="center"/>
-
-## 修改密码
-
-## 修改密钥
-
-## 
-## github自动打包
-
-参考：
-
-https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web
-
-https://github.com/lyswhut/lx-music-desktop
-
-https://github.com/gaozhangmin/aliyunpan/releases
-
-https://molunerfinn.com/PicGo/
-

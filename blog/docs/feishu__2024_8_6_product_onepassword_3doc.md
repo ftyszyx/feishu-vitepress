@@ -64,3 +64,5 @@ https://github.com/ftyszyx/lockpass/releases
 1. 目前只是个demo版本，有可能会有各种问题。如果因使用本软件造成你的数据丢失，本人不负任何责任。
 2. 如果遇到软件bug，请提交问题给我。
 
+**如果有bug可以在https://github.com/ftyszyx/lockpass/issues上说明，或者发邮件whyzi@qq.com**
+
