@@ -126,6 +126,10 @@
       {
         "text": "有用的东西收集",
         "link": "/feishu__2024_7_14_daily_life_useful"
+      },
+      {
+        "text": "我一生的故事",
+        "link": "/feishu__2024_8_6_daily_life_life_time_story"
       }
     ],
     "collapsed": false
@@ -205,6 +209,10 @@
           {
             "text": "密码管理器github说明",
             "link": "/feishu__2024_7_31_product_onepassword_github"
+          },
+          {
+            "text": "密码管理器demo版本可以试用了，介绍一下",
+            "link": "/feishu__2024_8_6_product_onepassword_demo"
           }
         ],
         "collapsed": false
