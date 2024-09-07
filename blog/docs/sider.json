@@ -199,20 +199,28 @@
             "link": "/feishu__2024_5_21_product_onepassword_develop_log"
           },
           {
-            "text": "给自己做一个1password",
-            "link": "/feishu__2024_7_15_product_onepassword_begin"
+            "text": "给自己做一个1password：序言（一）",
+            "link": "/feishu__2024_7_15_product_onepassword_1doc"
           },
           {
-            "text": "密码管理器的设计方案",
-            "link": "/feishu__2024_7_16_product_onepassword_encode"
+            "text": "给自己做一个1password：安全设计方案（二）",
+            "link": "/feishu__2024_7_16_product_onepassword_2doc"
           },
           {
             "text": "密码管理器github说明",
             "link": "/feishu__2024_7_31_product_onepassword_github"
           },
           {
-            "text": "密码管理器demo版本可以试用了，介绍一下",
-            "link": "/feishu__2024_8_6_product_onepassword_demo"
+            "text": "给自己做一个1password：自已的密码管理器demo已经完成，简单介绍一下（三）",
+            "link": "/feishu__2024_8_6_product_onepassword_3doc"
+          },
+          {
+            "text": "给自己做一个1password：安装及系统的初始化(四）",
+            "link": "/feishu__2024_8_7_product_onepassword_4doc"
+          },
+          {
+            "text": "给自己做一个1password：密码库的增删改查(五）",
+            "link": "/feishu__2024_8_7_product_onepassword_5doc"
           }
         ],
         "collapsed": false

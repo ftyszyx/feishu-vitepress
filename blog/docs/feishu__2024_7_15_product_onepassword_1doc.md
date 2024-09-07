@@ -1,11 +1,12 @@
 ---
-title: 给自己做一个1password
-cover: /assets/IsKIboz8ioCm8mx5DZwcgnjanYg.png
+title: 给自己做一个1password：序言（一）
 create_time: 1723686323
 categories:
   - product
 ---
 
+
+<img src="/assets/IsKIboz8ioCm8mx5DZwcgnjanYg.png" src-width="640" class="markdown-img m-auto" src-height="384" align="center"/>
 
 身处当今数字化蓬勃发展的时代，我们每个人都坐拥数量庞大的账号和密码。为了确保密码的安全性，常常需要设定一些复杂且随机的密码。时间一长，连自己都难免遗忘。
 
