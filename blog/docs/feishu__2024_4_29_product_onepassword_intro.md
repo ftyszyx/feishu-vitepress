@@ -1,5 +1,5 @@
 ---
-title: 密码通
+title: LockPass
 tags:
   - develop
 create_time: 1716970246
@@ -57,8 +57,6 @@ https://github.com/bitwarden
 部分开源：
 
 https://github.com/protonpass
-
-##  
 
 ## 1password
 
@@ -194,7 +192,4 @@ David Schuetz 在他的[博客](https://darthnull.org/security/2018/11/09/1pass-
 
 <img src="/assets/RrlhbOU6votu2dxjlFacowXQnDf.png" src-width="682" class="markdown-img m-auto" src-height="814" align="center"/>
 
-## flowerpassword
-
-https://flowerpassword.com/：只是帮生成 密码
-
+## 
