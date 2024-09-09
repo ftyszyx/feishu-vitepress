@@ -104,3 +104,12 @@ npm run dev
 # 详细说明
 
 [地址](https://blog.bytefuse.cn/feishu__2024_3_7_product_myblog_intro)
+
+# bug fix record
+
+1. 文本内的格式化内容，转成markdown时要去掉空格
+   比如：
+   ```
+   **ab ** 是无效的
+   **ab** 要转成这样才行
+   ```

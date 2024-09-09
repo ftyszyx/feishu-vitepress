@@ -312,34 +312,44 @@ export class MarkdownRenderer extends Renderer {
   parseTextRun(buf: Buffer, textRun: TextRun) {
     let preWrite = "";
     let postWrite = "";
+    let needtrim = false;
 
     let style = textRun.text_element_style;
     let escape = true;
     if (style) {
       if (style.bold) {
-        preWrite = "**";
+        preWrite = " **";
+        needtrim = true;
         postWrite = "**";
       } else if (style.italic) {
         preWrite = "_";
+        needtrim = true;
         postWrite = "_";
       } else if (style.strikethrough) {
         preWrite = "~~";
+        needtrim = true;
         postWrite = "~~";
       } else if (style.underline) {
         preWrite = "<u>";
+        needtrim = true;
         postWrite = "</u>";
       } else if (style.inline_code) {
         preWrite = "`";
+        needtrim = true;
         postWrite = "`";
         escape = false;
       } else if (style.link) {
         const unescapeURL = decodeURIComponent(style.link.url);
         preWrite = `[`;
+        needtrim = true;
         postWrite = `](${unescapeURL})`;
       }
     }
 
     let plainText = textRun.content || "";
+    if (needtrim) {
+      plainText = plainText.trim();
+    }
     // Only escape HTML tags when not in style
     // For example: `<div>` will keep.
     //
