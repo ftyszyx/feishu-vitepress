@@ -21,26 +21,11 @@ categories:
 
 对于一个开发，远程控制是刚需.
 
-之前用过todesk,teamviwer,向日葵远程
+免费快速开源的远程控制软件rustdesk,如果想在国内使用，需要自己部署服务器。
 
-<table>
-<colgroup>
-<col width="100"/>
-<col width="170"/>
-<col width="201"/>
-<col width="261"/>
-</colgroup>
-<tbody>
-<tr><td></td><td><p>连接速度</p></td><td><p>对mac支持</p></td><td><p>软件友好性</p></td></tr>
-<tr><td><p>todesk</p></td><td><p>快</p></td><td><p>好</p></td><td><p>非常好</p></td></tr>
-<tr><td><p>teamviwer</p></td><td><p>慢(服务器在国外，经常连接不上）</p></td><td><p>不好（mac远程延时很大）</p></td><td><p>不是特别好</p></td></tr>
-<tr><td><p>向日葵远程</p></td><td><p>慢</p></td><td><p>好</p></td><td><p>不是特别好</p></td></tr>
-</tbody>
-</table>
+阿里云之前新人有优惠，搞了一个99元一年的服务器。今天尝试部署一下。记录过程中遇到的问题，以及如何解决。
 
- todesk最优，我也用了两年的vip服务（一年300多)。
-
-最近在网上找到了rustdesk,于时想试用一下，看能不能节约这300.
+有想自己部署的可以参考。
 
 # 安装客户端
 
@@ -71,7 +56,7 @@ services:
       - 21116:21116
       - 21116:21116/udp
       - 21118:21118
-    image: rustdesk/rustdesk-server:latest
+    image: rustdesk/rustdesk-server:1.1.10-3
     command: hbbs -r rustdesk.example.com:21117
     volumes:
       - ./data:/root
@@ -86,7 +71,7 @@ services:
     ports:
       - 21117:21117
       - 21119:21119
-    image: rustdesk/rustdesk-server:latest
+    image: rustdesk/rustdesk-server:1.1.10-3
     command: hbbr
     volumes:
       - ./data:/root
@@ -125,9 +110,22 @@ docker-compose up -d
 
 ## Docker 启动报错
 
+如果启动时报错：
+
+启动rustk desk docker报错
+
 ```yaml
-Registered email required (-m option). Please pay and register
+Registered email required (-m option). 
+ Please pay and register on https://rustdesk.com/server
 ```
+
+原因是docker 的版本低了，需要用1.1.10-3
+
+官方有写
+
+<img src="/assets/RvBFblFZxoI83exxSvZcXGWknLf.png" src-width="922" class="markdown-img m-auto" src-height="138" align="center"/>
+
+注意：docker-compose中有两个地方要改
 
 # 总结
 
