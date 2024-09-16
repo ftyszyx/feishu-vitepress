@@ -103,7 +103,7 @@ https://open.feishu.cn/app
 
 <img src="/assets/QjzVbOYV1oHuEJx0ePacehR2nHb.png" src-width="178" class="markdown-img m-auto" src-height="259" align="center"/>
 
-「成员设置」-&gt;「添加管理员」中添加，把这个 群加成 **管理员**。
+「成员设置」-&gt;「添加管理员」中添加，把这个 群加成  **管理员**。
 
 <img src="/assets/VXMNbc9g7ogqEHxeFnWc8uejnng.png" src-width="1041" class="markdown-img m-auto" src-height="520" align="center"/>
 

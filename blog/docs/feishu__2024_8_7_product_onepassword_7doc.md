@@ -30,7 +30,7 @@ categories:
 
 存好密码后，如何快捷的使用呢，在激活快捷窗口后，输入关键字，找到相关密码信息，点回车即可。
 
-**注意，在快捷输入前，要将鼠标光标定位在账号输入框上**
+ **注意，在快捷输入前，要将鼠标光标定位在账号输入框上**
 
 <img src="/assets/I4PIbMANNoUqqXxYRz0cnfXMnNd.gif" src-width="1120" class="markdown-img m-auto" src-height="726" align="center"/>
 
@@ -40,5 +40,5 @@ categories:
 
 介绍完毕
 
-**如果有bug可以在https://github.com/ftyszyx/lockpass/issues上说明，或者发邮件whyzi@qq.com**
+ **如果有bug可以在** **https://github.com/ftyszyx/lockpass/issues** **上说明，或者发邮件** **whyzi@qq.com**
 

@@ -145,7 +145,7 @@ CACHEOBJECTS overflow明显，可以调大点变成 8M
 
 Block&gt;subsections&gt;bucket
 
-The allocator reserves blocks of memory for allocations. Each block is divided into **subsections** of 16KB. This is not configurable, and does not appear in the user interface. Each subsection is divided into **allocations**. The allocation size is a multiple of a configured fixed size, called **granularity**.
+The allocator reserves blocks of memory for allocations. Each block is divided into  **subsections** of 16KB. This is not configurable, and does not appear in the user interface. Each subsection is divided into  **allocations**. The allocation size is a multiple of a configured fixed size, called  **granularity**.
 
 <img src="/assets/D57bbtUGmoGZ0yx2ufmcbixYnuc.png" src-width="1185" class="markdown-img m-auto" src-height="360" align="center"/>
 

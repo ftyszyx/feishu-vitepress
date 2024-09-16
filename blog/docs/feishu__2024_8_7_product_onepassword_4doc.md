@@ -57,5 +57,5 @@ categories:
 
 <img src="/assets/Qn0WbgK1ToJmyCxJ4VQclDTwnmd.png" src-width="405" class="markdown-img m-auto" src-height="227" align="center"/>
 
-**如果有bug可以在https://github.com/ftyszyx/lockpass/issues上说明，或者发邮件whyzi@qq.com**
+ **如果有bug可以在** **https://github.com/ftyszyx/lockpass/issues** **上说明，或者发邮件** **whyzi@qq.com**
 

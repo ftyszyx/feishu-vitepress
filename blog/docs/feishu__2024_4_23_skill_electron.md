@@ -228,7 +228,7 @@ ipcMain.handle(webToManMsg.Register, async (_, info) => {
 
 <img src="/assets/Ehddb8wvSoOSf6xVrCEc9pZ5nRd.png" src-width="624" class="markdown-img m-auto" src-height="53" align="center"/>
 
-**为什么我的错误信息被污染了呢？**
+ **为什么我的错误信息被污染了呢？**
 
 我查了官方的文档，有人有同样的疑问
 
@@ -248,11 +248,11 @@ https://github.com/electron/electron/issues/24427
 
 https://github.com/ash0x0/electron/commit/a22bc080a5cc4bea31c60bbd2d45706109a819ee
 
-**这个解决方案有点恶心，相当于，你自己把error捕获，把error当一个正确的参数返回。**
+ **这个解决方案有点恶心，相当于，你自己把error捕获，把error当一个正确的参数返回。**
 
-**这样你的很多写法都有点受影响 。**
+ **这样你的很多写法都有点受影响 。**
 
-**官方意思是说应该把main进程当服务端，服务端如果有异常，直接发给客户端，是不安全的，这样会暴露隐私。所以官方还是建议，如果要给错误信息给前端，应该要自己包装一下。**
+ **官方意思是说应该把main进程当服务端，服务端如果有异常，直接发给客户端，是不安全的，这样会暴露隐私。所以官方还是建议，如果要给错误信息给前端，应该要自己包装一下。**
 
 ## Crash捕捉
 

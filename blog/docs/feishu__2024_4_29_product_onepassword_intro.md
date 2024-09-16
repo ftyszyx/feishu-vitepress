@@ -170,9 +170,9 @@ David Schuetz 在他的[博客](https://darthnull.org/security/2018/11/09/1pass-
 
 所谓 2SKD（two-secret key derivation）机制，指的是1Password 同时使用你自己设定的主密码（Master password）和私钥（Secret key）来加密你的信息，以及在与服务器通信的过程中验证你的身份。
 
-**主密码（Master password）不会被 1Password 存储，它只有在被运行的时候短暂存在于机器的内存中。**
+ **主密码（Master password）不会被 1Password 存储，它只有在被运行的时候短暂存在于机器的内存中。**
 
-**Secret key（即图中的 Account key）在且仅在本地生成，不会上传到服务器。**
+ **Secret key（即图中的 Account key）在且仅在本地生成，不会上传到服务器。**
 
 <img src="/assets/W4pGb4wuFoozEzx0waccjPVZnTb.png" src-width="694" class="markdown-img m-auto" src-height="479" align="center"/>
 

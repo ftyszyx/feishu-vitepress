@@ -115,7 +115,22 @@
       },
       {
         "text": "rustdesk服务器搭建记录",
-        "link": "/feishu__2024_8_8_skill_rustdesk"
+        "link": "/feishu__2024_8_8_skill_rustdesk",
+        "items": [
+          {
+            "text": "部署自己的远程控制服务器-阿里云服务器(1)",
+            "link": "/feishu__2024_8_9_skill_rustdesk_1doc"
+          },
+          {
+            "text": "部署自己的远程控制服务器-docker(1)",
+            "link": "/feishu__2024_8_9_skill_rustdesk_2doc"
+          },
+          {
+            "text": "部署自己的远程控制服务器-rust_desk server(1)",
+            "link": "/feishu__2024_8_9_skill_rustdesk_3doc"
+          }
+        ],
+        "collapsed": false
       }
     ],
     "collapsed": false
@@ -134,6 +149,14 @@
       {
         "text": "我一生的故事",
         "link": "/feishu__2024_8_6_daily_life_life_time_story"
+      },
+      {
+        "text": "随感",
+        "link": "/feishu__2024_8_15_daily_life_think"
+      },
+      {
+        "text": "cursor",
+        "link": "/feishu__2024_8_15_daily_life_cursor"
       }
     ],
     "collapsed": false
@@ -182,11 +205,11 @@
         "collapsed": false
       },
       {
-        "text": "融号宝",
+        "text": "1postpro",
         "items": [
           {
-            "text": "融小宝-项目简介",
-            "link": "/feishu__2024_4_28_product_bytefuse_intro"
+            "text": "1postpro",
+            "link": "/feishu__2024_4_28_product_1postpro_intro"
           }
         ],
         "collapsed": false
@@ -267,6 +290,14 @@
           }
         ],
         "collapsed": false
+      },
+      {
+        "text": "高校毕业生招聘平台",
+        "link": "/feishu__2024_8_10_product_jobs"
+      },
+      {
+        "text": "打印相关",
+        "link": "/feishu__2024_8_11_product_removebg"
       }
     ],
     "collapsed": false

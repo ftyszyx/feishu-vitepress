@@ -42,5 +42,5 @@ categories:
 
 介绍完毕
 
-**如果有bug可以在https://github.com/ftyszyx/lockpass/issues上说明，或者发邮件whyzi@qq.com**
+ **如果有bug可以在** **https://github.com/ftyszyx/lockpass/issues** **上说明，或者发邮件** **whyzi@qq.com**
 

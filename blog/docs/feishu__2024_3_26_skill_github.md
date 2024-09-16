@@ -104,7 +104,7 @@ https://gitmirror.com/files.html
 
 https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/about-self-hosted-runners
 
-### **Linux**
+###  **Linux**
 
 - Red Hat Enterprise Linux 8 or later
 - CentOS 8 or later
@@ -116,7 +116,7 @@ https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted
 - openSUSE 15.2 or later
 - SUSE Enterprise Linux (SLES) 15 SP2 or later
 
-### **Windows**
+###  **Windows**
 
 - Windows 10 64-bit
 - Windows 11 64-bit
@@ -124,11 +124,11 @@ https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted
 - Windows Server 2019 64-bit
 - Windows Server 2022 64-bit
 
-### **macOS**
+###  **macOS**
 
 - macOS 11.0 (Big Sur) or later
 
-### **Architectures**
+###  **Architectures**
 
 The following processor architectures are supported for the self-hosted runner application.
 

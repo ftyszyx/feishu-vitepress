@@ -19,19 +19,19 @@ https://unity.com/cn/blog/engine-platform/an-introduction-to-ilcpp-internals
 
 ## il2cpp的功能：
 
-**1、将IL语言（c#编译器的中间代理）转成c++源码**
+ **1、将IL语言（c#编译器的中间代理）转成c++源码**
 
 AOT compiler translates Intermediate Language (IL), the low-level output from .NET compilers, to C++ source code
 
-**2、A runtime library to support the virtual machine（GC，平台接口封装）**
+ **2、A runtime library to support the virtual machine（GC，平台接口封装）**
 
-**功能1的实现主要是靠il2cpp.exe**
+ **功能1的实现主要是靠il2cpp.exe**
 
 il2cpp编译器在Editor\Data\il2cpp directory，使用c#编写的。
 
 <img src="/assets/EpJdbxreeoD32MxSmz5cRMzCnfy.png" src-width="670" class="markdown-img m-auto" src-height="255" align="center"/>
 
-**功能2 runtime library**
+ **功能2 runtime library**
 
 是用c++写的。称之回libil2cpp.有源码
 

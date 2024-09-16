@@ -40,7 +40,7 @@ https://github.com/egametang/ET
 
 # AI
 
-## **Hugging face** 
+##  **Hugging face** 
 
 (开源模型平台）
 
@@ -52,7 +52,7 @@ https://huggingface.co
 
 https://replicate.com/
 
-## **one-api**
+##  **one-api**
 
 一个api转发平台
 
@@ -62,13 +62,13 @@ https://github.com/songquanpeng/one-api
 
 图像分割
 
-## **gemma-2b**
+##  **gemma-2b**
 
 :大语言模型（手机上可以跑）
 
 https://huggingface.co/google/gemma-2b
 
-## **flux**
+##  **flux**
 
 文字生成图片大模型
 
@@ -76,7 +76,7 @@ https://huggingface.co/black-forest-labs/FLUX.1-dev
 
 https://blackforestlabs.ai/
 
-## **cogvideox**
+##  **cogvideox**
 
 文字生成视频的开源模型
 
@@ -139,6 +139,10 @@ https://www.logo.surf/
 <u>SVG Viewer</u>
 
 一个 SVG 图标的搜索引擎，并且提供可视化编辑器，允许你对源文件进行调整。
+
+## designevo
+
+https://www.designevo.com/
 
 # 网盘
 
@@ -233,4 +237,38 @@ https://github.com/dokku/dokku
 ## sealos
 
 https://sealos.run/
+
+# 视频
+
+## Revideo
+
+React 库可以代码编辑视频
+
+https://github.com/redotvideo/revideo
+
+# 照片管理器
+
+## photoPrism
+
+<u>PhotoPrism</u>
+
+## Immich
+
+<u>Immich</u>
+
+## ente
+
+<u>Ente</u>
+
+# 远程工作
+
+## Easynomad
+
+https://easynomad.cn/
+
+# nas系统
+
+## Fnos
+
+https://www.fnnas.com/
 

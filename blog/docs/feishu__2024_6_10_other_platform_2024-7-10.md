@@ -17,7 +17,7 @@ categories:
 
 现在是一个AI的时代。AI可以帮你翻译语言，生成文章，生成图片，生成ui，基本无所不能。
 
-而目前最强大的AI平台就是OpenAI。可惜的是OpenAI对国内是封锁的。你如果想要开通OpenAI。需要准备一个**国外的手机号**和**国外银行卡**才行。之前我一直没找到好方法，直到前几天发现了[wildcard](https://wildcard.com.cn/i/FRQUAUVU)，才成功注册成功了open ai的账号充值成功，感谢[wildcard](https://wildcard.com.cn/i/FRQUAUVU)。 
+而目前最强大的AI平台就是OpenAI。可惜的是OpenAI对国内是封锁的。你如果想要开通OpenAI。需要准备一个 **国外的手机号**和 **国外银行卡**才行。之前我一直没找到好方法，直到前几天发现了[wildcard](https://wildcard.com.cn/i/FRQUAUVU)，才成功注册成功了open ai的账号充值成功，感谢[wildcard](https://wildcard.com.cn/i/FRQUAUVU)。 
 
 # 准备工具
 
@@ -43,7 +43,7 @@ wildcard是一种美国的虚拟银行卡，同时平台还集成虚拟手机和
 
 <img src="/assets/AFEtb0VFzojsE1xBKEzcypbEnXb.png" src-width="1187" class="markdown-img m-auto" src-height="301" align="center"/>
 
-开通银行卡，需要手续费11.99美元，使用邀请码**FRQUAUVU**可以立减2美金（此开通费用不可退）
+开通银行卡，需要手续费11.99美元，使用邀请码 **FRQUAUVU**可以立减2美金（此开通费用不可退）
 
 <img src="/assets/Q4IKbJjhdosratxm8KScpIqpnOf.png" src-width="943" class="markdown-img m-auto" src-height="539" align="center"/>
 
@@ -183,7 +183,7 @@ your card has been declined
 
 <img src="/assets/E1JgbF3oWogwToxTr27crA2Ln6b.png" src-width="735" class="markdown-img m-auto" src-height="903" align="center"/>
 
- 开启自动充值后，卡片余额足够的情况下（自动充值最低10美金，可能还需要绑卡预扣款5美金，卡片最好至少有**15美金**），一般过一段时间会自动充值到api里面，可以稍等一段时间看看
+ 开启自动充值后，卡片余额足够的情况下（自动充值最低10美金，可能还需要绑卡预扣款5美金，卡片最好至少有 **15美金**），一般过一段时间会自动充值到api里面，可以稍等一段时间看看
 
 ## 6、获取openai 接口key
 
@@ -211,5 +211,5 @@ your card has been declined
 
 2、推荐使用[wildcard](https://wildcard.com.cn/i/FRQUAUVU)来开通美国银行卡,wildcard还有虚拟电话号码和虚拟网络功能，避免被封，可以使用我的邀请码FRQUAUVU立减2美金。
 
-3、如果想要开通OpenAI。需要准备一个**国外的手机号**和**国外银行卡**才行，推荐使用[wildcard](https://wildcard.com.cn/i/FRQUAUVU),[wildcard](https://wildcard.com.cn/i/FRQUAUVU)有虚拟电话号码、虚拟美国银行卡、虚拟网络等功能，可以使用我的邀请码FRQUAUVU立减2美金。
+3、如果想要开通OpenAI。需要准备一个 **国外的手机号**和 **国外银行卡**才行，推荐使用[wildcard](https://wildcard.com.cn/i/FRQUAUVU),[wildcard](https://wildcard.com.cn/i/FRQUAUVU)有虚拟电话号码、虚拟美国银行卡、虚拟网络等功能，可以使用我的邀请码FRQUAUVU立减2美金。
 

@@ -12,7 +12,7 @@ categories:
 
 参考：https://blog.csdn.net/Calvin_zhou/article/details/119681272
 
-依次选择 **View &gt; Tool Windows &gt; Profiler** 或点击工具栏中的 Profile图标
+依次选择  **View &gt; Tool Windows &gt; Profiler** 或点击工具栏中的 Profile图标
 
 <img src="/assets/UTjKb2ykyod7sXxAdUvcWXZ6nCh.png" src-width="827" class="markdown-img m-auto" src-height="330" align="center"/>
 
@@ -40,7 +40,7 @@ Allocated：您的应用分配的 Java/Kotlin 对象数。此数字没有计入 
 
 https://zhuanlan.zhihu.com/p/372883142
 
-**一般使用pss作为内存性能指标，使用方法 3**
+ **一般使用pss作为内存性能指标，使用方法 3**
 
 VSS - Virtual Set Size 虚拟耗用内存（包含共享库占用的内存）
 
@@ -137,7 +137,7 @@ final int totalPss = memInfo[0].getTotalPss();
 
 优点：获取的是PSS
 
-缺点：安卓P以上限制频率，**需要隔约5分钟（不同手机间隔不同）才能获取到新的值**。而且获取的 PSS 不包括 Graphics。
+缺点：安卓P以上限制频率， **需要隔约5分钟（不同手机间隔不同）才能获取到新的值**。而且获取的 PSS 不包括 Graphics。
 
 ## 方法4 Debug.getMemoryInfo
 

@@ -10,7 +10,7 @@ categories:
 
 # 2024-6-3
 
-选择**electron-vite做为脚手架**
+选择 **electron-vite** **做为脚手架**
 
 ```csharp
 npm create @quick-start/electron@latest
@@ -84,7 +84,7 @@ export function openAuthorize() {
 
 增加本地数据库
 
-本来是想用sqlite，但最近发现一个开源项目[ duckdb](https://github.com/duckdb/duckdb).网上评论说性能很好，而且功能强大。
+本来是想用sqlite，但最近发现一个开源项目[duckdb](https://github.com/duckdb/duckdb).网上评论说性能很好，而且功能强大。
 
 反正这两个相对于我来说都是新的东西，还不如用后者
 

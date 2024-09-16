@@ -46,7 +46,7 @@ https://docs.github.com/en/rest/releases/releases?apiVersion=2022-11-28#get-the-
 
 这个api需要一个token
 
-有三种方式，选最后一种吧**Personal access tokens**
+有三种方式，选最后一种吧 **Personal access tokens**
 
 https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token
 

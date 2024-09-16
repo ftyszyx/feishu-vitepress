@@ -30,16 +30,16 @@ categories:
 
 ## Paragraph
 
-导出飞书知识库，并按相同目录结构生成 [Static Page Generator](https://www.google.com/search?q=Static+Page+Generator) 支持 `Markdown` 文件组织方式，用于发布为**静态网站**。
+导出飞书知识库，并按相同目录结构生成 [Static Page Generator](https://www.google.com/search?q=Static+Page+Generator) 支持 `Markdown` 文件组织方式，用于发布为 **静态网站**。
 
-Generate **Feishu Wiki** into a Markdown for work with Static Page Generators.
+Generate  **Feishu Wiki** into a Markdown for work with Static Page Generators.
 
 ## Callout
 
 <div class="callout callout-bg-1 callout-border-1 callout-color-1">
 <div class='callout-emoji'>❤️</div>
 <p>Red Callout</p>
-<p>And a <a href="https://github.com/longbridgeapp/feishu-pages">Link</a> and <strong>Bold</strong> in the Callout.</p>
+<p>And a <a href="https://github.com/longbridgeapp/feishu-pages">Link</a> and  <strong>Bold</strong> in the Callout.</p>
 </div>
 
 <div class="callout callout-bg-2 callout-border-2 callout-color-2">

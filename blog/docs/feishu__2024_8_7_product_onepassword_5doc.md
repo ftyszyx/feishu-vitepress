@@ -36,7 +36,7 @@ categories:
 
 <img src="/assets/YgAlbvHFooaJufxv6ZIckSlqneh.png" src-width="393" class="markdown-img m-auto" src-height="358" align="center"/>
 
-**注意：删除密码库，会将密码库下的所有密码信息全删除，所以要慎重。**
+ **注意：删除密码库，会将密码库下的所有密码信息全删除，所以要慎重。**
 
 ## 查看密码库下的密码项目
 
@@ -54,5 +54,5 @@ categories:
 
 介绍完毕
 
-**如果有bug可以在https://github.com/ftyszyx/lockpass/issues上说明，或者发邮件whyzi@qq.com**
+ **如果有bug可以在** **https://github.com/ftyszyx/lockpass/issues** **上说明，或者发邮件** **whyzi@qq.com**
 

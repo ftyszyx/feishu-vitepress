@@ -26,7 +26,7 @@ categories:
 ### github action中提交代码step提示无权限
 
 ```sql
-**Error: **Error: Pushing to <u>https://github.com/ftyszyx/myblog</u>
+**Error:**Error: Pushing to <u>https://github.com/ftyszyx/myblog</u>
 [56](https://github.com/ftyszyx/myblog/actions/runs/8423006609/job/23063634395#step:8:59)remote: Permission to ftyszyx/myblog.git denied to github-actions[bot].
 ```
 
@@ -435,9 +435,9 @@ https://ftyszyx.github.io/feishu-vitepress/sitemap.xml
 
 点击「添加站点」，可能需要你完善下账户信息，然后会进入站点信息填写页面，分为三步：
 
-**第一步：输入站点**
+ **第一步：输入站点**
 
-**第三步：验证网站**
+ **第三步：验证网站**
 
 之所以需要验证网站，是为了证明你是该域名的拥有者，验证成功后，可以快捷批量添加子站点，查看所有子站数据，无需再一一验证子站点。
 
@@ -473,7 +473,7 @@ https://ftyszyx.github.io/feishu-vitepress/sitemap.xml
 
 在百度后台也查看不昨天提交的审核状态
 
-## **谷歌收录**
+##  **谷歌收录**
 
 https://search.google.com/
 
