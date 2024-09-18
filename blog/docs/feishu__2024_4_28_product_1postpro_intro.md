@@ -82,5 +82,13 @@ https://www.kuaixieya.com/
 
 用户通过网站登录飞书文档账号
 
+# 体验一下设cursor做这个软件
+
+1. 设计一款electron工具，可以将飞书和notion的文章导出到微信公众号并发表
+
+<img src="/assets/HBWybpMy6oxNE7xV7mUcVI8unMc.png" src-width="514" class="markdown-img m-auto" src-height="136" align="center"/>
+
+哈哈，看来还是要人把大体框架做好，让ai帮实现细节
+
 #  
 
