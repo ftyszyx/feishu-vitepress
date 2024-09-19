@@ -134,6 +134,10 @@ logo设计工具，免费
 
 https://www.logo.surf/
 
+canva
+
+https://www.canva.com/zh_cn/
+
 ## Svg viewer
 
 <u>SVG Viewer</u>
