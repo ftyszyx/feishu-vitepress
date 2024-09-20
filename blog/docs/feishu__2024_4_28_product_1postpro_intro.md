@@ -90,5 +90,11 @@ https://www.kuaixieya.com/
 
 哈哈，看来还是要人把大体框架做好，让ai帮实现细节
 
+文档账号信息
+
+<img src="/assets/MsywbntnPoPW01xUeZwcGBLvnah.png" src-width="1247" class="markdown-img m-auto" src-height="543" align="center"/>
+
+发布平台
+
 #  
 

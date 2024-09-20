@@ -106,6 +106,18 @@ GitHub 本周热点项目，只需一张图片，就可实现视频的人脸替�
 
 免费的 AI 歌曲在线生成器。（
 
+## Ai editor
+
+### Void
+
+https://github.com/voideditor/void
+
+### Coursor
+
+### claude_dev
+
+https://github.com/saoudrizwan/claude-dev
+
 # 代理
 
 ## proxy302
