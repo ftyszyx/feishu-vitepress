@@ -58,6 +58,12 @@ https://replicate.com/
 
 https://github.com/songquanpeng/one-api
 
+## Chat ai
+
+### _ChatGPT-Next-Web_
+
+https://github.com/ChatGPTNextWeb/_ChatGPT-Next-Web_
+
 ## sam2
 
 图像分割
