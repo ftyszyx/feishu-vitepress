@@ -52,7 +52,7 @@ timer=setInterval(()=>{
 打包
 
 ```ts
-sar p test app.asar
+asar p app app.asar
 ```
 
 注意如果resouce目录下有app.asar.unpacked目录，需要在打包时将其排除
