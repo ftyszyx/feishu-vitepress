@@ -26,7 +26,7 @@ https://github.com/dnSpyEx/dnSpy
 解包
 
 ```ts
-asar e app.asar test
+asar e app.asar app
 ```
 
 在主程序的结尾加
