@@ -294,3 +294,27 @@ https://easynomad.cn/
 
 https://www.fnnas.com/
 
+# 录屏软件
+
+## captura
+
+https://github.com/MathewSachin/Captura/releases
+
+## Screentogif
+
+https://github.com/NickeManarin/ScreenToGif
+
+# Email
+
+## temp_mail
+
+https://temp-mail.org/
+
+https://internxt.com/temporary-email
+
+https://adguard.com/en/adguard-temp-mail/overview.html
+
+## tmp_mail_api
+
+https://docs.mail.tm/
+
