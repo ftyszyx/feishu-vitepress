@@ -71,6 +71,31 @@ ctrl+K ctrl+d
 
 打开文档大纲：ctrl+alt+t  (视图-》其它窗口-》文档大纲 ）
 
+# Vscode&Unity
+
+## 只显示cs
+
+```json
+"files.exclude":{
+ "**/*.meta": true,
+}
+```
+
+## 中文乱码
+
+```json
+"files.encoding": "gb2312",
+```
+
+## 代码自动格式化
+
+```json
+"[csharp]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "ms-dotnettools.csharp", 
+  }
+```
+
 # Vscode 中vim
 
 https://www.bilibili.com/video/BV1z541177Jy?p=6&vd_source=1cfe4f7c9bf04285f79b848e60f55aea
