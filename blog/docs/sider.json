@@ -73,7 +73,14 @@
       },
       {
         "text": "vpn",
-        "link": "/feishu__2024_5_5_skill_vpn"
+        "link": "/feishu__2024_5_5_skill_vpn",
+        "items": [
+          {
+            "text": "Warp",
+            "link": "/feishu__2024_8_26_skill_vpn_warp"
+          }
+        ],
+        "collapsed": false
       },
       {
         "text": "duckdb学习（目前1.0版本还不太稳定，有内存泄露风险，不推荐用于实际产品）",

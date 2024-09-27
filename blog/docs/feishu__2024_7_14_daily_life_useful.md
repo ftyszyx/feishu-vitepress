@@ -124,6 +124,12 @@ https://github.com/voideditor/void
 
 https://github.com/saoudrizwan/claude-dev
 
+## Versison
+
+### supervison
+
+https://github.com/roboflow/supervision
+
 # 代理
 
 ## proxy302
@@ -260,6 +266,10 @@ https://github.com/dokku/dokku
 
 https://sealos.run/
 
+## Container-desktop
+
+https://container-desktop.com/
+
 # 视频
 
 ## Revideo
@@ -267,6 +277,12 @@ https://sealos.run/
 React 库可以代码编辑视频
 
 https://github.com/redotvideo/revideo
+
+## Lossless-cut
+
+https://github.com/mifi/lossless-cut
+
+视频编辑前端工具
 
 # 照片管理器
 
@@ -317,4 +333,12 @@ https://adguard.com/en/adguard-temp-mail/overview.html
 ## tmp_mail_api
 
 https://docs.mail.tm/
+
+# 学习
+
+## Gpu-puzzles
+
+学习gpu
+
+https://github.com/srush/GPU-Puzzles
 
