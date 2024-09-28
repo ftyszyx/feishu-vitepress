@@ -96,5 +96,9 @@ https://www.kuaixieya.com/
 
 发布平台
 
+# 2024/9/28
+
+本来想用electron开发一个桌面客户端，实现多账号的登录和
+
 #  
 
