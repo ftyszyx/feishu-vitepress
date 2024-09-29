@@ -129,3 +129,53 @@ cursor真的是程序员的福音，他优秀的交互设计真的能大幅提�
 
 同时也要敢于宣传自己，让自己与这个社会产生关联，不要隔着公司这个中间商。我一直觉得AI这个未来趋势，最受益的应该就是程序员，因为程序员可以利用AI创造一却。
 
+# 2024/9/28
+
+## 一个能打的都没有
+
+<img src="/assets/FVOFbBdZboFARWxiexGc1V2Xn1g.png" src-width="400" class="markdown-img m-auto" src-height="198" align="center"/>
+
+我想要一个工具，实现在飞书写文章然后一键发布到各个平台。
+
+市面上有商用的软件做这种事，他们大部分是用electron做一个桌面客户端，用户可以在软件里写文章，然后发布到各平台。
+
+我试用了一下，感觉不是我想要的，这些工具把写文章集成在软件内部，然后体验上又和飞书差好远。很难用。
+
+于是我又在网上搜索一下免费开源的。还真找到一个开源项目wchatsync，有不少人关注。
+
+作者的方案是直接写一个浏览器插件，在你的微信文章后台页面上显示一个按键 ，
+
+<img src="/assets/FVz4bcSzjoSyjkxQ4d2cFcmBn5b.png" src-width="873" class="markdown-img m-auto" src-height="310" align="center"/>
+
+在点这个按键 后，插件会将网页里的内容一键发送到其它平台。
+
+<img src="/assets/LXubbn33Ko4munxmVJVcUDaVnJh.png" src-width="488" class="markdown-img m-auto" src-height="402" align="center"/>
+
+这个方案有点巧妙，文章编辑是平台原有的，工具只做文章的发布。而且很轻量，用户不用去下载一个近100M的安装包，可以在微信公众号内就完成所有工作。
+
+但也有不足：
+
+1、同一个平台只支持一个账号
+
+2、只能把公众号的文章同步到其它平台（我是想用飞书）
+
+还有就是这个项目是四年前的，作者已经好久没人维护了，看项目的讨论区，好多人说现在很多渠道同步失效。需要自己改。
+
+另外一个有趣的事是，因为项目没人维护了，但热度还在，于是项目的讨论区成了广告集散地。一些做类似功能的商用软件在里面打广告。比如下面这个
+
+<img src="/assets/Wmf3b5viOosSJ0xtyRPcWXxOneg.png" src-width="614" class="markdown-img m-auto" src-height="364" align="center"/>
+
+他也是一个浏览器插件，看界面挺不错，而且功能也的确很清晰。
+
+这个插件上有个链接：
+
+<img src="/assets/Jy0lbeBxOoEdKSxrxL5cBbwDnxe.png" src-width="325" class="markdown-img m-auto" src-height="39" align="center"/>
+
+提示你升级会员，会跳转到他们的网站充会员。
+
+<img src="/assets/CcXCb00hOoQBUuxMsscc4nZynNg.png" src-width="982" class="markdown-img m-auto" src-height="372" align="center"/>
+
+价格不是很贵。于是我试了下用他的插件给微博发了三次信息，只有一次成功。
+
+晕，就会收钱，一个能打的都没有。
+
