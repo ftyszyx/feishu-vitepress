@@ -342,3 +342,7 @@ https://docs.mail.tm/
 
 https://github.com/srush/GPU-Puzzles
 
+# 隐私政策
+
+https://app-privacy-policy-generator.firebaseapp.com/#
+
