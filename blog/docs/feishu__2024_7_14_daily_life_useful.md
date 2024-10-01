@@ -346,3 +346,9 @@ https://github.com/srush/GPU-Puzzles
 
 https://app-privacy-policy-generator.firebaseapp.com/#
 
+# 跨平台开发框架
+
+## pake
+
+https://github.com/tw93/Pake?tab=readme-ov-file
+
