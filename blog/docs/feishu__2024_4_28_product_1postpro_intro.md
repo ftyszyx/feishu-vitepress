@@ -96,4 +96,6 @@ https://www.kuaixieya.com/
 
 发布平台
 
+<img src="/assets/KNIHbddZAoNwkbxk8yEcOuj5nQc.png" src-width="486" class="markdown-img m-auto" src-height="421" align="center"/>
+
 # 
