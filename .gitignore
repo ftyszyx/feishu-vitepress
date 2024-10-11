@@ -8,3 +8,4 @@ blog/test/
 blog/tmp
 blog/docs/.vitepress/cache/
 blog/public
+package-lock.json
