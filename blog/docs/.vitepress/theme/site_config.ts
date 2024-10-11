@@ -31,18 +31,13 @@ export const SiteConfig = {
       name: "other_platform",
     },
   ],
-  artalk: {
-    site: "myblog",
-    server: "https://arktalk_blog.qiancizhan.com/",
+  giscus: {
+    repo: "ftyszyx/feishu-vitepress",
+    repoId: "R_kgDOLgKBTQ",
+    category: "General",
+    categoryId: "DIC_kwDOLgKBTc4CjQRM",
+    data_mapping: "pathname",
   },
-  //lcoal test
-  // umami_url: "http://localhost:3000",
-  // umami_script: "http://localhost:3000/script.js",
-  // umami_website_id: "132ba91a-f8e4-4a19-b316-20b6267923ad",
-  //cloudflare
-  // umami_url: "https://umami_blog.qiancizhan.com",
-  // umami_script: "https://umami_blog.qiancizhan.com/script.js",
-  // umami_website_id: "8cf20240-e118-4863-8665-598549bec563",
   //bytefuse
   umami_url: "https://umami.bytefuse.cn",
   umami_script: "https://umami.bytefuse.cn/script.js",
