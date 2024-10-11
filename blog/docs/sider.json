@@ -138,6 +138,26 @@
           }
         ],
         "collapsed": false
+      },
+      {
+        "text": "网络相关",
+        "items": [
+          {
+            "text": "frp",
+            "link": "/feishu__2024_9_10_skill_network_frp"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "云服务器相关",
+        "items": [
+          {
+            "text": "阿里云",
+            "link": "/feishu__2024_9_10_skill_server_aliyun"
+          }
+        ],
+        "collapsed": false
       }
     ],
     "collapsed": false

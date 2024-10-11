@@ -358,3 +358,9 @@ https://app-privacy-policy-generator.firebaseapp.com/#
 
 https://github.com/tw93/Pake?tab=readme-ov-file
 
+# 支付平台
+
+## 爱发电
+
+https://afdian.com/
+
