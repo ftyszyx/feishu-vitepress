@@ -13,8 +13,7 @@
     "dev": "npm run dev -w blog",
     "build:blog": "npm run build:blog -w blog",
     "build:github": "npm run build:github -w blog",
-    "preview": "npm run preview -w blog",
-    "clean": "npm run clean -w feishu-pages"
+    "preview": "npm run preview -w blog"
   },
   "dependencies": {}
 }
