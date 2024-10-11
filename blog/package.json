@@ -16,7 +16,6 @@
   "devDependencies": {
     "@types/markdown-it": "^12.2.3",
     "@types/node": "^18.19.4",
-    "autoprefixer": "^10.4.19",
     "cross-env": "^7.0.3",
     "feed": "^4.2.2",
     "gray-matter": "^4.0.3",
