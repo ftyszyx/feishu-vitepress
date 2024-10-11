@@ -105,7 +105,7 @@ npm run dev
 
 [地址](https://blog.bytefuse.cn/feishu__2024_3_7_product_myblog_intro)
 
-# bug fix record
+# 修改记录
 
 1. 文本内的格式化内容，转成markdown时要去掉空格
    比如：
@@ -113,3 +113,53 @@ npm run dev
    **ab ** 是无效的
    **ab** 要转成这样才行
    ```
+
+## 2024/10/11
+### 删除artalk,使用giscus做评论系统
+artalk后台不好用，今天通过网友介绍，发现giscus这个评论系统，它依赖于github的discussions功能，自己不用部署服务器，非常简洁
+
+步骤：
+先按照giscus配置好你的github项目
+https://giscus.app/zh-CN
+
+配置好后，拿到你的配置
+
+```
+<script src="https://giscus.app/client.js"
+        data-repo="ftyszyx/feishu-vitepress"
+        data-repo-id=""
+        data-category="[在此输入分类名]"
+        data-category-id="[在此输入分类 ID]"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="light_tritanopia"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
+
+```
+
+修改blog\docs\.vitepress\theme\site_config.ts下的giscus配置
+```
+ giscus: {
+    repo: "ftyszyx/feishu-vitepress",
+    repoId: "",
+    category: "General",
+    categoryId: "",
+    data_mapping: "pathname",
+  },
+```
+
+完成
+
+效果如下：
+
+![image](https://github.com/user-attachments/assets/b272b772-35c4-42d5-8adf-ee6a7abf2f60)
+
+完美
+
+
