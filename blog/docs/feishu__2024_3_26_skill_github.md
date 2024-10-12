@@ -16,7 +16,7 @@ Github actions官方库：
 
 https://github.com/actions
 
-## 创建一个release
+## 如何创建一个release
 
 ### Create relase
 
@@ -86,53 +86,11 @@ jobs:
       asset_content_type: application/zip
 ```
 
-### Release comment
-
-## Github actions permissions
-
-https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs
-
-# github加速
+# github下载加速
 
 目前发现比较好的是
 
 https://gitmirror.com/files.html
 
 只用在github地址前加个前缀即可
-
-# Github actions 支持的系统
-
-https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/about-self-hosted-runners
-
-###  **Linux**
-
-- Red Hat Enterprise Linux 8 or later
-- CentOS 8 or later
-- Oracle Linux 8 or later
-- Fedora 29 or later
-- Debian 10 or later
-- Ubuntu 20.04 or later
-- Linux Mint 20 or later
-- openSUSE 15.2 or later
-- SUSE Enterprise Linux (SLES) 15 SP2 or later
-
-###  **Windows**
-
-- Windows 10 64-bit
-- Windows 11 64-bit
-- Windows Server 2016 64-bit
-- Windows Server 2019 64-bit
-- Windows Server 2022 64-bit
-
-###  **macOS**
-
-- macOS 11.0 (Big Sur) or later
-
-###  **Architectures**
-
-The following processor architectures are supported for the self-hosted runner application.
-
-- `x64` Linux, macOS, Windows.
-- `ARM64` Linux, macOS, Windows (currently in beta).
-- `ARM32` Linux.
 
