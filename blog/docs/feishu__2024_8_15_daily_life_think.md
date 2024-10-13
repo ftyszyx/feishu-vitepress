@@ -217,3 +217,63 @@ A股一直是一个政策市，和银行一样，政府要你怎么样就怎么�
 
 # 2024/10/12
 
+## 文章转发助手进度
+
+最近在开发一款 **文章同步多平台**的工具：
+
+具体方案是：
+
+1. 工具以浏览器插件形式存在
+2. 用户在飞书上写文章，在飞书打开文章页面时，会插入一个 **同步按键**
+3. 点同步后，弹出一个平台列表，用户选择平台列表后，点同步，系统就会将文章分发到各个平台
+4. 为了保证格式统一，以html的格式进行同步。
+
+因为工具是浏览器插件，浏览器中的登录信息都是共享的。
+
+## 已经实现的功能
+
+在飞书文档上插入了一个按钮
+
+<img src="/assets/GAuCb7G95oVxGRxU05JcyLfPn5b.png" src-width="1037" class="markdown-img m-auto" src-height="104" align="center"/>
+
+点此按钮后，弹出一个页面，现在只放了微信和知乎
+
+<img src="/assets/F5bmbHztPoRNDSxXmf6cVdn7nl8.png" src-width="450" class="markdown-img m-auto" src-height="240" align="center"/>
+
+其中微信没有登录过，所以显示了提示文字，点后会跳转微信公众平台去登录。
+
+这里还要把平台的账号名显示在上面，让用户知道，当前登陆的是哪个账号。
+
+文章转发功能还在调试
+
+## 感受
+
+chrome插件开发，调试真是一个头疼的问题
+
+就我这个工具目前的结构来说，分两个部分
+
+1. 一个是插入在飞书页面中的脚本，叫content脚本
+2. 另一个是运行在后台的backgroud脚本（负责和多个tab之间的通信）
+
+这两个脚本分别运行在独立的进程空间中，调用窗口是两个。
+
+当你修改代码时，如果想让chrome重新加载脚本，需要手动去
+
+chrome://extensions/里去点刷新去加载
+
+<img src="/assets/Id7mbrrRkorYCaxhMnrcNrJDnid.png" src-width="447" class="markdown-img m-auto" src-height="215" align="center"/>
+
+有点麻烦，于是我找了一下有没有什么解决方案，
+
+刚开始用的是一个叫vite-plugin-crx-mv3的库，国人开发的。
+
+https://github.com/Jervis2049/vite-plugin-crx-mv3
+
+这个库是检查文件有修改后，就触发vite build,然后让chrome reload.
+
+但是有个问题是，他background的脚本每次reload后，每次都是变成一个新进程。如果想开新进程的调试信息，就要打开新的调试终端，很麻烦。
+
+今天发现一个新的库
+
+https://github.com/crxjs/chrome-extension-tools
+
