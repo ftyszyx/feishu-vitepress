@@ -8,7 +8,13 @@ categories:
 
 # 登陆
 
+## logto
+
 https://github.com/logto-io/logto
+
+## Hanko
+
+https://github.com/teamhanko/hanko
 
 # 笔记软件 
 
@@ -23,6 +29,10 @@ https://www.notion.so/
 ## AFFiNE
 
 https://github.com/toeverything/<u>AFFiNE</u>
+
+# Siyuan
+
+https://b3log.org/siyuan/download.html
 
 # Unity
 
@@ -129,6 +139,12 @@ https://github.com/saoudrizwan/claude-dev
 ### supervison
 
 https://github.com/roboflow/supervision
+
+##  **Swarm** 
+
+https://github.com/openai/swarm?tab=readme-ov-file
+
+An educational framework exploring ergonomic, lightweight multi-agent orchestration.
 
 ## Fitten code
 
@@ -363,4 +379,10 @@ https://github.com/tw93/Pake?tab=readme-ov-file
 ## 爱发电
 
 https://afdian.com/
+
+# 商城
+
+## twenty
+
+https://github.com/twentyhq/twenty
 
