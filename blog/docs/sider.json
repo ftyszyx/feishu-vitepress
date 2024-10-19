@@ -1,6 +1,6 @@
 [
   {
-    "text": "首页",
+    "text": "Index",
     "link": "/index"
   },
   {
@@ -241,7 +241,7 @@
           },
           {
             "text": "给自己做一个1password：自已的密码管理器demo已经完成，简单介绍一下（三）",
-            "link": "/feishu__2024_8_7_product_onepassword_3doc"
+            "link": "/feishu__2024_8_6_product_onepassword_3doc"
           },
           {
             "text": "给自己做一个1password：安装及系统的初始化(四）",
@@ -290,7 +290,7 @@
       },
       {
         "text": "打印相关",
-        "link": "/feishu__2024_8_12_product_removebg"
+        "link": "/feishu__2024_8_11_product_removebg"
       },
       {
         "text": "其它有用的库",
@@ -332,7 +332,7 @@
       },
       {
         "text": "中国奥运代表团的精心准备：带空调出征巴黎",
-        "link": "/feishu__2024_6_21_other_platform_2024-7-21"
+        "link": "/feishu__2024_6_20_other_platform_2024-7-21"
       },
       {
         "text": "用飞书写个人博客",
