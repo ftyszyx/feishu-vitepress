@@ -105,6 +105,10 @@ npm run dev
 
 [地址](https://blog.bytefuse.cn/feishu__2024_3_7_product_myblog_intro)
 
+# 欢迎关注我的公众号
+
+![b5ede8e277a48aef57be1412d1ce63f](https://github.com/user-attachments/assets/f64dc734-394d-4230-b9b0-c430b054c820)
+
 # 修改记录
 
 1. 文本内的格式化内容，转成markdown时要去掉空格
@@ -197,7 +201,6 @@ https://giscus.app/zh-CN
    ![image](https://github.com/user-attachments/assets/bb80fc3f-8907-4a7d-a863-29ce0603c767)
 
 
-
    首页排序：
 
    ![image](https://github.com/user-attachments/assets/c11264b5-eca3-436f-b8be-97e9aa8989d4)
@@ -208,5 +211,9 @@ https://giscus.app/zh-CN
    坏处就是，之前的文章地址全丢了
 
 5. 去掉英文入口，文章翻译不是很准确，还是中文吧
+
+# 欢迎关注我的公众号
+
+![b5ede8e277a48aef57be1412d1ce63f](https://github.com/user-attachments/assets/f64dc734-394d-4230-b9b0-c430b054c820)
 
 
