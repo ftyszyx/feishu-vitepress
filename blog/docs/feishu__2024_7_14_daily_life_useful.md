@@ -386,3 +386,27 @@ https://afdian.com/
 
 https://github.com/twentyhq/twenty
 
+# 游戏
+
+## Grasscutter
+
+原神私服
+
+https://github.com/Grasscutters/Grasscutter
+
+# 闪退
+
+## Crashpad
+
+https://github.com/chromium/crashpad
+
+chrome的闪退跟踪工具
+
+# chrom插件
+
+## cloud-document-converter
+
+将飞书文档转成markdown的插件
+
+https://github.com/lujunji4113/cloud-document-converter?tab=readme-ov-file
+
