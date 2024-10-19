@@ -168,5 +168,36 @@ https://giscus.app/zh-CN
 ## 2024/10/19
 
 1. 标题可以直接使用文章标题
-2. 封面图片优先使用文章的封面
-3. 显示文章修改时间，并以这个时间排序
+
+  这样就可以不用写yaml了，飞书文档如下：
+  
+  ![image](https://github.com/user-attachments/assets/f0ff8127-e06f-4b5d-9fc0-ce078508f9eb)
+  
+  博客效果：
+  
+  ![image](https://github.com/user-attachments/assets/1e94f546-2d8a-4072-8fc3-1f063b3547b4)
+
+
+
+4. 封面图片优先使用文章的封面
+   
+  飞书可以编辑封面
+  
+   ![image](https://github.com/user-attachments/assets/af12ca06-f453-4c48-ba0d-ac743d73e4f3)
+
+   效果
+   
+   ![image](https://github.com/user-attachments/assets/fa2022cc-0704-41a3-9839-160494dabb2b)
+
+   
+6. 显示文章修改时间，并以这个时间排序
+
+   文章页面：
+   
+   ![image](https://github.com/user-attachments/assets/bb80fc3f-8907-4a7d-a863-29ce0603c767)
+
+   首页排序：
+
+   ![image](https://github.com/user-attachments/assets/c11264b5-eca3-436f-b8be-97e9aa8989d4)
+
+
