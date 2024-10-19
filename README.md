@@ -179,7 +179,7 @@ https://giscus.app/zh-CN
 
 
 
-4. 封面图片优先使用文章的封面
+2. 封面图片优先使用文章的封面
    
   飞书可以编辑封面
   
@@ -190,14 +190,23 @@ https://giscus.app/zh-CN
    ![image](https://github.com/user-attachments/assets/fa2022cc-0704-41a3-9839-160494dabb2b)
 
    
-6. 显示文章修改时间，并以这个时间排序
+3. 显示文章修改时间，并以这个时间排序
 
    文章页面：
    
    ![image](https://github.com/user-attachments/assets/bb80fc3f-8907-4a7d-a863-29ce0603c767)
 
+
+
    首页排序：
 
    ![image](https://github.com/user-attachments/assets/c11264b5-eca3-436f-b8be-97e9aa8989d4)
+
+4. 文章地址使用飞书文档的docment_id，不再用title.
+   
+   好处是以后文章的地址不会变了
+   坏处就是，之前的文章地址全丢了
+
+5. 去掉英文入口，文章翻译不是很准确，还是中文吧
 
 
