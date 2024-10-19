@@ -1,8 +1,8 @@
 ---
 cover: /assets/UIQvbp2CEoTUq4xC3jVcqBFqnGe.jpeg
 create_time: 1729303591
-edit_time: 1729310409
-title: 2024-10-19继续做飞书文档群发
+edit_time: 1729312177
+title: 2024-10-19 飞书文档群发助手
 categories:
   - other_platform
 ---

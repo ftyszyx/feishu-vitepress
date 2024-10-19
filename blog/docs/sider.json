@@ -8,136 +8,136 @@
     "items": [
       {
         "text": "vim学习笔记",
-        "link": "/feishu__2023_1_21_skill_vim"
+        "link": "/JW6KdzXvgoUq5Gxl938ciA4LnTb"
       },
       {
         "text": "Nginx",
-        "link": "/feishu__2024_3_25_skill_nginx"
+        "link": "/V3LFd0XzmoQ6cux0vk7cbjKinXB"
       },
       {
         "text": "github相关学习",
-        "link": "/feishu__2024_3_26_skill_github"
+        "link": "/M10ydnmzxoTvspxhBgicq2qunUd"
       },
       {
         "text": "青龙自动化工具(自动运维）",
-        "link": "/feishu__2024_3_26_skill_qinglong_auto"
+        "link": "/Sr3PdsY6cortqMx5OmJcVRKanBa"
       },
       {
         "text": "C#语言学习",
-        "link": "/feishu__2024_4_7_skill_c_sharp"
+        "link": "/SroSdelrooHsSWxxVLdcwAiVn4f"
       },
       {
         "text": "android_mem",
-        "link": "/feishu__2024_4_17_skill_android_mem"
+        "link": "/OMSkdde66opszexBBmtcoRXKnIf"
       },
       {
         "text": "软件破解",
-        "link": "/feishu__2024_4_19_skill_crack",
+        "link": "/PtMDdGT04oQ6CUxBKI9c7N2ynFg",
         "items": [
           {
             "text": "怎么破解android包",
-            "link": "/feishu__2024_6_31_skill_crack_android"
+            "link": "/M5aLdF2EiomjFIxlZ5NcnA9TnS0"
           }
         ],
         "collapsed": false
       },
       {
         "text": "Electron 开发学习",
-        "link": "/feishu__2024_4_23_skill_electron"
+        "link": "/OlpcdnfpGoUP0MxVBkace372nq8"
       },
       {
         "text": "网站的seo加强",
-        "link": "/feishu__2024_4_30_skill_website_seo"
+        "link": "/WlIDdyogiox0ryxOiP0cxYYFnMg"
       },
       {
         "text": "学飞源码",
         "items": [
           {
             "text": "vscode源码学习",
-            "link": "/feishu__2024_4_31_skill_learn_open_souce_vscode"
+            "link": "/MeEfdnRPhoNo8Lxg0Ohct0CUnud"
           },
           {
             "text": "appflowy体验",
-            "link": "/feishu__2024_7_15_skill_learn_open_souce_appflowy"
+            "link": "/KKDZdp6fNoDoQVxkrU5cac1InQc"
           },
           {
             "text": "Rustdesk使用",
-            "link": "/feishu__2024_4_28_skill_learn_open_souce_rustdesk"
+            "link": "/HERZdnJvZoEI5uxQXM3cn4SlnSc"
           }
         ],
         "collapsed": false
       },
       {
         "text": "爬虫",
-        "link": "/feishu__2024_5_4_skill_spider"
+        "link": "/SqYHdQqkRokphvx1l2PcwxVGnkd"
       },
       {
         "text": "vpn",
-        "link": "/feishu__2024_5_5_skill_vpn",
+        "link": "/ZcN8dH5BKoJhE3xqf4UcXExbn9d",
         "items": [
           {
             "text": "warp免费翻墙(备份）",
-            "link": "/feishu__2024_8_26_skill_vpn_warp"
+            "link": "/SZtcdMGgAorN7PxeQvpcf3Z2nOd"
           }
         ],
         "collapsed": false
       },
       {
         "text": "duckdb学习（目前1.0版本还不太稳定，有内存泄露风险，不推荐用于实际产品）",
-        "link": "/feishu__2024_5_12_skill_duckdb"
+        "link": "/NYIWdN9dooBAGWxsxYKccDf1nph"
       },
       {
         "text": "unity 学习笔记",
         "items": [
           {
             "text": "unity 内存分析工具",
-            "link": "/feishu__2024_6_17_skill_unity_unity_mem_profiler"
+            "link": "/Szt6dnZw5oAq0txNybecLmOSnif"
           },
           {
             "text": "定制unity profiler指标",
-            "link": "/feishu__2024_6_22_skill_unity_unity_profiler"
+            "link": "/XhZfdWEgso2RUhxpHDPcWTkrnjf"
           },
           {
             "text": "unity 内存定制内存分配",
-            "link": "/feishu__2024_6_24_skill_unity_unity_customize_mem_allocator"
+            "link": "/LpyldKzekoEsB5xssFpcwzEnn3M"
           },
           {
             "text": "il2cpp学习",
-            "link": "/feishu__2024_7_14_skill_unity_il2cpp"
+            "link": "/TBnxdqAXVohsozxJdSRczVMBnYb"
           },
           {
             "text": "unity渲染相关",
-            "link": "/feishu__2024_9_14_skill_unity_unity_render"
+            "link": "/EdwDdHf6NoKNOKxX9nEcBMA9nHg"
           },
           {
             "text": "render doc 学习",
-            "link": "/feishu__2024_9_18_skill_unity_render_doc"
+            "link": "/Y6CiduUMKoBmT2xdQbqczL27n6b"
           }
         ],
         "collapsed": false
       },
       {
         "text": "加密与解密",
-        "link": "/feishu__2024_6_27_skill_encrypt"
+        "link": "/ZhNcdL9SIoRvhqxXDqycoH3Jnsc"
       },
       {
         "text": "node.js学习",
-        "link": "/feishu__2024_6_29_skill_node"
+        "link": "/N19LdotYqonanuxLuTncPf2Lntc"
       },
       {
         "text": "flutter学习",
-        "link": "/feishu__2024_7_15_skill_flutter"
+        "link": "/JyhadG9etogmopxbEXDcOXZ2nve"
       },
       {
         "text": "rustdesk服务器搭建记录",
-        "link": "/feishu__2024_8_8_skill_rustdesk"
+        "link": "/K3HkdNzG8otF7axZiQlcqjcNnDe"
       },
       {
         "text": "网络相关",
         "items": [
           {
             "text": "frp",
-            "link": "/feishu__2024_9_10_skill_network_frp"
+            "link": "/EliLdfJD6oIb4uxQ1B5cjs63nuc"
           }
         ],
         "collapsed": false
@@ -150,15 +150,15 @@
     "items": [
       {
         "text": "有用的东西收集",
-        "link": "/feishu__2024_7_14_daily_life_useful"
+        "link": "/S2SpdPpu5o4aWNxysuJcKO8Rnoe"
       },
       {
         "text": "我一生的故事",
-        "link": "/feishu__2024_8_6_daily_life_life_time_story"
+        "link": "/Nn4Pd04zboHBqQxZhi8c50ddnAh"
       },
       {
         "text": "随感",
-        "link": "/feishu__2024_8_15_daily_life_think"
+        "link": "/UiEqdPkcWojVnux4R9AcEUy9n4e"
       }
     ],
     "collapsed": false
@@ -177,31 +177,31 @@
         "items": [
           {
             "text": "飞书博客-项目简介",
-            "link": "/feishu__2024_3_7_product_myblog_intro"
+            "link": "/QDBJdRMk3o7MEZx0GFXcs0qGnCe"
           },
           {
             "text": "飞书博客-项目日志",
-            "link": "/feishu__2024_2_26_product_myblog_project_record"
+            "link": "/FeKfdsltMoVyKZxESmRc53aRnod"
           },
           {
             "text": "飞书博客-演示",
-            "link": "/feishu__2024_3_16_product_myblog_demo"
+            "link": "/AEMudWOdroXrUPxZ6SxcYaQpnVd"
           },
           {
             "text": "飞书博客-博客配置说明",
-            "link": "/feishu__2024_3_16_product_myblog_blog_set"
+            "link": "/Mnd5dKwt9o683mxepRacc78fnPh"
           },
           {
             "text": "飞书博客-github action自动化流程说明",
-            "link": "/feishu__2024_3_16_product_myblog_github action intro"
+            "link": "/CYc8dt2gho5bQZxRLtEcNbxEn7b"
           },
           {
             "text": "飞书博客-第三方工具的配置",
-            "link": "/feishu__2024_3_25_product_myblog_third_lib"
+            "link": "/SNjddz0D2oaq4gxWBZ4chFy4nDg"
           },
           {
             "text": "博客自动同步到阿里云",
-            "link": "/feishu__2024_4_6_product_myblog_aliyun_auto"
+            "link": "/FouFdLA44o3Npqxq4ueclrGQnRe"
           }
         ],
         "collapsed": false
@@ -211,7 +211,7 @@
         "items": [
           {
             "text": "1postpro",
-            "link": "/feishu__2024_4_28_product_1postpro_intro"
+            "link": "/P7c9dbUrzoZc60xp4dVczy7nntb"
           }
         ],
         "collapsed": false
@@ -221,51 +221,51 @@
         "items": [
           {
             "text": "LockPass",
-            "link": "/feishu__2024_4_29_product_onepassword_intro"
+            "link": "/G4w5deRusoLzzQxUopGcQcNenoe"
           },
           {
             "text": "密码管理器",
-            "link": "/feishu__2024_5_21_product_onepassword_develop_log"
+            "link": "/MrNvd2mTpoIJiUxN3xXccMlgn7e"
           },
           {
             "text": "给自己做一个1password：序言（一）",
-            "link": "/feishu__2024_7_15_product_onepassword_1doc"
+            "link": "/RaTxdReWnoRe3nxDrtnccdSznNb"
           },
           {
             "text": "给自己做一个1password：安全设计方案（二）",
-            "link": "/feishu__2024_7_16_product_onepassword_2doc"
+            "link": "/Nj9EdQOCNoFl6jxsjSMcpEGinpF"
           },
           {
             "text": "密码管理器github说明",
-            "link": "/feishu__2024_7_31_product_onepassword_github"
+            "link": "/EA35deMveohjSIx65Qdc11efnub"
           },
           {
             "text": "给自己做一个1password：自已的密码管理器demo已经完成，简单介绍一下（三）",
-            "link": "/feishu__2024_8_6_product_onepassword_3doc"
+            "link": "/Gs14d2mgYoJ7rWxCExFcrplAnth"
           },
           {
             "text": "给自己做一个1password：安装及系统的初始化(四）",
-            "link": "/feishu__2024_8_7_product_onepassword_4doc"
+            "link": "/UdRVdoFLZoNllHxUoWicEyXlngb"
           },
           {
             "text": "给自己做一个1password：密码库的增删改查(五）",
-            "link": "/feishu__2024_8_7_product_onepassword_5doc"
+            "link": "/TWrXdJsghoD1QLxJaMrc4Z7rnCf"
           },
           {
             "text": "给自己做一个1password：密码的增删改查(六）",
-            "link": "/feishu__2024_8_7_product_onepassword_6doc"
+            "link": "/W6CVddh92oYJ2UxrLemcYTWinsh"
           },
           {
             "text": "给自己做一个1password：密码的自动输入和快速搜索(七）",
-            "link": "/feishu__2024_8_7_product_onepassword_7doc"
+            "link": "/LFWAdUUqEoY8UNxIM1IcMzitnqb"
           },
           {
             "text": "给自己做一个1password：软件设置相关（八）",
-            "link": "/feishu__2024_8_7_product_onepassword_8doc"
+            "link": "/MMgkdJq9boLufrx0cH5c0fj3nCd"
           },
           {
             "text": "给自己做一个1password：其它快捷功能(九）",
-            "link": "/feishu__2024_8_7_product_onepassword_9doc"
+            "link": "/HN4zdYOqjo9LWaxunNZcDRSpnMf"
           }
         ],
         "collapsed": false
@@ -275,26 +275,26 @@
         "items": [
           {
             "text": "bugly分析工具说明",
-            "link": "/feishu__2024_4_31_product_bugly_tool_intro"
+            "link": "/GS12do9bvo6Y07xATrBcXMvrnhb"
           },
           {
             "text": "bugly分析工具-开发记录",
-            "link": "/feishu__2024_5_3_product_bugly_tool_develop_log"
+            "link": "/TztEdiQsooDkbgx6tGqcE1I9nBh"
           }
         ],
         "collapsed": false
       },
       {
         "text": "高校毕业生招聘平台",
-        "link": "/feishu__2024_8_10_product_jobs"
+        "link": "/Qx02dab9voCojCx1iufcQmWhnrg"
       },
       {
         "text": "打印相关",
-        "link": "/feishu__2024_8_11_product_removebg"
+        "link": "/Gv1FdCMQMowJl0xDnVhc9O8knSh"
       },
       {
         "text": "其它有用的库",
-        "link": "/feishu__2024_8_19_product_other_lib"
+        "link": "/LpaadPxipozzNqxGDk8cybjEnub"
       }
     ],
     "collapsed": false
@@ -304,55 +304,55 @@
     "items": [
       {
         "text": "怎么让ai辅助你写文章",
-        "link": "/feishu__2024_5_12_other_platform_2024-6-12"
+        "link": "/Hp08dPXThotDHPxYBzScMMHVnRc"
       },
       {
         "text": "为什么夏承曦想退学这么难",
-        "link": "/feishu__2024_5_27_other_platform_2024-6-27"
+        "link": "/MHZ0dZTdjorB48xvbLhc50SDnQg"
       },
       {
         "text": "从姜萍事件我看到的人性丑陋",
-        "link": "/feishu__2024_6_2_other_platform_2024-7-2"
+        "link": "/GKrpdbFIPoT6P2xPvy1ci2rMnec"
       },
       {
         "text": "打破互联网巨头的数字殖民",
-        "link": "/feishu__2024_6_6_other_platform_2024-7-6"
+        "link": "/KJtsdJeKcoKnytxsdHpcpWujn0c"
       },
       {
         "text": "上个破班，别把自己搭进去",
-        "link": "/feishu__2024_6_6_other_platform_2024-7-7"
+        "link": "/YQu8dJVbDob2wwxnDl1coi6gnSc"
       },
       {
         "text": "3分钟开通openai plus账号教程（2024年亲测有效）",
-        "link": "/feishu__2024_6_10_other_platform_2024-7-10"
+        "link": "/F5ASd439VoIH5ExwCZ8clnBZnKB"
       },
       {
         "text": "选择比努力重要",
-        "link": "/feishu__2024_6_20_other_platform_2024-7-20"
+        "link": "/Q6tydXKF9oo4XqxVYEkcEvb2nVe"
       },
       {
         "text": "中国奥运代表团的精心准备：带空调出征巴黎",
-        "link": "/feishu__2024_6_20_other_platform_2024-7-21"
+        "link": "/Kj6MdOFCuoBRKexjUEdcFWdmn9o"
       },
       {
         "text": "用飞书写个人博客",
-        "link": "/feishu__2024_6_22_other_platform_2024-7-22"
+        "link": "/TFdndRm07ocx0AxYyErcJN55nSg"
       },
       {
         "text": "董宇辉：从打工者到老板的华丽转身",
-        "link": "/feishu__2024_6_25_other_platform_2024-7-25"
+        "link": "/EIOwdXeEkoCJCNxlCSacnlrAnRb"
       },
       {
         "text": "俞敏洪：将上市公司核心拱手相让，还自吹自擂，够奇葩",
-        "link": "/feishu__2024_6_26_other_platform_2024-7-26"
+        "link": "/KlQFdrz1XoMLI9xH74ScoZ6xnKe"
       },
       {
         "text": "乐怡，希望你能有不一样的人生",
-        "link": "/feishu__2024_6_29_other_platform_2024-7-29"
+        "link": "/IHqOdw9f2oTmLWxfVX4c2lytnPg"
       },
       {
-        "text": "2024-10-19继续做飞书文档群发",
-        "link": "/feishu__2024_9_19_other_platform_2024-10-19继续做飞书文档群发"
+        "text": "2024-10-19 飞书文档群发助手",
+        "link": "/VBz6dDEmDoNNsbxxAWSccKC0n6d"
       }
     ],
     "collapsed": false
