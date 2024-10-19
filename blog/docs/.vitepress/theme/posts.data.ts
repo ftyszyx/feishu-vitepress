@@ -1,6 +1,6 @@
 import { createContentLoader } from "vitepress";
 import { formatShowDate } from "./utils";
-import { LangDef, Post } from "./type_def";
+import { Post, PostLang } from "./type_def";
 declare const data: Post[];
 export { data };
 export default createContentLoader(["/*.md", "/en/*.md"], {
@@ -21,13 +21,14 @@ export default createContentLoader(["/*.md", "/en/*.md"], {
           cover: frontmatter.cover || "/normal_cover.png",
           excerpt,
           date: formatDate(lan, frontmatter.create_time),
+          edit_time: formatDate(lan, frontmatter.edit_time),
         } as Post;
       })
-      .sort((a, b) => b.date.time - a.date.time);
+      .sort((a, b) => b.edit_time.time - a.edit_time.time);
   },
 });
 
-export function formatDate(lan: LangDef, create_time: number): Post["date"] {
+export function formatDate(lan: PostLang, create_time: number): Post["date"] {
   const date = new Date(create_time * 1000);
   date.setUTCHours(12);
   return {

@@ -3,11 +3,14 @@ import { computed, onMounted } from "vue";
 import { useData, useRoute } from "vitepress";
 import { get_lang_text } from "../constant";
 const { frontmatter, lang, page } = useData();
-const { create_time } = frontmatter.value;
+const { create_time, edit_time } = frontmatter.value;
 const route = useRoute();
 const title = computed(() => frontmatter.value.title);
-const date = computed(() => {
-  return new Date(create_time * 1000).toLocaleDateString();
+const create_time_str = computed(() => {
+  return new Date(create_time * 1000).toLocaleString();
+});
+const edit_time_str = computed(() => {
+  return new Date(edit_time * 1000).toLocaleString();
 });
 const cur_lang = computed(() => {
   return lang.value;
@@ -63,7 +66,15 @@ onMounted(() => {});
             >{{ get_lang_text("create_time", lang) }}:</span
           >
           <span>
-            <span> {{ date }} </span>
+            <span> {{ create_time_str }} </span>
+          </span>
+        </div>
+        <div>
+          <span class="mr-1 font-medium"
+            >{{ get_lang_text("edit_time", lang) }}:</span
+          >
+          <span>
+            <span> {{ edit_time_str }} </span>
           </span>
         </div>
         <div>

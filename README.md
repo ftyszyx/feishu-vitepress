@@ -115,7 +115,9 @@ npm run dev
    ```
 
 ## 2024/10/11
+
 ### 删除artalk,使用giscus做评论系统
+
 artalk后台不好用，今天通过网友介绍，发现giscus这个评论系统，它依赖于github的discussions功能，自己不用部署服务器，非常简洁
 
 步骤：
@@ -144,6 +146,7 @@ https://giscus.app/zh-CN
 ```
 
 修改blog\docs\.vitepress\theme\site_config.ts下的giscus配置
+
 ```
  giscus: {
     repo: "ftyszyx/feishu-vitepress",
@@ -162,4 +165,8 @@ https://giscus.app/zh-CN
 
 完美
 
+## 2024/10/19
 
+1. 标题可以直接使用文章标题
+2. 封面图片优先使用文章的封面
+3. 显示文章修改时间，并以这个时间排序

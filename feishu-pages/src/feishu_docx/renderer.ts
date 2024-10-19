@@ -58,10 +58,12 @@ export class Renderer {
    * @param token
    */
   addFileToken(type: "file" | "image", token: string) {
-    this.fileTokens[token] = {
+    const file_token = {
       token,
       type,
     };
+    this.fileTokens[token] = file_token;
+    return file_token;
   }
 }
 

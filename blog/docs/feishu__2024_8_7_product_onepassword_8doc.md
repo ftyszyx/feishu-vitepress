@@ -1,6 +1,7 @@
 ---
 title: 给自己做一个1password：软件设置相关（八）
 create_time: 1725715918
+edit_time: 1725719642
 categories:
   - product
 ---

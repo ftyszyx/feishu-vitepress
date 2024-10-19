@@ -2,7 +2,9 @@
 title: vim学习笔记
 tags:
   - develop
+cover: /assets/FDpIbhSbsoYQLoxGRO2c2w0ZnFh.jpeg
 create_time: 1676970303
+edit_time: 1727250619
 categories:
   - skill
 ---

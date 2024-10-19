@@ -6,6 +6,7 @@ keywords:
   - duckdb
 cover: /assets/CVZzbvGWXoRmgzxD0EOcLujSn8b.png
 create_time: 1718175617
+edit_time: 1725345121
 categories:
   - skill
 ---

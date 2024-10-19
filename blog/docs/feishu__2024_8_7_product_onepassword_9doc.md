@@ -1,6 +1,7 @@
 ---
 title: 给自己做一个1password：其它快捷功能(九）
 create_time: 1725716328
+edit_time: 1725719648
 categories:
   - product
 ---

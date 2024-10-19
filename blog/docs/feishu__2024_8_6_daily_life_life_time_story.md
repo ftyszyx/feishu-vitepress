@@ -2,6 +2,7 @@
 title: 我一生的故事
 cover: /assets/YcLIbwjdiouS6qxixyqcDjbqn6e.png
 create_time: 1725594305
+edit_time: 1725638431
 categories:
   - daily_life
 ---

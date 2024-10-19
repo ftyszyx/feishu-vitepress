@@ -2,12 +2,13 @@
 import { useData, withBase } from "vitepress";
 import { ref, onMounted, computed } from "vue";
 import { getFormatNumber } from "../utils";
-const { lang } = useData();
+import { Post } from "../type_def";
 const props = defineProps<{
   url: string;
   title: string;
   cover: string;
-  date: Object;
+  date: Post["date"];
+  edit_time: Post["edit_time"];
   categories: string[];
   hit: number;
   isArticleListHitsFetched: boolean;
@@ -33,11 +34,6 @@ const articleUrl = computed(() => {
   return withBase(props.url);
 });
 const previewImageUrl = computed(() => {
-  // if (!props.cover) {
-  //   console.error("Cover image URL is not provided!");
-  //   return "";
-  // }
-  // console.log("cover", props.cover);
   if (props.cover) return withBase(props.cover);
   return "";
 });
@@ -108,7 +104,7 @@ onMounted(() => {});
           <line x1="4" y1="11" x2="20" y2="11" />
           <rect x="8" y="15" width="2" height="2" />
         </svg>
-        {{ date.formatShowDate }}
+        {{ edit_time.formatShowDate }}
       </p>
 
       <div class="flex items-center justify-items-end">

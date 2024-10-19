@@ -164,31 +164,31 @@ export enum CodeLanguage {
 export const getCodeLanguage = (code: CodeLanguage) => {
   switch (code) {
     case CodeLanguage.PlainText:
-      return 'text';
+      return "text";
     case CodeLanguage.AssemblyLanguage:
-      return 'assembly';
+      return "assembly";
     case CodeLanguage.CPlusPlus:
-      return 'cpp';
+      return "cpp";
     case CodeLanguage.CoffeeScript:
-      return 'coffee';
+      return "coffee";
     case CodeLanguage.Dockerfile:
-      return 'docker';
+      return "docker";
     case CodeLanguage.FoxPro:
-      return 'foxpro';
+      return "foxpro";
     case CodeLanguage.TypeScript:
-      return 'ts';
+      return "ts";
     case CodeLanguage.JavaScript:
-      return 'js';
+      return "js";
     case CodeLanguage.Rust:
-      return 'rs';
+      return "rs";
     case CodeLanguage.Python:
-      return 'py';
+      return "py";
     case CodeLanguage.Ruby:
-      return 'rb';
+      return "rb";
     case CodeLanguage.Markdown:
-      return 'md';
+      return "md";
     default:
-      return CodeLanguage[code]?.toLowerCase() || '';
+      return CodeLanguage[code]?.toLowerCase() || "";
   }
 };
 
@@ -352,20 +352,20 @@ export enum CalloutBackgroundColor {
 }
 
 export const CalloutBackgroundColorMap = {
-  1: '#fef2f2',
-  2: '#fff7ed',
-  3: '#fefce8',
-  4: '#f0fdf4',
-  5: '#eff6ff',
-  6: '#faf5ff',
-  7: '#f9fafb',
-  8: '#fecaca',
-  9: '#fed7aa',
-  10: '#fef08a',
-  11: '#bbf7d0',
-  12: '#bfdbfe',
-  13: '#e9d5ff',
-  14: '#e5e7eb',
+  1: "#fef2f2",
+  2: "#fff7ed",
+  3: "#fefce8",
+  4: "#f0fdf4",
+  5: "#eff6ff",
+  6: "#faf5ff",
+  7: "#f9fafb",
+  8: "#fecaca",
+  9: "#fed7aa",
+  10: "#fef08a",
+  11: "#bbf7d0",
+  12: "#bfdbfe",
+  13: "#e9d5ff",
+  14: "#e5e7eb",
 };
 
 export type FontBackgroundColor = CalloutBackgroundColor;
@@ -385,23 +385,23 @@ export enum CalloutBorderColor {
 export type FontColor = CalloutBorderColor;
 
 export const CalloutBorderColorMap = {
-  1: '#fecaca',
-  2: '#fed7aa',
-  3: '#fef08a',
-  4: '#bbf7d0',
-  5: '#bfdbfe',
-  6: '#e9d5ff',
-  7: '#e5e7eb',
+  1: "#fecaca",
+  2: "#fed7aa",
+  3: "#fef08a",
+  4: "#bbf7d0",
+  5: "#bfdbfe",
+  6: "#e9d5ff",
+  7: "#e5e7eb",
 };
 
 export const FontColorMap = {
-  1: '#ef4444',
-  2: '#f97316',
-  3: '#eab308',
-  4: '#22c55e',
-  5: '#3b82f6',
-  6: '#a855f7',
-  7: '#6b7280',
+  1: "#ef4444",
+  2: "#f97316",
+  3: "#eab308",
+  4: "#22c55e",
+  5: "#3b82f6",
+  6: "#a855f7",
+  7: "#6b7280",
 };
 
 export interface CalloutBlock {
@@ -466,17 +466,36 @@ export interface Block {
 export function getAlignStyle(align: StyleAlign) {
   switch (align) {
     case StyleAlign.Left:
-      return 'left';
+      return "left";
     case StyleAlign.Center:
-      return 'center';
+      return "center";
     case StyleAlign.Right:
-      return 'right';
+      return "right";
     default:
-      return 'left';
+      return "left";
   }
 }
 
 export interface FileToken {
   token: string;
-  type: 'file' | 'image';
+  type: "file" | "image";
+}
+
+export interface DocInfo {
+  document_id: string;
+  revision_id: string;
+  title: string;
+  cover: {
+    token: string;
+    offset_ratio_x: number;
+    offset_ratio_y: number;
+  };
+  display_setting: {
+    show_authors: boolean;
+    show_create_time: boolean;
+    show_comment_count: boolean;
+    show_pv: boolean;
+    show_uv: boolean;
+    show_like_count: boolean;
+  };
 }

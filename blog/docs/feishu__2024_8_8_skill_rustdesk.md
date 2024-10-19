@@ -1,6 +1,7 @@
 ---
 title: rustdesk服务器搭建记录
 create_time: 1725767866
+edit_time: 1725784131
 categories:
   - skill
 ---

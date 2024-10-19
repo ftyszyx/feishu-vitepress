@@ -1,6 +1,7 @@
 ---
 title: 给自己做一个1password：序言（一）
 create_time: 1723686323
+edit_time: 1725677104
 categories:
   - product
 ---

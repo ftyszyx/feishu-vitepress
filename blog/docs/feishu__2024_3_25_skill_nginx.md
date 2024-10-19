@@ -1,5 +1,6 @@
 ---
 create_time: 1714032130
+edit_time: 1717034948
 title: Nginx
 categories:
   - skill

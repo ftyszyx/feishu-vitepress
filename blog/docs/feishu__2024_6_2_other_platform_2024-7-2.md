@@ -2,6 +2,7 @@
 title: 从姜萍事件我看到的人性丑陋
 cover: /assets/Vps1bpGvooYuVcxvqJncv1eunth.png
 create_time: 1719883382
+edit_time: 1719915684
 categories:
   - other_platform
 ---

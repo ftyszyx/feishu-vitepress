@@ -3,6 +3,7 @@ title: 给自己做一个1password：安装及系统的初始化(四）
 keywords:
   - lockpass
 create_time: 1725678871
+edit_time: 1725686065
 categories:
   - product
 ---

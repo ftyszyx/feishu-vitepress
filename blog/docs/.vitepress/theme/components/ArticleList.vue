@@ -35,7 +35,7 @@ const filteredPosts = computed(() => {
         )
       : posts.value;
     return filter_posts.sort((a, b) => {
-      return b.date.time - a.date.time;
+      return b.edit_time.time - a.edit_time.time;
     });
   }
 });
@@ -149,13 +149,22 @@ onMounted(() => {
       <ul class="flex flex-wrap pt-6 mx-3 sd:mx-1 md:mx-0">
         <li
           class="flex flex-col px-4 py-3"
-          v-for="{ url, title, date, cover, categories, hit } of articleList"
+          v-for="{
+            url,
+            title,
+            date,
+            edit_time,
+            cover,
+            categories,
+            hit,
+          } of articleList"
           :key="url"
         >
           <ArticleCard
             :url="url"
             :title="title || ''"
             :date="date"
+            :edit_time="edit_time"
             :cover="cover || ''"
             :categories="categories || []"
             :hit="hit || 0"

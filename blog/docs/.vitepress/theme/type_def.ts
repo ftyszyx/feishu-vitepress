@@ -8,6 +8,11 @@ export interface Post {
     string: string;
     formatShowDate: string;
   };
+  edit_time: {
+    time: number;
+    string: string;
+    formatShowDate: string;
+  };
   cover: string;
   categories: string[];
   excerpt: string | undefined;
