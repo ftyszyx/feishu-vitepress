@@ -1,6 +1,7 @@
 ---
+cover: /assets/ZsmZbpMm0oaUCOxSpzGcxQjvn4b.gif
 create_time: 1714032130
-edit_time: 1717034948
+edit_time: 1729475407
 title: Nginx
 categories:
   - skill

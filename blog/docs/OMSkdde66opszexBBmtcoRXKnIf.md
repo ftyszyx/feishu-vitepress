@@ -1,6 +1,7 @@
 ---
+cover: /assets/WyjXbPIxNoBq2HxeJFJcMmKJnLe.jpeg
 create_time: 1715931285
-edit_time: 1719972992
+edit_time: 1729475493
 title: android_mem
 categories:
   - skill
