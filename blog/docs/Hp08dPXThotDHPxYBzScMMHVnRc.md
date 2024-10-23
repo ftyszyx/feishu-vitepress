@@ -2,7 +2,7 @@
 title: 怎么让ai辅助你写文章
 cover: /assets/UHPTbVGOFo8nS3x3SwIce59Gnkc.jpeg
 create_time: 1718173337
-edit_time: 1718174917
+edit_time: 1729567931
 categories:
   - other_platform
 ---
@@ -47,4 +47,10 @@ AI翻译工具让您能够轻松地将文章翻译成多种语言，拓展读者
 ##  **结论**
 
 利用AI进行写作已经成为提高生产力和创意的有效手段。无论是生成文章主题、撰写初稿、优化内容，还是翻译多语言版本，AI工具都能提供有力的支持。在使用AI的过程中，我们应结合自身的创作能力，确保内容的原创性和质量。希望本篇文章能为您揭示AI写作的潜力，助您在内容创作的道路上走得更远。
+
+<img src="/assets/ITT2boPqroRgurxJPigcTacon6c.jpeg" src-width="612" class="markdown-img m-auto" src-height="430" align="center"/>
+
+<img src="/assets/Hg8gbN4Rio1AjjxvqsUcV8zhnqf.jpeg" src-width="612" class="markdown-img m-auto" src-height="430" align="center"/>
+
+<img src="/assets/SJwJbFY16omBmLxPsFjcOuhtnFd.jpeg" src-width="612" class="markdown-img m-auto" src-height="430" align="center"/>
 
