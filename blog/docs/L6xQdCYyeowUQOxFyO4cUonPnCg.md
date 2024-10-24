@@ -1,8 +1,8 @@
 ---
-cover: /assets/U3VgbfEdwoMT6JxnjtaceD2qnBb.jpeg
+cover: /assets/Nv21blil6oZkRMx4rDUciaHOnMd.png
 create_time: 1729475605
-edit_time: 1729590290
-title: '2024-10-21'
+edit_time: 1729690910
+title: 2024-10-21 免费好用的文章封面制作神器（试用）
 categories:
   - other_platform
 ---
@@ -10,61 +10,51 @@ categories:
 
 写文章最烦心的事就是选封面图片。
 
-当然你也可以不选，但是没有封面图片，这个文章在博客里面的看起来就不够美。
+我一般是在google和百度里搜索，找些匹配的。
 
-你也可以随机配一个，但是肯定不怎么匹配文章的意思。
+最近发现一个开源免费的封面制作工具：coverview(代码地址：https://github.com/rutikwankhade/CoverView）
 
-所以如果你都打算配一个好的封面图片，那肯定就选一个匹配的。
+为方便试用，我也部署了一个：https://makecover.1postpro.com/zh-CN/editor（欢迎访问）
 
-从哪找匹配你文章的封面呢？这就是问题所在。
+目前网站是英文，还没翻译成中文 。
 
-我一般是在google和百度里搜索，但是都不满意。要是ai能帮我直接画出来就好了。
+简单介绍一下这个工具的工作流
 
-有这种ai吗？目前没找到。
+## 选背景图
 
-找到一个开源的，手动拼接的
+中间是背景图搜索区域，图片都是从https://unsplash.com/里搜索的，upsplash里面的图片都是免费的没有版权风险，而且量很多。缺点就是对中文不友好，建议用英文搜索。
 
-coverview:
+<img src="/assets/ZuX8bk71ZoitqgxA1fFc9Bb7nye.png" src-width="747" class="markdown-img m-auto" src-height="350" align="center"/>
 
-https://github.com/rutikwankhade/CoverView
+## 选择封面图结构
 
-另外也有一个商业的软件
+在选好图片后，
 
-https://www.gaoding.com/templates/gongzhonghaofengmiantuzidongshengcheng
+右边有好多模板可选，我就选第一个吧
 
-今天做个事，把coverview部署到服务器上。
+<img src="/assets/SxBfbqg15o6e6fxZszhcvXDgnQ2.png" src-width="1068" class="markdown-img m-auto" src-height="470" align="center"/>
 
-先将coverview项目fork到你的github下
+## 写标题和简介
 
-https://github.com/rutikwankhade/CoverView
+左边是写标题的
 
-很简单，只要你有一个cloudflare账号，然后在里面买一个域名即可
+<img src="/assets/Df7hbN3HMoi6EnxGwnxcJ5hbnNg.png" src-width="1148" class="markdown-img m-auto" src-height="529" align="center"/>
 
- 步骤如下：
+## 完成
 
-打开cloudflare官网：
+点中间的下载，就可以下载这个图片了
 
-https://dash.cloudflare.com/
+<img src="/assets/Bi7abgRrdoFcPZxhvnXcnV6knBE.png" src-width="848" class="markdown-img m-auto" src-height="507" align="center"/>
 
-移过workers和pages
+ 
 
-<img src="/assets/WZSnb9XIzoD8H2xXqqMcU8a9n6K.png" src-width="322" class="markdown-img m-auto" src-height="318" align="center"/>
+## 总结 
 
-# 创建一个worker
+功能虽然简单，但也够用了。
 
-<img src="/assets/NArpbDUWNoisyoxAD6gcXdMoncc.png" src-width="848" class="markdown-img m-auto" src-height="165" align="center"/>
+关键是有源码，后面想优化也容易。
 
-选择pages
+下一次介绍一下怎么免费搭一个自己的coverview网站。
 
-<img src="/assets/UTKHbyuoUoO7GyxdbFEcscvBnzf.png" src-width="1203" class="markdown-img m-auto" src-height="367" align="center"/>
-
-配置项目构建命令
-
-<img src="/assets/W0fobZcOsoaEuAxxJq6cY5d3nP4.png" src-width="729" class="markdown-img m-auto" src-height="388" align="center"/>
-
-点构建，即可自动编译出静态网站
-
-构建成功后，clouder会为你分配一个临时的域名，并且可以直接访问了
-
-<img src="/assets/RhsCb0WfpoI53JxBY5ccbkrDnUb.png" src-width="1247" class="markdown-img m-auto" src-height="152" align="center"/>
+附上我自己的coverview:https://makecover.1postpro.com/zh-CN/editor。
 

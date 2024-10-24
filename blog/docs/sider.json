@@ -106,12 +106,16 @@
             "link": "/TBnxdqAXVohsozxJdSRczVMBnYb"
           },
           {
-            "text": "unity渲染相关",
+            "text": "Unity渲染相关",
             "link": "/EdwDdHf6NoKNOKxX9nEcBMA9nHg"
           },
           {
-            "text": "render doc 学习",
+            "text": "Render doc 学习",
             "link": "/Y6CiduUMKoBmT2xdQbqczL27n6b"
+          },
+          {
+            "text": "catlikecoding教程学习",
+            "link": "/W0PGdWPssoPEVzxTwsUcE4amn7b"
           }
         ],
         "collapsed": false
@@ -271,26 +275,10 @@
         "collapsed": false
       },
       {
-        "text": "bugly分析工具",
-        "items": [
-          {
-            "text": "bugly分析工具说明",
-            "link": "/GS12do9bvo6Y07xATrBcXMvrnhb"
-          },
-          {
-            "text": "bugly分析工具-开发记录",
-            "link": "/TztEdiQsooDkbgx6tGqcE1I9nBh"
-          }
-        ],
-        "collapsed": false
+        "text": "高校毕业生招聘平台"
       },
       {
-        "text": "高校毕业生招聘平台",
-        "link": "/Qx02dab9voCojCx1iufcQmWhnrg"
-      },
-      {
-        "text": "打印相关",
-        "link": "/Gv1FdCMQMowJl0xDnVhc9O8knSh"
+        "text": "打印相关"
       },
       {
         "text": "其它有用的库",
@@ -355,12 +343,16 @@
         "link": "/VBz6dDEmDoNNsbxxAWSccKC0n6d"
       },
       {
-        "text": "2024-10-21",
+        "text": "2024-10-21 免费好用的文章封面制作神器（试用）",
         "link": "/L6xQdCYyeowUQOxFyO4cUonPnCg"
       },
       {
         "text": "2024-10-22 ",
         "link": "/PynKdcMyOoGk60x2tI0cmmXnn9c"
+      },
+      {
+        "text": "2024-10-23 零成本部署一个工具网站",
+        "link": "/IlVHdCVsgobHBlxs2vacm0eKnjd"
       }
     ],
     "collapsed": false

@@ -1,7 +1,8 @@
 ---
-title: unity渲染相关
+cover: /assets/PV0sbFKGnoPf5WxzmZJc7XchnEf.gif
 create_time: 1728872372
-edit_time: 1728956539
+edit_time: 1729668711
+title: Unity渲染相关
 categories:
   - skill
 ---
@@ -10,6 +11,14 @@ categories:
 # 官方文档
 
 https://docs.unity3d.com/2022.3/Documentation/Manual/render-pipelines.html
+
+# 一些教程
+
+## Catlike coding
+
+非常细节，一步步的指导
+
+https://catlikecoding.com/unity/tutorials/rendering/
 
 # 渲染要做的事
 
@@ -55,4 +64,30 @@ Project-setting中可以设置
 只能算4个点光源
 
 ### Deferred Shading
+
+# Shader
+
+shader是gpu上的程序
+
+unity有很多内置的shader.参考下表
+
+https://docs.unity3d.com/Manual/shader-built-in.html
+
+## 怎么写shader
+
+可以用shader graph,hlsl语言
+
+### Shader graph
+
+https://docs.unity3d.com/Packages/com.unity.shadergraph@17.0/manual/index.html
+
+### HLSL语言
+
+https://docs.unity3d.com/Manual/writing-shader-writing-shader-programs-hlsl.html
+
+### Shaderlab
+
+Unity 定制的语言
+
+https://docs.unity3d.com/Manual/SL-Reference.html
 
