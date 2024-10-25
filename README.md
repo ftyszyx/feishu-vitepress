@@ -103,7 +103,7 @@ npm run dev
 
 # 详细说明
 
-[地址](https://blog.bytefuse.cn/feishu__2024_3_7_product_myblog_intro)
+[地址](https://ftyszyx.github.io/feishu-vitepress/QDBJdRMk3o7MEZx0GFXcs0qGnCe)
 
 # 欢迎关注我的公众号
 
