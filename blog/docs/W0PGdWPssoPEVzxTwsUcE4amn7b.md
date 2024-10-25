@@ -1,7 +1,7 @@
 ---
 cover: /assets/UiOlblBcvo4J2Px2TLjc2tJQnEc.png
 create_time: 1729668893
-edit_time: 1729679747
+edit_time: 1729734615
 title: catlikecoding教程学习
 categories:
   - skill
@@ -112,6 +112,8 @@ surface.Albedo = input.worldPos;
 
 ### 用urp写shader
 
+#### 新建
+
 这回使用shader graph图形化工具
 
 <img src="/assets/H3TsbL8t5ofNxFxFhL7cbOsunQg.png" src-width="690" class="markdown-img m-auto" src-height="332" align="center"/>
@@ -120,7 +122,24 @@ surface.Albedo = input.worldPos;
 
 <img src="/assets/R2TNbS5GBokMekxe1CrcXQHOn9b.png" src-width="692" class="markdown-img m-auto" src-height="536" align="center"/>
 
+#### 增加用户可调属性
+
 增加smooth属性
 
 <img src="/assets/V1Wbbt6sroR8aYxUcNPcOkB0nag.png" src-width="438" class="markdown-img m-auto" src-height="218" align="center"/>
+
+#### 增加内部节点
+
+<div class="flex gap-3 columns-2" column-size="2">
+<div class="w-[45%]" width-ratio="45">
+<img src="/assets/YRXZbWfovo0I63xyLp1cjQfjnnc.png" src-width="330" class="markdown-img m-auto" src-height="399" align="center"/>
+</div>
+<div class="w-[54%]" width-ratio="54">
+<img src="/assets/Xpy7bXtWyoN6h1xfGMCcELvfnDh.png" src-width="283" class="markdown-img m-auto" src-height="285" align="center"/>
+</div>
+</div>
+
+最终同样效果
+
+<img src="/assets/U3cqbqXzJofKJ0xWQc7ckri8nKh.png" src-width="1282" class="markdown-img m-auto" src-height="631" align="center"/>
 
