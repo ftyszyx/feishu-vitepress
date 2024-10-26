@@ -8,7 +8,7 @@ keywords:
   - openai key
 cover: /assets/Q9EAbUv76oDs0kxd5z4cfFRhnxf.png
 create_time: 1720591905
-edit_time: 1720748649
+edit_time: 1729843970
 categories:
   - other_platform
 ---
@@ -18,7 +18,7 @@ categories:
 
 现在是一个AI的时代。AI可以帮你翻译语言，生成文章，生成图片，生成ui，基本无所不能。
 
-而目前最强大的AI平台就是OpenAI。可惜的是OpenAI对国内是封锁的。你如果想要开通OpenAI。需要准备一个 **国外的手机号**和 **国外银行卡**才行。之前我一直没找到好方法，直到前几天发现了[wildcard](https://wildcard.com.cn/i/FRQUAUVU)，才成功注册成功了open ai的账号充值成功，感谢[wildcard](https://wildcard.com.cn/i/FRQUAUVU)。 
+而目前最强大的AI平台就是OpenAI。可惜的是OpenAI对国内是封锁的。你如果想要开通OpenAI。需要准备一个 **国外的手机号**和 **国外银行卡**才行。之前我一直没找到好方法，直到前几天发现了[wildcard](https://bewildcard.com/i/FRQUAUVU)，才成功注册成功了open ai的账号充值成功，感谢[wildcard](https://bewildcard.com/i/FRQUAUVU)。 
 
 # 准备工具
 
@@ -30,7 +30,7 @@ vpn软件(必须，或者在开通wildcard后使用其免费的vpn服务，有�
 
 wildcard是一种美国的虚拟银行卡，同时平台还集成虚拟手机和vpn服务。方便国人注册一些被限制的服务。
 
-先进入网站：https://wildcard.com.cn/i/FRQUAUVU
+先进入网站：https://bewildcard.com/i/FRQUAUVU
 
 点注册
 

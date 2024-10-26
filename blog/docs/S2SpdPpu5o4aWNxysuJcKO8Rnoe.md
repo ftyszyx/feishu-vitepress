@@ -1,7 +1,7 @@
 ---
 title: 有用的东西收集
 create_time: 1723629802
-edit_time: 1729242773
+edit_time: 1729851687
 categories:
   - daily_life
 ---
@@ -31,9 +31,15 @@ https://www.notion.so/
 
 https://github.com/toeverything/<u>AFFiNE</u>
 
-# Siyuan
+## Siyuan
 
 https://b3log.org/siyuan/download.html
+
+## Docmost
+
+服务器部署
+
+https://github.com/docmost/docmost
 
 # Unity
 
@@ -410,4 +416,34 @@ chrome的闪退跟踪工具
 将飞书文档转成markdown的插件
 
 https://github.com/lujunji4113/cloud-document-converter?tab=readme-ov-file
+
+# 网站相关
+
+## 点击统计
+
+## Pirsch
+
+https://pirsch.io/
+
+# javascript打包
+
+## Vite
+
+## rspack
+
+https://rspack.dev/zh/
+
+# 原型设计工具
+
+## Moonvy
+
+https://moonvy.com/
+
+# 代码编辑工具
+
+## Theia
+
+Eclipse 推出的代码编辑器，VS Code 的替代品。
+
+https://theia-ide.org/
 
