@@ -1,7 +1,7 @@
 ---
 cover: /assets/Um9JbWwIFodQDjxcMjfcPCjKnHh.jpeg
 create_time: 1729850795
-edit_time: 1729867293
+edit_time: 1729936703
 title: docker相关
 categories:
   - skill
@@ -24,9 +24,14 @@ categories:
 
 ## 使用cloudflare
 
+<div class="callout callout-bg-2 callout-border-2">
+<div class='callout-emoji'>🚅</div>
+<p>注意：因为wrangler无法在国内使用，所以才用这种方法 </p>
+</div>
+
 ### 下载代码
 
-首先下载仓库  代码到本地
+首先下载仓库  代码到本地,同时也要clone到自己的github账号下面。
 
 https://github.com/ImSingee/hammal 
 
@@ -46,6 +51,12 @@ npm install
 
 <img src="/assets/VHs8bMcgAoJBhsx7dzmc5V9XnWd.png" src-width="498" class="markdown-img m-auto" src-height="124" align="center"/>
 
+需要配置自定义域
+
+<img src="/assets/V0oXbvJGMoWxfuxFRnVckhDrnmb.png" src-width="1149" class="markdown-img m-auto" src-height="390" align="center"/>
+
+<img src="/assets/QQFgbAKBgobBNLxbIRTcBMAcn8c.png" src-width="407" class="markdown-img m-auto" src-height="758" align="center"/>
+
 ### 配置项目
 
 复制 `wrangler.toml.sample` 文件改名 `wrangler.toml` 并修改其 `name` 和 `account_id`
@@ -58,31 +69,42 @@ account_id 可以从 CF Workers Dashboard 右侧获得
 
 ###  **创建 cache 缓存 kv**
 
-在克隆好的项目目录下执行 `npx wrangler kv:namespace create hammal_cache` 来创建缓存 kv，记录下来输出的 id，填写到 `wrangler.toml` 文件中
+<img src="/assets/ADlybt5u2oLDVBx8Hswc2aSNnuf.png" src-width="1551" class="markdown-img m-auto" src-height="1104" align="center"/>
 
-```yaml
-npx wrangler kv:namespace create hammal_cache
-```
+把kv id记录下来，填到配置里
 
-第一次会弹出页面，点allow
+<img src="/assets/UE20b4SfVog5kExIDzQctOQCnWb.png" src-width="1064" class="markdown-img m-auto" src-height="431" align="center"/>
 
-<img src="/assets/KuTKbJWpVo6jogx8dZpc6LqUnjg.png" src-width="504" class="markdown-img m-auto" src-height="808" align="center"/>
+### 关联上github项目
+
+<img src="/assets/HuFZbLniOoVrtnxLbfFcaWxenPe.png" src-width="1076" class="markdown-img m-auto" src-height="437" align="center"/>
+
+提交github后就会触发部署
 
 ###  **Deploy**
 
-在克隆好的项目目录下执行 `pnpm run deploy` 来部署项目
-
 进入你的 Workers 脚本的 dashboard，为它[绑定一个自定义域名](https://developers.cloudflare.com/workers/configuration/routing/custom-domains/#set-up-a-custom-domain-in-the-dashboard)（必要，因为默认的 `workers.dev` 域名被墙了）
+
+<img src="/assets/IWcXb0c2los2pixakr2cDSIgnvf.png" src-width="1032" class="markdown-img m-auto" src-height="194" align="center"/>
 
 ###  **本地配置**
 
 使用你的自定义域名作为 docker registry mirror 即可
 
-`sudo tee /etc/docker/daemon.json <<EOF`
-`{`
-`"registry-mirrors": [`
-`"https://hammal.example.com"`
-`]`
-`}`
-`EOF`
+修改/etc/docker/daemon.json
+
+```yaml
+{
+  "registry-mirrors": [
+    "https://hammal.example.com"  //你的域名
+  ]
+}
+```
+
+启用
+
+```yaml
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+```
 

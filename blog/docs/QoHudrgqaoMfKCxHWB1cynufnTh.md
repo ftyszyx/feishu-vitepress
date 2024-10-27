@@ -1,6 +1,6 @@
 ---
 create_time: 1729904051
-edit_time: 1729905412
+edit_time: 1729931288
 title: cloudflare
 categories:
   - skill
@@ -32,4 +32,10 @@ npm run dev
 ```yaml
 npm run deploy
 ```
+
+但每次deploy都报错
+
+Fetch error。从github issue上看，应该是cloudflare 被国内墙了。
+
+所以无法通过命令行使用。
 
