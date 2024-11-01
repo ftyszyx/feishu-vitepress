@@ -1,7 +1,7 @@
 ---
 title: 有用的东西收集
 create_time: 1723629802
-edit_time: 1730089660
+edit_time: 1730424846
 categories:
   - daily_life
 ---
@@ -141,6 +141,16 @@ https://github.com/voideditor/void
 
 https://github.com/saoudrizwan/claude-dev
 
+### cline
+
+https://github.com/cline/cline
+
+## Plate
+
+Ai editor richtext
+
+https://github.com/udecode/plate
+
 ## Versison
 
 ### supervison
@@ -154,6 +164,12 @@ https://github.com/openai/swarm?tab=readme-ov-file
 An educational framework exploring ergonomic, lightweight multi-agent orchestration.
 
 ## Fitten code
+
+## amphion
+
+Generate music speech and audio
+
+https://github.com/open-mmlab/Amphion
 
 # 代理
 
@@ -456,4 +472,20 @@ https://www.zouht.com/3740.html
 ## Edtunnel
 
 https://github.com/seramo/ed-tunnel
+
+# 下载
+
+## You-get
+
+Download video from video site
+
+https://you-get.org/
+
+# ui库
+
+## mui-x
+
+React ui库
+
+https://mui.com/x/
 
