@@ -2,7 +2,7 @@
 title: 中国奥运代表团的精心准备：带空调出征巴黎
 cover: /assets/ChiUbSigooKIdIx68sHc04IinGe.png
 create_time: 1721516816
-edit_time: 1721969227
+edit_time: 1730463550
 categories:
   - other_platform
 ---

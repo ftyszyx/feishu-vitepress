@@ -6,7 +6,7 @@ keywords:
   - 俞敏洪
 cover: /assets/OsribS9xvozijKxESxFcws97nZb.png
 create_time: 1721957076
-edit_time: 1721970178
+edit_time: 1730463530
 categories:
   - other_platform
 ---
@@ -49,6 +49,4 @@ categories:
 恰巧一看，东方甄选的股价已然下跌 20%，股民们在承受损失，俞敏洪能够负起这个责任吗？
 
 全文完
-
- 
 

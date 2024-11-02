@@ -1,7 +1,7 @@
 ---
 title: 有用的东西收集
 create_time: 1723629802
-edit_time: 1730424846
+edit_time: 1730435114
 categories:
   - daily_life
 ---
@@ -170,6 +170,12 @@ An educational framework exploring ergonomic, lightweight multi-agent orchestrat
 Generate music speech and audio
 
 https://github.com/open-mmlab/Amphion
+
+## Napkinai
+
+文字生成图表，根据文字生成图形
+
+https://www.napkin.ai/
 
 # 代理
 
