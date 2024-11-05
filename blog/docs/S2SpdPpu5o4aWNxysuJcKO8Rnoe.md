@@ -1,7 +1,7 @@
 ---
 title: 有用的东西收集
 create_time: 1723629802
-edit_time: 1730435114
+edit_time: 1730770121
 categories:
   - daily_life
 ---
@@ -494,4 +494,30 @@ https://you-get.org/
 React ui库
 
 https://mui.com/x/
+
+# 源码
+
+## Sellmyapp
+
+https://www.sellmyapp.com/
+
+卖源码的网站
+
+# 硬件
+
+## 无人机
+
+### Fast-lab
+
+https://github.com/ZJU-FAST-Lab
+
+## Tdrone
+
+https://github.com/ShenZhenAccelerationTechCo/Tdrone/tree/master
+
+## Gaas
+
+模拟系统
+
+https://github.com/generalized-intelligence/GAAS
 
