@@ -1,7 +1,7 @@
 ---
 title: 有用的东西收集
 create_time: 1723629802
-edit_time: 1730770121
+edit_time: 1730901685
 categories:
   - daily_life
 ---
@@ -62,6 +62,12 @@ https://github.com/egametang/ET
 (开源模型平台）
 
 https://huggingface.co
+
+## Lepton
+
+https://github.com/leptonai/search_with_lepton
+
+Conversational search engine
 
 ## replicate
 
@@ -520,4 +526,12 @@ https://github.com/ShenZhenAccelerationTechCo/Tdrone/tree/master
 模拟系统
 
 https://github.com/generalized-intelligence/GAAS
+
+# 其它工具类
+
+## Umi-ocr
+
+https://github.com/hiroi-sora/Umi-OCR
+
+图片转文字，二维码转文字工具
 
