@@ -4,7 +4,7 @@ create_time: 1729688759
 edit_time: 1730463415
 title: 2024-10-23 零成本部署一个工具网站
 categories:
-  - other_platform
+  - product
 ---
 
 

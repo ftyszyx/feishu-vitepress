@@ -1,7 +1,7 @@
 ---
 title: 有用的东西收集
 create_time: 1723629802
-edit_time: 1730901685
+edit_time: 1731052840
 categories:
   - daily_life
 ---
@@ -134,6 +134,20 @@ GitHub 本周热点项目，只需一张图片，就可实现视频的人脸替�
 <u>Song Generator</u>
 
 免费的 AI 歌曲在线生成器。（
+
+## api代理
+
+### apiPark
+
+https://github.com/APIParkLab/APIPark
+
+Ai 网关，代理ai请求（开源）
+
+### Chatnio
+
+https://github.com/zmh-program/chatnio
+
+支持订阅，开源
 
 ## Ai editor
 
@@ -387,6 +401,12 @@ https://internxt.com/temporary-email
 
 https://adguard.com/en/adguard-temp-mail/overview.html
 
+## tempmail100
+
+国人做的
+
+https://tempmail100.com/
+
 ## tmp_mail_api
 
 https://docs.mail.tm/
@@ -475,6 +495,12 @@ Eclipse 推出的代码编辑器，VS Code 的替代品。
 
 https://theia-ide.org/
 
+## Zed
+
+https://github.com/zed-industries/zed
+
+rust写的，快，但是没有windows release
+
 # cloudflare代理
 
 https://github.com/jonssonyan/cf-workers-proxy
@@ -527,6 +553,14 @@ https://github.com/ShenZhenAccelerationTechCo/Tdrone/tree/master
 
 https://github.com/generalized-intelligence/GAAS
 
+# 论文
+
+# Aminer
+
+搜索和通过ai分析论文
+
+https://www.aminer.cn/
+
 # 其它工具类
 
 ## Umi-ocr
@@ -534,4 +568,12 @@ https://github.com/generalized-intelligence/GAAS
 https://github.com/hiroi-sora/Umi-OCR
 
 图片转文字，二维码转文字工具
+
+## 富文本工具
+
+### Yunda
+
+https://github.com/wangyuan389/yunda
+
+零代码html5页面搭建
 

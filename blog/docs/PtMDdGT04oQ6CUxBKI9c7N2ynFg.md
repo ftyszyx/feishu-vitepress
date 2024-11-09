@@ -6,7 +6,7 @@ keywords:
   - c#
   - donet
 create_time: 1716126315
-edit_time: 1727057220
+edit_time: 1731052241
 categories:
   - skill
 ---
@@ -95,3 +95,22 @@ reverse-sourcemap js/
 
 <img src="/assets/MWyYbNb3FolsI8xkz7ocLexenVg.png" src-width="1920" class="markdown-img m-auto" src-height="986" align="center"/>
 
+# chrome插件
+
+## 找到插件的key
+
+<img src="/assets/SxEybsz5DoVO7cxCfg3c9GkFnoh.png" src-width="212" class="markdown-img m-auto" src-height="296" align="center"/>
+
+<img src="/assets/AZZRbjLI7oFkRJxyWzdcL2uunuf.png" src-width="925" class="markdown-img m-auto" src-height="192" align="center"/>
+
+## 代码位置 
+
+地址栏输入chrome:version 回车
+
+<img src="/assets/BiQeb5Sj0oC6yVx3rWwcIn6ynGd.png" src-width="782" class="markdown-img m-auto" src-height="242" align="center"/>
+
+找对应key的文件夹即可。
+
+<img src="/assets/R1GJbBXAloh6jmxrmdoc2yrfnLh.png" src-width="950" class="markdown-img m-auto" src-height="572" align="center"/>
+
+## 
