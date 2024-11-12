@@ -1,7 +1,7 @@
 ---
 cover: /assets/Um9JbWwIFodQDjxcMjfcPCjKnHh.jpeg
 create_time: 1729850795
-edit_time: 1729936703
+edit_time: 1731290155
 title: docker相关
 categories:
   - skill
@@ -55,7 +55,7 @@ npm install
 
 <img src="/assets/V0oXbvJGMoWxfuxFRnVckhDrnmb.png" src-width="1149" class="markdown-img m-auto" src-height="390" align="center"/>
 
-<img src="/assets/QQFgbAKBgobBNLxbIRTcBMAcn8c.png" src-width="407" class="markdown-img m-auto" src-height="758" align="center"/>
+<img src="/assets/GQ6vbH7yNoGZSXxRdmvcpfIunmg.png" src-width="358" class="markdown-img m-auto" src-height="370" align="center"/>
 
 ### 配置项目
 
@@ -85,7 +85,7 @@ account_id 可以从 CF Workers Dashboard 右侧获得
 
 进入你的 Workers 脚本的 dashboard，为它[绑定一个自定义域名](https://developers.cloudflare.com/workers/configuration/routing/custom-domains/#set-up-a-custom-domain-in-the-dashboard)（必要，因为默认的 `workers.dev` 域名被墙了）
 
-<img src="/assets/IWcXb0c2los2pixakr2cDSIgnvf.png" src-width="1032" class="markdown-img m-auto" src-height="194" align="center"/>
+<img src="/assets/R8xUb02VkoqFOsxLFxzcLLCVnb7.png" src-width="922" class="markdown-img m-auto" src-height="169" align="center"/>
 
 ###  **本地配置**
 

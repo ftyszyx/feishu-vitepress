@@ -1,7 +1,7 @@
 ---
 title: 有用的东西收集
 create_time: 1723629802
-edit_time: 1731052840
+edit_time: 1731319511
 categories:
   - daily_life
 ---
@@ -307,6 +307,10 @@ https://github.com/amnezia-vpn/amnezia-client
 
 https://github.com/sickcodes/Docker-OSX
 
+## Windows
+
+https://github.com/dockur/windows
+
 # C++库
 
 ## Folly
@@ -576,4 +580,10 @@ https://github.com/hiroi-sora/Umi-OCR
 https://github.com/wangyuan389/yunda
 
 零代码html5页面搭建
+
+## 终端工具
+
+### electerm
+
+https://github.com/electerm
 
