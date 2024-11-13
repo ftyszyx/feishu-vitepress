@@ -1,8 +1,8 @@
 ---
 cover: /assets/Um9JbWwIFodQDjxcMjfcPCjKnHh.jpeg
 create_time: 1729850795
-edit_time: 1731290155
-title: docker相关
+edit_time: 1731390060
+title: 自制docker镜像
 categories:
   - skill
 ---
