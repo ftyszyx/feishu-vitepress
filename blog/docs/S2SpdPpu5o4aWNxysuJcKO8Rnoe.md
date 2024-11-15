@@ -1,7 +1,7 @@
 ---
 title: 有用的东西收集
 create_time: 1723629802
-edit_time: 1731462115
+edit_time: 1731556606
 categories:
   - daily_life
 ---
@@ -311,6 +311,10 @@ https://github.com/sickcodes/Docker-OSX
 
 https://github.com/dockur/windows
 
+## Macos
+
+https://github.com/dockur/macos
+
 # C++库
 
 ## Folly
@@ -586,4 +590,10 @@ https://github.com/wangyuan389/yunda
 ### electerm
 
 https://github.com/electerm
+
+## 差异比较
+
+### Meld
+
+https://meld.app/
 

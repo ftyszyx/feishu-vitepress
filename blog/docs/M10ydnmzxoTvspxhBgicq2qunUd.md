@@ -4,7 +4,7 @@ tags:
   - develop
 cover: /assets/FxRJb4Oc6oMJUhxo2nLc4WS8nJb.jpeg
 create_time: 1714113741
-edit_time: 1731319683
+edit_time: 1731565804
 categories:
   - skill
 ---
@@ -95,6 +95,4 @@ jobs:
 https://gitmirror.com/files.html
 
 只用在github地址前加个前缀即可
-
-# Github gist是什么
 
