@@ -1,7 +1,7 @@
 ---
 title: 有用的东西收集
 create_time: 1723629802
-edit_time: 1731556606
+edit_time: 1731642325
 categories:
   - daily_life
 ---
@@ -596,4 +596,12 @@ https://github.com/electerm
 ### Meld
 
 https://meld.app/
+
+软件好卡
+
+## Winmerge
+
+这个好用，而且是svn默认的工具
+
+https://winmerge.org/downloads/?lang=en
 
