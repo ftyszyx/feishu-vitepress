@@ -1,6 +1,6 @@
 ---
 create_time: 1731579909
-edit_time: 1731666404
+edit_time: 1731730781
 title: 编程环境
 categories:
   - skill
@@ -113,4 +113,14 @@ go env -w GOSUMDB=off
 ```
 
 # 调试
+
+vscode中安装go的插件即可
+
+<img src="/assets/A8qkbSn1CoEtwQxGk4IcNlV4nDc.png" src-width="987" class="markdown-img m-auto" src-height="221" align="center"/>
+
+需要安装dlv
+
+```bash
+go install -v github.com/go-delve/delve/cmd/dlv@latest
+```
 

@@ -180,6 +180,10 @@
           {
             "text": "编程环境",
             "link": "/YnoZdr6NYoCG9KxSUorcgwcun2c"
+          },
+          {
+            "text": "golang语法",
+            "link": "/DDAsdLvJ2o2dGXxujRecCvxgndf"
           }
         ],
         "collapsed": false
@@ -423,6 +427,10 @@
       {
         "text": "2024-11-14 Docker虚拟机",
         "link": "/HG3idoUJWot4nmxSEBTcna58nFb"
+      },
+      {
+        "text": "2024-11-6 闹心的https证书",
+        "link": "/RnC0dgB3UobOlxxp97Dc8Nminmc"
       }
     ],
     "collapsed": false
