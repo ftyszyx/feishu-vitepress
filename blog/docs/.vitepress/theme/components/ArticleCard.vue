@@ -60,6 +60,7 @@ onMounted(() => {});
           @error="onImageError"
           :class="[
             'absolute',
+            'object-cover',
             'duration-300',
             'ease-in',
             'w-full',
