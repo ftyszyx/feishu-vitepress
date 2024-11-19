@@ -1,6 +1,6 @@
 ---
 create_time: 1731567289
-edit_time: 1731568210
+edit_time: 1731902058
 title: Python 的多版本环境
 categories:
   - skill
@@ -61,7 +61,7 @@ conda remove -n ENV_NAME --all
 
 ```yaml
 call "C:\ProgramData\miniconda3\condabin\activate.bat" build_apk
-python fix.py --project_path D:\\dist\\flower_138_i2cpp --sync_path android_unity2022
+python fix.py 
 pause
 ```
 
