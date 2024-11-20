@@ -1,6 +1,6 @@
 ---
 create_time: 1731579909
-edit_time: 1731730781
+edit_time: 1731986410
 title: 编程环境
 categories:
   - skill
@@ -104,6 +104,12 @@ go env -w GOPRIVATE=git.mycompany.com,github.com/my/private
 ```text
 go env -w GOPROXY=https://proxy.golang.com.cn,direct
 go env -w GOSUMDB=sum.golang.google.cn
+```
+
+推荐
+
+```yaml
+**go env -w GOPROXY=https://goproxy.cn,direct**
 ```
 
 ## 取消校验

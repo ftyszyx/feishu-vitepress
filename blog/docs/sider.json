@@ -129,8 +129,18 @@
         "link": "/ZhNcdL9SIoRvhqxXDqycoH3Jnsc"
       },
       {
-        "text": "node.js学习",
-        "link": "/N19LdotYqonanuxLuTncPf2Lntc"
+        "text": "Node",
+        "items": [
+          {
+            "text": "node写c++组件",
+            "link": "/HGdld6uuwojOjoxoMcscCU3SnVc"
+          },
+          {
+            "text": "node版本管理",
+            "link": "/A4tUdBPVoouaVjx3k9XczWCYnMe"
+          }
+        ],
+        "collapsed": false
       },
       {
         "text": "flutter学习",
@@ -188,6 +198,34 @@
           {
             "text": "golang语法",
             "link": "/DDAsdLvJ2o2dGXxujRecCvxgndf"
+          },
+          {
+            "text": "一些tips",
+            "link": "/D8k8d9VN7oh1k3xGvBncB5xFnUh"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "Git",
+        "items": [
+          {
+            "text": "常用操作",
+            "link": "/DHGed7G9Ro1Gfqx3OCScJSFXn3g"
+          },
+          {
+            "text": "问题汇总",
+            "link": "/Ieu5dC47voqQMWx73UWcsqaGn3d"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "vue",
+        "items": [
+          {
+            "text": "基础",
+            "link": "/LzAldncMUoKF1Hxz24pcO7P9nNh"
           }
         ],
         "collapsed": false

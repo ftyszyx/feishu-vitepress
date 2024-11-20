@@ -1,7 +1,8 @@
 ---
 title: 有用的东西收集
+cover: /assets/LRGNbgjU9ozBfPxXHRacMSu4nje.jpeg
 create_time: 1723629802
-edit_time: 1731642325
+edit_time: 1732007493
 categories:
   - daily_life
 ---
@@ -338,6 +339,10 @@ https://github.com/nocodb/nocodb
 https://github.com/dokku/dokku
 
 ## Heroku
+
+## nginxProManger
+
+https://nginxproxymanager.com/
 
 # docker服务器
 
