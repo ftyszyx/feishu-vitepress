@@ -1,8 +1,8 @@
 ---
-title: 从姜萍事件我看到的人性丑陋
-cover: /assets/Vps1bpGvooYuVcxvqJncv1eunth.png
+cover: /assets/C9tibci3eohKWhxmdEscFZ0tnyh.png
 create_time: 1719883382
-edit_time: 1719915684
+edit_time: 1732081439
+title: 2024-7-2 从姜萍事件我看到的人性丑陋
 categories:
   - other_platform
 ---

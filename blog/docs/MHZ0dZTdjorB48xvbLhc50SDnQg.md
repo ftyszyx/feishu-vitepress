@@ -1,16 +1,14 @@
 ---
-title: 为什么夏承曦想退学这么难
-cover: /assets/QbAQbpkseoVI2bxKtNVcwRicnyg.png
+cover: /assets/AIK4bibYno19pBxajs3ctVVHnZe.jpeg
 create_time: 1719469310
-edit_time: 1719476818
+edit_time: 1732081464
+title: 2024-6-27 为什么夏承曦想退学这么难
 categories:
   - other_platform
 ---
 
 
 夏承曦是复旦大学法学院的一名台湾籍毕业生。在2023年6月19日复旦大学法学院的毕业典礼上。他上台扇了学校的教授一巴掌，上了各大新闻头条。他之所以这么做，是因为他想退学。而且他已经被北大医学部录取了。难怪夏承曦看不上复旦。
-
-<img src="/assets/DEmkbBBMooQ9nExHhBWckQG8nPg.png" src-width="623" class="markdown-img m-auto" src-height="511" align="center"/>
 
 夏承曦是人才吗？并不是。只是因为他身份特殊，作为港澳台同胞，他想上复旦都不用通过考试。只需要达到顶标级即可。什么是顶标，顶标只用在台湾高考中前12%即可。而且只要达到顶标，基本上我国的985大学（包括清化北大）都可以随便上。好羡慕啊，难怪夏承曦看不上复旦，因为人家可以上清华北大啊。
 

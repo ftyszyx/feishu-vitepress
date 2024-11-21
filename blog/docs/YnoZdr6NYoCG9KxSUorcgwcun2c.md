@@ -1,6 +1,6 @@
 ---
 create_time: 1731579909
-edit_time: 1731986410
+edit_time: 1732077442
 title: 编程环境
 categories:
   - skill
@@ -62,6 +62,12 @@ go run .
 
 ```yaml
 go mod tidy
+```
+
+或者可以手动加
+
+```yaml
+go get github.com/lestrrat-go/file-rotatelogs
 ```
 
 # 加速
