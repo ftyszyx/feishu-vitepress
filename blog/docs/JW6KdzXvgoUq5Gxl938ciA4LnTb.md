@@ -4,7 +4,7 @@ tags:
   - develop
 cover: /assets/FDpIbhSbsoYQLoxGRO2c2w0ZnFh.jpeg
 create_time: 1676970303
-edit_time: 1731552404
+edit_time: 1732155985
 categories:
   - skill
 ---
@@ -458,7 +458,7 @@ https://harttle.land/2016/08/08/vim-search-in-file.html
 </tbody>
 </table>
 
-# ·其它
+# 其它
 
 ## 相对行号
 

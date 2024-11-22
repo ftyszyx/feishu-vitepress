@@ -1,6 +1,7 @@
 ---
+cover: /assets/FTPzbPoz5omrgDxO1UAcGDvbnlb.gif
 create_time: 1732093061
-edit_time: 1732153489
+edit_time: 1732153709
 title: ssh连接
 categories:
   - skill
@@ -104,4 +105,14 @@ ssh username@ip -v
 选设置
 
 <img src="/assets/ZZdlbScPFoKp4bxbah1czVsvnmf.png" src-width="487" class="markdown-img m-auto" src-height="75" align="center"/>
+
+Open config
+
+<img src="/assets/WrKmbYDozo6gLrxCnXecRXEdnRF.png" src-width="396" class="markdown-img m-auto" src-height="77" align="center"/>
+
+Add identifile
+
+<img src="/assets/KVJeb5rpVocufSxSPKvcEPTSn3b.png" src-width="501" class="markdown-img m-auto" src-height="107" align="center"/>
+
+ok
 

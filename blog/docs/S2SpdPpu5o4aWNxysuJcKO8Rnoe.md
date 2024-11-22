@@ -2,7 +2,7 @@
 title: 有用的东西收集
 cover: /assets/LRGNbgjU9ozBfPxXHRacMSu4nje.jpeg
 create_time: 1723629802
-edit_time: 1732007493
+edit_time: 1732168201
 categories:
   - daily_life
 ---
@@ -609,4 +609,12 @@ https://meld.app/
 这个好用，而且是svn默认的工具
 
 https://winmerge.org/downloads/?lang=en
+
+# https证书
+
+## Mkcert
+
+让localhost都能https
+
+https://github.com/FiloSottile/mkcert
 

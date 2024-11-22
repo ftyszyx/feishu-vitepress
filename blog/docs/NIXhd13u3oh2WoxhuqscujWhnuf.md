@@ -1,6 +1,6 @@
 ---
 create_time: 1731886801
-edit_time: 1732090955
+edit_time: 1732168101
 title: Nginx-ui
 categories:
   - skill
@@ -219,4 +219,39 @@ encoderConfig.EncodeLevel = colorLevelEncoder
 对应的数据层
 
 <img src="/assets/YCmIbBG50ocR03xKj9YcU4xmnLf.png" src-width="1173" class="markdown-img m-auto" src-height="233" align="center"/>
+
+在系统启动时会执行注册 
+
+<img src="/assets/XP3mb8roRoAh8KxLLSGcQYqWn2b.png" src-width="397" class="markdown-img m-auto" src-height="307" align="center"/>
+
+使用了lego这个库
+
+https://github.com/go-acme/lego
+
+使用方法 如下：
+
+https://go-acme.github.io/lego/usage/library/index.html
+
+### Acme
+
+ACME是自动证书管理环境（Automatic Certificate Management Environment）的缩写，是一个由IETF（Internet Engineering Task Force）制定的协议标准，用于自动化证书颁发和管理。ACME协议的主要目的是使得证书颁发过程自动化、安全化和可扩展化，同时减少人工干预的成本和风险。
+
+ACME协议的流程如下：
+
+1. 客户端向CA发送证书请求，并提供验证信息。
+2. CA验证客户端提供的信息，如果验证通过，则向客户端颁发一个签名证书。
+3. 客户端使用签名证书进行加密通信。
+4. 客户端定期更新证书，以保证证书的有效性。
+
+Let’s Encrypt是一个免费的证书颁发机构，它支持ACME协议，并提供了Certbot客户端工具，可以自动化地申请、更新和管理SSL证书。Certbot客户端工具可以通过命令行工具或者Web界面进行操作。
+
+## Gorm
+
+数据库是使用这个库
+
+https://gorm.io/
+
+通过这个命令生成数据库的代码
+
+<img src="/assets/Fw7RbG9EMozbGixhD8McKwiZnKd.png" src-width="471" class="markdown-img m-auto" src-height="120" align="center"/>
 
