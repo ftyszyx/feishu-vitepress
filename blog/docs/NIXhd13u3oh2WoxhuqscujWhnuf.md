@@ -1,6 +1,6 @@
 ---
 create_time: 1731886801
-edit_time: 1732168101
+edit_time: 1732244253
 title: Nginx-ui
 categories:
   - skill
@@ -209,6 +209,18 @@ encoderConfig.EncodeLevel = colorLevelEncoder
 完美
 
 ## nginx的配置
+
+### 站点列表
+
+<img src="/assets/Rnd8bfSiJonqiPxgR76c2M2znVp.png" src-width="1028" class="markdown-img m-auto" src-height="203" align="center"/>
+
+可以自定义配置
+
+<img src="/assets/FbPPboenToRsANxeIspcQuWTnWb.png" src-width="652" class="markdown-img m-auto" src-height="267" align="center"/>
+
+settings.NginxSettings.ConfigDir
+
+<img src="/assets/KIWmb8V1ZoEjeHxZoT4c70Zanpg.png" src-width="341" class="markdown-img m-auto" src-height="178" align="center"/>
 
 ## 证书的更新机制
 

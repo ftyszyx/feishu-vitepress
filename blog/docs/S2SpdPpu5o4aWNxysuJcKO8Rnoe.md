@@ -2,7 +2,7 @@
 title: 有用的东西收集
 cover: /assets/LRGNbgjU9ozBfPxXHRacMSu4nje.jpeg
 create_time: 1723629802
-edit_time: 1732168201
+edit_time: 1732265297
 categories:
   - daily_life
 ---
@@ -215,6 +215,12 @@ https://github.com/luckjiawei/frpc-desktop
 ## Proxycat
 
 https://github.com/honmashironeko/ProxyCat
+
+## Ehco
+
+ai流量转发
+
+https://github.com/Ehco1996/ehco
 
 # 图片设计
 
@@ -566,6 +572,18 @@ https://github.com/ShenZhenAccelerationTechCo/Tdrone/tree/master
 
 https://github.com/generalized-intelligence/GAAS
 
+# 3d软件
+
+## Freecad
+
+https://github.com/FreeCAD/FreeCAD
+
+# 社交自动化工具
+
+## postiz-app
+
+https://github.com/gitroomhq/postiz-app
+
 # 论文
 
 # Aminer
@@ -609,6 +627,12 @@ https://meld.app/
 这个好用，而且是svn默认的工具
 
 https://winmerge.org/downloads/?lang=en
+
+## pensieve
+
+记录你电脑的操作，有点疑惑，有啥用
+
+https://github.com/arkohut/pensieve/blob/master/README_ZH.md
 
 # https证书
 
