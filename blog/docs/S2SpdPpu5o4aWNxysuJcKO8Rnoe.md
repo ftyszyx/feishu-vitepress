@@ -2,7 +2,7 @@
 title: 有用的东西收集
 cover: /assets/LRGNbgjU9ozBfPxXHRacMSu4nje.jpeg
 create_time: 1723629802
-edit_time: 1732265297
+edit_time: 1732415826
 categories:
   - daily_life
 ---
@@ -57,6 +57,10 @@ https://github.com/wqaetly/NKGMobaBasedOnET
 https://github.com/egametang/ET
 
 # AI
+
+## Flux
+
+https://github.com/black-forest-labs/flux
 
 ##  **Hugging face** 
 
@@ -641,4 +645,12 @@ https://github.com/arkohut/pensieve/blob/master/README_ZH.md
 让localhost都能https
 
 https://github.com/FiloSottile/mkcert
+
+# 游戏
+
+## Slang
+
+shader语言
+
+https://github.com/shader-slang/slang
 
