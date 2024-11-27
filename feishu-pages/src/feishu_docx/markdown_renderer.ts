@@ -20,6 +20,25 @@ marked.use(markedXhtml());
  * https://github.com/Wsine/feishu2md/blob/cb906109235b07b82b5a6348bdf1103c9fa1e62c/core/parser.go
  */
 export class MarkdownRenderer extends Renderer {
+  header_arr: number[] = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+
+  getHeaderStr(level: number) {
+    let strarr: string[] = [];
+    this.header_arr[level - 1]++;
+    for (let i = 0; i < this.header_arr.length; i++) {
+      if (i >= level) {
+        this.header_arr[i] = 0;
+      } else {
+        const num = this.header_arr[i] > 0 ? this.header_arr[i] : 1;
+        strarr.push(num.toString());
+      }
+    }
+    if (level == 1) {
+      return strarr[0] + ".";
+    }
+    return strarr.join(".");
+  }
+
   parseBlock(block: Block, indent: number) {
     this.indent = indent;
 
@@ -39,39 +58,39 @@ export class MarkdownRenderer extends Renderer {
         buf.write(this.parseTextBlock(block.text));
         break;
       case BlockType.Heading1:
-        buf.write("# ");
+        buf.write(`# ${this.getHeaderStr(1)} `);
         buf.write(this.parseTextBlock(block.heading1));
         break;
       case BlockType.Heading2:
-        buf.write("## ");
+        buf.write(`## ${this.getHeaderStr(2)} `);
         buf.write(this.parseTextBlock(block.heading2));
         break;
       case BlockType.Heading3:
-        buf.write("### ");
+        buf.write(`### ${this.getHeaderStr(3)} `);
         buf.write(this.parseTextBlock(block.heading3));
         break;
       case BlockType.Heading4:
-        buf.write("#### ");
+        buf.write(`#### ${this.getHeaderStr(4)} `);
         buf.write(this.parseTextBlock(block.heading4));
         break;
       case BlockType.Heading5:
-        buf.write("##### ");
+        buf.write(`##### ${this.getHeaderStr(5)} `);
         buf.write(this.parseTextBlock(block.heading5));
         break;
       case BlockType.Heading6:
-        buf.write("###### ");
+        buf.write(`###### ${this.getHeaderStr(6)} `);
         buf.write(this.parseTextBlock(block.heading6));
         break;
       case BlockType.Heading7:
-        buf.write("####### ");
+        buf.write(`####### ${this.getHeaderStr(7)} `);
         buf.write(this.parseTextBlock(block.heading7));
         break;
       case BlockType.Heading8:
-        buf.write("######## ");
+        buf.write(`######## ${this.getHeaderStr(8)} `);
         buf.write(this.parseTextBlock(block.heading8));
         break;
       case BlockType.Heading9:
-        buf.write("######### ");
+        buf.write(`######### ${this.getHeaderStr(9)} `);
         buf.write(this.parseTextBlock(block.heading9));
         break;
       case BlockType.Bullet:
