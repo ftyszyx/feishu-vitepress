@@ -12,11 +12,11 @@ categories:
 ---
 
 
-# clash_windows
+# 1. clash_windows
 
 https://docs.gtk.pw/
 
-## 自定义配置
+## 1.1 自定义配置
 
 比如我要将bugly.qq.com加到代理中
 
@@ -36,4 +36,4 @@ mixin: # 注意下面缩进
     - "DOMAIN-SUFFIX,bugly.qq.com,节点选择"
 ```
 
-## 
+## 1.2 

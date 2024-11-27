@@ -7,31 +7,31 @@ categories:
 ---
 
 
-# 入口
+# 1. 入口
 
 <img src="/assets/WNWRbEhOcoMTCDxO0dgcrmCCnWf.png" src-width="868" class="markdown-img m-auto" src-height="335" align="center"/>
 
-# 主要项目
+# 2. 主要项目
 
-## 自动锁定时间
+## 2.1 自动锁定时间
 
 当软件没有在前台起过设置时间就会锁定，只有输入主密码才能解锁，保证安全
 
-## 随电脑锁定
+## 2.2 随电脑锁定
 
 当操作系统当前账号登出，可同时锁定软件
 
-## 自动更新
+## 2.3 自动更新
 
 从github自动下载更新
 
-## 开机自启动
+## 2.4 开机自启动
 
-## 修改系统语言
+## 2.5 修改系统语言
 
 支持中文和英文，立即生效
 
-## 快捷键修改
+## 2.6 快捷键修改
 
 分全局和软件内部快捷键
 
@@ -39,7 +39,7 @@ categories:
 
 <img src="/assets/IcqmbNMdUohnMDx18QKc3d2ynUh.png" src-width="388" class="markdown-img m-auto" src-height="176" align="center"/>
 
-# 结语
+# 3. 结语
 
 介绍完毕
 

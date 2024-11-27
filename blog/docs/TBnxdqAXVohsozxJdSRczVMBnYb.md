@@ -10,15 +10,15 @@ categories:
 ---
 
 
-# 官方文档：
+# 1. 官方文档：
 
 https://docs.unity3d.com/Manual/IL2CPP.html
 
 https://unity.com/cn/blog/engine-platform/an-introduction-to-ilcpp-internals
 
-# 介绍
+# 2. 介绍
 
-## il2cpp的功能：
+## 2.1 il2cpp的功能：
 
  **1、将IL语言（c#编译器的中间代理）转成c++源码**
 
@@ -40,7 +40,7 @@ il2cpp编译器在Editor\Data\il2cpp directory，使用c#编写的。
 
  
 
-## 生成的代码解读
+## 2.2 生成的代码解读
 
 在导出Unity工程时，il2cpp的代码会输出到
 
@@ -60,7 +60,7 @@ Types are named with a “_t” suffix. Methods are named with a “_m” suffix
 
 如果是C#中的静态函数，this就是null
 
-## i2cpp打包流程
+## 2.3 i2cpp打包流程
 
 1. 用roslyn编译代码
 

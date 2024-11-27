@@ -8,7 +8,7 @@ categories:
 ---
 
 
-# windows怎么安装
+# 1. windows怎么安装
 
 https://github.com/PowerShell/Win32-OpenSSH/releases
 
@@ -16,7 +16,7 @@ https://github.com/PowerShell/Win32-OpenSSH/releases
 
 <img src="/assets/GmyJbvgYPoRV7sxFLPlcDpSYn3e.png" src-width="704" class="markdown-img m-auto" src-height="149" align="center"/>
 
-# 如何生成秒钥
+# 2. 如何生成秒钥
 
 ```go
 ssh-keygen
@@ -28,9 +28,9 @@ C:\Users\zyx\.ssh目录下生成私钥和公钥
 
 <img src="/assets/In9abwAknoiqcixqOlXcUixrnFe.png" src-width="351" class="markdown-img m-auto" src-height="245" align="center"/>
 
-# 如何无密码连接linux
+# 3. 如何无密码连接linux
 
-## 将公钥加到authorized_keys中
+## 3.1 将公钥加到authorized_keys中
 
 如果没有就新建一个文件
 
@@ -40,7 +40,7 @@ C:\Users\zyx\.ssh目录下生成私钥和公钥
 cat id_rsa_test.pub >>authorized_keys
 ```
 
-## 修改配置
+## 3.2 修改配置
 
 编辑 /etc/ssh/sshd_config 文件，进行如下设置
 
@@ -61,7 +61,7 @@ AuthorizedKeysFile      .ssh/authorized_keys
 ssh username@ip -p port –i id_rsa
 ```
 
-# ssh文件权限
+# 4. ssh文件权限
 
 密钥需要设置成600，别人不可读
 
@@ -72,15 +72,15 @@ $ chmod 600 ~/.ssh/id_rsa.pub
 
 authorized_keys需要设置成644只有文件所有者才能写
 
-# ssh连接调试
+# 5. ssh连接调试
 
-## 查找连接问题，可以加-v
+## 5.1 查找连接问题，可以加-v
 
 ```go
 ssh username@ip -v
 ```
 
-## 查看服务器日志，可以查看
+## 5.2 查看服务器日志，可以查看
 
 ```go
 /var/log/secure
@@ -88,7 +88,7 @@ ssh username@ip -v
 
 <img src="/assets/CgtHbtVkBoyNNJxEidQccdICnid.png" src-width="1068" class="markdown-img m-auto" src-height="138" align="center"/>
 
-## 使用调试模式
+## 5.3 使用调试模式
 
 ```go
 /usr/sbin/sshd -p 10022 -d
@@ -96,7 +96,7 @@ ssh username@ip -v
 -p 10022 指定端口
 ```
 
-# vscode怎么密钥连ssh
+# 6. vscode怎么密钥连ssh
 
 打开remote view
 

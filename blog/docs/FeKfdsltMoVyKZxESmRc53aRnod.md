@@ -12,19 +12,19 @@ categories:
 ---
 
 
-# 问题处理
+# 1. 问题处理
 
-## 2024/3/25
+## 1.1 2024/3/25
 
-### Gihub action中增加的环境变量无法识别
+### 1.1.1 Gihub action中增加的环境变量无法识别
 
 解决需要在jobs上加上环境变量名
 
 <img src="/assets/L7UWbibvXoQSwxxqJg3cl9h5ncj.png" src-width="308" class="markdown-img m-auto" src-height="104" align="center"/>
 
-## 2024/3/26
+## 1.2 2024/3/26
 
-### github action中提交代码step提示无权限
+### 1.2.1 github action中提交代码step提示无权限
 
 ```sql
 **Error:**Error: Pushing to <u>https://github.com/ftyszyx/myblog</u>
@@ -53,7 +53,7 @@ error: failed to push some refs to '<u>https://github.com/ftyszyx/myblog</u>'
 
 <img src="/assets/J0E8bmHUlo0idPxWAR0cdMdMnZc.png" src-width="410" class="markdown-img m-auto" src-height="148" align="center"/>
 
-###  <u>pages build and deployment</u> 怎么去掉
+### 1.2.2  <u>pages build and deployment</u> 怎么去掉
 
 Github 上配了pages。会自动加了一个workflow
 
@@ -71,7 +71,7 @@ Github 上配了pages。会自动加了一个workflow
 
 <img src="/assets/ZR5TbQAisoRNJwxx8L8cx0GGn5d.png" src-width="372" class="markdown-img m-auto" src-height="172" align="center"/>
 
-### preview时发现cover图片找不到
+### 1.2.3 preview时发现cover图片找不到
 
 看了build的结果，cover中的图片的确是没有
 
@@ -115,9 +115,9 @@ buildEnd: async (siteconfig) => {
   },
 ```
 
-## 2024/3/27
+## 1.3 2024/3/27
 
-### github部署后，因为base路径不对，导致 网页显示异常
+### 1.3.1 github部署后，因为base路径不对，导致 网页显示异常
 
 因为github page网址是https://ftyszyx.github.io/myblog
 
@@ -135,23 +135,23 @@ https://vitepress.dev/guide/asset-handling#base-url
 
 <img src="/assets/UDP3bkjoGoHs09xpEHacLV6EnBg.png" src-width="757" class="markdown-img m-auto" src-height="547" align="center"/>
 
-## 2024/3/28
+## 1.4 2024/3/28
 
-### 页面样式太丑，需要调整
+### 1.4.1 页面样式太丑，需要调整
 
 尤其是siderbar太宽，内容太窄
 
-### 增加搜索
+### 1.4.2 增加搜索
 
 vitepress内部支持
 
-### 增加评论
+### 1.4.3 增加评论
 
 用artalk实现，需要自己搭服务器
 
-## 2024/3/29
+## 1.5 2024/3/29
 
-### 多语言支持
+### 1.5.1 多语言支持
 
 毕竟是展示自己用的，还是要加英语，
 
@@ -179,7 +179,7 @@ https://free-proxy-list.net/
 
 https://github.com/plainheart/bing-translate-api
 
-### 增加点击统计
+### 1.5.2 增加点击统计
 
 目前找到的只能统计点击 数，但我还想看到整 个网站的所有点击，并能排序
 
@@ -253,7 +253,7 @@ https://docs.github.com/en/packages/working-with-a-github-packages-registry/work
 
 https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens
 
-### 增加浏览统计
+### 1.5.3 增加浏览统计
 
 参考这个
 
@@ -273,10 +273,10 @@ vitepress third-party cookie will be blocked. clarity
 
 先关了，看到报错有不心烦
 
-## 
-## 2024/4/7
+## 1.6 
+## 1.7 2024/4/7
 
-### 怎么cloude page
+### 1.7.1 怎么cloude page
 
 https://www.misterma.com/archives/901/
 
@@ -286,7 +286,7 @@ https://pages.cloudflare.com/
 
 不过访问速度还是慢，还是要考虑一下国内部署
 
-### 阿里云域名申请
+### 1.7.2 阿里云域名申请
 
 买了一个域名bytefuse.cn 字节融合的意思，
 
@@ -320,15 +320,15 @@ https://pages.cloudflare.com/
 
 过一个月后再看
 
-# 2024/4/19
+# 2. 2024/4/19
 
-## markdown中的tailwind样式不生效
+## 2.1 markdown中的tailwind样式不生效
 
 已处理，也不清楚啥问题，照着别人的项目改了一下就Ok了
 
-# 2024/4/20
+# 3. 2024/4/20
 
-## 图片加载被截：
+## 3.1 图片加载被截：
 
 参考公众号的图片：
 
@@ -342,9 +342,9 @@ https://pages.cloudflare.com/
 
 高度是800宽度就是1880
 
-## 首页的图片经常不加载
+## 3.2 首页的图片经常不加载
 
-## 翻译后，编译文档报错
+## 3.3 翻译后，编译文档报错
 
 SyntaxError: Element is missing end tag.
 
@@ -356,9 +356,9 @@ SyntaxError: Element is missing end tag.
 
 发现里面有&lt;这种符号。删除就Ok了
 
-# 2024/4/21
+# 4. 2024/4/21
 
-## 备案通过
+## 4.1 备案通过
 
 <img src="/assets/D3nUbSF17oLSYax9hMYcB96nnIh.png" src-width="793" class="markdown-img m-auto" src-height="175" align="center"/>
 
@@ -368,13 +368,13 @@ SyntaxError: Element is missing end tag.
 
 必须要手机上注册，因为需要人脸识别
 
-## markdown中图片希望居中
+## 4.2 markdown中图片希望居中
 
 给imag 加一个tailwind属性 m-auto
 
-# 2024/4/25
+# 5. 2024/4/25
 
-## 服务器国内自部署
+## 5.1 服务器国内自部署
 
 我晕：
 
@@ -384,17 +384,17 @@ vitepress编译时，把服务器搞崩了
 
 能不能让github帮我编译好，然后我去下载呢？
 
-## 博客分类不对
+## 5.2 博客分类不对
 
 已处理
 
-## 需要自己服务器上的博客也能自动触发更新
+## 5.3 需要自己服务器上的博客也能自动触发更新
 
-## https证书
+## 5.4 https证书
 
 搞定了，使用let's encrypt 同时配合nginx_ui自动化更新
 
-## Github action触发资源提交不会触发另一个github action
+## 5.5 Github action触发资源提交不会触发另一个github action
 
 原来我用的是on:push
 
@@ -404,7 +404,7 @@ vitepress编译时，把服务器搞崩了
 
 所以干脆，直接用定时吧，每天触发一次
 
-# 2024/5/14
+# 6. 2024/5/14
 
 1、zip文件 没有打包
 
@@ -414,7 +414,7 @@ vitepress编译时，把服务器搞崩了
 
 已处理
 
-# 2024/5/19
+# 7. 2024/5/19
 
 需要给博客搞seo，不然没人访问
 
@@ -430,7 +430,7 @@ https://ftyszyx.github.io/feishu-vitepress/sitemap.xml
 
 参考：https://github.com/mqyqingfeng/Blog/issues/272
 
-## 去百度收录
+## 7.1 去百度收录
 
 登陆<u>百度搜索资源平台</u>，进入<u>用户中心</u>：
 
@@ -474,7 +474,7 @@ https://ftyszyx.github.io/feishu-vitepress/sitemap.xml
 
 在百度后台也查看不昨天提交的审核状态
 
-##  **谷歌收录**
+## 7.2  **谷歌收录**
 
 https://search.google.com/
 
@@ -494,7 +494,7 @@ https://search.google.com/
 
 <img src="/assets/VO41bYRGqo9kfsxK3R1chJiqnFf.png" src-width="884" class="markdown-img m-auto" src-height="237" align="center"/>
 
-## 访问单独某一页时会404
+## 7.3 访问单独某一页时会404
 
 nginx配置错误：
 
@@ -537,9 +537,9 @@ location / {
 
 原理是，当配置`try_files`找不到某个页面资源，这时，nginx会尝试加载index.html，加载index.html之后，react-router就能起作用并匹配我们输入的`/home`路由，从而显示正确的home页面。
 
-# 2024/7/4
+# 8. 2024/7/4
 
-## blog.bytefuse.cn无法访问
+## 8.1 blog.bytefuse.cn无法访问
 
 好几天没上去看了，发现自己部署在阿里云上的博客无法访问了。
 
@@ -575,7 +575,7 @@ location / {
 
 要加一下判断，如果zip下下来的文件是坏的，就不清空web目录。
 
-# 待处理问题 
+# 9. 待处理问题 
 
 1、如何同步到公众号，知乎，csdn
 

@@ -20,13 +20,13 @@ categories:
 
 简单介绍一下这个工具的工作流
 
-## 选背景图
+## 1.1 选背景图
 
 中间是背景图搜索区域，图片都是从https://unsplash.com/里搜索的，upsplash里面的图片都是免费的没有版权风险，而且量很多。缺点就是对中文不友好，建议用英文搜索。
 
 <img src="/assets/ZuX8bk71ZoitqgxA1fFc9Bb7nye.png" src-width="747" class="markdown-img m-auto" src-height="350" align="center"/>
 
-## 选择封面图结构
+## 1.2 选择封面图结构
 
 在选好图片后，
 
@@ -34,13 +34,13 @@ categories:
 
 <img src="/assets/SxBfbqg15o6e6fxZszhcvXDgnQ2.png" src-width="1068" class="markdown-img m-auto" src-height="470" align="center"/>
 
-## 写标题和简介
+## 1.3 写标题和简介
 
 左边是写标题的
 
 <img src="/assets/Df7hbN3HMoi6EnxGwnxcJ5hbnNg.png" src-width="1148" class="markdown-img m-auto" src-height="529" align="center"/>
 
-## 完成
+## 1.4 完成
 
 点中间的下载，就可以下载这个图片了
 
@@ -48,7 +48,7 @@ categories:
 
  
 
-## 总结 
+## 1.5 总结 
 
 功能虽然简单，但也够用了。
 

@@ -11,7 +11,7 @@ categories:
 hide: true
 ```
 
-# lumusic服务器原理
+# 1. lumusic服务器原理
 
 现在的网络，各个平台不断圈地，没有一点开放精神。
 

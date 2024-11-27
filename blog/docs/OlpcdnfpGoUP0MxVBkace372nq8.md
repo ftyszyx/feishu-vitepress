@@ -20,7 +20,7 @@ https://www.electronjs.org/docs/latest/tutorial/quick-start
 
 https://github.com/topics/electron
 
-# 新项目start
+# 1. 新项目start
 
 ```yaml
 mkdir my-electron-app && cd my-electron-app
@@ -92,7 +92,7 @@ npm run start
 
 <img src="/assets/CX9Jb1f3Oo3QauxaryPc6icbnYc.png" src-width="775" class="markdown-img m-auto" src-height="292" align="center"/>
 
-# 发布
+# 2. 发布
 
 安装依赖
 
@@ -109,7 +109,7 @@ npm run make
 
 打好的包在out/目录下
 
-# Rebuild native
+# 3. Rebuild native
 
 参考：
 
@@ -125,17 +125,17 @@ NODE_MODULE_VERSION $ABC. Please try re-compiling or re-installing
 the module (for instance, using `npm rebuild` or `npm install`).
 ```
 
-## 安装系统编译环境
+## 3.1 安装系统编译环境
 
 <img src="/assets/E2KBbdUcQo17tUxTOImcSgHvnYg.png" src-width="886" class="markdown-img m-auto" src-height="345" align="center"/>
 
-## 安装node-gyp
+## 3.2 安装node-gyp
 
 ```js
 npm install -g node-gyp
 ```
 
-## 安装electron/rebuild
+## 3.3 安装electron/rebuild
 
 https://github.com/electron/rebuild?tab=readme-ov-file
 
@@ -157,7 +157,7 @@ npm install --save-dev @electron/rebuild
 npm run rebuild
 ```
 
-# Build
+# 4. Build
 
 打包推荐使用Electron Forge
 
@@ -189,9 +189,9 @@ npm run make
 npm install --save-dev @electron-forge/publisher-github
 ```
 
-# Forge build注意事项 
+# 5. Forge build注意事项 
 
-## 最后打开日志，不然不清楚错误在哪
+## 5.1 最后打开日志，不然不清楚错误在哪
 
 DEBUG=electron-packager
 
@@ -199,7 +199,7 @@ DEBUG=electron-packager
 "make": "npm run typecheck&& cross-env DEBUG=electron-packager electron-forge make",
 ```
 
-## 错误1：EPERM: operation not permitted, symlink
+## 5.2 错误1：EPERM: operation not permitted, symlink
 
 <img src="/assets/BlC5bMzeIoRhhZxyglqc1E3dn5e.png" src-width="1412" class="markdown-img m-auto" src-height="54" align="center"/>
 
@@ -209,9 +209,9 @@ win10需要开启开发者模式
 
 <img src="/assets/REEUbHY53oGbsfxCP6tcSPeYnzg.png" src-width="961" class="markdown-img m-auto" src-height="566" align="center"/>
 
-# 其它
+# 6. 其它
 
-## Ipc invoke的错误信息
+## 6.1 Ipc invoke的错误信息
 
 当render进程调用main进程的方法 
 
@@ -255,7 +255,7 @@ https://github.com/ash0x0/electron/commit/a22bc080a5cc4bea31c60bbd2d45706109a819
 
  **官方意思是说应该把main进程当服务端，服务端如果有异常，直接发给客户端，是不安全的，这样会暴露隐私。所以官方还是建议，如果要给错误信息给前端，应该要自己包装一下。**
 
-## Crash捕捉
+## 6.2 Crash捕捉
 
 可以设置闪退的存储路径 
 
@@ -279,7 +279,7 @@ https://blog.vincentqiao.com/electron-crash
 
 目前没有开箱即用的工具，有点不方便 
 
-## 调试
+## 6.3 调试
 
 https://www.electronjs.org/zh/docs/latest/tutorial/debugging-main-process
 

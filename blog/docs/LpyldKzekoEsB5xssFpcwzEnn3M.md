@@ -13,7 +13,7 @@ categories:
 ---
 
 
-# 背景
+# 1. 背景
 
 官方文档：
 
@@ -25,7 +25,7 @@ Unity 2022打包时新加了对unity内存分配的配置
 
 如何使用这个功能来优化我们的游戏呢？
 
-# 简介
+# 2. 简介
 
 具体看文档：
 
@@ -39,9 +39,9 @@ https://docs.unity3d.com/2022.3/Documentation/Manual/performance-native-allocato
 
 <img src="/assets/CuZVbBTY5oV2fNxiQ9icuP8Mn9f.png" src-width="1145" class="markdown-img m-auto" src-height="473" align="center"/>
 
-# 分析游戏问题
+# 3. 分析游戏问题
 
-## 分析依据
+## 3.1 分析依据
 
 You can also check the memory usage reports. They are available in the log when you close the Player or Editor. To find your log files, follow the instructions on the <u>log files page</u>.
 
@@ -49,13 +49,13 @@ You can also check the memory usage reports. They are available in the log when 
 
 <img src="/assets/EMMvbi7jpoGAu2xj5R9cqwgcnEf.png" src-width="1068" class="markdown-img m-auto" src-height="453" align="center"/>
 
-## 分析步骤
+## 3.2 分析步骤
 
 参考：
 
 https://discussions.unity.com/t/memory-allocator-customization-in-unity-2021-lts/878920/8 
 
-### ALLOC_TEMP_TLS栈内存缓存:
+### 3.2.1 ALLOC_TEMP_TLS栈内存缓存:
 
 属于Thread Local Storage (TLS) stack allocator
 
@@ -79,7 +79,7 @@ If a thread’s stack allocator is full, allocations fall back to the <u>threads
 
 可以通过查看日志中，peek allocated bytes来确定 是不是要增加配置或者减小
 
-#### 优化点1：
+#### 3.2.1.1 优化点1：
 
 看主线程：
 
@@ -87,13 +87,13 @@ If a thread’s stack allocator is full, allocations fall back to the <u>threads
 
 大部分都在1M以下。按照文档的指引，其实可以将block size 改成1mb。这样可以节省15M内存。
 
-#### 优化点2：
+#### 3.2.1.2 优化点2：
 
  ALLOC_TEMP_UnityGfxDeviceWorker内存设置不够，可以增加点.
 
 <img src="/assets/PlhjbRMtioYJB0xEXkwcspJhntb.png" src-width="388" class="markdown-img m-auto" src-height="100" align="center"/>
 
-### [ALLOC_DEFAULT] Dual Thread Allocator
+### 3.2.2 [ALLOC_DEFAULT] Dual Thread Allocator
 
 参考：https://docs.unity3d.com/2022.3/Documentation/Manual/performance-dual-thread-allocator.html
 
@@ -112,35 +112,35 @@ Each platform has a default block size, <u>which you can customize</u>. An alloc
 
 如果要分配的内存大于block size的一半，heap allocator就会失效，内存由vitural memory分配
 
-#### 主线程的
+#### 3.2.2.1 主线程的
 
 <img src="/assets/MDhhbt9qZo2EkrxHbqKcFyOYn5b.png" src-width="1194" class="markdown-img m-auto" src-height="231" align="center"/>
 
-#### 主线程问题：
+#### 3.2.2.2 主线程问题：
 
 共享线程的heap allocator有80M没有命中，有可能是分配大于8M的存导致 ，可以考虑将block size 改成32Mb，看有没有改善。不过这样会增加内存占用。
 
-#### gfx线程的
+#### 3.2.2.3 gfx线程的
 
 <img src="/assets/WLGLbzw6FohfqSxz2mSc6nn1nKd.png" src-width="1289" class="markdown-img m-auto" src-height="336" align="center"/>
 
-#### 问题：
+#### 3.2.2.4 问题：
 
 没有overflow可以试下把block size减少一倍。看还有没有没命中的。这样可以减少内存
 
-#### Other allocators&cache
+#### 3.2.2.5 Other allocators&cache
 
 <img src="/assets/AwIVbgPLxolsRcxyz4Vc8OTbnzg.png" src-width="870" class="markdown-img m-auto" src-height="340" align="center"/>
 
 <img src="/assets/N4VXbrGpsomzHPx14jYcCSi1n9g.png" src-width="1476" class="markdown-img m-auto" src-height="370" align="center"/>
 
-#### 问题：
+#### 3.2.2.6 问题：
 
 TYPETREE没有overflow可以试下把block size减少一倍。看还有没有没命中的。这样可以减少内存
 
 CACHEOBJECTS overflow明显，可以调大点变成 8M
 
-### Bucket allocator的问题
+### 3.2.3 Bucket allocator的问题
 
 配置全局共享 ，主要用于小内存分配。分配速度比heap allocator快。
 
@@ -150,7 +150,7 @@ The allocator reserves blocks of memory for allocations. Each block is divided i
 
 <img src="/assets/D57bbtUGmoGZ0yx2ufmcbixYnuc.png" src-width="1185" class="markdown-img m-auto" src-height="360" align="center"/>
 
-#### 问题：
+#### 3.2.3.1 问题：
 
 日志中大部分都只分配了5个block。
 

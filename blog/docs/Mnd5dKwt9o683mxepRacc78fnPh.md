@@ -11,7 +11,7 @@ categories:
 ---
 
 
-# 工程简介：
+# 1. 工程简介：
 
 框架使用vitepress ：https://vitepress.dev/
 
@@ -21,7 +21,7 @@ umami数据统计：https://umami.is/
 
 artalk用户评论：https://artalk.js.org/
 
-# 如何启动
+# 2. 如何启动
 
 在检出工程后：
 
@@ -36,9 +36,9 @@ npm install
 npm run dev
 ```
 
-# 工程基本结构
+# 3. 工程基本结构
 
-## 文档目录
+## 3.1 文档目录
 
 <img src="/assets/Vu8Eb0WYaoJYDBxZm5HcLlPlnCf.png" src-width="280" class="markdown-img m-auto" src-height="395" align="center"/>
 
@@ -50,7 +50,7 @@ npm run dev
 
 如果你还有英语，可以在建一个en文件夹。放放上述英文版本文件即可。
 
-## 配置
+## 3.2 配置
 
 博客的配置在docs/.vitepress/config下，支持多语言
 

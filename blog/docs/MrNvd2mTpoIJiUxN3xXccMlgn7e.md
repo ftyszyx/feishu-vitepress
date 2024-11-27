@@ -9,11 +9,11 @@ categories:
 ---
 
 
-# 2024-6-21
+# 1. 2024-6-21
 
-## 安全流程探索
+## 1.1 安全流程探索
 
-### 先回顾一下正常的登录流程
+### 1.1.1 先回顾一下正常的登录流程
 
 用户注册：
 
@@ -66,7 +66,7 @@ JwtModule.registerAsync({
     }),
 ```
 
-### 再回顾一下https的安全机制
+### 1.1.2 再回顾一下https的安全机制
 
 主要是用非对称加密：
 
@@ -82,7 +82,7 @@ JwtModule.registerAsync({
 
 <img src="/assets/JBBabFfzZohIlExlWBocGOrpnIg.png" src-width="1704" class="markdown-img m-auto" src-height="1424" align="center"/>
 
-### 1password原理
+### 1.1.3 1password原理
 
 参考：https://skyfly.xyz/2019/07/26/Casual/onePasswordTheory/
 
@@ -139,9 +139,9 @@ JwtModule.registerAsync({
 
 即可。用户就可以在那个设备上通过输入主密码来解密数据库的文件。
 
-# 2024-6-27
+# 2. 2024-6-27
 
-## 初始化密码功能(完成）
+## 2.1 初始化密码功能(完成）
 
 软件启动时检查本地有没有生成scert.key,如果没有，弹出对话框,让用户输入初始密码，
 
@@ -151,7 +151,7 @@ JwtModule.registerAsync({
 
 将用户名和B存到数据库中（本地数据库）
 
-# 2024-7-29
+# 3. 2024-7-29
 
 不知道改了啥，一启动就崩
 
@@ -167,11 +167,11 @@ decode时没有判断空
 
 <img src="/assets/XFpEbwTo8o1CxnxDDGLc7RbRntz.png" src-width="556" class="markdown-img m-auto" src-height="265" align="center"/>
 
-## 定时自动锁定功能(完成)
+## 3.1 定时自动锁定功能(完成)
 
-## 关闭默认缩小到托盘（完成）
+## 3.2 关闭默认缩小到托盘（完成）
 
-# 保险库功能（完成）
+# 4. 保险库功能（完成）
 
 图标：
 
@@ -179,32 +179,32 @@ decode时没有判断空
 
 <img src="/assets/CTlUbkakPosg2IxOKmpcK5s8nRe.gif" src-width="918" class="markdown-img m-auto" src-height="614" align="center"/>
 
-## 新增保密信息（完成）
+## 4.1 新增保密信息（完成）
 
 <img src="/assets/WbyrbyGbvozOSwxzaw6cobZMnfh.gif" src-width="874" class="markdown-img m-auto" src-height="654" align="center"/>
 
-## 保密信息预览（完成）
+## 4.2 保密信息预览（完成）
 
 <img src="/assets/Nh66bJQJuo1F57xAefxcwtbMnAc.gif" src-width="974" class="markdown-img m-auto" src-height="728" align="center"/>
 
-## 保密信息编辑（完成）
+## 4.3 保密信息编辑（完成）
 
 <img src="/assets/UMy1bhJ9KojpUaxa5JVciPs4nEd.gif" src-width="878" class="markdown-img m-auto" src-height="652" align="center"/>
 
-# 用户设置功能（完成）
+# 5. 用户设置功能（完成）
 
 <img src="/assets/VC5cb3xESoWfwIxRQiFcpuM4njf.gif" src-width="872" class="markdown-img m-auto" src-height="612" align="center"/>
 
-# 
-# 密码生成（完成）
+# 6. 
+# 7. 密码生成（完成）
 
 <img src="/assets/U7Q0baB1Hodz1Cx9k4gc55isnId.gif" src-width="1028" class="markdown-img m-auto" src-height="656" align="center"/>
 
-# tray托盘(完成）
+# 8. tray托盘(完成）
 
 <img src="/assets/ByzobEyFao4Av1xZP6zcHOZDnch.png" src-width="244" class="markdown-img m-auto" src-height="140" align="center"/>
 
-#  been externalized for browser compatibility异常错误（解决）
+# 9.  been externalized for browser compatibility异常错误（解决）
 
 Module "path" has been externalized for browser compatibility. Cannot access "path.join" in client code
 
@@ -216,13 +216,13 @@ Module "path" has been externalized for browser compatibility. Cannot access "pa
 
 <img src="/assets/TazTbeMzIo0pWexXXxncSQkgnYd.png" src-width="1291" class="markdown-img m-auto" src-height="234" align="center"/>
 
-## 找到问题
+## 9.1 找到问题
 
 通过一句句代码的排查，终于找到了，自动导入太坑人了
 
 <img src="/assets/Wty7bfCFMojk7KxR1Abc7GaWned.png" src-width="740" class="markdown-img m-auto" src-height="428" align="center"/>
 
-# robotjs库的导入问题（解决）
+# 10. robotjs库的导入问题（解决）
 
 需要使用robotjs
 
@@ -246,7 +246,7 @@ https://github.com/mapbox/node-pre-gyp/blob/master/lib/util/abi_crosswalk.json
 
 <img src="/assets/A97PbXmfBoneBPxCgFwcphmtn5g.png" src-width="502" class="markdown-img m-auto" src-height="119" align="center"/>
 
-## 解决方法：
+## 10.1 解决方法：
 
 安装elctron rebuild
 
@@ -262,13 +262,13 @@ npm install @electron/rebuild -S
 
 编译完后就Ok了。
 
-## 自动输入（完成）
+## 10.2 自动输入（完成）
 
 自动输入有点慢，需要改进
 
 <img src="/assets/RERwbwRs6o6fz4xbpiVcPjPUn9f.gif" src-width="864" class="markdown-img m-auto" src-height="436" align="center"/>
 
-# 数据备份时duckdb无法关掉 （换sqlite了）
+# 11. 数据备份时duckdb无法关掉 （换sqlite了）
 
 数据备份时需要将duckdb生成的数据库复制出来，我先调用duckdb的close。
 
@@ -326,7 +326,7 @@ Error: EBUSY: resource busy or locked, copyfile
 
 在官方没找到解决方案，感觉duckdb有bug,应该是有东西没释放
 
-## 解决方案
+## 11.1 解决方案
 
 目前已经给官方提了bug
 
@@ -342,7 +342,7 @@ sqlite只有1.8M
 
 <img src="/assets/Twglb001doGctRx1QDjcNhDpnGe.png" src-width="686" class="markdown-img m-auto" src-height="139" align="center"/>
 
-#  数据备份和恢复（完成）
+# 12.  数据备份和恢复（完成）
 
 方案就是：
 
@@ -352,7 +352,7 @@ sqlite只有1.8M
 
 <img src="" src-width="782" class="markdown-img m-auto" src-height="428" align="center"/>
 
-# robot.js自动输入过慢的问题(解决）
+# 13. robot.js自动输入过慢的问题(解决）
 
 查了一下github上的issue,发现这个问题很多个问https://github.com/octalmage/robotjs/issues/530
 
@@ -387,29 +387,29 @@ robot.typeString("dddd")
 
 看了一下这个开源项目，从2020年后就没有人维护了。开源免费的项目，维护人的动力的确是不足，不是很靠谱。
 
-# robot.js修改一个独立库（已解决）
+# 14. robot.js修改一个独立库（已解决）
 
 费了九牛二虎之力。node.js的native module终于入了点门
 
 https://github.com/ftyszyx/robotjs
 
-# 导入（完成）：
+# 15. 导入（完成）：
 
 <img src="/assets/Msffb949sooeUQxqEuIcH6jnnRD.gif" src-width="876" class="markdown-img m-auto" src-height="656" align="center"/>
 
-# 导出（完成）
+# 16. 导出（完成）
 
 <img src="/assets/OAbmbGRj6op7qPxg3M3cEwYjnTh.gif" src-width="874" class="markdown-img m-auto" src-height="644" align="center"/>
 
-# 关于（完成）
+# 17. 关于（完成）
 
 <img src="/assets/NlBob8oQGoEvGIxLd0tcSUgGn1e.png" src-width="768" class="markdown-img m-auto" src-height="261" align="center"/>
 
-# 多账号支持
+# 18. 多账号支持
 
 <img src="/assets/FE1tb0XFGoJpFdx4zZqcaYoYnSb.gif" src-width="860" class="markdown-img m-auto" src-height="642" align="center"/>
 
-# 阿里网盘备份和还原
+# 19. 阿里网盘备份和还原
 
 <img src="/assets/FQekbR6OpoXoHnxE24pc2pEAnBc.gif" src-width="858" class="markdown-img m-auto" src-height="636" align="center"/>
 

@@ -12,7 +12,7 @@ categories:
 ---
 
 
-# Donet
+# 1. Donet
 
 加密：
 
@@ -22,7 +22,7 @@ https://github.com/mkaring/ConfuserEx/
 
 https://github.com/dnSpyEx/dnSpy
 
-# electron react 
+# 2. electron react 
 
 解包
 
@@ -66,7 +66,7 @@ asar pack app app.asar --unpack **/node_modules/sharp/**/*
 
 否则程序运行不了
 
-### 如何还原webpack（带map)
+### 2.1.1 如何还原webpack（带map)
 
 用[reverse-sourcemap](https://github.com/davidkevork/reverse-sourcemap)这个包就行
 
@@ -75,7 +75,7 @@ npm install --global reverse-sourcemap
 reverse-sourcemap js/
 ```
 
-# 微信网页调试
+# 3. 微信网页调试
 
 1、在微信打开debugmm.qq.com/?forcex5=true开启调试
 
@@ -95,15 +95,15 @@ reverse-sourcemap js/
 
 <img src="/assets/MWyYbNb3FolsI8xkz7ocLexenVg.png" src-width="1920" class="markdown-img m-auto" src-height="986" align="center"/>
 
-# chrome插件
+# 4. chrome插件
 
-## 找到插件的key
+## 4.1 找到插件的key
 
 <img src="/assets/SxEybsz5DoVO7cxCfg3c9GkFnoh.png" src-width="212" class="markdown-img m-auto" src-height="296" align="center"/>
 
 <img src="/assets/AZZRbjLI7oFkRJxyWzdcL2uunuf.png" src-width="925" class="markdown-img m-auto" src-height="192" align="center"/>
 
-## 代码位置 
+## 4.2 代码位置 
 
 地址栏输入chrome:version 回车
 
@@ -113,4 +113,4 @@ reverse-sourcemap js/
 
 <img src="/assets/R1GJbBXAloh6jmxrmdoc2yrfnLh.png" src-width="950" class="markdown-img m-auto" src-height="572" align="center"/>
 
-## 
+## 4.3 

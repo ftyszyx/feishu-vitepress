@@ -11,7 +11,7 @@ categories:
 
 之前用过一段时间的pipenv,但有个问题，vscode中如果切pipenv后，不能记住之前输过的命令
 
-# 安装
+# 1. 安装
 
 https://conda.io/projects/conda/en/latest/user-guide/getting-started.html#managing-python
 
@@ -19,7 +19,7 @@ https://conda.io/projects/conda/en/latest/user-guide/getting-started.html#managi
 
 https://docs.conda.io/projects/miniconda/en/latest/
 
-# 使用
+# 2. 使用
 
 创建一个环境
 
@@ -55,7 +55,7 @@ conda deactivate
 conda remove -n ENV_NAME --all
 ```
 
-# window中怎么一键激活
+# 3. window中怎么一键激活
 
 写个bat脚本
 

@@ -9,7 +9,7 @@ categories:
 ---
 
 
-# 说明：
+# 1. 说明：
 
 自动化运维工具有：
 
@@ -17,11 +17,11 @@ categories:
 
 我是想让他做一些自动任务的管理，因为有ui，应该会效率高点
 
-# 安装
+# 2. 安装
 
 参考官方文档
 
-# 使用
+# 3. 使用
 
 参考这个https://github.com/6dylan6/jdpro
 
@@ -33,7 +33,7 @@ categories:
 
 https://cloud.tencent.com/developer/article/2087378
 
-# 研究
+# 4. 研究
 
 以这个项目为例：
 
@@ -51,13 +51,13 @@ https://docs.github.com/en/rest/releases/releases?apiVersion=2022-11-28#get-the-
 
 https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token
 
-## 我的第一个脚本
+## 4.1 我的第一个脚本
 
-### 脚本地址：
+### 4.1.1 脚本地址：
 
 https://github.com/ftyszyx/qinglong
 
-### 拉取代码
+### 4.1.2 拉取代码
 
 增加订阅：
 
@@ -67,7 +67,7 @@ https://github.com/ftyszyx/qinglong
 
 <img src="/assets/OAL5b8O7uoczr7xLFF3cPHfWnEf.png" src-width="475" class="markdown-img m-auto" src-height="104" align="center"/>
 
-### 添加配置
+### 4.1.3 添加配置
 
 <img src="/assets/ZKt4bRl0uoE6XRxHDMhcuRCxnGd.png" src-width="1023" class="markdown-img m-auto" src-height="355" align="center"/>
 
@@ -75,17 +75,17 @@ https://github.com/ftyszyx/qinglong
 
 <img src="/assets/GnsybkeHqoTIy6x2AUQcGNDOnIe.png" src-width="507" class="markdown-img m-auto" src-height="311" align="center"/>
 
-### 添加任务
+### 4.1.4 添加任务
 
 <img src="/assets/QdPNbzKCsovRQsxCVP0cNqXSnZf.png" src-width="1001" class="markdown-img m-auto" src-height="235" align="center"/>
 
 <img src="/assets/C46obAfrwoGr76xYfD1cupENnOb.png" src-width="462" class="markdown-img m-auto" src-height="390" align="center"/>
 
-### 添加依赖
+### 4.1.5 添加依赖
 
 <img src="/assets/H48YbieXro4gtnx9uJ7cHafJn2e.png" src-width="905" class="markdown-img m-auto" src-height="320" align="center"/>
 
-# 问题
+# 5. 问题
 
 生成的文件，只能在docker映射的目录下
 
@@ -93,7 +93,7 @@ https://github.com/ftyszyx/qinglong
 
 <img src="/assets/ILYqbFjQToCbikx2G5Xc0paxnih.png" src-width="346" class="markdown-img m-auto" src-height="73" align="center"/>
 
-# 总结
+# 6. 总结
 
 qinglong类似于一个简化版本的jenkins.
 

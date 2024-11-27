@@ -11,7 +11,7 @@ categories:
 ---
 
 
-# 点击统计umami
+# 1. 点击统计umami
 
 [umami](https://github.com/ftyszyx/umami)主要功能是统计网站的访问数据 ，这个系统ui设计美观，功能精简，非常不错。
 
@@ -28,7 +28,7 @@ umami虽然有api,但是有两个问题：
 
 主要改了两点：
 
-## 增加获取网站点击数据api
+## 1.1 增加获取网站点击数据api
 
 /api/websites/${umami_website_id}/blogpage
 
@@ -50,7 +50,7 @@ umami虽然有api,但是有两个问题：
 }
 ```
 
-## 同时要处理跨域问题
+## 1.2 同时要处理跨域问题
 
 因为我的博客在github上，在访问其它网站时会有跨域问题，所以我干脆把跨域放开，当时你也可以设置具体的地址。
 
@@ -72,11 +72,11 @@ umami虽然有api,但是有两个问题：
       },
 ```
 
-## 重新编译container
+## 1.3 重新编译container
 
 因为修改了代码，需要自己编译container。参考原项目的github action配置，很容易，具体参考github actions里的修改 
 
-## 注意事项
+## 1.4 注意事项
 
 第一次登陆的账号： **admin**密码是   **umami**
 
@@ -84,7 +84,7 @@ umami虽然有api,但是有两个问题：
 
 具体使用文档，参考官方：[umami文档](https://umami.is/docs)
 
-# 第三方评论系统artalk
+# 2. 第三方评论系统artalk
 
 使用[artalk](https://artalk.js.org/)是因为参考别的博客系统也用这个，
 
@@ -94,7 +94,7 @@ umami虽然有api,但是有两个问题：
 
 第一次进后台，我都不知道怎么用有点迷糊,具体使用请看[官方文档](https://artalk.js.org/guide/intro.html)
 
-## 注意事项
+## 2.1 注意事项
 
 安装完系统后，需要在配置文件 中修改账号密码
 

@@ -10,13 +10,13 @@ categories:
 
 主要是学习catlikecoding的一些问题记录
 
-# 官网
+# 1. 官网
 
 https://catlikecoding.com/
 
-# 基础
+# 2. 基础
 
-## Building-gragh
+## 2.1 Building-gragh
 
 这里为了让点表现好点，作者需要做一个新的材质
 
@@ -110,9 +110,9 @@ surface.Albedo = input.worldPos;
 
  surface.Albedo 设置表面的反照率（漫反射颜色）。在Unity的标准着色器中，Albedo 通常是一个 RGB 颜色值。
 
-### 用urp写shader
+### 2.1.1 用urp写shader
 
-#### 新建
+#### 2.1.1.1 新建
 
 这回使用shader graph图形化工具
 
@@ -122,13 +122,13 @@ surface.Albedo = input.worldPos;
 
 <img src="/assets/R2TNbS5GBokMekxe1CrcXQHOn9b.png" src-width="692" class="markdown-img m-auto" src-height="536" align="center"/>
 
-#### 增加用户可调属性
+#### 2.1.1.2 增加用户可调属性
 
 增加smooth属性
 
 <img src="/assets/V1Wbbt6sroR8aYxUcNPcOkB0nag.png" src-width="438" class="markdown-img m-auto" src-height="218" align="center"/>
 
-#### 增加内部节点
+#### 2.1.1.3 增加内部节点
 
 <div class="flex gap-3 columns-2" column-size="2">
 <div class="w-[45%]" width-ratio="45">

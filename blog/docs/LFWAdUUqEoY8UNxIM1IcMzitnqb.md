@@ -9,7 +9,7 @@ categories:
 ---
 
 
-# 快捷搜索窗口
+# 1. 快捷搜索窗口
 
 按快捷键ctrl+shift+Q（按捷键可以自行修改），可以快捷打开快捷窗口
 
@@ -27,7 +27,7 @@ categories:
 
 <img src="/assets/NI2kblJvpotrXEx6tGyc5Faynmh.png" src-width="600" class="markdown-img m-auto" src-height="308" align="center"/>
 
-# 自动输入流程
+# 2. 自动输入流程
 
 存好密码后，如何快捷的使用呢，在激活快捷窗口后，输入关键字，找到相关密码信息，点回车即可。
 
@@ -35,7 +35,7 @@ categories:
 
 <img src="/assets/I4PIbMANNoUqqXxYRz0cnfXMnNd.gif" src-width="1120" class="markdown-img m-auto" src-height="726" align="center"/>
 
-# 结语
+# 3. 结语
 
 整体流程类似于1password，
 

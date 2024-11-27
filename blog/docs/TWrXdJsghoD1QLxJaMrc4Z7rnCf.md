@@ -9,9 +9,9 @@ categories:
 ---
 
 
-# 密码库
+# 1. 密码库
 
-## 新增
+## 1.1 新增
 
 密码库是隐私信息的集合
 
@@ -27,7 +27,7 @@ categories:
 
 <img src="/assets/NVcbbLA6LojfJExSkiycv6X1nxc.png" src-width="549" class="markdown-img m-auto" src-height="293" align="center"/>
 
-## 删除和修改
+## 1.2 删除和修改
 
 点下面的设置图标，去修改
 
@@ -39,7 +39,7 @@ categories:
 
  **注意：删除密码库，会将密码库下的所有密码信息全删除，所以要慎重。**
 
-## 查看密码库下的密码项目
+## 1.3 查看密码库下的密码项目
 
 点下方箭头即可
 

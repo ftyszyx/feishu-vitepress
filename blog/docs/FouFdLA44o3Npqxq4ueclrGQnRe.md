@@ -14,7 +14,7 @@ categories:
 ---
 
 
-# 背景
+# 1. 背景
 
 博客原本是在[github_pages](https://ftyszyx.github.io/feishu-vitepress/)上，但在没有翻墙的情况下，有时候访问会很慢。
 
@@ -24,19 +24,19 @@ categories:
 
 于是问题来了，我想阿里云上部署了博客后能自动的去拉取github的更新。
 
-# 方案
+# 2. 方案
 
 1. 新建一个github_action，定时生成一个release,将博客打包
 2. 在阿里云服务器上写个脚本，定时去拉取最新的release,交解压到/var/www目录下
 3. 在阿里云上部署nginx服务，指向博客目录
 
-# 实现
+# 3. 实现
 
-##  生成release
+## 3.1  生成release
 
 这个简单，参考[我的实现](https://github.com/ftyszyx/feishu-vitepress/blob/main/.github/workflows/release.yml)
 
-## 定时拉取release
+## 3.2 定时拉取release
 
 Github 有接口：[地址](https://docs.github.com/en/rest/releases/releases?apiVersion=2022-11-28#get-the-latest-release)
 
@@ -48,7 +48,7 @@ Github 有接口：[地址](https://docs.github.com/en/rest/releases/releases?ap
 
 具体参考项目https://github.com/ftyszyx/qinglong
 
-## ngnix服务
+## 3.3 ngnix服务
 
 为了方便管理，我也找到了一个nginx的系统
 

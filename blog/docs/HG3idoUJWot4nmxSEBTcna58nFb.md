@@ -63,7 +63,7 @@ services:
 docker-compose up -d
 ```
 
-# 怎么使用
+# 1. 怎么使用
 
 浏览器访问ip：8086
 

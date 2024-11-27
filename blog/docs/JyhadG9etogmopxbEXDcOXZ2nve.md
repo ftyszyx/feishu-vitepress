@@ -10,9 +10,9 @@ categories:
 ---
 
 
-# 安装
+# 1. 安装
 
-## 安装flutter sdk
+## 1.1 安装flutter sdk
 
 https://docs.flutter.dev/get-started/install/windows
 
@@ -32,11 +32,11 @@ https://docs.flutter.dev/get-started/install/windows/desktop
 
 <img src="/assets/Gwu2bUgxuoNRcaxsyjucbc3knmh.png" src-width="526" class="markdown-img m-auto" src-height="281" align="center"/>
 
-## 加入环境变量
+## 1.2 加入环境变量
 
 将“D:\flutter\sdk\flutter\bin”加入path环境变量 
 
-## 检查是否安装成功了
+## 1.3 检查是否安装成功了
 
 ```yaml
 flutter doctor

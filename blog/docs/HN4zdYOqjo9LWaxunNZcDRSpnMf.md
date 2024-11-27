@@ -7,7 +7,7 @@ categories:
 ---
 
 
-# 入口
+# 1. 入口
 
 在密码库页面和系统管理页面都有入口
 
@@ -15,7 +15,7 @@ categories:
 
 <img src="/assets/SW2vbTHk5oYCyMxfL20cDcWJnd7.png" src-width="479" class="markdown-img m-auto" src-height="462" align="center"/>
 
-# 密码生成器
+# 2. 密码生成器
 
 <img src="/assets/GFn5bNfEDovDOmxf38ec4RT7nZe.png" src-width="517" class="markdown-img m-auto" src-height="295" align="center"/>
 
@@ -31,7 +31,7 @@ categories:
 
 <img src="/assets/ZNoBbUEU8oiFw2xNeQPcw81cnjb.png" src-width="515" class="markdown-img m-auto" src-height="290" align="center"/>
 
-# 本地备份和还原
+# 3. 本地备份和还原
 
 <img src="/assets/VjqabkYNnoQA1fxAqcEcKMNTnvb.png" src-width="254" class="markdown-img m-auto" src-height="150" align="center"/>
 
@@ -55,7 +55,7 @@ categories:
 
 <img src="/assets/T2aabmJatoakO9xZf50ciLScnYb.png" src-width="283" class="markdown-img m-auto" src-height="150" align="center"/>
 
-# 网盘的备份和还原
+# 4. 网盘的备份和还原
 
 目前只支持备份到阿里云盘
 
@@ -89,7 +89,7 @@ categories:
 
 <img src="/assets/DlvdbcNyooAHVKxXHBGcw2SLnQf.png" src-width="418" class="markdown-img m-auto" src-height="153" align="center"/>
 
-# csv导入和导出
+# 5. csv导入和导出
 
 因为我们大部分的密码存在了浏览器里，如果想把相关数据导入到此软件，需要去浏览器里导出自己的密码。一般会生成一个csv。
 
@@ -103,17 +103,17 @@ categories:
 
 <img src="/assets/UhzFbtpiDousJ7xaUKOcLnDZn8d.gif" src-width="874" class="markdown-img m-auto" src-height="644" align="center"/>
 
-# 修改主密码
+# 6. 修改主密码
 
 慎用，会将所有数据用新密码重新加密
 
 <img src="/assets/ENzwbTpqwoWnJDx2lgRcLuR4nfb.png" src-width="240" class="markdown-img m-auto" src-height="416" align="center"/>
 
-# 切换账号
+# 7. 切换账号
 
 <img src="/assets/DCdXb8fHzoUugsxw2whcZRJ2nCg.gif" src-width="860" class="markdown-img m-auto" src-height="642" align="center"/>
 
-# 结语
+# 8. 结语
 
  **如果有bug可以在** **https://github.com/ftyszyx/lockpass/issues** **上说明，或者发邮件** **whyzi@qq.com**
 

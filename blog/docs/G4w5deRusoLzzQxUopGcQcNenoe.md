@@ -9,7 +9,7 @@ categories:
 ---
 
 
-# 说明
+# 1. 说明
 
 现在互联网上平台过多，每个平台都需要账号和密码。
 
@@ -39,9 +39,9 @@ categories:
 
 3、通过同步用户资料收费
 
-# 现有的软件
+# 2. 现有的软件
 
-##  Bitwarden 
+## 2.1  Bitwarden 
 
 https://bitwarden.com/
 
@@ -51,7 +51,7 @@ https://github.com/bitwarden
 
 厉害从前端到后端，完全开源。
 
-##  proton pass
+## 2.2  proton pass
 
 官网：https://proton.me/pass
 
@@ -59,13 +59,13 @@ https://github.com/bitwarden
 
 https://github.com/protonpass
 
-## 1password
+## 2.3 1password
 
 https://1password.com/zh-cn ：
 
 收费，找到一个说明：https://yishi.io/1password-complete-tutorial/
 
-### 网页流程说明
+### 2.3.1 网页流程说明
 
 第一步：生成一个私钥匙
 
@@ -139,7 +139,7 @@ https://1password.com/zh-cn ：
 
 <img src="/assets/FZ9Ibcd4lo3yBGxkeyIcjlPWnMc.png" src-width="967" class="markdown-img m-auto" src-height="451" align="center"/>
 
-### 新建密码
+### 2.3.2 新建密码
 
 <img src="/assets/GuHnbdIjLogZo0xNQO7c7wtinIe.png" src-width="969" class="markdown-img m-auto" src-height="669" align="center"/>
 
@@ -153,17 +153,17 @@ https://1password.com/zh-cn ：
 
 <img src="/assets/ZV82bZdQzoIrZMx6sLXcLVlZnJg.png" src-width="575" class="markdown-img m-auto" src-height="528" align="center"/>
 
-### 修改密码
+### 2.3.3 修改密码
 
 <img src="/assets/Amh4bTzQmowoGuxkPyLcw75knBK.png" src-width="1158" class="markdown-img m-auto" src-height="554" align="center"/>
 
 <img src="/assets/GLBZbdwjnohFn5x08cBcA0DEnHe.png" src-width="835" class="markdown-img m-auto" src-height="566" align="center"/>
 
-### 首页：
+### 2.3.4 首页：
 
 <img src="/assets/BJH9bCwkRoUjt1xWQo3c4IAjnFe.png" src-width="1344" class="markdown-img m-auto" src-height="575" align="center"/>
 
-### 安全机制
+### 2.3.5 安全机制
 
 1Password 并非开源，但它遵循公开规范（[安全模型的白皮书](https://1password.com/files/1Password-White-Paper.pdf)），任何开发者都可以对其进行黑箱测试。
 
@@ -177,7 +177,7 @@ David Schuetz 在他的[博客](https://darthnull.org/security/2018/11/09/1pass-
 
 <img src="/assets/W4pGb4wuFoozEzx0waccjPVZnTb.png" src-width="694" class="markdown-img m-auto" src-height="479" align="center"/>
 
-## 客户端流程
+## 2.4 客户端流程
 
 登陆
 
@@ -193,4 +193,4 @@ David Schuetz 在他的[博客](https://darthnull.org/security/2018/11/09/1pass-
 
 <img src="/assets/RrlhbOU6votu2dxjlFacowXQnDf.png" src-width="682" class="markdown-img m-auto" src-height="814" align="center"/>
 
-## 
+## 2.5 

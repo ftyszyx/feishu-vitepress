@@ -8,7 +8,7 @@ categories:
 ---
 
 
-# printify
+# 1. printify
 
 https://printify.com/
 

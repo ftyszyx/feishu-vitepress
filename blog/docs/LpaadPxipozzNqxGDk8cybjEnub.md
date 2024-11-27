@@ -7,7 +7,7 @@ categories:
 ---
 
 
-# CrystalDiskInfo_dll_lib
+# 1. CrystalDiskInfo_dll_lib
 
 https://github.com/ftyszyx/CrystalDiskInfo_dll_lib
 
@@ -21,7 +21,7 @@ ManagementObjectSearcher经常获取不到正确的硬盘序列号。
 
 为了获取正确的磁盘名称和序列号，最好的方法是使用 CrystalDiskInfo。但是，CrystalDiskInfo 是一个用 C++ 编写的 Windows 软件，不能在自己的项目中直接使用。所以，我将 CrystalDiskInfo 封装成了一个 DLL。现在，其他语言或 Windows 应用程序也可以借助 CrystalDiskInfo 正确地区分磁盘序列号。我已在 GitHub 上开源了这个项目。如果你对此感兴趣，可以查看并使用它。https://github.com/ftyszyx/CrystalDiskInfo_dll_lib
 
-# robotjs
+# 2. robotjs
 
 Robotjs (https://github.com/octalmage/robotjs)is build use V8 API.So it must be rebuilt for different Node versions.
 

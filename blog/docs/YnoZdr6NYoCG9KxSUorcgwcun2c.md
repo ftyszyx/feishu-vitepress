@@ -7,19 +7,19 @@ categories:
 ---
 
 
-# 官方文档
+# 1. 官方文档
 
 https://go.dev/learn/
 
-# 安装：
+# 2. 安装：
 
 https://go.dev/doc/install
 
-# 配置环境
+# 3. 配置环境
 
  
 
-# 写hello world
+# 4. 写hello world
 
 建一个目录
 
@@ -52,7 +52,7 @@ func main() {
 go run .
 ```
 
-# 使用外部库
+# 5. 使用外部库
 
 直接 在代码中import
 
@@ -70,9 +70,9 @@ go mod tidy
 go get github.com/lestrrat-go/file-rotatelogs
 ```
 
-# 加速
+# 6. 加速
 
-## 设置代理
+## 6.1 设置代理
 
  
 
@@ -91,7 +91,7 @@ $ go env | grep GOPROXY
 GOPROXY="https://goproxy.cn"
 ```
 
-## 取消代理
+## 6.2 取消代理
 
 ```text
 go env -w GOPROXY=direct
@@ -99,13 +99,13 @@ go env -w GOPROXY=direct
 
 “direct” 为特殊指示符，用于指示 Go 回源到模块版本的源地址去抓取(比如 GitHub 等)，当值列表中上一个 Go module proxy 返回 404 或 410 错误时，Go 自动尝试列表中的下一个，遇见 “direct” 时回源，遇见 EOF 时终止并抛出类似 “invalid version: unknown revision…” 的错误。
 
-## 设置不走 proxy 的私有仓库或组，多个用逗号相隔（可选）
+## 6.3 设置不走 proxy 的私有仓库或组，多个用逗号相隔（可选）
 
 ```text
 go env -w GOPRIVATE=git.mycompany.com,github.com/my/private
 ```
 
-### 官方全球代理
+### 6.3.1 官方全球代理
 
 ```text
 go env -w GOPROXY=https://proxy.golang.com.cn,direct
@@ -118,13 +118,13 @@ go env -w GOSUMDB=sum.golang.google.cn
 **go env -w GOPROXY=https://goproxy.cn,direct**
 ```
 
-## 取消校验
+## 6.4 取消校验
 
 ```text
 go env -w GOSUMDB=off
 ```
 
-# 调试
+# 7. 调试
 
 vscode中安装go的插件即可
 

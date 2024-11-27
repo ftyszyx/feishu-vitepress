@@ -7,7 +7,7 @@ categories:
 ---
 
 
-# 新增密码项
+# 1. 新增密码项
 
 <img src="/assets/Mg9gbmsmjo5YGzxfaRYcdpU2nKg.png" src-width="767" class="markdown-img m-auto" src-height="410" align="center"/>
 
@@ -41,7 +41,7 @@ note:笔记信息
 
 点确定就ok了。
 
-# 修改和删除
+# 2. 修改和删除
 
 选右上角的编辑就可以进入编辑模式
 
@@ -53,13 +53,13 @@ note:笔记信息
 
 <img src="/assets/A09lbXg6joXjVUxSj8dc9QlunWd.png" src-width="473" class="markdown-img m-auto" src-height="562" align="center"/>
 
-# 分类筛选
+# 3. 分类筛选
 
 点左边的类别选择筛选密码类别
 
 <img src="/assets/PV33b28INo6KVmxUuFVcOPyCnUf.png" src-width="420" class="markdown-img m-auto" src-height="248" align="center"/>
 
-# 全局搜索
+# 4. 全局搜索
 
 可以搜索所有密码库的密码
 

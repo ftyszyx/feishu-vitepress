@@ -7,7 +7,7 @@ categories:
 ---
 
 
-# 前言
+# 1. 前言
 
 为什么要学习这个项目
 
@@ -23,11 +23,11 @@ categories:
 
 而且发现，这套系统的文档的确是不够详细。
 
-# 本地运行
+# 2. 本地运行
 
 项目地址：https://github.com/0xJacky/nginx-ui
 
-## 编译并运行前端
+## 2.1 编译并运行前端
 
 ```yaml
 cd app
@@ -36,7 +36,7 @@ npm run build //一定要做，因为服务端编译时需要dist目录
 npm run dev
 ```
 
-## 启动后端（需要linux)
+## 2.2 启动后端（需要linux)
 
 <div class="callout callout-bg-2 callout-border-2">
 <div class='callout-emoji'>🍞</div>
@@ -77,19 +77,19 @@ RunMode  = debug
 nginx-ui.exe -config app.ini
 ```
 
-## 使用说明
+## 2.3 使用说明
 
 第一次启动：
 
 <img src="/assets/PkiJbMbsHoQByXxDN2gchCCAnpg.png" src-width="706" class="markdown-img m-auto" src-height="527" align="center"/>
 
-# 项目说明
+# 3. 项目说明
 
 服务器是golang
 
 前端是vue
 
-## cosy
+## 3.1 cosy
 
 服务器使用了作者自己写的cosy框架:github.com/uozi-tech/cosy
 
@@ -99,7 +99,7 @@ nginx-ui.exe -config app.ini
 
 ftyszyx/nginx-ui.git
 
-## risefront
+## 3.2 risefront
 
 https://pkg.go.dev/code.pfad.fr/risefront
 
@@ -123,7 +123,7 @@ overseer这个主进程，为程序创建一个运行子进程
 
 参考文档：https://blog.csdn.net/flynetcn/article/details/134084549
 
-## sse
+## 3.3 sse
 
 项目还用到一个sse
 
@@ -148,7 +148,7 @@ https://www.ruanyifeng.com/blog/2017/05/server-sent_events.html
 </div>
 </div>
 
-##  zaplog
+## 3.4  zaplog
 
 项目使用zaplog来记录日志：
 
@@ -208,9 +208,9 @@ encoderConfig.EncodeLevel = colorLevelEncoder
 
 完美
 
-## nginx的配置
+## 3.5 nginx的配置
 
-### 站点列表
+### 3.5.1 站点列表
 
 <img src="/assets/Rnd8bfSiJonqiPxgR76c2M2znVp.png" src-width="1028" class="markdown-img m-auto" src-height="203" align="center"/>
 
@@ -222,7 +222,7 @@ settings.NginxSettings.ConfigDir
 
 <img src="/assets/KIWmb8V1ZoEjeHxZoT4c70Zanpg.png" src-width="341" class="markdown-img m-auto" src-height="178" align="center"/>
 
-## 证书的更新机制
+## 3.6 证书的更新机制
 
 /api/acme_users?
 
@@ -244,7 +244,7 @@ https://github.com/go-acme/lego
 
 https://go-acme.github.io/lego/usage/library/index.html
 
-### Acme
+### 3.6.1 Acme
 
 ACME是自动证书管理环境（Automatic Certificate Management Environment）的缩写，是一个由IETF（Internet Engineering Task Force）制定的协议标准，用于自动化证书颁发和管理。ACME协议的主要目的是使得证书颁发过程自动化、安全化和可扩展化，同时减少人工干预的成本和风险。
 
@@ -257,7 +257,7 @@ ACME协议的流程如下：
 
 Let’s Encrypt是一个免费的证书颁发机构，它支持ACME协议，并提供了Certbot客户端工具，可以自动化地申请、更新和管理SSL证书。Certbot客户端工具可以通过命令行工具或者Web界面进行操作。
 
-## Gorm
+## 3.7 Gorm
 
 数据库是使用这个库
 

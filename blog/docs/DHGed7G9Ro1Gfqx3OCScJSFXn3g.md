@@ -7,34 +7,34 @@ categories:
 ---
 
 
-# 参考资源
+# 1. 参考资源
 
 https://www.bootcss.com/p/git-guide/
 
 https://book.git-scm.com/docs
 
-# 打标签
+# 2. 打标签
 
-## 显示本地 tag：
+## 2.1 显示本地 tag：
 
 ```yaml
 git tag
 ```
 
-## 创建tag
+## 2.2 创建tag
 
 ```yaml
 git tag -a v1.4 -m "my version 1.4"
 -m 选项指定了一条将会存储在标签中的信息。 如果没有为附注标签指定一条信息，Git 会启动编辑器要求你输入信息
 ```
 
-## 查看标签信息
+## 2.3 查看标签信息
 
 ```yaml
 git show
 ```
 
-## 推送本地标签到远程
+## 2.4 推送本地标签到远程
 
 默认情况下，git push 命令并不会传送标签到远程仓库服务器上。 在创建完标签后你必须显式地推送标签到共享服务器上。 这个过程就像共享远程分支一样——你可以运行 git push origin &lt;tagname&gt;
 
@@ -48,26 +48,26 @@ git push origin v1.5
 git push --tags
 ```
 
-## 删除本地tag
+## 2.5 删除本地tag
 
 ```yaml
 git tag-d Remote_Systems_Operation
 ```
 
-## 用push, 删除远程tag
+## 2.6 用push, 删除远程tag
 
 ```yaml
 git push origin :refs/tags/Remote_Systems_Operation
 删除操作实际上就是推送空的源标签 `refs`：
 ```
 
-## 删除远程分支
+## 2.7 删除远程分支
 
 ```yaml
 git branch -r -d origin/branch-name git push origin :branch-name
 ```
 
-# 远端管理
+# 3. 远端管理
 
 添加远端
 
@@ -107,7 +107,7 @@ git remote remove origin
 git remote rename old_name new_name
 ```
 
-# 分支
+# 4. 分支
 
 创建并切到新分支
 
@@ -133,7 +133,7 @@ git branch -d feature_x
 git push origin feature_x
 ```
 
-# 合并和更新
+# 5. 合并和更新
 
 更新本地仓库
 
@@ -147,7 +147,7 @@ git pull
 git merge <branch> master
 ```
 
-# 开源仓库贡献
+# 6. 开源仓库贡献
 
 ```yaml
 #fork the VS Code repository 
@@ -159,7 +159,7 @@ git pull https://github.com/microsoft/vscode.git main
 Manage any merge conflicts, commit them, and then push them to your fork.
 ```
 
-# 清除历史记录
+# 7. 清除历史记录
 
 1. 进入仓库，拉一个分支比如名为 latest_branch
 
@@ -204,7 +204,7 @@ git branch --set-upstream-to=origin/master
 
 对 gitee 用户，因为 gitee 目前限制单个仓库大小为 1024 MB，清除完历史记录后，还要去项目主页 设置下做一下存储库GC 
 
-# 设置代理
+# 8. 设置代理
 
 ```bash
 // 添加代理
@@ -231,7 +231,7 @@ git config --global --unset http.https://github.com.proxy
 git config --global --unset https.https://github.com.proxy
 ```
 
-# 生成密钥
+# 9. 生成密钥
 
 ```sql
 ssh-keygen -t rsa -b 4096 -C "whyzi@qq.com"

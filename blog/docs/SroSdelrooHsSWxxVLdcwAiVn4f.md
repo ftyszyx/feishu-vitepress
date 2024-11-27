@@ -11,9 +11,9 @@ categories:
 ---
 
 
-# 多线程
+# 1. 多线程
 
-## 汇总
+## 1.1 汇总
 
 Thread、ThreadPool、Task、Parallel
 
@@ -35,7 +35,7 @@ Parallel
 
 优点在于丰富的API，多线程方便管理，线程数量控制简单，但是主线程也会参与计算，导致主线程的阻塞问题（但是这个问题可以通过包一层来解决） 
 
-### Parallel
+### 1.1.1 Parallel
 
 文档：https://learn.microsoft.com/en-us/dotnet/standard/parallel-programming/task-parallel-library-tpl
 
@@ -43,7 +43,7 @@ Parallel
 Parallel.ForEach(sourceCollection, item => Process(item));
 ```
 
-# Net core
+# 2. Net core
 
 gitHub  runtime
 

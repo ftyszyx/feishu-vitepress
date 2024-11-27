@@ -8,7 +8,7 @@ categories:
 ---
 
 
-# nginx-ui使用
+# 1. nginx-ui使用
 
 本人又要自己搭服务器了，搭服务器离不开反向代理，目前通用的反向代理还是nginx.没有之一。
 
@@ -16,7 +16,7 @@ categories:
 
 功夫不负有心人，我找到了一个开源项目，[nginx-ui](https://github.com/0xJacky/nginx-ui)
 
-## 安装
+## 1.1 安装
 
  选择docker-compose
 
@@ -58,7 +58,7 @@ docker-compose up -d
 
 然后就可以访问了
 
-## 配置
+## 1.2 配置
 
 先要配置一下nginx日志路径 
 
@@ -73,11 +73,11 @@ docker-compose up -d
 
 <img src="/assets/MopJbQS5aoM3vpxkRKicr46wnQh.png" src-width="181" class="markdown-img m-auto" src-height="268" align="center"/>
 
-## 自动签发证书
+## 1.3 自动签发证书
 
 - 一键申请和自动续签 Let's encrypt 证书
 
-#### Let's encrypt
+#### 1.3.1.1 Let's encrypt
 
 官网：https://letsencrypt.org/
 
@@ -91,11 +91,11 @@ https://andyyou.github.io/2019/04/13/how-to-use-certbot/
 
  在nginx ui中如何操作
 
-##### 配置acme用户
+##### 1.3.1.1.1 配置acme用户
 
 <img src="/assets/M6yCbO6j7oqaUmx2A8UceN9Nn6L.png" src-width="1309" class="markdown-img m-auto" src-height="348" align="center"/>
 
-##### 为站点启用tls
+##### 1.3.1.1.2 为站点启用tls
 
 <img src="/assets/X6mkbmUQoow2UnxQqmZccLHMnXd.png" src-width="867" class="markdown-img m-auto" src-height="303" align="center"/>
 
@@ -113,7 +113,7 @@ https://andyyou.github.io/2019/04/13/how-to-use-certbot/
 
 nginx_ui不要设置反向代理。否则为不成功
 
-# Nginx配置学习
+# 2. Nginx配置学习
 
 官方文档：
 
@@ -123,7 +123,7 @@ https://docs.nginx.com/nginx/admin-guide/web-server/we
 
 https://docs.nginx.com/nginx/admin-guide/web-server/serving-static-content/
 
-## 问题1：单页面应用要怎么配
+## 2.1 问题1：单页面应用要怎么配
 
 [参考文章](https://www.barwe.cc/2022/06/20/nginxtryfilesinspa)
 

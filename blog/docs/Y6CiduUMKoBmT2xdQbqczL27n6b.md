@@ -7,11 +7,11 @@ categories:
 ---
 
 
-# 参考
+# 1. 参考
 
 https://renderdoc.org/
 
-# 如何抓模拟器的帧
+# 2. 如何抓模拟器的帧
 
 https://zhuanlan.zhihu.com/p/403453085
 

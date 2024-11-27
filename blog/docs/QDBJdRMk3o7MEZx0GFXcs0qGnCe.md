@@ -12,7 +12,7 @@ categories:
 ---
 
 
-# 为什么做这个
+# 1. 为什么做这个
 
 目前的静态博客如vitepress，主要是用markdown来写内容。
 
@@ -28,7 +28,7 @@ markdown虽然可读性比较好，但有以下几个疼点：
 
 平时工作主要用飞书写文档，觉得很方便，所以就想能不能在飞书写文档，然后自动将飞书的文档导出成博客的文章。
 
-# 主要功能介绍
+# 2. 主要功能介绍
 
 1. 将飞书文档导出成markdown文件（集成到了github action，自动）
 2. 生成导出的文章的静态博客系统(使用vitepress实现，集成到了github action，自动)
@@ -36,9 +36,9 @@ markdown虽然可读性比较好，但有以下几个疼点：
 4. 集成了umami访问统计（修改了一部分源码）
 5. 集成了artalk评论系统 （功能可用，但后台管理页面丑陋，后面找到合适的系统，再换掉）
 
-# 如何使用
+# 3. 如何使用
 
-## 配置飞书应用
+## 3.1 配置飞书应用
 
 先安装飞书：https://www.feishu.cn/
 
@@ -52,13 +52,13 @@ FEISHU_APP_SECRET=飞书应用的secret
 FEISHU_SPACE_ID=知识库的id
 ```
 
-### 新建应用
+### 3.1.1 新建应用
 
 去飞书开放平台，新建一个应用
 
 https://open.feishu.cn/app
 
-### 为应用添加机器人能力
+### 3.1.2 为应用添加机器人能力
 
 <img src="/assets/ThhAba6CPo8ZwyxOLjDcUHTBnFb.png" src-width="306" class="markdown-img m-auto" src-height="321" align="center"/>
 
@@ -66,7 +66,7 @@ https://open.feishu.cn/app
 
 <img src="/assets/XK09b0UXZoDT8Rx8W4TcHAQXnGx.png" src-width="244" class="markdown-img m-auto" src-height="327" align="center"/>
 
-### 增加飞书文档权限
+### 3.1.3 增加飞书文档权限
 
 在权限管理中
 
@@ -74,13 +74,13 @@ https://open.feishu.cn/app
 
 <img src="/assets/BmPLbo84DobeTXxEMmQcFXFmnBg.png" src-width="259" class="markdown-img m-auto" src-height="109" align="center"/>
 
-### 获取应用凭证
+### 3.1.4 获取应用凭证
 
 在应用凭证甚而信息中，获取appid和app secret
 
 <img src="/assets/JQWfb98Agoinicxr3cmc8xTSnQb.png" src-width="236" class="markdown-img m-auto" src-height="225" align="center"/>
 
-### 发布应用
+### 3.1.5 发布应用
 
 点创建版本
 
@@ -98,7 +98,7 @@ https://open.feishu.cn/app
 
 <img src="/assets/A60LbBZ3ZoivhGxX9gacdiFUnmg.png" src-width="328" class="markdown-img m-auto" src-height="177" align="center"/>
 
-### 将群设成飞书文档库的管理员
+### 3.1.6 将群设成飞书文档库的管理员
 
 打开「知识空间设置」
 
@@ -112,15 +112,15 @@ https://open.feishu.cn/app
 
 <img src="/assets/AxwvbdUqyoP2WjxPy1Rc68HynBd.png" src-width="843" class="markdown-img m-auto" src-height="47" align="center"/>
 
-## 导出飞书文档
+## 3.2 导出飞书文档
 
-### 检出工程
+### 3.2.1 检出工程
 
 ```ts
 git clone https://github.com/ftyszyx/feishu-vitepress.git
 ```
 
-### 安装依赖
+### 3.2.2 安装依赖
 
 切到工程目录feishu_vitepress下
 
@@ -128,7 +128,7 @@ git clone https://github.com/ftyszyx/feishu-vitepress.git
 npm install
 ```
 
-### 配置环境变量
+### 3.2.3 配置环境变量
 
 修改feishu-pages-》.env.bak为.env
 
@@ -143,7 +143,7 @@ DOC_DIR_NAME=docs   #输出目录名
 RES_BASE_URL="/"
 ```
 
-### 导出飞书文档
+### 3.2.4 导出飞书文档
 
 ```ts
 npm run export
@@ -151,7 +151,7 @@ npm run export
 
 会导出到/blog/docs目录下
 
-### 翻译文档为英文
+### 3.2.5 翻译文档为英文
 
 使用edge库去翻译，有可能翻译的并不好
 
@@ -163,7 +163,7 @@ npm run trans_en
 
 <img src="/assets/KabZbcHZfo8uMlxxelccMyOjn5f.png" src-width="358" class="markdown-img m-auto" src-height="133" align="center"/>
 
-## 本地运行博客
+## 3.3 本地运行博客
 
 修改blog-》.env.bak为.env
 
@@ -185,9 +185,9 @@ npm run dev
 
 访问http://localhost:5173/ 即可
 
-# 飞书文档编写注意事项
+# 4. 飞书文档编写注意事项
 
-## 文章封面图片
+## 4.1 文章封面图片
 
 文档的第一行的图片，会转成文档属性的cover字段
 
@@ -199,7 +199,7 @@ npm run dev
 
 高度是800宽度就是1880
 
-## 文章支持的属性字段
+## 4.2 文章支持的属性字段
 
 文档的第二行，可以配文档属性。支持yaml
 
@@ -213,7 +213,7 @@ keywords:  #用于搜索和网站seo，非必须
   - vitepress
 ```
 
-## 文章的类别
+## 4.3 文章的类别
 
 文章的分类会自动匹配到飞书文档的根结点名（不区分大小写）
 
@@ -225,7 +225,7 @@ keywords:  #用于搜索和网站seo，非必须
 if (category) meta["categories"] = meta.categories || [category.trim().toLowerCase()];
 ```
 
-### 参考项目
+### 4.3.1 参考项目
 
 导出飞书文档参考：[链接](https://github.com/longbridgeapp/feishu-pages)
 

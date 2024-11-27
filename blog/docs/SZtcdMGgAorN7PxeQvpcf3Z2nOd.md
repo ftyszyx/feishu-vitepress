@@ -14,7 +14,7 @@ categories:
 
  **Cloudflare WARP+：我又回来啦！新MASQUE协议，新体验！最强永久免费VPN，不限流量！防失联必备！**
 
-##  **事前准备**
+## 1.1  **事前准备**
 
 - 进入[WARP+官网](https://one.one.one.one/zh-Hans/)，先行下载并安装对应客户端。
 
@@ -22,7 +22,7 @@ categories:
 
 ---
 
-##  **Windows 客户端**
+## 1.2  **Windows 客户端**
 
 1. 打开[MASQUE配置文件下载](https://warp-masque.cmliussss.com/)网址，点击 **Windows**下载`mdm.xml`文件保存至`C:\ProgramData\Cloudflare`目录下；
 
@@ -36,7 +36,7 @@ categories:
 
 ---
 
-##  **Mac 客户端**
+## 1.3  **Mac 客户端**
 
 1. 确保你的 **WARP客户端版本**在`2024.8.309.1`或更高，如果不在该版本以上可选择升级测试版；
 
@@ -68,7 +68,7 @@ categories:
 
 ---
 
-##  **iOS 客户端**
+## 1.4  **iOS 客户端**
 
 1. 进入 **更多设置**；
 
@@ -96,13 +96,13 @@ categories:
 
 ---
 
-#  **简单分流-通过本地代理运行 WARP**
+# 1.  **简单分流-通过本地代理运行 WARP**
 
-##  **1.WARP＋开启** **配置代理模式** **；**
+## 1.1  **1.WARP＋开启** **配置代理模式** **；**
 
 ---
 
-###  **Windows客户端开启方式**
+### 1.1.1  **Windows客户端开启方式**
 
 <img src="/assets/WegibHAnRoRqSMxylS7c9F9pntb.png" src-width="1012" class="markdown-img" src-height="654"/>
 
@@ -110,7 +110,7 @@ categories:
 
 ---
 
-###  **Mac客户端开启方式**  **测试版暂不支持，等待正式版更新！**
+### 1.1.2  **Mac客户端开启方式**  **测试版暂不支持，等待正式版更新！**
 
 <img src="/assets/BpX0bgydHoZ16DxLyNjcoxaYnxd.gif" src-width="1" class="markdown-img" src-height="1"/>
 
@@ -118,7 +118,7 @@ categories:
 
 ---
 
-##  **2.使用Chrome内核浏览器安装**[Proxy SwitchyOmega插件](https://chromewebstore.google.com/detail/Proxy%20SwitchyOmega/padekgcemlokbadohgkifijomclgjgif)
+## 1.2  **2.使用Chrome内核浏览器安装**[Proxy SwitchyOmega插件](https://chromewebstore.google.com/detail/Proxy%20SwitchyOmega/padekgcemlokbadohgkifijomclgjgif)
 
 <img src="/assets/McaWbJk6UouYouxIqoFc2k7Pn3c.gif" src-width="1" class="markdown-img" src-height="1"/>
 
@@ -126,9 +126,9 @@ categories:
 
 ---
 
-##  **3.设置分流代理模式**
+## 1.3  **3.设置分流代理模式**
 
-###  **自动代理模式**
+### 1.3.1  **自动代理模式**
 
 1. 设置 **proxy**模式 &gt; 代理协议`SOCKS5` 代理服务器`127.0.0.1` 代理端口`40000` &gt; `应用选项`；
 
@@ -152,7 +152,7 @@ categories:
 
 ---
 
-###  **PAC模式**
+### 1.3.2  **PAC模式**
 
 - 注意该模式 **SOCKS5端口**必须是`40000`！！！
 
@@ -170,7 +170,7 @@ categories:
 
 ---
 
-#  **Zero Trust**  **用户需要额外开启**  **MASQUE协议！**
+# 2.  **Zero Trust**  **用户需要额外开启**  **MASQUE协议！**
 
 - 如果你是 **Zero Trust**用户，那你还需要额外开启 **MASQUE协议**。
 - 没必要不推荐使用 **Zero Trust**，因为 **Zero Trust**分配的很可能是 **中国IP**！

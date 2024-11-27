@@ -10,7 +10,7 @@ categories:
 ---
 
 
-# Github actions
+# 1. Github actions
 
 Github actions简直是一个免费的计算资源，不好好好利用，简直是浪费
 
@@ -18,9 +18,9 @@ Github actions官方库：
 
 https://github.com/actions
 
-## 如何创建一个release
+## 1.1 如何创建一个release
 
-### Create relase
+### 1.1.1 Create relase
 
 官方有个api:
 
@@ -64,7 +64,7 @@ jobs:
           prerelease: false
 ```
 
-### Upload release asset
+### 1.1.2 Upload release asset
 
 但这时还没有东西，只是把源码压缩了，不是最终的编译产物
 
@@ -88,7 +88,7 @@ jobs:
       asset_content_type: application/zip
 ```
 
-# github下载加速
+# 2. github下载加速
 
 目前发现比较好的是
 

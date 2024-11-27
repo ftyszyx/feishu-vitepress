@@ -26,9 +26,9 @@ https://github.com/fzxa/VSCode-sourcecode-analysis/blob/master/chapter-1.md
 
 https://blog.csdn.net/zhugangsong/category_12600296.html
 
-# 编译
+# 1. 编译
 
-## 安装环境
+## 1.1 安装环境
 
 我的电脑是window
 
@@ -38,7 +38,7 @@ https://blog.csdn.net/zhugangsong/category_12600296.html
 
 - if you install Node on your system using the Node installer from the <u>Node.JS</u> page then ensure that you have installed the 'Tools for Native Modules'. Everything should work out of the box then.
 
-## Build
+## 1.2 Build
 
 ```csharp
 cd vscode
@@ -59,7 +59,7 @@ build error "MSB8040: Spectre-mitigated libraries are required
 
 <img src="/assets/HUkeb4IIvovrEax3TSCc7SiTn7c.png" src-width="799" class="markdown-img m-auto" src-height="561" align="center"/>
 
-### Build 脚本
+### 1.2.1 Build 脚本
 
 执行下面命令，ts会被编译成js
 
@@ -67,20 +67,20 @@ build error "MSB8040: Spectre-mitigated libraries are required
 yarn watch
 ```
 
-### 启动
+### 1.2.2 启动
 
 ```csharp
 .\scripts\code.bat
 .\scripts\code-cli.bat #这一步不知道干啥的
 ```
 
-### 调试
+### 1.2.3 调试
 
 打开chrome调试面板
 
 <img src="/assets/KhJVbN4gKoYttsx4YIqcOcI6nae.png" src-width="872" class="markdown-img m-auto" src-height="175" align="center"/>
 
-## 编译启动分析
+## 1.3 编译启动分析
 
 程序的启动主要是两个命令
 
@@ -91,7 +91,7 @@ code.bat
 
  我们依次分析
 
-### Yarn watch
+### 1.3.1 Yarn watch
 
 ```ts
 "watch": "npm-run-all -lp watch-client watch-extensions",
@@ -138,7 +138,7 @@ src/**下面的ts，到out/目录下
 
 我们只要知道，yarn watch后我们可以安心的在src目录下写ts脚本了就行。
 
-### code.bat
+### 1.3.2 code.bat
 
 先执行了
 
@@ -175,7 +175,7 @@ yarn electron
 .build\electron\Code - OSS.exe
 ```
 
-### yarn electron
+### 1.3.3 yarn electron
 
 ```ts
 node build/lib/electron

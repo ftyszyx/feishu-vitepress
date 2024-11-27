@@ -7,9 +7,9 @@ categories:
 ---
 
 
-# 如何对android包解包
+# 1. 如何对android包解包
 
-## 使用apktool解包
+## 1.1 使用apktool解包
 
 下载地址：https://apktool.org/
 
@@ -29,7 +29,7 @@ java代码在smali目录下
 
 so库在lib目录下
 
-## 使用将smali转成java
+## 1.2 使用将smali转成java
 
 地址：https://github.com/pxb1988/dex2jar/releases
 
@@ -43,7 +43,7 @@ d2j-dex2jar.bat -f 1.apk
 
 结果就是1-dex2jar.jar
 
-## 使用jd-jui查看jar的源码
+## 1.3 使用jd-jui查看jar的源码
 
 https://java-decompiler.github.io/
 

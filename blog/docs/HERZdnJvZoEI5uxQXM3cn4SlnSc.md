@@ -18,7 +18,7 @@ categories:
 ---
 
 
-# 背景：
+# 1. 背景：
 
 对于一个开发，远程控制是刚需.
 
@@ -28,13 +28,13 @@ categories:
 
 有想自己部署的可以参考。
 
-# 安装客户端
+# 2. 安装客户端
 
 去官网下载最新版本https://github.com/rustdesk/rustdesk/releases
 
 选x86_64.msi
 
-# 安装服务器
+# 3. 安装服务器
 
 https://github.com/rustdesk/rustdesk-server
 
@@ -93,7 +93,7 @@ docker-compose up -d
 
 将.pub文件复制下来
 
-# 配置客户端
+# 4. 配置客户端
 
 解锁网络配置
 
@@ -107,9 +107,9 @@ docker-compose up -d
 
 <img src="/assets/A60VbgI33oPabdxWHTRczBXtn0d.png" src-width="793" class="markdown-img m-auto" src-height="350" align="center"/>
 
-# 问题处理
+# 5. 问题处理
 
-## Docker 启动报错
+## 5.1 Docker 启动报错
 
 如果启动时报错：
 
@@ -128,7 +128,7 @@ Registered email required (-m option).
 
 注意：docker-compose中有两个地方要改
 
-# 总结
+# 6. 总结
 
 完全免费：当然你可以使用server pro版本，但感觉个人版本就可以满足需求了。
 

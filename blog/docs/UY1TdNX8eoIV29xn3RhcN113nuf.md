@@ -41,19 +41,19 @@ sudo systemctl stop docker
 sudo systemctl stop docker.socket
 ```
 
-#### 创建新的docker目录，执行命令df -h,找一个大的磁盘。 我在/home目录下面建了 /home/docker目录，执行的命令是：
+#### 1.1.1.1 创建新的docker目录，执行命令df -h,找一个大的磁盘。 我在/home目录下面建了 /home/docker目录，执行的命令是：
 
 ```shell
 mkdir -p /home/docker
 ```
 
-#### 迁移/var/lib/docker目录下面的文件到 /home/docker
+#### 1.1.1.2 迁移/var/lib/docker目录下面的文件到 /home/docker
 
 ```shell
 rsync -avz /var/lib/docker /home/docker
 ```
 
-### 编辑/etc/docker/daemon.json文件
+### 1.1.1 编辑/etc/docker/daemon.json文件
 
 ```yaml
 vi /etc/docker/daemon.json
@@ -71,14 +71,14 @@ vi /etc/docker/daemon.json
 sudo systemctl restart docker.service
 ```
 
-### 启动成功后，再确认之前的镜像还在
+### 1.1.2 启动成功后，再确认之前的镜像还在
 
 ```shell
 docker ps -a
 docker images
 ```
 
-### 确定容器、镜像没问题后删除/var/lib/docker/目录中的文件。
+### 1.1.3 确定容器、镜像没问题后删除/var/lib/docker/目录中的文件。
 
 ```shell
 rm -rf /var/lib/docker/*

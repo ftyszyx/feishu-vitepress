@@ -8,7 +8,7 @@ categories:
 ---
 
 
-# 密码保护流程
+# 1. 密码保护流程
 
 一个密码管理软件的核心就是：
 
@@ -36,7 +36,7 @@ categories:
 
 <img src="/assets/ABm9b5FyqoEcTQxUlhWcJllQnMf.png" src-width="596" class="markdown-img m-auto" src-height="250" align="center"/>
 
-# 信息加密流程
+# 2. 信息加密流程
 
 加密信息，采用目前通用的高安全性的 **AES-256 算法**
 
@@ -57,7 +57,7 @@ CBC 模式：
 - 缺点：
     - 加密过程不能并行处理，因为每个分组的加密依赖于前一个分组。
 
-## 流程
+## 2.1 流程
 
 每次保存数据到本地数据库时，都将需要加密的字段加密后保存。
 
@@ -67,7 +67,7 @@ CBC 模式：
 
 <img src="/assets/CM6Pbbp8XoY77AxyfJzcrYzxnng.png" src-width="880" class="markdown-img" src-height="572"/>
 
-# 数据存储方案
+# 3. 数据存储方案
 
 为了保证数据安全，数据需要存储在自己的电脑上。
 

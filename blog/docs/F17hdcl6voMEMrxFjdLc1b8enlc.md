@@ -7,13 +7,13 @@ categories:
 ---
 
 
-# startups.fyi
+# 1. startups.fyi
 
 https://www.startups.fyi/
 
 展示创业项目和收入
 
-# Tailscan
+# 2. Tailscan
 
 https://tailscan.com/
 
@@ -21,7 +21,7 @@ https://tailscan.com/
 
 一个插件，能一个月搞1000美金，还是挺强的。
 
-# Superlemon
+# 3. Superlemon
 
 一个shopify插件在shopify应用商店
 
@@ -31,7 +31,7 @@ https://www.superlemon.xyz/
 
 一个聊天应用
 
-# stagetimer
+# 4. stagetimer
 
 https://stagetimer.io/
 
@@ -45,7 +45,7 @@ https://stagetimer.io/
 
 这正是Stagetimer做的事情：它计时你想要控制时间的任何事情。而这个简单的工具平均每月能产生8000美元的收入。
 
-### [你是怎么想到这个想法的？](https://www.ezindie.com/weekly/issue-130#%E4%BD%A0%E6%98%AF%E6%80%8E%E4%B9%88%E6%83%B3%E5%88%B0%E8%BF%99%E4%B8%AA%E6%83%B3%E6%B3%95%E7%9A%84)
+### 4.1.1 [你是怎么想到这个想法的？](https://www.ezindie.com/weekly/issue-130#%E4%BD%A0%E6%98%AF%E6%80%8E%E4%B9%88%E6%83%B3%E5%88%B0%E8%BF%99%E4%B8%AA%E6%83%B3%E6%B3%95%E7%9A%84)
 
 <img src="/assets/Oi3abb0JNolzBKxqygPcF0OXnnf.png" src-width="795" class="markdown-img" src-height="648"/>
 
@@ -61,7 +61,7 @@ Lukas和我一直对尝试新事物和在全职工作时进行一些副业项目
 
 过去我做过一些营销和业务增长的事情，但没有深入。所以这是我转换职业并变得擅长新事物的机会。作为一个书呆子，我全身心地投入其中，学习了关于营销、业务增长和客户开发的所有知识。我每周都在学习新东西，但我已经感到自信，我可以很好地扩展Stagetimer。
 
-### [带我们了解一下构建产品初版的过程](https://www.ezindie.com/weekly/issue-130#%E5%B8%A6%E6%88%91%E4%BB%AC%E4%BA%86%E8%A7%A3%E4%B8%80%E4%B8%8B%E6%9E%84%E5%BB%BA%E4%BA%A7%E5%93%81%E5%88%9D%E7%89%88%E7%9A%84%E8%BF%87%E7%A8%8B)
+### 4.1.2 [带我们了解一下构建产品初版的过程](https://www.ezindie.com/weekly/issue-130#%E5%B8%A6%E6%88%91%E4%BB%AC%E4%BA%86%E8%A7%A3%E4%B8%80%E4%B8%8B%E6%9E%84%E5%BB%BA%E4%BA%A7%E5%93%81%E5%88%9D%E7%89%88%E7%9A%84%E8%BF%87%E7%A8%8B)
 
 <img src="/assets/UHLLb4fxXomxn7xA5JfcTmwwnAf.png" src-width="1000" class="markdown-img" src-height="700"/>
 
@@ -73,7 +73,7 @@ Stagetimer的初版就像它得到的那样简单。布局很简单，甚至连�
 
 我永远不会忘记我们收到的一封客户邮件，他刚刚购买了年度订阅。他首先说他喜欢这个工具，然后列出了将近10个功能请求的清单，并用一句话结束邮件：“如果对这些请求的功能没有太大进展，那么我猜我们会在一年后重新考虑是否续订，但现在它已经满足了我们的一些需求。”
 
-### [描述一下启动业务的过程](https://www.ezindie.com/weekly/issue-130#%E6%8F%8F%E8%BF%B0%E4%B8%80%E4%B8%8B%E5%90%AF%E5%8A%A8%E4%B8%9A%E5%8A%A1%E7%9A%84%E8%BF%87%E7%A8%8B)
+### 4.1.3 [描述一下启动业务的过程](https://www.ezindie.com/weekly/issue-130#%E6%8F%8F%E8%BF%B0%E4%B8%80%E4%B8%8B%E5%90%AF%E5%8A%A8%E4%B8%9A%E5%8A%A1%E7%9A%84%E8%BF%87%E7%A8%8B)
 
 <img src="/assets/YLrzb9oJkormlpxMRDXcARDdnxf.png" src-width="1200" class="markdown-img" src-height="600"/>
 
@@ -85,7 +85,7 @@ Stagetimer的初版就像它得到的那样简单。布局很简单，甚至连�
 
 2022年5月，我们决定在ProductHunt上推出Stagetimer，并在Twitter上的独立开发者朋友的支持下成为当天的#1产品。我们没有从中获得任何销售，因为我们的主要客户群并不使用这个平台。无论如何，我们当时已经认为产品得到了验证，并将其视为一次很好的学习经历。
 
-### [有什么方法吸引并保留客户？](https://www.ezindie.com/weekly/issue-130#%E6%9C%89%E4%BB%80%E4%B9%88%E6%96%B9%E6%B3%95%E5%90%B8%E5%BC%95%E5%B9%B6%E4%BF%9D%E7%95%99%E5%AE%A2%E6%88%B7)
+### 4.1.4 [有什么方法吸引并保留客户？](https://www.ezindie.com/weekly/issue-130#%E6%9C%89%E4%BB%80%E4%B9%88%E6%96%B9%E6%B3%95%E5%90%B8%E5%BC%95%E5%B9%B6%E4%BF%9D%E7%95%99%E5%AE%A2%E6%88%B7)
 
 自从2021年11月Stagetimer基础版本创建以来，Stagetimer主要通过搜索和口碑增长。在搜索方面，我们一直专注于在我们的网站上创建能在谷歌上排名良好的内容，并用广告来补充。我们在自然排名上做不到的，我们就通过谷歌广告来针对。
 
@@ -95,7 +95,7 @@ Stagetimer的初版就像它得到的那样简单。布局很简单，甚至连�
 
 Stagetimer现在是我们的全职工作，已经能够支付我们所有的开支，包括我们现在正在进行的环球旅行——我正在写这篇文章的2022年12月。我们称它为全职工作，是因为我们已经辞掉了以前的工作，也不做自由职业来补充收入。但实际上，我们每天在Stagetimer上工作2到6小时，剩下的时间用来做副项目、学习、保健和娱乐。
 
-### [你学到了什么特别有用或有优势的东西吗？](https://www.ezindie.com/weekly/issue-130#%E4%BD%A0%E5%AD%A6%E5%88%B0%E4%BA%86%E4%BB%80%E4%B9%88%E7%89%B9%E5%88%AB%E6%9C%89%E7%94%A8%E6%88%96%E6%9C%89%E4%BC%98%E5%8A%BF%E7%9A%84%E4%B8%9C%E8%A5%BF%E5%90%97)
+### 4.1.5 [你学到了什么特别有用或有优势的东西吗？](https://www.ezindie.com/weekly/issue-130#%E4%BD%A0%E5%AD%A6%E5%88%B0%E4%BA%86%E4%BB%80%E4%B9%88%E7%89%B9%E5%88%AB%E6%9C%89%E7%94%A8%E6%88%96%E6%9C%89%E4%BC%98%E5%8A%BF%E7%9A%84%E4%B8%9C%E8%A5%BF%E5%90%97)
 
 基于市场需求或缺口开始的项目已被证明更具吸引力和可扩展性。看到我们的第一批用户和客户使用工具并从他们那里收到反馈，已经是构建企业的一种非常成功的方式。
 
@@ -103,7 +103,7 @@ Stagetimer现在是我们的全职工作，已经能够支付我们所有的开�
 
 对我们来说的另一个教训是采用免费增值模式的好处。当用户可以永久访问有限的功能时，就建立了信任和善意的关系。一旦他们需要访问所有功能，购买你的服务或产品的决定就会容易得多，因为已经有了信任基础。
 
-### [对想要开始或刚刚开始的其他创业者有什么建议？](https://www.ezindie.com/weekly/issue-130#%E5%AF%B9%E6%83%B3%E8%A6%81%E5%BC%80%E5%A7%8B%E6%88%96%E5%88%9A%E5%88%9A%E5%BC%80%E5%A7%8B%E7%9A%84%E5%85%B6%E4%BB%96%E5%88%9B%E4%B8%9A%E8%80%85%E6%9C%89%E4%BB%80%E4%B9%88%E5%BB%BA%E8%AE%AE)
+### 4.1.6 [对想要开始或刚刚开始的其他创业者有什么建议？](https://www.ezindie.com/weekly/issue-130#%E5%AF%B9%E6%83%B3%E8%A6%81%E5%BC%80%E5%A7%8B%E6%88%96%E5%88%9A%E5%88%9A%E5%BC%80%E5%A7%8B%E7%9A%84%E5%85%B6%E4%BB%96%E5%88%9B%E4%B8%9A%E8%80%85%E6%9C%89%E4%BB%80%E4%B9%88%E5%BB%BA%E8%AE%AE)
 
 我真心相信，基于实际需求创业会给你带来比仅仅尝试构建可能会让你赚钱的东西更多的乐趣。而且，寻找这些商业想法的过程可以非常有趣。Lukas和我经常玩一个游戏，我们互相挑战，观察我们周围的事物如何能够做得更好。我们尝试寻找日常活动中的低效和问题，然后提出解决方案和改进的想法。
 
@@ -113,7 +113,7 @@ Stagetimer现在是我们的全职工作，已经能够支付我们所有的开�
 
 作为我的最后一条建议：如果你现在有一份工作，首先开始一个副业项目，然后一旦你验证了你的产品或服务，再辞掉工作，全职投入自己的企业。这样，你可以在不需要立即赚钱否则就会破产的额外压力下建立你的企业。
 
-# 电小密
+# 5. 电小密
 
 https://www.dianxiaomi.com/index.htm
 

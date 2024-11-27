@@ -8,101 +8,101 @@ categories:
 ---
 
 
-# 登陆
+# 1. 登陆
 
-## logto
+## 1.1 logto
 
 https://github.com/logto-io/logto
 
-## Hanko
+## 1.2 Hanko
 
 https://github.com/teamhanko/hanko
 
-# 笔记软件 
+# 2. 笔记软件 
 
-## AppFlowy
+## 2.1 AppFlowy
 
 https://github.com/AppFlowy-IO/AppFlowy
 
-## notion
+## 2.2 notion
 
 https://www.notion.so/
 
-## AFFiNE
+## 2.3 AFFiNE
 
 https://github.com/toeverything/<u>AFFiNE</u>
 
-## Siyuan
+## 2.4 Siyuan
 
 https://b3log.org/siyuan/download.html
 
-## Docmost
+## 2.5 Docmost
 
 服务器部署
 
 https://github.com/docmost/docmost
 
-# Unity
+# 3. Unity
 
-## NKGMobaBasedOnET
+## 3.1 NKGMobaBasedOnET
 
 开源的lol
 
 https://github.com/wqaetly/NKGMobaBasedOnET
 
-## ET
+## 3.2 ET
 
 .net core的服务端框架
 
 https://github.com/egametang/ET
 
-# AI
+# 4. AI
 
-## Flux
+## 4.1 Flux
 
 https://github.com/black-forest-labs/flux
 
-##  **Hugging face** 
+## 4.2  **Hugging face** 
 
 (开源模型平台）
 
 https://huggingface.co
 
-## Lepton
+## 4.3 Lepton
 
 https://github.com/leptonai/search_with_lepton
 
 Conversational search engine
 
-## replicate
+## 4.4 replicate
 
 七源模型api平台
 
 https://replicate.com/
 
-##  **one-api**
+## 4.5  **one-api**
 
 一个api转发平台
 
 https://github.com/songquanpeng/one-api
 
-## Chat ai
+## 4.6 Chat ai
 
-### _ChatGPT-Next-Web_
+### 4.6.1 _ChatGPT-Next-Web_
 
 https://github.com/ChatGPTNextWeb/_ChatGPT-Next-Web_
 
-## sam2
+## 4.7 sam2
 
 图像分割
 
-##  **gemma-2b**
+## 4.8  **gemma-2b**
 
 :大语言模型（手机上可以跑）
 
 https://huggingface.co/google/gemma-2b
 
-##  **flux**
+## 4.9  **flux**
 
 文字生成图片大模型
 
@@ -110,131 +110,131 @@ https://huggingface.co/black-forest-labs/FLUX.1-dev
 
 https://blackforestlabs.ai/
 
-##  **cogvideox**
+## 4.10  **cogvideox**
 
 文字生成视频的开源模型
 
 https://huggingface.co/THUDM/CogVideoX-2b
 
-## Cogvideo
+## 4.11 Cogvideo
 
 Text to video
 
 https://github.com/THUDM/CogVideo
 
-## deplivecam
+## 4.12 deplivecam
 
 <u>Deep Live Cam</u>
 
 GitHub 本周热点项目，只需一张图片，就可实现视频的人脸替换。
 
-## Tiktok voice generator
+## 4.13 Tiktok voice generator
 
 <u>TikTok Voice Generator</u>
 
 一个在线的文本转语音网站，可以选择 TikTok 内置的各种语音，支持多种语言。
 
-## Song generator
+## 4.14 Song generator
 
 <u>Song Generator</u>
 
 免费的 AI 歌曲在线生成器。（
 
-## api代理
+## 4.15 api代理
 
-### apiPark
+### 4.15.1 apiPark
 
 https://github.com/APIParkLab/APIPark
 
 Ai 网关，代理ai请求（开源）
 
-### Chatnio
+### 4.15.2 Chatnio
 
 https://github.com/zmh-program/chatnio
 
 支持订阅，开源
 
-## Ai editor
+## 4.16 Ai editor
 
-### Void
+### 4.16.1 Void
 
 https://github.com/voideditor/void
 
-### Coursor
+### 4.16.2 Coursor
 
-### claude_dev
+### 4.16.3 claude_dev
 
 https://github.com/saoudrizwan/claude-dev
 
-### cline
+### 4.16.4 cline
 
 https://github.com/cline/cline
 
-## Plate
+## 4.17 Plate
 
 Ai editor richtext
 
 https://github.com/udecode/plate
 
-## Versison
+## 4.18 Versison
 
-### supervison
+### 4.18.1 supervison
 
 https://github.com/roboflow/supervision
 
-##  **Swarm** 
+## 4.19  **Swarm** 
 
 https://github.com/openai/swarm?tab=readme-ov-file
 
 An educational framework exploring ergonomic, lightweight multi-agent orchestration.
 
-## Fitten code
+## 4.20 Fitten code
 
-## amphion
+## 4.21 amphion
 
 Generate music speech and audio
 
 https://github.com/open-mmlab/Amphion
 
-## Napkinai
+## 4.22 Napkinai
 
 文字生成图表，根据文字生成图形
 
 https://www.napkin.ai/
 
-# 代理
+# 5. 代理
 
-## proxy302
+## 5.1 proxy302
 
 ip地址池服务商
 
 https://www.proxy302.com/
 
-## frpc-desktop
+## 5.2 frpc-desktop
 
 Frp穿透客户端
 
 https://github.com/luckjiawei/frpc-desktop
 
-## Proxycat
+## 5.3 Proxycat
 
 https://github.com/honmashironeko/ProxyCat
 
-## Ehco
+## 5.4 Ehco
 
 ai流量转发
 
 https://github.com/Ehco1996/ehco
 
-# 图片设计
+# 6. 图片设计
 
-## Porn-logo
+## 6.1 Porn-logo
 
 定制拼色 Logo 设计器，免费
 
 https://porn-logo.com/
 
-## surflogo
+## 6.2 surflogo
 
 logo设计工具，免费
 
@@ -244,179 +244,179 @@ canva
 
 https://www.canva.com/zh_cn/
 
-## Svg viewer
+## 6.3 Svg viewer
 
 <u>SVG Viewer</u>
 
 一个 SVG 图标的搜索引擎，并且提供可视化编辑器，允许你对源文件进行调整。
 
-## designevo
+## 6.4 designevo
 
 https://www.designevo.com/
 
-# 网盘
+# 7. 网盘
 
-## alist
+## 7.1 alist
 
 网盘存储 库
 
 https://alist.nn.ci/zh/guide/drivers/common.html
 
-# 网络相关的库
+# 8. 网络相关的库
 
-## kcp
+## 8.1 kcp
 
 https://github.com/skywind3000/kcp
 
 tcp的替换，可靠的传输，低延时
 
-# Unity
+# 9. Unity
 
-## Jiepeng tan
+## 9.1 Jiepeng tan
 
 分享了很多unity相关
 
 https://github.com/JiepengTan
 
-# 算法
+# 10. 算法
 
-## Hello-algo
+## 10.1 Hello-algo
 
 https://github.com/krahets/hello-algo
 
-# 下载
+# 11. 下载
 
-## aria2
+## 11.1 aria2
 
 https://github.com/aria2/aria2
 
-## aria-ng-gui
+## 11.2 aria-ng-gui
 
 aria2gui封装
 
 https://github.com/Xmader/aria-ng-gui
 
-# 投资
+# 12. 投资
 
-## openbb
+## 12.1 openbb
 
 The first financial Platform that is free and fully open source.
 
 https://github.com/OpenBB-finance/OpenBB
 
-# Vpn
+# 13. Vpn
 
-## amnezia-client
+## 13.1 amnezia-client
 
 https://github.com/amnezia-vpn/amnezia-client
 
-# Docker
+# 14. Docker
 
-## docker-oxsx
+## 14.1 docker-oxsx
 
 在docker上运行os系统
 
 https://github.com/sickcodes/Docker-OSX
 
-## Windows
+## 14.2 Windows
 
 https://github.com/dockur/windows
 
-## Macos
+## 14.3 Macos
 
 https://github.com/dockur/macos
 
-# C++库
+# 15. C++库
 
-## Folly
+## 15.1 Folly
 
 An open-source C++ library developed and used at Facebook.
 
 https://github.com/facebook/folly
 
-# 数据库
+# 16. 数据库
 
-## Nocodb
+## 16.1 Nocodb
 
 数据库可视化工具
 
 https://github.com/nocodb/nocodb
 
-# 服务器管理
+# 17. 服务器管理
 
-## dokku
+## 17.1 dokku
 
 https://github.com/dokku/dokku
 
-## Heroku
+## 17.2 Heroku
 
-## nginxProManger
+## 17.3 nginxProManger
 
 https://nginxproxymanager.com/
 
-# docker服务器
+# 18. docker服务器
 
-## sealos
+## 18.1 sealos
 
 https://sealos.run/
 
-## Container-desktop
+## 18.2 Container-desktop
 
 https://container-desktop.com/
 
-# 视频
+# 19. 视频
 
-## Revideo
+## 19.1 Revideo
 
 React 库可以代码编辑视频
 
 https://github.com/redotvideo/revideo
 
-## Lossless-cut
+## 19.2 Lossless-cut
 
 https://github.com/mifi/lossless-cut
 
 视频编辑前端工具
 
-# 照片管理器
+# 20. 照片管理器
 
-## photoPrism
+## 20.1 photoPrism
 
 <u>PhotoPrism</u>
 
-## Immich
+## 20.2 Immich
 
 <u>Immich</u>
 
-## ente
+## 20.3 ente
 
 <u>Ente</u>
 
-# 远程工作
+# 21. 远程工作
 
-## Easynomad
+## 21.1 Easynomad
 
 https://easynomad.cn/
 
-# nas系统
+# 22. nas系统
 
-## Fnos
+## 22.1 Fnos
 
 https://www.fnnas.com/
 
-# 录屏软件
+# 23. 录屏软件
 
-## captura
+## 23.1 captura
 
 https://github.com/MathewSachin/Captura/releases
 
-## Screentogif
+## 23.2 Screentogif
 
 https://github.com/NickeManarin/ScreenToGif
 
-# Email
+# 24. Email
 
-## temp_mail
+## 24.1 temp_mail
 
 https://temp-mail.org/
 
@@ -424,231 +424,231 @@ https://internxt.com/temporary-email
 
 https://adguard.com/en/adguard-temp-mail/overview.html
 
-## tempmail100
+## 24.2 tempmail100
 
 国人做的
 
 https://tempmail100.com/
 
-## tmp_mail_api
+## 24.3 tmp_mail_api
 
 https://docs.mail.tm/
 
-# 学习
+# 25. 学习
 
-## Gpu-puzzles
+## 25.1 Gpu-puzzles
 
 学习gpu
 
 https://github.com/srush/GPU-Puzzles
 
-# 隐私政策
+# 26. 隐私政策
 
 https://app-privacy-policy-generator.firebaseapp.com/#
 
-# 跨平台开发框架
+# 27. 跨平台开发框架
 
-## pake
+## 27.1 pake
 
 https://github.com/tw93/Pake?tab=readme-ov-file
 
-# 支付平台
+# 28. 支付平台
 
-## 爱发电
+## 28.1 爱发电
 
 https://afdian.com/
 
-# 商城
+# 29. 商城
 
-## twenty
+## 29.1 twenty
 
 https://github.com/twentyhq/twenty
 
-# 游戏
+# 30. 游戏
 
-## Grasscutter
+## 30.1 Grasscutter
 
 原神私服
 
 https://github.com/Grasscutters/Grasscutter
 
-# 闪退
+# 31. 闪退
 
-## Crashpad
+## 31.1 Crashpad
 
 https://github.com/chromium/crashpad
 
 chrome的闪退跟踪工具
 
-# chrom插件
+# 32. chrom插件
 
-## cloud-document-converter
+## 32.1 cloud-document-converter
 
 将飞书文档转成markdown的插件
 
 https://github.com/lujunji4113/cloud-document-converter?tab=readme-ov-file
 
-# 网站相关
+# 33. 网站相关
 
-## 点击统计
+## 33.1 点击统计
 
-## Pirsch
+## 33.2 Pirsch
 
 https://pirsch.io/
 
-# javascript打包
+# 34. javascript打包
 
-## Vite
+## 34.1 Vite
 
-## rspack
+## 34.2 rspack
 
 https://rspack.dev/zh/
 
-# 原型设计工具
+# 35. 原型设计工具
 
-## Moonvy
+## 35.1 Moonvy
 
 https://moonvy.com/
 
-# 代码编辑工具
+# 36. 代码编辑工具
 
-## Theia
+## 36.1 Theia
 
 Eclipse 推出的代码编辑器，VS Code 的替代品。
 
 https://theia-ide.org/
 
-## Zed
+## 36.2 Zed
 
 https://github.com/zed-industries/zed
 
 rust写的，快，但是没有windows release
 
-# cloudflare代理
+# 37. cloudflare代理
 
 https://github.com/jonssonyan/cf-workers-proxy
 
 https://www.zouht.com/3740.html
 
-## Edtunnel
+## 37.1 Edtunnel
 
 https://github.com/seramo/ed-tunnel
 
-# 下载
+# 38. 下载
 
-## You-get
+## 38.1 You-get
 
 Download video from video site
 
 https://you-get.org/
 
-# ui库
+# 39. ui库
 
-## mui-x
+## 39.1 mui-x
 
 React ui库
 
 https://mui.com/x/
 
-# 源码
+# 40. 源码
 
-## Sellmyapp
+## 40.1 Sellmyapp
 
 https://www.sellmyapp.com/
 
 卖源码的网站
 
-# 硬件
+# 41. 硬件
 
-## 无人机
+## 41.1 无人机
 
-### Fast-lab
+### 41.1.1 Fast-lab
 
 https://github.com/ZJU-FAST-Lab
 
-## Tdrone
+## 41.2 Tdrone
 
 https://github.com/ShenZhenAccelerationTechCo/Tdrone/tree/master
 
-## Gaas
+## 41.3 Gaas
 
 模拟系统
 
 https://github.com/generalized-intelligence/GAAS
 
-# 3d软件
+# 42. 3d软件
 
-## Freecad
+## 42.1 Freecad
 
 https://github.com/FreeCAD/FreeCAD
 
-# 社交自动化工具
+# 43. 社交自动化工具
 
-## postiz-app
+## 43.1 postiz-app
 
 https://github.com/gitroomhq/postiz-app
 
-# 论文
+# 44. 论文
 
-# Aminer
+# 45. Aminer
 
 搜索和通过ai分析论文
 
 https://www.aminer.cn/
 
-# 其它工具类
+# 46. 其它工具类
 
-## Umi-ocr
+## 46.1 Umi-ocr
 
 https://github.com/hiroi-sora/Umi-OCR
 
 图片转文字，二维码转文字工具
 
-## 富文本工具
+## 46.2 富文本工具
 
-### Yunda
+### 46.2.1 Yunda
 
 https://github.com/wangyuan389/yunda
 
 零代码html5页面搭建
 
-## 终端工具
+## 46.3 终端工具
 
-### electerm
+### 46.3.1 electerm
 
 https://github.com/electerm
 
-## 差异比较
+## 46.4 差异比较
 
-### Meld
+### 46.4.1 Meld
 
 https://meld.app/
 
 软件好卡
 
-## Winmerge
+## 46.5 Winmerge
 
 这个好用，而且是svn默认的工具
 
 https://winmerge.org/downloads/?lang=en
 
-## pensieve
+## 46.6 pensieve
 
 记录你电脑的操作，有点疑惑，有啥用
 
 https://github.com/arkohut/pensieve/blob/master/README_ZH.md
 
-# https证书
+# 47. https证书
 
-## Mkcert
+## 47.1 Mkcert
 
 让localhost都能https
 
 https://github.com/FiloSottile/mkcert
 
-# 游戏
+# 48. 游戏
 
-## Slang
+## 48.1 Slang
 
 shader语言
 

@@ -8,7 +8,7 @@ categories:
 ---
 
 
-# 主要功能
+# 1. 主要功能
 
 利用业余时间，断断续续的把密码管理器实现了。基本功能如下：
 
@@ -28,17 +28,17 @@ categories:
 14.  **开机自启动**
 15.  **系统锁定，软件也锁定**
 
-# 代码开源地址
+# 2. 代码开源地址
 
 https://github.com/ftyszyx/lockpass
 
-# 下载地址
+# 3. 下载地址
 
 目前是github自动打的包
 
 https://github.com/ftyszyx/lockpass/releases
 
-## Windows平台（主要测试）：
+## 3.1 Windows平台（主要测试）：
 
 32位
 
@@ -48,19 +48,19 @@ https://github.com/ftyszyx/lockpass/releases
 
 <img src="/assets/XxWObtM2goQcQBxVfmdcBHh6nLc.png" src-width="324" class="markdown-img m-auto" src-height="31" align="center"/>
 
-## mac平台（没测试过）
+## 3.2 mac平台（没测试过）
 
 如果有问题可以issue我
 
 <img src="/assets/DgLTbzwxloA6k3x63bycaCnHnth.png" src-width="698" class="markdown-img m-auto" src-height="159" align="center"/>
 
-## linux平台（没测试过）
+## 3.3 linux平台（没测试过）
 
 如果有问题可以issue我
 
 <img src="/assets/IFU0bIxuQoJqcuxJz9HcJHyrnng.png" src-width="583" class="markdown-img m-auto" src-height="84" align="center"/>
 
-# 说明
+# 4. 说明
 
 1. 目前只是个demo版本，有可能会有各种问题。如果因使用本软件造成你的数据丢失，本人不负任何责任。
 2. 如果遇到软件bug，请提交问题给我。

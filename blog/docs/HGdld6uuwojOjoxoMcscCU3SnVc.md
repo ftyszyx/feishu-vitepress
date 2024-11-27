@@ -11,13 +11,13 @@ vscode开发需要安装Node.js Modules Intellisense组件
 
 node写c++的组件，需要使用node-gyp:https://github.com/nodejs/node-gyp
 
-## 安装node-gyp
+## 1.1 安装node-gyp
 
 ```sql
 npm install -g node-gyp
 ```
 
-## 安装环境
+## 1.2 安装环境
 
 还需要安装工具，这里以windows为例，
 
@@ -31,17 +31,17 @@ npm install -g node-gyp
 
 <img src="/assets/BsV7baZDBoqF7mxIBDKcfnjRnwb.png" src-width="488" class="markdown-img m-auto" src-height="152" align="center"/>
 
-## 如何写node组件
+## 1.3 如何写node组件
 
 https://nodejs.org/api/n-api.html
 
-### Node-API介绍
+### 1.3.1 Node-API介绍
 
 我们使用Node-API不用v8api(因为v8api会在不同版本node.js下有兼容问题）
 
 <img src="/assets/RryjbVY7boh9XcxpUM2carDlnpg.png" src-width="1261" class="markdown-img m-auto" src-height="79" align="center"/>
 
-### node-addon-api依赖
+### 1.3.2 node-addon-api依赖
 
 因为Node-Api只支持c语言的语法，为了支持c++，需要安装node-addon-api
 
@@ -57,7 +57,7 @@ https://github.com/nodejs/node-addon-example
 #include <node_api.h>
 ```
 
-### Node-API的编译
+### 1.3.3 Node-API的编译
 
 Linux
 
@@ -79,7 +79,7 @@ node-gyp
 
 node-pre-gyp
 
-### building.gyp文件
+### 1.3.4 building.gyp文件
 
 因为是从gyp-next来的
 
@@ -91,7 +91,7 @@ https://github.com/nodejs/gyp-next/blob/main/docs/UserDocumentation.md
 
 https://github.com/nodejs/node-gyp/blob/main/docs/binding.gyp-files-in-the-wild.md
 
-### Hello world
+### 1.3.5 Hello world
 
 建一个c++文件hello.cpp
 
@@ -164,9 +164,9 @@ npm run start
 
 <img src="/assets/NBlMbo6RnoyrXzx0ttccjhM9nVe.png" src-width="443" class="markdown-img m-auto" src-height="110" align="center"/>
 
-## 说明
+## 1.4 说明
 
-### 模块的入口
+### 1.4.1 模块的入口
 
 ```sql
 void Initialize(Local<Object> exports);//模块的Ini函数

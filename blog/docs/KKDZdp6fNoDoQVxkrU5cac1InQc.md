@@ -7,15 +7,15 @@ categories:
 ---
 
 
-# 项目地址：
+# 1. 项目地址：
 
 https://github.com/AppFlowy-IO/AppFlowy
 
-# 编译
+# 2. 编译
 
 https://docs.appflowy.io/docs/documentation/appflowy/from-source
 
-## 安装flutter sdk
+## 2.1 安装flutter sdk
 
 https://docs.flutter.dev/get-started/install/windows
 
@@ -35,11 +35,11 @@ https://docs.flutter.dev/get-started/install/windows/desktop
 
 <img src="/assets/OUHnbyXBHoka4Wx1o6ycpWUnnph.png" src-width="526" class="markdown-img m-auto" src-height="281" align="center"/>
 
-## 加入环境变量
+## 2.2 加入环境变量
 
 将“D:\flutter\sdk\flutter\bin”加入path环境变量 
 
-## 检查是否安装成功了
+## 2.3 检查是否安装成功了
 
 ```yaml
 flutter doctor
@@ -47,7 +47,7 @@ flutter doctor
 
 <img src="/assets/Qbt9b6zHQotukcx26TzcvQQvnmf.png" src-width="738" class="markdown-img m-auto" src-height="375" align="center"/>
 
-## 配置flutter
+## 2.4 配置flutter
 
 - Make sure to enable the flutter stable channel
 
@@ -67,7 +67,7 @@ flutter config --enable-windows-desktop
 flutter doctor
 ```
 
-## 安装llvm
+## 2.5 安装llvm
 
 https://github.com/llvm/llvm-project
 
@@ -77,7 +77,7 @@ https://github.com/llvm/llvm-project/releases/download/llvmorg-16.0.0/LLVM-16.0.
 
 安装时选择加到环境变量path
 
-## 安装rust
+## 2.6 安装rust
 
 因为后端是rust写的
 
@@ -103,4 +103,4 @@ rustup --version
 
 In case you need to checkout/downgrade your version, you can replace the version number in this command:
 
-## 
+## 2.7 

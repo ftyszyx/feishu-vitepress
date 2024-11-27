@@ -8,19 +8,19 @@ categories:
 ---
 
 
-#  **前言**
+# 1.  **前言**
 
 以前要做个https网站，非常繁琐：要购买服务器、域名，还要配置 nginx 和 https 签名，这些流程就像重重关卡，令人头疼不已。现在cloudflare把这些都简化了，你只需要买个域名就行，甚至不买域名也可以，就能轻松创建网站。
 
 今天我将详细介绍如何利用 GitHub 和 Cloudflare 部署一个名为 CoverView 的网站，这个网站主要用于生成封面图片。
 
-#### 先睹为快：网站效果展示
+#### 1.1.1.1 先睹为快：网站效果展示
 
 在开始部署之旅前，你可以先看看我们要创建的网站的实际效果：[https://makecover.1postpro.com/](https://makecover.1postpro.com/)。
 
 <img src="/assets/OiCBb1NhyoxzoIxOQlecJwFPnRh.png" src-width="1154" class="markdown-img m-auto" src-height="490" align="center"/>
 
-# fork代码
+# 2. fork代码
 
 先将coverview项目fork到你的github下
 
@@ -28,7 +28,7 @@ https://github.com/rutikwankhade/CoverView
 
 <img src="/assets/EYQ4bpnyVonoGExOw6pcqiHlnjf.png" src-width="1243" class="markdown-img m-auto" src-height="206" align="center"/>
 
-# 新建pages worker
+# 3. 新建pages worker
 
 打开cloudflare官网：
 
@@ -46,15 +46,15 @@ https://dash.cloudflare.com/
 
 <img src="/assets/JiDNbjssiojDayxMTtnc1h9rnxd.png" src-width="1203" class="markdown-img m-auto" src-height="367" align="center"/>
 
-# 连接你的github项目
+# 4. 连接你的github项目
 
 <img src="/assets/WdbRb4Dt3oKBtkxThkdcP1ejnJd.png" src-width="1203" class="markdown-img m-auto" src-height="367" align="center"/>
 
-# 配置项目构建命令
+# 5. 配置项目构建命令
 
 <img src="/assets/PgvLbILBCoXCCaxSwuPckJGznOc.png" src-width="729" class="markdown-img m-auto" src-height="388" align="center"/>
 
-# 构建成功后即可访问
+# 6. 构建成功后即可访问
 
 点构建，即可自动编译出静态网站
 
@@ -62,7 +62,7 @@ https://dash.cloudflare.com/
 
 <img src="/assets/WFwebc0T8obhFcxV5Spc6qCNnBb.png" src-width="1861" class="markdown-img m-auto" src-height="226" align="center"/>
 
-# 自定义域名（推荐）
+# 7. 自定义域名（推荐）
 
 因为cloudflare分配的域名在国内有可能无法访问。所以最好用自定义域名。
 
@@ -70,7 +70,7 @@ https://dash.cloudflare.com/
 
 点继续，即可。
 
-# 搞定
+# 8. 搞定
 
 现在就可以访问了
 

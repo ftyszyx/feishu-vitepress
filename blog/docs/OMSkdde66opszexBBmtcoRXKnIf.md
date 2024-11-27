@@ -10,7 +10,7 @@ categories:
 
 以android stuiod profiler主准
 
-# profiler使用：
+# 1. profiler使用：
 
 参考：https://blog.csdn.net/Calvin_zhou/article/details/119681272
 
@@ -38,7 +38,7 @@ Others：您的应用使用的系统不确定如何分类的内存
 
 Allocated：您的应用分配的 Java/Kotlin 对象数。此数字没有计入 C 或 C++ 中分配的对象
 
-#  获取应用实际内存占用
+# 2.  获取应用实际内存占用
 
 https://zhuanlan.zhihu.com/p/372883142
 
@@ -54,7 +54,7 @@ USS - Unique Set Size 进程独自占用的物理内存（不包含共享库占�
 
 一般来说内存占用大小有如下规律：VSS &gt;= RSS &gt;= PSS &gt;= USS
 
-## 方法 1 adb
+## 2.1 方法 1 adb
 
 1. adb shell
 
@@ -84,7 +84,7 @@ adb shell dumpsys meminfo com.tencent.mobileqq:mini3
 
  
 
-## 方法2 pid status
+## 2.2 方法2 pid status
 
 "/proc/" + android.os.Process.myPid() + "/status" 路径文件里的信息获取。
 
@@ -129,7 +129,7 @@ RSS - Resident Set Size 实际使用物理内存（包含共享库占用的内�
 
 PSS - Proportional Set Size 实际使用的物理内存（比例分配共享库占用的内存）假如有3个进程使用同一个共享库，那么每个进程的PSS就包括了1/3大小的共享库内存。通常我们使用PSS大小来作为内存性能指标。
 
-##  方法3 ActivityManager(PSS)
+## 2.3  方法3 ActivityManager(PSS)
 
 ```yaml
 ActivityManager activityManager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
@@ -141,7 +141,7 @@ final int totalPss = memInfo[0].getTotalPss();
 
 缺点：安卓P以上限制频率， **需要隔约5分钟（不同手机间隔不同）才能获取到新的值**。而且获取的 PSS 不包括 Graphics。
 
-## 方法4 Debug.getMemoryInfo
+## 2.4 方法4 Debug.getMemoryInfo
 
 ```yaml
 Debug.MemoryInfo memoryInfo = new Debug.MemoryInfo();
@@ -163,7 +163,7 @@ Debug.MemoryInfo memoryInfo = new Debug.MemoryInfo();
 
 缺点：获取的 PSS 不包括 Graphics。Android 6 以下不能通过 Debug.MemoryInfo.getmemoryStat 接口获取组成部分的占用内存，只能通过反射方法获取
 
-# 获取手机内存信息
+# 3. 获取手机内存信息
 
 1. 查看内存占用信息
 

@@ -12,21 +12,21 @@ categories:
 ---
 
 
-# 官方文档
+# 1. 官方文档
 
 https://duckdb.org/docs/index
 
-# node.js使用
+# 2. node.js使用
 
 https://duckdb.org/docs/api/nodejs/reference
 
-## 安装
+## 2.1 安装
 
 ```csharp
 `npm` install duckdb -S
 ```
 
-## 初始化
+## 2.2 初始化
 
 配置：
 
@@ -52,7 +52,7 @@ var db = new duckdb.Database(
 )
 ```
 
-## 查询
+## 2.3 查询
 
 支持的sql
 
@@ -70,7 +70,7 @@ db.all('SELECT 42 AS fortytwo', function(err, res) {
 });
 ```
 
-## 创建连接
+## 2.4 创建连接
 
 ```csharp
 const con = db.connect();
@@ -78,5 +78,5 @@ const con = db.connect();
 
 注意每个连接是有自己单独的上下文的，如果你想每次执行共享上下文，需要直接用db
 
-#  
+# 3.  
 

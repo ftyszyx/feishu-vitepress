@@ -8,19 +8,19 @@ categories:
 ---
 
 
-# 官方文档
+# 1. 官方文档
 
 https://docs.unity3d.com/2022.3/Documentation/Manual/render-pipelines.html
 
-# 一些教程
+# 2. 一些教程
 
-## Catlike coding
+## 2.1 Catlike coding
 
 非常细节，一步步的指导
 
 https://catlikecoding.com/unity/tutorials/rendering/
 
-# 渲染要做的事
+# 3. 渲染要做的事
 
 <img src="/assets/W1m2bJgFhobpz0xvYLDcdSkVncg.png" src-width="901" class="markdown-img m-auto" src-height="365" align="center"/>
 
@@ -35,7 +35,7 @@ A render pipeline follows these steps:
 , where the pipeline modifies the pixel buffers to generate the final output frame for the display. Example of modifications include color grading, bloom, and  **depth of field**
 .
 
-# 三个render pipline
+# 4. 三个render pipline
 
 The <u>Built-In Render Pipeline</u> 
 
@@ -43,9 +43,9 @@ The <u>Universal Render Pipeline (URP)</u> is a Scriptable Render Pipeline ,可�
 
 The <u>High Definition Render Pipeline (HDRP)</u> is a Scriptable Render Pipeline 
 
-# Build-in render pipeline
+# 5. Build-in render pipeline
 
-## Graphics tiers等级
+## 5.1 Graphics tiers等级
 
 通过  **graphics tiers** 设置等级
 
@@ -57,15 +57,15 @@ Project-setting中可以设置
 
 <img src="/assets/RV5jbLgV0o74aZxdHeAc5d1Rnwb.png" src-width="934" class="markdown-img m-auto" src-height="376" align="center"/>
 
-## render path
+## 5.2 render path
 
-### Forward render
+### 5.2.1 Forward render
 
 只能算4个点光源
 
-### Deferred Shading
+### 5.2.2 Deferred Shading
 
-# Shader
+# 6. Shader
 
 shader是gpu上的程序
 
@@ -73,19 +73,19 @@ unity有很多内置的shader.参考下表
 
 https://docs.unity3d.com/Manual/shader-built-in.html
 
-## 怎么写shader
+## 6.1 怎么写shader
 
 可以用shader graph,hlsl语言
 
-### Shader graph
+### 6.1.1 Shader graph
 
 https://docs.unity3d.com/Packages/com.unity.shadergraph@17.0/manual/index.html
 
-### HLSL语言
+### 6.1.2 HLSL语言
 
 https://docs.unity3d.com/Manual/writing-shader-writing-shader-programs-hlsl.html
 
-### Shaderlab
+### 6.1.3 Shaderlab
 
 Unity 定制的语言
 

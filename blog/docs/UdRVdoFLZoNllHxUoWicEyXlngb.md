@@ -11,7 +11,7 @@ categories:
 
 以下以windows为例
 
-# 下载
+# 1. 下载
 
 去https://github.com/ftyszyx/lockpass/releases下载最新版本，根据你的系统选对应的安装文件。
 
@@ -30,7 +30,7 @@ categories:
 </div>
 </div>
 
-# 安装
+# 2. 安装
 
 同样，因为没有买windows签名，所以安装时会有一个提示，选运行即可。
 
@@ -38,13 +38,13 @@ categories:
 
 安装流程和正常软件无异
 
-# 系统初始化
+# 3. 系统初始化
 
 第一次进去要初始化你的账号，其中关键的是你的主密码，这个主密码最好设复杂点，而且需要记牢，如果忘记是找不回的。（主密码不会保存在软件中）
 
 <img src="/assets/H2clbrsdvotiFexyQ7FcsNU8nhf.png" src-width="297" class="markdown-img m-auto" src-height="446" align="center"/>
 
-# 登陆
+# 4. 登陆
 
 输入你之前的账号名和主密码，登陆入系统
 
@@ -52,7 +52,7 @@ categories:
 
 账号初始化结束
 
-# 解锁
+# 5. 解锁
 
 为保证安全，软件默认5分钟会锁定，此时需要输入主密码进行解锁
 

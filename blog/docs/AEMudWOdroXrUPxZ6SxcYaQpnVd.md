@@ -12,30 +12,30 @@ categories:
 ---
 
 
-## 支持的文档格式
+## 1.1 支持的文档格式
 
  下面是完整格式演示
 
-## This is heading 2
+## 1.2 This is heading 2
 
-### This is heading 3
+### 1.2.1 This is heading 3
 
-#### This is heading 4
+#### 1.2.1.1 This is heading 4
 
-##### This is heading 5
+##### 1.2.1.1.1 This is heading 5
 
-###### This is heading 6
+###### 1.2.1.1.1.1 This is heading 6
 
 > This is a block quote.
 > With a new line.
 
-## Paragraph
+## 1.3 Paragraph
 
 导出飞书知识库，并按相同目录结构生成 [Static Page Generator](https://www.google.com/search?q=Static+Page+Generator) 支持 `Markdown` 文件组织方式，用于发布为 **静态网站**。
 
 Generate  **Feishu Wiki** into a Markdown for work with Static Page Generators.
 
-## Callout
+## 1.4 Callout
 
 <div class="callout callout-bg-1 callout-border-1 callout-color-1">
 <div class='callout-emoji'>❤️</div>
@@ -73,7 +73,7 @@ Generate  **Feishu Wiki** into a Markdown for work with Static Page Generators.
 <p>Gray Callout</p>
 </div>
 
-## Grid
+## 1.5 Grid
 
 Here is a 3 column grid example:
 
@@ -114,7 +114,7 @@ Here is a 3 column grid example:
 </div>
 </div>
 
-## Bullet List
+## 1.6 Bullet List
 
 - Projects
     - GitHub
@@ -126,7 +126,7 @@ Here is a 3 column grid example:
     - feishu-pages
     - feishu-docx
 
-## Ordered List
+## 1.7 Ordered List
 
 1. This is 1 item
     1. This is a item
@@ -138,7 +138,7 @@ Here is a 3 column grid example:
     1. This is 2.1
     2. This is 2.2
 
-## CodeBlock
+## 1.8 CodeBlock
 
 A JSON example:
 
@@ -154,13 +154,13 @@ A TypeScript example:
 const name = "feishu-pages";
 ```
 
-## TODO
+## 1.9 TODO
 
 - [x] This item is completed
 
 - [ ] This is imcomplete
 
-## Divider
+## 1.10 Divider
 
 There is a divider
 
@@ -168,19 +168,19 @@ There is a divider
 
 To split contents.
 
-## Image
+## 1.11 Image
 
 An example of an image with caption.
 
 <img src="/assets/LAHrbunRMoEmtFxjk3wc46rvnQV.png" src-width="1280" class="markdown-img m-auto" src-height="720" align="center"/>
 
-## File
+## 1.12 File
 
 [test.zip](/assets/NEOWbiOKOo7xbJxsWaJctjTJnFh.zip)
 
 [test-file.zip](/assets/IfrlbIQ24owNtRxFeySc6bwWnjf.zip)
 
-## Table
+## 1.13 Table
 
 Currently, feishu-docx only supports pure Table.
 
@@ -202,11 +202,11 @@ Currently, feishu-docx only supports pure Table.
 </tbody>
 </table>
 
-## Equation
+## 1.14 Equation
 
 $$E = mc^2$$
 
-# 流程图，画板，思维导图
+# 1. 流程图，画板，思维导图
 
 在飞书编辑器里面，有流程图导出图片或复制图片的功能，将流程图的图片插入到文档中即可
 

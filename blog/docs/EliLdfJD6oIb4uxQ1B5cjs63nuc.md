@@ -11,7 +11,7 @@ categories:
 title: frp内网穿透
 ```
 
-# 参考
+# 1. 参考
 
 源码：
 
@@ -21,7 +21,7 @@ https://github.com/fatedier/frp
 
 https://gofrp.org/zh-cn/
 
-## 使用说明
+## 1.1 使用说明
 
 https://gofrp.org/zh-cn/docs/setup/
 

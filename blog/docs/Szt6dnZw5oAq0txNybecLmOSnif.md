@@ -12,15 +12,15 @@ categories:
 ---
 
 
-# Unity mem profiler
+# 1. Unity mem profiler
 
-## 官方文档
+## 1.1 官方文档
 
 [地址](https://docs.unity3d.com/Packages/com.unity.memoryprofiler@1.0/manual/memory-profiler-window-reference.html)
 
 Summary 窗口
 
-### Memory usage on device
+### 1.1.1 Memory usage on device
 
 <img src="/assets/CIKrbK940oDu0pxh3Kfca5kDn6d.png" src-width="1093" class="markdown-img m-auto" src-height="162" align="center"/>
 
@@ -34,7 +34,7 @@ The application footprint in physical memory. It includes all Unity and non-Unit
 
 上面说应用全用了1.98个G内存。差距有点大。
 
-###  **Allocated Memory Distribution**
+### 1.1.2  **Allocated Memory Distribution**
 
 Displays how your allocated memory is distributed across different memory categories.
 
@@ -42,7 +42,7 @@ Displays how your allocated memory is distributed across different memory catego
 
 <img src="/assets/PuPRbYzS0oZfrIxPgencDmPrnld.png" src-width="1081" class="markdown-img m-auto" src-height="210" align="center"/>
 
-###  **Managed Heap Utilization**
+### 1.1.3  **Managed Heap Utilization**
 
 意思是Unity内存分配的内存，不是用户分配的，
 
@@ -50,7 +50,7 @@ Displays a breakdown of the memory that Unity manages which you can't affect, su
 
 <img src="/assets/L3hkbWD6ToiEBgx2r1dc2mPbnyh.png" src-width="1098" class="markdown-img m-auto" src-height="196" align="center"/>
 
-###  **Top Unity Objects Categories**
+### 1.1.4  **Top Unity Objects Categories**
 
 列出用 **Allocated Memory Distribution中最大的几项**
 
@@ -58,9 +58,9 @@ Displays which types of Unity Objects use the most memory in the snapshot.
 
 <img src="/assets/SLqQbDn6SogRrtxdie8cWMxznkg.png" src-width="1080" class="markdown-img m-auto" src-height="209" align="center"/>
 
-## 如何分析
+## 1.2 如何分析
 
-### 先了解应用占了多少内存
+### 1.2.1 先了解应用占了多少内存
 
 因为我们使用unity profiler工具来分析内存，所以我们只关心unity能跟踪到的内存使用，也就是 **Allocated Memory Distribution中的数据  减去 untracked**
 
@@ -68,7 +68,7 @@ Displays which types of Unity Objects use the most memory in the snapshot.
 3.94-1.22=2.72G
 ```
 
-### 关注总内存中占比最多的明细
+### 1.2.2 关注总内存中占比最多的明细
 
 在 **Top Unity Objects Categories分类中，unity已经列出的前几项内存大头，可以点进去inspect去看看明细。**
 
@@ -76,7 +76,7 @@ Displays which types of Unity Objects use the most memory in the snapshot.
 
  **这个有可能和后处理、抗拒齿，或者hdr相关，可以尝试一个个关掉排除**
 
-### 查看all of memorys
+### 1.2.3 查看all of memorys
 
 All of memorys列出了unity跟踪到的所有内存分配明细，很有参考价值。
 
@@ -104,7 +104,7 @@ All of memorys列出了unity跟踪到的所有内存分配明细，很有参考�
 
  **可以把其它的sdk第三库去掉，再测，看有没有优化**
 
-### 排查Managed Shell Objects内存泄露
+### 1.2.4 排查Managed Shell Objects内存泄露
 
 参考：https://docs.unity3d.com/Packages/com.unity.memoryprofiler@1.1/manual/managed-shell-objects.html
 
@@ -124,4 +124,4 @@ unity的很多object对象，是用c++实现的，内存是unity分配的且不�
 
 <img src="/assets/YV3cbKu5JomfX2xO2MdcHWLineg.png" src-width="715" class="markdown-img m-auto" src-height="296" align="center"/>
 
-# 
+# 2. 

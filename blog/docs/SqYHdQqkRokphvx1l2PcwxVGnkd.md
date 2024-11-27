@@ -13,9 +13,9 @@ categories:
 ---
 
 
-# bugly请求被拒绝
+# 1. bugly请求被拒绝
 
-## 问题现象
+## 1.1 问题现象
 
 公司有需要从bugly上取一些数据。
 
@@ -42,9 +42,9 @@ requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetErro
 
 因为连接还没建立就被断开了，说明不是cookie或者是header的问题。
 
-## 分析
+## 1.2 分析
 
-### 问题1：tls指纹：
+### 1.2.1 问题1：tls指纹：
 
 在网上找了一下资料
 
@@ -58,9 +58,9 @@ python的话原生是不支持的，需要用到库，这个文章有介绍[curl
 
 试了一下，换后还是会报错。不过这个点以后有可能会用到。备用。
 
-### 问题2：ip池
+### 1.2.2 问题2：ip池
 
-#### 开源项目：
+#### 1.2.2.1 开源项目：
 
 [proxy_pool](https://github.com/jhao104/proxy_pool)
 
@@ -76,7 +76,7 @@ python的话原生是不支持的，需要用到库，这个文章有介绍[curl
 
 https://zu1k.com/posts/tutorials/http-proxy-ipv6-pool/
 
-# 使用真正的浏览器
+# 2. 使用真正的浏览器
 
 目前有
 

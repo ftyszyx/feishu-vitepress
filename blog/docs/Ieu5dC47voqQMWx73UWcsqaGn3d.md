@@ -7,7 +7,7 @@ categories:
 ---
 
 
-# 提交时，别人也有提交，导致冲突
+# 1. 提交时，别人也有提交，导致冲突
 
 You have divergent branches and need to specify how to reconcile them.
 
@@ -29,7 +29,7 @@ You have divergent branches and need to specify how to reconcile them.
 git pull
 ```
 
-# 还原当前文件的改动
+# 2. 还原当前文件的改动
 
 ```yaml
 git checkout -- <filename>
@@ -37,7 +37,7 @@ git checkout -- <filename>
 
 此命令会使用 HEAD 中的最新内容替换掉你的工作目录中的文件。已添加到缓存区的改动，以及新文件，都不受影响。
 
-# 还原服务器版本
+# 3. 还原服务器版本
 
 如你想要丢弃你所有的本地改动与提交，可以到服务器上获取最新的版本并将你本地主分支指向到它：
 
