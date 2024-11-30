@@ -180,6 +180,10 @@
           {
             "text": "Python 的多版本环境",
             "link": "/TgqBdSAUlovEQexJ55scoCd1nUh"
+          },
+          {
+            "text": "pip下载加速",
+            "link": "/IxL7dRCX7oj3XUxzEu8cSSTUnIe"
           }
         ],
         "collapsed": false
@@ -233,6 +237,16 @@
           {
             "text": "ssh连接",
             "link": "/S1hvdXIrKof4v7xmfVZcN6DBngf"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "AI",
+        "items": [
+          {
+            "text": "Yolo",
+            "link": "/DDakdSCnpofNB6xkKP5cP8C4nje"
           }
         ],
         "collapsed": false

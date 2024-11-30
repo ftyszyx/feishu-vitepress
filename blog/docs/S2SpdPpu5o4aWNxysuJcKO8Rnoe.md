@@ -2,7 +2,7 @@
 title: 有用的东西收集
 cover: /assets/LRGNbgjU9ozBfPxXHRacMSu4nje.jpeg
 create_time: 1723629802
-edit_time: 1732415826
+edit_time: 1732888327
 categories:
   - daily_life
 ---
@@ -225,6 +225,10 @@ https://github.com/honmashironeko/ProxyCat
 ai流量转发
 
 https://github.com/Ehco1996/ehco
+
+## 5.5 clash客户端开源
+
+https://github.com/clash-verge-rev/clash-verge-rev
 
 # 6. 图片设计
 
