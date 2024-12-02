@@ -1,6 +1,6 @@
 ---
 create_time: 1731567289
-edit_time: 1731902058
+edit_time: 1733041661
 title: Python 的多版本环境
 categories:
   - skill
@@ -64,4 +64,52 @@ call "C:\ProgramData\miniconda3\condabin\activate.bat" build_apk
 python fix.py 
 pause
 ```
+
+# 4. conda加速
+
+```bash
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+conda config --set show_channel_urls yes
+```
+
+除了使用conda的config命名，还可以通过直接修改配置文件.condarc的方式来完成下载源的修改。
+
+Linux系统中.condarc文件的位置在/home/用户名/下。
+
+Windows系统中.condarc文件的位置在C:\users\用户名下。
+
+找到.condarc文件并将其内容修改为如下所示即可。
+
+```bash
+channels:
+ 
+defaults
+ssl_verify: true
+show_channel_urls: true
+```
+
+### 4.1.1 查看修改是否成功
+
+上面的两种修改方式均可将conda的下载源修改为国内镜像，可以通过如下命令查看一下是否修改成功。
+
+```text
+conda config --show channels
+```
+
+## 4.1 Conda vpn代理 
+
+conda install pytorch torchvision torchaudio pytorch-cuda=12.4 -c pytorch -c nvidia -n yolo
+
+修改.condarc
+
+```bash
+proxy_servers:
+  http: http://127.0.0.1:8001
+  https: https://127.0.0.1:8001
+ssl_verify: false
+```
+
+ 
 
