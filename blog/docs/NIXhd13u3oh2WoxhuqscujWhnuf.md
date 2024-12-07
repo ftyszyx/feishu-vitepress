@@ -1,6 +1,6 @@
 ---
 create_time: 1731886801
-edit_time: 1732244253
+edit_time: 1733529698
 title: Nginx-ui
 categories:
   - skill
@@ -42,7 +42,6 @@ npm run dev
 <div class='callout-emoji'>🍞</div>
 <p>如果要在windows上编译和启动，需要gcc。因为项目依赖了go-sqlite3.需要gcc编译</p>
 <p><a href="https://jmeubank.github.io/tdm-gcc/download/">https://jmeubank.github.io/tdm-gcc/download/</a></p>
-<p>但是因为系统还使用了cron计划任务命令，所以还是需要linux</p>
 </div>
 
 下载第2项： tdm64-gcc-10.3.0-2.exe，然后一路next就可以
