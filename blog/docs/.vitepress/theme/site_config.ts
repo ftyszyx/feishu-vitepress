@@ -16,6 +16,9 @@ export const SiteConfig = {
       name: "daily_life",
     },
     {
+      name: "leyi",
+    },
+    {
       name: "sport",
     },
     {

@@ -7,6 +7,7 @@
   "category_financing": "financing",
   "category_product": "my_project",
   "category_other_platform": "wechat_article",
+  "category_leyi": "leyi",
   "category_work": "Job",
   "category_new": "New",
   "autor_lan": "author",
@@ -17,9 +18,9 @@
   "home_next": "next",
   "home_prev": "prev",
   "home_first": "first",
-      "time_today":"today",
-    "time_days_ago":"{0} days ago",
-    "time_weeks_ago":"{0} weeks ago",
-    "time_months_ago":"{0} months ago",
-    "time_years_ago":"{0} years ago"
+  "time_today": "today",
+  "time_days_ago": "{0} days ago",
+  "time_weeks_ago": "{0} weeks ago",
+  "time_months_ago": "{0} months ago",
+  "time_years_ago": "{0} years ago"
 }
