@@ -358,7 +358,7 @@
         "collapsed": false
       },
       {
-        "text": "LockPass密码管理",
+        "text": "LockPass密码管理器",
         "items": [
           {
             "text": "LockPass",
@@ -407,6 +407,10 @@
           {
             "text": "给自己做一个1password：其它快捷功能(九）",
             "link": "/HN4zdYOqjo9LWaxunNZcDRSpnMf"
+          },
+          {
+            "text": "修改记录",
+            "link": "/Tg5ndwlX0oljdJxfl0ccu9alnNb"
           }
         ],
         "collapsed": false
