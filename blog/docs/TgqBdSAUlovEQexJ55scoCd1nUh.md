@@ -1,6 +1,6 @@
 ---
 create_time: 1731567289
-edit_time: 1733041661
+edit_time: 1733794984
 title: Python 的多版本环境
 categories:
   - skill
@@ -112,4 +112,8 @@ ssl_verify: false
 ```
 
  
+
+# 5. uv包管理
+
+https://github.com/astral-sh/uv
 

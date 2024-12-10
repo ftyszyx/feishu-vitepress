@@ -1,14 +1,14 @@
 ---
 cover: /assets/YpwvbkISXoTjkwxjIL2cWztWn2Q.jpeg
 create_time: 1733746706
-edit_time: 1733746797
-title: 修改记录
+edit_time: 1733749176
+title: LOCKPASS密码管理器修改记录
 categories:
   - product
 ---
 
 
-### 1.1.1  **2024/8月**
+# 1.  **2024/8月**
 
 1. 程序更新机制(完成) <u>https://www.electron.build/auto-update</u> electron-builder的功能的确强大，做的很好，点赞
 2. Linux 打包异常问题(完成) snap打包好像需要签名文件。 目前先把snap去掉。
@@ -25,7 +25,7 @@ snapcraft internal error: NoKeyringError('No keyring found to store or retrieve 
 6. 新加入的账号信息，快捷搜索不到
 7. 快捷搜索的快捷键改成 ctrl+shift+q
 
-### 1.1.2  **2024/9/16**
+# 2.  **2024/9/16**
 
 1. 新增的一个密码后，页面要能选中该密码(完成)
 2. 选中密码项时，选中项要居中(完成)
@@ -53,18 +53,18 @@ snapcraft internal error: NoKeyringError('No keyring found to store or retrieve 
 
 1. 优化软件更新逻辑(完成)
 
-### 1.1.3  **2024/9/18**
+# 3.  **2024/9/18**
 
 1. 解锁后软件的title不对(完成)
 2. ctrl+f和ctrl+j优化（完成）
 
-### 1.1.4  **2024/9/19**
+# 4.  **2024/9/19**
 
 1. 第一次打开软件时，本地快捷键没有生效（终于重现了，原来是快捷键读取时没有转小写，已处理） 
 2. 第一次启动默认语言读取系统语言(完成) 
 3. ctrl+f和ctrl+J这种快捷键在ui中显示出来
 
-### 1.1.5  **2024/9/20**
+# 5.  **2024/9/20**
 
 1. 更新软件的描述显示优化
 
@@ -86,7 +86,7 @@ snapcraft internal error: NoKeyringError('No keyring found to store or retrieve 
 
 <img src="/assets/ZmGfblRN1oBxU3x1QHHceZ6pn5b.jpeg" src-width="649" class="markdown-img" src-height="541"/>
 
-### 1.1.6  **2024/9/24**
+# 6.  **2024/9/24**
 
 1. 窗口的大小缩放后可以记住(已完成)
 
@@ -97,11 +97,11 @@ snapcraft internal error: NoKeyringError('No keyring found to store or retrieve 
 
 <img src="/assets/KGYMbqLkSoJ9WRxTnvPcif1Anyf.gif" src-width="1588" class="markdown-img" src-height="782"/>
 
-## 1.1  **2024/9/29**
+# 7.  **2024/9/29**
 
-### 1.1.1  **google drive 接入奇葩经历**
+ **google drive 接入奇葩经历**
 
-#### 1.1.1.1  **加了google api库后，脚本增加0.5M-&gt;17M，打包时间由1s-&gt;19s**
+ **加了google api库后，脚本增加0.5M-&gt;17M，打包时间由1s-&gt;19s**
 
 找到了官方的库：<u>https://github.com/googleapis/google-api-nodejs-client</u> 按照要求安装
 
@@ -133,7 +133,7 @@ out/main/index.js 741.03 kB │ map: 1,421.00 kB
 
 google你就不能把代码分几个模块啊，真是服了。
 
-## 1.2  **2024/9/30**
+# 8.  **2024/9/30**
 
 1. 窗口显示当前拉取的备份信息(完成)
 
@@ -146,18 +146,18 @@ google你就不能把代码分几个模块啊，真是服了。
 5. 百度网盘创建应用需要企业，放弃
 6. google api库太大了，不搞了,另外redirect url不支持deeplink
 
-## 1.3  **2024/10/7**
+# 9.  **2024/10/7**
 
 1. ctrl+f 后就不能ctrl+j了 原因：ctrl+f后焦点在input,导致快捷键不生效 处理：增加esc键的处理，当焦点在input时，esc可以取消input的foucus
 2. 通过ctrl+1和ctrl+2来控制子窗口间切换
 3. 然后可以通过键盘的上下来控制菜单 的移动
 
-## 1.4  **2024/10/11**
+# 10.  **2024/10/11**
 
 1. 快捷搜索窗口点esc关闭
 2. 因为没有mac测试环境，程序正确性无法验证,打包只打windows包
 
-## 1.5  **2024/10/22**
+# 11.  **2024/10/22**
 
 1. 设置页面增加打开调试窗口功能
 
@@ -169,15 +169,15 @@ google你就不能把代码分几个模块啊，真是服了。
 
 1. 备份网盘后，自动将还原点信息改成备份的信息
 
-## 1.6  **2024/10/25**
+# 12.  **2024/10/25**
 
 1. 处理window setsize异常报错的问题。会导致quick search窗口无法正常缩放
 
-## 1.7  **2024/11/2**
+# 13.  **2024/11/2**
 
 1. 多窗口时，自动输入时有问题。因为获取的坐标是错的。
 
-## 1.8  **2024/11/7**
+# 14.  **2024/11/7**
 
 1. 增加图片上传和加密功能(完成) 比如备份自己的身份证啊，或者银行卡图片之类的。
 
@@ -190,13 +190,14 @@ google你就不能把代码分几个模块啊，真是服了。
 
 1. 处理密码项的排序
 
-## 1.9  **2024/12/4**
+# 15.  **2024/12/4**
 
 1. 自动输入项目可配置 默认是账号密码全自动输入
+2. 可以配置是否自动输入时，程序帮输入回车
 
-## 1.10  **需要处理**
+<img src="/assets/SEiXb4s8xoiOkvxWea3cZ0Jinod.png" src-width="1260" class="markdown-img m-auto" src-height="631" align="center"/>
+
+# 16.  **需要处理**
 
 1. 支持头像图标的自定义上传
-
-# 1.  **远期的优化**
 
