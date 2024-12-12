@@ -262,6 +262,13 @@
           }
         ],
         "collapsed": false
+      },
+      {
+        "text": "nuxt.js",
+        "link": "/ZxLod3tQyo78aqxUqhAc5RUVnAd"
+      },
+      {
+        "text": "next.js"
       }
     ],
     "collapsed": false
@@ -300,6 +307,9 @@
       {
         "text": "优秀项目",
         "link": "/F17hdcl6voMEMrxFjdLc1b8enlc"
+      },
+      {
+        "text": "有用的东西花钱"
       }
     ],
     "collapsed": false
@@ -416,7 +426,13 @@
         "collapsed": false
       },
       {
-        "text": "打印相关"
+        "text": "抠图",
+        "items": [
+          {
+            "text": "抠图应用"
+          }
+        ],
+        "collapsed": false
       },
       {
         "text": "其它有用的库",

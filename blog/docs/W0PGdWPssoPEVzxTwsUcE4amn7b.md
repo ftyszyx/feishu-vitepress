@@ -1,7 +1,7 @@
 ---
 cover: /assets/UiOlblBcvo4J2Px2TLjc2tJQnEc.png
 create_time: 1729668893
-edit_time: 1729734615
+edit_time: 1733912807
 title: catlikecoding教程学习
 categories:
   - skill
@@ -142,4 +142,6 @@ surface.Albedo = input.worldPos;
 最终同样效果
 
 <img src="/assets/U3cqbqXzJofKJ0xWQc7ckri8nKh.png" src-width="1282" class="markdown-img m-auto" src-height="631" align="center"/>
+
+## 2.2 Mathematical surfaces
 

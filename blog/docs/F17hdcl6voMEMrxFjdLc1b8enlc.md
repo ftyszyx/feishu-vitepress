@@ -1,6 +1,6 @@
 ---
 create_time: 1730990577
-edit_time: 1731487229
+edit_time: 1733874622
 title: 优秀项目
 categories:
   - daily_life
@@ -118,4 +118,12 @@ Stagetimer现在是我们的全职工作，已经能够支付我们所有的开�
 https://www.dianxiaomi.com/index.htm
 
 应该是一个批量发布商品的工具
+
+# 6. Postiz-app
+
+https://github.com/gitroomhq/postiz-app
+
+# 7. HivisionIDPhotos(AI证件照）
+
+https://github.com/Zeyi-Lin/HivisionIDPhotos
 
