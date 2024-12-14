@@ -1,7 +1,7 @@
 ---
 cover: /assets/YpwvbkISXoTjkwxjIL2cWztWn2Q.jpeg
 create_time: 1733746706
-edit_time: 1733749176
+edit_time: 1734058085
 title: LOCKPASS密码管理器修改记录
 categories:
   - product
@@ -196,6 +196,10 @@ google你就不能把代码分几个模块啊，真是服了。
 2. 可以配置是否自动输入时，程序帮输入回车
 
 <img src="/assets/SEiXb4s8xoiOkvxWea3cZ0Jinod.png" src-width="1260" class="markdown-img m-auto" src-height="631" align="center"/>
+
+3、上传图片时支持长宽比调整
+
+<img src="/assets/OjbNbprgooA2IwxMaI1c4KaYnQg.png" src-width="520" class="markdown-img m-auto" src-height="508" align="center"/>
 
 # 16.  **需要处理**
 

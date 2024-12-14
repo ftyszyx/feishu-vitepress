@@ -2,7 +2,7 @@
 title: 有用的东西收集
 cover: /assets/LRGNbgjU9ozBfPxXHRacMSu4nje.jpeg
 create_time: 1723629802
-edit_time: 1732888327
+edit_time: 1734139429
 categories:
   - daily_life
 ---
@@ -657,4 +657,14 @@ https://github.com/FiloSottile/mkcert
 shader语言
 
 https://github.com/shader-slang/slang
+
+# 49. 启动盘制作
+
+## 49.1 Ventoy
+
+https://www.ventoy.net/cn/index.html
+
+## 49.2 Rufus
+
+https://rufus.ie/zh/
 
