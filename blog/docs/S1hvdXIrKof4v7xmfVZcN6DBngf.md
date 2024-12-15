@@ -1,7 +1,7 @@
 ---
 cover: /assets/FTPzbPoz5omrgDxO1UAcGDvbnlb.gif
 create_time: 1732093061
-edit_time: 1732153709
+edit_time: 1734146437
 title: ssh连接
 categories:
   - skill
@@ -19,7 +19,9 @@ https://github.com/PowerShell/Win32-OpenSSH/releases
 # 2. 如何生成秒钥
 
 ```go
-ssh-keygen
+ssh-keygen -t rsa -C 'rumenz@qq.com' 
+-t:指定加密算法
+-C 是加个备注
 ```
 
 会在
