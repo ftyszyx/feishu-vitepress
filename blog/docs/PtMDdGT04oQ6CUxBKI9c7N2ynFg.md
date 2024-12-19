@@ -6,7 +6,7 @@ keywords:
   - c#
   - donet
 create_time: 1716126315
-edit_time: 1731052241
+edit_time: 1734497431
 categories:
   - skill
 ---
@@ -45,7 +45,7 @@ timer=setInterval(()=>{
                                 v.webContents.openDevTools();
                         }
                 })
-                clearInterval(timer);
+                //clearInterval(timer);
         }
 },5000);
 ```

@@ -1,21 +1,21 @@
 ---
 create_time: 1733061635
-edit_time: 1733062022
+edit_time: 1734528670
 title: 图片标注
 categories:
   - skill
 ---
 
 
-使用工具labelimg
+# 1. labelimg
 
-# 1. 下载
+## 1.1 下载
 
 https://github.com/HumanSignal/labelImg/releases
 
 解压后直接可用
 
-# 2. 定义label
+## 1.2 定义label
 
 修改imglabel\data\predefined_classes.txt
 
@@ -23,7 +23,7 @@ https://github.com/HumanSignal/labelImg/releases
 
 <img src="/assets/HhNmbFoqnoGZspxFlYaczLjVnAc.png" src-width="139" class="markdown-img m-auto" src-height="65" align="center"/>
 
-# 3. 标注
+## 1.3 标注
 
 选择图片目录
 
@@ -39,7 +39,15 @@ https://github.com/HumanSignal/labelImg/releases
 
 保存就ok了
 
-# 4. 快捷键
+## 1.4 快捷键
 
 <img src="/assets/Tqjqb3QsOoCedOxhvv4cm0l9n1E.png" src-width="484" class="markdown-img m-auto" src-height="552" align="center"/>
+
+# 2.  anyLabeling
+
+https://github.com/CVHub520/X-AnyLabeling
+
+# 3. Labelme
+
+https://github.com/labelmeai/labelme
 
