@@ -1,7 +1,7 @@
 ---
 cover: /assets/ASlVbAtpDoyWXexYUR4cW71Fnse.jpeg
 create_time: 1733797173
-edit_time: 1733799014
+edit_time: 1734660619
 title: nuxt.js
 categories:
   - skill
