@@ -16,7 +16,7 @@ export const en = defineConfig({
     sidebar: sidebar,
     footer: {
       message: "MIT",
-      copyright: `© 2019-${new Date().getFullYear()} zhang.yuxin`,
+      copyright: `© 2019-${new Date().getFullYear()} `,
     },
 
     docFooter: {
