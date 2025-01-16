@@ -1,6 +1,7 @@
 ---
+cover: /assets/ZZntbIRqRoKcYZx62cycIQiTn9d.png
 create_time: 1729904051
-edit_time: 1729931288
+edit_time: 1735961374
 title: cloudflare
 categories:
   - skill
@@ -38,4 +39,77 @@ npm run deploy
 Fetch error。从github issue上看，应该是cloudflare 被国内墙了。
 
 所以无法通过命令行使用。
+
+# 2. Tunnel
+
+## 2.1 Docker-compose
+
+```yaml
+services:
+  app:
+    stdin_open: true
+    network_mode: host  # 很重要，需要能访问宿主网络
+    tty: true
+    image: cloudflare/cloudflared:latest
+    restart: unless-stopped
+    command: tunnel --no-autoupdate run
+    environment:
+      - TUNNEL_TOKEN=${TUNNEL_TOKEN}
+```
+
+加一个环境变量
+
+.evn
+
+```yaml
+TUNNEL_TOKEN=
+```
+
+# 3. 转移域名转到clouadflare
+
+## 3.1 添加站点
+
+<img src="/assets/XcZ3bryi2o8nVPxh2k8cUUCSnGg.png" src-width="1408" class="markdown-img m-auto" src-height="472" align="center"/>
+
+选免费
+
+<img src="/assets/Ws83b6rVcoQ6DhxZg3IcyBRVnCe.png" src-width="1027" class="markdown-img m-auto" src-height="676" align="center"/>
+
+下一步
+
+<img src="/assets/FmrvbM2xqozHacxTa3dc6vJHnBf.png" src-width="1015" class="markdown-img m-auto" src-height="566" align="center"/>
+
+## 3.2 更改名称服务器
+
+<img src="/assets/Ljd1bC7puonQN9xDRfWcrbBLntj.png" src-width="658" class="markdown-img m-auto" src-height="190" align="center"/>
+
+加到买域名的地方
+
+<img src="/assets/VmdXbeiq3oyEsWxgzWrcMbZ2nGh.png" src-width="939" class="markdown-img m-auto" src-height="360" align="center"/>
+
+<img src="/assets/TFYob83c8oYh3ixCRKkcof2DnRh.png" src-width="946" class="markdown-img m-auto" src-height="236" align="center"/>
+
+删除原来的三条，填上cloudfalre的两条
+
+点保存
+
+## 3.3 回cloudfalre检查
+
+<img src="/assets/OUuzbecBGoEtwYxHuLFcJfHpnqb.png" src-width="961" class="markdown-img m-auto" src-height="176" align="center"/>
+
+再继续
+
+<img src="/assets/IqrgbGg3go8uwax9YHNcQEoonRc.png" src-width="874" class="markdown-img m-auto" src-height="266" align="center"/>
+
+## 3.4 网站添加成功
+
+<img src="/assets/Xrsybbd2PoJ2mLxSbV9caF75n6g.png" src-width="943" class="markdown-img m-auto" src-height="201" align="center"/>
+
+# 4. 如何指定worker出口地址
+
+待实践
+
+https://nyac.at/posts/cloudflare-workers-force-region
+
+# 5. 做图库
 

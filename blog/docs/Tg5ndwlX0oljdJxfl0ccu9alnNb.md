@@ -1,7 +1,7 @@
 ---
 cover: /assets/YpwvbkISXoTjkwxjIL2cWztWn2Q.jpeg
 create_time: 1733746706
-edit_time: 1735051632
+edit_time: 1736300824
 title: LOCKPASS密码管理器修改记录
 categories:
   - product
@@ -205,4 +205,6 @@ google你就不能把代码分几个模块啊，真是服了。
 
 1. 支持头像图标的自定义上传
 2. 银行卡无法保存有效期
+3. 新增密码项时，自动填充没显示开启
+4. 编辑下，文本框中选择文本无法打开右键菜单
 

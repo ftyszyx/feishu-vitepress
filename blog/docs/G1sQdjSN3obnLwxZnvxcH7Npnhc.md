@@ -1,7 +1,7 @@
 ---
 cover: /assets/Um9JbWwIFodQDjxcMjfcPCjKnHh.jpeg
 create_time: 1729850795
-edit_time: 1731390060
+edit_time: 1735267865
 title: 自制docker镜像
 categories:
   - skill
@@ -92,6 +92,8 @@ account_id 可以从 CF Workers Dashboard 右侧获得
 使用你的自定义域名作为 docker registry mirror 即可
 
 修改/etc/docker/daemon.json
+
+windows上是`%userprofile%\.docker\daemon.json`.
 
 ```yaml
 {

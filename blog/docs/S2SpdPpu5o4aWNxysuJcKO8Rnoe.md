@@ -2,7 +2,7 @@
 title: 有用的东西收集
 cover: /assets/LRGNbgjU9ozBfPxXHRacMSu4nje.jpeg
 create_time: 1723629802
-edit_time: 1734139429
+edit_time: 1735896240
 categories:
   - daily_life
 ---
@@ -258,169 +258,181 @@ https://www.canva.com/zh_cn/
 
 https://www.designevo.com/
 
-# 7. 网盘
+# 7. 图片库
 
-## 7.1 alist
+## 7.1 Pngfree
+
+免费无版权
+
+https://pngfree.ai/
+
+## 7.2 unsplash
+
+https://unsplash.com/
+
+# 8. 网盘
+
+## 8.1 alist
 
 网盘存储 库
 
 https://alist.nn.ci/zh/guide/drivers/common.html
 
-# 8. 网络相关的库
+# 9. 网络相关的库
 
-## 8.1 kcp
+## 9.1 kcp
 
 https://github.com/skywind3000/kcp
 
 tcp的替换，可靠的传输，低延时
 
-# 9. Unity
+# 10. Unity
 
-## 9.1 Jiepeng tan
+## 10.1 Jiepeng tan
 
 分享了很多unity相关
 
 https://github.com/JiepengTan
 
-# 10. 算法
+# 11. 算法
 
-## 10.1 Hello-algo
+## 11.1 Hello-algo
 
 https://github.com/krahets/hello-algo
 
-# 11. 下载
+# 12. 下载
 
-## 11.1 aria2
+## 12.1 aria2
 
 https://github.com/aria2/aria2
 
-## 11.2 aria-ng-gui
+## 12.2 aria-ng-gui
 
 aria2gui封装
 
 https://github.com/Xmader/aria-ng-gui
 
-# 12. 投资
+# 13. 投资
 
-## 12.1 openbb
+## 13.1 openbb
 
 The first financial Platform that is free and fully open source.
 
 https://github.com/OpenBB-finance/OpenBB
 
-# 13. Vpn
+# 14. Vpn
 
-## 13.1 amnezia-client
+## 14.1 amnezia-client
 
 https://github.com/amnezia-vpn/amnezia-client
 
-# 14. Docker
+# 15. Docker
 
-## 14.1 docker-oxsx
+## 15.1 docker-oxsx
 
 在docker上运行os系统
 
 https://github.com/sickcodes/Docker-OSX
 
-## 14.2 Windows
+## 15.2 Windows
 
 https://github.com/dockur/windows
 
-## 14.3 Macos
+## 15.3 Macos
 
 https://github.com/dockur/macos
 
-# 15. C++库
+# 16. C++库
 
-## 15.1 Folly
+## 16.1 Folly
 
 An open-source C++ library developed and used at Facebook.
 
 https://github.com/facebook/folly
 
-# 16. 数据库
+# 17. 数据库
 
-## 16.1 Nocodb
+## 17.1 Nocodb
 
 数据库可视化工具
 
 https://github.com/nocodb/nocodb
 
-# 17. 服务器管理
+# 18. 服务器管理
 
-## 17.1 dokku
+## 18.1 dokku
 
 https://github.com/dokku/dokku
 
-## 17.2 Heroku
+## 18.2 Heroku
 
-## 17.3 nginxProManger
+## 18.3 nginxProManger
 
 https://nginxproxymanager.com/
 
-# 18. docker服务器
+# 19. docker服务器
 
-## 18.1 sealos
+## 19.1 sealos
 
 https://sealos.run/
 
-## 18.2 Container-desktop
+## 19.2 Container-desktop
 
 https://container-desktop.com/
 
-# 19. 视频
+# 20. 视频
 
-## 19.1 Revideo
+## 20.1 Revideo
 
 React 库可以代码编辑视频
 
 https://github.com/redotvideo/revideo
 
-## 19.2 Lossless-cut
+## 20.2 Lossless-cut
 
 https://github.com/mifi/lossless-cut
 
 视频编辑前端工具
 
-# 20. 照片管理器
+# 21. 照片管理器
 
-## 20.1 photoPrism
+## 21.1 photoPrism
 
 <u>PhotoPrism</u>
 
-## 20.2 Immich
+## 21.2 Immich
 
 <u>Immich</u>
 
-## 20.3 ente
+## 21.3 ente
 
 <u>Ente</u>
 
-# 21. 远程工作
+# 22. 远程工作
 
-## 21.1 Easynomad
+## 22.1 Easynomad
 
 https://easynomad.cn/
 
-# 22. nas系统
+# 23. nas系统
 
-## 22.1 Fnos
+## 23.1 Fnos
 
 https://www.fnnas.com/
 
-# 23. 录屏软件
+# 24. 录屏软件
 
-## 23.1 captura
+## 24.1 captura
 
 https://github.com/MathewSachin/Captura/releases
 
-## 23.2 Screentogif
+## 24.2 Screentogif
 
 https://github.com/NickeManarin/ScreenToGif
 
-# 24. Email
+# 25. Email
 
-## 24.1 temp_mail
+## 25.1 temp_mail
 
 https://temp-mail.org/
 
@@ -428,243 +440,265 @@ https://internxt.com/temporary-email
 
 https://adguard.com/en/adguard-temp-mail/overview.html
 
-## 24.2 tempmail100
+## 25.2 tempmail100
 
 国人做的
 
 https://tempmail100.com/
 
-## 24.3 tmp_mail_api
+## 25.3 tmp_mail_api
 
 https://docs.mail.tm/
 
-# 25. 学习
+# 26. 学习
 
-## 25.1 Gpu-puzzles
+## 26.1 Gpu-puzzles
 
 学习gpu
 
 https://github.com/srush/GPU-Puzzles
 
-# 26. 隐私政策
+# 27. 隐私政策
 
 https://app-privacy-policy-generator.firebaseapp.com/#
 
-# 27. 跨平台开发框架
+# 28. 跨平台开发框架
 
-## 27.1 pake
+## 28.1 pake
 
 https://github.com/tw93/Pake?tab=readme-ov-file
 
-# 28. 支付平台
+# 29. 支付平台
 
-## 28.1 爱发电
+## 29.1 爱发电
 
 https://afdian.com/
 
-# 29. 商城
+# 30. 商城
 
-## 29.1 twenty
+## 30.1 twenty
 
 https://github.com/twentyhq/twenty
 
-# 30. 游戏
+# 31. 游戏
 
-## 30.1 Grasscutter
+## 31.1 Grasscutter
 
 原神私服
 
 https://github.com/Grasscutters/Grasscutter
 
-# 31. 闪退
+# 32. 闪退
 
-## 31.1 Crashpad
+## 32.1 Crashpad
 
 https://github.com/chromium/crashpad
 
 chrome的闪退跟踪工具
 
-# 32. chrom插件
+# 33. chrom插件
 
-## 32.1 cloud-document-converter
+## 33.1 cloud-document-converter
 
 将飞书文档转成markdown的插件
 
 https://github.com/lujunji4113/cloud-document-converter?tab=readme-ov-file
 
-# 33. 网站相关
+# 34. 网站相关
 
-## 33.1 点击统计
+## 34.1 点击统计
 
-## 33.2 Pirsch
+## 34.2 Pirsch
 
 https://pirsch.io/
 
-# 34. javascript打包
+# 35. javascript打包
 
-## 34.1 Vite
+## 35.1 Vite
 
-## 34.2 rspack
+## 35.2 rspack
 
 https://rspack.dev/zh/
 
-# 35. 原型设计工具
+# 36. 原型设计工具
 
-## 35.1 Moonvy
+## 36.1 Moonvy
 
 https://moonvy.com/
 
-# 36. 代码编辑工具
+# 37. 代码编辑工具
 
-## 36.1 Theia
+## 37.1 Theia
 
 Eclipse 推出的代码编辑器，VS Code 的替代品。
 
 https://theia-ide.org/
 
-## 36.2 Zed
+## 37.2 Zed
 
 https://github.com/zed-industries/zed
 
 rust写的，快，但是没有windows release
 
-# 37. cloudflare代理
+# 38. cloudflare代理
 
 https://github.com/jonssonyan/cf-workers-proxy
 
 https://www.zouht.com/3740.html
 
-## 37.1 Edtunnel
+## 38.1 Edtunnel
 
 https://github.com/seramo/ed-tunnel
 
-# 38. 下载
+# 39. 下载
 
-## 38.1 You-get
+## 39.1 You-get
 
 Download video from video site
 
 https://you-get.org/
 
-# 39. ui库
+# 40. ui库
 
-## 39.1 mui-x
+## 40.1 mui-x
 
 React ui库
 
 https://mui.com/x/
 
-# 40. 源码
+# 41. 源码
 
-## 40.1 Sellmyapp
+## 41.1 Sellmyapp
 
 https://www.sellmyapp.com/
 
 卖源码的网站
 
-# 41. 硬件
+# 42. 硬件
 
-## 41.1 无人机
+## 42.1 无人机
 
-### 41.1.1 Fast-lab
+### 42.1.1 Fast-lab
 
 https://github.com/ZJU-FAST-Lab
 
-## 41.2 Tdrone
+## 42.2 Tdrone
 
 https://github.com/ShenZhenAccelerationTechCo/Tdrone/tree/master
 
-## 41.3 Gaas
+## 42.3 Gaas
 
 模拟系统
 
 https://github.com/generalized-intelligence/GAAS
 
-# 42. 3d软件
+# 43. 3d软件
 
-## 42.1 Freecad
+## 43.1 Freecad
 
 https://github.com/FreeCAD/FreeCAD
 
-# 43. 社交自动化工具
+# 44. 社交自动化工具
 
-## 43.1 postiz-app
+## 44.1 postiz-app
 
 https://github.com/gitroomhq/postiz-app
 
-# 44. 论文
+# 45. 论文
 
-# 45. Aminer
+# 46. Aminer
 
 搜索和通过ai分析论文
 
 https://www.aminer.cn/
 
-# 46. 其它工具类
+# 47. 其它工具类
 
-## 46.1 Umi-ocr
+## 47.1 Umi-ocr
 
 https://github.com/hiroi-sora/Umi-OCR
 
 图片转文字，二维码转文字工具
 
-## 46.2 富文本工具
+## 47.2 富文本工具
 
-### 46.2.1 Yunda
+### 47.2.1 Yunda
 
 https://github.com/wangyuan389/yunda
 
 零代码html5页面搭建
 
-## 46.3 终端工具
+## 47.3 终端工具
 
-### 46.3.1 electerm
+### 47.3.1 electerm
 
 https://github.com/electerm
 
-## 46.4 差异比较
+## 47.4 差异比较
 
-### 46.4.1 Meld
+### 47.4.1 Meld
 
 https://meld.app/
 
 软件好卡
 
-## 46.5 Winmerge
+## 47.5 Winmerge
 
 这个好用，而且是svn默认的工具
 
 https://winmerge.org/downloads/?lang=en
 
-## 46.6 pensieve
+## 47.6 pensieve
 
 记录你电脑的操作，有点疑惑，有啥用
 
 https://github.com/arkohut/pensieve/blob/master/README_ZH.md
 
-# 47. https证书
+# 48. https证书
 
-## 47.1 Mkcert
+## 48.1 Mkcert
 
 让localhost都能https
 
 https://github.com/FiloSottile/mkcert
 
-# 48. 游戏
+# 49. 游戏
 
-## 48.1 Slang
+## 49.1 Slang
 
 shader语言
 
 https://github.com/shader-slang/slang
 
-# 49. 启动盘制作
+# 50. 启动盘制作
 
-## 49.1 Ventoy
+## 50.1 Ventoy
 
 https://www.ventoy.net/cn/index.html
 
-## 49.2 Rufus
+## 50.2 Rufus
 
 https://rufus.ie/zh/
+
+# 51. 文本类
+
+## 51.1 Markdown
+
+其它文件转markdown
+
+https://markitdown.pro/
+
+## 51.2 Online excecl
+
+https://github.com/nusr/excel
+
+# 52. 云盘
+
+## 52.1 maple-file
+
+https://github.com/honmaple/maple-file
+
+# 53. 测速
+
+https://tools.keycdn.com/performance
 

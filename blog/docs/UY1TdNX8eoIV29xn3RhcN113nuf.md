@@ -1,7 +1,7 @@
 ---
 cover: /assets/C6tIbYqwYofC4CxdYECcYseAnFb.jpeg
 create_time: 1731390096
-edit_time: 1731395532
+edit_time: 1735284629
 title: docker存储位置修改
 categories:
   - skill
@@ -63,6 +63,12 @@ vi /etc/docker/daemon.json
 
 ```yaml
 "data-root": "/home/docker"
+```
+
+windows上是
+
+```yaml
+"data-root": "F:\\docker_img",
 ```
 
 重启docker

@@ -120,6 +120,9 @@
           {
             "text": "catlikecoding教程学习",
             "link": "/W0PGdWPssoPEVzxTwsUcE4amn7b"
+          },
+          {
+            "text": "Unity_crash"
           }
         ],
         "collapsed": false
@@ -170,6 +173,9 @@
           {
             "text": "docker存储位置修改",
             "link": "/UY1TdNX8eoIV29xn3RhcN113nuf"
+          },
+          {
+            "text": "Wsl"
           }
         ],
         "collapsed": false
@@ -184,6 +190,9 @@
           {
             "text": "pip下载加速",
             "link": "/IxL7dRCX7oj3XUxzEu8cSSTUnIe"
+          },
+          {
+            "text": "Django"
           }
         ],
         "collapsed": false
@@ -245,6 +254,9 @@
           {
             "text": "vmware虚拟机安装",
             "link": "/W6LMdejKIoJcaMxRKW3cBqgInSd"
+          },
+          {
+            "text": "新电脑安装"
           }
         ],
         "collapsed": false
@@ -257,8 +269,7 @@
             "link": "/DDakdSCnpofNB6xkKP5cP8C4nje"
           },
           {
-            "text": "pytorch安装",
-            "link": "/NhpMd9xqvojgXgxZCkgcal96nDW"
+            "text": "pytorch安装"
           },
           {
             "text": "图片标注",
@@ -267,6 +278,12 @@
           {
             "text": "coze学习",
             "link": "/VqsNddKJNoStZHxCXEecgtn5nXd"
+          },
+          {
+            "text": "clouadflare免费中转google gemini免费ai"
+          },
+          {
+            "text": "Google AI gemini使用"
           }
         ],
         "collapsed": false
@@ -277,6 +294,38 @@
       },
       {
         "text": "next.js"
+      },
+      {
+        "text": "Math",
+        "items": [
+          {
+            "text": "定点计算"
+          },
+          {
+            "text": "四元素"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "c++",
+        "link": "/KywydDopWo7R1Rxc0lichrCIn0Q",
+        "items": [
+          {
+            "text": "包管理",
+            "link": "/TvLwdlVIkoXv8axdhdLcXodGnLg"
+          },
+          {
+            "text": "Boost"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "FFmpeg"
+      },
+      {
+        "text": "鸿蒙"
       }
     ],
     "collapsed": false
@@ -459,6 +508,9 @@
       },
       {
         "text": "tiktok开发者"
+      },
+      {
+        "text": "远程调试"
       }
     ],
     "collapsed": false
@@ -535,8 +587,7 @@
         "link": "/HG3idoUJWot4nmxSEBTcna58nFb"
       },
       {
-        "text": "2024-11-6 闹心的https证书",
-        "link": "/RnC0dgB3UobOlxxp97Dc8Nminmc"
+        "text": "为了在linux上玩游戏"
       }
     ],
     "collapsed": false

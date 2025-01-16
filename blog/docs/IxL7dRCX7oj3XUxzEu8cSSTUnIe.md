@@ -1,7 +1,7 @@
 ---
 cover: /assets/Asb5bOCUho5jxcxVnERc7kGCnSe.png
 create_time: 1732887516
-edit_time: 1732888201
+edit_time: 1736934835
 title: pip下载加速
 categories:
   - skill
