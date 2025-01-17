@@ -1,7 +1,7 @@
 ---
 hide: false
 create_time: 1736735335
-edit_time: 1736850063
+edit_time: 1737007650
 title: 包管理
 categories:
   - skill
@@ -254,4 +254,8 @@ vcpkg x-update-baseline --add-initial-baseline
 ## 2.3 总结
 
 优点：添加库后，库可以直接在代码提示中使用
+
+# 3. 手工导入
+
+## 3.1 ffmpeg
 
