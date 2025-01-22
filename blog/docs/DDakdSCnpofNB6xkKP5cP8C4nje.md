@@ -1,6 +1,6 @@
 ---
 create_time: 1732874309
-edit_time: 1733020190
+edit_time: 1737446430
 title: Yolo
 categories:
   - skill
@@ -12,6 +12,8 @@ categories:
 https://docs.ultralytics.com/zh#yolo-a-brief-history
 
 https://github.com/ultralytics/ultralytics
+
+论文：https://arxiv.org/pdf/1506.02640
 
 # 2. 图片怎么标注
 
