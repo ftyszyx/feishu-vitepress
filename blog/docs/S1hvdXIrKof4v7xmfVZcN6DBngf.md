@@ -1,7 +1,7 @@
 ---
 cover: /assets/FTPzbPoz5omrgDxO1UAcGDvbnlb.gif
 create_time: 1732093061
-edit_time: 1737712537
+edit_time: 1737822901
 title: ssh连接
 categories:
   - skill
@@ -117,4 +117,57 @@ Add identifile
 <img src="/assets/KVJeb5rpVocufSxSPKvcEPTSn3b.png" src-width="501" class="markdown-img m-auto" src-height="107" align="center"/>
 
 ok
+
+# 7. ssh网页版本
+
+https://github.com/electerm/electerm-web-docker
+
+```bash
+docker run --init -v $(pwd)/electerm-web-data:/home/electerm/data \
+  -e "DB_PATH=/home/electerm/data" \
+  -e "HOST=0.0.0.0" \
+  -p 8082:5577 \
+  zxdong262/electerm-web
+```
+
+# 8. cloudflared加速ssh
+
+## 8.1 方法1
+
+配置tcp tunnel
+
+https://blog.csdn.net/sbc1232123321/article/details/140072400
+
+windows连接
+
+```bash
+cloudflared.exe access ssh --hostname ssh.xxxxxx.com -url localhost:222
+```
+
+ssh连接
+
+```bash
+ssh -p 222 password@localhost
+```
+
+## 8.2 方法 2
+
+配置ssh tunnel(有点慢）
+
+在本地的.ssh/config中配置
+
+```bash
+Host ssh2.*****.com
+ProxyCommand cloudflared access ssh --hostname %h
+```
+
+ssh直接连接
+
+```bash
+ssh username@ssh2.xxx.com
+```
+
+# 9. ssh远程软件
+
+https://zhuanlan.zhihu.com/p/510914995
 

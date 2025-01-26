@@ -4,7 +4,7 @@ tags:
   - develop
 cover: /assets/FDpIbhSbsoYQLoxGRO2c2w0ZnFh.jpeg
 create_time: 1676970303
-edit_time: 1732155985
+edit_time: 1737815370
 categories:
   - skill
 ---
@@ -659,4 +659,18 @@ v，然后方向键 ←→↑↓ 选择要缩进的行（这儿选中第 2、3 �
   **注意：所有选中行与选择区域的上一行进行对齐缩进（各个行的实际缩进长度并不一致）。**
 
 ## 7.9 Linux ctrl+q退出vim锁住的模式
+
+# 8. neovim
+
+## 8.1 安装
+
+```bash
+https://hub.gitmirror.com/https://github.com/neovim/neovim/archive/refs/tags/nightly.tar.gz
+https://ghproxy.com/https://github.com/neovim/neovim/archive/refs/tags/nightly.tar.gz
+```
+
+```bash
+make CMAKE_BUILD_TYPE=RelWithDebInfo
+sudo make install
+```
 

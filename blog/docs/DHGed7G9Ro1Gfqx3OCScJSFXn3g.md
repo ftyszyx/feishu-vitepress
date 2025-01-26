@@ -1,6 +1,6 @@
 ---
 create_time: 1732001669
-edit_time: 1732013062
+edit_time: 1737786911
 title: 常用操作
 categories:
   - skill
@@ -236,4 +236,9 @@ git config --global --unset https.https://github.com.proxy
 ```sql
 ssh-keygen -t rsa -b 4096 -C "whyzi@qq.com"
 ```
+
+# 10. 第一次
+
+- `git config user.email "bob@example.com"`
+- `git config user.name`zyx
 
