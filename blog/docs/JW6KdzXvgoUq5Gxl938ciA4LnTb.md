@@ -4,7 +4,7 @@ tags:
   - develop
 cover: /assets/FDpIbhSbsoYQLoxGRO2c2w0ZnFh.jpeg
 create_time: 1676970303
-edit_time: 1737815370
+edit_time: 1737906560
 categories:
   - skill
 ---
@@ -662,7 +662,9 @@ v，然后方向键 ←→↑↓ 选择要缩进的行（这儿选中第 2、3 �
 
 # 8. neovim
 
-## 8.1 安装
+https://github.com/neovim
+
+## 8.1 源码安装
 
 ```bash
 https://hub.gitmirror.com/https://github.com/neovim/neovim/archive/refs/tags/nightly.tar.gz
@@ -673,4 +675,111 @@ https://ghproxy.com/https://github.com/neovim/neovim/archive/refs/tags/nightly.t
 make CMAKE_BUILD_TYPE=RelWithDebInfo
 sudo make install
 ```
+
+## 8.2 brew安装
+
+```bash
+brew install neovim
+```
+
+启动
+
+```bash
+nvim
+```
+
+## 8.3 安装lazyvim
+
+https://www.lazyvim.org/
+
+```bash
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+rm -rf ~/.config/nvim/.git
+nvim
+```
+
+国内的话，安装过程最好设置Github 代理
+
+https://ghfast.top/
+
+```bash
+it config --global url."https://mirror.ghproxy.com/https://github.com/".insteadof "https://github.com/"
+```
+
+取消
+
+```bash
+git config --list
+git config --global --unset url.https://mirror.ghproxy.com/https://github.com/.insteadof
+```
+
+## 8.4 打开工程
+
+```bash
+nvim .
+```
+
+## 8.5 处理乱码
+
+安装字体
+
+www.nerdfonts.com下载
+
+安装这个吧
+
+<img src="/assets/F4fOb0KjFoCA9cxTdZqc6oGXn8b.png" src-width="625" class="markdown-img m-auto" src-height="350" align="center"/>
+
+Wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/0xProto.zip
+
+### 8.5.1 linux:
+
+```bash
+sudo mkdir /usr/share/fonts/MyFonts
+sudo cp ~/Downloads/MyFont.ttf /usr/share/fonts/MyFonts/
+sudo fc-cache -f -v
+```
+
+只给自己安装
+
+```bash
+mkdir ~/.fonts
+cp ~/Downloads/MyFont.ttf ~/.fonts/
+fc-cache -f -v
+```
+
+### 8.5.2 设置终端字体
+
+<img src="/assets/JHYIbkThaoKtvSxRikxcPsfpnJf.png" src-width="280" class="markdown-img m-auto" src-height="60" align="center"/>
+
+<img src="/assets/OCrLbY1RyoGTtDx3n28cMR6snIc.png" src-width="1607" class="markdown-img m-auto" src-height="708" align="center"/>
+
+## 8.6 一些快捷键
+
+<table>
+<colgroup>
+<col width="285"/>
+<col width="573"/>
+</colgroup>
+<tbody>
+<tr><td><p>ctrl+/ </p></td><td><p>打开命令行</p></td></tr>
+<tr><td><p>ctrl+ hljk</p></td><td><p>窗口移动</p></td></tr>
+<tr><td><p>shift+h</p></td><td><p>显示（隐藏文件）</p></td></tr>
+<tr><td><p>shift+hl</p></td><td><p>左右切换tap</p></td></tr>
+<tr><td><p>空格</p></td><td><p>会弹出提示窗口</p></td></tr>
+<tr><td><p>空格 b d</p></td><td><p>关闭tab</p></td></tr>
+<tr><td><p>Qa </p></td><td><p>退出</p></td></tr>
+<tr><td><p>:lazyExtras</p></td><td><p>打开扩展页面（选择要安装的扩展，重新启动才会安装）</p></td></tr>
+<tr><td></td><td></td></tr>
+</tbody>
+</table>
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
 
