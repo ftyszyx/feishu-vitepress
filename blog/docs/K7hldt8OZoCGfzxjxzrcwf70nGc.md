@@ -1,6 +1,6 @@
 ---
 create_time: 1737896970
-edit_time: 1737900573
+edit_time: 1738339221
 title: 常用操作
 categories:
   - skill
@@ -80,5 +80,11 @@ source .bashrc
 
 ```bash
 brew help
+```
+
+删除
+
+```bash
+brew cleanup opencv
 ```
 
