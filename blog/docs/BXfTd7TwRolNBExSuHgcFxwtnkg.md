@@ -1,6 +1,6 @@
 ---
 create_time: 1738238177
-edit_time: 1738238843
+edit_time: 1738676770
 title: 任务
 categories:
   - leyi
@@ -23,7 +23,7 @@ categories:
 
 <img src="/assets/PxE8bipg5opKqaxeoyvcUInLnOf.png" src-width="810" class="markdown-img m-auto" src-height="538" align="center"/>
 
-# 2. 任务2：
+# 2. 任务2：信
 
 <img src="/assets/CS04bpe8PorApPxN1EjcTIKznYf.png" src-width="603" class="markdown-img m-auto" src-height="190" align="center"/>
 
@@ -44,4 +44,14 @@ categories:
 🔗https://s.codemao.group/551CQg5
 
 【孩子每一次勇敢的尝试，都将发现无限美好】，各位学生，加油！！！
+
+## 2.1 说明
+
+### 2.1.1 确定好给谁
+
+<img src="/assets/BEM5bDWoRo3EQ8xQ0yOcLYpynXf.png" src-width="1545" class="markdown-img m-auto" src-height="671" align="center"/>
+
+### 2.1.2 写什么
+
+<img src="/assets/XwQzbPHPaomqjwxqBfjcUMOOnYe.png" src-width="868" class="markdown-img m-auto" src-height="792" align="center"/>
 
