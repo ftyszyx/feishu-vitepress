@@ -1,6 +1,6 @@
 ---
 create_time: 1733061635
-edit_time: 1735183742
+edit_time: 1738742955
 title: 图片标注
 categories:
   - skill
@@ -46,6 +46,8 @@ https://github.com/HumanSignal/labelImg/releases
 # 2.  anyLabeling
 
 https://github.com/CVHub520/X-AnyLabeling
+
+ 
 
 # 3. Labelme
 
