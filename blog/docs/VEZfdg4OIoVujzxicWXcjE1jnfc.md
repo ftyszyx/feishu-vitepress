@@ -1,6 +1,6 @@
 ---
 create_time: 1733061635
-edit_time: 1738742955
+edit_time: 1738828170
 title: 图片标注
 categories:
   - skill
@@ -47,25 +47,9 @@ https://github.com/HumanSignal/labelImg/releases
 
 https://github.com/CVHub520/X-AnyLabeling
 
- 
+  
 
-# 3. Labelme
+## 2.1 Label-studio
 
-https://github.com/labelmeai/labelme
-
-# 4. Robotflow
-
-https://app.roboflow.com/testdddd/test-f1h7f/generate/preprocessing
-
-<img src="/assets/CPotbTAktoLMr2xXV7ccBjhSnPc.png" src-width="623" class="markdown-img m-auto" src-height="433" align="center"/>
-
-<img src="/assets/GgBXbaaexo9iyvxxGulc3XvonWd.png" src-width="502" class="markdown-img m-auto" src-height="493" align="center"/>
-
-<img src="/assets/TLWNbWyoRoKsbzxW4eYcRc8Envh.png" src-width="481" class="markdown-img m-auto" src-height="656" align="center"/>
-
-# 5. Make-sense
-
-https://github.com/SkalskiP/make-sense
-
-## 5.1 Label-studio
+https://github.com/ftyszyx/label_studio
 
