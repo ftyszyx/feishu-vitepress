@@ -1,6 +1,6 @@
 ---
 create_time: 1738421014
-edit_time: 1738421061
+edit_time: 1739025924
 title: 遇到的问题
 categories:
   - skill
@@ -28,5 +28,17 @@ Error response from daemon: Ports are not available: exposing port TCP 0.0.0.0:1
 ```js
 netsh int ipv4 set dynamic tcp start=49152 num=16384
 netsh int ipv6 set dynamic tcp start=49152 num=16384
+```
+
+# 2. Github docker加速 
+
+docker pull ghcr.io/home-assistant/home-assistant:stable 
+
+这里的ghcr.io是github的docker镜像地址
+
+加速方法：将ghcr.io替换为ghcr.nju.edu.cn。 
+
+```yaml
+docker pull ghcr.nju.edu.cn/home-assistant/home-assistant:stable
 ```
 
