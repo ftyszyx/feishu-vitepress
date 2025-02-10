@@ -1,6 +1,6 @@
 ---
 create_time: 1731567289
-edit_time: 1733794984
+edit_time: 1739112713
 title: Python 的多版本环境
 categories:
   - skill
@@ -18,6 +18,13 @@ https://conda.io/projects/conda/en/latest/user-guide/getting-started.html#managi
 我使用miniconda3
 
 https://docs.conda.io/projects/miniconda/en/latest/
+
+```yaml
+mkdir -p ~/miniconda3
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+rm ~/miniconda3/miniconda.sh
+```
 
 # 2. 使用
 
@@ -60,7 +67,7 @@ conda remove -n ENV_NAME --all
 写个bat脚本
 
 ```yaml
-call "C:\ProgramData\miniconda3\condabin\activate.bat" build_apk
+call conda activate build_apk
 python fix.py 
 pause
 ```
