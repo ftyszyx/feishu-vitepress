@@ -1,6 +1,6 @@
 ---
 create_time: 1739102279
-edit_time: 1739107367
+edit_time: 1739283471
 title: nfs_server
 categories:
   - skill
@@ -50,7 +50,7 @@ sudo vim /etc/exports
        指定nfs服务器共享目录及其属性，内容如下：
 
 ```cpp
-/home/developer/nfsroot  *(rw,sync,no_root_squash)
+/home/developer/nfsroot  *(rw,sync,no_subtree_check,no_root_squash)
 ```
 
 <img src="/assets/AADDbhV5doxjuzxbtcQc8tnNnRe.png" src-width="730" class="markdown-img" src-height="89"/>
@@ -96,7 +96,7 @@ showmount -e
 
  
 
-# 3. 客户端
+# 3. linux客户端
 
 安装
 
@@ -115,7 +115,7 @@ adb shell
        执行在客户端挂载服务器共享目录的命令：
 
 ```cpp
-sudo mount -t nfs 192.168.3.142:/home/developer/nfsroot /home/monster/Desktop/nfs -o nolock
+sudo mount -t nfs 192.168.3.48:/home/developer/nfsroot /home/monster/nfs -o nolock
 ```
 
  
@@ -133,4 +133,12 @@ sudo mount -t nfs 192.168.3.142:/home/developer/nfsroot /home/monster/Desktop/nf
        192.168.xxx.xxx:/home/developer/nfsroot：nfs服务器ip:服务器共享目录
 
        /home/monster/Desktop/nfs：客户端已存在的目录
+
+# 4. windows客户端
+
+开启nfs功能在设置中
+
+```yaml
+mount -o anon \\192.168.3.48/home/developer/nfsroot
+```
 
