@@ -4,7 +4,7 @@ tags:
   - develop
 cover: /assets/FDpIbhSbsoYQLoxGRO2c2w0ZnFh.jpeg
 create_time: 1676970303
-edit_time: 1737906560
+edit_time: 1739365837
 categories:
   - skill
 ---
@@ -703,7 +703,7 @@ nvim
 https://ghfast.top/
 
 ```bash
-it config --global url."https://mirror.ghproxy.com/https://github.com/".insteadof "https://github.com/"
+git config --global url."https://mirror.ghproxy.com/https://github.com/".insteadof "[https://ghfast.top](https://ghfast.top/)"
 ```
 
 取消
