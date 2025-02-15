@@ -1,6 +1,6 @@
 ---
 create_time: 1737896970
-edit_time: 1738339221
+edit_time: 1739503603
 title: 常用操作
 categories:
   - skill
@@ -86,5 +86,11 @@ brew help
 
 ```bash
 brew cleanup opencv
+```
+
+# 4. 查看npu占用
+
+```yaml
+perf list | grep npu
 ```
 
