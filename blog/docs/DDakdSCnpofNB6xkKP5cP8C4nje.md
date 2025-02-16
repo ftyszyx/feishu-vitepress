@@ -1,6 +1,6 @@
 ---
 create_time: 1732874309
-edit_time: 1739195254
+edit_time: 1739617830
 title: Yolo
 categories:
   - skill
@@ -174,40 +174,10 @@ and confidence
 
 cfg/models/11
 
-# 5. yolo11导出rknn
+# 5. 工具相关
 
-需要Linux,并安装好rknn-toolkit2
+## 5.1 查看模型
 
-## 5.1 转特殊的onnx
+https://github.com/lutzroeder/netron
 
-首先是需要yolov11转成onx
-
-这个onx格式需要特殊处理：
-
-参考：https://github.com/airockchip/ultralytics_yolo11
-
-```yaml
-# 调整 ./ultralytics/cfg/default.yaml 中 model 文件路径，默认为 yolo11n.pt，若自己训练模型，请调接至对应的路径。支持检测、分割、姿态、旋转框检测模型。
-# 如填入 yolo11n.pt 导出检测模型
-# 如填入 yolo11n-seg.pt 导出分割模型
-# 如填入 yolo11n-pose.pt 导出姿态模型
-# 如填入 yolo11n-obb.pt 导出OBB模型
-
-export PYTHONPATH=./
-python ./ultralytics/engine/exporter.py
-
-# 执行完毕后，会生成 ONNX 模型. 假如原始模型为 yolo11n.pt，则生成 yolo11n.onnx 模型。
-```
-
-## 5.2 onnx转rknn
-
-https://github.com/airockchip/rknn_model_zoo/tree/main/examples/yolo11
-
-<img src="/assets/AYc8b4S4Io37SuxNZvvcfbZWn9f.png" src-width="1182" class="markdown-img m-auto" src-height="42" align="center"/>
-
-生成的文件是model/yolo11n.rknn
-
-```yaml
-python convert.py ../model/best.onnx rk3588
-```
-
+# 6. 

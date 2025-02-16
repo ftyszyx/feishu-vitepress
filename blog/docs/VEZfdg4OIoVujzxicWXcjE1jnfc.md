@@ -1,6 +1,6 @@
 ---
 create_time: 1733061635
-edit_time: 1738828170
+edit_time: 1739597494
 title: 图片标注
 categories:
   - skill
@@ -46,6 +46,28 @@ https://github.com/HumanSignal/labelImg/releases
 # 2.  anyLabeling
 
 https://github.com/CVHub520/X-AnyLabeling
+
+如何加载自己的模型
+
+新建一个yaml文件x-labeling.yaml
+
+不会写的参考：D:\work\github\X-AnyLabeling\anylabeling\configs\auto_labeling下面的例子
+
+model_path配置你导出的Onnx
+
+```yaml
+type: yolo11
+name: yolo11s-r20240930
+display_name: yolo_mydetect4
+model_path: D:/work/github/yolo_learn/demo/runs/detect/crack_detection4/weights/best.onnx
+nms_threshold: 0.45
+confidence_threshold: 0.25
+classes:
+  - 纵向裂缝
+  - 横向裂缝
+  - 龟裂
+  - 坑洞
+```
 
   
 

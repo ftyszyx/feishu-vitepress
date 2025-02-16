@@ -1,6 +1,6 @@
 ---
 create_time: 1739102279
-edit_time: 1739283471
+edit_time: 1739605110
 title: nfs_server
 categories:
   - skill
@@ -139,6 +139,6 @@ sudo mount -t nfs 192.168.3.48:/home/developer/nfsroot /home/monster/nfs -o nolo
 开启nfs功能在设置中
 
 ```yaml
-mount -o anon \\192.168.3.48/home/developer/nfsroot
+mount -o anon \\192.168.3.48/home/developer/nfsroot z:
 ```
 
