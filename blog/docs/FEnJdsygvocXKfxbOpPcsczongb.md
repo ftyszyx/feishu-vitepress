@@ -1,6 +1,6 @@
 ---
 create_time: 1739102279
-edit_time: 1739605110
+edit_time: 1739672764
 title: nfs_server
 categories:
   - skill
@@ -113,6 +113,8 @@ adb shell
 ```
 
        执行在客户端挂载服务器共享目录的命令：
+
+/mnt/hgfs/nfsroot
 
 ```cpp
 sudo mount -t nfs 192.168.3.48:/home/developer/nfsroot /home/monster/nfs -o nolock
