@@ -1,13 +1,13 @@
 ---
 create_time: 1733061635
-edit_time: 1739597494
+edit_time: 1739786781
 title: 图片标注
 categories:
   - skill
 ---
 
 
-# 1. labelimg
+# 1. labelimg(不好用，改用anyLabeling)
 
 ## 1.1 下载
 
@@ -71,7 +71,7 @@ classes:
 
   
 
-## 2.1 Label-studio
+# 3. Label-studio(太复杂，不好用）
 
 https://github.com/ftyszyx/label_studio
 

@@ -318,18 +318,31 @@
             "text": "Google AI gemini使用"
           },
           {
-            "text": "免费使用deepseek(groq)",
-            "link": "/S7wZdAEqiohkGixV40JcdvADnye"
-          },
-          {
-            "text": "azure免费ai"
-          },
-          {
             "text": "字节"
           },
           {
             "text": "rknn(瑞芯微集成）",
             "link": "/JSjvdQfWBooG2NxBixxcZXVIn5y"
+          },
+          {
+            "text": "废弃（不好用）",
+            "items": [
+              {
+                "text": "azure免费ai"
+              },
+              {
+                "text": "免费使用deepseek(groq)",
+                "link": "/S7wZdAEqiohkGixV40JcdvADnye"
+              }
+            ],
+            "collapsed": false
+          },
+          {
+            "text": "Dify",
+            "link": "/TjKUd74vno8WyzxzpGVc7TKEnBd"
+          },
+          {
+            "text": "llm实时搜索"
           }
         ],
         "collapsed": false
