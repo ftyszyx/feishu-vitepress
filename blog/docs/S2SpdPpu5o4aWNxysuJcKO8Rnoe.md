@@ -2,7 +2,7 @@
 title: 有用的东西收集
 cover: /assets/LRGNbgjU9ozBfPxXHRacMSu4nje.jpeg
 create_time: 1723629802
-edit_time: 1735896240
+edit_time: 1739887780
 categories:
   - daily_life
 ---
@@ -701,4 +701,22 @@ https://github.com/honmaple/maple-file
 # 53. 测速
 
 https://tools.keycdn.com/performance
+
+# 54. 破解
+
+## 54.1  **Detect It Easy (DiE)查看程序开发语言和框架**
+
+https://github.com/horsicq/Detect-It-Easy?tab=readme-ov-file
+
+# 55. 听音乐
+
+## 55.1 lumusic音源
+
+```ts
+https://ghproxy.net/https://raw.githubusercontent.com/pdone/lx-music-source/main/flower/latest.js
+https://tt.tenmeng.com/moonue/js/yecao202412.js
+https://fastly.jsdelivr.net/gh/lyswhut/lx-music-source/dist/lx-music-source.js
+https://raw.niuma666bet.buzz/Huibq/keep-alive/master/render_api.js
+https://ftyszyx.github.io/feishu-vitepress/js/lxmusic/grass-api.js
+```
 

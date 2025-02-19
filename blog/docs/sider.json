@@ -395,6 +395,10 @@
       {
         "text": "Windows",
         "link": "/Mey0dZGFNoKJJLxS11acomobnAH"
+      },
+      {
+        "text": "Rust",
+        "link": "/Dax2dUD8PoI58rxay0Kc3EMOn7Q"
       }
     ],
     "collapsed": false
@@ -574,12 +578,6 @@
           }
         ],
         "collapsed": false
-      },
-      {
-        "text": "tiktok开发者"
-      },
-      {
-        "text": "远程调试"
       }
     ],
     "collapsed": false
@@ -683,18 +681,6 @@
       {
         "text": "任务",
         "link": "/BXfTd7TwRolNBExSuHgcFxwtnkg"
-      }
-    ],
-    "collapsed": false
-  },
-  {
-    "text": "内容赚钱",
-    "items": [
-      {
-        "text": "公众号"
-      },
-      {
-        "text": "短视频"
       }
     ],
     "collapsed": false
