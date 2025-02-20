@@ -2,7 +2,7 @@
 title: 有用的东西收集
 cover: /assets/LRGNbgjU9ozBfPxXHRacMSu4nje.jpeg
 create_time: 1723629802
-edit_time: 1739887780
+edit_time: 1739939714
 categories:
   - daily_life
 ---
@@ -160,43 +160,57 @@ https://github.com/zmh-program/chatnio
 
 https://github.com/voideditor/void
 
-### 4.16.2 Coursor
+## 4.17 ai编码
 
-### 4.16.3 claude_dev
+### 4.17.1 Coursor
+
+### 4.17.2 claude_dev
 
 https://github.com/saoudrizwan/claude-dev
 
-### 4.16.4 cline
+### 4.17.3 cline
 
 https://github.com/cline/cline
 
-## 4.17 Plate
+### 4.17.4 windsurf
+
+### 4.17.5 通义灵码
+
+### 4.17.6 trae(字节）
+
+https://www.trae.ai/
+
+### 4.17.7 roo code
+
+https://github.com/RooVetGit/Roo-Code
+
+## 4.18 Plate
 
 Ai editor richtext
 
 https://github.com/udecode/plate
 
-## 4.18 Versison
+## 4.19 Versison
 
-### 4.18.1 supervison
+### 4.19.1 supervison
 
 https://github.com/roboflow/supervision
 
-## 4.19  **Swarm** 
+## 4.20  **Swarm** 
 
 https://github.com/openai/swarm?tab=readme-ov-file
 
 An educational framework exploring ergonomic, lightweight multi-agent orchestration.
 
-## 4.20 Fitten code
+## 4.21 Fitten code
 
-## 4.21 amphion
+## 4.22 amphion
 
 Generate music speech and audio
 
 https://github.com/open-mmlab/Amphion
 
-## 4.22 Napkinai
+## 4.23 Napkinai
 
 文字生成图表，根据文字生成图形
 

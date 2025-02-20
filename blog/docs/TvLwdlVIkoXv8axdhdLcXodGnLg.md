@@ -1,7 +1,7 @@
 ---
 hide: false
 create_time: 1736735335
-edit_time: 1737007650
+edit_time: 1739929432
 title: 包管理
 categories:
   - skill
@@ -10,7 +10,7 @@ categories:
 
 c++的包管理是一大痛点，以前如果要手动放入一个库，需要手动把源码拷贝过来，但是如果这个库又依赖很多其它的库，那就没办法了，
 
-# 1. Conan
+# 1. Conan（不好用，放弃）
 
 https://docs.conan.io/2/tutorial/consuming_packages.html
 
@@ -114,7 +114,7 @@ https://conan.io/center
 
 1、库安装后，vstudio和vscode都无法找到库的头文件。导致无法代码提示
 
-# 2. Vcpkg
+# 2. Vcpkg（不好用，放弃）
 
 https://github.com/microsoft/vcpkg
 
@@ -255,7 +255,7 @@ vcpkg x-update-baseline --add-initial-baseline
 
 优点：添加库后，库可以直接在代码提示中使用
 
-# 3. 手工导入
+# 3. 手工导入（最终选择）
 
-## 3.1 ffmpeg
+## 3.1  
 
