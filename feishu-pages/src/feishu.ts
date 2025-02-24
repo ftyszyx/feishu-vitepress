@@ -188,7 +188,7 @@ export class FeishuDocHelp {
         if (item.has_child && hide_child !== true) {
           const new_parents = item.wiki_path_arr.concat(item.title);
           sider_item.items = [];
-          sider_item.collapsed = false;
+          sider_item.collapsed = true;//default collapse the menu
           await this._fetchAllDocs(new_parents, sider_item.items, item.children, spaceId, item.node_token, option);
         }
       }
