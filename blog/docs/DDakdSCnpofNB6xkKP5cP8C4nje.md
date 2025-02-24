@@ -1,6 +1,6 @@
 ---
 create_time: 1732874309
-edit_time: 1739617830
+edit_time: 1740273452
 title: Yolo
 categories:
   - skill
