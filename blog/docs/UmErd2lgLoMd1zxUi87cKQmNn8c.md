@@ -1,7 +1,7 @@
 ---
 create_time: 1740223990
-edit_time: 1740234411
-title: 2025-2-23 小智语音机器人
+edit_time: 1740313239
+title: 2025-2-24 小智语音机器人
 categories:
   - other_platform
 ---
@@ -60,4 +60,10 @@ https://xiaozhi.me/
 <img src="/assets/Iju8bIDoXoJ7FfxGVI6cqUIbnLe.png" src-width="610" class="markdown-img m-auto" src-height="289" align="center"/>
 
 输入验证码后，配置角色，再重启，就可以了。？ 
+
+体验后的感觉：
+
+语音识别不是很准，
+
+并非实时对话。
 
