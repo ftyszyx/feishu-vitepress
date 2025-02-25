@@ -1,7 +1,7 @@
 ---
 create_time: 1735693452
-edit_time: 1737363313
-title: 为了在linux上玩游戏，程序员拼了
+edit_time: 1740408708
+title: 2025-2-25 为了在linux上玩游戏，程序员拼了
 categories:
   - other_platform
 ---

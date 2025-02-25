@@ -1,6 +1,7 @@
 ---
+cover: /assets/VOjQbMBsboWsbuxeUnScojkanTb.jpeg
 create_time: 1740016378
-edit_time: 1740063213
+edit_time: 1740407723
 title: 2025-2-20 你还在为找音乐发愁？LXMusic 了解一下？
 categories:
   - other_platform

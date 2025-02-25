@@ -1,6 +1,7 @@
 ---
+cover: /assets/P59EbboPxoBdo1xxSlwcckuqn9f.jpeg
 create_time: 1738813260
-edit_time: 1738893293
+edit_time: 1740407924
 title: 2025-2-6 新年第一天
 categories:
   - other_platform

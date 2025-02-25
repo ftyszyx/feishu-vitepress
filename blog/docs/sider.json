@@ -39,7 +39,7 @@
             "link": "/M5aLdF2EiomjFIxlZ5NcnA9TnS0"
           }
         ],
-        "collapsed": false
+        "collapsed": true
       },
       {
         "text": "Electron 开发学习",
@@ -69,7 +69,7 @@
             "link": "/NIXhd13u3oh2WoxhuqscujWhnuf"
           }
         ],
-        "collapsed": false
+        "collapsed": true
       },
       {
         "text": "爬虫",
@@ -88,7 +88,7 @@
             "link": "/KT9MdTU4zo6oRqxPOdwcfOSDn1b"
           }
         ],
-        "collapsed": false
+        "collapsed": true
       },
       {
         "text": "duckdb学习（目前1.0版本还不太稳定，有内存泄露风险，不推荐用于实际产品）",
@@ -137,7 +137,7 @@
             "link": "/MTardhXGkoDZU2xmHPJchE20nt4"
           }
         ],
-        "collapsed": false
+        "collapsed": true
       },
       {
         "text": "加密与解密",
@@ -155,7 +155,7 @@
             "link": "/A4tUdBPVoouaVjx3k9XczWCYnMe"
           }
         ],
-        "collapsed": false
+        "collapsed": true
       },
       {
         "text": "flutter学习",
@@ -169,7 +169,7 @@
             "link": "/EliLdfJD6oIb4uxQ1B5cjs63nuc"
           }
         ],
-        "collapsed": false
+        "collapsed": true
       },
       {
         "text": "cloudflare",
@@ -198,7 +198,7 @@
             "link": "/BjbxdPN9for7joxWoWpcUL29nSd"
           }
         ],
-        "collapsed": false
+        "collapsed": true
       },
       {
         "text": "Python",
@@ -215,7 +215,7 @@
             "text": "Django"
           }
         ],
-        "collapsed": false
+        "collapsed": true
       },
       {
         "text": "Golang",
@@ -233,7 +233,7 @@
             "link": "/D8k8d9VN7oh1k3xGvBncB5xFnUh"
           }
         ],
-        "collapsed": false
+        "collapsed": true
       },
       {
         "text": "Git",
@@ -247,7 +247,7 @@
             "link": "/Ieu5dC47voqQMWx73UWcsqaGn3d"
           }
         ],
-        "collapsed": false
+        "collapsed": true
       },
       {
         "text": "vue",
@@ -257,7 +257,7 @@
             "link": "/LzAldncMUoKF1Hxz24pcO7P9nNh"
           }
         ],
-        "collapsed": false
+        "collapsed": true
       },
       {
         "text": "linux",
@@ -291,7 +291,7 @@
             "link": "/Cxwqdf5l4owsfyxUCIccIX4hnch"
           }
         ],
-        "collapsed": false
+        "collapsed": true
       },
       {
         "text": "AI",
@@ -332,7 +332,7 @@
                 "link": "/S7wZdAEqiohkGixV40JcdvADnye"
               }
             ],
-            "collapsed": false
+            "collapsed": true
           },
           {
             "text": "Dify",
@@ -342,7 +342,7 @@
             "text": "llm实时搜索"
           }
         ],
-        "collapsed": false
+        "collapsed": true
       },
       {
         "text": "nuxt.js",
@@ -361,7 +361,7 @@
             "text": "四元素"
           }
         ],
-        "collapsed": false
+        "collapsed": true
       },
       {
         "text": "c++",
@@ -378,7 +378,7 @@
             "text": "一些语法 "
           }
         ],
-        "collapsed": false
+        "collapsed": true
       },
       {
         "text": "FFmpeg"
@@ -395,7 +395,7 @@
         "link": "/Dax2dUD8PoI58rxay0Kc3EMOn7Q"
       }
     ],
-    "collapsed": false
+    "collapsed": true
   },
   {
     "text": "生活",
@@ -436,7 +436,7 @@
         "text": "有用的东西花钱"
       }
     ],
-    "collapsed": false
+    "collapsed": true
   },
   {
     "text": "运动"
@@ -479,7 +479,7 @@
             "link": "/FouFdLA44o3Npqxq4ueclrGQnRe"
           }
         ],
-        "collapsed": false
+        "collapsed": true
       },
       {
         "text": "1postpro",
@@ -489,7 +489,7 @@
             "link": "/P7c9dbUrzoZc60xp4dVczy7nntb"
           }
         ],
-        "collapsed": false
+        "collapsed": true
       },
       {
         "text": "LockPass密码管理器",
@@ -547,7 +547,7 @@
             "link": "/Tg5ndwlX0oljdJxfl0ccu9alnNb"
           }
         ],
-        "collapsed": false
+        "collapsed": true
       },
       {
         "text": "抠图",
@@ -556,7 +556,7 @@
             "text": "抠图应用"
           }
         ],
-        "collapsed": false
+        "collapsed": true
       },
       {
         "text": "其它有用的库",
@@ -571,10 +571,10 @@
             "link": "/IlVHdCVsgobHBlxs2vacm0eKnjd"
           }
         ],
-        "collapsed": false
+        "collapsed": true
       }
     ],
-    "collapsed": false
+    "collapsed": true
   },
   {
     "text": "其它平台",
@@ -644,10 +644,6 @@
         "link": "/HG3idoUJWot4nmxSEBTcna58nFb"
       },
       {
-        "text": "为了在linux上玩游戏，程序员拼了",
-        "link": "/CryMduc7YoIg6sx7hkvch19Inrb"
-      },
-      {
         "text": "2025-2-6 新年第一天",
         "link": "/YPLJd0KnXobLkPxVpHNcuJO9nMf"
       },
@@ -664,15 +660,23 @@
         "link": "/RuvYd7JLboqwdrx6tvxcXsjbnUv"
       },
       {
-        "text": "2025-2-24 小智语音机器人",
+        "text": "2025-2-23 马斯克的 Grok3 免费畅玩，150 美金羊毛速薅！但 API 却...",
+        "link": "/NEUYdLVosogBDyxkth4c1qO6nog"
+      },
+      {
+        "text": "2025-2-24 告别人工智障！ESP32+大模型，DIY你的专属AI语音助手！",
         "link": "/UmErd2lgLoMd1zxUi87cKQmNn8c"
       },
       {
-        "text": "2025-2-23 马斯克的 Grok3 免费畅玩，150 美金羊毛速薅！但 API 却...",
-        "link": "/NEUYdLVosogBDyxkth4c1qO6nog"
+        "text": "2025-2-25 为了在linux上玩游戏，程序员拼了",
+        "link": "/CryMduc7YoIg6sx7hkvch19Inrb"
+      },
+      {
+        "text": "2025-2-26 MoneyPrinterTurbo项目",
+        "link": "/OIcjdsNoso2Ntjx08Wrc9p7WnXc"
       }
     ],
-    "collapsed": false
+    "collapsed": true
   },
   {
     "text": "乐怡日志",
@@ -686,6 +690,6 @@
         "link": "/BXfTd7TwRolNBExSuHgcFxwtnkg"
       }
     ],
-    "collapsed": false
+    "collapsed": true
   }
 ]
