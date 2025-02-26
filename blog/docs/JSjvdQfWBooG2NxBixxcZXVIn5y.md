@@ -1,6 +1,6 @@
 ---
 create_time: 1739617780
-edit_time: 1739633581
+edit_time: 1740476923
 title: rknn(瑞芯微集成）
 categories:
   - skill
@@ -88,7 +88,5 @@ python convert.py /mnt/d/opensource/ai/rknn_model_zoo/best.onnx rk3588 i8 /mnt/d
 
 测试
 
-# 4. wsl中使用
-
-https://github.com/airockchip/rknn-toolkit2/blob/master/doc/WSL%E4%B8%AD%E4%BD%BF%E7%94%A8RKNN_ToolKit2.md
+# 4.  
 
