@@ -1,6 +1,6 @@
 ---
 create_time: 1737901304
-edit_time: 1737901341
+edit_time: 1740551830
 title: github加速
 categories:
   - skill
@@ -28,4 +28,6 @@ git config --list
 ```bash
 git config --global --unset url.https://mirror.ghproxy.com/https://github.com/.insteadof
 ```
+
+https://www.7ed.net/gitmirror/hub.html
 
