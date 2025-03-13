@@ -65,6 +65,7 @@ class BLog():
         response = self._session.get(url)
         json_data = response.json()
         download_url = json_data.get("assets")[0].get("browser_download_url")
+        print(f"get download_url:{download_url}")
         download_url = github_pre + download_url
         release_name = json_data.get("name")
         if dest_path is None or dest_path.strip() == "":
