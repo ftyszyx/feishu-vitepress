@@ -83,10 +83,21 @@ class BLog():
         blog_path = os.path.join(dest_path, "web")
         try:
             print(f'begin download ')
-            file_res = self._session.get(download_url)
-            print(f'download ok')
+            # 增加超时设置和流式下载
+            file_res = self._session.get(download_url, timeout=(10, 30), stream=True)
+            file_res.raise_for_status()  # 增加HTTP状态码检查
+            # 使用分块下载避免大文件内存问题
+            total_size = int(file_res.headers.get('content-length', 0))
+            downloaded = 0
+            print(f'Total size: {total_size//(1024*1024)}MB')
             with open(local_file_path, "wb") as f:
-                f.write(file_res.content)
+                for chunk in file_res.iter_content(chunk_size=1024*1024): 
+                    if chunk:  # 过滤保持连接的空块
+                        f.write(chunk)
+                        downloaded += len(chunk)
+                        if total_size > 0:
+                            print(f"\rProgress: {downloaded*100/total_size:.1f}%", end='')
+            print(f'download ok')
             blog_tmp_path = os.path.join(dest_path, "web_tmp")
             if os.path.exists(blog_tmp_path):
                 shutil.rmtree(blog_tmp_path, ignore_errors=True)
