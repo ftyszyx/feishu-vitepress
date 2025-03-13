@@ -56,6 +56,7 @@ class BLog():
         repo = self._check_item.get("github_repo")
         token = self._check_item.get("github_token")
         dest_path = self._check_item.get("dest_path")
+        github_pre=self._check_item.get("github_prefix")
         url = f"https://api.github.com/repos/{ower}/{repo}/releases/latest"
         print(f"get owner:{ower} repo:{repo} token:{token} ")
         self._session.headers.update(
@@ -64,7 +65,7 @@ class BLog():
         response = self._session.get(url)
         json_data = response.json()
         download_url = json_data.get("assets")[0].get("browser_download_url")
-        download_url = "https://gh.api.99988866.xyz/" + download_url
+        download_url = github_pre + download_url
         release_name = json_data.get("name")
         if dest_path is None or dest_path.strip() == "":
             dest_path = os.path.join(os.path.abspath(os.curdir), "blog_dist")
@@ -105,6 +106,8 @@ if __name__ == "__main__":
         env_dict = {}
         for env_item in env_data:
             if env_item.strip() == "":
+                continue
+            if env_item.startswith("#"):
                 continue
             env_dict[env_item.split("=")[0].strip()] = env_item.split("=")[1].strip()
         blog = BLog(env_dict)
