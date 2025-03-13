@@ -112,7 +112,20 @@ class BLog():
                 os.remove(local_file_path)
             return f"download blog error:{e}"
         shutil.move(os.path.join(blog_tmp_path, "blog/docs/.vitepress/dist"), blog_path)
+        print("clean tmp path")
+        shutil.rmtree(blog_tmp_path)
+        # clean old zip
+        clean_old_blog(dest_path,os.path.basename(local_file_path))
         return f"download blog success,save path:{local_file_path}\n url:{download_url}"
+
+def clean_old_blog(dest_path,curzip_file):
+    print(f"clean old blog from {dest_path} curzip_file:{curzip_file}")
+    for file in os.listdir(dest_path):
+        if file.endswith(".zip"):
+            if file == curzip_file:
+                continue
+            print(f"clean old blog:{file}")
+            os.remove(os.path.join(dest_path, file))
 
 if __name__ == "__main__":
     try:
