@@ -82,13 +82,17 @@ class BLog():
 
         blog_path = os.path.join(dest_path, "web")
         try:
+            print(f'begin download ')
             file_res = self._session.get(download_url)
+            print(f'download ok')
             with open(local_file_path, "wb") as f:
                 f.write(file_res.content)
             blog_tmp_path = os.path.join(dest_path, "web_tmp")
             if os.path.exists(blog_tmp_path):
                 shutil.rmtree(blog_tmp_path, ignore_errors=True)
+            print(f'unzip file')
             unzip_dir(local_file_path, blog_tmp_path, showlog=False)
+            print(f'unzip ok')
             if os.path.exists(blog_path):
                 shutil.rmtree(blog_path, ignore_errors=True)
         except Exception as e:
