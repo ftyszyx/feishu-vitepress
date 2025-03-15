@@ -51,6 +51,6 @@ nginx -s reload
 crontab -e
 每天晚上21:30执行
 ```
-30 21 * * * python3 /root/work/feishu-vitepress/down_blog/get_dist_from.github.py
+30 21 * * * cd /root/work/feishu-vitepress/down_blog/&&python3 get_dist_from_github.py>>/tmp/get_blog.log
 ```
 
