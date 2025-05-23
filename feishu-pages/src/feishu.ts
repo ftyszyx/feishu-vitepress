@@ -176,20 +176,25 @@ export class FeishuDocHelp {
         let time_str = `${create_time.getFullYear()}_${create_time.getMonth()}_${create_time.getDate()}`;
         let filename = `${docid}`;
         if (parent_path_arr.length == 0 && item.title.toLowerCase() == "index") filename = "index";
-        const { hide, hide_child, title } = await this.fetchDocBody(path.join(option.doc_root_path, `${filename}.md`), pic_path, item, parent_path_arr.length >= 1 ? parent_path_arr[0] : "");
-        const sider_item: SideBarItem = { text: title || item.title };
-        if (hide !== true || filename == "index") {
-          console.info("Writing doc", item.title);
-          sider_item.link = `/${filename}`;
-        }
-        if (hide == true && hide_child == true) continue;
-        // console.log("add item", hide, hide_child);
-        sider_items.push(sider_item);
-        if (item.has_child && hide_child !== true) {
-          const new_parents = item.wiki_path_arr.concat(item.title);
-          sider_item.items = [];
-          sider_item.collapsed = true;//default collapse the menu
-          await this._fetchAllDocs(new_parents, sider_item.items, item.children, spaceId, item.node_token, option);
+        try {
+          const { hide, hide_child, title } = await this.fetchDocBody(path.join(option.doc_root_path, `${filename}.md`), pic_path, item, parent_path_arr.length >= 1 ? parent_path_arr[0] : "");
+          const sider_item: SideBarItem = { text: title || item.title };
+          if (hide !== true || filename == "index") {
+            console.info("Writing doc", item.title);
+            sider_item.link = `/${filename}`;
+          }
+          if (hide == true && hide_child == true) continue;
+          // console.log("add item", hide, hide_child);
+          sider_items.push(sider_item);
+          if (item.has_child && hide_child !== true) {
+            const new_parents = item.wiki_path_arr.concat(item.title);
+            sider_item.items = [];
+            sider_item.collapsed = true;//default collapse the menu
+            await this._fetchAllDocs(new_parents, sider_item.items, item.children, spaceId, item.node_token, option);
+          }
+        } catch (err) {
+          console.error("fetch doc body error", err, "file:", path.join(option.doc_root_path, `${filename}.md`, "title:", item.title, "item", JSON.stringify(item)));
+          continue;
         }
       }
     }
