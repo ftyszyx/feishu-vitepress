@@ -1,6 +1,6 @@
 ---
 create_time: 1732001669
-edit_time: 1737786911
+edit_time: 1747315143
 title: 常用操作
 categories:
   - skill
@@ -105,6 +105,12 @@ git remote remove origin
 
 ```yaml
 git remote rename old_name new_name
+```
+
+修改远端地址
+
+```yaml
+git remote set-url origin <new_url>
 ```
 
 # 4. 分支
@@ -218,17 +224,24 @@ git config --global --unset https.proxy
 
 第二种：仅 github.com 走 clash 代理，因为可能有的朋友公司内网的 git 仓库无需走代理
 
+`修改~/.gitconfig`
+
 ```shell
 // 添加代理
-git config --global https://github.com.proxy socks5://127.0.0.1:7890
-git config --global https://github.com.proxy socks5://127.0.0.1:7890
+git config --global http.https://github.com/.proxy socks5://127.0.0.1:7890
+git config --global http.https://github.com/.proxy socks5://127.0.0.1:7890
 
-git config --global http://github.com.proxy socks5://192.168.0.42:7890
-git config --global https://github.com.proxy socks5://192.168.0.42:7890
+git config --global http.http://github.com/.proxy socks5://192.168.0.42:7890
+git config --global http.https://github.com/.proxy socks5://192.168.0.42:7890
 
 // 取消代理
 git config --global --unset http.https://github.com.proxy
 git config --global --unset https.https://github.com.proxy
+
+[http "https://github.com/"]
+  proxy = socks5://192.168.0.42:7890
+[https "https://github.com/"]
+  proxy = socks5://192.168.0.42:7890
 ```
 
 # 9. 生成密钥
@@ -241,4 +254,37 @@ ssh-keygen -t rsa -b 4096 -C "whyzi@qq.com"
 
 - `git config user.email "bob@example.com"`
 - `git config user.name`zyx
+- 禁止自动转换换行符
+
+```
+git config --global core.autocrlf false
+```
+
+# 11. 加速
+
+# 12. Git 加速 
+
+全局代理：
+
+git config --global http.proxy socks5://127.0.0.1:1080
+
+git config --global https.proxy socks5://127.0.0.1:1080
+
+取消：
+
+git config --global --unset http.proxy
+
+git config --global --unset https.proxy
+
+只针对部分域名代理（推荐）
+
+git config --global http.https://github.com.proxy socks5://127.0.0.1:1080
+
+git config --global https.https://github.com.proxy socks5://127.0.0.1:1080
+
+git config --global --unset http.https://github.com.proxy
+
+git config --global --unset https.https://github.com.proxy
+
+git config --global --list 显示所有配置
 

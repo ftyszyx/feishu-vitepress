@@ -6,7 +6,7 @@ keywords:
   - c#
   - donet
 create_time: 1716126315
-edit_time: 1734497431
+edit_time: 1743388936
 categories:
   - skill
 ---
@@ -114,3 +114,18 @@ reverse-sourcemap js/
 <img src="/assets/R1GJbBXAloh6jmxrmdoc2yrfnLh.png" src-width="950" class="markdown-img m-auto" src-height="572" align="center"/>
 
 ## 4.3 
+# 5. c++
+
+## 5.1 工具：
+
+### 5.1.1 反汇编：
+
+ida
+
+### 5.1.2 调试
+
+-  **OllyDbg:** 一个免费的调试器，也可以用于反汇编代码。（不推荐）
+
+-  **x64dbg:**  另一个流行的免费调试器。https://x64dbg.com/
+- 开源地址：https://github.com/x64dbg/x64dbg
+

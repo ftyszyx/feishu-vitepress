@@ -1,7 +1,7 @@
 ---
 cover: /assets/ZZntbIRqRoKcYZx62cycIQiTn9d.png
 create_time: 1729904051
-edit_time: 1735961374
+edit_time: 1741060018
 title: cloudflare
 categories:
   - skill
@@ -112,4 +112,50 @@ TUNNEL_TOKEN=
 https://nyac.at/posts/cloudflare-workers-force-region
 
 # 5. 做图库
+
+# 6. 优先域名（有点复杂，还是不要搞了）
+
+网站测速https://www.itdog.cn/http
+
+## 6.1 添加回退源名
+
+将这个域名，回退到你的服务器Ip
+
+<img src="/assets/X71Xbt0iio3cWjx8isDcpkQunKb.png" src-width="2465" class="markdown-img m-auto" src-height="916" align="center"/>
+
+添加回溯源
+
+<img src="/assets/I3x9bnZAzorbH5x0dxVcENM4nxh.png" src-width="2266" class="markdown-img m-auto" src-height="874" align="center"/>
+
+添加主机名
+
+<img src="/assets/EN9zbLRYxot8e6xBiFJcBIYHnCG.png" src-width="2362" class="markdown-img m-auto" src-height="835" align="center"/>
+
+<img src="/assets/NbHLbcgjoofAtbxWm33cSDaOnbh.png" src-width="2266" class="markdown-img m-auto" src-height="1113" align="center"/>
+
+有错误，点开
+
+<img src="/assets/TF2sbRIwcoCk62x16fTcOtPrnne.png" src-width="2469" class="markdown-img m-auto" src-height="576" align="center"/>
+
+添加域名所有权
+
+<img src="/assets/KoTqbXpIBoHZ80xr47Nc82V3n7f.png" src-width="1581" class="markdown-img m-auto" src-height="771" align="center"/>
+
+<img src="/assets/KSKJbY9PvoBtZbxUkBQcqeKenKf.png" src-width="1912" class="markdown-img m-auto" src-height="779" align="center"/>
+
+成功了
+
+<img src="/assets/K6ELbLpHjodRRwxRVyicPIhfnwf.png" src-width="1610" class="markdown-img m-auto" src-height="247" align="center"/>
+
+## 6.2 添加优选
+
+可以参考：
+
+https://www.wetest.vip/page/cloudflare/cname.html
+
+<img src="/assets/B0UZbjMfJoRAQjxTI5zc371tnvh.png" src-width="2575" class="markdown-img m-auto" src-height="1123" align="center"/>
+
+将网站cname到你配好的cdn
+
+<img src="/assets/Un1dbOGTBoad6cxT83mcfdZ2nyd.png" src-width="1796" class="markdown-img m-auto" src-height="301" align="center"/>
 

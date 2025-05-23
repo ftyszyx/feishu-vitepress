@@ -1,6 +1,6 @@
 ---
 create_time: 1737901304
-edit_time: 1740551830
+edit_time: 1746796072
 title: github加速
 categories:
   - skill
@@ -30,4 +30,22 @@ git config --global --unset url.https://mirror.ghproxy.com/https://github.com/.i
 ```
 
 https://www.7ed.net/gitmirror/hub.html
+
+# 2. github无法连接
+
+https://zhuanlan.zhihu.com/p/521340971
+
+<img src="/assets/T8fpbdh06oBCcWxHULHchdimngd.png" src-width="926" class="markdown-img m-auto" src-height="121" align="center"/>
+
+在这个网站找github的ip
+
+https://dnschecker.org/#A/github.com
+
+然后修改host
+
+C:\Windows\System32\drivers\etc\hosts
+
+```yaml
+20.205.243.166 github.com
+```
 

@@ -135,6 +135,13 @@
           {
             "text": "unity调试",
             "link": "/MTardhXGkoDZU2xmHPJchE20nt4"
+          },
+          {
+            "text": "ios闪退"
+          },
+          {
+            "text": "一些使用",
+            "link": "/OKAidA48SoEyFFxGFfYcJFBdnBg"
           }
         ],
         "collapsed": true
@@ -167,6 +174,10 @@
           {
             "text": "frp",
             "link": "/EliLdfJD6oIb4uxQ1B5cjs63nuc"
+          },
+          {
+            "text": "Trojan",
+            "link": "/LDC3deCcsoRL5Lx1A85c6WMunyc"
           }
         ],
         "collapsed": true
@@ -192,6 +203,9 @@
           {
             "text": "遇到的问题",
             "link": "/V7JcdyfI1oYN0ixtBPlcZZ34nkf"
+          },
+          {
+            "text": "一些维护"
           }
         ],
         "collapsed": true
@@ -251,6 +265,10 @@
           {
             "text": "基础",
             "link": "/LzAldncMUoKF1Hxz24pcO7P9nNh"
+          },
+          {
+            "text": "一些感悟",
+            "link": "/SdkqdNmodolLeHx67bvcYKP2nEe"
           }
         ],
         "collapsed": true
@@ -285,6 +303,10 @@
           {
             "text": "linux访问windows共享",
             "link": "/Cxwqdf5l4owsfyxUCIccIX4hnch"
+          },
+          {
+            "text": "Nginx",
+            "link": "/SONqd35GAoVMngxtXAecPDKenjh"
           }
         ],
         "collapsed": true
@@ -312,23 +334,6 @@
             "text": "字节"
           },
           {
-            "text": "rknn(瑞芯微集成）",
-            "link": "/JSjvdQfWBooG2NxBixxcZXVIn5y"
-          },
-          {
-            "text": "废弃（不好用）",
-            "items": [
-              {
-                "text": "azure免费ai"
-              },
-              {
-                "text": "免费使用deepseek(groq)",
-                "link": "/S7wZdAEqiohkGixV40JcdvADnye"
-              }
-            ],
-            "collapsed": true
-          },
-          {
             "text": "Dify"
           },
           {
@@ -336,6 +341,18 @@
           },
           {
             "text": "comfy_ui"
+          },
+          {
+            "text": "Cursor",
+            "link": "/TqEidTsTnoApB8xtQT6csl2jnlb"
+          },
+          {
+            "text": "Ai 创作",
+            "link": "/P69wdMnkhoGWz1xYuoLc4jbDn0g"
+          },
+          {
+            "text": "文生图",
+            "link": "/KUFRdrd1tonXcGxi6ywc2517noe"
           }
         ],
         "collapsed": true
@@ -372,6 +389,10 @@
           },
           {
             "text": "一些语法 "
+          },
+          {
+            "text": "Clang",
+            "link": "/BYExdgMgaoqxSdxzFb0cGvCwnoe"
           }
         ],
         "collapsed": true
@@ -389,6 +410,36 @@
       {
         "text": "Rust",
         "link": "/Dax2dUD8PoI58rxay0Kc3EMOn7Q"
+      },
+      {
+        "text": "java"
+      },
+      {
+        "text": "android",
+        "items": [
+          {
+            "text": "用gralde命令行打包",
+            "link": "/XaABdXFTGogoHsxuhy9c92EgnOf"
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "text": "Cesium",
+        "items": [
+          {
+            "text": "生成地形数据",
+            "link": "/H5Vbd5yHZo7tJNxlIKMccQavnWb"
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "text": "Maya"
+      },
+      {
+        "text": "https证书",
+        "link": "/UruRd82WJomY78xd9JmcBa4YnAf"
       }
     ],
     "collapsed": true
@@ -402,7 +453,17 @@
       },
       {
         "text": "有用的东西收集",
-        "link": "/S2SpdPpu5o4aWNxysuJcKO8Rnoe"
+        "link": "/S2SpdPpu5o4aWNxysuJcKO8Rnoe",
+        "items": [
+          {
+            "text": "海外教育邮箱注册(没用）"
+          },
+          {
+            "text": "casdoor（免费开源登录验证）",
+            "link": "/AqardZ49YoTLKaxod3scKisDnVf"
+          }
+        ],
+        "collapsed": true
       },
       {
         "text": "我一生的故事",
@@ -568,6 +629,9 @@
           }
         ],
         "collapsed": true
+      },
+      {
+        "text": "我的简历"
       }
     ],
     "collapsed": true
@@ -674,6 +738,19 @@
       {
         "text": "2025-2-27 250美元特朗普钞票？美议员这波操作，我直接迷惑！",
         "link": "/CZcMdeS63ovP8fxdv9lcTvLHnEg"
+      },
+      {
+        "text": "2025-3-1 美国政坛“奇葩”再现！特朗普泽连斯基互呛，我感觉：中国机会来了",
+        "link": "/M56kdJzKQoIP6dxzRslcntLvnGg"
+      },
+      {
+        "text": "2025-3-14 马桶"
+      },
+      {
+        "text": "2025-3-15 晚餐时间的大V"
+      },
+      {
+        "text": "2025-4-10 工作"
       }
     ],
     "collapsed": true
@@ -688,6 +765,10 @@
       {
         "text": "任务",
         "link": "/BXfTd7TwRolNBExSuHgcFxwtnkg"
+      },
+      {
+        "text": "家长会",
+        "link": "/AEEIdNy0UocXUKxpBANcS9MUnSh"
       }
     ],
     "collapsed": true

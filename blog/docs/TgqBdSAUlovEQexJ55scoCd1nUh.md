@@ -1,6 +1,6 @@
 ---
 create_time: 1731567289
-edit_time: 1739112713
+edit_time: 1740968626
 title: Python 的多版本环境
 categories:
   - skill
@@ -105,19 +105,7 @@ show_channel_urls: true
 conda config --show channels
 ```
 
-## 4.1 Conda vpn代理 
-
-conda install pytorch torchvision torchaudio pytorch-cuda=12.4 -c pytorch -c nvidia -n yolo
-
-修改.condarc
-
-```bash
-proxy_servers:
-  http: http://127.0.0.1:8001
-  https: https://127.0.0.1:8001
-ssl_verify: false
-```
-
+## 4.1 
  
 
 # 5. uv包管理

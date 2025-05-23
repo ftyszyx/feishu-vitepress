@@ -2,7 +2,7 @@
 title: 有用的东西收集
 cover: /assets/LRGNbgjU9ozBfPxXHRacMSu4nje.jpeg
 create_time: 1723629802
-edit_time: 1739939714
+edit_time: 1741233869
 categories:
   - daily_life
 ---
@@ -179,6 +179,8 @@ https://github.com/cline/cline
 ### 4.17.6 trae(字节）
 
 https://www.trae.ai/
+
+https://www.trae.com.cn/
 
 ### 4.17.7 roo code
 
@@ -383,6 +385,10 @@ https://github.com/dokku/dokku
 ## 18.3 nginxProManger
 
 https://nginxproxymanager.com/
+
+## 18.4 Beekeeper Studio
+
+可视化客户端
 
 # 19. docker服务器
 
