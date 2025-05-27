@@ -1,6 +1,6 @@
 ---
 create_time: 1747215079
-edit_time: 1747649915
+edit_time: 1748249983
 title: 文生图
 categories:
   - skill
@@ -37,7 +37,5 @@ github：https://github.com/Kwai-Kolors/Kolors
 
 comfyui支持mac 主机并支持mac的显卡
 
-# 5. 源码解读
-
-## 5.1 texture
+ 
 
