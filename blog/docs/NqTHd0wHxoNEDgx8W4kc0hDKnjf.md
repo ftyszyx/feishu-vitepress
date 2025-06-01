@@ -1,6 +1,6 @@
 ---
 create_time: 1748503594
-edit_time: 1748592769
+edit_time: 1748697764
 title: Cesiuum 3d tile
 categories:
   - skill
@@ -108,4 +108,41 @@ https://cesium.com/learn/3d-tiling/tiler-data-formats/
 https://github.com/OSGeo/GDAL
 
 https://www.osgeo.cn/gdal/download.html
+
+# 3. 影像切片
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<TileMap version="1.0.0" tilemapservice="http://tms.osgeo.org/1.0.0">
+  <Title>Imagery</Title>
+  <Abstract></Abstract>
+  <SRS>EPSG:3857</SRS>
+  <BoundingBox minx="108.2464683350843" miny="22.86146144414818" maxx="108.2509396822738" maxy="22.86619127430117"/>
+  <Origin x="108.2464683350843" y="22.86146144414818"/>
+  <TileFormat width="256" height="256" mime-type="image/png" extension="png"/>
+  <TileSets profile="mercator">
+    <TileSet href="11" units-per-pixel="76.43702828517625" order="11"/>
+    <TileSet href="12" units-per-pixel="38.21851414258813" order="12"/>
+    <TileSet href="13" units-per-pixel="19.10925707129406" order="13"/>
+    <TileSet href="14" units-per-pixel="9.554628535647032" order="14"/>
+    <TileSet href="15" units-per-pixel="4.777314267823516" order="15"/>
+    <TileSet href="16" units-per-pixel="2.388657133911758" order="16"/>
+    <TileSet href="17" units-per-pixel="1.194328566955879" order="17"/>
+    <TileSet href="18" units-per-pixel="0.5971642834779395" order="18"/>
+    <TileSet href="19" units-per-pixel="0.2985821417389697" order="19"/>
+    <TileSet href="20" units-per-pixel="0.1492910708694849" order="20"/>
+    <TileSet href="21" units-per-pixel="0.07464553543474244" order="21"/>
+    <TileSet href="22" units-per-pixel="0.03732276771737122" order="22"/>
+    <TileSet href="23" units-per-pixel="0.01866138385868561" order="23"/>
+  </TileSets>
+</TileMap>
+```
+
+- &lt;TileMap version="1.0.0" tilemapservice="http://tms.osgeo.org/1.0.0"&gt;
+- version="1.0.0": TileMap规范版本
+- tilemapservice: 指向TMS（Tile Map Service）标准
+- Title: 瓦片地图标题为"Imagery"（影像）
+- EPSG:3857: Web Mercator投影，也叫"伪墨卡托"
+
+<img src="/assets/XBzYbhOE3oxcVtxADu3cVHysnmz.png" src-width="790" class="markdown-img m-auto" src-height="298" align="center"/>
 
