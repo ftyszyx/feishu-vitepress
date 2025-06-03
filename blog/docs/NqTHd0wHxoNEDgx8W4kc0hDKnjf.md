@@ -1,6 +1,6 @@
 ---
 create_time: 1748503594
-edit_time: 1748697764
+edit_time: 1748854146
 title: Cesiuum 3d tile
 categories:
   - skill
@@ -55,6 +55,74 @@ https://cesium.com/learn/3d-tiling/tiler-data-formats/
 - `format`: 瓦片数据的格式 (通常为 `quantized-mesh-1.0`)
 
 ### 1.1.2  **瓦片数据文件 (.terrain):** 
+
+https://github.com/CesiumGS/quantized-mesh
+
+查看工具：
+
+https://github.com/heremaps/quantized-mesh-viewer
+
+Header:
+
+```cpp
+struct QuantizedMeshHeader
+{
+    // The center of the tile in Earth-centered Fixed coordinates.
+    double CenterX;
+    double CenterY;
+    double CenterZ;
+
+    // The minimum and maximum heights in the area covered by this tile.
+    // The minimum may be lower and the maximum may be higher than
+    // the height of any vertex in this tile in the case that the min/max vertex
+    // was removed during mesh simplification, but these are the appropriate
+    // values to use for analysis or visualization.
+    float MinimumHeight;
+    float MaximumHeight;
+
+    // The tile’s bounding sphere.  The X,Y,Z coordinates are again expressed
+    // in Earth-centered Fixed coordinates, and the radius is in meters.
+    double BoundingSphereCenterX;
+    double BoundingSphereCenterY;
+    double BoundingSphereCenterZ;
+    double BoundingSphereRadius;
+
+    // The horizon occlusion point, expressed in the ellipsoid-scaled Earth-centered Fixed frame.
+    // If this point is below the horizon, the entire tile is below the horizon.
+    // See http://cesiumjs.org/2013/04/25/Horizon-culling/ for more information.
+    double HorizonOcclusionPointX;
+    double HorizonOcclusionPointY;
+    double HorizonOcclusionPointZ;
+};
+```
+
+Data
+
+ vertex data. An `unsigned int` is a 32-bit unsigned integer and an `unsigned short` is a 16-bit unsigned integer.
+
+```yaml
+struct VertexData
+{
+    unsigned int vertexCount;
+    unsigned short u[vertexCount];
+    unsigned short v[vertexCount];
+    unsigned short height[vertexCount];
+};
+```
+
+Index data
+
+```cpp
+struct IndexData16
+{
+    unsigned int triangleCount;
+    unsigned short indices[triangleCount * 3];
+}struct IndexData32
+{
+    unsigned int triangleCount;
+    unsigned int indices[triangleCount * 3];
+}
+```
 
 每个瓦片文件都包含该区域的地形数据，格式为 Quantized Mesh
 
