@@ -4,7 +4,7 @@ tags:
   - develop
 cover: /assets/FDpIbhSbsoYQLoxGRO2c2w0ZnFh.jpeg
 create_time: 1676970303
-edit_time: 1739365837
+edit_time: 1749479254
 categories:
   - skill
 ---
@@ -488,7 +488,46 @@ https://harttle.land/2016/08/08/vim-search-in-file.html
 
 切换标签  gt  第几个标签页 g2ts
 
-## 5.4 面板切换
+```json
+" 跳转相关
+gd          " 跳转到定义
+Ctrl+o      " 返回上一个位置  
+Ctrl+i      " 前进到下一个位置
+
+" 搜索相关
+*           " 搜索光标下的单词
+#           " 反向搜索光标下的单词
+n           " 下一个搜索结果
+N           " 上一个搜索结果
+
+" Python函数导航
+[m          " 上一个方法
+]m          " 下一个方法
+[{          " 当前代码块开始
+]}          " 当前代码块结束
+```
+
+" 搜索相关
+
+-           " 搜索光标下的单词
+
+# 6. " 反向搜索光标下的单词
+
+n           " 下一个搜索结果
+
+N           " 上一个搜索结果
+
+" Python函数导航
+
+[m          " 上一个方法
+
+]m          " 下一个方法
+
+[{          " 当前代码块开始
+
+]}          " 当前代码块结束
+
+## 6.1 面板切换
 
 切到侧边栏 cmd+0
 
@@ -498,7 +537,7 @@ ctrl+P打开命令行面板
 
 ctrl+r查看函数列表 
 
-## 5.5 光标移动
+## 6.2 光标移动
 
 将光标移到屏幕中间 zz
 
@@ -506,7 +545,7 @@ ctrl+r查看函数列表
 
 将光标移到屏幕下边 zb
 
-## 5.6 其它跳转
+## 6.3 其它跳转
 
 https://www.jianshu.com/p/cbfa86c8d8a5
 
@@ -539,7 +578,7 @@ V%y
 
 <img src="/assets/Lvc6bqClQoUpIRxJByUcGrBMnId.png" src-width="700" class="markdown-img m-auto" src-height="248" align="center"/>
 
-## 5.7 代码注释
+## 6.4 代码注释
 
 代码注释vsc使用了类似vim-commentary的操作。
  使用方法:
@@ -548,17 +587,17 @@ V%y
 - `gC` - 块代码注释.输入 `gCi)` 注释 括号()中的代码。
  
 
-## 5.8 其它快捷键
+## 6.5 其它快捷键
 
 shift+j 连接两行
 
-## 5.9 输入法切换
+## 6.6 输入法切换
 
 https://github.com/daipeihust/im-select
 
 https://www.zhihu.com/question/303850876 
 
-### 5.9.1 Window
+### 6.6.1 Window
 
 下载imselect.exe
 
@@ -574,7 +613,7 @@ https://www.zhihu.com/question/303850876
 
 <img src="/assets/boxcnbB5NBNKsJuE9fZnY32lG7g.png" src-width="314" class="markdown-img m-auto" src-height="34" align="center"/>
 
-## 5.10 键盘映射
+## 6.7 键盘映射
 
 <img src="/assets/boxcnQpXYSmcqWMWqqE8sJM0j6c.png" src-width="787" class="markdown-img m-auto" src-height="459" align="center"/>
 
@@ -584,53 +623,53 @@ https://www.zhihu.com/question/303850876
 
 <img src="/assets/boxcnEgFj19gJlfLLWGJXzsSg3b.png" src-width="290" class="markdown-img m-auto" src-height="171" align="center"/>
 
-## 5.11 代码提示的选择
+## 6.8 代码提示的选择
 
 <img src="/assets/boxcnxGXQxkbIYIPBrr9pSEto5e.png" src-width="996" class="markdown-img m-auto" src-height="747" align="center"/>
 
 我选择了alt+j和alt+k
 
-# 6. Linux vim
+# 7. Linux vim
 
 set nu!                                    "显示行号
 
-# 7. 一些实际用法
+# 8. 一些实际用法
 
-## 7.1 复制一个单词
+## 8.1 复制一个单词
 
 ```json
 yiw复制这个单词
 viw选中要被替换的单词
 ```
 
-## 7.2 复制并粘贴一段函数
+## 8.2 复制并粘贴一段函数
 
 ```json
 V%y
 %pe
 ```
 
-## 7.3 切换到normal模式
+## 8.3 切换到normal模式
 
 ```json
 ctrl+[
 ```
 
-## 7.4 光标移动
+## 8.4 光标移动
 
 <img src="/assets/FLifbvrqCofZdAx1y38c8IiFnoc.png" src-width="615" class="markdown-img m-auto" src-height="248" align="center"/>
 
-## 7.5 插入：
+## 8.5 插入：
 
 <img src="/assets/JJ3VbMaVloGSBXxKfL8cf49hnOg.png" src-width="453" class="markdown-img m-auto" src-height="256" align="center"/>
 
-## 7.6 操作符加命令
+## 8.6 操作符加命令
 
 <img src="/assets/DUJPbQXDsoEPHZxNydJcJxpDnBd.png" src-width="707" class="markdown-img m-auto" src-height="464" align="center"/>
 
 大写的E,B,W对应字串的开头和结尾  字串以空格分开
 
-## 7.7 代码折叠
+## 8.7 代码折叠
 
  **za: 折叠当前行**
  **zM: 折叠所有代码**
@@ -646,7 +685,7 @@ zo: **展开当前折叠的代码块（只展开一层）**
 "vim.foldfix": true
 ```
 
-## 7.8 代码缩进
+## 8.8 代码缩进
 
  **每次缩进一层**
 
@@ -658,13 +697,13 @@ v，然后方向键 ←→↑↓ 选择要缩进的行（这儿选中第 2、3 �
 
   **注意：所有选中行与选择区域的上一行进行对齐缩进（各个行的实际缩进长度并不一致）。**
 
-## 7.9 Linux ctrl+q退出vim锁住的模式
+## 8.9 Linux ctrl+q退出vim锁住的模式
 
-# 8. neovim
+# 9. neovim
 
 https://github.com/neovim
 
-## 8.1 源码安装
+## 9.1 源码安装
 
 ```bash
 https://hub.gitmirror.com/https://github.com/neovim/neovim/archive/refs/tags/nightly.tar.gz
@@ -676,7 +715,7 @@ make CMAKE_BUILD_TYPE=RelWithDebInfo
 sudo make install
 ```
 
-## 8.2 brew安装
+## 9.2 brew安装
 
 ```bash
 brew install neovim
@@ -688,7 +727,7 @@ brew install neovim
 nvim
 ```
 
-## 8.3 安装lazyvim
+## 9.3 安装lazyvim
 
 https://www.lazyvim.org/
 
@@ -713,13 +752,13 @@ git config --list
 git config --global --unset url.https://mirror.ghproxy.com/https://github.com/.insteadof
 ```
 
-## 8.4 打开工程
+## 9.4 打开工程
 
 ```bash
 nvim .
 ```
 
-## 8.5 处理乱码
+## 9.5 处理乱码
 
 安装字体
 
@@ -731,7 +770,7 @@ www.nerdfonts.com下载
 
 Wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/0xProto.zip
 
-### 8.5.1 linux:
+### 9.5.1 linux:
 
 ```bash
 sudo mkdir /usr/share/fonts/MyFonts
@@ -747,13 +786,13 @@ cp ~/Downloads/MyFont.ttf ~/.fonts/
 fc-cache -f -v
 ```
 
-### 8.5.2 设置终端字体
+### 9.5.2 设置终端字体
 
 <img src="/assets/JHYIbkThaoKtvSxRikxcPsfpnJf.png" src-width="280" class="markdown-img m-auto" src-height="60" align="center"/>
 
 <img src="/assets/OCrLbY1RyoGTtDx3n28cMR6snIc.png" src-width="1607" class="markdown-img m-auto" src-height="708" align="center"/>
 
-## 8.6 一些快捷键
+## 9.6 一些快捷键
 
 <table>
 <colgroup>

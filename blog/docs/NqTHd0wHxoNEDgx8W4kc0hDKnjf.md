@@ -1,6 +1,6 @@
 ---
 create_time: 1748503594
-edit_time: 1748854146
+edit_time: 1749464914
 title: Cesiuum 3d tile
 categories:
   - skill
@@ -176,6 +176,12 @@ struct IndexData16
 https://github.com/OSGeo/GDAL
 
 https://www.osgeo.cn/gdal/download.html
+
+https://github.com/heremaps/tin-terrain
+
+https://hub.docker.com/r/tumgis/ctb-quantized-mesh
+
+https://github.com/ahuarte47/cesium-terrain-builder/tree/master-quantized-mesh
 
 # 3. 影像切片
 
