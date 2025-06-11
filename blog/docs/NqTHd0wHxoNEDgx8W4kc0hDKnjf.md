@@ -1,6 +1,6 @@
 ---
 create_time: 1748503594
-edit_time: 1749464914
+edit_time: 1749548220
 title: Cesiuum 3d tile
 categories:
   - skill
@@ -183,7 +183,50 @@ https://hub.docker.com/r/tumgis/ctb-quantized-mesh
 
 https://github.com/ahuarte47/cesium-terrain-builder/tree/master-quantized-mesh
 
-# 3. 影像切片
+## 2.2 gdal编译
+
+需要：PROJ 
+
+```yaml
+sudo apt-get install proj-bin
+```
+
+Gdal github
+https://github.com/OSGeo/gdal
+
+```yaml
+apt-get install libproj-dev
+```
+
+需要curl
+
+```yaml
+sudo apt-get install libcurl4-openssl-dev
+头文件目录：/usr/include/curl
+库文件目录：/usr/lib/x86_64-linux-gnu/libcurl.so.4
+```
+
+需要lib xml2
+
+```yaml
+apt-get isntall libxml2-dev
+```
+
+编译
+
+https://gdal.org/en/stable/development/building_from_source.html
+
+```yaml
+mkdir build
+cd build
+cmake ..
+#build 
+cmake --build .  (可以用make -j8)加速
+#build and install
+cmake --build . --target install
+```
+
+# 3. <u>影像切片</u>
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
