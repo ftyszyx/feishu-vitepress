@@ -1,6 +1,6 @@
 ---
 create_time: 1748503594
-edit_time: 1749548220
+edit_time: 1749691907
 title: Cesiuum 3d tile
 categories:
   - skill
@@ -225,6 +225,14 @@ cmake --build .  (可以用make -j8)加速
 #build and install
 cmake --build . --target install
 ```
+
+地形切片的文章：
+
+https://www.linkedin.com/pulse/fast-cesium-terrain-rendering-new-quantized-mesh-output-alvaro-huarte/
+
+https://blog.mastermaps.com/2014/10/3d-terrains-with-cesium.html
+
+## 2.3 ctb项目源码
 
 # 3. <u>影像切片</u>
 

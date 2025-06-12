@@ -4,7 +4,7 @@ tags:
   - develop
 cover: /assets/FDpIbhSbsoYQLoxGRO2c2w0ZnFh.jpeg
 create_time: 1676970303
-edit_time: 1749479254
+edit_time: 1749693128
 categories:
   - skill
 ---
@@ -567,6 +567,10 @@ V%y
  [[ :模块的开头
 
 ]]：模块的结尾
+
+ believe you are looking for `]]` which jumps to the next `{` char on the first column.
+
+There are similar options, just try `:help ]]` for more information.
 
 [{:上一个{开头 
 
