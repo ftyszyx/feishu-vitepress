@@ -1,6 +1,6 @@
 ---
 create_time: 1732349981
-edit_time: 1732357145
+edit_time: 1750400892
 title: 产品想法
 categories:
   - daily_life
@@ -28,4 +28,10 @@ hide: true
 不是我不愿意花钱，而是，我花了钱，我还是不能享受到我该有的服务，那我就不花了。
 
 我自己搭个私服，自己玩总行吧。
+
+# 2. ai广告
+
+（1）Meta 公司推出 <u>AI 广告</u>，用户上传产品照片，系统就会自动生成广告视频，并配好音乐和文案
+
+https://seekingalpha.com/news/4458717-meta-unveils-updated-image-to-video-ad-feature-amid-ai-push
 
