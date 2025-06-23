@@ -103,11 +103,7 @@ npm run dev
 
 # 详细说明
 
-[地址](https://ftyszyx.github.io/feishu-vitepress/QDBJdRMk3o7MEZx0GFXcs0qGnCe)
-
-# 欢迎关注我的公众号
-
-![b5ede8e277a48aef57be1412d1ce63f](https://github.com/user-attachments/assets/f64dc734-394d-4230-b9b0-c430b054c820)
+[地址](https://ftyszyx.github.io/feishu-vitepress/QDBJdRMk3o7MEZx0GFXcs0qGnCe) 
 
 # 修改记录
 
@@ -210,10 +206,6 @@ https://giscus.app/zh-CN
    好处是以后文章的地址不会变了
    坏处就是，之前的文章地址全丢了
 
-### 5. 去掉英文入口，文章翻译不是很准确，还是中文吧
-
-# 欢迎关注我的公众号
-
-![b5ede8e277a48aef57be1412d1ce63f](https://github.com/user-attachments/assets/f64dc734-394d-4230-b9b0-c430b054c820)
+### 5. 去掉英文入口，文章翻译不是很准确，还是中文吧 
 
 
