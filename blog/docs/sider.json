@@ -19,10 +19,6 @@
         "link": "/M10ydnmzxoTvspxhBgicq2qunUd"
       },
       {
-        "text": "青龙自动化工具(自动运维）",
-        "link": "/Sr3PdsY6cortqMx5OmJcVRKanBa"
-      },
-      {
         "text": "C#语言学习",
         "link": "/SroSdelrooHsSWxxVLdcwAiVn4f"
       },
@@ -89,10 +85,6 @@
           }
         ],
         "collapsed": true
-      },
-      {
-        "text": "duckdb学习（目前1.0版本还不太稳定，有内存泄露风险，不推荐用于实际产品）",
-        "link": "/NYIWdN9dooBAGWxsxYKccDf1nph"
       },
       {
         "text": "unity 学习笔记",
@@ -429,25 +421,7 @@
       },
       {
         "text": "Cesium",
-        "items": [
-          {
-            "text": "生成地形数据",
-            "link": "/H5Vbd5yHZo7tJNxlIKMccQavnWb"
-          },
-          {
-            "text": "加载dj的地图",
-            "link": "/YNaBdcTG6o5G8AxOqH2c2DWSnke"
-          },
-          {
-            "text": "Cesiuum 3d tile",
-            "link": "/NqTHd0wHxoNEDgx8W4kc0hDKnjf"
-          },
-          {
-            "text": "ctb_quantized mesh分支",
-            "link": "/IqbgdpUj3obhuDxnbcVc5xQYntg"
-          }
-        ],
-        "collapsed": true
+        "link": "/RtGxdhOpIoGl45x0VK1cyzohnnf"
       },
       {
         "text": "Maya"
@@ -459,6 +433,10 @@
       {
         "text": "自建代理",
         "link": "/Mutzdu5tpoeWrZxFoA5cUKDVn3c"
+      },
+      {
+        "text": "废弃",
+        "link": "/S9nVd2i3ZoYCIVxG1wccs98MncZ"
       }
     ],
     "collapsed": true
@@ -562,16 +540,6 @@
         "collapsed": true
       },
       {
-        "text": "1postpro",
-        "items": [
-          {
-            "text": "1postpro",
-            "link": "/P7c9dbUrzoZc60xp4dVczy7nntb"
-          }
-        ],
-        "collapsed": true
-      },
-      {
         "text": "LockPass密码管理器",
         "items": [
           {
@@ -657,7 +625,7 @@
         "text": "我的简历"
       },
       {
-        "text": "直播"
+        "text": "无人直播"
       }
     ],
     "collapsed": true
@@ -777,10 +745,6 @@
       },
       {
         "text": "2025-4-10 工作"
-      },
-      {
-        "text": "2025-6-20 杂记",
-        "link": "/ZeQkdGtEtonrDNxHFr9cE2cxncf"
       }
     ],
     "collapsed": true
@@ -789,22 +753,10 @@
     "text": "乐怡日志",
     "items": [
       {
-        "text": "其它",
-        "link": "/OUxfdVh4Iog31oxw6CackVeUn3c"
-      },
-      {
-        "text": "任务",
-        "link": "/BXfTd7TwRolNBExSuHgcFxwtnkg"
-      },
-      {
         "text": "家长会",
         "link": "/AEEIdNy0UocXUKxpBANcS9MUnSh"
       }
     ],
     "collapsed": true
-  },
-  {
-    "text": "",
-    "link": "/VbpMdykTyoWSekxTdsncskwmnwc"
   }
 ]

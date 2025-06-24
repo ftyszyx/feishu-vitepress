@@ -1,14 +1,14 @@
 ---
 cover: /assets/ZsmZbpMm0oaUCOxSpzGcxQjvn4b.gif
 create_time: 1714032130
-edit_time: 1729475407
+edit_time: 1750685059
 title: Nginx
 categories:
   - skill
 ---
 
 
-# 1. nginx-ui使用
+# 1. nginx-ui使用（增加复杂度，不用了）
 
 本人又要自己搭服务器了，搭服务器离不开反向代理，目前通用的反向代理还是nginx.没有之一。
 
