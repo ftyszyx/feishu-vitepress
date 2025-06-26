@@ -1,6 +1,6 @@
 ---
 create_time: 1750773710
-edit_time: 1750774878
+edit_time: 1750858649
 title: app抓包
 categories:
   - skill
@@ -27,7 +27,7 @@ adb connect 127.0.0.1:16384
 adb devices
 ```
 
-## 1.4 安装证书
+## 1.4 https抓包
 
-https://mumu.163.com/mac/tutorials/certificates-and-packet-capture.html
+https://mumu.163.com/help/20240814/40912_1174291.html
 

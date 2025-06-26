@@ -1,6 +1,6 @@
 ---
 create_time: 1739324534
-edit_time: 1739324563
+edit_time: 1750844947
 title: Windows
 categories:
   - skill
@@ -76,4 +76,12 @@ tail -f player.log -n 10|grep inputcontrol
 # 7. 自启动设置
 
 1. 文件位置打开后，按  **Windows 徽标键** +  **R**，键入“ **shell:startup**”，然后选择“ **确定**”。这将打开“ **启动**”文件夹。
+
+# 8. 如何安装appx程序
+
+https://blog.csdn.net/m0_66418976/article/details/131692190
+
+<img src="/assets/EUGZbqn8qoPE9dxTY0JcuJM8ntc.png" src-width="432" class="markdown-img m-auto" src-height="110" align="center"/>
+
+<img src="/assets/Qrv1bEsNto7wYxxRzCScKuS6nbe.png" src-width="859" class="markdown-img m-auto" src-height="347" align="center"/>
 
