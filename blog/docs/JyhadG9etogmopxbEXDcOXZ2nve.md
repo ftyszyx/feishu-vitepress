@@ -4,7 +4,7 @@ keywords:
   - flutter
   - android gui
 create_time: 1723717008
-edit_time: 1723895279
+edit_time: 1751073933
 categories:
   - skill
 ---
@@ -40,5 +40,12 @@ https://docs.flutter.dev/get-started/install/windows/desktop
 
 ```yaml
 flutter doctor
+```
+
+# 2. 国内加速
+
+```yaml
+eport PUB_HOSTED_URL=https://pub.flutter-io.cn
+export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 ```
 

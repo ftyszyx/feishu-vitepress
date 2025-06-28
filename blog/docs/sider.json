@@ -415,10 +415,6 @@
         "link": "/Mey0dZGFNoKJJLxS11acomobnAH"
       },
       {
-        "text": "Rust",
-        "link": "/Dax2dUD8PoI58rxay0Kc3EMOn7Q"
-      },
-      {
         "text": "java"
       },
       {
@@ -447,11 +443,14 @@
         "link": "/Mutzdu5tpoeWrZxFoA5cUKDVn3c"
       },
       {
-        "text": "废弃",
-        "link": "/S9nVd2i3ZoYCIVxG1wccs98MncZ"
-      },
-      {
-        "text": "Aardio"
+        "text": "Rust",
+        "link": "/TyY7dxaWdoaFawxyZw5cgDedn5e",
+        "items": [
+          {
+            "text": "Dioxus"
+          }
+        ],
+        "collapsed": true
       }
     ],
     "collapsed": true
@@ -640,7 +639,7 @@
         "text": "我的简历"
       },
       {
-        "text": "无人直播"
+        "text": "视频下载"
       }
     ],
     "collapsed": true
