@@ -4,11 +4,23 @@ keywords:
   - flutter
   - android gui
 create_time: 1723717008
-edit_time: 1751073933
+edit_time: 1751082983
 categories:
   - skill
 ---
 
+
+Flutter usage:
+
+https://docs.flutter.dev/get-started
+
+Dart lanuage
+
+https://dart.dev/docs
+
+Github
+
+https://github.com/flutter/flutter
 
 # 1. 安装
 
@@ -42,10 +54,49 @@ https://docs.flutter.dev/get-started/install/windows/desktop
 flutter doctor
 ```
 
-# 2. 国内加速
+# 2. 
+# 3. fllutter的包
+
+地址：https://pub.dev/packages
+
+## 3.1 国内加速
 
 ```yaml
 eport PUB_HOSTED_URL=https://pub.flutter-io.cn
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 ```
+
+包管理文件
+
+pubspec.yaml
+
+安装dependence
+
+```yaml
+flutter packages get
+```
+
+# 4. widgets
+
+https://docs.flutter.dev/ui/widgets
+
+Widgets类中build 是入口
+
+widgets分statelesswidgest（不变的），statefullwidget(可变的）
+
+statefullwidget没有build method.是通过state object的build
+
+## 4.1 常用的widgetts
+
+widgets列表
+
+https://docs.flutter.dev/reference/widgets
+
+<img src="/assets/RB7pbezdQox7WoxXLaIcEJfYn1d.png" src-width="301" class="markdown-img m-auto" src-height="209" align="center"/>
+
+## 4.2 layout
+
+## 4.3 boxtypes
+
+<img src="/assets/Aa6Eb5Mq7oWtItx0RYQclUpenPh.png" src-width="898" class="markdown-img m-auto" src-height="243" align="center"/>
 
