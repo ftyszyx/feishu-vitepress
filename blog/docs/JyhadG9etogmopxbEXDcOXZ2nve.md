@@ -4,7 +4,7 @@ keywords:
   - flutter
   - android gui
 create_time: 1723717008
-edit_time: 1751082983
+edit_time: 1751248525
 categories:
   - skill
 ---
@@ -74,6 +74,12 @@ pubspec.yaml
 
 ```yaml
 flutter packages get
+```
+
+添加一个包
+
+```yaml
+flutter pub add provider
 ```
 
 # 4. widgets
