@@ -4,7 +4,7 @@ keywords:
   - flutter
   - android gui
 create_time: 1723717008
-edit_time: 1751248525
+edit_time: 1751420428
 categories:
   - skill
 ---
@@ -21,6 +21,10 @@ https://dart.dev/docs
 Github
 
 https://github.com/flutter/flutter
+
+中文资料
+
+https://book.flutterchina.club/
 
 # 1. 安装
 
@@ -54,7 +58,20 @@ https://docs.flutter.dev/get-started/install/windows/desktop
 flutter doctor
 ```
 
-# 2. 
+# 2. 常用命令
+
+## 2.1 运行
+
+```yaml
+Flutter run main.dart
+```
+
+## 2.2 检查工程
+
+```yaml
+flutter analyze
+```
+
 # 3. fllutter的包
 
 地址：https://pub.dev/packages
@@ -82,7 +99,17 @@ flutter packages get
 flutter pub add provider
 ```
 
-# 4. widgets
+# 4. 一些特殊的语法
+
+## 4.1 __internal_
+
+__internal is just a name for a private constructor_.
+
+## 4.2 并行
+
+dart中的异常是单线程的
+
+# 5. widgets
 
 https://docs.flutter.dev/ui/widgets
 
@@ -92,7 +119,7 @@ widgets分statelesswidgest（不变的），statefullwidget(可变的）
 
 statefullwidget没有build method.是通过state object的build
 
-## 4.1 常用的widgetts
+## 5.1 常用的widgetts
 
 widgets列表
 
@@ -100,9 +127,9 @@ https://docs.flutter.dev/reference/widgets
 
 <img src="/assets/RB7pbezdQox7WoxXLaIcEJfYn1d.png" src-width="301" class="markdown-img m-auto" src-height="209" align="center"/>
 
-## 4.2 layout
+## 5.2 layout
 
-## 4.3 boxtypes
+## 5.3 boxtypes
 
 <img src="/assets/Aa6Eb5Mq7oWtItx0RYQclUpenPh.png" src-width="898" class="markdown-img m-auto" src-height="243" align="center"/>
 
