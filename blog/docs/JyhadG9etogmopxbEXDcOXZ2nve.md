@@ -4,7 +4,7 @@ keywords:
   - flutter
   - android gui
 create_time: 1723717008
-edit_time: 1751420428
+edit_time: 1751436249
 categories:
   - skill
 ---
@@ -132,4 +132,24 @@ https://docs.flutter.dev/reference/widgets
 ## 5.3 boxtypes
 
 <img src="/assets/Aa6Eb5Mq7oWtItx0RYQclUpenPh.png" src-width="898" class="markdown-img m-auto" src-height="243" align="center"/>
+
+# 6. 夸组件状态管理
+
+## 6.1 inheritedWidget
+
+https://juejin.cn/post/6844904066607218701
+
+inheritedWidget 是一个特殊的 Widget，它将作为另一个子树的父节点放置在 Widget 树中。该子树的所有 widget 都必须能够与该 InheritedWidget 暴露的数据进行交互。
+
+<img src="/assets/CbJVbGhoXoPO1Wxw0nBc1gGznid.png" src-width="712" class="markdown-img m-auto" src-height="468" align="center"/>
+
+本质是一个widget,实现了updateShouldNotify方法
+
+将return turn 表示通过子节点。需要重现build
+
+## 6.2 provider
+
+## 6.3 ChangeNotifier
+
+<img src="/assets/AiRKbKt05oT4ItxUOkwc0S0ZnKe.png" src-width="723" class="markdown-img m-auto" src-height="504" align="center"/>
 
