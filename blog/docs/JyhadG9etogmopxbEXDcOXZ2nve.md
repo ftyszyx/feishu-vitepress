@@ -4,7 +4,7 @@ keywords:
   - flutter
   - android gui
 create_time: 1723717008
-edit_time: 1751436249
+edit_time: 1751550160
 categories:
   - skill
 ---
@@ -108,6 +108,81 @@ __internal is just a name for a private constructor_.
 ## 4.2 并行
 
 dart中的异常是单线程的
+
+## 4.3 构造函数
+
+### 4.3.1 基本的
+
+```java
+class Point {
+  // Instance variables to hold the coordinates of the point.
+  double x;
+  double y;
+
+  // Generative constructor with initializing formal parameters:
+  Point(this.x, this.y);
+}
+```
+
+### 4.3.2 命名构造函数
+
+```cpp
+const double xOrigin = 0;
+const double yOrigin = 0;
+
+class Point {
+  final double x;
+  final double y;
+
+  // Sets the x and y instance variables
+  // before the constructor body runs.
+  Point(this.x, this.y);
+
+  // Named constructor
+  Point.origin() : x = xOrigin, y = yOrigin;
+}
+```
+
+### 4.3.3 重定向
+
+```java
+class Point {
+  double x, y;
+
+  // The main constructor for this class.
+  Point(this.x, this.y);
+
+  // Delegates to the main constructor.
+  Point.alongXAxis(double x) : this(x, 0);
+}
+```
+
+### 4.3.4 工厂构造函数
+
+```js
+class Logger {
+  final String name;
+  bool mute = false;
+
+  // _cache is library-private, thanks to
+  // the _ in front of its name.
+  static final Map<String, Logger> _cache = <String, Logger>{};
+
+  factory Logger(String name) {
+    return _cache.putIfAbsent(name, () => Logger._internal(name));
+  }
+
+  factory Logger.fromJson(Map<String, Object> json) {
+    return Logger(json['name'].toString());
+  }
+
+  Logger._internal(this.name);
+
+  void log(String msg) {
+    if (!mute) print(msg);
+  }
+}
+```
 
 # 5. widgets
 
