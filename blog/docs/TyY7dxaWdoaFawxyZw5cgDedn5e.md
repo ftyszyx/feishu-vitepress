@@ -1,6 +1,6 @@
 ---
 create_time: 1677551024
-edit_time: 1751032461
+edit_time: 1751614334
 title: Rust
 categories:
   - skill
