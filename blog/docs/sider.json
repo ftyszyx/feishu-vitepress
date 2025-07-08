@@ -411,7 +411,14 @@
       },
       {
         "text": "Windows",
-        "link": "/Mey0dZGFNoKJJLxS11acomobnAH"
+        "link": "/Mey0dZGFNoKJJLxS11acomobnAH",
+        "items": [
+          {
+            "text": "Innosetup",
+            "link": "/Q9GPdJ82Jory0wxH7ZRcDL64nMb"
+          }
+        ],
+        "collapsed": true
       },
       {
         "text": "java"
@@ -638,7 +645,13 @@
         "text": "我的简历"
       },
       {
-        "text": "视频下载"
+        "text": "视频下载",
+        "items": [
+          {
+            "text": "livedown使用说明"
+          }
+        ],
+        "collapsed": true
       },
       {
         "text": "视频剪辑"
