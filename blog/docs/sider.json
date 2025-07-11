@@ -649,12 +649,12 @@
         "items": [
           {
             "text": "livedown使用说明"
+          },
+          {
+            "text": "视频剪辑"
           }
         ],
         "collapsed": true
-      },
-      {
-        "text": "视频剪辑"
       }
     ],
     "collapsed": true
