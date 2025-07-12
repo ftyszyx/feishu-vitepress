@@ -387,7 +387,7 @@
         "link": "/KywydDopWo7R1Rxc0lichrCIn0Q",
         "items": [
           {
-            "text": "包管理",
+            "text": "包管理（已放充使用c++的包管理）",
             "link": "/TvLwdlVIkoXv8axdhdLcXodGnLg"
           },
           {
@@ -395,10 +395,6 @@
           },
           {
             "text": "一些语法 "
-          },
-          {
-            "text": "Clang",
-            "link": "/BYExdgMgaoqxSdxzFb0cGvCwnoe"
           }
         ],
         "collapsed": true
@@ -782,6 +778,10 @@
       {
         "text": "2024-7-8 搞清楚了我被反诈中心盯上的原因了",
         "link": "/CQwBdeUiEoWMT2xZDgwcaQemnWK"
+      },
+      {
+        "text": "2025-7-11 opencut/MoneyPrinterV2/快手/https",
+        "link": "/Cdf5dca4xoOkK9xkPBlcwH9jnzd"
       }
     ],
     "collapsed": true
