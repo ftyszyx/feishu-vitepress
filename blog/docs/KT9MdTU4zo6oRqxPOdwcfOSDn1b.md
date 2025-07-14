@@ -1,6 +1,6 @@
 ---
 create_time: 1737901304
-edit_time: 1746796072
+edit_time: 1752374704
 title: github加速
 categories:
   - skill
@@ -48,4 +48,8 @@ C:\Windows\System32\drivers\etc\hosts
 ```yaml
 20.205.243.166 github.com
 ```
+
+# 3. github代理加速
+
+https://github.com/cmliu/CF-Workers-GitHub
 
