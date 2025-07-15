@@ -469,9 +469,6 @@
         "link": "/S2SpdPpu5o4aWNxysuJcKO8Rnoe",
         "items": [
           {
-            "text": "海外教育邮箱注册(没用）"
-          },
-          {
             "text": "casdoor（免费开源登录验证）",
             "link": "/AqardZ49YoTLKaxod3scKisDnVf"
           }
@@ -659,129 +656,151 @@
     "text": "其它平台",
     "items": [
       {
-        "text": "2024-6-27 为什么夏承曦想退学这么难",
-        "link": "/MHZ0dZTdjorB48xvbLhc50SDnQg"
+        "text": "2024",
+        "items": [
+          {
+            "text": "2024-6-27 为什么夏承曦想退学这么难",
+            "link": "/MHZ0dZTdjorB48xvbLhc50SDnQg"
+          },
+          {
+            "text": "2024-7-2 从姜萍事件我看到的人性丑陋",
+            "link": "/GKrpdbFIPoT6P2xPvy1ci2rMnec"
+          },
+          {
+            "text": "2024-7-6 打破互联网巨头的数字殖民",
+            "link": "/KJtsdJeKcoKnytxsdHpcpWujn0c"
+          },
+          {
+            "text": "上个破班，别把自己搭进去",
+            "link": "/YQu8dJVbDob2wwxnDl1coi6gnSc"
+          },
+          {
+            "text": "3分钟开通openai plus账号教程（2024年亲测有效）",
+            "link": "/F5ASd439VoIH5ExwCZ8clnBZnKB"
+          },
+          {
+            "text": "选择比努力重要",
+            "link": "/Q6tydXKF9oo4XqxVYEkcEvb2nVe"
+          },
+          {
+            "text": "中国奥运代表团的精心准备：带空调出征巴黎",
+            "link": "/Kj6MdOFCuoBRKexjUEdcFWdmn9o"
+          },
+          {
+            "text": "用飞书写个人博客",
+            "link": "/TFdndRm07ocx0AxYyErcJN55nSg"
+          },
+          {
+            "text": "董宇辉：从打工者到老板的华丽转身",
+            "link": "/EIOwdXeEkoCJCNxlCSacnlrAnRb"
+          },
+          {
+            "text": "俞敏洪：将上市公司核心拱手相让，还自吹自擂，够奇葩",
+            "link": "/KlQFdrz1XoMLI9xH74ScoZ6xnKe"
+          },
+          {
+            "text": "乐怡，希望你能有不一样的人生",
+            "link": "/IHqOdw9f2oTmLWxfVX4c2lytnPg"
+          },
+          {
+            "text": "2024-10-19 优化了一下飞书转博客的系统",
+            "link": "/VBz6dDEmDoNNsbxxAWSccKC0n6d"
+          },
+          {
+            "text": "2024-10-21 免费好用的文章封面制作神器（试用）",
+            "link": "/L6xQdCYyeowUQOxFyO4cUonPnCg"
+          },
+          {
+            "text": "2024-11-8 聊聊我记忆中的一个女神",
+            "link": "/GXfKd09dWoFQt0x36rdcuDTRnzh"
+          },
+          {
+            "text": "2024-11-11 免费开源的服务器远程连接工具electerm试用",
+            "link": "/OwOEdNg7Oo5kAwxyeG9cXvUUnNd"
+          },
+          {
+            "text": "2024-11-14 Docker虚拟机",
+            "link": "/HG3idoUJWot4nmxSEBTcna58nFb"
+          }
+        ],
+        "collapsed": true
       },
       {
-        "text": "2024-7-2 从姜萍事件我看到的人性丑陋",
-        "link": "/GKrpdbFIPoT6P2xPvy1ci2rMnec"
-      },
-      {
-        "text": "2024-7-6 打破互联网巨头的数字殖民",
-        "link": "/KJtsdJeKcoKnytxsdHpcpWujn0c"
-      },
-      {
-        "text": "上个破班，别把自己搭进去",
-        "link": "/YQu8dJVbDob2wwxnDl1coi6gnSc"
-      },
-      {
-        "text": "3分钟开通openai plus账号教程（2024年亲测有效）",
-        "link": "/F5ASd439VoIH5ExwCZ8clnBZnKB"
-      },
-      {
-        "text": "选择比努力重要",
-        "link": "/Q6tydXKF9oo4XqxVYEkcEvb2nVe"
-      },
-      {
-        "text": "中国奥运代表团的精心准备：带空调出征巴黎",
-        "link": "/Kj6MdOFCuoBRKexjUEdcFWdmn9o"
-      },
-      {
-        "text": "用飞书写个人博客",
-        "link": "/TFdndRm07ocx0AxYyErcJN55nSg"
-      },
-      {
-        "text": "董宇辉：从打工者到老板的华丽转身",
-        "link": "/EIOwdXeEkoCJCNxlCSacnlrAnRb"
-      },
-      {
-        "text": "俞敏洪：将上市公司核心拱手相让，还自吹自擂，够奇葩",
-        "link": "/KlQFdrz1XoMLI9xH74ScoZ6xnKe"
-      },
-      {
-        "text": "乐怡，希望你能有不一样的人生",
-        "link": "/IHqOdw9f2oTmLWxfVX4c2lytnPg"
-      },
-      {
-        "text": "2024-10-19 优化了一下飞书转博客的系统",
-        "link": "/VBz6dDEmDoNNsbxxAWSccKC0n6d"
-      },
-      {
-        "text": "2024-10-21 免费好用的文章封面制作神器（试用）",
-        "link": "/L6xQdCYyeowUQOxFyO4cUonPnCg"
-      },
-      {
-        "text": "2024-11-8 聊聊我记忆中的一个女神",
-        "link": "/GXfKd09dWoFQt0x36rdcuDTRnzh"
-      },
-      {
-        "text": "2024-11-11 免费开源的服务器远程连接工具electerm试用",
-        "link": "/OwOEdNg7Oo5kAwxyeG9cXvUUnNd"
-      },
-      {
-        "text": "2024-11-14 Docker虚拟机",
-        "link": "/HG3idoUJWot4nmxSEBTcna58nFb"
-      },
-      {
-        "text": "2025-2-6 新年第一天",
-        "link": "/YPLJd0KnXobLkPxVpHNcuJO9nMf"
-      },
-      {
-        "text": "2025-2-13 终于把欠的代码账还清了，可以干自己的事情了",
-        "link": "/NTJ6dtQjyo6cZyxbRiic1gEyntc"
-      },
-      {
-        "text": "2025-2-20 你还在为找音乐发愁？LXMusic 了解一下？",
-        "link": "/XV1YdTP6RoRF8yx1sUwcKMzhnrd"
-      },
-      {
-        "text": "2025-2-22 又想诱惑我入场？港股这波涨势能当真吗",
-        "link": "/RuvYd7JLboqwdrx6tvxcXsjbnUv"
-      },
-      {
-        "text": "2025-2-23 马斯克的 Grok3 免费畅玩，150 美金羊毛速薅！但 API 却...",
-        "link": "/NEUYdLVosogBDyxkth4c1qO6nog"
-      },
-      {
-        "text": "2025-2-24 告别人工智障！ESP32+大模型，DIY你的专属AI语音助手！",
-        "link": "/UmErd2lgLoMd1zxUi87cKQmNn8c"
-      },
-      {
-        "text": "2025-2-25 硬核！程序员破解Windows游戏封印，Linux也能畅玩3A大作！",
-        "link": "/CryMduc7YoIg6sx7hkvch19Inrb"
-      },
-      {
-        "text": "2025-2-26 MoneyPrinterTurbo项目",
-        "link": "/OIcjdsNoso2Ntjx08Wrc9p7WnXc"
-      },
-      {
-        "text": "2025-2-27 250美元特朗普钞票？美议员这波操作，我直接迷惑！",
-        "link": "/CZcMdeS63ovP8fxdv9lcTvLHnEg"
-      },
-      {
-        "text": "2025-3-1 美国政坛“奇葩”再现！特朗普泽连斯基互呛，我感觉：中国机会来了",
-        "link": "/M56kdJzKQoIP6dxzRslcntLvnGg"
-      },
-      {
-        "text": "2025-3-14 马桶"
-      },
-      {
-        "text": "2025-3-15 晚餐时间的大V"
-      },
-      {
-        "text": "2025-4-10 工作"
-      },
-      {
-        "text": "2025-7-8 mysql原来是垃圾",
-        "link": "/KgMbdxANVoosscxRg4NcILMhnNb"
-      },
-      {
-        "text": "2024-7-8 搞清楚了我被反诈中心盯上的原因了",
-        "link": "/CQwBdeUiEoWMT2xZDgwcaQemnWK"
-      },
-      {
-        "text": "2025-7-11 opencut/MoneyPrinterV2/快手/https",
-        "link": "/Cdf5dca4xoOkK9xkPBlcwH9jnzd"
+        "text": "2025",
+        "items": [
+          {
+            "text": "1到6月",
+            "items": [
+              {
+                "text": "2025-2-6 新年第一天",
+                "link": "/YPLJd0KnXobLkPxVpHNcuJO9nMf"
+              },
+              {
+                "text": "2025-2-13 终于把欠的代码账还清了，可以干自己的事情了",
+                "link": "/NTJ6dtQjyo6cZyxbRiic1gEyntc"
+              },
+              {
+                "text": "2025-2-20 你还在为找音乐发愁？LXMusic 了解一下？",
+                "link": "/XV1YdTP6RoRF8yx1sUwcKMzhnrd"
+              },
+              {
+                "text": "2025-2-22 又想诱惑我入场？港股这波涨势能当真吗",
+                "link": "/RuvYd7JLboqwdrx6tvxcXsjbnUv"
+              },
+              {
+                "text": "2025-2-23 马斯克的 Grok3 免费畅玩，150 美金羊毛速薅！但 API 却...",
+                "link": "/NEUYdLVosogBDyxkth4c1qO6nog"
+              },
+              {
+                "text": "2025-2-24 告别人工智障！ESP32+大模型，DIY你的专属AI语音助手！",
+                "link": "/UmErd2lgLoMd1zxUi87cKQmNn8c"
+              },
+              {
+                "text": "2025-2-25 硬核！程序员破解Windows游戏封印，Linux也能畅玩3A大作！",
+                "link": "/CryMduc7YoIg6sx7hkvch19Inrb"
+              },
+              {
+                "text": "2025-2-26 MoneyPrinterTurbo项目",
+                "link": "/OIcjdsNoso2Ntjx08Wrc9p7WnXc"
+              },
+              {
+                "text": "2025-2-27 250美元特朗普钞票？美议员这波操作，我直接迷惑！",
+                "link": "/CZcMdeS63ovP8fxdv9lcTvLHnEg"
+              },
+              {
+                "text": "2025-3-1 美国政坛“奇葩”再现！特朗普泽连斯基互呛，我感觉：中国机会来了",
+                "link": "/M56kdJzKQoIP6dxzRslcntLvnGg"
+              },
+              {
+                "text": "2025-3-14 马桶"
+              },
+              {
+                "text": "2025-3-15 晚餐时间的大V"
+              },
+              {
+                "text": "2025-4-10 工作"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "text": "2025-7-8 mysql原来是垃圾",
+            "link": "/KgMbdxANVoosscxRg4NcILMhnNb"
+          },
+          {
+            "text": "2024-7-8 搞清楚了我被反诈中心盯上的原因了",
+            "link": "/CQwBdeUiEoWMT2xZDgwcaQemnWK"
+          },
+          {
+            "text": "2025-7-11 opencut/MoneyPrinterV2/快手/https",
+            "link": "/Cdf5dca4xoOkK9xkPBlcwH9jnzd"
+          },
+          {
+            "text": "2025-7-14",
+            "link": "/Uu0DdyOS3oSYgfx6V6xcePlknue"
+          }
+        ],
+        "collapsed": true
       }
     ],
     "collapsed": true
