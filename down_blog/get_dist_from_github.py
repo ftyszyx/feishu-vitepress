@@ -56,7 +56,7 @@ class BLog:
         repo = self._check_item.get("github_repo")
         token = self._check_item.get("github_token")
         dest_path = self._check_item.get("dest_path")
-        github_pre = self._check_item.get("github_prefix")
+        github_pre = self._check_item.get("github_prefix") or ""
         url = f"https://api.github.com/repos/{ower}/{repo}/releases/latest"
         print(f"get owner:{ower} repo:{repo} token:{token} ")
         self._session.headers.update(
