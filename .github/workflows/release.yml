@@ -24,12 +24,25 @@ jobs:
       - name: Install dependencies
         run: npm install # or pnpm install / yarn install / bun install
 
-      - name: Build with VitePress
-        # env:
-        # BASE_URL: "/"
+      - name: Build with VitePressForGithub
+        run: npm run build:github
+      - name: zip dist
+        run: zip -r dist_github.zip blog/docs/.vitepress/dist/*
+
+      - name: Build with blog 
         run: npm run build:blog
       - name: zip dist
-        run: zip -r dist.zip blog/docs/.vitepress/dist/*
+        run: zip -r dist_blog.zip blog/docs/.vitepress/dist/*
+
+      - name: Build with blogForLockpass
+        run: npm run build:lockpass
+      - name: zip dist
+        run: zip -r dist_lockpass.zip blog/docs/.vitepress/dist/*
+
+      - name: Build with blogForBytefuse
+        run: npm run build:bytefuse
+      - name: zip dist
+        run: zip -r dist_bytefuse.zip blog/docs/.vitepress/dist/*
 
       - name: Create Release
         id: create_release

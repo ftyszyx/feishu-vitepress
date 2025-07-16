@@ -13,6 +13,8 @@
     "dev": "npm run dev -w blog",
     "build:blog": "npm run build:blog -w blog",
     "build:github": "npm run build:github -w blog",
+    "build:bytefuse": "npm run build:bytefuse -w blog",
+    "build:lockpass": "npm run build:lockpass -w blog",
     "preview": "npm run preview -w blog"
   },
   "dependencies": {}

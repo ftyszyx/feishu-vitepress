@@ -1,7 +1,9 @@
 import { defineConfig } from "vitepress";
 import sidebar from "../../sider.json";
+const blog_title = process.env.BLOG_TITLE || "星辰起点";
+const icp_code = process.env.ICP_CODE || "粤ICP备2024236057号";
 export const zh = defineConfig({
-  title: "星辰起点",
+  title: blog_title,
   lang: "zh-Hans",
   description: "个人博客",
 
@@ -18,7 +20,7 @@ export const zh = defineConfig({
       message: "基于 MIT 许可发布",
       copyright: `版权所有 © 2019-${new Date().getFullYear()}<br/>
           <a href="http://beian.miit.gov.cn/" target="_blank" rel="nofollow" class="d-none d-lg-inline-block">
-粤ICP备2024236057号</a>
+${icp_code}</a>
       `,
     },
 

@@ -9,8 +9,10 @@
   "scripts": {
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
-    "build:github": "cross-env BASE_URL=/feishu-vitepress/ HOST_NAME=https://ftyszyx.github.io/feishu-vitepress/ vitepress build docs",
-    "build:blog": "cross-env BASE_URL=/ HOST_NAME=https://blog.bytefuse.cn/ vitepress build docs",
+    "build:github": "rm -rf docs/.vitepress/dist && cross-env BASE_URL=/feishu-vitepress/ HOST_NAME=https://ftyszyx.github.io/feishu-vitepress/ BLOG_TITLE=超级小朋友 ICP_CODE=粤ICP备2024236057号 vitepress build docs",
+    "build:blog": "rm -rf docs/.vitepress/dist && cross-env BASE_URL=/ HOST_NAME=https://blog.bytefuse.cn/ BLOG_TITLE=超级小朋友 ICP_CODE=粤ICP备2024236057号 vitepress build docs",
+    "build:bytefuse": "rm -rf docs/.vitepress/dist && cross-env BASE_URL=/ HOST_NAME=https://www.bytefuse.cn/ BLOG_TITLE=星辰起点 ICP_CODE=粤ICP备2024236057号 vitepress build docs",
+    "build:lockpass": "rm -rf docs/.vitepress/dist && cross-env BASE_URL=/ HOST_NAME=https://www.lockpass.cn/ BLOG_TITLE=星辰起点 ICP_CODE=粤ICP备2024236057号 vitepress build docs",
     "preview": "vitepress preview docs"
   },
   "devDependencies": {
