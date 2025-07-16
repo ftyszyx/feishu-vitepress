@@ -24,25 +24,15 @@ jobs:
       - name: Install dependencies
         run: npm install # or pnpm install / yarn install / bun install
 
-      - name: Build with VitePressForGithub
-        run: npm run build:github
-      - name: zip dist
-        run: zip -r dist_github.zip blog/docs/.vitepress/dist/*
-
-      - name: Build with blog 
-        run: npm run build:blog
-      - name: zip dist
-        run: zip -r dist_blog.zip blog/docs/.vitepress/dist/*
-
-      - name: Build with blogForLockpass
-        run: npm run build:lockpass
-      - name: zip dist
-        run: zip -r dist_lockpass.zip blog/docs/.vitepress/dist/*
-
-      - name: Build with blogForBytefuse
-        run: npm run build:bytefuse
-      - name: zip dist
-        run: zip -r dist_bytefuse.zip blog/docs/.vitepress/dist/*
+      - name: Build and Zip All Types
+        run: |
+          set -e
+          for type in github blog lockpass bytefuse; do
+            echo "Building for $type"
+            npm run build:$type --prefix blog
+            echo "Zipping dist for $type"
+            zip -r dist_${type}.zip blog/docs/.vitepress/dist/*
+          done
 
       - name: Create Release
         id: create_release
@@ -54,18 +44,14 @@ jobs:
           release_name: Release_${{ github.run_number}}
           body: |
             Changes in this Release
-            - First Change
-            - Second Change
           draft: false
           prerelease: false
 
-      - name: Upload Release Asset
-        id: upload-release-asset
+      - name: Upload Release Assets
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
-          asset_path: ./dist.zip
-          asset_name: dist.zip
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./dist_*.zip
           asset_content_type: application/zip
