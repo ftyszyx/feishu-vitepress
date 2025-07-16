@@ -27,7 +27,7 @@ jobs:
       - name: Build and Zip All Types
         run: |
           set -e
-          for type in github blog lockpass bytefuse; do
+          for type in blog lockpass bytefuse; do
             echo "Building for $type"
             npm run build:$type --prefix blog
             echo "Zipping dist for $type"
