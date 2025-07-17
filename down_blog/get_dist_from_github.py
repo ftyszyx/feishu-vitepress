@@ -60,7 +60,7 @@ class BLog:
         github_pre = self._check_item.get("github_prefix") or ""
         proxy = self._check_item.get("proxy")
         if proxy:
-            # print(f"set proxy:{proxy}")
+            print("set proxy ok")
             self._session.proxies.update({"http": proxy, "https": proxy})
         url = f"https://api.github.com/repos/{ower}/{repo}/releases/latest"
         print(f"get owner:{ower} repo:{repo} token:{token} ")
