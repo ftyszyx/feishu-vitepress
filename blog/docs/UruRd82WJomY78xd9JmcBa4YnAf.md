@@ -1,7 +1,7 @@
 ---
 cover: /assets/Oxm6boIzjoNsB6xWEXWcQEb3nnd.gif
 create_time: 1747993152
-edit_time: 1752241126
+edit_time: 1752670314
 title: https证书
 categories:
   - skill
@@ -171,6 +171,10 @@ crontab -e
 
 1. 在 expand 的操作里，可以使用与已经认证的域名相同的 webroot 路径，即：已经认证的 `example.com` 使用 webroot 路径是 `/var/www/example.com`，之后想要追加的域名 subdomain.example.com 可以使用与前者相同的 `/var/www/example.com` 作为 `--webroot-path`；
 2. 可以不使用 `--expand` flag。直接在 `--domains` flag 之后追加新的、需要认证的子域同样 totally fine，`certbot` 本身会提示是不是需要 expand 操作；
+
+```yaml
+certbot certonly --webroot --expand  -d umami.bytefuse.cn -d blog.bytefuse.cn  -d www.lockpass.cn -d www.bytefuse.cn --webroot-path /var/www/letsencrypt/
+```
 
 ## 2.4 standalone模式
 

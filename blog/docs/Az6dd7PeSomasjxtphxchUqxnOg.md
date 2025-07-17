@@ -1,6 +1,6 @@
 ---
 create_time: 1752595587
-edit_time: 1752598159
+edit_time: 1752661105
 title: 注册码管理平台(卡密）
 categories:
   - product
@@ -90,7 +90,45 @@ kamifaka挺符合我心意的，可惜就是前端没有源码，感觉后面 �
 
 服务器：最近在学 rust，想拿一个项目练手，所以就用 rust了。
 
-## 3.2 后端功能拆分
+## 3.2 数据表
 
-## 3.3 管理员前端功能
+用户表
+
+```yaml
+pub id: i32,
+    pub username: String,
+    pub password: String, 
+    pub created_at: DateTime, 
+    pub balance: i64,
+    pub inviter_id: Option<i32>,
+    pub invite_count: i32, 
+    pub invite_rebate_total: i64,
+    pub role_id: i32,
+```
+
+角色表
+
+```yaml
+#[sea_orm(primary_key)]
+    pub id: i32,
+    pub name: String,
+    #[schema(value_type = String)]
+    pub created_at: DateTime,
+```
+
+产品表（对应一个app)
+
+商品表（对应用户可以购买的商品）
+
+订单表（用户支付时对应的订单信息）
+
+订单日志表
+
+注册码表
+
+注册码日志表
+
+## 3.3 后端功能拆分
+
+## 3.4 管理员前端功能
 
