@@ -41,6 +41,7 @@ class BLog:
     def __init__(self, check_item: dict):
         self._session = requests.session()
         self._check_item = check_item
+        # set proxy
         self._session.headers.update(
             {
                 "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36 Edg/91.0.864.64",
@@ -57,6 +58,10 @@ class BLog:
         token = self._check_item.get("github_token")
         dest_path = self._check_item.get("dest_path")
         github_pre = self._check_item.get("github_prefix") or ""
+        proxy = self._check_item.get("proxy")
+        if proxy:
+            # print(f"set proxy:{proxy}")
+            self._session.proxies.update({"http": proxy, "https": proxy})
         url = f"https://api.github.com/repos/{ower}/{repo}/releases/latest"
         print(f"get owner:{ower} repo:{repo} token:{token} ")
         self._session.headers.update(
