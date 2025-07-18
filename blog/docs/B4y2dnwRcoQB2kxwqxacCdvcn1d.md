@@ -1,6 +1,6 @@
 ---
 create_time: 1752714251
-edit_time: 1752718163
+edit_time: 1752762633
 title: 2017-7-17 https代理
 categories:
   - other_platform
@@ -43,7 +43,7 @@ https://github.com/netptop/siteproxy
 
 没有源码，也不清楚他的原理 是啥
 
-# 2. tinyproxy
+## 1.2 tinyproxy
 
 https://github.com/tinyproxy/tinyproxy
 
@@ -74,7 +74,9 @@ service tinyproxy stop
 测试
 
 ```yaml
-curl -x <http://127.0.0.1:8787> www.baidu.com // 无需用户名密码
-curl -x <http://user:password@127.0.0.1:8888> www.baidu.com  // 需要用户名密码
+curl --proxy "http://127.0.0.1:8787" www.baidu.com // 无需用户名密码
+curl --proxy "http://user:password@127.0.0.1:8888" www.baidu.com  // 需要用户名密码
 ```
+
+这个应该可以行，相当于自己建了一个ip代理
 

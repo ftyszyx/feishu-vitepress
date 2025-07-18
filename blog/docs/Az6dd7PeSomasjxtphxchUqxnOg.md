@@ -1,6 +1,6 @@
 ---
 create_time: 1752595587
-edit_time: 1752661105
+edit_time: 1752747125
 title: 注册码管理平台(卡密）
 categories:
   - product
@@ -92,41 +92,15 @@ kamifaka挺符合我心意的，可惜就是前端没有源码，感觉后面 �
 
 ## 3.2 数据表
 
-用户表
+原则
 
-```yaml
-pub id: i32,
-    pub username: String,
-    pub password: String, 
-    pub created_at: DateTime, 
-    pub balance: i64,
-    pub inviter_id: Option<i32>,
-    pub invite_count: i32, 
-    pub invite_rebate_total: i64,
-    pub role_id: i32,
-```
+1、尽量利用sql语言增加check 
 
-角色表
+2、通过外键增加表之间的关联
 
-```yaml
-#[sea_orm(primary_key)]
-    pub id: i32,
-    pub name: String,
-    #[schema(value_type = String)]
-    pub created_at: DateTime,
-```
+3、数据表展开，比如订单表-》多个商品
 
-产品表（对应一个app)
-
-商品表（对应用户可以购买的商品）
-
-订单表（用户支付时对应的订单信息）
-
-订单日志表
-
-注册码表
-
-注册码日志表
+可以增加order order_products两个表来表示
 
 ## 3.3 后端功能拆分
 
