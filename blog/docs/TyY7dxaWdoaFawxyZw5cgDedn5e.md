@@ -1,6 +1,6 @@
 ---
 create_time: 1677551024
-edit_time: 1751614334
+edit_time: 1752974259
 title: Rust
 categories:
   - skill
@@ -791,7 +791,22 @@ Volo：[g](https://link.juejin.cn/?target=https%3A%2F%2Fgithub.com%2FcloudweGo%2
 
 将错误信息重定向到 `stderr` 很简单，只需在打印错误的地方，将 `println!` 宏替换为 `eprintln!`即可。
 
-# 6. 一此ui库
+# 6. 一些ui库
+
+rust这种语言不适合写ui
 
 <img src="/assets/Et5hbhY2No7Swnx0jhXcPS8Lnwg.png" src-width="1154" class="markdown-img m-auto" src-height="605" align="center"/>
+
+# 7. 一些用法 
+
+## 7.1 Option
+
+```yaml
+enum Option<T> {
+    None,
+    Some(T),
+}
+```
+
+some只是option的一个成员
 

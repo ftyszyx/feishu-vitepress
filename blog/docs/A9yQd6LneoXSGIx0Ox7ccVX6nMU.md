@@ -1,7 +1,7 @@
 ---
 cover: /assets/KdGhboAEyochG8xwe2rcFKVrnnd.png
 create_time: 1752762638
-edit_time: 1752847594
+edit_time: 1752939111
 title: 2017-7-18 cursor不能用了！！！！
 categories:
   - other_platform
@@ -68,20 +68,37 @@ Debug
 
 1. Launch by pressing `F5` (or `Run`-&gt;`Start Debugging`) to open a new VSCode window with the extension loaded. (You may need to install the <u>esbuild problem matchers extension</u> if you run into issues building the project.)
 
-# 6. 
-## 6.1 void
+### 5.2.3 入口
+
+src/extension.ts
+
+页面
+
+```yaml
+const panel = vscode.window.createWebviewPanel(WebviewProvider.tabPanelId, "Cline", targetCol, {
+            enableScripts: true,
+            retainContextWhenHidden: true,
+            localResourceRoots: [context.extensionUri],
+        })
+```
+
+### 5.2.4  webui
+
+Webview-ui  
+
+## 5.3 void
 
 https://voideditor.com/
 
 Vscode 换皮
 
-## 6.2 claude_code
+## 5.4 claude_code
 
 https://github.com/anthropics/claude-code
 
  只是一个命令行终端
 
-## 6.3 gemini-cli
+## 5.5 gemini-cli
 
 https://github.com/google-gemini/gemini-cli
 
@@ -97,7 +114,7 @@ https://aistudio.google.com/
 
 <img src="/assets/ApnobOKo8o6Ftrx2FLncy6OencH.png" src-width="930" class="markdown-img m-auto" src-height="366" align="center"/>
 
-### 6.3.1 源码分析
+### 5.5.1 源码分析
 
 用户输入在inputprompt.tsx中输入文本
 
@@ -180,7 +197,7 @@ const { queryToSend, shouldProceed } = await prepareQueryForGemini(
       }
 ```
 
-### 6.3.2 举例
+### 5.5.2 举例
 
 <img src="/assets/L9OIbHOqeoou0xxy28ucE7I6n3g.png" src-width="754" class="markdown-img m-auto" src-height="120" align="center"/>
 
@@ -206,7 +223,7 @@ const { queryToSend, shouldProceed } = await prepareQueryForGemini(
 ]
 ```
 
-### 6.3.3 总结：
+### 5.5.3 总结：
 
 从代码逻辑看，工具只是把用户需要提交的代码上下文和用户的输入组装成一个包发给ai，
 
@@ -214,9 +231,9 @@ const { queryToSend, shouldProceed } = await prepareQueryForGemini(
 
 那cursor应该也是如此，只是一个ui的包装而已。
 
-# 7. 商业的
+# 6. 商业的
 
-## 7.1 copilot
+## 6.1 copilot
 
 vscode插件
 
@@ -238,9 +255,9 @@ vscode插件
 
 价格挺轻民，cursor的一半。
 
-## 7.2 kiro
+## 6.2 kiro
 
-ide 
+Aws做的ide 
 
 https://kiro.dev/
 
@@ -248,15 +265,29 @@ https://kiro.dev/
 
  
 
-## 7.3 trae
+## 6.3 trae
 
 https://www.trae.cn/
 
 字节ide
 
-## 7.4 Vscode 中的gemni code
+## 6.4 Vscode 中的gemni code
 
-# 8. ai代理
+## 6.5 cursor的强大好用
+
+<img src="/assets/Tw82bK7EMoO7g6xvCPtc8gwLn1g.png" src-width="751" class="markdown-img m-auto" src-height="185" align="center"/>
+
+全自动执行命令
+
+<img src="/assets/OFgmb55QvofWP6xUxJqc7crJnRb.png" src-width="731" class="markdown-img m-auto" src-height="624" align="center"/>
+
+自动读代码，分析 编译错误
+
+<img src="/assets/Kms0bYzkloOr6lx8piwcyKm7nDe.png" src-width="713" class="markdown-img m-auto" src-height="222" align="center"/>
+
+自动修改代码，处理错误
+
+# 7. ai代理
 
 目前最强的ai是google 的gemini pro
 
@@ -266,7 +297,7 @@ https://www.trae.cn/
 
 使用cherrystudio可以检查是否可用https://github.com/CherryHQ/cherry-studio
 
-## 8.1 使用openai接口模式
+## 7.1 使用openai接口模式
 
 <img src="/assets/CHIKbffEWoeGeKxsU0hczILcn5g.png" src-width="647" class="markdown-img m-auto" src-height="345" align="center"/>
 
@@ -274,7 +305,7 @@ https://www.trae.cn/
 
 <img src="/assets/EP7MbN1tko8BBfxqz7qcVKOxnje.png" src-width="956" class="markdown-img m-auto" src-height="244" align="center"/>
 
-## 8.2 使用gemini模式
+## 7.2 使用gemini模式
 
 去https://ai.google.dev/gemini-api/docs/models?hl=zh-cn找模型列表 
 
@@ -292,7 +323,21 @@ https://www.trae.cn/
 
 <img src="/assets/GgIAbDXoQoZKl4xSVAFceujcnng.png" src-width="538" class="markdown-img m-auto" src-height="303" align="center"/>
 
-## 8.3 gemini-balance 项目分析
+## 7.3 gemini-balance 项目分析
+
+# 8. 如何查看cursor的promotion
+
+cursor的所有请求都是走自己的服务器中转，如果看他与ai模型的交互？
+
+https://www.bilibili.com/video/BV1w7ADeLEPE/?spm_id_from=333.1387.search.video_card.click&vd_source=1cfe4f7c9bf04285f79b848e60f55aea
+
+使用cloudflare ai gateway
+
+开启日志 
+
+<img src="/assets/FszSbjQLIoYyytxiFGacJaSknVb.png" src-width="2035" class="markdown-img m-auto" src-height="292" align="center"/>
+
+<img src="/assets/RD8obvw1rogQNMxHrMDczwQfncg.png" src-width="244" class="markdown-img m-auto" src-height="333" align="center"/>
 
 # 9. vscode插件开发
 
@@ -349,4 +394,12 @@ export function deactivate() {}
 能力
 
 ### 9.3.1  https://code.visualstudio.com/api/extension-capabilities/extending-workbench
+
+# 10. 总结
+
+cline没有自动补全，
+
+Void 目前不能加自定义的gemini api，另外因为无法使用微软的c++ ，c#插件，有些不方便。
+
+这种编程工具的形式，最好的还是以插件的形式集成在vscode中。
 
