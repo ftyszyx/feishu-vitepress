@@ -16,7 +16,14 @@
       },
       {
         "text": "github相关学习",
-        "link": "/M10ydnmzxoTvspxhBgicq2qunUd"
+        "link": "/M10ydnmzxoTvspxhBgicq2qunUd",
+        "items": [
+          {
+            "text": "github加速",
+            "link": "/KT9MdTU4zo6oRqxPOdwcfOSDn1b"
+          }
+        ],
+        "collapsed": true
       },
       {
         "text": "C#语言学习",
@@ -89,10 +96,6 @@
           {
             "text": "warp免费翻墙(备份）",
             "link": "/SZtcdMGgAorN7PxeQvpcf3Z2nOd"
-          },
-          {
-            "text": "github加速",
-            "link": "/KT9MdTU4zo6oRqxPOdwcfOSDn1b"
           }
         ],
         "collapsed": true
@@ -446,17 +449,10 @@
       },
       {
         "text": "Rust",
-        "link": "/TyY7dxaWdoaFawxyZw5cgDedn5e",
-        "items": [
-          {
-            "text": "Dioxus"
-          }
-        ],
-        "collapsed": true
+        "link": "/TyY7dxaWdoaFawxyZw5cgDedn5e"
       },
       {
-        "text": "Sql-数据库",
-        "link": "/BqmidEMoPo5r71x5ZRMcuRiznJh"
+        "text": "Sql-数据库"
       }
     ],
     "collapsed": true

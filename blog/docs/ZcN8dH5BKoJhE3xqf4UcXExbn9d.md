@@ -6,7 +6,7 @@ keywords:
   - vpn
   - clash_windows
 create_time: 1717592186
-edit_time: 1717593548
+edit_time: 1752979997
 categories:
   - skill
 ---
@@ -36,4 +36,15 @@ mixin: # 注意下面缩进
     - "DOMAIN-SUFFIX,bugly.qq.com,节点选择"
 ```
 
-## 1.2 
+## 1.2 tun模式
+
+https://cloud.tencent.com/developer/article/2480049
+
+开启tun后，git无法使用，因为 git使用22端口，但中转节点默认屏蔽了22
+
+可以将ssh连接改成443
+
+https://docs.github.com/zh/authentication/troubleshooting-ssh/using-ssh-over-the-https-port
+
+<img src="/assets/RqtKbL2QXoOFPFxHaVscGGJcn6f.png" src-width="1356" class="markdown-img m-auto" src-height="436" align="center"/>
+

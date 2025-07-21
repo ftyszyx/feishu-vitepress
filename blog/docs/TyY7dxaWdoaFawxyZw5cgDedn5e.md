@@ -1,6 +1,6 @@
 ---
 create_time: 1677551024
-edit_time: 1752974259
+edit_time: 1752999516
 title: Rust
 categories:
   - skill
@@ -763,16 +763,6 @@ fn main() {
 
 <img src="/assets/UnkNbjEfZo9MoMxbIBicyZLtnhg.png" src-width="720" class="markdown-img m-auto" src-height="366" align="center"/>
 
- **axum**
-
-https://zhuanlan.zhihu.com/p/451494651
-
-rust
-
-第一个，基于 Axum 的 Web 框架。 Axum 算是 tokio 现在比较火的一个官方的 HTTP 的 Web 框架。
-
- 
-
 第二个，RPC 框架，支持了 GRPC 和 thrift，叫做 Volo。已经开源在 CloudWeGo 的组织下面了，如果之后有 RPC 的需求可以直接来使用这个框架。 第三个，异步的运行时的 Monoio 框架。这个主要是考虑到提供给一些性能非常关键的业务以及基础设施，就是基础架构的服务去使用。它的好处在于它采用 Thread Per Core 模型，这样就可以解决 Tokio 的很多问题，比如它的 future 必须加 Sync 的一个问题。因为 thread per core 的情况之下，它能保证一个 task 一定在一个线程中被运行，这样很多时候就不需要 send 加 sync 的约束，可以直接用 TLS（ thread local storage ）或者其他的这些技术，以及一些无锁的技术去编程，这可以很大程度上提高性能。第二个就是它采用了 Linux 最新发布的 io_uring 技术去做 IO 层 ，如果有对于性能要求非常高的同学可以去了解一下。
 
  
@@ -785,21 +775,51 @@ Volo：[g](https://link.juejin.cn/?target=https%3A%2F%2Fgithub.com%2FcloudweGo%2
 
 • RsProxy：[rsproxy.cn/](https://link.juejin.cn/?target=https%3A%2F%2Frsproxy.cn%2F)
 
-# 5. 其它
+# 5.  **axum**
 
-## 5.1 错误输出
+https://zhuanlan.zhihu.com/p/451494651
+
+rust
+
+第一个，基于 Axum 的 Web 框架。 Axum 算是 tokio 现在比较火的一个官方的 HTTP 的 Web 框架。
+
+## 5.1 extractors
+
+ handler获取传入的参数是通过extractors
+
+三种类型
+
+```text
+{Path, Query, Json};
+// `Path` gives you the path parameters and deserializes them.
+async fn path(Path(user_id): Path<u32>) {}
+
+// `Query` gives you the query parameters and deserializes them.
+async fn query(Query(params): Query<HashMap<String, String>>) {}
+
+// Buffer the request body and deserialize it as JSON into a
+// `serde_json::Value`. `Json` supports any type that implements
+// `serde::Deserialize`.
+async fn json(Json(payload): Json<serde_json::Value>) {}
+```
+
+一个handler可以接收任意数量的extractors做为参数 
+
+# 6. 其它
+
+## 6.1 错误输出
 
 将错误信息重定向到 `stderr` 很简单，只需在打印错误的地方，将 `println!` 宏替换为 `eprintln!`即可。
 
-# 6. 一些ui库
+# 7. 一些ui库
 
 rust这种语言不适合写ui
 
 <img src="/assets/Et5hbhY2No7Swnx0jhXcPS8Lnwg.png" src-width="1154" class="markdown-img m-auto" src-height="605" align="center"/>
 
-# 7. 一些用法 
+# 8. 一些用法 
 
-## 7.1 Option
+## 8.1 Option
 
 ```yaml
 enum Option<T> {
@@ -809,4 +829,27 @@ enum Option<T> {
 ```
 
 some只是option的一个成员
+
+## 8.2 Tostring 
+
+要把任何类型转换成 `String`，只需要实现那个类型的 `ToString` trait。然而不要直接这么做，您应该实现`fmt::Display` trait，它会自动提供 `ToString`，并且还可以用来打印类型，就像 `print!` 一节中讨论的那样。
+
+```bash
+use std::fmt;
+
+struct Circle {
+    radius: i32
+}
+
+impl fmt::Display for Circle {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(f, "Circle of radius {}", self.radius)
+    }
+}
+
+fn main() {
+    let circle = Circle { radius: 6 };
+    println!("{}", circle.to_string());
+}
+```
 
