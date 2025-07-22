@@ -805,21 +805,29 @@ async fn json(Json(payload): Json<serde_json::Value>) {}
 
 一个handler可以接收任意数量的extractors做为参数 
 
-# 6. 其它
+# 6. 宏
 
-## 6.1 错误输出
+资料：
+
+https://lukaswirth.dev/tlborm/decl-macros/macros-methodical.html
+
+## 6.1 展开宏
+
+# 7. 其它
+
+## 7.1 错误输出
 
 将错误信息重定向到 `stderr` 很简单，只需在打印错误的地方，将 `println!` 宏替换为 `eprintln!`即可。
 
-# 7. 一些ui库
+# 8. 一些ui库
 
 rust这种语言不适合写ui
 
 <img src="/assets/Et5hbhY2No7Swnx0jhXcPS8Lnwg.png" src-width="1154" class="markdown-img m-auto" src-height="605" align="center"/>
 
-# 8. 一些用法 
+# 9. 一些用法 
 
-## 8.1 Option
+## 9.1 Option
 
 ```yaml
 enum Option<T> {
@@ -830,7 +838,7 @@ enum Option<T> {
 
 some只是option的一个成员
 
-## 8.2 Tostring 
+## 9.2 Tostring 
 
 要把任何类型转换成 `String`，只需要实现那个类型的 `ToString` trait。然而不要直接这么做，您应该实现`fmt::Display` trait，它会自动提供 `ToString`，并且还可以用来打印类型，就像 `print!` 一节中讨论的那样。
 
