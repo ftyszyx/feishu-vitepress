@@ -1,6 +1,6 @@
 ---
 create_time: 1677551024
-edit_time: 1753150076
+edit_time: 1753322040
 title: Rust
 categories:
   - skill
@@ -811,23 +811,52 @@ async fn json(Json(payload): Json<serde_json::Value>) {}
 
 https://lukaswirth.dev/tlborm/decl-macros/macros-methodical.html
 
-## 6.1 展开宏
+# 7. 感想
 
-# 7. 其它
+## 7.1 rust优势：
 
-## 7.1 错误输出
+1. 强大的类型定义：
+
+语法上类似与c，但是因为有了trait,泛型等，可以严格的定义数据类型。有点类似于typescript
+
+一个大型的系统，是需要强类型的约束
+
+1. 高级的宏语法
+
+可以直接读取编译器解析出来的语法树，可以通过宏方便的生成代码。虽然复杂，但是强大，而且零开销成本。
+
+不是简单的define可比拟的
+
+## 7.2 缺点
+
+1. 强大的类型意味着复杂的类型定义，有时候让你看不懂。
+
+比如：我本来想定义一个回调函数的原型，如下，有点难看懂
+
+```yaml
+axum::routing::method_routing
+pub fn get<H, T, S>(handler: H) -> MethodRouter<S, Infallible>
+where
+    H: Handler<T, S>,
+    T: 'static,
+    S: Clone + Send + Sync + 'static,
+```
+
+# 8. 其它
+
+## 8.1 错误输出
 
 将错误信息重定向到 `stderr` 很简单，只需在打印错误的地方，将 `println!` 宏替换为 `eprintln!`即可。
 
-# 8. 一些ui库
+# 9. 一些ui库
 
 rust这种语言不适合写ui
 
 <img src="/assets/Et5hbhY2No7Swnx0jhXcPS8Lnwg.png" src-width="1154" class="markdown-img m-auto" src-height="605" align="center"/>
 
-# 9. 一些用法 
+# 10. 一些用法 
 
-## 9.1 Option
+## 10.1 Option
 
 ```yaml
 enum Option<T> {
@@ -838,7 +867,7 @@ enum Option<T> {
 
 some只是option的一个成员
 
-## 9.2 Tostring 
+## 10.2 Tostring 
 
 要把任何类型转换成 `String`，只需要实现那个类型的 `ToString` trait。然而不要直接这么做，您应该实现`fmt::Display` trait，它会自动提供 `ToString`，并且还可以用来打印类型，就像 `print!` 一节中讨论的那样。
 
