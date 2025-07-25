@@ -1,7 +1,7 @@
 ---
 cover: /assets/KdGhboAEyochG8xwe2rcFKVrnnd.png
 create_time: 1752762638
-edit_time: 1752939111
+edit_time: 1753351692
 title: 2017-7-18 cursor不能用了！！！！
 categories:
   - other_platform
@@ -91,6 +91,28 @@ Webview-ui
 https://voideditor.com/
 
 Vscode 换皮
+
+源码位置
+
+src/vs/workbench/contrib/void/
+
+- common: 存放与具体运行环境（浏览器或桌面）无关的通用代码。
+- browser: 存放只在浏览器（即渲染器进程）环境中运行的代码。
+- electron-main: 存放与主进程相关的代码
+
+### 5.3.1 代码补全的原理：
+
+：src/vs/workbench/contrib/void/browser/autocompleteService.ts。
+
+注册服务
+
+```yaml
+registerWorkbenchContribution2(AutocompleteService.ID, AutocompleteService, WorkbenchPhase.BlockRestore);
+```
+
+注册为所有语言的自动补全
+
+<img src="/assets/Bl8WbFLMToQkY1xXbSYc3Kl2nTc.png" src-width="1042" class="markdown-img m-auto" src-height="711" align="center"/>
 
 ## 5.4 claude_code
 

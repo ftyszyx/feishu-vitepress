@@ -1,6 +1,6 @@
 ---
 create_time: 1677551024
-edit_time: 1753322040
+edit_time: 1753347315
 title: Rust
 categories:
   - skill
@@ -889,4 +889,16 @@ fn main() {
     println!("{}", circle.to_string());
 }
 ```
+
+# 11. seaorm
+
+两个表：user和invit
+
+invite表{id,invite_userid}
+
+user表{id}
+
+需要查询出userinfo{userid,invite_count}
+
+如何使用sea_orm写
 
