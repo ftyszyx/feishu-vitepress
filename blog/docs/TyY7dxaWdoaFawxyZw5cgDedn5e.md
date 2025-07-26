@@ -1,6 +1,6 @@
 ---
 create_time: 1677551024
-edit_time: 1753347315
+edit_time: 1753414276
 title: Rust
 categories:
   - skill
@@ -826,6 +826,10 @@ https://lukaswirth.dev/tlborm/decl-macros/macros-methodical.html
 可以直接读取编译器解析出来的语法树，可以通过宏方便的生成代码。虽然复杂，但是强大，而且零开销成本。
 
 不是简单的define可比拟的
+
+1. 语言层面的test集成
+
+为系统的稳定性和可靠信奠定了基础
 
 ## 7.2 缺点
 
