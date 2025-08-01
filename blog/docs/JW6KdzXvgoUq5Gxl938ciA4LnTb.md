@@ -4,7 +4,7 @@ tags:
   - develop
 cover: /assets/FDpIbhSbsoYQLoxGRO2c2w0ZnFh.jpeg
 create_time: 1676970303
-edit_time: 1749693128
+edit_time: 1753952225
 categories:
   - skill
 ---
@@ -72,6 +72,8 @@ ctrl+K ctrl+d
 下一个段落 shift+]
 
 打开文档大纲：ctrl+alt+t  (视图-》其它窗口-》文档大纲 ）
+
+Shift + *  找关键字
 
 # 3. Vscode&Unity
 
