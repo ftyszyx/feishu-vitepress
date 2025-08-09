@@ -513,7 +513,14 @@
     "text": "运动"
   },
   {
-    "text": "理财"
+    "text": "理财",
+    "items": [
+      {
+        "text": "可转债抢配额",
+        "link": "/LQ4ld9u4bo87U6xykwXcLyDqnwn"
+      }
+    ],
+    "collapsed": true
   },
   {
     "text": "项目",

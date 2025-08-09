@@ -1,7 +1,7 @@
 ---
 cover: /assets/Um9JbWwIFodQDjxcMjfcPCjKnHh.jpeg
 create_time: 1729850795
-edit_time: 1735267865
+edit_time: 1754668796
 title: 自制docker镜像
 categories:
   - skill
@@ -18,9 +18,13 @@ categories:
 
 如何自己推荐加速服务呢？
 
-自已建：https://github.com/bboysoulcn/registry-mirror
+自已建：https://github.com/bboysoulcn/registry-mirror（放弃）
 
-使用cloudflare代理：https://github.com/ImSingee/hammal
+使用cloudflare代理：https://github.com/ImSingee/hammal(好像失效）（放弃）
+
+使用：https://www.cnblogs.com/KubeExplorer/p/18264358（放弃）
+
+ **自制：** **https://github.com/dqzboy/Docker-Proxy?tab=readme-ov-file** **（使用）**
 
 ## 1.1 使用cloudflare
 
@@ -109,4 +113,37 @@ windows上是`%userprofile%\.docker\daemon.json`.
 sudo systemctl daemon-reload
 sudo systemctl restart docker
 ```
+
+# 1. 自建镜像
+
+https://blog.hentioe.dev/posts/unhindered-accesss-dockerhub.html
+
+进一步访问 `/v2/library/node/manifests/20` 这个路径，这相当于手动调用此 mirror 的 API。如果正确会下载 `node:20` 这个镜像的 Manifest 文件，否则会显示 API 的错误响应。
+
+编辑 `/etc/docker/daemon.json` 文件，加入以下配置：
+
+```text
+{  "registry-mirrors": ["http://<YOUR_SERVER_HOST>:5000"]}
+```
+
+# 2. nginx代理
+
+```yaml
+server {
+    listen 80;
+    server_name  test.ddd.cn;  # 修改为你的域名
+    access_log /var/log/nginx/test.ddd.cn.access.log;
+    error_log /var/log/nginx/test.ddd.cn.error.log;
+
+  location / {
+        client_max_body_size 1024M;
+        proxy_pass https://registry-1.docker.io:443;
+        proxy_set_header Authorization $http_authorization;
+        proxy_pass_header Authorization;
+        proxy_redirect https://registry-1.docker.io $scheme://$http_host;
+}
+}
+```
+
+https://www.cnblogs.com/guangdelw/p/18253540
 
