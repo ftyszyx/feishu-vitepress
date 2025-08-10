@@ -1,6 +1,6 @@
 ---
 create_time: 1754703297
-edit_time: 1754704808
+edit_time: 1754705318
 title: 可转债抢配额
 categories:
   - financing
@@ -32,4 +32,16 @@ categories:
 如果在7月号公告日低位买入，7月2号卖出，应该有不错的收益
 
 7月1号振幅是3% ,7月2号是5%
+
+# 2. 微导纳米
+
+8月4号公告，8月5号登记
+
+<img src="/assets/Ujs5bijhEoRhZXxfLdmcMCxMnvd.jpeg" src-width="1220" class="markdown-img m-auto" src-height="1690" align="center"/>
+
+<img src="/assets/AaefbTKQuovC5BxnRwvcC6bMnWg.png" src-width="999" class="markdown-img m-auto" src-height="578" align="center"/>
+
+# 3. 方案
+
+公布可转债当天买入，第二天卖出，好的话，可以有5个点的收入
 
