@@ -666,6 +666,20 @@
       },
       {
         "text": "Todos"
+      },
+      {
+        "text": "网站克隆器",
+        "items": [
+          {
+            "text": "介绍",
+            "link": "/M2XYdbunIouhGsxxNOkcfdiGnvh"
+          },
+          {
+            "text": "功能演示",
+            "link": "/Jgmydq1HpoXtvfxFqrKclioTnnf"
+          }
+        ],
+        "collapsed": true
       }
     ],
     "collapsed": true
