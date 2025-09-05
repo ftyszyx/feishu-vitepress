@@ -183,6 +183,6 @@ if __name__ == "__main__":
                 continue
             env_dict[env_item.split("=")[0].strip()] = env_item.split("=")[1].strip()
         blog = BLog(env_dict)
-        print(blog.main())
+        blog.main()
     except Exception as e:
         print(f"error:{e}")
