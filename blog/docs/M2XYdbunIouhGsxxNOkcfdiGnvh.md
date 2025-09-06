@@ -1,6 +1,6 @@
 ---
 create_time: 1756908120
-edit_time: 1757141816
+edit_time: 1757143240
 title: 介绍
 categories:
   - product
@@ -52,4 +52,8 @@ https://github.com/ftyszyx/WebCloner/releases
 如果你也想备份那些对你来说重要的内容，不妨关注我的项目，一起完善它！
 
 <img src="/assets/HG3hbFY8WoVu3BxWPrAcTDSDnDd.png" src-width="1920" class="markdown-img m-auto" src-height="1009" align="center"/>
+
+演示效果
+
+[9月6日.mp4](/assets/GglNbPjEXohIJ8xf2Jnc4Dz5nc1.mp4)
 
