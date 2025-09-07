@@ -1,6 +1,7 @@
 ---
+cover: /assets/KQYHb6WTGoZXJoxHcjbcekqCnOe.jpeg
 create_time: 1752595587
-edit_time: 1752747125
+edit_time: 1757145126
 title: 注册码管理平台(卡密）
 categories:
   - product
