@@ -1,7 +1,7 @@
 ---
 cover: /assets/DRHobKiKCoC3B0xisznccfhBnaf.png
 create_time: 1756908120
-edit_time: 1757145097
+edit_time: 1757294137
 title: 介绍
 categories:
   - product
@@ -61,9 +61,21 @@ https://github.com/ftyszyx/WebCloner/releases
 
 如果你也想备份那些对你来说重要的内容，不妨关注我的项目，一起完善它！
 
+## 5.1 启动
+
+第一次启动会下载一次chrome资源
+
+<img src="/assets/GI2KbWEtnoh7b5x1dNJc83g3npb.png" src-width="1096" class="markdown-img m-auto" src-height="541" align="center"/>
+
+## 5.2 程序首页
+
+<img src="/assets/EBfObYYhSoGKHhxISHbcpvANnQh.png" src-width="1262" class="markdown-img m-auto" src-height="713" align="center"/>
+
+两个功能，一个是账号管理，一个是任务管理
+
 <img src="/assets/HG3hbFY8WoVu3BxWPrAcTDSDnDd.png" src-width="1920" class="markdown-img m-auto" src-height="1009" align="center"/>
 
-演示效果
+## 5.3 演示效果
 
 [9月6日.mp4](/assets/GglNbPjEXohIJ8xf2Jnc4Dz5nc1.mp4)
 

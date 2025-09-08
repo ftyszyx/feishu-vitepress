@@ -1,7 +1,7 @@
 ---
 cover: /assets/ENxDbaNRBomiGZxnjfccgJqJnMh.jpeg
 create_time: 1757035362
-edit_time: 1757207931
+edit_time: 1757215792
 title: 遇到的问题
 categories:
   - product
@@ -51,4 +51,38 @@ const NEXT_EXACT = /^(下一页|下一頁|下页|更多|Next|More|Older|next|mor
 导致一直触发分页点击
 
 看来之种分页检查，不能默认开放，检查的规则还是要用户自己输入 才行
+
+<img src="/assets/CqyKbMp2yoLjRcx18MGcFrZdn7f.png" src-width="419" class="markdown-img m-auto" src-height="190" align="center"/>
+
+配置项又变多了
+
+# 4. qq空间中的链接取不到
+
+## 4.1 现象
+
+<img src="/assets/SFfRbea7YoUFj6xjRRXcT59snBf.png" src-width="711" class="markdown-img m-auto" src-height="177" align="center"/>
+
+通过js获取全文的href没找到对应的
+
+```js
+const anchors = Array.from(document.querySelectorAll("a[href]")).map(a=>{
+          return {
+            href: a.href,
+            protocol: a.protocol,
+            text: a.textContent || '',
+          };
+        });
+```
+
+有点奇怪，看了一下标签，是正常的
+
+<img src="/assets/LSUYbtFpSoAhgcxuO69cZVhDnmh.png" src-width="857" class="markdown-img m-auto" src-height="194" align="center"/>
+
+## 4.2 原因
+
+因为这个链接是 在一个子frame下
+
+<img src="/assets/APAKbIVBwoXII4xxbq7cGX4tn6e.png" src-width="1098" class="markdown-img m-auto" src-height="307" align="center"/>
+
+只 能遍历全部iframe
 
