@@ -1,8 +1,12 @@
 ---
+keywords:
+  - webcloner
+  - 新浪博客
+  - 备份
 cover: /assets/W2OsbYB5OoQdI7xY0oTcVrx7ned.jpeg
 create_time: 1756950318
-edit_time: 1757294514
-title: 功能演示-新浪博客备份
+edit_time: 1757340246
+title: webcloner功能演示-新浪博客备份
 categories:
   - product
 ---

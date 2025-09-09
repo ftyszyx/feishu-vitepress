@@ -671,28 +671,36 @@
         "text": "网站克隆器",
         "items": [
           {
-            "text": "介绍",
+            "text": "webcloner网站克隆器介绍",
             "link": "/M2XYdbunIouhGsxxNOkcfdiGnvh"
           },
           {
-            "text": "功能演示-新浪博客备份",
+            "text": "webcloner功能演示-新浪博客备份",
             "link": "/Jgmydq1HpoXtvfxFqrKclioTnnf"
           },
           {
-            "text": "功能演示-复制自己的qq空间",
+            "text": "webcloner功能演示-搞定qq空间",
             "link": "/T2aVdfE7vo8ZySxfCOWcaawlnpf"
           },
           {
-            "text": "功能演示-备份qq说说",
+            "text": "webcloner功能演示-备份qq说说",
             "link": "/Z870dDZDAoaH6uxz70OctQYdnOf"
           },
           {
-            "text": "功能演示-备份我的新浪微博",
+            "text": "webcloner功能演示-备份我的新浪微博",
             "link": "/GvhndANHNoyKoMxTR0fcxRYUngh"
           },
           {
-            "text": "遇到的问题",
+            "text": "Webcloner-开发遇到的问题",
             "link": "/Sef4d1xt1oz8soxBZYbcf6lkngh"
+          },
+          {
+            "text": "webcloner如何保存自己的cookies",
+            "link": "/TBsUd6eUnosyKRxuIYnc3Cw0nrh"
+          },
+          {
+            "text": "webcloner-回看自己的qq空间有感",
+            "link": "/UeiHdipdAoP4W9xmBkqcnESxn8c"
           }
         ],
         "collapsed": true
