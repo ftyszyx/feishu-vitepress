@@ -4,46 +4,38 @@ keywords:
   - 新浪微博
   - 备份
 create_time: 1757294226
-edit_time: 1757340260
+edit_time: 1757409612
 title: webcloner功能演示-备份我的新浪微博
 categories:
   - product
 ---
 
 
-# 1. 账号
+# 1. 如何处理动态列表
 
-<img src="/assets/PaJ5bG6tzoFKKexx8vdc74N7nYb.png" src-width="479" class="markdown-img m-auto" src-height="247" align="center"/>
+新浪微博有点特殊，全部内容都在同一个页面中。通过一个动态列表展示
 
-# 2. 任务 
+<img src="/assets/DrUqbsAPbofdU0xNQEHcgve0nxd.png" src-width="697" class="markdown-img m-auto" src-height="519" align="center"/>
 
-<img src="/assets/LWqcbgQ1QonlDCxi2nhcOzORnVh.png" src-width="461" class="markdown-img m-auto" src-height="559" align="center"/>
+如果直接调用浏览器的截图，是获取不到完整内容的，因为动态列表组件只会渲染可屏幕内的节点，如下图，
 
-# 3. 遇到的问题
+屏幕外的节点全不见了。
 
-## 3.1 截图不全
+<img src="/assets/RxQxbnRo3o60LhxIEhTcq8r1nfh.png" src-width="411" class="markdown-img m-auto" src-height="545" align="center"/>
 
-<img src="/assets/V5UCbcmcoocUgGxEQjBcZk1KnOb.png" src-width="411" class="markdown-img m-auto" src-height="545" align="center"/>
-
-微博的内容不像qq空间是分页的，是瀑布式，
-
-而且是动态加载，就是说你向下滚动的时候，他的dom节点数量是不变的，只展示你能看见的内容
-
-<img src="/assets/Y5pkb76dcoztXMxxommcO50mnxe.png" src-width="1915" class="markdown-img m-auto" src-height="485" align="center"/>
-
-所以截屏的话，就会截不到不显示的内容。
-
-## 3.2 想到个方法
-
- 从动态节点名vue-recycle-scroller得知，这应该是一个开源库：
+通过节点名，我知道了这是一个开源vue组件vue-recycle-scroller
 
 https://github.com/Akryum/vue-virtual-scroller
 
-微博的项目应该是用vue写的
+同时也知道了，这个项目是用vue开发的。
 
-从开源项目文档可知调整节点的buffer属性就控制着页面显示的大小
+<img src="/assets/OWhxbOIq8oBeWaxHPtgcwIVJnic.png" src-width="740" class="markdown-img m-auto" src-height="378" align="center"/>
 
-可以先找到这个node
+从开源项目的文档中得知，可以通过修改buffer值，来控制显示的节点数量。
+
+于是，我目前的方案是
+
+可以先找到vue-recycle-scroller组件根结点node
 
 ```yaml
 const targetNode = document.querySelector(itemWrapperSelector);
@@ -55,7 +47,41 @@ const targetNode = document.querySelector(itemWrapperSelector);
 scroller.__vue__
 ```
 
-修改buffer为一个超级大的值，也不能太大，太大的话，网页保存的太大了，
+修改buffer为一个超级大的值
 
-再滚动到底，测试
+```yaml
+scroller.__vue__.buffer=500000
+```
+
+ 这样，动态列表失效了，会渲染全部结点。
+
+此时再保存网页，就可以了。
+
+现在的问题是，如果节点太多，会不会造成浏览器崩溃。
+
+不过，我看到微博有搜索框。可以通过时间范围分段截屏，不过呢，这样的话逻辑有点复杂了。
+
+<img src="/assets/V6vwbbvk2oa0HIx82h1cTBDNnkc.png" src-width="630" class="markdown-img m-auto" src-height="179" align="center"/>
+
+# 2. 账号
+
+新增账号方式没变
+
+<img src="/assets/PaJ5bG6tzoFKKexx8vdc74N7nYb.png" src-width="479" class="markdown-img m-auto" src-height="247" align="center"/>
+
+# 3. 任务 
+
+为了处理微博这种特殊的情况，增加了一个平台字段，如下
+
+<img src="/assets/LWqcbgQ1QonlDCxi2nhcOzORnVh.png" src-width="461" class="markdown-img m-auto" src-height="559" align="center"/>
+
+# 4. 效果
+
+图片和mhtml都生成出来了，效果挺好。
+
+<img src="/assets/PeDubfKAaosX3ZxNQ34c4nG6nkf.png" src-width="1061" class="markdown-img m-auto" src-height="156" align="center"/>
+
+<img src="/assets/WbA0b2dfioLcTwxYJiZcwDVpnyd.png" src-width="1175" class="markdown-img m-auto" src-height="648" align="center"/>
+
+<img src="/assets/UlQ5bd2uoo5SgqxHtG5ciEnlnPh.png" src-width="996" class="markdown-img m-auto" src-height="239" align="center"/>
 
