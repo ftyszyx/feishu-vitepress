@@ -4,7 +4,7 @@ keywords:
   - 新浪微博
   - 备份
 create_time: 1757294226
-edit_time: 1757409612
+edit_time: 1757508054
 title: webcloner功能演示-备份我的新浪微博
 categories:
   - product
@@ -59,9 +59,17 @@ scroller.__vue__.buffer=500000
 
 现在的问题是，如果节点太多，会不会造成浏览器崩溃。
 
-不过，我看到微博有搜索框。可以通过时间范围分段截屏，不过呢，这样的话逻辑有点复杂了。
+不过，我看到微博有搜索框。可以通过时间范围分段截屏
 
 <img src="/assets/V6vwbbvk2oa0HIx82h1cTBDNnkc.png" src-width="630" class="markdown-img m-auto" src-height="179" align="center"/>
+
+https://github.com/gildas-lormeau/SingleFile
+
+https://github.com/gildas-lormeau/SingleFile/issues/440
+
+ https://github.com/gildas-lormeau/SingleFile/issues/483
+
+<img src="/assets/ALNsbbDzboPnPcxRYb0cS5wsnbc.png" src-width="1206" class="markdown-img m-auto" src-height="400" align="center"/>
 
 # 2. 账号
 
