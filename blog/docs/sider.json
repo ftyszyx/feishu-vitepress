@@ -662,7 +662,14 @@
       },
       {
         "text": "注册码管理平台(卡密）",
-        "link": "/Az6dd7PeSomasjxtphxchUqxnOg"
+        "link": "/Az6dd7PeSomasjxtphxchUqxnOg",
+        "items": [
+          {
+            "text": "卡密",
+            "link": "/DHQpdMTGlo9ndUxLFUlcs6ucnDd"
+          }
+        ],
+        "collapsed": true
       },
       {
         "text": "Todos"
@@ -868,7 +875,7 @@
             "link": "/A9yQd6LneoXSGIx0Ox7ccVX6nMU"
           },
           {
-            "text": "2025-9-12",
+            "text": "2025-9-12 开发webcloner的前因后果",
             "link": "/BWpQdBLXOosQiyxIZ3pcxoFvnsh"
           }
         ],
