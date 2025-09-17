@@ -11,7 +11,7 @@ install.sh
 ## 运行
 先将.env.example改成.env并填好对应的配置
 ```
-python3 get_dist_from_github.py
+python3 get_dist_from_github.py --assetname dist_blog.zip --dispath ./test
 ```
 
 
