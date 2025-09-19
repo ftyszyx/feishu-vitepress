@@ -4,7 +4,7 @@ tags:
   - develop
 cover: /assets/FDpIbhSbsoYQLoxGRO2c2w0ZnFh.jpeg
 create_time: 1676970303
-edit_time: 1753952225
+edit_time: 1758177604
 categories:
   - skill
 ---
@@ -702,6 +702,10 @@ v，然后方向键 ←→↑↓ 选择要缩进的行（这儿选中第 2、3 �
 者 v，然后方向键 ←→↑↓ 选择要缩进的行（这儿选中第 2、3 行），最后摁下 = 与第一行对齐缩进
 
   **注意：所有选中行与选择区域的上一行进行对齐缩进（各个行的实际缩进长度并不一致）。**
+
+<img src="/assets/P36CbcGttord0fxWIZScBYprn9b.png" src-width="1013" class="markdown-img m-auto" src-height="308" align="center"/>
+
+<img src="/assets/F78sbTtRiovbIIx3MBlcxOycnxc.png" src-width="1044" class="markdown-img m-auto" src-height="219" align="center"/>
 
 ## 8.9 Linux ctrl+q退出vim锁住的模式
 

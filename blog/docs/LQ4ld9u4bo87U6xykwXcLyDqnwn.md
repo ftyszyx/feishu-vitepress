@@ -1,6 +1,6 @@
 ---
 create_time: 1754703297
-edit_time: 1754705318
+edit_time: 1758201397
 title: 可转债抢配额
 categories:
   - financing
@@ -19,6 +19,8 @@ categories:
 
 # 1. 利柏特605167
 
+## 1.1 分析
+
 7月1号发公告，要发可转债，股东登记日是7月2号
 
 <img src="/assets/XvEzbnnVaokM2KxEpOfc0FB5nkd.png" src-width="498" class="markdown-img m-auto" src-height="330" align="center"/>
@@ -33,6 +35,10 @@ categories:
 
 7月1号振幅是3% ,7月2号是5%
 
+## 1.2 结果
+
+买入的时机不好，还被套着，转债赚了1000多，但是股票亏了2000多，合计亏1000多
+
 # 2. 微导纳米
 
 8月4号公告，8月5号登记
@@ -41,7 +47,9 @@ categories:
 
 <img src="/assets/AaefbTKQuovC5BxnRwvcC6bMnWg.png" src-width="999" class="markdown-img m-auto" src-height="578" align="center"/>
 
-# 3. 方案
+## 2.1 分析
 
 公布可转债当天买入，第二天卖出，好的话，可以有5个点的收入
+
+## 2.2 结果
 
