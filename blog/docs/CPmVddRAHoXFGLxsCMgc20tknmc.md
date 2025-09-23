@@ -1,6 +1,6 @@
 ---
 create_time: 1758202843
-edit_time: 1758203993
+edit_time: 1758507325
 title: 怎么让ai帮美化ppt
 categories:
   - other_platform
@@ -34,4 +34,8 @@ pip install "markitdown[all]"
 ```yaml
 markitdown test.pptx > document.md
 ```
+
+转换是成功了，但是图片全丢失，是不是有哪里没用对。
+
+有空再研究
 

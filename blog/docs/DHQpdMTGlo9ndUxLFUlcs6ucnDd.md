@@ -1,6 +1,6 @@
 ---
 create_time: 1757645822
-edit_time: 1757754169
+edit_time: 1758507635
 title: 卡密
 categories:
   - product
@@ -14,22 +14,6 @@ https://github.com/assimon/dujiaoka
  折腾了一下，官方推荐使用宝塔：https://www.bt.cn/new/index.html
 
 说实话，我之前对php开发一直有偏见，感觉这个语言有点奇怪，通过类似html的标记语言来写服务器程序，感觉总是那么的历类。
-
-但是PhP网站在早几年的确很火。我也用php写过一个简单的erp系统。
-
-宝塔工具我之前也听说过，但没用过，今天借着部署卡密系统使用了一下。
-
-感觉是真的强大啊。能把一个服务器工具做到这么易用，难怪这么成功。
-
-之前我部署博客时最大的麻烦就是，怎么配nginx,怎么配置https.
-
-用宝塔，这些都不叫事，全给你集成好了，一个按钮就能帮你搞定。交互方式简直是太人性化了。
-
-<img src="/assets/Pj6jbrsxPofev4x53wPcjyx6ndc.png" src-width="874" class="markdown-img m-auto" src-height="417" align="center"/>
-
-nginx的配置基本不用你动手，你建一个网站时，宝塔就已经为你配好了。
-
-<img src="/assets/N5AnbC3s0ow9vnxQjImco3gVnSg.png" src-width="792" class="markdown-img m-auto" src-height="487" align="center"/>
 
 有宝塔这么方便的工具，卡密系统很快部署好了
 
@@ -51,6 +35,8 @@ nginx的配置基本不用你动手，你建一个网站时，宝塔就已经为
 
 <img src="/assets/VmljbWtTfofa61xXGJMcsc7yn7f.png" src-width="1750" class="markdown-img m-auto" src-height="613" align="center"/>
 
+看来，作为个人，刚开始就不要想支持功能了。
+
 还好又找到一个开源项目
 
 https://github.com/xiaoxiaoguai-yyds/xxgkamiexe
@@ -64,4 +50,10 @@ https://github.com/xiaoxiaoguai-yyds/xxgkamiexe
 还支持api，可以让软件判断密钥是否过期
 
 <img src="/assets/VXN2bjBPnoeE2kxvVjCcfNhdnRc.png" src-width="1603" class="markdown-img m-auto" src-height="403" align="center"/>
+
+这个项目基本可用，但是呢，缺少一个软件试用期的功能。在试用期内，软件 可以不用提供注册码。
+
+不过这个项目也给了我一些启发，把我原先没落地的想法清晰化了。
+
+我想自己写一个吧，也不是很难。
 

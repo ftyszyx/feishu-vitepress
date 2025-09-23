@@ -5,7 +5,7 @@ keywords:
   - 备份
 cover: /assets/DRHobKiKCoC3B0xisznccfhBnaf.png
 create_time: 1756908120
-edit_time: 1757340240
+edit_time: 1758507203
 title: webcloner网站克隆器介绍
 categories:
   - product
@@ -59,9 +59,9 @@ categories:
 -  **支持用户登陆**：自动提交登陆信息，免去手动登陆的烦恼。
 -  **生成内容目录**：方便查看和管理备份的内容。
 
-# 5. 试用地址
+# 5. 网址
 
-https://github.com/ftyszyx/WebCloner/releases
+https://webcloner.bytefuse.cn/
 
 如果你也想备份那些对你来说重要的内容，不妨关注我的项目，一起完善它！
 
