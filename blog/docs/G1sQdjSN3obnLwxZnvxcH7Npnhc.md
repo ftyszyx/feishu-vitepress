@@ -1,7 +1,7 @@
 ---
 cover: /assets/Um9JbWwIFodQDjxcMjfcPCjKnHh.jpeg
 create_time: 1729850795
-edit_time: 1754668796
+edit_time: 1758813398
 title: 自制docker镜像
 categories:
   - skill
@@ -20,11 +20,13 @@ categories:
 
 自已建：https://github.com/bboysoulcn/registry-mirror（放弃）
 
-使用cloudflare代理：https://github.com/ImSingee/hammal(好像失效）（放弃）
+使用cloudflare代理：https://github.com/ImSingee/hammal(好像失效）（有时候有问题）
 
 使用：https://www.cnblogs.com/KubeExplorer/p/18264358（放弃）
 
- **自制：** **https://github.com/dqzboy/Docker-Proxy?tab=readme-ov-file** **（使用）**
+https://github.com/harrisonwang/docxy/tree/main  （可行，需要国外服务器）
+
+ **自制：** **https://github.com/dqzboy/Docker-Proxy?tab=readme-ov-file** **（使用,这个需要大磁盘，因为这不是转发请求，而是镜像）**
 
 ## 1.1 使用cloudflare
 
