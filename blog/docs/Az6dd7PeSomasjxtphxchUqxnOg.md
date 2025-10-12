@@ -1,100 +1,90 @@
 ---
 cover: /assets/KQYHb6WTGoZXJoxHcjbcekqCnOe.jpeg
 create_time: 1752595587
-edit_time: 1760169248
-title: 注册码管理平台(卡密）
+edit_time: 1760193291
+title: 注册码管理平台，让你轻松管理软件授权！
 categories:
   - product
 ---
 
 
-项目开源地址：
+我的注册码管理平台，让你轻松管理软件授权！
+
+项目开源地址：https://github.com/ftyszyx/LicenseHub
 
 # 1. 背景
 
-最近写了一个pc端的程序，考虑如何通过软件获取收益呢？
+最近我写了一个PC端的程序，开始琢磨如何通过它来赚点小钱。 最常见的方案就是软件注册码了。 简单来说，就是：
 
-一般的方案通过软件注册码的方式。
+1. 用户可以免费下载软件。
+2. 软件有试用期，期间可以免费使用所有功能。
+3. 试用期结束后，需要输入注册码才能继续使用。
+4. 注册码由开发者提供，可以有时间限制，也可以永久有效。
 
-1. 用户下载软件无门槛
-2. 软件有一定的试用期，在试用期内可以免费使用
-3. 如果超过试用期，打开软件时需要填写注册码。
-4. 注册码需要软件开发者提供，每个注册码会有时间限制，也可以是不限时间。
+所以，我就开始寻找现成的注册码管理方案。
 
 # 2. 现有的开源方案调查
 
- 我想网上应该有现成的方案吧。
+ 首先想到的就是去GitHub上找轮子。 结果还真找到了一些：
 
 ## 2.1 kamiFaka
 
 https://github.com/Baiyuetribe/kamiFaka
 
-部分开源，分专业版和开源版本。
-
-集成了支付和注册码生成。页面做的挺漂亮的。
-
-系统中的卡密相当于就是注册码。新增卡密是这样的。
-
-和我想要的功能不一样，这个卡密是手动填的，而且没有时效性。
+这个项目是部分开源的，有专业版和开源版。 它集成了支付和注册码生成，页面也做得挺漂亮。
 
 <img src="/assets/VDCGbZ8VhoxpivxnLFzclwLPnEf.png" src-width="786" class="markdown-img m-auto" src-height="456" align="center"/>
+
+但它的卡密是手动填写的，而且没有过期时间的概念，不符合我的需求。
 
 ## 2.2 dujiaoka
 
 https://github.com/assimon/dujiaoka
 
-和kamifaka功能类似，卡密也是一次性的商品，不满足需求。
+这个项目和kamiFaka类似，卡密也是一次性的商品，不满足我的需求。
 
 ## 2.3 xxgkamiexe
 
  https://github.com/xiaoxiaoguai-yyds/xxgkamiexe
 
-这个系统没有支付，和我有需求比较相符
-
-可以批量生成注册码，注册码分时间类型（可以定义有效时间）和次数类型（定义次数）
+这个系统没有支付功能，但和我的需求比较接近。 它可以批量生成注册码，并且可以设置注册码的有效时间和使用次数。 
 
 <img src="/assets/CtwbbXQMBoYXqZxuMVucef73nCh.png" src-width="1280" class="markdown-img m-auto" src-height="337" align="center"/>
 
-还提供一个验证注册码是否有效的接口，可以用来让软件判断注册码是否过期。
+它还提供了一个验证注册码是否有效的接口，方便软件判断注册码是否过期。
 
 <img src="/assets/A6WsbUiDgo6hD3xdheUc1jidn8f.png" src-width="1280" class="markdown-img m-auto" src-height="321" align="center"/>
 
-可惜的是没有应用试用期的功能 
+但可惜的是，它没有应用试用期的功能。
 
 # 3. 自己实现
 
-目前没有找到合适的方案可用。我就自己动手吧。
+既然没有找到完全符合需求的方案，那就只能自己动手了！
 
 ## 3.1 方案
 
 整个系统采用前后端分离设计。
 
-1. 前端就是一个管理员后台，使用vue3.
-2. 后端：最近在学 rust，想拿一个项目练手，所以就用 rust了。 web框架使用salvo：
+我决定采用前后端分离的设计：
 
-https://github.com/salvo-rs/salvo
-
-1. 先不加入支付，只用实现注册码生成和验证接口即可。
+1. 前端：使用Vue3构建一个管理后台。
+2. 后端：最近在学Rust，正好拿这个项目练手，Web框架选择Salvo（[https://github.com/salvo-rs/salvo](https://github.com/salvo-rs/salvo)）。
+3. 初期不加入支付功能，只实现注册码生成和验证接口。
 
 ## 3.2 第一步设计数据库模型
 
- 主要有基础的表：user,role,(负责用户管理）
+ 主要有以下几张表：
 
-应用表：apps
-
-注册码表：reg_codes
-
-绑定设备表：devices
+- user, role：负责用户管理。
+- apps：应用表。
+- reg_codes：注册码表。
+- devices：绑定设备表。
 
 ## 3.3 系统的权限管理
 
-之前做的后台权限的字段是存在role表中，权限的修改不是特别灵活。
+之前做后台权限时，权限字段是存在role表中的，修改起来不够灵活。 最近我发现了一个开源项目Casbin（[https://casbin.org/](https://casbin.org/)），它专门为权限问题设计了一套规则。
 
-最近发现一个开源项目叫casbin:https://casbin.org/
-
-专门权限问题设计了一套规则。我想试试。
-
-首先casbin有一个权限配置文件，就像下面这个，说明见文档：https://casbin.org/docs/syntax-for-models
+首先，Casbin需要一个权限配置文件，就像下面这样： 
 
 ```yaml
 [request_definition]
@@ -113,23 +103,19 @@ e = some(where (p.eft == allow))
 m= r.sub == p.sub && r.obj == p.obj && r.act == p.act
 ```
 
-sub表示资源请求者
+（具体含义可以参考Casbin的文档：[https://casbin.org/docs/syntax-for-models](https://casbin.org/docs/syntax-for-models)）
 
-obj:请求的资源
+简单来说，它定义了权限判断的规则。
 
-Act: 动作（读写改）
-
-还需要一个policy（策略）文件，保存在数据库中，可以由管理员编辑。对应上面的policy_definition
+还需要一个policy（策略）文件，保存在数据库中，可以由管理员编辑。 它对应上面的policy_definition。
 
 <img src="/assets/GorhbmvKko8UXqxhXrXcJ6atnGf.png" src-width="771" class="markdown-img m-auto" src-height="212" align="center"/>
 
-当request_definition和policy_definition匹配上后。就表示允许。
+当request_definition和policy_definition匹配上后，就表示允许访问。
 
-看起来简单，实则有点抽象。
+虽然看起来有点抽象，但Casbin确实能简化权限判断的逻辑，让开发者省心不少。
 
-反正权限的判断逻辑现在被casbin负责了，开发者可以省心了。
-
-## 3.4 基本流程
+## 3.4 效果展示
 
 ### 3.4.1 创建一个应用
 
@@ -203,19 +189,15 @@ Act: 动作（读写改）
 
 ## 3.5 总结
 
-功能比较简单，但基本够用。以后慢慢完善
+虽然功能比较简单，但基本够用。 以后会慢慢完善。
 
-## 3.6 开发过程遇到的坑和一些感悟
+# 4. 开发过程遇到的坑和一些感悟
 
 1. 服务器框架从axum到salvo的原因
 
-Axum比较流行，刚开始是用axum。
+刚开始我选择了比较流行的Axum。 但是，在开发过程中，我想接入Swagger UI方便调试。 Axum没有内部集成Swagger UI，需要单独接入utoipa。 这就导致我需要为每一个接口重新写一份utoipa的定义。
 
-但是呢，开发过程中我想接入swagger-ui方便调试。
-
-axum这个框架没有内部集成swagger-ui。需要单独接入utoipa。
-
-这就导致了，我要为每一个接口重新写一份utoipa的定义，类似如下面这种
+类似如下面这种
 
 ```yaml
 #[utoipa::path(
@@ -234,11 +216,7 @@ pub async fn add(
 }
 ```
 
-我不想写重复的东西。有点恶心。
-
-于是我找到了salvo，这个国人开发的框架。他内部集成了swagger-ui。
-
-于是代码就简化了，如下，很干净。
+我不想写重复的东西，感觉很麻烦。 于是我找到了Salvo，这个国人开发的框架。 它内部集成了Swagger UI，代码变得简洁多了。
 
 ```yaml
 #[endpoint(security(["bearer" = []]))] 
@@ -254,9 +232,9 @@ pub async fn add(
 
 1. Rust 自定义宏的灵活性和烦恼
 
-rust的宏很强大，可以通过代码生成代码。但是宏用的太多了，也会有很多困扰。
+Rust的宏很强大，可以通过代码生成代码。 但是，宏用得太多了也会有很多困扰，因为你不清楚最终生成的代码是什么，排查错误时很不方便。
 
-因为你不清楚最终生成的代码是啥。
+# 5. 结尾
 
-排查错误时很不方便。
+总而言之，这次开发经历让我收获了很多。大家如果觉得这个系统对你有用，可以提建议。
 
