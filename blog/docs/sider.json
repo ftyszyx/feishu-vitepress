@@ -352,10 +352,6 @@
             "text": "comfy_ui"
           },
           {
-            "text": "Cursor",
-            "link": "/TqEidTsTnoApB8xtQT6csl2jnlb"
-          },
-          {
             "text": "Ai 创作",
             "link": "/P69wdMnkhoGWz1xYuoLc4jbDn0g"
           },
@@ -372,6 +368,10 @@
       },
       {
         "text": "next.js"
+      },
+      {
+        "text": "Cursor",
+        "link": "/TqEidTsTnoApB8xtQT6csl2jnlb"
       },
       {
         "text": "Math",
@@ -453,6 +453,10 @@
       },
       {
         "text": "Sql-数据库"
+      },
+      {
+        "text": "Lua",
+        "link": "/SzlSdZNaCo73sexcxJ0c0rvPnPf"
       }
     ],
     "collapsed": true
@@ -460,10 +464,6 @@
   {
     "text": "生活",
     "items": [
-      {
-        "text": "产品想法",
-        "link": "/LJXidNaYwotGyOxHBN8cN4fCnOf"
-      },
       {
         "text": "有用的东西收集",
         "link": "/S2SpdPpu5o4aWNxysuJcKO8Rnoe",
@@ -486,10 +486,6 @@
       {
         "text": "Book",
         "link": "/PFU1dGvQ0o7UAyx0nFMcECDMn7f"
-      },
-      {
-        "text": "ai产品",
-        "link": "/R9Ald5nLzoR9VzxCzhfceuEKnrb"
       },
       {
         "text": "remote工作",
@@ -893,6 +889,10 @@
           {
             "text": "近视",
             "link": "/VBCLdQKu8o62agx2xLscDycMnLc"
+          },
+          {
+            "text": "2025-10-13 ",
+            "link": "/TStHdnMO0oA8MRxL3OicxAVnnwe"
           }
         ],
         "collapsed": true
