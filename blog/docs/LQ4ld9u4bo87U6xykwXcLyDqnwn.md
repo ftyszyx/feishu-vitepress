@@ -1,6 +1,6 @@
 ---
 create_time: 1754703297
-edit_time: 1758201397
+edit_time: 1761530598
 title: 可转债抢配额
 categories:
   - financing
@@ -52,4 +52,32 @@ categories:
 公布可转债当天买入，第二天卖出，好的话，可以有5个点的收入
 
 ## 2.2 结果
+
+正股：34.25买入，34.15卖出，亏100.（卖早了，后面涨到了62.热门的股票在炒作的市场中买了就是赚）
+
+转债：20张，涨了68%，赚1300
+
+# 3. 其它
+
+<table>
+<colgroup>
+<col width="100"/>
+<col width="100"/>
+<col width="100"/>
+<col width="168"/>
+<col width="54"/>
+<col width="54"/>
+<col width="54"/>
+<col width="54"/>
+<col width="100"/>
+</colgroup>
+<tbody>
+<tr><td><p>股票</p></td><td><p>时间</p></td><td><p>正股买入</p></td><td><p>正股卖出</p></td><td><p>正股盈亏</p></td><td><p>转债数量</p></td><td><p>转债卖出</p></td><td><p>转债盈亏</p></td><td><p>总盈亏</p></td></tr>
+<tr><td><p>凯众股份</p></td><td><p>2025-8-13</p></td><td><p>12.9</p></td><td><p>12.94（后面最高到了15）</p></td><td><p>24</p></td><td><p>10</p></td><td><p>51.9%</p></td><td><p>519</p></td><td><p>520</p></td></tr>
+<tr><td><p>金达威</p></td><td><p>2025-8-18</p></td><td><p>19.64</p></td><td><p>19.7（后面最高到了22）</p></td><td><p>82</p></td><td><p>32</p></td><td><p>36.7%</p></td><td><p>1175</p></td><td><p>1200</p></td></tr>
+<tr><td><p>微导纳米</p></td><td><p>2025-8-7</p></td><td><p>34.25</p></td><td><p>34.15（后面最高到了62）</p></td><td><p>-100</p></td><td><p>20</p></td><td><p>68%</p></td><td><p>1360</p></td><td><p>1260</p></td></tr>
+<tr><td><p>福能股份</p></td><td><p>2025-10-9</p></td><td><p>10.2</p></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
 
