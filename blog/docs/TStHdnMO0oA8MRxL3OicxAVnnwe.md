@@ -1,7 +1,7 @@
 ---
 create_time: 1760320630
-edit_time: 1760321413
-title: '2025-10-13 '
+edit_time: 1762220026
+title: 2025-10-13 打工没前途，我们只是工具人
 categories:
   - other_platform
 ---
