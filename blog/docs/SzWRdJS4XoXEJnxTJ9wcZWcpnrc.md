@@ -1,7 +1,7 @@
 ---
 cover: /assets/BiRbbaljGo56V9xC73OcLUU2n2f.jpeg
 create_time: 1762220071
-edit_time: 1762221300
+edit_time: 1762221539
 title: 一个小程序-放学状态管理
 categories:
   - product
@@ -33,4 +33,12 @@ categories:
 可以修改班级状态，会实时更新到大屏
 
 # 2. 大屏端
+
+https://adminschool.bytefuse.cn/screen/1
+
+<img src="/assets/C9B7bNGlMoECXIxpaxxc7g7CnWk.png" src-width="1528" class="markdown-img m-auto" src-height="642" align="center"/>
+
+修改状态后
+
+<img src="/assets/Z44fbAmkco97GFxx9Y7cELhsnrc.png" src-width="1528" class="markdown-img m-auto" src-height="676" align="center"/>
 
