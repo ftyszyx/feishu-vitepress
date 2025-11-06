@@ -465,6 +465,17 @@
       {
         "text": "Postgresql",
         "link": "/LT31dyqgPollU1xC5aGcCaDPnLf"
+      },
+      {
+        "text": "试用",
+        "link": "/SEbcdQLgkom6pgxLxC9cxNYanPe",
+        "items": [
+          {
+            "text": "bettafish",
+            "link": "/TfeJdA6zhoMTfXxQvYFcM6U2nWg"
+          }
+        ],
+        "collapsed": true
       }
     ],
     "collapsed": true
@@ -721,6 +732,10 @@
           {
             "text": "新浪微博备份工具推荐",
             "link": "/AUGqdt7yloCouaxloDMc8lo6nxd"
+          },
+          {
+            "text": "webcloner-告别截图！WebCloner全新微博备份方案，长微博、高清图一个都不少",
+            "link": "/Y47ddCotxoBaVzxM0qcc1yFSnth"
           },
           {
             "text": "介绍图片"

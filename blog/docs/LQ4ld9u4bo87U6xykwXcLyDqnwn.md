@@ -1,6 +1,6 @@
 ---
 create_time: 1754703297
-edit_time: 1761885648
+edit_time: 1762393595
 title: 可转债抢配额
 categories:
   - financing
@@ -76,7 +76,7 @@ categories:
 <tr><td><p>凯众股份</p></td><td><p>2025-8-13</p></td><td><p>12.9</p></td><td><p>12.94（后面最高到了15）</p></td><td><p>24</p></td><td><p>10</p></td><td><p>51.9%</p></td><td><p>519</p></td><td><p>520</p></td></tr>
 <tr><td><p>金达威</p></td><td><p>2025-8-18</p></td><td><p>19.64</p></td><td><p>19.7（后面最高到了22）</p></td><td><p>82</p></td><td><p>32</p></td><td><p>36.7%</p></td><td><p>1175</p></td><td><p>1200</p></td></tr>
 <tr><td><p>微导纳米</p></td><td><p>2025-8-7</p></td><td><p>34.25</p></td><td><p>34.15（后面最高到了62）</p></td><td><p>-100</p></td><td><p>20</p></td><td><p>68%</p></td><td><p>1360</p></td><td><p>1260</p></td></tr>
-<tr><td><p>福能股份</p></td><td><p>2025-10-9</p></td><td><p>10.2</p></td><td></td><td></td><td><p>4</p></td><td><p>40%</p></td><td><p>1700</p></td><td></td></tr>
+<tr><td><p>福能股份</p></td><td><p>2025-10-9</p></td><td><p>10.2</p></td><td><p>10.8</p></td><td><p>1700</p></td><td><p>4</p></td><td><p>40%</p></td><td><p>1700</p></td><td><p> 3400</p></td></tr>
 <tr><td><p>锦浪科技</p></td><td><p>2025-10-15</p></td><td><p>79.4</p></td><td><p>79.7</p></td><td><p>80</p></td><td><p>13</p></td><td></td><td></td><td></td></tr>
 <tr><td><p>利柏特</p></td><td><p>2025-7-1</p></td><td><p>12.34</p></td><td></td><td></td><td><p>30</p></td><td><p>28%</p></td><td><p>863</p></td><td></td></tr>
 <tr><td><p>中国广核</p></td><td><p>2025-7-9</p></td><td><p>3.7</p></td><td><p>3.71（最高到了4.1）</p></td><td><p>50</p></td><td><p>10</p></td><td><p>29%</p></td><td><p>294</p></td><td><p>350</p></td></tr>
