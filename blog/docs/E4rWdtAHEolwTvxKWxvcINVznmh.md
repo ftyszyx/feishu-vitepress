@@ -12,7 +12,7 @@ keywords:
   - 图片
 cover: /assets/XILkbE9IcoMzzuxkUnFcFh6ln6g.jpeg
 create_time: 1761140734
-edit_time: 1761402195
+edit_time: 1764061253
 title: WebCloner一键备份小红书账号
 categories:
   - product
@@ -45,6 +45,8 @@ WebCloner一键备份小红书账号
 <img src="/assets/CzFSb8CAFoklAJx3pEAcNQjSnSc.png" src-width="690" class="markdown-img m-auto" src-height="534" align="center"/>
 
 填写账号信息，然后点击“登录账号”按钮，登录小红书账号，并保存Cookie。
+
+ **注意：一定是要在软件弹出的浏览器登录你的账号。登录后，再保存cookie.**
 
 # 2.  **创建备份任务**
 

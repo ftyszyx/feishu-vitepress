@@ -12,7 +12,7 @@ keywords:
   - 图片
 cover: /assets/FSEtbOaPFom0kkxn62GcTJK8n7e.jpeg
 create_time: 1760960677
-edit_time: 1761402311
+edit_time: 1764061242
 title: WebCloner一键备份抖音
 categories:
   - product
@@ -38,6 +38,8 @@ categories:
 <img src="/assets/B8TobQYO9oEWU7xtkpFcwuPFn7d.png" src-width="445" class="markdown-img m-auto" src-height="290" align="center"/>
 
 ## 1.2 登录后保存cookie
+
+ **注意：一定是要在软件弹出的浏览器登录你的账号。登录后，再保存cookie.**
 
 <img src="/assets/WDdCbOOAPo4UyXxc7h4cG2I8njf.png" src-width="1264" class="markdown-img m-auto" src-height="100" align="center"/>
 
