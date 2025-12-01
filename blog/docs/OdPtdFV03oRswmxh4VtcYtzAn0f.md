@@ -1,6 +1,6 @@
 ---
 create_time: 1763344036
-edit_time: 1763374001
+edit_time: 1764555542
 title: Coze
 categories:
   - skill
@@ -35,4 +35,8 @@ docker compose -f ./docker/docker-compose.yml up
 base_url: ""         # 默认为https://ark.cn-beijing.volces.com/api/v3/，若使用Byteplus ModelArk，请指定为https://ark.ap-southeast.bytepluses.com/api/v3/api_key: "*727e****" # 方舟模型 API Key，中国境内用户参考火山方舟文档 https://www.volcengine.com/docs/82379/1541594；非中国境内的用户可参考 BytePlus ModelArk 文档 https://docs.byteplus.com/en/docs/ModelArk/1361424?
 utm_source=github&utm_medium=readme&utm_campaign=coze_open_sourcemodel: "ep-****"     # 方舟模型Endpoint ID，中国境内用户参考火山方舟文档 https://www.volcengine.com/docs/82379/1099522；非中国境内的用户可参考 BytePlus ModelArk 文档 https://docs.byteplus.com/en/docs/ModelArk/model_id?utm_source=github&utm_medium=readme&utm_campaign=coze_open_sourceparam_config:
 ```
+
+# 3. coze剪视频
+
+剪映小助手https://jy.0x0.chat/docs/getting-started/plugin-config
 

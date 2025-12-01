@@ -5,7 +5,7 @@ keywords:
   - 备份
 cover: /assets/I4SUb1vX2oHqlpxYqIscGucWnCe.png
 create_time: 1760533514
-edit_time: 1760623364
+edit_time: 1764554030
 title: wincloner-使用说明
 categories:
   - product
@@ -50,7 +50,7 @@ categories:
 
 <img src="/assets/FmK8bGoMUo61kOxXSh1cH1shntb.png" src-width="1224" class="markdown-img m-auto" src-height="855" align="center"/>
 
-点击对应平台的登录按钮，登录你的账号，然后点击程序中的“保存Cookies”按钮。
+点击对应平台的登录按钮，登录你的账号（需要确认账号在软件内的浏览器成功登录），然后点击程序中的“保存Cookies”按钮。
 
 <img src="/assets/FA2rbLeFCoo8WYxSAIOcKFuGnxf.png" src-width="843" class="markdown-img m-auto" src-height="298" align="center"/>
 
