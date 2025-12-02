@@ -1,6 +1,6 @@
 ---
 create_time: 1763344036
-edit_time: 1764555542
+edit_time: 1764599971
 title: Coze
 categories:
   - skill
@@ -39,4 +39,22 @@ utm_source=github&utm_medium=readme&utm_campaign=coze_open_sourcemodel: "ep-****
 # 3. coze剪视频
 
 剪映小助手https://jy.0x0.chat/docs/getting-started/plugin-config
+
+https://www.cozeos.com/
+
+参考这个教程：
+
+https://www.cnblogs.com/lucky_hu/p/18954862
+
+https://zhuanlan.zhihu.com/p/1934746452837528680
+
+https://gitee.com/cozeworkflow/free
+
+https://zhuanlan.zhihu.com/p/1912552068251629122
+
+https://www.coze.cn/store/agent/7481998481742479360?bot_id=true&bid=6ib8hv3gg9g00
+
+一些工作流
+
+https://www.yuque.com/codel-hg8x5/wkykdm/qhziqzhb6cvmv9gv
 
