@@ -1,6 +1,6 @@
 ---
 create_time: 1763344036
-edit_time: 1764754482
+edit_time: 1765712967
 title: Coze
 categories:
   - skill
@@ -230,4 +230,10 @@ text生成背景音乐
 1.  **生成式 AI（Text-to-Music）：** AI 根据你的文本描述，从零开始创作一段全新的音乐。
 2.  **AI 搜索匹配（AI-Powered Search）：** AI 理解你的文本，然后在现有的庞大版权音乐库中检索最匹配的曲目。
 3.  **AI 辅助提示词（LLM + Search）：** 先用 ChatGPT 等大模型分析文本，提取音乐关键词，再用于传统搜索。
+
+# 5. 剪映草稿
+
+[draft_content.json](/assets/GWbGbDLKvoqLgVxj6CzcAnaAnjg.json)
+
+[draft_meta_info.json](/assets/TB7tbK8WQoRZlOxFyYEc2ptWnDf.json)
 
