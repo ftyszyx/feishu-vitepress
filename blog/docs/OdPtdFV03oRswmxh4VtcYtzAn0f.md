@@ -1,6 +1,6 @@
 ---
 create_time: 1763344036
-edit_time: 1765712967
+edit_time: 1765984549
 title: Coze
 categories:
   - skill
@@ -236,4 +236,22 @@ text生成背景音乐
 [draft_content.json](/assets/GWbGbDLKvoqLgVxj6CzcAnaAnjg.json)
 
 [draft_meta_info.json](/assets/TB7tbK8WQoRZlOxFyYEc2ptWnDf.json)
+
+# 6. Coze的使用体验
+
+1. 如果失败，不能从失败点继续执行，只能从头开始
+
+<img src="/assets/WmOfb6CZVoeWhzxo3wxc9EAMnN8.png" src-width="2297" class="markdown-img m-auto" src-height="1923" align="center"/>
+
+1. Code 执行错误，没有错误行号
+
+<img src="/assets/KQHJbIbbEoEDOFxq3i8cXUSVnxh.png" src-width="805" class="markdown-img m-auto" src-height="1085" align="center"/>
+
+3.自制插件，如果是用字节的服务器，无法使用数据库。
+
+数据不能持久化
+
+1. 调用大模型经常的异常，不可靠
+
+<img src="/assets/FvYbbgCevoxGnOxbv5DcBs8ZnMb.png" src-width="485" class="markdown-img m-auto" src-height="596" align="center"/>
 
