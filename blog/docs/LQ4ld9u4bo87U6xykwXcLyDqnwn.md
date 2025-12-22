@@ -1,6 +1,6 @@
 ---
 create_time: 1754703297
-edit_time: 1763695881
+edit_time: 1766368131
 title: 可转债抢配额
 categories:
   - financing
@@ -65,7 +65,7 @@ categories:
 <col width="100"/>
 <col width="100"/>
 <col width="168"/>
-<col width="54"/>
+<col width="66"/>
 <col width="54"/>
 <col width="54"/>
 <col width="54"/>
@@ -78,8 +78,9 @@ categories:
 <tr><td><p>微导纳米</p></td><td><p>2025-8-7</p></td><td><p>34.25</p></td><td><p>34.15（后面最高到了62）</p></td><td><p>-100</p></td><td><p>20</p></td><td><p>68%</p></td><td><p>1360</p></td><td><p>1260</p></td></tr>
 <tr><td><p>福能股份</p></td><td><p>2025-10-9</p></td><td><p>10.2</p></td><td><p>10.8</p></td><td><p>1700</p></td><td><p>4</p></td><td><p>40%</p></td><td><p>1700</p></td><td><p> 3400</p></td></tr>
 <tr><td><p>锦浪科技</p></td><td><p>2025-10-15</p></td><td><p>79.4</p></td><td><p>79.7</p></td><td><p>80</p></td><td><p>13</p></td><td><p>46%</p></td><td><p>600</p></td><td><p>670</p></td></tr>
-<tr><td><p>利柏特</p></td><td><p>2025-7-1</p></td><td><p>12.34</p></td><td></td><td></td><td><p>30</p></td><td><p>28%</p></td><td><p>863</p></td><td></td></tr>
+<tr><td><p>利柏特</p></td><td><p>2025-7-1</p></td><td><p>12.34</p></td><td><p>12.5</p></td><td><p>2100</p></td><td><p>30</p></td><td><p>28%</p></td><td><p>863</p></td><td><p>3000</p></td></tr>
 <tr><td><p>中国广核</p></td><td><p>2025-7-9</p></td><td><p>3.7</p></td><td><p>3.71（最高到了4.1）</p></td><td><p>50</p></td><td><p>10</p></td><td><p>29%</p></td><td><p>294</p></td><td><p>350</p></td></tr>
+<tr><td><p>茂莱光学</p></td><td><p>2025-11-19</p></td><td><p>362</p></td><td><p>336</p></td><td><p>-5200</p></td><td><p>20</p></td><td><p>70%</p></td><td><p>1400</p></td><td><p>-3800</p></td></tr>
 <tr><td><p>汇总</p></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
 </tbody>
 </table>
