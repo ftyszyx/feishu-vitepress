@@ -1,6 +1,6 @@
 ---
 create_time: 1766658533
-edit_time: 1766744820
+edit_time: 1766802964
 title: n8n
 categories:
   - skill
@@ -33,7 +33,9 @@ npm i n8n-nodes-nodeName
 
 # 2. 使用feishu node
 
-先去https://open.feishu.cn/创建一个应用
+https://www.npmjs.com/package/n8n-nodes-feishu-lite
+
+## 2.1 先去https://open.feishu.cn/创建一个应用
 
 <img src="/assets/GtBhbpFoWo0RrNxo3okcysvln2b.png" src-width="850" class="markdown-img m-auto" src-height="507" align="center"/>
 
@@ -51,6 +53,14 @@ npm i n8n-nodes-nodeName
 
 <img src="/assets/NwBxbMnlmourPbx3u0HcrstQnwh.png" src-width="587" class="markdown-img m-auto" src-height="339" align="center"/>
 
+## 2.2 配置好参数
+
+<img src="/assets/KvoqbBbfOo67FZxtVebccLBjnJH.png" src-width="267" class="markdown-img m-auto" src-height="169" align="center"/>
+
+<img src="/assets/KC2dbh88DoqaeLxpcEqcnyqEnFb.png" src-width="403" class="markdown-img m-auto" src-height="358" align="center"/>
+
+<img src="/assets/Xcpjb9nFWoiMKVxsJHqcQRr3nn7.png" src-width="929" class="markdown-img m-auto" src-height="368" align="center"/>
+
 # 3. 测试1
 
  https://github.com/dpxy88888/n8n-workflows/blob/main/github%E8%87%AA%E5%8A%A8%E5%8F%91%E5%B8%83%E5%85%AC%E4%BC%97%E5%8F%B7
@@ -60,8 +70,6 @@ npm i n8n-nodes-nodeName
 Feishu node
 
 https://community.n8n.io/t/custom-feishu-node/78169
-
-https://www.npmjs.com/package/n8n-nodes-feishu-lite
 
 <img src="/assets/DJ3pbkDaToxs0Lx6heKcIM0anBf.png" src-width="609" class="markdown-img m-auto" src-height="380" align="center"/>
 
