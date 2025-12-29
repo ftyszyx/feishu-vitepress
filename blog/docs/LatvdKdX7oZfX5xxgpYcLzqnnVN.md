@@ -1,6 +1,6 @@
 ---
 create_time: 1766658533
-edit_time: 1766802964
+edit_time: 1766934384
 title: n8n
 categories:
   - skill
@@ -61,7 +61,15 @@ https://www.npmjs.com/package/n8n-nodes-feishu-lite
 
 <img src="/assets/Xcpjb9nFWoiMKVxsJHqcQRr3nn7.png" src-width="929" class="markdown-img m-auto" src-height="368" align="center"/>
 
-# 3. 测试1
+# 3. 公众号节点
+
+https://github.com/other-blowsnow/n8n-nodes-wechat-offiaccount
+
+# 4. 小红书
+
+https://www.npmjs.com/package/@donney521/n8n-nodes-xiaohongshu
+
+# 5. 测试1
 
  https://github.com/dpxy88888/n8n-workflows/blob/main/github%E8%87%AA%E5%8A%A8%E5%8F%91%E5%B8%83%E5%85%AC%E4%BC%97%E5%8F%B7
 
