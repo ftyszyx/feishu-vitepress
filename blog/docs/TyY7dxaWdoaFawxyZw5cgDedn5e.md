@@ -1,6 +1,6 @@
 ---
 create_time: 1677551024
-edit_time: 1753414276
+edit_time: 1767171996
 title: Rust
 categories:
   - skill
@@ -894,7 +894,7 @@ fn main() {
 }
 ```
 
-# 11. seaorm
+## 10.3 seaorm
 
 两个表：user和invit
 
@@ -905,4 +905,22 @@ user表{id}
 需要查询出userinfo{userid,invite_count}
 
 如何使用sea_orm写
+
+# 11. 遇到的一些问题
+
+## 11.1 rustfmt
+
+如果发现vscode中无法自动格式 化rust代码，
+
+可以检查 一下rustfmt有没有安装 
+
+```py
+cargo fmt
+```
+
+如果没有安装
+
+```py
+rustup component add rustfmt
+```
 
