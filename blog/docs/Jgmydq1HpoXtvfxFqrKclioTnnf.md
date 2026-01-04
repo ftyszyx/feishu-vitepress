@@ -5,7 +5,7 @@ keywords:
   - 备份
 cover: /assets/W2OsbYB5OoQdI7xY0oTcVrx7ned.jpeg
 create_time: 1756950318
-edit_time: 1767329855
+edit_time: 1767419738
 title: webcloner功能演示-新浪博客备份
 categories:
   - product
@@ -106,9 +106,6 @@ https://blog.sina.com.cn/s/blog_4cf8b3390100xomz.html
 
 <img src="/assets/AsCibIIQFooew3x38KfcxQ0tnLe.png" src-width="1122" class="markdown-img m-auto" src-height="306" align="center"/>
 
-### 1.1.10 网页效果 
-
-链接: https://pan.baidu.com/s/1-nfdOTdvSSusVykuT7NQzw?pwd=tduw 提取码: tduw 
-
+### 1.1.10 
  
 

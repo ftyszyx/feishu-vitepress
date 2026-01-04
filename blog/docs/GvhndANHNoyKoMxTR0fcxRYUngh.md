@@ -4,7 +4,7 @@ keywords:
   - 新浪微博
   - 备份
 create_time: 1757294226
-edit_time: 1757605779
+edit_time: 1767419757
 title: webcloner功能演示-备份我的新浪微博
 categories:
   - product
@@ -97,11 +97,7 @@ https://github.com/gildas-lormeau/SingleFile/issues/440
 
 <img src="/assets/LWqcbgQ1QonlDCxi2nhcOzORnVh.png" src-width="461" class="markdown-img m-auto" src-height="559" align="center"/>
 
-# 4. 效果
+# 4. 网页效果  
 
-图片和mhtml都生成出来了，效果挺好。
-
-<img src="/assets/PeDubfKAaosX3ZxNQ34c4nG6nkf.png" src-width="1061" class="markdown-img m-auto" src-height="156" align="center"/>
-
-<img src="/assets/WbA0b2dfioLcTwxYJiZcwDVpnyd.png" src-width="1175" class="markdown-img m-auto" src-height="648" align="center"/>
+链接: https://pan.baidu.com/s/1H5plumuuYbOr3F5j8rm2mQ?pwd=mvp6 提取码: mvp6  
 
