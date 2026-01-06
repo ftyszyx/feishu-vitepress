@@ -8,7 +8,7 @@ keywords:
   - qinglong
   - 国内自动部署
 create_time: 1715004884
-edit_time: 1715046546
+edit_time: 1767620550
 categories:
   - product
 ---
@@ -42,11 +42,7 @@ Github 有接口：[地址](https://docs.github.com/en/rest/releases/releases?ap
 
 我写了一个脚本：[地址](https://github.com/ftyszyx/qinglong)
 
-本来想手写crontab定时任务，之前我也是这么干的。最近我发现有一个qinglong的系统，做了一套gui来管理系统的crontab。
-
-所以我就尝试用qinglong做这个事。
-
-具体参考项目https://github.com/ftyszyx/qinglong
+本来想手写crontab定时任务，之前我也是这么干的。最近我发现有一个qinglong的系统，做了一套gui来管理系统的crontab。 
 
 ## 3.3 ngnix服务
 

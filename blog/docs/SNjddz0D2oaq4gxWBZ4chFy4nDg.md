@@ -5,13 +5,13 @@ keywords:
   - vitepress
   - 个人博客
 create_time: 1714040918
-edit_time: 1714207791
+edit_time: 1767620580
 categories:
   - product
 ---
 
 
-# 1. 点击统计umami
+# 1. 点击统计umami[不用了，太消耗资源]
 
 [umami](https://github.com/ftyszyx/umami)主要功能是统计网站的访问数据 ，这个系统ui设计美观，功能精简，非常不错。
 

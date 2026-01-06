@@ -1,6 +1,6 @@
 ---
 create_time: 1767442394
-edit_time: 1767579591
+edit_time: 1767587660
 title: web反编译
 categories:
   - skill
@@ -16,6 +16,8 @@ categories:
 https://github.com/selfshore/YSbrowser
 
 # 2. js反混淆
+
+https://astexplorer.net/
 
 https://github.com/kuizuo/js-deobfuscator?tab=readme-ov-file
 

@@ -679,14 +679,7 @@
       },
       {
         "text": "注册码管理平台，让你轻松管理软件授权！",
-        "link": "/Az6dd7PeSomasjxtphxchUqxnOg",
-        "items": [
-          {
-            "text": "卡密",
-            "link": "/DHQpdMTGlo9ndUxLFUlcs6ucnDd"
-          }
-        ],
-        "collapsed": true
+        "link": "/Az6dd7PeSomasjxtphxchUqxnOg"
       },
       {
         "text": "Todos"
@@ -1019,8 +1012,7 @@
     "text": "乐怡日志",
     "items": [
       {
-        "text": "家长会",
-        "link": "/AEEIdNy0UocXUKxpBANcS9MUnSh"
+        "text": "家长会"
       }
     ],
     "collapsed": true
