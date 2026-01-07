@@ -1,7 +1,7 @@
 ---
 cover: /assets/BiRbbaljGo56V9xC73OcLUU2n2f.jpeg
 create_time: 1762220071
-edit_time: 1767621826
+edit_time: 1767667968
 title: 一个小程序-放学状态管理
 categories:
   - product
@@ -42,25 +42,4 @@ https://adminschool.bytefuse.cn/screen/1
 
 <img src="/assets/Z44fbAmkco97GFxx9Y7cELhsnrc.png" src-width="1528" class="markdown-img m-auto" src-height="676" align="center"/>
 
-# 3. 修改记录
-
-## 3.1 处理小程序token过期后，进入页面异常的问题
-
-token过期后，没有重新请求数据，导致异常
-
-增加请求时token异常判断
-
-## 3.2 小程序可以修改学校的名字
-
-<img src="/assets/J65Tb32VUolB5vxZY22cpyv0nSb.png" src-width="389" class="markdown-img m-auto" src-height="228" align="center"/>
-
-<img src="/assets/OLsrbfdrgoff7IxgVwScFhPYndV.png" src-width="313" class="markdown-img m-auto" src-height="235" align="center"/>
-
-## 3.3 状态名可以自定义
-
-之前班级的状态名是固定的
-
-<img src="/assets/W9s8bJhnoo2xSzxbdjGcHtSvnye.png" src-width="332" class="markdown-img m-auto" src-height="31" align="center"/>
-
-现在可以在后台自定义
-
+# 3. 

@@ -58,7 +58,14 @@
           },
           {
             "text": "雪球",
-            "link": "/TJZMdcglOo0WTyxuk7mc9ZUznOh"
+            "link": "/TJZMdcglOo0WTyxuk7mc9ZUznOh",
+            "items": [
+              {
+                "text": "ast反混淆",
+                "link": "/VaKjdzlhxoS8cZxph2bcDZx1n80"
+              }
+            ],
+            "collapsed": true
           }
         ],
         "collapsed": true
@@ -369,13 +376,6 @@
           }
         ],
         "collapsed": true
-      },
-      {
-        "text": "nuxt.js",
-        "link": "/ZxLod3tQyo78aqxUqhAc5RUVnAd"
-      },
-      {
-        "text": "next.js"
       },
       {
         "text": "Cursor",
@@ -792,7 +792,14 @@
       },
       {
         "text": "一个小程序-放学状态管理",
-        "link": "/SzWRdJS4XoXEJnxTJ9wcZWcpnrc"
+        "link": "/SzWRdJS4XoXEJnxTJ9wcZWcpnrc",
+        "items": [
+          {
+            "text": "优化记录",
+            "link": "/V41udjRCoojUSdxCnulcwbNBncI"
+          }
+        ],
+        "collapsed": true
       },
       {
         "text": "淘宝"
