@@ -1,6 +1,6 @@
 ---
 create_time: 1767683507
-edit_time: 1767751256
+edit_time: 1767781751
 title: ast反混淆
 categories:
   - skill
@@ -144,6 +144,146 @@ const visitor = {
 - `referencePaths`：如果标识符被引用，则会存放所有引用该标识符节点的 Path 对象。
 
 ```js
-
+traverse.default(ast, {
+     **VariableDeclarator**(_path_) {
+        _// console.log(path.node.id.name)_
+        const binding = _path_.scope.getBinding(_path_.node.id.name)
+        if(!binding||binding.constantViolations.length>0) return
+        if (!binding.referenced) {
+            _path_.remove()
+        }
+        _// console.log(path.toString())_
+    }
+})
 ```
+
+### 1.2.4 删除冗余逻辑代码
+
+输入：
+
+```js
+const  **example** = function () {
+    let a;
+    if (false) {
+    } else {
+        if (1) {
+            a = 2;
+        }
+        else {
+            a = 3;
+        }
+    }
+    return a;
+};
+```
+
+解码
+
+```js
+traverse.default(ast, {
+     **enter**(_path_) {
+        if (types.isBooleanLiteral(_path_.node.test) || types.isNumericLiteral(_path_.node.test)) {
+            if(_path_.node.test.vale)
+            {
+                _path_.replaceInline(_path_.node.consequent.body);
+            }
+            else {
+                if (_path_.node.alternate) {
+                    _path_.replaceInline(_path_.node.alternate.body);
+                }
+                else {
+                    _path_.remove();
+                }
+            }
+        }
+    }
+})
+```
+
+### 1.2.5 switch-case处理
+
+输入
+
+```java
+const _0x34e16a = '3,4,0,5,1,2'['split'](',');
+let _0x2eff02 = 0x0;
+while (!![]) {
+    switch (_0x34e16a[_0x2eff02++]) {
+        case'0':
+            let _0x38cb15 = _0x4588f1 + _0x470e97;
+            continue;
+        case'1':
+            let _0x1e0e5e = _0x37b9f3[_0x50cee0(0x2e0, 0x2e8, 0x2e1, 0x2e4)];
+            continue;
+        case'2':
+            let _0x35d732 = [_0x388d4b(-0x134, -0x134, -0x139, -0x138)](_0x38cb15 >> _0x4588f1);
+            continue;
+        case'3':
+            let _0x4588f1 = 0x1;
+            continue;
+        case'4':
+            let _0x470e97 = 0x2;
+            continue;
+        case'5':
+            let _0x37b9f3 = 0x5 || _0x38cb15;
+            continue;
+    }
+    break;
+}
+```
+
+处理
+
+```ts
+const visitor = {
+    WhileStatement(path) {
+        // switch 节点
+        let switchNode = path.node.body.body[0];
+        // switch 语句内的控制流数组名，本例中是 _0x34e16a
+        let arrayName = switchNode.discriminant.object.name;
+        // 获得所有 while 前面的兄弟节点，本例中获取到的是声明两个变量的节点，即 const _0x34e16a 和 let _0x2eff02
+        let prevSiblings = path.getAllPrevSiblings();
+        // 定义缓存控制流数组
+        let array = []
+        // forEach 方法遍历所有节点
+        prevSiblings.forEach(pervNode => {
+            let {id, init} = pervNode.node.declarations[0];
+            // 如果节点 id.name 与 switch 语句内的控制流数组名相同
+            if (arrayName === id.name) {
+                // 获取节点整个表达式的参数、分割方法、分隔符
+                let object = init.callee.object.value;
+                let property = init.callee.property.value;
+                let argument = init.arguments[0].value;
+                // 模拟执行 '3,4,0,5,1,2'['split'](',') 语句
+                array = object[property](argument)
+                // 也可以直接取参数进行分割，方法不通用，比如分隔符换成 | 就不行了
+                // array = init.callee.object.value.split(',');
+            }
+            // 前面的兄弟节点就可以删除了
+            pervNode.remove();
+        });
+
+        // 储存正确顺序的控制流语句
+        let replace = [];
+        // 遍历控制流数组，按正确顺序取 case 内容
+        array.forEach(index => {
+                let consequent = switchNode.cases[index].consequent;
+                // 如果最后一个节点是 continue 语句，则删除 ContinueStatement 节点
+                if (types.isContinueStatement(consequent[consequent.length - 1])) {
+                    consequent.pop();
+                }
+                // concat 方法拼接多个数组，即正确顺序的 case 内容
+                replace = replace.concat(consequent);
+            }
+        );
+        // 替换整个 while 节点，两种方法都可以
+        path.replaceWithMultiple(replace);
+        // path.replaceInline(replace);
+    }
+}
+```
+
+## 1.3 测试
+
+[test.js](/assets/JuADbZYuPouWSmxwCGdcWZF1nld.false)
 
