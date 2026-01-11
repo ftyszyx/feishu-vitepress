@@ -1,6 +1,6 @@
 ---
 create_time: 1767418911
-edit_time: 1767428140
+edit_time: 1768024551
 title: webcloner-功能优化记录
 categories:
   - product
@@ -46,4 +46,14 @@ categories:
 这个页面是保存成一个mhtml
 
 <img src="/assets/RgpFblxHCok93qxkrWOca6Zxnjg.png" src-width="1128" class="markdown-img m-auto" src-height="308" align="center"/>
+
+## 1.4 处理部分微博不支持搜索采集的问题
+
+有些人的微博不支持搜索功能，如下，只能通过全部微博采集
+
+<img src="/assets/HfIDbHaXEoLfMOxEb1LckduSnuf.png" src-width="594" class="markdown-img m-auto" src-height="549" align="center"/>
+
+在页面中增加了开关，是否使用时间范围，关掉此选项即可。
+
+<img src="/assets/UHkLbz9y4o6MWUx28pCcZGXPnfb.png" src-width="454" class="markdown-img m-auto" src-height="517" align="center"/>
 

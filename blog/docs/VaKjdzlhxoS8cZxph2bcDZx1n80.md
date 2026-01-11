@@ -1,6 +1,6 @@
 ---
 create_time: 1767683507
-edit_time: 1767868531
+edit_time: 1768026804
 title: ast反混淆
 categories:
   - skill
@@ -10,6 +10,8 @@ categories:
 # 1. ast
 
 参考https://cloud.tencent.com/developer/article/1989490
+
+https://jht3qaq.github.io/2023/12/31/JavaScript%E6%B7%B7%E6%B7%86%E4%B8%8Ebabel%E9%80%86%E5%90%91/
 
 语法树，编译器通过词法分析和语法分析后得到的结构化数据
 
