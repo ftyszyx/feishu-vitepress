@@ -1,0 +1,10 @@
+{
+    "app_title": "网站克隆器",
+    "chrome_asset_url": "https://bytefuse.oss-cn-guangzhou.aliyuncs.com/res/chrome_win_142.0.7444.zip",
+    "chrome_version": "142.0.7444.0",
+    "app_version": "1.0.41",
+    "app_download_url": "https://bytefuse.oss-cn-guangzhou.aliyuncs.com/res/web_cloner_1.0.41_win_x64_20260112094617.exe",
+    "appcode_check_url": "http://14.103.252.130:30000/api/verify.php",
+    "appcode_check_key": "dedf24307ecdffac3b54a9d9482f2b5f",
+    "qq": "2246855973"
+}
