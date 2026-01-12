@@ -1,6 +1,6 @@
 ---
 create_time: 1767418911
-edit_time: 1768024551
+edit_time: 1768183019
 title: webcloner-功能优化记录
 categories:
   - product
@@ -56,4 +56,8 @@ categories:
 在页面中增加了开关，是否使用时间范围，关掉此选项即可。
 
 <img src="/assets/UHkLbz9y4o6MWUx28pCcZGXPnfb.png" src-width="454" class="markdown-img m-auto" src-height="517" align="center"/>
+
+## 1.5 增加雪球数据采集支持，并支持保存评论
+
+<img src="/assets/W9kNbVqx8oHGw8x62EicL0Qnn3e.png" src-width="654" class="markdown-img m-auto" src-height="634" align="center"/>
 

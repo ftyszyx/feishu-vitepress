@@ -54,11 +54,7 @@
           },
           {
             "text": "web反编译",
-            "link": "/NThMdcLlEouV1hxcLFKcQXvknvh"
-          },
-          {
-            "text": "雪球",
-            "link": "/TJZMdcglOo0WTyxuk7mc9ZUznOh",
+            "link": "/NThMdcLlEouV1hxcLFKcQXvknvh",
             "items": [
               {
                 "text": "ast反混淆",
@@ -765,6 +761,10 @@
               {
                 "text": "webcloner网站克隆器介绍",
                 "link": "/M2XYdbunIouhGsxxNOkcfdiGnvh"
+              },
+              {
+                "text": "雪球记录",
+                "link": "/TJZMdcglOo0WTyxuk7mc9ZUznOh"
               }
             ],
             "collapsed": true

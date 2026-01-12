@@ -1,6 +1,6 @@
 ---
 create_time: 1767683507
-edit_time: 1768026804
+edit_time: 1768183287
 title: ast反混淆
 categories:
   - skill
@@ -284,8 +284,4 @@ const visitor = {
     }
 }
 ```
-
-## 1.3 测试
-
-[test.js](/assets/JuADbZYuPouWSmxwCGdcWZF1nld.false)
 

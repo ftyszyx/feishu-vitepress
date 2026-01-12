@@ -1,9 +1,9 @@
 ---
 create_time: 1767536019
-edit_time: 1768055652
-title: 雪球
+edit_time: 1768183585
+title: 雪球记录
 categories:
-  - skill
+  - product
 ---
 
 
@@ -39,26 +39,26 @@ f5加载时断到上面位置，再替换p0.text
 
 <img src="/assets/W9yHbXWNzoULB9xhP2fcspmEnCg.png" src-width="2188" class="markdown-img m-auto" src-height="659" align="center"/>
 
-断进来
+# 2. 如何生成md5_1038
 
-<img src="/assets/RoN0b9vxeo9Mtsxs0gFcMj9dngh.png" src-width="2502" class="markdown-img m-auto" src-height="1570" align="center"/>
+鉴于这个加密逻辑很复杂，不想研究了。
 
-<img src="/assets/B0cIbIxwJowdidxb0Fzcsj7Pn9X.png" src-width="2682" class="markdown-img m-auto" src-height="1225" align="center"/>
+直接将代码修改后注入到puppter内，然后将暴露加密函数
+
+<img src="/assets/V5ETbGbogogIVoxnmnbcSqO4nwh.png" src-width="512" class="markdown-img m-auto" src-height="217" align="center"/>
+
+自己写一个对外接口，请求数据
 
 ```js
-function getRenderData() {
-                var dataTag = document.getElementById('renderData');
-                var renderData = dataTag.innerHTML;
-                return renderData
-            }
-            ;var renderData = JSON.parse(getRenderData());
-            window._waf_bd8ce2ce37 = renderData._waf_bd8ce2ce37;
-            window._waf_a86dfdc5f2 = new Date().getTime()
+async function getComment(url){
+    var host = "xueqiu.com";
+    var md5 = window.mycode(url);
+    var fullUrl = "https://" + host + url + "&md5__1038=" + md5;
+    console.log("fullurl",fullUrl)
+    var response = await fetch(fullUrl, { credentials: 'include' });
+    var text = await response.text();
+    return text;
+}
+window.getComment = getComment;
 ```
-
-New:
-
-[input.js](/assets/FpcGbRUAKoTVABxV9qXcoiJkntf.false)
-
-[ast.js](/assets/ESWSbHRE0osH1OxuijscyRFpn7x.false)
 
