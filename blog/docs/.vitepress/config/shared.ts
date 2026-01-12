@@ -1,7 +1,7 @@
 import { createContentLoader, defineConfig, HeadConfig } from "vitepress";
-import path from "path";
-import fs from "fs";
-import { get_uami_id_by_host, SiteConfig } from "../theme/site_config";
+import * as path from "path";
+import * as fs from "fs";
+import { SiteConfig } from "../theme/site_config";
 
 const base_url = process.env.BASE_URL || "/";
 console.log("get env", process.env.HOST_NAME, process.env.BASE_URL);
@@ -15,13 +15,6 @@ export const shared = defineConfig({
   ignoreDeadLinks: true,
   base: base_url,
   head: [
-    [
-      "script",
-      {
-        src: SiteConfig.umami_script || "",
-        "data-website-id": get_uami_id_by_host(host_name) || "",
-      },
-    ],
     [
       "meta",
       {
@@ -54,7 +47,7 @@ export const shared = defineConfig({
     ],
   ],
   buildEnd: async (siteconfig) => {
-    const coverurls: string[] = await createContentLoader("/*.md", {
+    await createContentLoader("/*.md", {
       excerpt: true,
       includeSrc: false,
       render: false,
@@ -95,14 +88,14 @@ export const shared = defineConfig({
     //copy all asset file to dist
     const assetsrcpath = path.join(siteconfig.root, siteconfig.assetsDir);
     const items = fs.readdirSync(assetsrcpath, { withFileTypes: true });
-    items.forEach((item) => {
+    items.forEach((item: fs.Dirent) => {
       const srcpath = path.join(assetsrcpath, item.name);
       const destpath = path.join(
         siteconfig.outDir,
         siteconfig.assetsDir,
         item.name,
       );
-      if (item.isFile) {
+      if (item.isFile()) {
         // console.log("copy file", srcpath, destpath);
         fs.copyFileSync(srcpath, destpath);
       }
@@ -114,7 +107,7 @@ export const shared = defineConfig({
     image: {
       lazyLoading: true,
     },
-    config: (md) => {},
+    config: (_md) => {},
   },
   transformHead: ({ pageData }) => {
     const head: HeadConfig[] = [];

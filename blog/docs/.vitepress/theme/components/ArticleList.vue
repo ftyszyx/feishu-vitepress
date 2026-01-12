@@ -7,7 +7,8 @@ import { useCurrentCategoryKey, useCurrentPageKey } from "../configProvider";
 import ArticleCard from "./ArticleCard.vue";
 import { Post } from "../type_def.js";
 import { get_lang_text, get_true_lan } from "../constant";
-import { SiteConfig } from "../site_config";
+// import { SiteConfig } from "../site_config";
+// import { useBusuanzi } from "../utils/useBusuanzi";
 
 const { lang } = useData();
 const router = useRouter();
@@ -54,9 +55,6 @@ const articleList = computed(() => {
 
 const hasNextPage = computed(() => pageKey.value < pageTotal.value);
 const hasPrevPage = computed(() => pageKey.value > 1);
-const showHit = computed(() => {
-  return !!SiteConfig.get_umami_website_id();
-});
 
 const scrollToTop = () => {
   if (typeof window !== "undefined") {
@@ -94,32 +92,26 @@ const nextPage = () => {
   }
 };
 
-const fetchArticleListHits = async () => {
-  if (!showHit) {
-    isArticleListHitsFetched.value = true;
-    return;
-  }
-  try {
-    const response = await fetch(
-      `${SiteConfig.umami_url}/api/websites/${SiteConfig.get_umami_website_id()}/blogpage`,
-    );
-    const { views } = await response.json();
-    // console.log("get views", views);
-    views.forEach((item) => {
-      const post = posts.value.find((p) => {
-        const page_url = withBase(p.url);
-        // console.log("item url", p.url, page_url);
-        return page_url == item.url_path;
-      });
-      if (post) {
-        post.hit = item.num;
-      }
-    });
-    isArticleListHitsFetched.value = true;
-  } catch (error) {
-    console.error("Error fetching page hits:", error);
-  }
-};
+// const fetchArticleListHits = async () => {
+//   try {
+//     const url=      `${SiteConfig.umami_url}/api/websites/${SiteConfig.get_umami_website_id()}/blogpage`
+//     const res=await fetchBusuanzi(url)
+//     // console.log("get views", views);
+//     views.forEach((item) => {
+//       const post = posts.value.find((p) => {
+//         const page_url = withBase(p.url);
+//         // console.log("item url", p.url, page_url);
+//         return page_url == item.url_path;
+//       });
+//       if (post) {
+//         post.hit = item.num;
+//       }
+//     });
+//     isArticleListHitsFetched.value = true;
+//   } catch (error) {
+//     console.error("Error fetching page hits:", error);
+//   }
+// };
 
 watch(
   location,
@@ -137,7 +129,7 @@ watch(
 );
 
 onMounted(() => {
-  fetchArticleListHits();
+  // fetchArticleListHits();
 });
 </script>
 

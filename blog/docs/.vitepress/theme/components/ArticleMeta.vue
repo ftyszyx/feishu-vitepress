@@ -1,56 +1,21 @@
 <script setup lang="ts">
-import { ref, computed, onMounted, watch } from "vue";
-import { useData, withBase, useRoute, useRouter } from "vitepress";
+import { computed } from "vue";
+import { useData, withBase } from "vitepress";
 import { getFormatNumber } from "../utils";
-import { SiteConfig } from "../site_config";
+import { useBusuanzi } from "../utils/useBusuanzi";
 const { frontmatter } = useData();
-const route = useRoute();
-const router = useRouter();
 const title = computed(() => frontmatter.value.title);
-const date = computed(() => frontmatter.value.date);
-const showHit = computed(() => {
-  return !!SiteConfig.get_umami_website_id();
-});
+const date = computed(() =>
+  new Date(frontmatter.value.edit_time*1000).toLocaleDateString()
+);
+console.log(frontmatter.value);
 const bannerImageUrl = computed(() => {
-  // console.log("get url", frontmatter.value.cover);
   if (frontmatter.value.cover) return withBase(frontmatter.value.cover);
   return withBase("/normal_cover.png");
 });
 
-const pageHits = ref<number>(0);
-const isPageHitsFetched = ref<boolean>(false);
+const { pagePv  } = useBusuanzi("POST");
 
-const fetchPageHits = async () => {
-  if (showHit.value == false) {
-    isPageHitsFetched.value = true;
-    return;
-  }
-  try {
-    const response = await fetch(
-      `${SiteConfig.umami_url}/api/websites/${SiteConfig.get_umami_website_id()}/blogpage?url=${route.path}`,
-    );
-    const { views } = await response.json();
-    // console.log("get hit views", route.path, views);
-    if (views && views.length > 0) {
-      pageHits.value = views[0].num;
-    }
-    isPageHitsFetched.value = true;
-  } catch (error) {
-    console.error("Error fetching page hits:", error);
-  }
-};
-
-onMounted(() => {
-  fetchPageHits();
-});
-
-watch(
-  () => router.route.data.relativePath,
-  () => {
-    isPageHitsFetched.value = false;
-    fetchPageHits();
-  },
-);
 </script>
 
 <template>
@@ -86,7 +51,7 @@ watch(
               <line x1="4" y1="11" x2="20" y2="11" />
               <rect x="8" y="15" width="2" height="2" />
             </svg>
-            >{{ date }}
+            {{ date }}
           </p>
 
           <p
@@ -111,8 +76,8 @@ watch(
                 d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
               />
             </svg>
-            <i v-if="isPageHitsFetched && pageHits > 0" class="not-italic">{{
-              getFormatNumber(pageHits)
+            <i v-if="pagePv > 0" class="not-italic">{{
+              getFormatNumber(pagePv)
             }}</i>
           </p>
 
