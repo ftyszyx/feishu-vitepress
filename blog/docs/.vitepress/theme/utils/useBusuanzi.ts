@@ -56,7 +56,7 @@ export const useBusuanzi = (gettype: RequestType = "GET") => {
   }
 
   onMounted(() => {
-    // fetchBusuanzi("PUT");
+       fetchAndUpdateBusuanzi(window.location.href);
   });
 
   watch(
