@@ -349,9 +349,6 @@
             "link": "/VEZfdg4OIoVujzxicWXcjE1jnfc"
           },
           {
-            "text": "llm实时搜索"
-          },
-          {
             "text": "comfy_ui"
           },
           {
@@ -368,7 +365,14 @@
           },
           {
             "text": "n8n",
-            "link": "/LatvdKdX7oZfX5xxgpYcLzqnnVN"
+            "link": "/LatvdKdX7oZfX5xxgpYcLzqnnVN",
+            "items": [
+              {
+                "text": "源码运行",
+                "link": "/GqYUdgV3Jo0kUHx0qqichS5fnzf"
+              }
+            ],
+            "collapsed": true
           }
         ],
         "collapsed": true
@@ -692,6 +696,25 @@
             "link": "/FM3jd7FHboLc0Px4swpcp9Tcn9f"
           },
           {
+            "text": "webcloner-新浪微博采集使用说明",
+            "link": "/YYAUdyUb9ozPZXx0xnKcAxyBnxc",
+            "items": [
+              {
+                "text": "webcloner-告别截图！WebCloner全新微博备份方案，长微博、高清图一个都不少",
+                "link": "/Y47ddCotxoBaVzxM0qcc1yFSnth"
+              },
+              {
+                "text": "webcloner-微博备份功能优化",
+                "link": "/DoBVdqAB3oLc0VxMMkqcuJjRnqb"
+              },
+              {
+                "text": "webcloner功能演示-备份我的新浪微博",
+                "link": "/GvhndANHNoyKoMxTR0fcxRYUngh"
+              }
+            ],
+            "collapsed": true
+          },
+          {
             "text": "webcloner功能演示-新浪博客备份",
             "link": "/Jgmydq1HpoXtvfxFqrKclioTnnf"
           },
@@ -718,25 +741,6 @@
           {
             "text": "webcloner-功能优化记录",
             "link": "/Zojxd7sMWowoPixZ9pacWMHznp1"
-          },
-          {
-            "text": "新浪微博采集使用说明",
-            "link": "/YYAUdyUb9ozPZXx0xnKcAxyBnxc",
-            "items": [
-              {
-                "text": "webcloner-告别截图！WebCloner全新微博备份方案，长微博、高清图一个都不少",
-                "link": "/Y47ddCotxoBaVzxM0qcc1yFSnth"
-              },
-              {
-                "text": "webcloner-微博备份功能优化",
-                "link": "/DoBVdqAB3oLc0VxMMkqcuJjRnqb"
-              },
-              {
-                "text": "webcloner功能演示-备份我的新浪微博",
-                "link": "/GvhndANHNoyKoMxTR0fcxRYUngh"
-              }
-            ],
-            "collapsed": true
           },
           {
             "text": "开发过程",

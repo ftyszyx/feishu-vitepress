@@ -4,8 +4,8 @@ keywords:
   - 网站克隆器
   - 备份
 create_time: 1767428422
-edit_time: 1767429249
-title: 新浪微博采集使用说明
+edit_time: 1768312669
+title: webcloner-新浪微博采集使用说明
 categories:
   - product
 ---
@@ -93,7 +93,7 @@ categories:
 
 <img src="/assets/V5Owb5z7WoEUBhxOn0vcDqQqneb.png" src-width="2456" class="markdown-img m-auto" src-height="1190" align="center"/>
 
-## 3.3 具体效果下载
+## 3.3 具体效果下载 
 
-链接: https://pan.baidu.com/s/1H5plumuuYbOr3F5j8rm2mQ?pwd=mvp6 提取码: mvp6  
+链接: https://pan.baidu.com/s/14_e-ZlxcG3MXVt-8HLJ89A?pwd=yzy7 提取码: yzy7  
 

@@ -1,6 +1,6 @@
 ---
 create_time: 1767350777
-edit_time: 1768182972
+edit_time: 1768312682
 title: webcloner-雪球
 categories:
   - product
@@ -83,5 +83,5 @@ html里存有保存的html,resouce是保存的图片
 
 ## 2.8 网盘可以看我的测试效果  
 
-https://pan.baidu.com/s/19avJdO4pnY3m7ZUmyhCHeA?pwd=ge2i 提取码: ge2i 
+ 链接: https://pan.baidu.com/s/14_e-ZlxcG3MXVt-8HLJ89A?pwd=yzy7 提取码: yzy7  
 
