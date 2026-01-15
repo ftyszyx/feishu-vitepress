@@ -1,6 +1,6 @@
 ---
 create_time: 1766658533
-edit_time: 1768288585
+edit_time: 1768375499
 title: n8n
 categories:
   - skill
@@ -11,10 +11,13 @@ https://github.com/Zie619/n8n-workflows
 
 学习https://github.com/dpxy88888/n8n-workflows
 
+https://cloud.tencent.com/developer/article/2589991
+
 # 1. 本地运行
 
 ```text
-npx n8n
+npm install -g n8n
+n8n start
 ```
 
 # 2. 如何安装节点
@@ -37,11 +40,33 @@ npm i n8n-nodes-nodeName
 
 重启n8n
 
-# 3. 使用feishu node
+# 3. 自制n8n节点
+
+package name starts with `n8n-nodes-`
+
+- Include `n8n-community-node-package` in your package keywords.
+
+文档：https://docs.n8n.io/integrations/creating-nodes/overview/
+
+node类型： trigger nodes and action nodes
+
+## 3.1 Trrigger node
+
+<img src="/assets/X3PsbJcY4oG8gzxzh7fcDoOqnAh.png" src-width="758" class="markdown-img m-auto" src-height="448" align="center"/>
+
+## 3.2 Node的文件结构
+
+https://docs.n8n.io/integrations/creating-nodes/build/reference/node-base-files/structure/
+
+一个node的文件结构
+
+<img src="/assets/BnyJbNjeooFPUnxLuJNciehInOb.png" src-width="692" class="markdown-img m-auto" src-height="249" align="center"/>
+
+# 4. 使用feishu node
 
 https://www.npmjs.com/package/n8n-nodes-feishu-lite
 
-## 3.1 先去https://open.feishu.cn/创建一个应用
+## 4.1 先去https://open.feishu.cn/创建一个应用
 
 <img src="/assets/GtBhbpFoWo0RrNxo3okcysvln2b.png" src-width="850" class="markdown-img m-auto" src-height="507" align="center"/>
 
@@ -59,7 +84,7 @@ https://www.npmjs.com/package/n8n-nodes-feishu-lite
 
 <img src="/assets/NwBxbMnlmourPbx3u0HcrstQnwh.png" src-width="587" class="markdown-img m-auto" src-height="339" align="center"/>
 
-## 3.2 配置好参数
+## 4.2 配置好参数
 
 <img src="/assets/KvoqbBbfOo67FZxtVebccLBjnJH.png" src-width="267" class="markdown-img m-auto" src-height="169" align="center"/>
 
@@ -67,15 +92,15 @@ https://www.npmjs.com/package/n8n-nodes-feishu-lite
 
 <img src="/assets/Xcpjb9nFWoiMKVxsJHqcQRr3nn7.png" src-width="929" class="markdown-img m-auto" src-height="368" align="center"/>
 
-# 4. 公众号节点
+# 5. 公众号节点
 
 https://github.com/other-blowsnow/n8n-nodes-wechat-offiaccount
 
-# 5. 小红书
+# 6. 小红书
 
 https://www.npmjs.com/package/@donney521/n8n-nodes-xiaohongshu
 
-# 6. 测试1
+# 7. 测试1
 
  https://github.com/dpxy88888/n8n-workflows/blob/main/github%E8%87%AA%E5%8A%A8%E5%8F%91%E5%B8%83%E5%85%AC%E4%BC%97%E5%8F%B7
 
