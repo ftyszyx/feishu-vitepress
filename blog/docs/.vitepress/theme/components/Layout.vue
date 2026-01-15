@@ -77,6 +77,11 @@ onUnmounted(() => {});
     <template #home-hero-after>
       <!-- 首页文章列表模块 -->
       <ArticleList />
+      <ClientOnly>
+        <div class="flex justify-center">
+          <BusuanziStats />
+        </div>
+      </ClientOnly>
     </template>
   </Layout>
 </template>

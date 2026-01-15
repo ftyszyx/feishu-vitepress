@@ -48,12 +48,12 @@ onMounted(() => {});
           <circle cx="12" cy="12" r="9" />
           <path d="M14.5 9a3.5 4 0 1 0 0 6" />
         </svg>
-        <div>
+        <!-- <div>
           <span class="mr-1 font-medium"
             >{{ get_lang_text("autor_lan", lang) }}:</span
           >
           <span> {{ author }} </span>
-        </div>
+        </div> -->
 
         <div>
           <span class="mr-1 font-medium"
