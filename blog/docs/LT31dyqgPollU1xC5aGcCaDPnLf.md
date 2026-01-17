@@ -1,6 +1,6 @@
 ---
 create_time: 1761622729
-edit_time: 1767707843
+edit_time: 1768530586
 title: Postgresql
 categories:
   - skill
@@ -84,4 +84,10 @@ GRANT ALL PRIVILEGES ON DATABASE $dbname TO $username;
 # 导入文件
 psql -U $username -h 10.116.147.14 -d $dbname -f public.sql
 ```
+
+# 2. Postgres 代替redis
+
+### 2.1.1 UNLOGGED table
+
+https://dev.to/polliog/i-replaced-redis-with-postgresql-and-its-faster-4942
 
