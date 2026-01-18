@@ -1,7 +1,7 @@
 ---
 cover: /assets/Um9JbWwIFodQDjxcMjfcPCjKnHh.jpeg
 create_time: 1729850795
-edit_time: 1758813398
+edit_time: 1768699255
 title: 自制docker镜像
 categories:
   - skill
@@ -27,6 +27,25 @@ categories:
 https://github.com/harrisonwang/docxy/tree/main  （可行，需要国外服务器）
 
  **自制：** **https://github.com/dqzboy/Docker-Proxy?tab=readme-ov-file** **（使用,这个需要大磁盘，因为这不是转发请求，而是镜像）**
+
+# 1. 公用镜像
+
+```json
+{
+    "registry-mirrors": [
+        "https://docker.1ms.run",
+        "https://dockerproxy.net",
+        "https://docker.m.daocloud.io",
+        "https://docker.1panel.live"
+    ],
+    "insecure-registries": [],
+    "debug": false,
+    "experimental": false,
+    "features": {
+        "buildkit": true
+    }
+}
+```
 
 ## 1.1 使用cloudflare
 
@@ -116,7 +135,7 @@ sudo systemctl daemon-reload
 sudo systemctl restart docker
 ```
 
-# 1. 自建镜像
+# 2. 自建镜像
 
 https://blog.hentioe.dev/posts/unhindered-accesss-dockerhub.html
 
@@ -128,7 +147,7 @@ https://blog.hentioe.dev/posts/unhindered-accesss-dockerhub.html
 {  "registry-mirrors": ["http://<YOUR_SERVER_HOST>:5000"]}
 ```
 
-# 2. nginx代理
+# 3. nginx代理
 
 ```yaml
 server {
