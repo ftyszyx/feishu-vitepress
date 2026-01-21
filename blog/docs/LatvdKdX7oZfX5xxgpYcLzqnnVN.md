@@ -1,6 +1,6 @@
 ---
 create_time: 1766658533
-edit_time: 1768833575
+edit_time: 1768893316
 title: n8n
 categories:
   - skill
@@ -12,16 +12,6 @@ https://github.com/Zie619/n8n-workflows
 学习https://github.com/dpxy88888/n8n-workflows
 
 https://cloud.tencent.com/developer/article/2589991
-
-公众号相关
-
-https://zhuanlan.zhihu.com/p/1946969507491971326
-
-https://cloud.tencent.com/developer/article/2574812
-
-https://markdown.com.cn/editor
-
-https://github.com/doocs/md
 
 # 1. 本地运行
 
