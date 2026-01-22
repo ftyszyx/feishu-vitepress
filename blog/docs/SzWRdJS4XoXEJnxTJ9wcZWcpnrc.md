@@ -1,8 +1,8 @@
 ---
 cover: /assets/BiRbbaljGo56V9xC73OcLUU2n2f.jpeg
 create_time: 1762220071
-edit_time: 1767667968
-title: 一个小程序-放学状态管理
+edit_time: 1768701567
+title: 一个小程序-放学状态管理平台
 categories:
   - product
 ---

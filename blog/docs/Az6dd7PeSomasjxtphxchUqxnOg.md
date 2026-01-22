@@ -1,8 +1,8 @@
 ---
 cover: /assets/KQYHb6WTGoZXJoxHcjbcekqCnOe.jpeg
 create_time: 1752595587
-edit_time: 1760193291
-title: 注册码管理平台，让你轻松管理软件授权！
+edit_time: 1768697032
+title: licenseHub注册码发卡验证平台
 categories:
   - product
 ---

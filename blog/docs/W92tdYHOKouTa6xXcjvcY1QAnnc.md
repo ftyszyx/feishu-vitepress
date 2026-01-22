@@ -1,6 +1,6 @@
 ---
 create_time: 1768385195
-edit_time: 1768403155
+edit_time: 1768893291
 title: bugly自动分析工作流使用说明
 categories:
   - skill
@@ -13,9 +13,7 @@ categories:
 
 全程自动化，批量操作
 
-# 2. 代码地址
-
-svn://192.168.0.13/share_lib/trunk/client/build2/tools/n8n_bugly
+# 2. 代码地址 
 
 # 3. 使用说明
 

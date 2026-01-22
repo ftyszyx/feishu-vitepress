@@ -378,9 +378,17 @@
               {
                 "text": "bugly自动分析工作流使用说明",
                 "link": "/W92tdYHOKouTa6xXcjvcY1QAnnc"
+              },
+              {
+                "text": "公众号",
+                "link": "/WZAid3qJ2oHSmUxXPg4clamknDe"
               }
             ],
             "collapsed": true
+          },
+          {
+            "text": "Vibecoding",
+            "link": "/WE84dlJgtoXmFqxQAzOctEy8nCh"
           }
         ],
         "collapsed": true
@@ -690,8 +698,15 @@
         "collapsed": true
       },
       {
-        "text": "注册码管理平台，让你轻松管理软件授权！",
-        "link": "/Az6dd7PeSomasjxtphxchUqxnOg"
+        "text": "licenseHub注册码发卡验证平台",
+        "link": "/Az6dd7PeSomasjxtphxchUqxnOg",
+        "items": [
+          {
+            "text": "licenseHub优化记录",
+            "link": "/FkmwdHPtkoE6XVxzAMBcvaSEntg"
+          }
+        ],
+        "collapsed": true
       },
       {
         "text": "Todos"
@@ -807,11 +822,11 @@
         "collapsed": true
       },
       {
-        "text": "一个小程序-放学状态管理",
+        "text": "一个小程序-放学状态管理平台",
         "link": "/SzWRdJS4XoXEJnxTJ9wcZWcpnrc",
         "items": [
           {
-            "text": "优化记录",
+            "text": "状态管理平台优化记录",
             "link": "/V41udjRCoojUSdxCnulcwbNBncI"
           }
         ],

@@ -1,6 +1,6 @@
 ---
 create_time: 1677551024
-edit_time: 1767171996
+edit_time: 1768463282
 title: Rust
 categories:
   - skill
@@ -56,6 +56,12 @@ https://www.rust-lang.org/
 
 ```csharp
 rustc --version
+```
+
+### 1.1.5 rust升级
+
+```text
+rustup update
 ```
 
 ## 1.2 Cargo 国内加速

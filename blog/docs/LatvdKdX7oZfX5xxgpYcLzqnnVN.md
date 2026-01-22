@@ -1,6 +1,6 @@
 ---
 create_time: 1766658533
-edit_time: 1768375499
+edit_time: 1768893316
 title: n8n
 categories:
   - skill
