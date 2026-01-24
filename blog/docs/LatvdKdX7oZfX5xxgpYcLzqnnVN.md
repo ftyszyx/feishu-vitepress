@@ -1,17 +1,13 @@
 ---
 create_time: 1766658533
-edit_time: 1768893316
+edit_time: 1769138362
 title: n8n
 categories:
   - skill
 ---
 
 
-https://github.com/Zie619/n8n-workflows
-
-学习https://github.com/dpxy88888/n8n-workflows
-
-https://cloud.tencent.com/developer/article/2589991
+  
 
 # 1. 本地运行
 
@@ -48,13 +44,7 @@ package name starts with `n8n-nodes-`
 
 文档：https://docs.n8n.io/integrations/creating-nodes/overview/
 
-node类型： trigger nodes and action nodes
-
-## 3.1 Trrigger node
-
-<img src="/assets/X3PsbJcY4oG8gzxzh7fcDoOqnAh.png" src-width="758" class="markdown-img m-auto" src-height="448" align="center"/>
-
-## 3.2 Node的文件结构
+## 3.1 Node的文件结构
 
 https://docs.n8n.io/integrations/creating-nodes/build/reference/node-base-files/structure/
 
@@ -84,35 +74,5 @@ https://www.npmjs.com/package/n8n-nodes-feishu-lite
 
 <img src="/assets/NwBxbMnlmourPbx3u0HcrstQnwh.png" src-width="587" class="markdown-img m-auto" src-height="339" align="center"/>
 
-## 4.2 配置好参数
-
-<img src="/assets/KvoqbBbfOo67FZxtVebccLBjnJH.png" src-width="267" class="markdown-img m-auto" src-height="169" align="center"/>
-
-<img src="/assets/KC2dbh88DoqaeLxpcEqcnyqEnFb.png" src-width="403" class="markdown-img m-auto" src-height="358" align="center"/>
-
-<img src="/assets/Xcpjb9nFWoiMKVxsJHqcQRr3nn7.png" src-width="929" class="markdown-img m-auto" src-height="368" align="center"/>
-
-# 5. 公众号节点
-
-https://github.com/other-blowsnow/n8n-nodes-wechat-offiaccount
-
-# 6. 小红书
-
-https://www.npmjs.com/package/@donney521/n8n-nodes-xiaohongshu
-
-# 7. 测试1
-
- https://github.com/dpxy88888/n8n-workflows/blob/main/github%E8%87%AA%E5%8A%A8%E5%8F%91%E5%B8%83%E5%85%AC%E4%BC%97%E5%8F%B7
-
-功能：定时发公众号
-
-Feishu node
-
-https://community.n8n.io/t/custom-feishu-node/78169
-
-<img src="/assets/DJ3pbkDaToxs0Lx6heKcIM0anBf.png" src-width="609" class="markdown-img m-auto" src-height="380" align="center"/>
-
-新增好了
-
-<img src="/assets/SXk4bNQOhoEaHEx2XGQc2vYdnch.png" src-width="298" class="markdown-img m-auto" src-height="212" align="center"/>
+ 
 
