@@ -1,6 +1,6 @@
 ---
 create_time: 1767418911
-edit_time: 1768183019
+edit_time: 1769250504
 title: webcloner-功能优化记录
 categories:
   - product
@@ -60,4 +60,14 @@ categories:
 ## 1.5 增加雪球数据采集支持，并支持保存评论
 
 <img src="/assets/W9kNbVqx8oHGw8x62EicL0Qnn3e.png" src-width="654" class="markdown-img m-auto" src-height="634" align="center"/>
+
+## 1.6 增加手动激活功能，激活码时效可以累加
+
+<img src="/assets/SHSLbuhwDoWd4jxtOUccPowUnec.png" src-width="790" class="markdown-img m-auto" src-height="449" align="center"/>
+
+<img src="/assets/GuKzbUaD7oIUhhxsQFYcaW7mnnb.png" src-width="1271" class="markdown-img m-auto" src-height="258" align="center"/>
+
+## 1.7 雪球支持时间范围
+
+<img src="/assets/VNnrb1nFnorBlMxOTqychKBDnWd.png" src-width="450" class="markdown-img m-auto" src-height="617" align="center"/>
 
