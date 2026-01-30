@@ -1,6 +1,6 @@
 ---
 create_time: 1766658533
-edit_time: 1769138362
+edit_time: 1769678689
 title: n8n
 categories:
   - skill
@@ -52,11 +52,44 @@ https://docs.n8n.io/integrations/creating-nodes/build/reference/node-base-files/
 
 <img src="/assets/BnyJbNjeooFPUnxLuJNciehInOb.png" src-width="692" class="markdown-img m-auto" src-height="249" align="center"/>
 
-# 4. 使用feishu node
+# 4. 如何断点调试node中的代码
+
+启动时，要让node 监听调试端口
+
+```yaml
+set NODE_OPTIONS=--inspect=9229
+n8n start
+```
+
+检查 是否监听成功
+
+```yaml
+netstat -ano | findstr :9229
+```
+
+Vscode中增加调试配置
+
+```json
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Attach n8n (9229)",
+      "type": "node",
+      "request": "attach",
+      "port": 9229,
+      "restart": true,
+      "skipFiles": ["<node_internals>/**"]
+    }
+  ]
+}
+```
+
+# 5. 使用feishu node
 
 https://www.npmjs.com/package/n8n-nodes-feishu-lite
 
-## 4.1 先去https://open.feishu.cn/创建一个应用
+## 5.1 先去https://open.feishu.cn/创建一个应用
 
 <img src="/assets/GtBhbpFoWo0RrNxo3okcysvln2b.png" src-width="850" class="markdown-img m-auto" src-height="507" align="center"/>
 

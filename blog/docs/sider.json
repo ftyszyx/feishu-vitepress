@@ -383,7 +383,7 @@
                 "text": "公众号"
               },
               {
-                "text": "使用后的一点感想",
+                "text": "n8n使用后的一点感想",
                 "link": "/RnAIdh6oOoZyiFx8Nylc2Rx8nac"
               }
             ],
@@ -396,6 +396,10 @@
           {
             "text": "moltbot",
             "link": "/EfAxdGmsao2VKsxtPUOcELu8ndE"
+          },
+          {
+            "text": "ai接口",
+            "link": "/IMusdtTMKoUwRUxGU4ecc82dnKe"
           }
         ],
         "collapsed": true

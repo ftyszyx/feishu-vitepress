@@ -1,7 +1,7 @@
 ---
 create_time: 1769138368
-edit_time: 1769139983
-title: 使用后的一点感想
+edit_time: 1769678566
+title: n8n使用后的一点感想
 categories:
   - skill
 ---
