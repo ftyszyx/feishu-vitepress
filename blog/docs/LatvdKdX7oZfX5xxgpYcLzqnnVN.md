@@ -1,6 +1,6 @@
 ---
 create_time: 1766658533
-edit_time: 1769678689
+edit_time: 1769763748
 title: n8n
 categories:
   - skill
@@ -85,27 +85,26 @@ Vscode中增加调试配置
 }
 ```
 
-# 5. 使用feishu node
+# 5. 注意事项
 
-https://www.npmjs.com/package/n8n-nodes-feishu-lite
+## 5.1 写文件异常
 
-## 5.1 先去https://open.feishu.cn/创建一个应用
+如果写需要写文件到本地目录，需要设置下面这个环境变量
 
-<img src="/assets/GtBhbpFoWo0RrNxo3okcysvln2b.png" src-width="850" class="markdown-img m-auto" src-height="507" align="center"/>
+```yaml
+set N8N_RESTRICT_FILE_ACCESS_TO="D:\downloads"
+```
 
-添加文档相关的权限
+如果是docker
 
-<img src="/assets/Zkw4b5kxgoe5Pnx8O42ct2NCnEg.png" src-width="906" class="markdown-img m-auto" src-height="398" align="center"/>
+```yaml
+environment:
+        N8N_RESTRICT_FILE_ACCESS_TO: "/shared;/home/node/.n8n-files"
+```
 
-发布应用
+否则写文件会提示
 
-<img src="/assets/D9Lob2Q69oaJM3xvR97cK6EOnfc.png" src-width="1359" class="markdown-img m-auto" src-height="458" align="center"/>
-
-新建一个表格或者文档，添加此应用
-
-<img src="/assets/GquCbVHR1o2fGAxG4fQcVTGyn7e.png" src-width="882" class="markdown-img m-auto" src-height="672" align="center"/>
-
-<img src="/assets/NwBxbMnlmourPbx3u0HcrstQnwh.png" src-width="587" class="markdown-img m-auto" src-height="339" align="center"/>
-
- 
+```yaml
+The file "D:\downloads\douyin_1769760258699.mp4" is not writable.
+```
 

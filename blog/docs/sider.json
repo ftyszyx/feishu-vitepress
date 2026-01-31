@@ -372,12 +372,15 @@
                 "link": "/GqYUdgV3Jo0kUHx0qqichS5fnzf"
               },
               {
-                "text": "bugly自动分析n8n工作流-设计思路",
-                "link": "/EofzddXPQoHuZxxXMqEc0ekanfe"
-              },
-              {
                 "text": "bugly自动分析工作流使用说明",
-                "link": "/W92tdYHOKouTa6xXcjvcY1QAnnc"
+                "link": "/W92tdYHOKouTa6xXcjvcY1QAnnc",
+                "items": [
+                  {
+                    "text": "bugly自动分析n8n工作流-设计思路",
+                    "link": "/EofzddXPQoHuZxxXMqEc0ekanfe"
+                  }
+                ],
+                "collapsed": true
               },
               {
                 "text": "公众号"
@@ -385,6 +388,10 @@
               {
                 "text": "n8n使用后的一点感想",
                 "link": "/RnAIdh6oOoZyiFx8Nylc2Rx8nac"
+              },
+              {
+                "text": "Feishu node",
+                "link": "/CfVFdbn9eoKIyYxoJiFcoMRwnEb"
               }
             ],
             "collapsed": true
@@ -400,6 +407,14 @@
           {
             "text": "ai接口",
             "link": "/IMusdtTMKoUwRUxGU4ecc82dnKe"
+          },
+          {
+            "text": "Whisper",
+            "link": "/QTczdVktco3grqx9gZ2c2hA7nlf"
+          },
+          {
+            "text": "Cuda",
+            "link": "/YzE3doCjZom6MaxtUYgcAOGqnoc"
           }
         ],
         "collapsed": true
@@ -842,9 +857,6 @@
           }
         ],
         "collapsed": true
-      },
-      {
-        "text": "淘宝"
       }
     ],
     "collapsed": true

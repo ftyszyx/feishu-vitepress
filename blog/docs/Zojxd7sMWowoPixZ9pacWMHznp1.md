@@ -1,6 +1,6 @@
 ---
 create_time: 1767418911
-edit_time: 1769250504
+edit_time: 1769822551
 title: webcloner-功能优化记录
 categories:
   - product
@@ -67,7 +67,29 @@ categories:
 
 <img src="/assets/GuKzbUaD7oIUhhxsQFYcaW7mnnb.png" src-width="1271" class="markdown-img m-auto" src-height="258" align="center"/>
 
-## 1.7 雪球支持时间范围
+## 1.7 雪球支持时间范围(废弃）
 
 <img src="/assets/VNnrb1nFnorBlMxOTqychKBDnWd.png" src-width="450" class="markdown-img m-auto" src-height="617" align="center"/>
+
+## 1.8 雪球支持分页范围下载
+
+因为雪球不支持时间范围的搜索，为了支持部分下载，我之前是从最近遍历全部页面，找到对应的时间范围的内容。但这个方法有问题。如果要采集的作者有好几百页，而我需要采集的范围是最后一页，程序还是会从第一页便利，效率低下。所以我修改了一下，通过设置采集的分页范围来采集
+
+<img src="/assets/ILsJbLMwCoQi0nx3CwNcN6PUnYe.png" src-width="478" class="markdown-img m-auto" src-height="568" align="center"/>
+
+其它的没有变。
+
+## 1.9 微博采集增加设置单html保存的微博数量
+
+<img src="/assets/C55SbL8U7oJZIjxHFOUcPbqfnof.png" src-width="455" class="markdown-img m-auto" src-height="576" align="center"/>
+
+这个值 的意思是，保存的单个Html最大包含多少条微博数量
+
+## 1.10 处理获取评论会卡住的问题
+
+一直在获取同一条评论，原因未知
+
+<img src="/assets/YstUbzZw8owNcwxdKXxc90PlnWc.png" src-width="1252" class="markdown-img m-auto" src-height="352" align="center"/>
+
+增加异常处理
 
