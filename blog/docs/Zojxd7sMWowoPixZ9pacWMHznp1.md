@@ -1,6 +1,6 @@
 ---
 create_time: 1767418911
-edit_time: 1769822551
+edit_time: 1769837999
 title: webcloner-功能优化记录
 categories:
   - product
@@ -92,4 +92,26 @@ categories:
 <img src="/assets/YstUbzZw8owNcwxdKXxc90PlnWc.png" src-width="1252" class="markdown-img m-auto" src-height="352" align="center"/>
 
 增加异常处理
+
+## 1.11 优化任务的按键表现
+
+重置增加二次确认
+
+<img src="/assets/Z8WtbjT1doE8iDxaurNc2z62nMh.png" src-width="1201" class="markdown-img m-auto" src-height="321" align="center"/>
+
+<img src="/assets/WIygbrmhqoLSfxx8GRyc9WuQn4f.png" src-width="607" class="markdown-img m-auto" src-height="197" align="center"/>
+
+任务完成后，增加任务重启功能，可以重新采集任务，方便更新最新的微博内容
+
+<img src="/assets/MZCbbnbhnoGsYaxcgeEcRvdknUS.png" src-width="279" class="markdown-img m-auto" src-height="80" align="center"/>
+
+<img src="/assets/DQUvbCw93oTZ4txBe8BcNHlKnmh.png" src-width="280" class="markdown-img m-auto" src-height="193" align="center"/>
+
+每个icon按键增加提示
+
+<img src="/assets/WpBebUJeAojUXUxPX8ncMgaNnzc.png" src-width="256" class="markdown-img m-auto" src-height="106" align="center"/>
+
+<img src="/assets/HyOWbMr52orhTYxYpImcrpsMnNh.png" src-width="244" class="markdown-img m-auto" src-height="83" align="center"/>
+
+<img src="/assets/CJXlbWmxBokFSRx5Nmyc2xpNnWd.png" src-width="238" class="markdown-img m-auto" src-height="105" align="center"/>
 
