@@ -5,7 +5,7 @@ keywords:
   - 备份
 cover: /assets/W2OsbYB5OoQdI7xY0oTcVrx7ned.jpeg
 create_time: 1756950318
-edit_time: 1767419738
+edit_time: 1769946741
 title: webcloner功能演示-新浪博客备份
 categories:
   - product
@@ -30,71 +30,45 @@ categories:
 
 会打开浏览器，
 
-### 1.1.3 自己登录
-
-<img src="/assets/IO5Jb7wCEohwzcxhqvwchUCHnbf.png" src-width="578" class="markdown-img m-auto" src-height="214" align="center"/>
+在浏览器中登录你的账号
 
 <img src="/assets/CGelb4Zj0oIdEmxEAdRcWi6PnXe.png" src-width="890" class="markdown-img m-auto" src-height="572" align="center"/>
 
-登录成功后，可以在浏览器中打开自己的博客查看 一下是否正常
+登录成功 后点下面 **保存cookies**
 
-https://blog.sina.com.cn/u/1291367225
+<img src="/assets/WYrLb0zqyoRXZaxGbHEcc8ivnSc.png" src-width="2205" class="markdown-img m-auto" src-height="791" align="center"/>
 
-<img src="/assets/GD3LbUm3WoWmUaxOosQcLThBnxc.png" src-width="774" class="markdown-img m-auto" src-height="560" align="center"/>
+### 1.1.3 检测是否登录成功
 
-### 1.1.4 保存cookie
+再次点
 
-然后，可以保存cookies了
+<img src="/assets/FKZEb7ZtIoKqHExl2fmcB4yknqf.png" src-width="1813" class="markdown-img m-auto" src-height="365" align="center"/>
 
-<img src="/assets/UCMVbD1tVoudLhxGcHKcxBKinSf.png" src-width="692" class="markdown-img m-auto" src-height="259" align="center"/>
+看打开的浏览器中，有没有显示自己头像
 
-显示已登录
+<img src="/assets/VP65bFjOOoK2kXxxhwrcmsjInHd.png" src-width="1233" class="markdown-img m-auto" src-height="389" align="center"/>
 
-<img src="/assets/PTtKb9YikoQkiuxFBl6cY0innxh.png" src-width="1246" class="markdown-img m-auto" src-height="188" align="center"/>
+### 1.1.4 新建任务
 
 现在可以新建任务 了
 
-### 1.1.5 新建任务
-
 <img src="/assets/D6TbbKur6oMIyUxqb90c83l1nkf.png" src-width="1024" class="markdown-img m-auto" src-height="621" align="center"/>
 
-<img src="/assets/Bn2pbUtJDo2FGRxC4U3cj7wSnYd.png" src-width="1245" class="markdown-img m-auto" src-height="678" align="center"/>
+<img src="/assets/JFLAbZ8ilo4RPyxZhztcjfNInGb.png" src-width="1866" class="markdown-img m-auto" src-height="997" align="center"/>
+
+### 1.1.5 找到你要备份用户的id
+
+先打开你要备份用户的新浪博客首页
+
+看网址后面数字就是id
+
+<img src="/assets/Kk6Jbpqt2oIQkgxzWwKcMd50nGb.png" src-width="1493" class="markdown-img m-auto" src-height="896" align="center"/>
 
 ### 1.1.6 填写任务信息
 
-#### 1.1.6.1 获取入口地址
+<img src="/assets/JTe5bkRowop0ugxdyw1cykQhnOg.png" src-width="1660" class="markdown-img m-auto" src-height="869" align="center"/>
 
-首选入口就是播客的目录页，里面基本就是自己的全部文章汇总：
-
-https://blog.sina.com.cn/s/articlelist_1291367225_0_1.html
-
-<img src="/assets/MOreb78XdoxFWxxzi5YcXenOnSF.png" src-width="1461" class="markdown-img m-auto" src-height="889" align="center"/>
-
-#### 1.1.6.2 获取抓取的网址 
-
-随便打开一篇文章，看下地址格式
-
-https://blog.sina.com.cn/s/blog_4cf8b3390100xomz.html
-
-<img src="/assets/XDKBb54u6oZks1xjWIvcNTmHnog.png" src-width="1358" class="markdown-img m-auto" src-height="473" align="center"/>
-
-#### 1.1.6.3 任务填写
-
-任务可以按下面输入
-
-<img src="/assets/FsmLb7bGmodVBRx3dsnc97d3nSd.png" src-width="663" class="markdown-img m-auto" src-height="881" align="center"/>
-
-注意要选择账号，不然获取不到
-
-<img src="/assets/HysCbdbuno579Jxiz5icwIdYnqg.png" src-width="467" class="markdown-img m-auto" src-height="273" align="center"/>
-
- **入口地址**：第一个要爬的地址
-
- **爬取url规则：用来筛选过程中有效网址的地址规则**
-
- **截图url规则**：判断哪些网址会保存下来
-
-### 1.1.7 开始爬取
+### 1.1.7 开始采集
 
 <img src="/assets/DUHAb9049oP8FuxoCeBc2rGmnKf.png" src-width="1233" class="markdown-img m-auto" src-height="150" align="center"/>
 
@@ -106,6 +80,9 @@ https://blog.sina.com.cn/s/blog_4cf8b3390100xomz.html
 
 <img src="/assets/AsCibIIQFooew3x38KfcxQ0tnLe.png" src-width="1122" class="markdown-img m-auto" src-height="306" align="center"/>
 
-### 1.1.10 
+<img src="/assets/JdW0bXlL7o1Jszx51UdcH2VCnCb.png" src-width="1706" class="markdown-img m-auto" src-height="927" align="center"/>
+
+<img src="/assets/KSH6b2y6iojmAbxYM4TcnW2sn1f.png" src-width="1750" class="markdown-img m-auto" src-height="1354" align="center"/>
+
  
 

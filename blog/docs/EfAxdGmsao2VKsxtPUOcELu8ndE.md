@@ -1,6 +1,6 @@
 ---
 create_time: 1769652794
-edit_time: 1769653379
+edit_time: 1769957996
 title: moltbot
 categories:
   - skill
@@ -22,4 +22,23 @@ https://developer.aliyun.com/article/1709047?spm=a2c6h.12883283.index.38.5f1f430
 有点贵，我现在用的服务器才99元一年，这个要290一个月，不玩了。
 
 # 2. 本地体验
+
+用wsl
+
+安装node.js
+
+<img src="/assets/OlTEb51JdowzcwxMmQ5cUHPnnqb.png" src-width="1247" class="markdown-img m-auto" src-height="806" align="center"/>
+
+一键安装
+
+```yaml
+curl -fsSL https://openclaw.ai/install.sh | bash
+```
+
+或者npm
+
+```yaml
+npm i -g openclaw
+openclaw onboard
+```
 
