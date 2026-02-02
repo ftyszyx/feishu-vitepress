@@ -11,3 +11,4 @@ blog/public
 package-lock.json
 package-lock.json
 # down_blog/blog_dist
+blog/.cache
