@@ -360,17 +360,9 @@
             "link": "/OdPtdFV03oRswmxh4VtcYtzAn0f"
           },
           {
-            "text": "背景音乐提取",
-            "link": "/NArtdYUWEondAgxTFPJcUkYbnch"
-          },
-          {
-            "text": "n8n",
+            "text": "玩玩n8n",
             "link": "/LatvdKdX7oZfX5xxgpYcLzqnnVN",
             "items": [
-              {
-                "text": "源码运行",
-                "link": "/GqYUdgV3Jo0kUHx0qqichS5fnzf"
-              },
               {
                 "text": "bugly自动分析工作流使用说明",
                 "link": "/W92tdYHOKouTa6xXcjvcY1QAnnc",
@@ -383,15 +375,37 @@
                 "collapsed": true
               },
               {
-                "text": "公众号"
+                "text": "玩玩n8n,全自动流水线：下载→提音→转文字→带时间戳！",
+                "link": "/UwLld3UHwomPSMxCgRqchFb7n4g",
+                "items": [
+                  {
+                    "text": "工作流环境安装",
+                    "link": "/Z0kDdxtLsoChmBxzhA9c7Uv0nbc"
+                  }
+                ],
+                "collapsed": true
               },
               {
-                "text": "n8n使用后的一点感想",
-                "link": "/RnAIdh6oOoZyiFx8Nylc2Rx8nac"
-              },
-              {
-                "text": "Feishu node",
-                "link": "/CfVFdbn9eoKIyYxoJiFcoMRwnEb"
+                "text": "杂项",
+                "link": "/SNhpdp2UsobiKhxJN6McauKRnYc",
+                "items": [
+                  {
+                    "text": "Feishu node",
+                    "link": "/CfVFdbn9eoKIyYxoJiFcoMRwnEb"
+                  },
+                  {
+                    "text": "n8n使用后的一点感想",
+                    "link": "/RnAIdh6oOoZyiFx8Nylc2Rx8nac"
+                  },
+                  {
+                    "text": "公众号"
+                  },
+                  {
+                    "text": "源码运行",
+                    "link": "/GqYUdgV3Jo0kUHx0qqichS5fnzf"
+                  }
+                ],
+                "collapsed": true
               }
             ],
             "collapsed": true
@@ -405,16 +419,18 @@
             "link": "/EfAxdGmsao2VKsxtPUOcELu8ndE"
           },
           {
-            "text": "ai接口",
-            "link": "/IMusdtTMKoUwRUxGU4ecc82dnKe"
-          },
-          {
-            "text": "Whisper",
-            "link": "/QTczdVktco3grqx9gZ2c2hA7nlf"
-          },
-          {
-            "text": "Cuda",
-            "link": "/YzE3doCjZom6MaxtUYgcAOGqnoc"
+            "text": "杂项",
+            "items": [
+              {
+                "text": "Cuda",
+                "link": "/YzE3doCjZom6MaxtUYgcAOGqnoc"
+              },
+              {
+                "text": "ai接口",
+                "link": "/IMusdtTMKoUwRUxGU4ecc82dnKe"
+              }
+            ],
+            "collapsed": true
           }
         ],
         "collapsed": true
@@ -543,21 +559,6 @@
         "link": "/UiEqdPkcWojVnux4R9AcEUy9n4e"
       },
       {
-        "text": "Book",
-        "link": "/PFU1dGvQ0o7UAyx0nFMcECDMn7f"
-      },
-      {
-        "text": "remote工作",
-        "link": "/H5EDdWihYokEVgxM9lccDwYVnXd"
-      },
-      {
-        "text": "优秀项目",
-        "link": "/F17hdcl6voMEMrxFjdLc1b8enlc"
-      },
-      {
-        "text": "有用的东西花钱"
-      },
-      {
         "text": "游戏",
         "link": "/Ndv7dB3KVoTgiQxVu3BckZhInod"
       },
@@ -681,20 +682,11 @@
         "collapsed": true
       },
       {
-        "text": "抠图",
-        "items": [
-          {
-            "text": "抠图应用"
-          }
-        ],
-        "collapsed": true
-      },
-      {
         "text": "其它有用的库",
         "link": "/LpaadPxipozzNqxGDk8cybjEnub"
       },
       {
-        "text": "Mycoverview重写",
+        "text": "Mycoverview重写（没用了）",
         "link": "/I5e9dS6ikoffabx5ImAc02Xxnng",
         "items": [
           {
@@ -708,20 +700,8 @@
         "text": "我的简历"
       },
       {
-        "text": "视频下载",
-        "items": [
-          {
-            "text": "livedown使用说明"
-          },
-          {
-            "text": "视频剪辑"
-          },
-          {
-            "text": "其它",
-            "link": "/Sf5YdUtWVokwLjxNj9bcQUa1nCf"
-          }
-        ],
-        "collapsed": true
+        "text": "livedown使用说明（没用了）",
+        "link": "/JyErdwyx8oY7jDx2buactkoXnAb"
       },
       {
         "text": "licenseHub注册码发卡验证平台",
@@ -733,9 +713,6 @@
           }
         ],
         "collapsed": true
-      },
-      {
-        "text": "Todos"
       },
       {
         "text": "网站克隆器",
@@ -993,7 +970,6 @@
           },
           {
             "text": "7到12",
-            "link": "/RlXXdhYQGoTmDax3Gm9csNnansc",
             "items": [
               {
                 "text": "2025-7-8 mysql原来是垃圾",
