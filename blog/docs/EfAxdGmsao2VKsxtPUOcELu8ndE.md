@@ -1,6 +1,6 @@
 ---
 create_time: 1769652794
-edit_time: 1770026654
+edit_time: 1770104628
 title: moltbot
 categories:
   - skill
@@ -106,5 +106,21 @@ Require stack:
 
 ```yaml
 npm i -g clawdbot@latest
+```
+
+# 3. 源码运行
+
+```yaml
+git clone https://github.com/openclaw/openclaw.git
+cd openclaw
+
+pnpm install
+pnpm ui:build # auto-installs UI deps on first run
+pnpm build
+
+pnpm openclaw onboard --install-daemon
+
+# Dev loop (auto-reload on TS changes)
+pnpm gateway:watch
 ```
 

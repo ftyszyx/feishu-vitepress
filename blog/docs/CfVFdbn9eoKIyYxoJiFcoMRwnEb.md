@@ -1,6 +1,6 @@
 ---
 create_time: 1769763564
-edit_time: 1769765904
+edit_time: 1770093974
 title: Feishu node
 categories:
   - skill
@@ -13,7 +13,7 @@ https://www.npmjs.com/package/n8n-nodes-feishu-lite
 
 ## 1.1 先去https://open.feishu.cn/创建一个应用
 
-<img src="/assets/Z5W0bbxKRoFd7MxnI0TcgZPlnbb.png" src-width="850" class="markdown-img m-auto" src-height="507" align="center"/>
+<img src="/assets/SZqCbfUNIoGabgxwaOVcDhzGnib.png" src-width="1160" class="markdown-img m-auto" src-height="652" align="center"/>
 
 添加文档相关的权限
 
