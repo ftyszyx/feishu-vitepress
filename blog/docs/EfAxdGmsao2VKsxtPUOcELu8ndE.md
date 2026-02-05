@@ -1,6 +1,6 @@
 ---
 create_time: 1769652794
-edit_time: 1770104628
+edit_time: 1770258891
 title: moltbot
 categories:
   - skill
@@ -9,48 +9,52 @@ categories:
 
 https://github.com/moltbot/moltbot
 
-# 1. 阿里云轻量云服务器体验
+# 1. 本地体验 
 
-最近很火的moltbot，可以利用ai skill能力自动操作电脑。
+https://damodev.csdn.net/697eed9b7c1d88441d9111e8.html
 
-阿里云动作很快，立马推出了免部署的云服务器服务，我想试试
+powershell(以管理员方式打开）
 
-https://developer.aliyun.com/article/1709047?spm=a2c6h.12883283.index.38.5f1f43075Ot0VX
+```yaml
+https://damodev.csdn.net/697eed9b7c1d88441d9111e8.html
+```
 
-<img src="/assets/KuXqbeSGIosKLaxyMxjcgRaMnzh.png" src-width="1002" class="markdown-img m-auto" src-height="472" align="center"/>
+## 1.1 用wsl（没成功）
 
-有点贵，我现在用的服务器才99元一年，这个要290一个月，不玩了。
+https://github.com/spoto-team/openclaw-wsl-guide
 
-# 2. 本地体验
-
-https://www.53ai.com/news/gerentixiao/2026012974251.html
-
-https://docs.openclaw.ai/
-
-## 2.1 用wsl
+先设置网络为镜像
 
 安装node.js
 
 <img src="/assets/OlTEb51JdowzcwxMmQ5cUHPnnqb.png" src-width="1247" class="markdown-img m-auto" src-height="806" align="center"/>
 
-一键安装
+npm
+
+```yaml
+npm i -g openclaw
+openclaw onboard --install-daemon
+```
+
+或者一键安装
 
 ```yaml
 curl -fsSL https://openclaw.ai/install.sh | bash
 ```
 
-或者npm
+验证安装
 
 ```yaml
-npm i -g openclaw
-openclaw onboard
+which openclaw
+openclaw --version
+openclaw gateway status
 ```
 
-## 2.2 windows本地
+### 1.1.1 windows本地
 
 ```yaml
 npm i -g openclaw@latest
-openclaw onboard
+openclaw onboard --install-daemon
 ```
 
 安装完后，如果网关没有启动，可以执行
@@ -75,7 +79,7 @@ openclaw configure
 http://127.0.0.1:18789/?token=40b40b3e376b1926c6da36ce636e91d61f20e1e2c0802d35
 ```
 
-### 2.2.1 异常
+### 1.1.2 异常
 
 ```bash
 07:47:22 [gateway] [plugins] failed to load plugin: Error: Cannot find module 'clawdbot/plugin-sdk'
@@ -108,7 +112,7 @@ Require stack:
 npm i -g clawdbot@latest
 ```
 
-# 3. 源码运行
+# 2. 源码运行
 
 ```yaml
 git clone https://github.com/openclaw/openclaw.git
