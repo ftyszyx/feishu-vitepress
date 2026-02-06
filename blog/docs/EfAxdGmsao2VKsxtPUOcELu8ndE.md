@@ -1,6 +1,6 @@
 ---
 create_time: 1769652794
-edit_time: 1770258891
+edit_time: 1770276037
 title: moltbot
 categories:
   - skill
@@ -8,6 +8,8 @@ categories:
 
 
 https://github.com/moltbot/moltbot
+
+[文档](https://docs.openclaw.ai/platforms)
 
 # 1. 本地体验 
 
@@ -126,5 +128,37 @@ pnpm openclaw onboard --install-daemon
 
 # Dev loop (auto-reload on TS changes)
 pnpm gateway:watch
+```
+
+这里增加model provider
+
+<img src="/assets/D2pRbrEEkoBM5NxjIvwcXbFWnsb.png" src-width="1160" class="markdown-img m-auto" src-height="293" align="center"/>
+
+入口：
+
+openclaw.mjs-》await import("./dist/entry.js");
+
+```js
+import("./cli/run-main.js")
+    .then(({  **runCli** }) => runCli(process.argv))
+    .catch((_error_) => {
+      console.error(
+        "[openclaw] Failed to start CLI:",
+        _error_ instanceof Error ? (_error_.stack ?? _error_.message) : _error_,
+      );
+      process.exitCode = 1;
+    });
+```
+
+# 3. 飞书插件
+
+penClaw飞书插件的地址如下：
+
+https://github.com/m1heng/clawdbot-feishu.git
+
+按照插件的说明文档，执行下方命令即可安装：
+
+```yaml
+openclaw plugins install @m1heng-clawd/feishu
 ```
 
