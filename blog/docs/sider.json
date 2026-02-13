@@ -570,6 +570,24 @@
       {
         "text": "感想",
         "link": "/Y3AqdJiOKo8tk5xqnfpcjcPun9f"
+      },
+      {
+        "text": "精彩话术",
+        "items": [
+          {
+            "text": "工作而已",
+            "link": "/Vg1id85phocicSxQ324ck3K6n0b"
+          },
+          {
+            "text": "一头驴",
+            "link": "/ZkzKdjStco7LTwxYaOhcKSqInhb"
+          },
+          {
+            "text": "镜中的牛马",
+            "link": "/PyPrdTjZjoFV2JxgstDc4rExnQd"
+          }
+        ],
+        "collapsed": true
       }
     ],
     "collapsed": true
@@ -1056,11 +1074,6 @@
         "text": "家长会"
       }
     ],
-    "collapsed": true
-  },
-  {
-    "text": "note_record",
-    "items": [],
     "collapsed": true
   }
 ]
