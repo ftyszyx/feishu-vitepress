@@ -434,8 +434,22 @@
             "collapsed": true
           },
           {
-            "text": "Opencode",
-            "link": "/PnZxdXrXpoXRO0xuVA4c3VLRnRg"
+            "text": "Coding",
+            "items": [
+              {
+                "text": "Opencode",
+                "link": "/PnZxdXrXpoXRO0xuVA4c3VLRnRg"
+              },
+              {
+                "text": "Claude code",
+                "link": "/RalddH1jEolug0xbBDLcLxPrnBb"
+              },
+              {
+                "text": "Codex",
+                "link": "/GMB6dTsuko1z6lxZqfRcklT4nRe"
+              }
+            ],
+            "collapsed": true
           }
         ],
         "collapsed": true
