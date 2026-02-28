@@ -1,6 +1,6 @@
 ---
 create_time: 1772156634
-edit_time: 1772158735
+edit_time: 1772160498
 title: Claude code
 categories:
   - skill
@@ -30,4 +30,8 @@ https://github.com/farion1231/cc-switch
 命令行中输入claude 回车
 
 就可以直接使用了
+
+# 3. vscode中有插件
+
+<img src="/assets/Vzs1b7zzvo88XGxD4IrcK2lLnFe.png" src-width="1278" class="markdown-img m-auto" src-height="455" align="center"/>
 
