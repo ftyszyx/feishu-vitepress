@@ -1,6 +1,6 @@
 ---
 create_time: 1772415884
-edit_time: 1772416971
+edit_time: 1772420446
 title: Newapi
 categories:
   - other_platform
@@ -80,4 +80,6 @@ networks:
   1panel-network:
     external: true
 ```
+
+<img src="/assets/AsqCbxgBgoIyeHxxzeucbfxWnUh.png" src-width="629" class="markdown-img m-auto" src-height="178" align="center"/>
 
