@@ -422,12 +422,23 @@
             "collapsed": true
           },
           {
-            "text": "Vibecoding",
-            "link": "/WE84dlJgtoXmFqxQAzOctEy8nCh"
+            "text": "Ai agent bot",
+            "link": "/OGWod7ULKo0U2Gx3gzJc8vB5nEb",
+            "items": [
+              {
+                "text": "openclaw（的确是难用）",
+                "link": "/EfAxdGmsao2VKsxtPUOcELu8ndE"
+              },
+              {
+                "text": "openfang",
+                "link": "/LRV1dov8kotxKexE1MIcuVG1n9f"
+              }
+            ],
+            "collapsed": true
           },
           {
-            "text": "moltbot",
-            "link": "/EfAxdGmsao2VKsxtPUOcELu8ndE"
+            "text": "Vibecoding",
+            "link": "/WE84dlJgtoXmFqxQAzOctEy8nCh"
           },
           {
             "text": "杂项",

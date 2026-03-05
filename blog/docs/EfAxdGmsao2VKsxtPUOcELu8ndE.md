@@ -1,7 +1,7 @@
 ---
 create_time: 1769652794
-edit_time: 1770276037
-title: moltbot
+edit_time: 1772677332
+title: openclaw（的确是难用）
 categories:
   - skill
 ---
@@ -161,4 +161,16 @@ https://github.com/m1heng/clawdbot-feishu.git
 ```yaml
 openclaw plugins install @m1heng-clawd/feishu
 ```
+
+# 4. 使用docker（还是不成功）
+
+使用这个项目
+
+```yaml
+https://github.com/justlovemaki/OpenClaw-Docker-CN-IM
+```
+
+## 4.1 qq机器人
+
+https://bot.q.qq.com/wiki/develop/api-v2/#%E8%B4%A6%E5%8F%B7%E6%B3%A8%E5%86%8C
 
