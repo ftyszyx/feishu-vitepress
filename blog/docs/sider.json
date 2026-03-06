@@ -432,6 +432,10 @@
               {
                 "text": "openfang",
                 "link": "/LRV1dov8kotxKexE1MIcuVG1n9f"
+              },
+              {
+                "text": "Pi agent(有更好用的openfang暂停)",
+                "link": "/XWefdpzxaoy8VmxaQzPcmyJEn6c"
               }
             ],
             "collapsed": true
@@ -1105,10 +1109,6 @@
           {
             "text": "Newapi",
             "link": "/OT8tdriWPohRGJxz5sHcDfbgnPf"
-          },
-          {
-            "text": "Pi agent",
-            "link": "/XWefdpzxaoy8VmxaQzPcmyJEn6c"
           }
         ],
         "collapsed": true

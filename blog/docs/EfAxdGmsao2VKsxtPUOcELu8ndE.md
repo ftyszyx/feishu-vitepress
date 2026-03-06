@@ -1,6 +1,6 @@
 ---
 create_time: 1769652794
-edit_time: 1772677332
+edit_time: 1772760397
 title: openclaw（的确是难用）
 categories:
   - skill
@@ -173,4 +173,8 @@ https://github.com/justlovemaki/OpenClaw-Docker-CN-IM
 ## 4.1 qq机器人
 
 https://bot.q.qq.com/wiki/develop/api-v2/#%E8%B4%A6%E5%8F%B7%E6%B3%A8%E5%86%8C
+
+# 5. 暴露
+
+https://openclaw.allegro.earth/
 

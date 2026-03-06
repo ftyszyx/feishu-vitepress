@@ -1,9 +1,9 @@
 ---
 create_time: 1772437430
-edit_time: 1772443127
-title: Pi agent
+edit_time: 1772691625
+title: Pi agent(有更好用的openfang暂停)
 categories:
-  - other_platform
+  - skill
 ---
 
 
@@ -60,4 +60,35 @@ https://github.com/badlogic/pi-mono/blob/main/packages/coding-agent/docs/extensi
 # 2. 主要的结构
 
 <img src="/assets/Lc5YbkwkloKQHjxouX0cYdZ0n0d.png" src-width="692" class="markdown-img m-auto" src-height="286" align="center"/>
+
+## 2.1 agent
+
+```yaml
+npm install @mariozechner/pi-agent-core
+```
+
+使用
+
+```js
+import { Agent } from "@mariozechner/pi-agent-core";
+import { getModel } from "@mariozechner/pi-ai";
+
+const agent = new Agent({
+  initialState: {
+    systemPrompt: "You are a helpful assistant.",
+    model: getModel("anthropic", "claude-sonnet-4-20250514"),
+  },
+});
+
+agent.subscribe((event) => {
+  if (event.type === "message_update" && event.assistantMessageEvent.type === "text_delta") {
+    // Stream just the new text chunk
+    process.stdout.write(event.assistantMessageEvent.delta);
+  }
+});
+
+await agent.prompt("Hello!");
+```
+
+<img src="/assets/GttibfBX6oIY2AxELE5c0o48npB.png" src-width="604" class="markdown-img m-auto" src-height="355" align="center"/>
 
