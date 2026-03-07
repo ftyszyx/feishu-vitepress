@@ -1,6 +1,6 @@
 ---
 create_time: 1769652794
-edit_time: 1772760397
+edit_time: 1772769357
 title: openclaw（的确是难用）
 categories:
   - skill
@@ -170,11 +170,39 @@ openclaw plugins install @m1heng-clawd/feishu
 https://github.com/justlovemaki/OpenClaw-Docker-CN-IM
 ```
 
-## 4.1 qq机器人
+启动后，打开http://127.0.0.1:18789
 
-https://bot.q.qq.com/wiki/develop/api-v2/#%E8%B4%A6%E5%8F%B7%E6%B3%A8%E5%86%8C
+## 4.1 连接网关
+
+<img src="/assets/R7LJbmWjMo7qivxGbPFcs5fMndh.png" src-width="854" class="markdown-img m-auto" src-height="622" align="center"/>
+
+## 4.2 连接网关异常
+
+```yaml
+closed before connect conn=65f201be-2149-422a-b948-44875b45ca59 remote=172.19.0.1 fwd=n/a origin=http://127.0.0.1:18789 host=127.0.0.1:18789 ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0 code=1008 reason=pairing requi
+```
+
+<img src="/assets/Iwc8bJeTFoX7QCxzANDcY1oTnEe.png" src-width="584" class="markdown-img m-auto" src-height="497" align="center"/>
+
+这个docker内网配对有点麻烦，直接把配对验证关掉
+
+```bash
+__
+_# 危险：禁用设备认证（如在 Docker 环境中无法获取设备信息），可选 true/false_
+OPENCLAW_GATEWAY_DANGEROUSLY_DISABLE_DEVICE_AUTH=true
+_# 插件全局控制_
+OPENCLAW_PLUGINS_ENABLED=true
+```
+
+## 4.3 qq机器人
+
+https://q.qq.com/qqbot/openclaw/login.html
 
 # 5. 暴露
 
 https://openclaw.allegro.earth/
+
+# 6. 各种官方skill
+
+https://clawhub.ai/skills?sort=downloads
 
