@@ -1,17 +1,31 @@
 ---
 create_time: 1734079515
-edit_time: 1750596429
+edit_time: 1773329029
 title: ubuntu
 categories:
   - skill
 ---
 
 
-# 1. ubuntu虚拟机安装
+## 1.1 使用国内源
+
+参考：
+
+https://www.alibabacloud.com/help/zh/ecs/use-cases/manage-and-use-linux-software-repositories#ed440cd42184r
+
+# 1. 一些命令
+
+查看系统版本
+
+```yaml
+lsb_release -a
+```
+
+# 2. ubuntu虚拟机安装
 
 使用的是virtualbox安装
 
-## 1.1 问题1：
+## 2.1 问题1：
 
 鼠标没有用
 
@@ -19,13 +33,13 @@ categories:
 
 <img src="/assets/JJAHbm7Ycowu1nxaNVDcoUPRnFf.png" src-width="498" class="markdown-img m-auto" src-height="346" align="center"/>
 
-## 1.2 增强功能无效
+## 2.2 增强功能无效
 
 <img src="/assets/BxTrbMlbqoUhgoxAe1PcU2Gpngf.png" src-width="878" class="markdown-img m-auto" src-height="568" align="center"/>
 
  
 
-## 1.3 ssh如何连接
+## 2.3 ssh如何连接
 
 安装sshd
 
@@ -77,15 +91,10 @@ Permission denied, please try again.
 sudo /etc/init.d/ssh restart
 ```
 
-# 2. ubuntu apt  相关
+# 3. ubuntu apt  相关
 
-## 2.1 使用国内源
-
-参考：
-
-https://www.alibabacloud.com/help/zh/ecs/use-cases/manage-and-use-linux-software-repositories#ed440cd42184r
-
-## 2.2 获取当着库在源 上的版本号 
+## 3.1 
+## 3.2 获取当着库在源 上的版本号 
 
 ```yaml
 apt-cache policy libgdal-dev
@@ -93,5 +102,5 @@ apt-cache policy libgdal-dev
 
 <img src="/assets/BiHbbgqSrolNM0xQBvicL2XGnZe.png" src-width="792" class="markdown-img m-auto" src-height="159" align="center"/>
 
-## 2.3 安装某个特定版本
+## 3.3 安装某个特定版本
 
