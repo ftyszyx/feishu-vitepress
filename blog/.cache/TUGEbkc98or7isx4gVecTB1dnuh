@@ -1,0 +1,503 @@
+{
+  "name": "capcut_http_workflow",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -1744,
+        -16
+      ],
+      "id": "be364653-77ec-4cf1-a2de-9ab9507049de",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "operation": "captureNetwork",
+        "url": "= {{ $json.shortUrl }}",
+        "urlFilter": "=/aweme/v1/web/aweme/detail/.*{{ $json.videoId }}",
+        "resourceTypes": [
+          "application/json"
+        ],
+        "browserOptions": {
+          "headless": false
+        }
+      },
+      "type": "n8n-nodes-playwright.playwright",
+      "typeVersion": 1,
+      "position": [
+        -1296,
+        -16
+      ],
+      "id": "006f39dc-8ee8-4921-a760-01d9c4e44ff8",
+      "name": "Playwright"
+    },
+    {
+      "parameters": {
+        "jsCode": "const urls=[];for(const item of $input.all()){const list=item.json?.records?.[0]?.body?.aweme_detail?.video?.download_addr?.url_list||[];for(const u of list) urls.push(u);}return [{json:{urls}}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -1072,
+        -16
+      ],
+      "id": "08f305bc-42ad-499d-b464-dee53349d66c",
+      "name": "Extract URLs"
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "urls",
+        "options": {
+          "destinationFieldName": "url"
+        }
+      },
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        -848,
+        -16
+      ],
+      "id": "2e3e7f31-ebe8-44cb-aa8b-2c009fb3f4f8",
+      "name": "Split Out URLs"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        -624,
+        -16
+      ],
+      "id": "86cc4d55-8512-45ce-98d0-03ece37dec64",
+      "name": "Loop Over Items"
+    },
+    {
+      "parameters": {
+        "mode": "expression",
+        "output": "={{ $binary.data&&($binary.data.mimeType==\"video/mp4\")? 0 : 1 }}",
+        "outputsAmount": 2
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 2,
+      "position": [
+        -176,
+        56
+      ],
+      "id": "6133f723-13ef-493c-8a9f-865e67e15cd8",
+      "name": "Has Binary?"
+    },
+    {
+      "parameters": {
+        "mode": "raw",
+        "jsonOutput": "={\"success\":false,\"reason\":\"all urls failed\"}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -400,
+        -208
+      ],
+      "id": "5eaaf8e7-c294-4cba-989c-e267d0a96d09",
+      "name": "All Failed"
+    },
+    {
+      "parameters": {
+        "url": "={{ $json.url }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Windows\""
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\", \"Microsoft Edge\";v=\"144\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "referer",
+              "value": "={{ $json.url }}"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true,
+              "neverError": true,
+              "responseFormat": "file"
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        -400,
+        -16
+      ],
+      "id": "530923f0-a3c6-4094-b2f3-092e008a50b6",
+      "name": "HTTP Request1",
+      "continueOnFail": true
+    },
+    {
+      "parameters": {
+        "shareText": "8.25 复制打开抖音，看看【AI硬件情报局的作品】这台国产小机器人众筹卷走两百多万，老外都抢着付钱 ... https://v.douyin.com/ZtNn--M8J4M/ 07/25 H@V.lC oDH:/ "
+      },
+      "type": "n8n-nodes-douyin-dashscope.douyinParse",
+      "typeVersion": 1,
+      "position": [
+        -1520,
+        -16
+      ],
+      "id": "e78bb6ce-8855-48eb-99d9-4e24ea1065e8",
+      "name": "Douyin Parse"
+    },
+    {
+      "parameters": {
+        "operation": "write",
+        "fileName": "={{'D:\\\\downloads\\\\douyin_'+$now.toMillis()+'.mp4'}}",
+        "options": {
+          "append": false
+        }
+      },
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1.1,
+      "position": [
+        48,
+        56
+      ],
+      "id": "02a63fc9-580b-4c79-8ff8-0707c2219db2",
+      "name": "Read/Write Files from Disk"
+    },
+    {
+      "parameters": {
+        "inputPath": "={{$json.fileName}}"
+      },
+      "type": "n8n-nodes-douyin-dashscope.ffmpegExtractAudio",
+      "typeVersion": 1,
+      "position": [
+        272,
+        56
+      ],
+      "id": "d48b4b38-5b3a-4541-a5b8-06f88fbb609e",
+      "name": "FFmpeg Extract Audio"
+    },
+    {
+      "parameters": {
+        "inputPath": "={{ $json.outputPath }}",
+        "pythonPath": "C:\\python39\\python.exe",
+        "device": "cuda",
+        "language": "zh",
+        "vadFilter": true
+      },
+      "type": "n8n-nodes-douyin-dashscope.whisperLocal",
+      "typeVersion": 1,
+      "position": [
+        496,
+        56
+      ],
+      "id": "c814b3b8-9897-47e6-a65f-977c8480d2ca",
+      "name": "Whisper (Local)"
+    },
+    {
+      "parameters": {
+        "operation": "toText",
+        "sourceProperty": "text",
+        "options": {
+          "encoding": "utf8"
+        }
+      },
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        720,
+        -40
+      ],
+      "id": "68390cd2-a72c-413c-8125-57ba7083b8cc",
+      "name": "Convert to File"
+    },
+    {
+      "parameters": {
+        "operation": "write",
+        "fileName": "={{ $('FFmpeg Extract Audio').item.json.outputPath.replace(\".mp3\",\".txt\") }}",
+        "options": {
+          "append": false
+        }
+      },
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1.1,
+      "position": [
+        944,
+        -40
+      ],
+      "id": "e4f8cd00-ca85-4ac5-8f9c-4f6ed163b8d3",
+      "name": "Read/Write Files from Disk1"
+    },
+    {
+      "parameters": {
+        "operation": "toText",
+        "sourceProperty": "segments",
+        "options": {
+          "encoding": "utf8"
+        }
+      },
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        720,
+        152
+      ],
+      "id": "012cf210-a82a-437d-b685-87443c82fb90",
+      "name": "Convert to File1"
+    },
+    {
+      "parameters": {
+        "operation": "write",
+        "fileName": "={{ $('FFmpeg Extract Audio').item.json.outputPath.replace(\".mp3\",\".json\") }}",
+        "options": {
+          "append": false
+        }
+      },
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1.1,
+      "position": [
+        944,
+        152
+      ],
+      "id": "12211435-366c-48a3-aa29-ef15569e043e",
+      "name": "Read/Write Files from Disk2"
+    },
+    {
+      "parameters": {
+        "mode": "raw",
+        "jsonOutput": "{\"success\":true}\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1168,
+        56
+      ],
+      "id": "0136de02-6ca0-41aa-beb6-ce91822985d6",
+      "name": "Edit Fields"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Douyin Parse",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Playwright": {
+      "main": [
+        [
+          {
+            "node": "Extract URLs",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract URLs": {
+      "main": [
+        [
+          {
+            "node": "Split Out URLs",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out URLs": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items": {
+      "main": [
+        [
+          {
+            "node": "All Failed",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "HTTP Request1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Has Binary?": {
+      "main": [
+        [
+          {
+            "node": "Read/Write Files from Disk",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request1": {
+      "main": [
+        [
+          {
+            "node": "Has Binary?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Douyin Parse": {
+      "main": [
+        [
+          {
+            "node": "Playwright",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read/Write Files from Disk": {
+      "main": [
+        [
+          {
+            "node": "FFmpeg Extract Audio",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "FFmpeg Extract Audio": {
+      "main": [
+        [
+          {
+            "node": "Whisper (Local)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Whisper (Local)": {
+      "main": [
+        [
+          {
+            "node": "Convert to File",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Convert to File1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert to File": {
+      "main": [
+        [
+          {
+            "node": "Read/Write Files from Disk1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert to File1": {
+      "main": [
+        [
+          {
+            "node": "Read/Write Files from Disk2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "All Failed": {
+      "main": [
+        []
+      ]
+    },
+    "Read/Write Files from Disk1": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read/Write Files from Disk2": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "availableInMCP": false
+  },
+  "versionId": "b74506ab-a92c-4d2a-adf5-c35f9ae64942",
+  "meta": {
+    "instanceId": "10632c0121cbee6ec79e0c57073a02f9d1ea757f302d57f377c92926266100d5"
+  },
+  "id": "Zy3KcXkia6l91zeQB49OH",
+  "tags": []
+}
