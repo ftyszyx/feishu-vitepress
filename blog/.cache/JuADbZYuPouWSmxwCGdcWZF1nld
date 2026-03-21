@@ -1,0 +1,155 @@
+const parser = require('@babel/parser')
+const generator = require('@babel/generator')
+const traverse = require('@babel/traverse')
+const types = require('@babel/types')
+const fs = require('fs')
+const vm = require('vm')
+
+const inputFile = process.argv[2] || './input/input.js'
+const code = fs.readFileSync(inputFile, 'utf-8')
+
+const ast = parser.parse(code, { sourceType: 'unambiguous' })
+//内联对象成员值
+function inlineObjectMemberValues(ast) {
+    const isSimpleValue = v => types.isStringLiteral(v) || types.isNumericLiteral(v) || types.isBooleanLiteral(v) || types.isNullLiteral(v)
+    const buildMapFromInit = init => {
+        const m = new Map()
+        if (types.isObjectExpression(init)) {
+            for (const p of init.properties) {
+                if (!types.isObjectProperty(p) || p.computed || !isSimpleValue(p.value)) continue
+                const k = types.isIdentifier(p.key) ? p.key.name : types.isStringLiteral(p.key) ? p.key.value : types.isNumericLiteral(p.key) ? String(p.key.value) : null
+                if (k !== null) m.set(k, p.value)
+            }
+        }
+        return m
+    }
+    traverse.default(ast, {
+        VariableDeclarator(path) {
+            if (!types.isIdentifier(path.node.id) || !path.node.init) return
+            const objName = path.node.id.name
+            const map = buildMapFromInit(path.node.init)
+            if (map.size === 0) return
+            const binding = path.scope.getBinding(objName)
+            if (!binding || binding.constantViolations.length) return
+            binding.referencePaths.forEach(rp => {
+                const p = rp.parentPath
+                if (!p || !p.isMemberExpression() || p.node.computed) return
+                if (!types.isIdentifier(p.node.object, { name: objName })) return
+                if (!types.isIdentifier(p.node.property)) return
+                const v = map.get(p.node.property.name)
+                if (v) p.replaceWith(types.cloneNode(v, true))
+            })
+        }
+    })
+}
+function flattenSwitchFlow(ast) {
+
+
+}
+
+function removeUnusedVar(ast) {
+    traverse.default(ast, {
+        Program(path) {
+            path.scope.crawl() //重建一次引用
+            path.traverse({
+                VariableDeclarator(p) {
+                    if (!types.isIdentifier(p.node.id)) return
+                    const binding = p.scope.getBinding(p.node.id.name)
+                    if (!binding || binding.constantViolations.length > 0) return
+                    if (!binding.referenced) p.remove()
+                }
+            })
+            path.stop() //停止遍历
+        }
+    })
+}
+
+//字符串原始还原
+function restoreStringLiteral(ast) {
+    traverse.default(ast, {
+        StringLiteral(path) {
+            if (path.node.extra && path.node.extra.raw) {
+                delete path.node.extra.raw
+            }
+        }
+    })
+}
+//内联标识符别名：var a=b; var c=a; => var c=b; 并把后续引用指向最终源头
+function inlineIdentifierAliases(ast) {
+    const resolve = (scope, name, seen = new Set()) => {
+        if (seen.has(name)) return name
+        seen.add(name)
+        const b = scope.getBinding(name)
+        if (!b || b.constantViolations.length) return name
+        const p = b.path
+        let init = null
+        if (p.isVariableDeclarator()) init = p.node.init
+        if (!init || !types.isIdentifier(init)) return name
+        if (init.name === name) return name
+        return resolve(scope, init.name, seen)
+    }
+    traverse.default(ast, {
+        Program(path) {
+            path.scope.crawl()
+            path.traverse({
+                VariableDeclarator(p) {
+                    if (!types.isIdentifier(p.node.id) || !types.isIdentifier(p.node.init)) return
+                    const b = p.scope.getBinding(p.node.id.name)
+                    if (!b || b.constantViolations.length) return
+                    const target = resolve(p.scope, p.node.init.name)
+                    if (target !== p.node.init.name) p.node.init = types.identifier(target)
+                },
+                ReferencedIdentifier(p) {
+                    const name = p.node.name
+                    const target = resolve(p.scope, name)
+                    if (target !== name) p.replaceWith(types.identifier(target))
+                }
+            })
+            path.stop()
+        }
+    })
+}
+//表达式还原
+function restoreExpression(ast) {
+    traverse.default(ast, {
+        "BinaryExpression|CallExpression|ConditionalExpression"(path) {
+            const { confident, value } = path.evaluate()
+            if (confident) {
+                path.replaceInline(types.valueToNode(value))
+            }
+        }
+    })
+}
+//去掉多余的逻辑代码
+function removeExtraLogic(ast) {
+    traverse.default(ast, {
+        enter(path) {
+            if (!path.isIfStatement()) return
+            const t = path.node.test
+            if (!types.isBooleanLiteral(t) && !types.isNumericLiteral(t)) return
+            const v = types.isBooleanLiteral(t) ? t.value : !!t.value
+            const pick = v ? path.node.consequent : path.node.alternate
+            if (!pick) { path.remove(); return }
+            if (types.isBlockStatement(pick)) path.replaceWithMultiple(pick.body)
+            else path.replaceWith(pick)
+        }
+    })
+}
+
+
+// intt
+removeUnusedVar(ast)
+restoreStringLiteral(ast)
+restoreExpression(ast)
+removeExtraLogic(ast)
+//特殊处理
+inlineObjectMemberValues(ast)
+inlineIdentifierAliases(ast)
+flattenSwitchFlow(ast)
+
+//post
+removeUnusedVar(ast)
+
+const result = generator.generate(ast)
+fs.writeFileSync('out.js', result.code)
+// console.log(result.code)
