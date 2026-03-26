@@ -487,14 +487,7 @@
       },
       {
         "text": "Math",
-        "items": [
-          {
-            "text": "定点计算"
-          },
-          {
-            "text": "四元素"
-          }
-        ],
+        "items": [],
         "collapsed": true
       },
       {
