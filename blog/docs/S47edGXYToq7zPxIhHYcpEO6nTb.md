@@ -1,27 +1,42 @@
 ---
 create_time: 1775113295
-edit_time: 1775141469
+edit_time: 1775205988
 title: 中转站
 categories:
   - skill
 ---
 
 
-方案： 
+# 1. 开源方案： 
 
-https://github.com/Wei-Shaw/sub2api
+New api 可以统计用量https://github.com/QuantumNous/new-api(不好用）
 
-New api 可以统计用量https://github.com/QuantumNous/new-api
-
-CLIProxyAPI 将codex转成标准 api服务
+CLIProxyAPI 将codex转成标准 api服务（只是一个中转服务，没有web页面）
 
 https://github.com/router-for-me/CLIProxyAPI
 
-需要一个海外服务器
+最终决定用https://github.com/Wei-Shaw/sub2api
 
-# 1. 加速
+1. ui简单，一目了然
+2. 可以生成各种类型的优惠码
+3. 可以自动导到ccswith，无需配置
+4. 中转和web ui都有
 
-## 1.1 使用clouadflaretunel
+## 1.1 需要一个海外服务器
+
+买了recknerd_server  70块一年 
+
+# 2. 需要一个codex plus账号
+
+闲鱼上买了代充值服务15一个月
+
+# 3. 访问加速
+
+服务器在美国，国内访问很慢，需要加速
+
+两种方案
+
+## 3.1 使用clouadflare tunel
 
 安装claudflare turnel,来加速你的http访问
 
@@ -41,7 +56,7 @@ sudo apt-get update && sudo apt-get install cloudflared
 
 获取优选ip，配置turnnel
 
-## 1.2 使用 **回源端口**
+## 3.2 使用 **回源端口**
 
 、最实用：免费版 “域名 → IP: 端口” 完整步骤
 
@@ -69,7 +84,9 @@ sudo apt-get update && sudo apt-get install cloudflared
     - 直接打开：`https://nas.xxx.com`
     -  **不用加 :5000**，自动转发
 
-# 2. 反代理
+# 4.  搞定
 
-https://github.com/router-for-me/Cli-Proxy-API-Management-Center
+<img src="/assets/GMvIbxxldoCDsZxdsH1cGvzdn1f.png" src-width="2552" class="markdown-img m-auto" src-height="922" align="center"/>
+
+<img src="/assets/Bkvgb31CZo22Ndx4rGNc9lqpnAh.png" src-width="2053" class="markdown-img m-auto" src-height="174" align="center"/>
 
