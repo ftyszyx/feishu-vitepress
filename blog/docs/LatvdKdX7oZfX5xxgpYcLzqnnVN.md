@@ -1,7 +1,7 @@
 ---
 create_time: 1766658533
-edit_time: 1770001307
-title: 玩玩n8n
+edit_time: 1776137601
+title: 玩玩n8n（agent流行后，工作流要落伍了）
 categories:
   - skill
 ---

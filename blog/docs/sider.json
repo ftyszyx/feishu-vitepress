@@ -350,76 +350,7 @@
         "text": "AI",
         "items": [
           {
-            "text": "Yolo"
-          },
-          {
             "text": "pytorch安装"
-          },
-          {
-            "text": "图片标注",
-            "link": "/VEZfdg4OIoVujzxicWXcjE1jnfc"
-          },
-          {
-            "text": "comfy_ui"
-          },
-          {
-            "text": "文生图",
-            "link": "/KUFRdrd1tonXcGxi6ywc2517noe"
-          },
-          {
-            "text": "Coze",
-            "link": "/OdPtdFV03oRswmxh4VtcYtzAn0f"
-          },
-          {
-            "text": "玩玩n8n",
-            "link": "/LatvdKdX7oZfX5xxgpYcLzqnnVN",
-            "items": [
-              {
-                "text": "bugly自动分析工作流使用说明",
-                "link": "/W92tdYHOKouTa6xXcjvcY1QAnnc",
-                "items": [
-                  {
-                    "text": "bugly自动分析n8n工作流-设计思路",
-                    "link": "/EofzddXPQoHuZxxXMqEc0ekanfe"
-                  }
-                ],
-                "collapsed": true
-              },
-              {
-                "text": "玩玩n8n,全自动流水线：下载→提音→转文字→带时间戳！",
-                "link": "/UwLld3UHwomPSMxCgRqchFb7n4g",
-                "items": [
-                  {
-                    "text": "工作流环境安装",
-                    "link": "/Z0kDdxtLsoChmBxzhA9c7Uv0nbc"
-                  }
-                ],
-                "collapsed": true
-              },
-              {
-                "text": "杂项",
-                "link": "/SNhpdp2UsobiKhxJN6McauKRnYc",
-                "items": [
-                  {
-                    "text": "Feishu node",
-                    "link": "/CfVFdbn9eoKIyYxoJiFcoMRwnEb"
-                  },
-                  {
-                    "text": "n8n使用后的一点感想",
-                    "link": "/RnAIdh6oOoZyiFx8Nylc2Rx8nac"
-                  },
-                  {
-                    "text": "公众号"
-                  },
-                  {
-                    "text": "源码运行",
-                    "link": "/GqYUdgV3Jo0kUHx0qqichS5fnzf"
-                  }
-                ],
-                "collapsed": true
-              }
-            ],
-            "collapsed": true
           },
           {
             "text": "Ai agent bot",
@@ -443,10 +374,6 @@
             "collapsed": true
           },
           {
-            "text": "Vibecoding",
-            "link": "/WE84dlJgtoXmFqxQAzOctEy8nCh"
-          },
-          {
             "text": "杂项",
             "items": [
               {
@@ -456,6 +383,10 @@
               {
                 "text": "ai接口",
                 "link": "/IMusdtTMKoUwRUxGU4ecc82dnKe"
+              },
+              {
+                "text": "飞书mcp",
+                "link": "/TXQVdGLHbotj5GxyjPpckC0snBe"
               }
             ],
             "collapsed": true
@@ -481,6 +412,81 @@
           {
             "text": "中转站",
             "link": "/S47edGXYToq7zPxIhHYcpEO6nTb"
+          },
+          {
+            "text": "ai工作流（没用了）",
+            "items": [
+              {
+                "text": "玩玩n8n（agent流行后，工作流要落伍了）",
+                "link": "/LatvdKdX7oZfX5xxgpYcLzqnnVN",
+                "items": [
+                  {
+                    "text": "bugly自动分析工作流使用说明",
+                    "link": "/W92tdYHOKouTa6xXcjvcY1QAnnc",
+                    "items": [
+                      {
+                        "text": "bugly自动分析n8n工作流-设计思路",
+                        "link": "/EofzddXPQoHuZxxXMqEc0ekanfe"
+                      }
+                    ],
+                    "collapsed": true
+                  },
+                  {
+                    "text": "玩玩n8n,全自动流水线：下载→提音→转文字→带时间戳！",
+                    "link": "/UwLld3UHwomPSMxCgRqchFb7n4g",
+                    "items": [
+                      {
+                        "text": "工作流环境安装",
+                        "link": "/Z0kDdxtLsoChmBxzhA9c7Uv0nbc"
+                      }
+                    ],
+                    "collapsed": true
+                  },
+                  {
+                    "text": "杂项",
+                    "link": "/SNhpdp2UsobiKhxJN6McauKRnYc",
+                    "items": [
+                      {
+                        "text": "Feishu node",
+                        "link": "/CfVFdbn9eoKIyYxoJiFcoMRwnEb"
+                      },
+                      {
+                        "text": "n8n使用后的一点感想",
+                        "link": "/RnAIdh6oOoZyiFx8Nylc2Rx8nac"
+                      },
+                      {
+                        "text": "公众号"
+                      },
+                      {
+                        "text": "源码运行",
+                        "link": "/GqYUdgV3Jo0kUHx0qqichS5fnzf"
+                      }
+                    ],
+                    "collapsed": true
+                  }
+                ],
+                "collapsed": true
+              },
+              {
+                "text": "Coze",
+                "link": "/OdPtdFV03oRswmxh4VtcYtzAn0f"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "text": "图像识别",
+            "link": "/Basad6jz8oyyPEx9oEhcz23unSI",
+            "items": [
+              {
+                "text": "Yolo"
+              },
+              {
+                "text": "图片标注",
+                "link": "/VEZfdg4OIoVujzxicWXcjE1jnfc"
+              }
+            ],
+            "collapsed": true
           }
         ],
         "collapsed": true
