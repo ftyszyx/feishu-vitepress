@@ -4,7 +4,8 @@ import sidebar from "../../en/sider.json";
 export const en = defineConfig({
   title: "yuxin's blog",
   lang: "en",
-  description: "my blog",
+  description:
+    "A personal blog about software, AI tools, automation, product experiments and daily notes.",
   themeConfig: {
     nav: [{ text: "about", link: "https://github.com/ftyszyx" }],
     outlineTitle: "guide",
@@ -24,11 +25,11 @@ export const en = defineConfig({
       next: "next",
     },
 
-    langMenuLabel: "多语言",
-    returnToTopLabel: "回到顶部",
-    sidebarMenuLabel: "菜单",
-    darkModeSwitchLabel: "主题",
-    lightModeSwitchTitle: "切换到浅色模式",
-    darkModeSwitchTitle: "切换到深色模式",
+    langMenuLabel: "Language",
+    returnToTopLabel: "Back to top",
+    sidebarMenuLabel: "Menu",
+    darkModeSwitchLabel: "Theme",
+    lightModeSwitchTitle: "Switch to light mode",
+    darkModeSwitchTitle: "Switch to dark mode",
   },
 });

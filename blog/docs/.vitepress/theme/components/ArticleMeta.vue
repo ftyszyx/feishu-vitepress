@@ -8,7 +8,6 @@ const title = computed(() => frontmatter.value.title);
 const date = computed(() =>
   new Date(frontmatter.value.edit_time*1000).toLocaleDateString()
 );
-console.log(frontmatter.value);
 const bannerImageUrl = computed(() => {
   if (frontmatter.value.cover) return withBase(frontmatter.value.cover);
   return withBase("/normal_cover.png");

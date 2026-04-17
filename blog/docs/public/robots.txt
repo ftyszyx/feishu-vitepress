@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://blog.bytefuse.cn/sitemap.xml
+Host: https://blog.bytefuse.cn
