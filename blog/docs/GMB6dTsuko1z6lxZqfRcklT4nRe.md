@@ -1,6 +1,6 @@
 ---
 create_time: 1772159639
-edit_time: 1775557144
+edit_time: 1776766239
 title: Codex
 categories:
   - skill
@@ -31,3 +31,4 @@ ccusage-codex daily
 
 ccusage-codex monthly --json
 
+# 4. 
