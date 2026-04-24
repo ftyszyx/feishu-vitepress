@@ -361,14 +361,11 @@
                 "link": "/EfAxdGmsao2VKsxtPUOcELu8ndE"
               },
               {
-                "text": "openfang"
+                "text": "openfang（不好用，经常卡ke)"
               },
               {
                 "text": "Pi agent(有更好用的openfang暂停)",
                 "link": "/XWefdpzxaoy8VmxaQzPcmyJEn6c"
-              },
-              {
-                "text": "ironclaw"
               },
               {
                 "text": "hermes-agent",
@@ -391,6 +388,10 @@
               {
                 "text": "飞书mcp",
                 "link": "/TXQVdGLHbotj5GxyjPpckC0snBe"
+              },
+              {
+                "text": "Grsaiapi",
+                "link": "/LqRod93Sror0rWxQ9ujcz2C7nrb"
               }
             ],
             "collapsed": true

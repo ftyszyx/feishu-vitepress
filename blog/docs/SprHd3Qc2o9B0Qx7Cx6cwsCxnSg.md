@@ -1,6 +1,6 @@
 ---
 create_time: 1776491953
-edit_time: 1776752873
+edit_time: 1776952103
 title: hermes-agent
 categories:
   - skill
@@ -76,42 +76,13 @@ coder chat                        _# start chatting_
 
 ## 2.1 两个agent互通
 
-## 2.2 开启 Profile 间内部通信（Agent↔Agent 消息调用）
-
-修改全局 `~/.hermes/config.yaml`
-
-yaml
-
-```text
-agent:multi_profile_enabled: true# 开启Agent互信通信agent_to_agent:enabled: trueallow: ["bot_a", "bot_b"] # 两个Profile互相放行
-```
-
-## 2.3 分别启动双网关后台服务
-
-# 3. 五、飞书侧额外权限必开（90% 互通失败原因）
-
-两个飞书自建应用 **都必须额外开通**：
-
-1.  **发送消息给其他机器人权限**（飞书开放平台权限管理）开通：
-    - `im:message.send` 通用发送
-    - `im:resource.upload.all` 附件权限
-
-2. 关闭飞书机器人 **防骚扰拦截**：应用设置→安全→允许接收其他机器人消息
-3. 两个 Bot **拉进同一个飞书群**（最简测试场景）
-
-> 1. 群内 @BotA → BotA 回复 → 网关转发给 BotB → BotB 群内回复，测试最快
-
-# 4. 命令行太难用，有webui
-
-https://github.com/nesquena/hermes-webui
-
-# 5. 背景
+# 3. 背景
 
 openclaw小龙虾还没火几个月，又出了一个hermes-agent。现在别说普通人有焦虑，我们程序员一样有。
 
 公司要每人每个月用光1000刀的ai额度。如果光靠我一问一答，肯定是用不完了，必须用上全自动agent这种利器。所以现在开始研究一下hermes-agent
 
-# 6. windows部署
+# 4. windows部署
 
 hermes-agent 只能在linux上部署，不支持纯windows环境，这个简单，让ai去改写源码，给他说增加windows支持即可。 
 
