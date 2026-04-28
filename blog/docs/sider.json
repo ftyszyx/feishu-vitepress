@@ -408,7 +408,18 @@
           },
           {
             "text": "中转站",
-            "link": "/S47edGXYToq7zPxIhHYcpEO6nTb"
+            "link": "/S47edGXYToq7zPxIhHYcpEO6nTb",
+            "items": [
+              {
+                "text": "Openai",
+                "link": "/VmrCdg8ZVouFGUxF9tGc73ZXnkd"
+              },
+              {
+                "text": "Deepseek",
+                "link": "/IYHTdjqEioZdW0xYjZTczMotnzh"
+              }
+            ],
+            "collapsed": true
           },
           {
             "text": "ai工作流（没用了）",
@@ -484,6 +495,10 @@
               }
             ],
             "collapsed": true
+          },
+          {
+            "text": "",
+            "link": "/IV9xdWTyHoDV0wxLFq7cv2aDn1b"
           }
         ],
         "collapsed": true
