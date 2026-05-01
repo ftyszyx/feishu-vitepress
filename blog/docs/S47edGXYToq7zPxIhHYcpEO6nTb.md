@@ -1,6 +1,6 @@
 ---
 create_time: 1775113295
-edit_time: 1775205988
+edit_time: 1777530112
 title: 中转站
 categories:
   - skill
@@ -84,7 +84,39 @@ sudo apt-get update && sudo apt-get install cloudflared
     - 直接打开：`https://nas.xxx.com`
     -  **不用加 :5000**，自动转发
 
-# 4.  搞定
+# 4.  图片接口
+
+生成图：
+
+```cpp
+curl https://your-sub2api.com/v1/images/generations \
+  -H "Authorization: Bearer sk-xxx" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "gpt-image-2",
+    "prompt": "a cute orange cat astronaut",
+    "size": "1024x1024",
+    "response_format": "b64_json"
+  }'
+```
+
+编辑图：
+
+```bash
+curl https://your-sub2api.com/v1/images/edits \
+  -H "Authorization: Bearer sk-xxx" \
+  -F "model=gpt-image-2" \
+  -F "prompt=replace background with aurora sky" \
+  -F "image=@input.png" \
+  -F "mask=@mask.png"
+```
+
+也支持不带 /v1 的别名：
+
+- POST /images/generations
+- POST /images/edits
+
+# 5. 搞定
 
 <img src="/assets/GMvIbxxldoCDsZxdsH1cGvzdn1f.png" src-width="2552" class="markdown-img m-auto" src-height="922" align="center"/>
 
