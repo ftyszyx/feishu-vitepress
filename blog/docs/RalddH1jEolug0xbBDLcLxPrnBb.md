@@ -1,6 +1,6 @@
 ---
 create_time: 1772156634
-edit_time: 1772263042
+edit_time: 1777985440
 title: Claude code
 categories:
   - skill
@@ -81,22 +81,36 @@ assets/
 
 ## 4.5 权限
 
-.claude/settings.json
+### 4.5.1 一、CLI 临时开启（最常用）
 
-```yaml
-{
- "permissions":{
- "allow":[
- "Bash()",
- ],
- "deny":[
- "Bash(rm -rf *)",
- "Write(node_modules/**)",
- "Write(.env*)"
- ]
- }
-}
+终端启动时加：
+
+bash
+
+运行
+
+```text
+claude --dangerously-skip-permissions
 ```
+
+- 别名：`--bypass-permissions`
+- 效果：本次会话所有操作自动放行。
+
+---
+
+### 4.5.2 二、全局 / 项目默认全权限（settings.json）
+
+在项目根目录创建 / 编辑 `.claude/settings.json`：
+
+json
+
+```text
+{"permissions": {"defaultMode": "bypassPermissions"}}
+```
+
+保存后， **所有会话默认全权限**。
+
+ 
 
 ## 4.6 快捷键
 

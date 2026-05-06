@@ -1,94 +1,117 @@
 ---
+cover: /assets/QEFlbdKDjoX8HOxrbMrcwHognp3.jpeg
 create_time: 1775113295
-edit_time: 1777530112
-title: 中转站
+edit_time: 1777987730
+title: API 中转站搭建指南
 categories:
   - skill
 ---
 
 
-# 1. 开源方案： 
+# 1. API 中转站搭建指南
 
-New api 可以统计用量https://github.com/QuantumNous/new-api(不好用）
+> 本指南记录从零搭建 API 中转服务的完整流程，涵盖方案选型、服务器配置、访问加速及图片接口使用。
 
-CLIProxyAPI 将codex转成标准 api服务（只是一个中转服务，没有web页面）
+## 1.1 方案选型
 
-https://github.com/router-for-me/CLIProxyAPI
+经过对比和实测，最终选择 [sub2api](https://github.com/Wei-Shaw/sub2api) 作为中转方案。
 
-最终决定用https://github.com/Wei-Shaw/sub2api
+<table header_row="1">
+<colgroup>
+<col width="244"/>
+<col width="244"/>
+<col width="244"/>
+</colgroup>
+<thead>
+<tr><th><p>方案</p></th><th><p>说明</p></th><th><p>结论</p></th></tr>
+</thead>
+<tbody>
+<tr><td><p><a href="https://github.com/QuantumNous/new-api">New API</a></p></td><td><p>可统计 API 用量</p></td><td><p>用户体验较差，不推荐</p></td></tr>
+<tr><td><p><a href="https://github.com/router-for-me/CLIProxyAPI">CLIProxyAPI</a></p></td><td><p>将 Codex 转为标准 API 服务</p></td><td><p>仅中转服务，无 Web 管理页面</p></td></tr>
+<tr><td><p><a href="https://github.com/Wei-Shaw/sub2api">sub2api</a></p></td><td><p>中转 + Web UI 一体化</p></td><td><p>✅ 最终选用</p></td></tr>
+</tbody>
+</table>
 
-1. ui简单，一目了然
-2. 可以生成各种类型的优惠码
-3. 可以自动导到ccswith，无需配置
-4. 中转和web ui都有
+### 1.1.1 选择 sub2api 的理由
 
-## 1.1 需要一个海外服务器
+- UI 简洁，一目了然
+- 可生成多种类型的优惠码
+- 支持自动导入 ccsswith，无需手动配置
+- 同时提供中转服务和 Web 管理页面
 
-买了recknerd_server  70块一年 
+## 1.2 海外服务器
 
-# 2. 需要一个codex plus账号
+中转服务需要部署在海外服务器上。
 
-闲鱼上买了代充值服务15一个月
+-  **服务商**：Recknerd
+-  **费用**：约 70 元/年
 
-# 3. 访问加速
+## 1.3 Codex Plus 账号
 
-服务器在美国，国内访问很慢，需要加速
+中转需要 Codex Plus 账号作为后端 API 来源。
 
-两种方案
+-  **获取方式**：闲鱼代充值
+-  **费用**：约 15 元/月
 
-## 3.1 使用clouadflare tunel
+## 1.4 访问加速
 
-安装claudflare turnel,来加速你的http访问
+服务器位于美国，国内直接访问延迟较高，需配置 CDN 加速。
 
-```md
-# Add cloudflare gpg key
+### 1.4.1 方案一：Cloudflare Tunnel
+
+安装 Cloudflare Tunnel 加速 HTTP 访问：
+
+```bash
+# 添加 Cloudflare GPG Key
 sudo mkdir -p --mode=0755 /usr/share/keyrings
 curl -fsSL https://pkg.cloudflare.com/cloudflare-main.gpg | sudo tee /usr/share/keyrings/cloudflare-main.gpg >/dev/null
 
-# Add this repo to your apt repositories
+# 添加 apt 仓库
 echo 'deb [signed-by=/usr/share/keyrings/cloudflare-main.gpg] https://pkg.cloudflare.com/cloudflared any main' | sudo tee /etc/apt/sources.list.d/cloudflared.list
 
-# install cloudflared
+# 安装 cloudflared
 sudo apt-get update && sudo apt-get install cloudflared
 ```
 
-使用https://github.com/XIU2/CloudflareSpeedTest
+搭配 [CloudflareSpeedTest](https://github.com/XIU2/CloudflareSpeedTest) 获取优选 IP，配置 Tunnel。
 
-获取优选ip，配置turnnel
+### 1.4.2 方案二：回源端口（推荐）
 
-## 3.2 使用 **回源端口**
+免费版 Cloudflare 支持「域名 → IP:端口」的完整代理。以 `nas.xxx.com` → `123.45.67.89:5000` 为例：
 
-、最实用：免费版 “域名 → IP: 端口” 完整步骤
+ **1. 配置 DNS 记录**
 
-以  **nas.xxx.com** **→ 123.45.67.89:5000** 为例：
+- 类型： **A**
+- 名称：`nas`
+- 内容：`123.45.67.89`
+- 云朵： **橙色（开启代理）**
 
-1.  **DNS 记录**
-    - Type:  **A**
-    - Name: `nas`
-    - Content: `123.45.67.89`
-    -  **云朵：橙色（开启代理）**
-    <img src="/assets/PUcWbf7dzo5EAHxPyzocs0Gwnx1.webp" src-width="512" class="markdown-img" src-height="384"/>
+<img src="/assets/HWWNbKIWvowMsdxuD8Oc50OenXf.webp" src-width="512" class="markdown-img m-auto" src-height="384" align="center"/>
 
-2.  **设置回源端口（Origin Rule）**
-    - 进入  **Rules → Origin Rules**
-    - Add Rule
-    - Field:  **Hostname** → Value: `nas.xxx.com`
-    - Action:  **Rewrite origin port** → Port: `5000`
-    <img src="/assets/ZKk2bivxYo1D9oxXWxdcT0Nzn25.png" src-width="512" class="markdown-img" src-height="384"/>
+ **2. 设置回源端口（Origin Rule）**
 
-3.  **开启 HTTPS**
-    - SSL/TLS → 设为  **Full 或 Strict**
-    - Cloudflare 自动发免费证书
+- 进入  **Rules → Origin Rules**
+- 添加规则：Field  **Hostname** → Value `nas.xxx.com`
+- Action： **Rewrite origin port** → Port `5000`
 
-4.  **访问**
-    - 直接打开：`https://nas.xxx.com`
-    -  **不用加 :5000**，自动转发
+<img src="/assets/Z5rhbU4bMoc6W5x7J01ckL5ynBb.png" src-width="512" class="markdown-img m-auto" src-height="384" align="center"/>
 
-# 4.  图片接口
+ **3. 开启 HTTPS**
 
-生成图：
+- SSL/TLS 设为  **Full** 或  **Strict**
+- Cloudflare 自动签发免费证书
 
-```cpp
+ **4. 访问**
+
+- 直接打开 `https://nas.xxx.com`，无需加端口号，自动转发
+
+## 1.5 图片接口
+
+sub2api 支持图片生成与编辑接口。
+
+### 1.5.1 生成图片
+
+```bash
 curl https://your-sub2api.com/v1/images/generations \
   -H "Authorization: Bearer sk-xxx" \
   -H "Content-Type: application/json" \
@@ -100,7 +123,7 @@ curl https://your-sub2api.com/v1/images/generations \
   }'
 ```
 
-编辑图：
+### 1.5.2 编辑图片
 
 ```bash
 curl https://your-sub2api.com/v1/images/edits \
@@ -111,14 +134,14 @@ curl https://your-sub2api.com/v1/images/edits \
   -F "mask=@mask.png"
 ```
 
-也支持不带 /v1 的别名：
+也支持不带 `/v1` 的别名路径：
 
-- POST /images/generations
-- POST /images/edits
+- `POST /images/generations`
+- `POST /images/edits`
 
-# 5. 搞定
+## 1.6 最终效果
 
-<img src="/assets/GMvIbxxldoCDsZxdsH1cGvzdn1f.png" src-width="2552" class="markdown-img m-auto" src-height="922" align="center"/>
+<img src="/assets/FZykbzNceoojVYxdDfococKknld.png" src-width="2552" class="markdown-img m-auto" src-height="922" align="center"/>
 
-<img src="/assets/Bkvgb31CZo22Ndx4rGNc9lqpnAh.png" src-width="2053" class="markdown-img m-auto" src-height="174" align="center"/>
+<img src="/assets/KeX1ba2RPoIU1Exl5dccpqcXnAb.png" src-width="2053" class="markdown-img m-auto" src-height="174" align="center"/>
 

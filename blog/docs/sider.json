@@ -392,10 +392,6 @@
             "text": "Coding",
             "items": [
               {
-                "text": "Opencode",
-                "link": "/PnZxdXrXpoXRO0xuVA4c3VLRnRg"
-              },
-              {
                 "text": "Claude code",
                 "link": "/RalddH1jEolug0xbBDLcLxPrnBb"
               },
@@ -407,7 +403,7 @@
             "collapsed": true
           },
           {
-            "text": "中转站",
+            "text": "API 中转站搭建指南",
             "link": "/S47edGXYToq7zPxIhHYcpEO6nTb",
             "items": [
               {
