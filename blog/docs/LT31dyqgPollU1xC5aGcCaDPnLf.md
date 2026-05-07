@@ -1,6 +1,6 @@
 ---
 create_time: 1761622729
-edit_time: 1768530586
+edit_time: 1778074393
 title: Postgresql
 categories:
   - skill
@@ -90,4 +90,6 @@ psql -U $username -h 10.116.147.14 -d $dbname -f public.sql
 ### 2.1.1 UNLOGGED table
 
 https://dev.to/polliog/i-replaced-redis-with-postgresql-and-its-faster-4942
+
+<img src="/assets/DtcCbLZlYoXhQZx7coMcmbgenGc.png" src-width="854" class="markdown-img m-auto" src-height="232" align="center"/>
 
