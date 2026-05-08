@@ -1,83 +1,70 @@
 ---
 create_time: 1777302284
-edit_time: 1777302323
-title: Openai
+edit_time: 1778143349
+title: codex
 categories:
   - skill
 ---
 
 
- 已经用 opencli browser 实测了一次。结论是：ChatGPT Web 生图不是直接打公开的 gpt-image-1 /v1/images/generations，而是走 ChatGPT 内部对话流，把“生图”当作一次 chat turn + 内部异步图片任务。
+鉴于有时候白嫖的codex号总容易被封，这里有个比较简单的方法，起码1个月内基本省心无事：
 
-我把 token、签名、user id、文件签名都打码了，关键流程是：
+1.免费时长：有30天Plus会员试用期
 
-```bash
-1. POST /backend-api/f/conversation/prepare
-   -> 返回 conduit_token，用于后续对话/推送通道准备
+2.额度：日常使用完全够用
 
-2. POST /backend-api/f/conversation
-   Content-Type: application/json
-   Response: text/event-stream
+3.门槛：有PayPal账号即可（绑定国内储蓄卡也能用）
 
-   请求体核心：
-   {
-     "action": "next",
-     "messages": [{
-       "author": {"role": "user"},
-       "content": {
-         "content_type": "text",
-         "parts": ["请再生成一张图片：..."]
-       }
-     }],
-     "conversation_id": "...",
-     "parent_message_id": "...",
-     "model": "gpt-5-3",
-     "client_prepare_state": "success",
-     "conversation_mode": {"kind": "primary_assistant"},
-     "supports_buffering": true,
-     "supported_encodings": ["v1"]
-   }
+4.安全：按时取消订阅，不会被扣钱
 
-3. SSE 里先返回一个内部 assistant/tool turn
-   - assistant message recipient 是一个内部工具名
-   - content 里有 {"skipped_mainline": true}
-   - 随后返回一个 tool message/card：正在处理图片
-   - metadata 里出现：
-     image_gen_task_id
-     image_gen_multi_stream: true
-     block_interruption: true
-     permissions: notification/image_gen
+步骤如下：
 
-4. SSE 很快结束
-   事件里有：
-   - conversation_async_status
-   - message_marker
-   - server_ste_metadata
-   - message_stream_complete
-   - [DONE]
+1.先打开chatgpt官网,访问付费定价页面：
 
-   其中 server_ste_metadata 里能看到：
-   turn_use_case: "image gen"
-   model_slug: "gpt-5-3"
-   resume_with_websockets: true
+<img src="/assets/WFK8bFuLyodju7xCxoycLWc2nbf.png" src-width="690" class="markdown-img" src-height="366"/>
 
-5. 图片任务异步完成后，前端拿到 file_id
-   然后请求：
-   GET /backend-api/files/download/file_...?conversation_id=...&inline=false
+支持以下账号登录：
 
-   返回：
-   {
-     "status": "success",
-     "download_url": "/backend-api/estuary/content?id=file_...&sig=...",
-     "file_name": "...png",
-     "file_size_bytes": ...
-   }
+谷歌账户 (Google)
 
-6. 浏览器最终加载图片：
-   GET /backend-api/estuary/content?id=file_...&sig=...
-   Content-Type: image/png
+苹果账户 (Apple ID)
 
-7. 再 POST /backend-api/conversation/<conversation_id>/async-status
-   -> {"status":"OK"}
-```
+微软账户 (Microsoft)
+
+ **2.切换地区到德国**
+
+登录后，在页面右下角将地区切换为「德国」。
+
+为什么选德国？因为德国区可以用paypal！
+
+<img src="/assets/OPRRbddMUoDYR4xSKQ5cPCW0nVc.png" src-width="438" class="markdown-img" src-height="500"/>
+
+ **3：绑定PayPal**
+输入你的PayPal账号进行绑定。
+
+PayPal绑定说明：
+没有PayPal？免费注册一个
+绑定任意 **国内储蓄卡** ,你不怎么用的卡即可（亲测可用）
+不需要信用卡！
+
+<img src="/assets/ZCiRbB2ZOoD7HsxgBVSccXMgnIf.png" src-width="690" class="markdown-img" src-height="458"/>
+
+回到GPT的页面填写账单地址。
+
+注意账单地址填写的国家一定要跟自己的节点一致，而不是前面选的德国。
+
+4:确认Plus会员状态
+绑定成功后，页面会显示你已是  **Plus 会员** 。
+
+ **5：重要！取消自动续费**
+ **这一步非常重要！** 绑定成功后立即操作：
+
+如何取消订阅：
+点击你的 **头像**
+进入 **设置**
+找到 **账户** 选项
+点击 **取消订阅**
+取消后，当前30天仍可正常使用，到期后自动停止，不会扣费！
+
+ 
 

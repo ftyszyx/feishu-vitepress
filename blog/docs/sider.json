@@ -407,7 +407,7 @@
             "link": "/S47edGXYToq7zPxIhHYcpEO6nTb",
             "items": [
               {
-                "text": "Openai",
+                "text": "codex",
                 "link": "/VmrCdg8ZVouFGUxF9tGc73ZXnkd"
               },
               {
@@ -1128,6 +1128,10 @@
           {
             "text": "2026-5-6 市场热点复盘",
             "link": "/QMcodfYUzowUYlx8Gx9cC8aCnfg"
+          },
+          {
+            "text": "AI开始抢软件公司的饭碗了",
+            "link": "/CO5kddITnocA1bxVLjGcRKrRnfc"
           }
         ],
         "collapsed": true
