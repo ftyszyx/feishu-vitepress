@@ -6,7 +6,7 @@ keywords:
   - vpn
   - clash_windows
 create_time: 1717592186
-edit_time: 1752979997
+edit_time: 1778220774
 categories:
   - skill
 ---
@@ -47,4 +47,8 @@ https://cloud.tencent.com/developer/article/2480049
 https://docs.github.com/zh/authentication/troubleshooting-ssh/using-ssh-over-the-https-port
 
 <img src="/assets/RqtKbL2QXoOFPFxHaVscGGJcn6f.png" src-width="1356" class="markdown-img m-auto" src-height="436" align="center"/>
+
+# 2. Clash linux
+
+https://github.com/nelvko/clash-for-linux-install
 
