@@ -1,6 +1,6 @@
 ---
 create_time: 1776491953
-edit_time: 1776952103
+edit_time: 1778310495
 title: hermes-agent
 categories:
   - skill
@@ -71,7 +71,15 @@ https://hermes-agent.nousresearch.com/docs/user-guide/profiles
 ```yaml
 hermes profile create coder       _# creates profile + "coder" command alias_
 coder setup                       _# configure API keys and model_
-coder chat                        _# start chatting_
+coder gateway install    
+ coder gateway start           _# start coder's gateway_
+ hermes gateway status             # Check status
+```
+
+列出全部agents
+
+```yaml
+hermes profile list
 ```
 
 ## 2.1 两个agent互通

@@ -6,17 +6,23 @@ keywords:
   - vpn
   - clash_windows
 create_time: 1717592186
-edit_time: 1778220774
+edit_time: 1778338256
 categories:
   - skill
 ---
 
 
-# 1. clash_windows
+Rprx: vless-reality协议 v2ray
+
+# 1. clouadflare
+
+https://www.youtube.com/watch?v=uQFI6aNbJ1w
+
+# 2. clash_windows
 
 https://docs.gtk.pw/
 
-## 1.1 自定义配置
+## 2.1 自定义配置
 
 比如我要将bugly.qq.com加到代理中
 
@@ -36,7 +42,7 @@ mixin: # 注意下面缩进
     - "DOMAIN-SUFFIX,bugly.qq.com,节点选择"
 ```
 
-## 1.2 tun模式
+## 2.2 tun模式
 
 https://cloud.tencent.com/developer/article/2480049
 
@@ -48,7 +54,7 @@ https://docs.github.com/zh/authentication/troubleshooting-ssh/using-ssh-over-the
 
 <img src="/assets/RqtKbL2QXoOFPFxHaVscGGJcn6f.png" src-width="1356" class="markdown-img m-auto" src-height="436" align="center"/>
 
-# 2. Clash linux
+# 3. Clash linux
 
 https://github.com/nelvko/clash-for-linux-install
 
