@@ -1,6 +1,6 @@
 ---
 create_time: 1768545722
-edit_time: 1768701537
+edit_time: 1778469959
 title: licenseHub优化记录
 categories:
   - product
@@ -36,4 +36,12 @@ categories:
 # 6. 增加角色的权限管理
 
 <img src="/assets/D09db8yZKoCAzYxMtg3caEKHnWd.png" src-width="1225" class="markdown-img m-auto" src-height="669" align="center"/>
+
+# 7. 接入支付
+
+ **彩豆在线支付**
+
+官网：https://pay.521cd.cn/
+
+api文档：https://pay.521cd.cn/doc/epay_submit
 
