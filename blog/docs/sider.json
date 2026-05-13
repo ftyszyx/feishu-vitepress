@@ -418,17 +418,6 @@
                 "link": "/LatvdKdX7oZfX5xxgpYcLzqnnVN",
                 "items": [
                   {
-                    "text": "bugly自动分析工作流使用说明",
-                    "link": "/W92tdYHOKouTa6xXcjvcY1QAnnc",
-                    "items": [
-                      {
-                        "text": "bugly自动分析n8n工作流-设计思路",
-                        "link": "/EofzddXPQoHuZxxXMqEc0ekanfe"
-                      }
-                    ],
-                    "collapsed": true
-                  },
-                  {
                     "text": "玩玩n8n,全自动流水线：下载→提音→转文字→带时间戳！",
                     "link": "/UwLld3UHwomPSMxCgRqchFb7n4g",
                     "items": [

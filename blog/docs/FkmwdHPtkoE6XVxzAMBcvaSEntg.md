@@ -1,6 +1,6 @@
 ---
 create_time: 1768545722
-edit_time: 1778469959
+edit_time: 1778597880
 title: licenseHub优化记录
 categories:
   - product
@@ -39,9 +39,5 @@ categories:
 
 # 7. 接入支付
 
- **彩豆在线支付**
-
-官网：https://pay.521cd.cn/
-
-api文档：https://pay.521cd.cn/doc/epay_submit
+ ****
 
