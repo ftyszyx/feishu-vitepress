@@ -6,7 +6,7 @@ keywords:
   - vpn
   - clash_windows
 create_time: 1717592186
-edit_time: 1778338256
+edit_time: 1778766474
 categories:
   - skill
 ---
@@ -16,7 +16,43 @@ Rprx: vless-reality协议 v2ray
 
 # 1. clouadflare
 
+Worker:
+
+https://github.com/yonggekkk/Cloudflare-vless-trojan
+
 https://www.youtube.com/watch?v=uQFI6aNbJ1w
+
+## 1.1 新建 worker,粘贴代码
+
+主要代码在https://github.com/yonggekkk/Cloudflare-vless-trojan/tree/main/Vless_workers_pages
+
+<img src="/assets/GUFKbvZeaot65qxEAYAcA8G4nJh.png" src-width="1312" class="markdown-img m-auto" src-height="711" align="center"/>
+
+使用
+
+<img src="/assets/WSWmbZjfQoIYvtxskahc3id5nld.png" src-width="963" class="markdown-img m-auto" src-height="481" align="center"/>
+
+## 1.2 修改userid
+
+定义 一个环境变量
+
+<img src="/assets/NsClbVAcXoagv6xgS69czTwsnSM.png" src-width="1752" class="markdown-img m-auto" src-height="720" align="center"/>
+
+生成一个uuid
+
+https://www.kinde.com/tools/online-uuid-generator/
+
+<img src="/assets/SkwDbiKZAoABzOx8WWCcQ2iMn0e.png" src-width="1138" class="markdown-img m-auto" src-height="669" align="center"/>
+
+<img src="/assets/Uau7b5qq8o9ezfxuhN2c9uuvnKg.png" src-width="1316" class="markdown-img m-auto" src-height="171" align="center"/>
+
+## 1.3 添加自定义域名
+
+<img src="/assets/A0jHbEmMJoNq49xkk27cTj8kn2c.png" src-width="1377" class="markdown-img m-auto" src-height="381" align="center"/>
+
+## 1.4 访问
+
+域名/uuid
 
 # 2. clash_windows
 
