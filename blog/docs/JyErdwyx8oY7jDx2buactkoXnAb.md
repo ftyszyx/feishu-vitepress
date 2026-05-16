@@ -3,7 +3,7 @@ create_time: 1751900942
 edit_time: 1770001219
 title: livedown使用说明（没用了）
 categories:
-  - product
+  - 废弃
 ---
 
 

@@ -4,7 +4,7 @@ create_time: 1731037067
 edit_time: 1770001212
 title: Mycoverview重写（没用了）
 categories:
-  - product
+  - 废弃
 ---
 
 
