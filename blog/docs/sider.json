@@ -354,9 +354,6 @@
                 "link": "/EfAxdGmsao2VKsxtPUOcELu8ndE"
               },
               {
-                "text": "openfang（不好用，经常卡ke)"
-              },
-              {
                 "text": "hermes-agent",
                 "link": "/SprHd3Qc2o9B0Qx7Cx6cwsCxnSg"
               }
@@ -369,10 +366,6 @@
               {
                 "text": "Cuda",
                 "link": "/YzE3doCjZom6MaxtUYgcAOGqnoc"
-              },
-              {
-                "text": "ai接口",
-                "link": "/IMusdtTMKoUwRUxGU4ecc82dnKe"
               }
             ],
             "collapsed": true
@@ -484,13 +477,13 @@
               }
             ],
             "collapsed": true
+          },
+          {
+            "text": "ai接口",
+            "link": "/TfZEdjs8WoqakvxVl0vcpuv7n4c"
           }
         ],
         "collapsed": true
-      },
-      {
-        "text": "Cursor",
-        "link": "/TqEidTsTnoApB8xtQT6csl2jnlb"
       },
       {
         "text": "Math",
@@ -1117,7 +1110,7 @@
             "text": "2026-3-20 今天是生日"
           },
           {
-            "text": "2026-4-3"
+            "text": "2026-4-3 头发秃了"
           },
           {
             "text": "2026-5-6 市场热点复盘",
@@ -1140,8 +1133,12 @@
             "link": "/UdU1dS9ICoBcSdxW0GQc7bGVnve"
           },
           {
-            "text": "2026-6-3",
+            "text": "2016-6-3 跑去香港买中丐股，我到底图什么？",
             "link": "/Gb7ddwezCoazUlxfGa5cykdgnac"
+          },
+          {
+            "text": "2026-6-4",
+            "link": "/RvCtdIVowouEJXx1lCnc32BWnIh"
           }
         ],
         "collapsed": true
