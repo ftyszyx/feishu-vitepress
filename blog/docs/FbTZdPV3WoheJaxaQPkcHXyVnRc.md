@@ -1,105 +1,83 @@
 ---
 create_time: 1780976970
-edit_time: 1780977713
-title: 2026-6-8 更新
+edit_time: 1781011288
+title: 微博备份功能更新说明（2026-06-09）
 categories:
   - product
 ---
 
 
-# 1. 微博备份能力更新总结（2026-06-09）
+# 1. 一、新增：单条微博备份
 
-提交范围：fe4216c45d61c6e1d454c9b67283cb8ff4595c88（包含）至 efd1065334540dabd7b051f82b51662a875dff8c。
+现在可以直接输入单条微博链接发起备份，例如 weibo.com 或 m.weibo.cn/detail 形式的地址。程序会自动解析微博 ID；如果是 weibo.com 链接，也会解析账号 ID。
 
-提交数量：4 个。变更规模：23 个文件，约 4527 行新增、772 行删除。
+- 支持示例：weibo.com/8485906707/5306870604761569。
+- 支持示例：m.weibo.cn/detail/5306870604761569。
+- 单条微博任务不再需要时间范围和数量限制。
+- 单条微博仍支持随机等待设置，避免高频请求。
 
-## 1.1 一、核心成果
+## 1.1 二、新增：评论和转发备份
 
-- 支持单条微博备份：可直接输入 weibo.com 或 m.weibo.cn/detail 形式的单条微博地址，解析账号 ID 与微博 ID 后执行定向备份。
-- 支持评论与转发备份：Weibo 新版与 Weibo M 均增加评论、子评论、转发采集与 HTML 展示。
-- 增加断点续采能力：评论、子评论、转发、微博列表采集都可保存断点；暂停或异常后可以从上次位置继续。
-- 支持强制保存：运行中或任务已结束时，可将 checkpoint 中已采集的数据强制重建为 HTML，不必从 0 重新采集。
-- 优化大数据量 HTML 展示：评论和转发列表接入 virtual scroll，避免几万条数据一次性渲染导致页面卡顿。
+单条微博备份时，可以同时保存评论和转发。生成的 HTML 中，评论与转发以两个 Tab 展示，用户可以在同一个微博页面里快速切换查看。
 
-## 1.2 二、功能与实现细节
+配图：评论与转发 Tab，评论 4748，转发 3307。
 
-### 1.2.1 任务配置与单条微博
+<img src="/assets/SrTRbZnrsoBStNxPOeDc0c4wnKe.png" src-width="699" class="markdown-img m-auto" src-height="829" align="center"/>
 
-- 任务模型增加备份模式枚举，区分单条微博和全部微博。
-- 单条微博模式下隐藏时间范围与数量限制，同时保留随机等待设置。
-- 新增微博 URL 解析工具与测试，支持 weibo.com、m.weibo.cn/detail、短 ID 等形式。
+- 评论支持一级评论和子评论。
+- 转发以类似评论的列表形式保存，包含用户头像、昵称、时间和转发内容。
+- 评论和转发可以分别展开或收起，互不影响。
 
-### 1.2.2 Weibo 新版处理器
+## 1.2 三、优化：大数据量页面不再卡顿
 
-- 增加 repostTimeline 转发采集。
-- 评论和转发采集完成后输出总数与退出原因，便于判断是末页、空页、限流还是游标问题。
-- 增加随机延时、分页异常保护、cursor loop 保护，降低接口异常导致的重复或误判。
+评论和转发数量较大时，原来的 HTML 会一次性渲染所有 DOM，打开页面容易卡顿。这次接入了 virtual scroll，只渲染当前可见区域附近的数据。
 
-### 1.2.3 Weibo M 处理器
+配图：转发列表虚拟滚动，转发 3307，页面仍可流畅滚动。
 
-- 支持单条微博、评论时间流采集、转发采集、子评论层级保存、断点续采。
-- 评论从移动端热评流切换到时间流，避免只抓到几百条就停止。
-- 转发接口遇到临时 ok=0 时保存当前页断点、延长退避、刷新详情页后重试。
+<img src="/assets/CZSWbbSpso4pQRxgtOvcols7nXd.png" src-width="712" class="markdown-img m-auto" src-height="726" align="center"/>
 
-### 1.2.4 Checkpoint 与恢复
+- 评论、转发数量超过阈值后自动启用虚拟滚动。
+- 列表滚动时动态渲染可见项，降低浏览器 DOM 压力。
+- 展开评论或切换 Tab 后，会按当前容器重新初始化列表。
 
-- 新增 weibo_backup_checkpoint.dart，保存列表、评论、转发、分页 scope、节点子评论完成状态。
-- 当本地数量明显小于官方计数时，不再把评论或转发直接标记 completed，避免恢复时全跳过。
-- 节点子评论完成后记录 childrenCompleted，恢复时可以跳过已完成子树。
+## 1.3 四、优化：评论采集数量大幅提升
 
-### 1.2.5 HTML 输出与页面性能
+Weibo M 默认评论接口容易停留在热评流，导致采集数量和官方显示差距很大。这次将一级评论采集切换到时间流，并修复断点恢复时误判完成的问题。
 
-- 评论与转发改为 Tab 展示，支持独立展开和收起。
-- 大列表使用 virtual scroll，只渲染可视区域，改善几万条评论页面卡顿。
-- 修复展开回复时递归展开、HTML 标签裸露、文件名过长等问题。
-- 强制保存重建 HTML 时统一使用安全短文件名，避免 Windows 路径非法。
+配图：3 万+ 评论采集验证，评论 37360。
 
-## 1.3 三、关键问题修复
+<img src="/assets/IXrtbnYZ6odNY0xNAmGczexenFc.png" src-width="778" class="markdown-img m-auto" src-height="843" align="center"/>
 
-- 评论数量差距过大：发现 Weibo M 默认 hotflow max_id_type=0 是热评流，几百条后会停止；改用 max_id_type=1 时间流后可继续向旧评论翻页。
-- 转发接口假空页：Weibo M 的 repostTimeline 偶发在未到末页时返回 ok=0 或“还没有人转发过”；现在会保存当前页断点并重试。
-- 断点误判完成：本地数量小于官方计数时，不再把任务直接标完成。
-- 子评论层级丢失：保留评论树结构，支持子节点完成状态记录。
-- 页面卡顿：下载 virtual-scroller-dom 并随 HTML 资源复制，评论和转发过多时只渲染可视区域。
-- 强制保存异常：修复微博正文被用作文件名导致路径非法的问题。
-- HTML 标签裸露：移动端正文里的转义 HTML 会先反转义再安全过滤，避免页面显示 a href、br 等标签文本。
+- Weibo M 评论从热评流切换到时间流，减少“几百条后无下一页”的情况。
+- 评论采集会输出本地数量、官方数量和退出原因，方便判断接口是否提前结束。
+- 当本地数量明显小于官方数量时，不再把任务直接标记完成，后续可以继续尝试。
 
-## 1.4 四、验证结果
+## 1.4 五、新增：断点续采和强制保存
 
-- Weibo M 评论采集已验证可达到 3 万+ 评论量，测试截图显示评论数 37360。
-- 转发页可展示虚拟滚动列表，测试截图显示转发数 3307。
-- 评论与转发 Tab 可切换，评论列表和转发列表都支持单独展开或收起。
-- 相关修改已执行 dart format 与 dart analyze，未发现静态分析问题。
+评论、子评论、转发采集过程中都会保存断点。任务暂停、接口异常或手动中断后，可以从上一次位置继续，避免重新从 0 开始。
 
-## 1.5 五、涉及文件概览
+- 评论分页、转发分页、子评论节点都会记录进度。
+- 节点的子评论全部采集完成后，会标记为已完成，恢复时不用重复遍历。
+- 新增强制保存入口，可以把当前 checkpoint 中已经采集到的数据立即重建为 HTML。
+- 即使任务状态已经是完成，也可以通过恢复可运行状态或强制保存继续处理已有数据。
 
-- lib/services/processors/weibo_new_processor.dart：Weibo 新版评论、转发、分页、断点、日志增强。
-- lib/services/processors/weibo_m_processor.dart：Weibo M 单条微博、评论时间流、转发重试、HTML 内容清理。
-- lib/services/processors/weibo_backup_checkpoint.dart：新增微博备份断点存储。
-- lib/services/web_clone_service.dart：强制保存、checkpoint 重建 HTML、安全文件名、资源复制。
-- lib/utils/html_help.dart：评论与转发 Tab、virtual scroll、安全 HTML 过滤与转义处理。
-- lib/utils/weibo_url_parser.dart 与 test/weibo_url_parser_test.dart：微博 URL 解析与测试。
-- 任务页和任务表单相关文件：任务配置 UI 与强制保存入口。
+<img src="/assets/ABdEb0xzQopVUIxkc14cgbtsnFc.png" src-width="1892" class="markdown-img m-auto" src-height="1060" align="center"/>
 
-## 1.6 六、建议继续观察
+## 1.5 六、优化：接口异常和假空页处理
 
-- 微博官方计数与接口可采集数量不一定完全一致，建议日志继续保留本地数量、官方数量和退出原因。
-- 转发接口偶发假空页，当前策略是保存断点并重试；如果后续仍频繁触发，可考虑增加 Web 端 AJAX fallback。
-- 超大 HTML 已通过虚拟滚动改善，但仍建议继续关注图片、头像和评论树展开时的内存占用。
+微博接口会偶发返回空数据、ok=0、游标不推进等异常。现在采集逻辑会更谨慎地判断退出原因，避免把临时错误当成真正末页。
 
-## 1.7 七、测试截图
+- 转发接口未到 maxPage 时返回 ok=0，会保存当前页断点并退避重试。
+- 评论游标重复或循环时，不再直接标记整个互动采集完成。
+- 空页、数量不足、游标循环、HTTP 异常都会记录明确日志。
+- 需要验证码或接口返回异常时，会保存断点并暂停，方便用户验证后继续。
 
-下面三张截图来自：D:/work/github/weibocloner_web/public/images/weibo/20260609。
+## 1.6 七、优化：HTML 输出稳定性
 
-截图 1：评论与转发 Tab 展示，评论 4748、转发 3307。
+这次还修复了多个保存和展示细节，避免大任务在最后生成 HTML 时出错。
 
-<img src="/assets/Wq1MbvDXXoEXI4xQXuHcscYLnNh.png" src-width="699" class="markdown-img m-auto" src-height="829" align="center"/>
-
-截图 2：转发 Tab 和虚拟滚动展示，转发 3307。
-
-<img src="/assets/LbkgbrK5Ro82I1x4kh0c97osniM.png" src-width="712" class="markdown-img m-auto" src-height="726" align="center"/>
-
-截图 3：3 万+ 评论采集验证，评论 37360。
-
-<img src="/assets/DULRbpxbkoYMXrx2SDncsZRankg.png" src-width="778" class="markdown-img m-auto" src-height="843" align="center"/>
+- 修复移动端正文中的 HTML 标签裸露问题，例如 a href 和 br 标签不会再直接显示在页面里。
+- 修复强制保存时文件名过长或包含非法字符导致保存失败的问题。
+- 修复展开评论时递归展开所有层级的问题，现在只展开当前层级。
+- 评论与转发的 HTML 结构统一，后续继续扩展互动数据会更容易。
 

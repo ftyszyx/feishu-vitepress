@@ -1,7 +1,7 @@
 ---
 cover: /assets/M6uvbiIn4oUzObxI5TYc8i17nVc.jpeg
 create_time: 1774067371
-edit_time: 1779196379
+edit_time: 1781012352
 title: 微博备份工具使用教程：备份微博、评论、转发和视频到本地
 categories:
   - product
@@ -183,7 +183,19 @@ Cookies 保存成功后，账号状态会变为“已登录”。
 
 请仅备份本人或已获授权的内容。涉及他人内容时，请先确认授权范围和平台规则。
 
-# 9. 下一步
+# 9. 如何使用网页版本协议？
+
+打开设置 中的开关
+
+<img src="/assets/GjMCbj8TloXdlYxmffkcRbwVnf4.png" src-width="1898" class="markdown-img m-auto" src-height="84" align="center"/>
+
+<img src="/assets/NHpFbaNh9ous2MxbrercApq1ndf.png" src-width="1841" class="markdown-img m-auto" src-height="393" align="center"/>
+
+再增加账号就可以看到网页版本
+
+<img src="/assets/KxzMbkILnoUGOtxy8eWceu4QnYe.png" src-width="712" class="markdown-img m-auto" src-height="352" align="center"/>
+
+# 10. 下一步
 
 - 如果你还没有安装客户端，先访问官网下载安装：[https://weibocloner.bytefuse.cn/](https://weibocloner.bytefuse.cn/)
 - 需要长期使用或完整功能时，可以购买注册码：[https://apps.bytefuse.cn/products/1](https://apps.bytefuse.cn/products/1)
