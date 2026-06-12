@@ -1,7 +1,7 @@
 ---
 create_time: 1780651047
-edit_time: 1780979288
-title: 强制 996 之后，大家都在表演加班
+edit_time: 1781143656
+title: 2026-6-8 强制 996 之后，大家都在表演加班
 categories:
   - other_platform
 ---
