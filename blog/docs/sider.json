@@ -869,7 +869,14 @@
       },
       {
         "text": "lockpass_new",
-        "link": "/SOFHd9up1oMHyLxc1i6cxFtInxf"
+        "link": "/SOFHd9up1oMHyLxc1i6cxFtInxf",
+        "items": [
+          {
+            "text": "发布过程",
+            "link": "/HU7ud7Ldzos9zSxW5rycvdcZnqg"
+          }
+        ],
+        "collapsed": true
       },
       {
         "text": "咸鱼",
