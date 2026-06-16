@@ -1,17 +1,23 @@
 ---
 create_time: 1778939644
-edit_time: 1779095885
+edit_time: 1781514727
 title: lockpass_new
 categories:
   - product
 ---
 
 
-# 1. 项目简介：
+# 1. 竞品
+
+https://bitwarden.com/
+
+https://1password.com/
+
+# 2. 项目简介：
 
 主要功能是保存密码，因为现在ai时代，新的平台不断出现，账号密码爆炸。
 
-# 2. 为什么要做
+# 3. 为什么要做
 
 之前做了一个https://github.com/ftyszyx/lockpass。但是发现有很多疼点
 
@@ -29,7 +35,7 @@ categories:
 
 所以现在可以重做一个，而且现在ai能力很强，可以快速迭代。
 
-# 3. 原型设计
+# 4. 原型设计
 
-## 3.1 pc端
+## 4.1 pc端
 
