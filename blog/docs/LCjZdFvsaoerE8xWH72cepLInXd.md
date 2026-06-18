@@ -1,61 +1,139 @@
 ---
 create_time: 1778480043
-edit_time: 1779940788
-title: early-rise-app（醒到）
+edit_time: 1781688893
+title: 醒了，就要到
 categories:
   - product
 ---
 
 
-# 1. 项目名：醒到 · 任务闹钟
+最近做了一个小 App，叫 wakeTo，中文名是「醒到」。
 
-Slogan：到了，才算醒。
+它的 slogan 是：醒了，就要到。
 
-这是一个完全ai开发的app
+这是一个完全由 AI 协助开发出来的 Android App，核心功能很简单：闹钟响了以后，不能随手一划就关掉，必须完成指定任务，才能真正停止。
 
-# 2. 背景
+<div class="callout callout-bg-3 callout-border-3">
+<div class='callout-emoji'>⏰</div>
+<p> <strong>下载地址：</strong><a href="https://waketo.bytefuse.cn/">https://waketo.bytefuse.cn/</a></p>
+<p>一句话概括：它不是只把你叫醒，而是逼你完成一个动作，让你真的离开床。</p>
+</div>
 
-## 2.1 新闻
+## 1.1 为什么想做这个
 
-有一天看到一个新闻，说Erly，一款去年9月上线的新品，近期已经做到了美国App Store“Wake Up App”品类里的TOP1，1万多评论下总评分4.8分。根据点点数据显示，该产品3月下载量接近10万，营收约1万美元。对于一款新产品而言，这个成绩已经称得上亮眼。
+有一天我看到一个新闻：一款叫 Erly 的闹钟 App，由个人开发，一个月下载量接近 10 万，营收大约 1 万美元。
 
-<img src="/assets/OUWDbuDmzoEzLBxK8PMcbiLTnGe.png" src-width="747" class="markdown-img m-auto" src-height="200" align="center"/>
+这个数据非常亮眼。
 
-appstore地址：https://apps.apple.com/us/app/erly-wake-up-early/id6751428380
+它本质上还是一个闹钟，但特别的地方在于：闹钟响了以后，用户必须完成任务才能关闭。比如做题、扫码之类的操作。它不是单纯提醒你起床，而是给你增加一点「必须行动」的成本。
 
-<img src="/assets/VwM1bCFWDoeVflxiL9EcwcaSnhd.png" src-width="1662" class="markdown-img m-auto" src-height="657" align="center"/>
+另外，它还做了打卡记录，用类似游戏化的方式，让人看到自己的坚持。
 
-这个app,本质是一个闹钟，但这个闹钟要通过做任务才能关闭，有一定的强制作用。
+我看完之后第一感觉是羡慕：这些人真的很会抓需求。
 
-另外内置了一个，打卡记录，通过游戏的方式让人坚持 。
+闹钟这个品类看起来很老，但「起不来」这个问题一直存在。很多时候，人不是不知道该起床，而是醒来以后太容易反悔。普通闹钟只能提醒你醒，不能保证你真的起来。
 
-这个app价格还很贵，试用三天后用户就需要按照9.99美元/月或更高订阅价格付费。只是一个alarm工具，要价的确很高。
+所以我也想做一个类似的小产品，顺便试一下：现在用 AI 做一个完整 App，到底能做到什么程度。
 
-从点点数数看，最近一个月收入3000美金。
+## 1.2 产品核心：关闹钟之前，先完成任务
 
-Alarmy可谓是靠“做任务关闹钟”起家的鼻祖。Alarmy是一款诞生于2013年的老产品（彼时产品名Sleep If U Can），彼时的它只是通过让用户做任务来实现早起目的。但发展至今，Alarmy的机制已经非常完善，定位也从叫早工具转变成了集效率、健康于一体的综合型应用。
+醒到的设计很克制，界面只有三页：闹钟、记录、设置。尽量做到一眼就会用。
 
-功能方面，Alarmy最核心的仍是闹钟，唤醒任务包括但不限于走路、扫码、深蹲、记忆游戏、数学题等等。为了预防用户做完任务接着睡，还开发了备用铃声功能，闹钟响后40s就会用最大音量播放防空警报声，或者通过时间压力和提醒模式，按分钟播报时间或语音提醒行程。
+它和系统闹钟最大的区别，是可以给闹钟绑定任务。目前支持三种任务：
 
-所以这款产品不单单面向早起困难户，而且更适用于那些有拖延症、或者想通过APP来帮助自己养成自律习惯的人。
+<table header_row="1">
+<colgroup>
+<col width="101"/>
+<col width="238"/>
+<col width="328"/>
+</colgroup>
+<thead>
+<tr><th><p>任务</p></th><th><p>作用</p></th><th><p>适合场景</p></th></tr>
+</thead>
+<tbody>
+<tr><td><p>做题</p></td><td><p>让大脑先醒过来</p></td><td><p>防止半睡半醒时随手关闹钟</p></td></tr>
+<tr><td><p>扫码</p></td><td><p>强制你走到指定位置</p></td><td><p>把二维码贴在阳台、洗手间或书桌旁</p></td></tr>
+<tr><td><p>走路</p></td><td><p>让身体真正动起来</p></td><td><p>适合需要离开床、走几步再清醒的人</p></td></tr>
+</tbody>
+</table>
 
-参考：https://zhuanlan.zhihu.com/p/2032838696567838715
+这些任务是关闭闹钟的前提条件。即使你把 App 从后台 kill 掉，闹钟也会继续响。
 
-同类的产品还有不少，如Alarmy，还增加了打鼾和睡眠追踪功能、白噪音、ASMR，目的是通过夜间的监护，帮用户从另一个维度解决入睡难、睡眠习惯不健康的问题。 
+当然，如果你直接把 App 删除了再安装，那我也没办法。
 
-## 2.2 我想做一个
+## 1.3 第一次打开：先给必要权限
 
-现在ai的能力越来越强，网上经常有各种人说完全用ai开发产品，赚到了钱。
+第一次打开时，App 会申请必要权限，主要是为了保证闹钟能准时响起，并且响起时能正常提醒。
 
-看完这个新闻，我的感觉就是，没想到，这么简单的产品都能赚大钱。
+<img src="/assets/Y3WNbB6QTozDrmxgNW7cCP8NnUc.png" src-width="409" class="markdown-img" src-height="504"/>
 
-那正好，我也可以做一个，尝试一下ai做产品的能力。
+如果不给这些权限，闹钟类 App 的体验就会大打折扣。这个地方我尽量保持简单，只申请和闹钟提醒相关的必要权限。
 
-# 3. 功能
+## 1.4 闹钟页：创建一个任务闹钟
 
-先做基本功能
+主界面就是闹钟列表。点右侧加号，可以新建一个闹钟。
 
-- 🔒 强制验证闹钟 — 拍照 / 数学题 / 步数 /不完成不停闹钟
+<img src="/assets/N6SobgnyHoQEQlxAWHrcZ8aYnph.png" src-width="435" class="markdown-img" src-height="943"/>
 
-在codex帮助下，花了几天时间，基本搞定
+新建闹钟时，除了设置时间，还可以选择关闭闹钟前必须完成的任务。
+
+<img src="/assets/ZBnWb05yXocGZUxgTpEcJHfjnKV.png" src-width="426" class="markdown-img" src-height="412"/>
+
+<img src="/assets/IVPbbhCd3oPTFfxQjQgcGMBpn5f.png" src-width="428" class="markdown-img" src-height="307"/>
+
+## 1.5 三种任务：让你从不同层面醒过来
+
+### 1.5.1 做题：先把脑子叫醒
+
+数学题适合那种醒了但还迷糊的状态。你必须认真算一下，不能凭肌肉记忆把闹钟关掉。
+
+<img src="/assets/HFE9bOMEoovsKBxeDsscrzL0nld.png" src-width="409" class="markdown-img" src-height="554"/>
+
+### 1.5.2 扫码：逼自己离开床
+
+扫码任务更直接。你可以把二维码贴在阳台、洗手间、书桌旁，闹钟响了以后，只有走到那里扫到码，才能关闭闹钟。
+
+<img src="/assets/IoI8bidWOonqmFxPjzZcJAesnSc.png" src-width="383" class="markdown-img" src-height="554"/>
+
+### 1.5.3 走路：让身体真的动起来
+
+走路任务适合需要一点身体动作的人。不是醒了就算，而是要动起来才算。
+
+<img src="/assets/Q0wTbBoT3oTf36xPLfFc2Q6Bnpg.png" src-width="306" class="markdown-img" src-height="323"/>
+
+## 1.6 记录页：把起床变成可见的坚持
+
+记录页会统计每天完成任务的数量。我还放了一个类似 GitHub 的热力图，让你能直观看到自己的坚持。
+
+这一块的 UI 我很满意，AI 设计得还挺漂亮。
+
+<img src="/assets/NwVlbigcKo382PxCT2FcAyHGn2i.png" src-width="435" class="markdown-img" src-height="943"/>
+
+<img src="/assets/JIZUb871jo8zbWxNummcaj6CnLe.png" src-width="393" class="markdown-img" src-height="469"/>
+
+## 1.7 设置页：管理扫码位置
+
+设置页没做得很复杂，主要用来管理扫码位置。
+
+<img src="/assets/XBCFb4Bd1o9Xhnx3sefcIwYrn4f.png" src-width="370" class="markdown-img" src-height="103"/>
+
+添加一个位置后，App 会生成对应的二维码。
+
+<img src="/assets/X21CbjmX5ozGBAxtWpDcLhatnfg.png" src-width="398" class="markdown-img" src-height="346"/>
+
+展开二维码后，可以自己保存图片，然后打印出来。
+
+<img src="/assets/L9JMbpaGboO9MwxIDJucy36JnSb.png" src-width="372" class="markdown-img" src-height="360"/>
+
+比如你把它贴在阳台。下次闹钟响了，你就必须走到阳台扫这个码，才能关掉闹钟。
+
+## 1.8 总结
+
+醒到的功能现在基本完成了，Android 包也已经打好，可以直接下载体验。
+
+> 我做这个 App 的想法很简单：普通闹钟负责把你叫醒，醒到负责让你真的行动起来。
+
+下载地址：[https://waketo.bytefuse.cn/](https://waketo.bytefuse.cn/)
+
+有兴趣的朋友可以试试，也欢迎提改进意见。
 

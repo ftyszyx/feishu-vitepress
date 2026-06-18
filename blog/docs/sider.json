@@ -379,7 +379,14 @@
               },
               {
                 "text": "Codex",
-                "link": "/GMB6dTsuko1z6lxZqfRcklT4nRe"
+                "link": "/GMB6dTsuko1z6lxZqfRcklT4nRe",
+                "items": [
+                  {
+                    "text": "codex使用",
+                    "link": "/W3ncdsJibocvPlxcz3KctQnhnje"
+                  }
+                ],
+                "collapsed": true
               }
             ],
             "collapsed": true
@@ -864,7 +871,7 @@
         "collapsed": true
       },
       {
-        "text": "early-rise-app（醒到）",
+        "text": "醒了，就要到",
         "link": "/LCjZdFvsaoerE8xWH72cepLInXd"
       },
       {
