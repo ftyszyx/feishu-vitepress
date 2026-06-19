@@ -1,8 +1,8 @@
 ---
 cover: /assets/RIYJbmKWRoUZ8Rx2mC3cwHjEnyg.png
 create_time: 1781143637
-edit_time: 1781180306
-title: AI 很会写代码，但游戏不是代码堆出来的
+edit_time: 1781838165
+title: 2026-6-9 目前ai做游戏还不是很行
 categories:
   - other_platform
 ---
