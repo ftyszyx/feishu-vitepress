@@ -1,7 +1,7 @@
 ---
 cover: /assets/Um9JbWwIFodQDjxcMjfcPCjKnHh.jpeg
 create_time: 1729850795
-edit_time: 1768699255
+edit_time: 1782182209
 title: 自制docker镜像
 categories:
   - skill
@@ -167,4 +167,16 @@ server {
 ```
 
 https://www.cnblogs.com/guangdelw/p/18253540
+
+# 4. 1panel的加速
+
+https://bbs.fit2cloud.com/t/topic/5886
+
+镜像加速：应用安装失败，镜像拉取超时，此时可以配置镜像加速器进行优化
+
+- 配置加速地址：
+
+```text
+https://docker.1panel.live
+```
 
