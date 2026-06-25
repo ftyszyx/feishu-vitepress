@@ -1,6 +1,6 @@
 ---
 create_time: 1782183460
-edit_time: 1782185040
+edit_time: 1782356357
 title: ai训练平台
 categories:
   - product
@@ -67,4 +67,8 @@ https://github.com/yangjianxin1/Firefly
 3. 从头预训练 70B + 超大基础模型 → Megatron-LM + DeepSpeed
 4. 仅需要训练日志、实验跟踪 → SwanLab 私有化部署
 5. 中文行业图像 / NLP 快速开发 → 飞桨 PaddlePaddle
+
+# 4. ClearML 
+
+https://github.com/clearml/clearml
 

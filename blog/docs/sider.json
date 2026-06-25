@@ -887,7 +887,14 @@
       },
       {
         "text": "ai训练平台",
-        "link": "/XFKxdvdFMoHMDWx3nAwcWucUnlh"
+        "link": "/XFKxdvdFMoHMDWx3nAwcWucUnlh",
+        "items": [
+          {
+            "text": "Cube Studio",
+            "link": "/O4Bgd8EnmoJmjVxFubvct0yunAf"
+          }
+        ],
+        "collapsed": true
       }
     ],
     "collapsed": true
