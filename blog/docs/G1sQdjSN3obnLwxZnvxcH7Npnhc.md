@@ -1,7 +1,7 @@
 ---
 cover: /assets/Um9JbWwIFodQDjxcMjfcPCjKnHh.jpeg
 create_time: 1729850795
-edit_time: 1782182209
+edit_time: 1782801709
 title: 自制docker镜像
 categories:
   - skill
@@ -122,9 +122,18 @@ windows上是`%userprofile%\.docker\daemon.json`.
 
 ```yaml
 {
-  "registry-mirrors": [
-    "https://hammal.example.com"  //你的域名
-  ]
+"registry-mirrors": [
+        "https://docker.1panel.live",
+        "https://docker.1ms.run",
+        "https://dockerproxy.net",
+        "https://docker.m.daocloud.io"
+    ],
+    "insecure-registries": [],
+    "debug": false,
+    "experimental": false,
+    "features": {
+        "buildkit": true
+    }
 }
 ```
 

@@ -1,7 +1,7 @@
 ---
 create_time: 1782482122
-edit_time: 1782489680
-title: 我们这么努力，为什么总是在模仿？
+edit_time: 1782832894
+title: 2026-6-25 我们这么努力，为什么总是在模仿？
 categories:
   - other_platform
 ---

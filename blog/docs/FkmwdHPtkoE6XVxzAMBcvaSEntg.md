@@ -1,6 +1,6 @@
 ---
 create_time: 1768545722
-edit_time: 1778597880
+edit_time: 1782802552
 title: licenseHub优化记录
 categories:
   - product
@@ -39,5 +39,17 @@ categories:
 
 # 7. 接入支付
 
- ****
+## 7.1 授权签名能力 
+
+### 7.1.1 行为变化
+
+- 客户端调用绑定或检查接口时，除原有 `expire_time` / `remain_count` 外，还会拿到可验签的 `license` 对象。
+- 服务端没有生成授权签名密钥前，新的绑定/检查流程会失败；上线前需要先在后台系统设置中生成密钥，并将公钥配置到客户端构建环境。
+- 轮换密钥会影响旧客户端验签，提交中的前端确认文案也明确提示：使用旧公钥构建的客户端将无法通过授权校验。
+
+第一次使用时一定生成私钥
+
+<img src="/assets/FdqkbUiS4oczIuxhjelcAooynCe.png" src-width="1314" class="markdown-img m-auto" src-height="526" align="center"/>
+
+### 7.1.2  
 
