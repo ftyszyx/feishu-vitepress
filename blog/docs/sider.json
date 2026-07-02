@@ -505,14 +505,7 @@
         "link": "/KywydDopWo7R1Rxc0lichrCIn0Q",
         "items": [
           {
-            "text": "包管理（已放充使用c++的包管理）",
-            "link": "/TvLwdlVIkoXv8axdhdLcXodGnLg"
-          },
-          {
             "text": "Vscode"
-          },
-          {
-            "text": "一些语法 "
           }
         ],
         "collapsed": true
@@ -895,6 +888,10 @@
           }
         ],
         "collapsed": true
+      },
+      {
+        "text": "Weibovault",
+        "link": "/OOTgdLf7no3R7cxH7Cmck158nxf"
       }
     ],
     "collapsed": true
