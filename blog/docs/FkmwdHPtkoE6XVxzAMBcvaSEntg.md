@@ -1,6 +1,6 @@
 ---
 create_time: 1768545722
-edit_time: 1782802552
+edit_time: 1783046174
 title: licenseHub优化记录
 categories:
   - product
@@ -39,9 +39,11 @@ categories:
 
 # 7. 接入支付
 
-## 7.1 授权签名能力 
+# 8. 授权签名能力 
 
-### 7.1.1 行为变化
+解决的问题，客户端可以通过签名文件确定，当前的激活信息是否是有效的。
+
+### 8.1.1 行为变化
 
 - 客户端调用绑定或检查接口时，除原有 `expire_time` / `remain_count` 外，还会拿到可验签的 `license` 对象。
 - 服务端没有生成授权签名密钥前，新的绑定/检查流程会失败；上线前需要先在后台系统设置中生成密钥，并将公钥配置到客户端构建环境。
@@ -51,5 +53,25 @@ categories:
 
 <img src="/assets/FdqkbUiS4oczIuxhjelcAooynCe.png" src-width="1314" class="markdown-img m-auto" src-height="526" align="center"/>
 
-### 7.1.2  
+### 8.1.2  
+
+# 9. 注册码支持退款
+
+<img src="/assets/Sb12b16MvoACECxl0aFc4sOFn7e.png" src-width="1568" class="markdown-img m-auto" src-height="80" align="center"/>
+
+绑定前设置时间
+
+<img src="/assets/Cen8bhJluoeosgxL3fSc8wmCnwb.png" src-width="1533" class="markdown-img m-auto" src-height="208" align="center"/>
+
+点退款
+
+<img src="/assets/Mx6WbtkBdoa9iaxIFJCcXSuInpo.png" src-width="499" class="markdown-img m-auto" src-height="186" align="center"/>
+
+注册码状态变更
+
+<img src="/assets/Mi5Gbvabio4jWUxXFX7clLVonsb.png" src-width="1451" class="markdown-img m-auto" src-height="76" align="center"/>
+
+设备时间回退
+
+<img src="/assets/O08gbnwkMoSwl7x9p9ZcBbK9nBc.png" src-width="1395" class="markdown-img m-auto" src-height="101" align="center"/>
 
