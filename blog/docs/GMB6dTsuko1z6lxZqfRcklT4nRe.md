@@ -1,6 +1,6 @@
 ---
 create_time: 1772159639
-edit_time: 1782807403
+edit_time: 1783870393
 title: Codex
 categories:
   - skill
@@ -59,8 +59,8 @@ Settings、`.codex/config.toml` 或 CLI 中进行精细化调整。 [[1](https:/
 - toml
 
 ```text
-sandbox_mode = "workspace-write"
-approval_policy = "on-request"
+sandbox_mode = " **danger-full-access**"
+approval_policy = " **never**"
 ```
 
 - 請謹慎使用程式碼。
