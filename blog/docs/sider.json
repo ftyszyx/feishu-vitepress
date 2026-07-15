@@ -574,6 +574,10 @@
       {
         "text": "支付",
         "link": "/N75SdBfawoccavxJ7xgcQE6xnrg"
+      },
+      {
+        "text": "giffgaff卡",
+        "link": "/CAv4dfiTso8k44xY3v3cQ7Xpnid"
       }
     ],
     "collapsed": true
@@ -892,6 +896,14 @@
       {
         "text": "WeiboVault：把微博完整备份到本地的工具",
         "link": "/OOTgdLf7no3R7cxH7Cmck158nxf"
+      },
+      {
+        "text": "aimeter(ai使用量统计工具）",
+        "link": "/MG1qdKi8bony9bxDQHlcopL5nqg"
+      },
+      {
+        "text": "wechat",
+        "link": "/DWssdcdCDoSGSKxuWWjcj30Pn00"
       }
     ],
     "collapsed": true
@@ -1174,12 +1186,16 @@
             "link": "/P0HpdZeCkoGKexxcYfKcRe4Snyg"
           },
           {
-            "text": "Winstore",
+            "text": "2026-7-12《功夫女足》：热闹得不像一部电影",
+            "link": "/XFIKdipGnoCw08x4uyTcb7LZnig"
+          },
+          {
+            "text": "第一次上架googleplay",
             "link": "/Kdjbd00QyoXDFAxfMSRcWQbdn0c"
           },
           {
-            "text": "《功夫女足》：热闹得不像一部电影",
-            "link": "/XFIKdipGnoCw08x4uyTcb7LZnig"
+            "text": "为了给 Windows 软件签名，尝试上架 Microsoft Store",
+            "link": "/J91PdwpodohGDbxZDmbcZ9ILnAd"
           }
         ],
         "collapsed": true

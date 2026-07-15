@@ -1,62 +1,49 @@
 ---
 create_time: 1783576733
-edit_time: 1783670379
-title: Winstore
+edit_time: 1784014904
+title: 第一次上架googleplay
 categories:
   - other_platform
 ---
 
 
-# 1. 开通账号
+之前做过游戏，也写过一些工具，但一直没有完整走过应用商店上架流程。
 
-需要准备身份证
+最近我想把这件事补上，体验一下一个 App 从开发完成到真正提交应用商店，中间到底要经历什么。
 
-https://storedeveloper.microsoft.com/
+于是我先从 Google Play 开始。
 
-<img src="/assets/SrkpbYciMoRr5lxHowfctKSYnJE.png" src-width="1323" class="markdown-img m-auto" src-height="503" align="center"/>
+## 1.1 拿 WakeTo 练手
 
-<img src="/assets/AgXIbbDLuof79XxYzEhc4kqon9c.png" src-width="1113" class="markdown-img m-auto" src-height="488" align="center"/>
+我之前做过一款任务闹钟 App，叫 WakeTo，地址是：[https://waketo.bytefuse.cn/](https://waketo.bytefuse.cn/)。
 
-要用手机edge浏览器（登录了microsoft账号），扫码后，需要上传身份证信息
+这个 App 本身不算复杂，功能也比较清楚，正好适合拿来练一次完整的上架流程。
 
-# 2. 创建应用
+一开始我想得挺简单：应用已经开发好了，应该就是注册账号、填资料、上传包、提交审核。
 
-<img src="/assets/CU3DbaHAko4YIIxCcMOctODQnlH.png" src-width="566" class="markdown-img m-auto" src-height="200" align="center"/>
+真正开始之后才发现，上架这件事比想象中麻烦得多。
 
-你的包是 Tauri NSIS installer，所以填：
+## 1.2 Google Play 的流程比开发还磨人
 
-```text
-/S
-```
+Google Play 的上架流程很复杂。很多地方不是不会填，而是不知道它到底想要什么。
 
-注意是大写 `S`，前面有 `/`。
+隐私政策、应用内容、测试设置、数据安全、目标用户、权限说明，每一项很消耗精力。
 
-下面这个复选框：
+还好现在有 AI。遇到看不懂的页面，我就直接截图问；不确定某个选项是什么意思，也可以让 AI 帮我解释。否则光靠自己慢慢查文档，估计会更崩溃。
 
-```text
-安装程序在无提示模式下运行，但不需要切换。
-```
+中间还为了满足封闭测试要求，去闲鱼上买了 14 个封测服务。
 
-不要勾。因为我们的 installer  **需要** **/S** **才会静默安装**。
+前前后后折腾了将近一个月，终于走到了开发测试阶段。
 
-所以这里这样填：
+<img src="/assets/Lf3dbKCwlo68ZrxTT9EcotmCnnd.png" src-width="2283" class="markdown-img" src-height="519"/>
 
-- 安装程序参数：`/S`
-- 复选框：不勾
+Google play 应用页面
 
-如果后面还有卸载参数，一般 NSIS 是：
+<img src="/assets/NcJCbFQOSognx7x8IJhcsdqfned.png" src-width="988" class="markdown-img m-auto" src-height="776" align="center"/>
 
-<img src="/assets/LF6HbUS8domlRHxISL4cYRzFnBe.png" src-width="1359" class="markdown-img m-auto" src-height="558" align="center"/>
+## 1.3 结尾
 
-https://nsis.sourceforge.io/Docs/AppendixD.html
+下一步，就是继续把流程跑完，争取真正完成一次正式上架。
 
-```text
-用户已取消安装：1
-应用程序已存在：1638
-安装已在进行：1618
-磁盘空间已满：112
-需要重新启动：3010
-网络故障：12029
-已在安装期间拒绝包：1625
-```
+这次最大的感受是：做一个 App 不难，难的是把它认真地交付出去。
 
