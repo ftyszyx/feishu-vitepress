@@ -576,8 +576,19 @@
         "link": "/N75SdBfawoccavxJ7xgcQE6xnrg"
       },
       {
-        "text": "giffgaff卡",
-        "link": "/CAv4dfiTso8k44xY3v3cQ7Xpnid"
+        "text": "搞账号",
+        "link": "/LiNBd8YZ6ogSIoxQR7mcJIRJnRg",
+        "items": [
+          {
+            "text": "giffgaff卡",
+            "link": "/CAv4dfiTso8k44xY3v3cQ7Xpnid"
+          },
+          {
+            "text": "google账号",
+            "link": "/VNBjdq3qZoISzJxwdHecfUyUnbe"
+          }
+        ],
+        "collapsed": true
       }
     ],
     "collapsed": true
