@@ -6,7 +6,7 @@ keywords:
   - vpn
   - clash_windows
 create_time: 1717592186
-edit_time: 1778837920
+edit_time: 1784300780
 categories:
   - skill
 ---
@@ -128,4 +128,8 @@ https://github.com/clash-verge-rev/clash-verge-rev
 # 4. Clash linux
 
 https://github.com/nelvko/clash-for-linux-install
+
+# 5. clouadflare_vpn
+
+https://feifei.537393.xyz/posts/freetunnel/
 

@@ -1,6 +1,6 @@
 ---
 create_time: 1784001398
-edit_time: 1784203106
+edit_time: 1784255930
 title: wechat
 categories:
   - product
@@ -56,4 +56,8 @@ tasklist /FI "IMAGENAME eq Weixin.exe" /FO CSV /NH
 微信在本地存了一份数据，但是加密了，需要找到解密的密钥
 
 微信存在本地的图片和视频资源也加密了，https://github.com/Evil0ctal/WeChat-Channels-Video-File-Decryption
+
+群成员中的wid怎么加
+
+wxid_z7opghbcsrjn21
 
