@@ -1,6 +1,6 @@
 ---
 create_time: 1784075802
-edit_time: 1784300149
+edit_time: 1784731445
 title: giffgaff卡
 categories:
   - skill
@@ -17,7 +17,7 @@ https://feifei.537393.xyz/posts/giffgaff-esim/
 
 安装：easyeuicc:https://easyeuicc.com/  （写卡软件）
 
-安装giffgaff破解版本：https://simonmy.com/posts/giffgaff-esim-mod-apk.html 下载破解版本，不用root,不用hook 
+安装giffgaff破解版本：https://simonmy.com/posts/giffgaff-esim-mod-apk.html 下载破解版本，不用root,不用hook code: 05888525
 
 # 3. 价格说明
 
