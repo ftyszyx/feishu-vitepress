@@ -42,7 +42,7 @@ npm install C:\Users\pc\.n8n\nodes\n8n_bugly -S
 
 ### 3.2.2 安装feishu node
 
-```
+```bash
 npm install n8n-nodes-feishu-lite -S
 ```
 
@@ -61,7 +61,7 @@ npm install n8n-nodes-feishu-lite -S
 
 ### 3.2.3 重新启动n8n即可
 
-```
+```bash
 n8n start
 ```
 

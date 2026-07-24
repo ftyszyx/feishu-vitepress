@@ -9,7 +9,7 @@ categories:
 
 # 1. reactive中新加字段也会触发模板更新
 
-```
+```xml
 <script setup>
 import { reactive } from 'vue';
 import { ref } from 'vue'

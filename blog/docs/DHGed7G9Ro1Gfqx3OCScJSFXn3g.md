@@ -256,7 +256,7 @@ ssh-keygen -t rsa -b 4096 -C "whyzi@qq.com"
 - `git config user.name`zyx
 - 禁止自动转换换行符
 
-```
+```ts
 git config --global core.autocrlf false
 ```
 
