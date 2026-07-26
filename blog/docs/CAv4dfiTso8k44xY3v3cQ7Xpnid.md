@@ -1,6 +1,6 @@
 ---
 create_time: 1784075802
-edit_time: 1784731445
+edit_time: 1784956519
 title: giffgaff卡
 categories:
   - skill
@@ -46,6 +46,8 @@ https://feifei.537393.xyz/posts/giffgaff-esim/
 <img src="/assets/DzGMbqIVFo1t7SxlW7jcsESUnZf.png" src-width="967" class="markdown-img m-auto" src-height="898" align="center"/>
 
 继续
+
+手机要装via,选via打开
 
 <img src="/assets/ReBLbjTEvofk5tx0k1wcjM0knzb.png" src-width="968" class="markdown-img m-auto" src-height="307" align="center"/>
 
