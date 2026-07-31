@@ -1,11 +1,15 @@
 ---
 create_time: 1784001398
-edit_time: 1785336163
+edit_time: 1785391635
 title: Wemory 微忆
 categories:
   - product
 ---
 
+
+参考：
+
+[创作：基于百川大模型向微信群大佬们虚心学习](MLKnw5GofiFUHAkhWa4cIjbUnac)
 
 # 1. 功能说明
 
