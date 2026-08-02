@@ -1,15 +1,11 @@
 ---
 create_time: 1784001398
-edit_time: 1785391635
+edit_time: 1785593076
 title: Wemory 微忆
 categories:
   - product
 ---
 
-
-参考：
-
-[创作：基于百川大模型向微信群大佬们虚心学习](MLKnw5GofiFUHAkhWa4cIjbUnac)
 
 # 1. 功能说明
 
@@ -19,11 +15,12 @@ wemory：是一个能读取和导出windows端微信聊天记录，朋友圈记�
 
 主要功能如下
 
-1. 读取和备份微信本地的聊天记录
-2. 读取和备份微信本地的朋友圈记录
-3. 导出和备份自己的全部好友
-4. 导出和备份群成员
+1. 读取和备份微信聊天记录
+2. 读取和备份微信朋友圈记录
+3. 导出好友列表
+4. 导出群成员列表
 5. 聊天防撤回，朋友圈防撤回
+6. 公众号批量采集和导出
 
 # 2. 原理说明
 
@@ -71,7 +68,7 @@ wemory：是一个能读取和导出windows端微信聊天记录，朋友圈记�
 
 <img src="/assets/WDQBbabVMoQ5MOx2TIWcVe5Lncd.png" src-width="1920" class="markdown-img m-auto" src-height="1128" align="center"/>
 
-## 3.3 聊天功能
+## 3.3 聊天记录的读取和导出
 
 可以看到当前的全部聊天信息，并已经分好类
 
@@ -101,7 +98,7 @@ wemory：是一个能读取和导出windows端微信聊天记录，朋友圈记�
 
 <img src="/assets/Noqtbo3qOoBK3QxUS3ecZOZpngf.png" src-width="1016" class="markdown-img m-auto" src-height="744" align="center"/>
 
-## 3.4 朋友圈功能
+## 3.4 朋友圈的读取和导出
 
 <img src="/assets/Hhy0bTDJooHORdxlBpVc2i8Vnhg.png" src-width="1279" class="markdown-img m-auto" src-height="752" align="center"/>
 
@@ -120,4 +117,8 @@ wemory：是一个能读取和导出windows端微信聊天记录，朋友圈记�
 可以设置导出时间范围，发送人，等
 
 <img src="/assets/JHahbEbi9oR2FhxGbGjcqpW6nWh.png" src-width="892" class="markdown-img m-auto" src-height="1015" align="center"/>
+
+## 3.5 公众号的采集和导出
+
+## 3.6 联系人的获取和导出
 
