@@ -1,124 +1,199 @@
 ---
 create_time: 1784001398
-edit_time: 1785593076
+edit_time: 1785663638
 title: Wemory 微忆
 categories:
   - product
 ---
 
 
-# 1. 功能说明
+ **Wemory（微忆）**是一款面向 Windows 微信用户的本地数据读取、备份和导出工具，支持聊天记录、朋友圈、联系人、群成员和公众号内容。
 
-wemory：是一个能读取和导出windows端微信聊天记录，朋友圈记录，和好友通讯录的工具
+- 适用平台：Windows
+- 使用前提：电脑端微信已安装并保持登录在线
 
-下载地址： https://wemory.bytefuse.cn/
+下载地址：https://wemory.bytefuse.cn/
 
-主要功能如下
+隐私说明：数据仅在本机读取和处理，不上传服务器，也不修改微信本地数据。
+
+# 1. 1. 产品概览
+
+Wemory（微忆）可在 Windows 本地读取、备份和导出微信聊天记录、朋友圈记录、联系人及群成员信息。
+
+请从文档顶部的下载地址获取最新版本。
+
+核心功能：
 
 1. 读取和备份微信聊天记录
 2. 读取和备份微信朋友圈记录
 3. 导出好友列表
 4. 导出群成员列表
-5. 聊天防撤回，朋友圈防撤回
+5. 保留已接收的聊天消息，朋友圈防撤回
 6. 公众号批量采集和导出
 
-# 2. 原理说明
+# 2. 2. 工作原理与隐私
 
-微信的数据是使用sqlite保存的，但是经过了加密。
+微信数据保存在本地 SQLite 数据库中，数据库内容经过加密。
 
-通过扫描微信进程的内存，获取微信加密的key,程序即可读取到解密后的信息。
+Wemory 在微信进程运行期间从本机内存中获取数据库解密密钥，并在本地读取解密后的数据。
 
-声明：本软件不上传信息到服务器，也不修改你本地的数据。
+隐私声明：Wemory 不会将你的微信数据上传到服务器，也不会修改微信本地数据。请妥善保管导出文件，避免泄露个人信息。
 
-# 3. 使用说明
+# 3. 3. 使用指南
 
-## 3.1 第一次使用，先连接自己的微信
+## 3.1 3.1 首次连接微信
 
-### 3.1.1  **首先要在windows上登录自己的微信**
+### 3.1.1  **在 Windows 上登录微信**
 
 打开软件后，提示连接微信
 
 ### 3.1.2 选择微信数据目录
 
-<img src="/assets/U2PIbyxp1oIRvdxuafEcMMg9nlc.png" src-width="1280" class="markdown-img m-auto" src-height="752" align="center"/>
-
-选自动检测，如果检测失败，可以自己打开微信设置查看，然后通过浏览目录设置
-
-<img src="/assets/WDYib7m1Mok5eaxtG7bcNSCxnee.png" src-width="192" class="markdown-img m-auto" src-height="210" align="center"/>
-
-<img src="/assets/LyZHbfOyXoMyGoxYzAEcSmXvnmb.png" src-width="640" class="markdown-img m-auto" src-height="560" align="center"/>
+<img src="/assets/E1EGb1PYqoxbM2xQK2kcKn7znzd.png" src-width="997" class="markdown-img m-auto" src-height="755" align="center"/>
 
 ### 3.1.3 设置缓存目录（可以直接下一步）
 
-<img src="/assets/Sf5bbf83boBj98xBWAVcIShnnne.png" src-width="674" class="markdown-img m-auto" src-height="501" align="center"/>
+<img src="/assets/FJ3Pbt5lXoCKe1xBDqmcCMyLnoe.png" src-width="1026" class="markdown-img m-auto" src-height="759" align="center"/>
 
 ### 3.1.4 选择账号
 
-<img src="/assets/UWbkbVHF1ofaV2xfTbccNEc6nDg.png" src-width="677" class="markdown-img m-auto" src-height="505" align="center"/>
+<img src="/assets/JnNCbGL6dobrjmxRbn3cq5AKn1d.png" src-width="1023" class="markdown-img m-auto" src-height="762" align="center"/>
 
-### 3.1.5 获取key
+### 3.1.5 获取解密密钥
 
-<img src="/assets/KF1ubSXsKooZcUxs3uccXXuSnyg.png" src-width="675" class="markdown-img m-auto" src-height="532" align="center"/>
+请确保 Windows 版微信保持登录在线。
+
+<img src="/assets/Eh5Nb1fuSodpq1xoOqKcSsSjnGf.png" src-width="1017" class="markdown-img m-auto" src-height="759" align="center"/>
+
+<img src="/assets/FWm6bR5xfo3rTuxCXbWceltrnze.png" src-width="1016" class="markdown-img m-auto" src-height="758" align="center"/>
 
 ### 3.1.6 完成
 
 <img src="/assets/SQBAbV76uoyTgRxuO4ac51mYnng.png" src-width="985" class="markdown-img m-auto" src-height="731" align="center"/>
 
-## 3.2 以后就可以直接进入主页
+### 3.1.7 直接进入主页
 
 <img src="/assets/WDQBbabVMoQ5MOx2TIWcVe5Lncd.png" src-width="1920" class="markdown-img m-auto" src-height="1128" align="center"/>
 
-## 3.3 聊天记录的读取和导出
+## 3.2 3.2 聊天记录：读取、备份与导出
 
 可以看到当前的全部聊天信息，并已经分好类
 
 <img src="/assets/ELwYbLW6HouyvsxmC4RcKcdFnCO.png" src-width="608" class="markdown-img m-auto" src-height="86" align="center"/>
 
-### 3.3.1 私聊
+### 3.2.1 私聊
 
 <img src="/assets/HJOYb1yzToHwmGxuaQNc8uSEn0b.png" src-width="1589" class="markdown-img m-auto" src-height="1082" align="center"/>
 
-### 3.3.2 群聊
+### 3.2.2 群聊
 
 <img src="/assets/Qea1bZK1rouAkCxCPfYceXTrnGc.png" src-width="1611" class="markdown-img m-auto" src-height="1019" align="center"/>
 
-### 3.3.3 聊天防撤回
+### 3.2.3 保留已接收的聊天消息
 
-开启后，会防止微信pc端删除已经接收到的信息
+开启后，Wemory 会在本地保留已经接收并读取到的消息。
 
 <img src="/assets/PvOLbdparoD4AFxOCRBckwiLnxc.png" src-width="959" class="markdown-img m-auto" src-height="612" align="center"/>
 
-### 3.3.4 聊天导出
+### 3.2.4 导出聊天记录
 
-勾选你要导出的群，点导出
+选择需要导出的会话或群聊，然后点击“导出”。
 
 <img src="/assets/PMNObfwTBoEO5gxmHmrcMEoFnoh.png" src-width="1541" class="markdown-img m-auto" src-height="1073" align="center"/>
 
-可以导出html或者 pdf
+支持导出为 HTML 或 PDF。
 
 <img src="/assets/Noqtbo3qOoBK3QxUS3ecZOZpngf.png" src-width="1016" class="markdown-img m-auto" src-height="744" align="center"/>
 
-## 3.4 朋友圈的读取和导出
+## 3.3 3.3 朋友圈：读取、保留与导出
 
 <img src="/assets/Hhy0bTDJooHORdxlBpVc2i8Vnhg.png" src-width="1279" class="markdown-img m-auto" src-height="752" align="center"/>
 
-### 3.4.1 防删除
+### 3.3.1 保留已读取的朋友圈
 
-开启后，只要已经读取到的朋友圈信息，如果对方删除了，本地还是可见
+开启后，已被 Wemory 读取的朋友圈内容会保留在本地；即使发布者之后删除，仍可在 Wemory 中查看。
 
 <img src="/assets/MZ6gbXGKxo1l6kxnbUOcERasnoc.png" src-width="1653" class="markdown-img m-auto" src-height="89" align="center"/>
 
 <img src="/assets/ArbubKT3Iou5DFxwUGUcZqHwnBh.png" src-width="696" class="markdown-img m-auto" src-height="221" align="center"/>
 
-### 3.4.2 导出
+### 3.3.2 导出
 
 <img src="/assets/Td6ibEbbnoHsbdxGCV5civUrnzc.png" src-width="1566" class="markdown-img m-auto" src-height="91" align="center"/>
 
-可以设置导出时间范围，发送人，等
+导出时可按时间范围、发布者等条件筛选。
 
-<img src="/assets/JHahbEbi9oR2FhxGbGjcqpW6nWh.png" src-width="892" class="markdown-img m-auto" src-height="1015" align="center"/>
+<img src="/assets/OZjgbOA8Jok56mxK4qjcLEjxnde.png" src-width="1141" class="markdown-img m-auto" src-height="1122" align="center"/>
 
-## 3.5 公众号的采集和导出
+## 3.4 3.4 公众号：采集与导出
 
-## 3.6 联系人的获取和导出
+### 3.4.1 采集
+
+方法如下：
+
+1. 先在微信内部浏览器打开公众号
+
+<img src="/assets/YgGcbVCCFoSPufxZ9q2crhWWnVe.png" src-width="1344" class="markdown-img m-auto" src-height="503" align="center"/>
+
+打开里面的一篇文章
+
+<img src="/assets/JLyDbHiYUoxGTRxZcypcZshDnoN.png" src-width="1110" class="markdown-img m-auto" src-height="1055" align="center"/>
+
+复制链接
+
+<img src="/assets/Bj06bo8AdoPa11xrERhcnln7nWc.png" src-width="1198" class="markdown-img m-auto" src-height="480" align="center"/>
+
+发给自己备用
+
+<img src="/assets/FonGbg3cUoRO2bxhp9kcGhSHnc5.png" src-width="1235" class="markdown-img m-auto" src-height="247" align="center"/>
+
+新增采集
+
+<img src="/assets/GCOhb2ZmyoZn7qxwl67cHolknvd.png" src-width="1660" class="markdown-img m-auto" src-height="836" align="center"/>
+
+输入刚才的文章链接，点解析
+
+<img src="/assets/Fdb7bwx1voUYo2xcXO9cb8qrnqf.png" src-width="1121" class="markdown-img m-auto" src-height="435" align="center"/>
+
+在微信中点刚才的链接，
+
+<img src="/assets/VB7ub0xPzo0QjpxHYKQcDWO8nIh.png" src-width="1235" class="markdown-img m-auto" src-height="295" align="center"/>
+
+再点获取授权
+
+<img src="/assets/EewFbRk8RoiXKvxmGsWcVuWynDX.png" src-width="1118" class="markdown-img m-auto" src-height="665" align="center"/>
+
+成功后，选择范围，开始采集
+
+<img src="/assets/L2MIb1nX6oyaX1x6t6scWy2Jn3g.png" src-width="1124" class="markdown-img m-auto" src-height="711" align="center"/>
+
+<img src="/assets/ShbCbUaZHo4752xA88XcNOmDn5w.png" src-width="1794" class="markdown-img m-auto" src-height="777" align="center"/>
+
+### 3.4.2 导出
+
+<img src="/assets/WKNtbD6qYogIMdx9rL9ckvzVnyh.png" src-width="1565" class="markdown-img m-auto" src-height="962" align="center"/>
+
+<img src="/assets/SFDkb3A1cokYV4xOnQ9cD9Jjnqd.png" src-width="1156" class="markdown-img m-auto" src-height="718" align="center"/>
+
+## 3.5 3.5 联系人与群成员导出
+
+<img src="/assets/LkALbhNBMo6R5rxpDNQcCUCungG.png" src-width="1892" class="markdown-img m-auto" src-height="927" align="center"/>
+
+<img src="/assets/OaNzb2ooGoboKDxIF8XcvZZfnnc.png" src-width="907" class="markdown-img m-auto" src-height="456" align="center"/>
+
+# 4. 4. 常见问题
+
+## 4.1 数据库目录检测失败
+
+如果自动检测失败，请在微信设置中查看文件存储位置，然后在 Wemory 中手动选择对应目录。
+
+<img src="/assets/MJx0bFAyBotHHsxcZkqcZP53nHf.png" src-width="192" class="markdown-img m-auto" src-height="210" align="center"/>
+
+<img src="/assets/I0FibyyAOo7RdHxEfNGcmZssnfg.png" src-width="640" class="markdown-img m-auto" src-height="560" align="center"/>
+
+通过浏览目录选择
+
+## 4.2 获取解密密钥失败
+
+确认 Windows 版微信已登录并保持在线，同时检查当前微信版本是否受 Wemory 支持。
 
