@@ -216,13 +216,6 @@
             "link": "/TgqBdSAUlovEQexJ55scoCd1nUh"
           },
           {
-            "text": "pip下载加速",
-            "link": "/IxL7dRCX7oj3XUxzEu8cSSTUnIe"
-          },
-          {
-            "text": "Django"
-          },
-          {
             "text": "uv",
             "link": "/MeEUdsVFzoWQ19xf0kVcWH1In1a"
           }
@@ -858,6 +851,21 @@
       {
         "text": "醒了，就要到(任务闹钟）",
         "link": "/LCjZdFvsaoerE8xWH72cepLInXd"
+      },
+      {
+        "text": "lockpass_new",
+        "link": "/SOFHd9up1oMHyLxc1i6cxFtInxf",
+        "items": [
+          {
+            "text": "Lockpass 的初始化流程",
+            "link": "/Lm0ndushAoSkLCxJ6ejc4MxtnN8"
+          },
+          {
+            "text": "安全机制的原理",
+            "link": "/WsbXdpVcroQtRvxE1zZciXATnkd"
+          }
+        ],
+        "collapsed": true
       },
       {
         "text": "其它",
