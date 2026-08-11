@@ -1,6 +1,6 @@
 ---
 create_time: 1778939644
-edit_time: 1786098455
+edit_time: 1786371977
 title: lockpass_new
 categories:
   - product
@@ -37,4 +37,71 @@ categories:
 # 3.  安全性设计
 
 密码保存工具，安全机制是基础，在AI的建议下设计方案如下：
+
+用户需要关注的密钥：
+
+<table header_row="1">
+<colgroup>
+<col width="160"/>
+<col width="360"/>
+<col width="260"/>
+</colgroup>
+<thead>
+<tr><th><p>密钥</p></th><th><p>来源与用途</p></th><th><p>保存规则</p></th></tr>
+</thead>
+<tbody>
+<tr><td><p>主密码</p></td><td><p>用户记忆并在解锁时输入</p></td><td><p>不保存、不上传</p></td></tr>
+<tr><td><p>安全密钥（Secret Key）</p></td><td><p>客户端生成的高熵随机密钥； </p></td><td><p>用户离线备份；受信任设备安全保存；不上传</p></td></tr>
+</tbody>
+</table>
+
+软件中间过程中产生的密钥
+
+<table header_row="1">
+<colgroup>
+<col width="160"/>
+<col width="360"/>
+<col width="260"/>
+</colgroup>
+<thead>
+<tr><th><p>密钥</p></th><th><p>来源与用途</p></th><th><p>保存规则</p></th></tr>
+</thead>
+<tbody>
+<tr><td><p><code>unlockKey</code></p></td><td><p>通过 Argon2id (主密码，secretKey）派生；用于 加密vaultKey</p></td><td><p>只在一次解锁过程中短暂存在</p></td></tr>
+<tr><td><p><code>vaultKey</code></p></td><td><p>创建保险库时随机生成；用于加解密条目和附件</p></td><td><p>只在已解锁会话内存在</p></td></tr>
+<tr><td><p><code>wrappedVaultKey</code></p></td><td><p>使用 <code>unlockKey</code> 通过 <strong>AES-256-GCM</strong>加密 <code>vaultKey</code>生成</p></td><td><p>可保存到本地密文库和服务器</p></td></tr>
+</tbody>
+</table>
+
+加密和解密流程如下图：
+
+vaultKey的加密过程
+
+数据的加密过程
+
+方案能解决的安全问题如下：
+
+<table header_row="1">
+<colgroup>
+<col width="240"/>
+<col width="660"/>
+</colgroup>
+<thead>
+<tr><th><p>威胁</p></th><th><p>目前的方案</p></th></tr>
+</thead>
+<tbody>
+<tr><td><p>本地 SQLite 或服务器数据泄露</p></td><td><p>只暴露密文及非敏感元数据；服务器没有解密密钥，不能直接解密条目。</p></td></tr>
+<tr><td><p>受信任设备被黑客攻陷，安全密钥泄露</p></td><td><p>攻击者没有主密码；需要结合wrappedVaultKey离线猜测主密码，但Argon2id算法增加了难度，时间成本增加</p></td></tr>
+</tbody>
+</table>
+
+# 4. windows软件使用
+
+pc端：下载地址：https://lockpass.bytefuse.cn/
+
+第一次打开，选择要连接的服务器，可以用官网的，也可以用自建的。
+
+<img src="/assets/JNsfbRyTyozSQlxqkKhcrdCsnwd.png" src-width="1279" class="markdown-img m-auto" src-height="818" align="center"/>
+
+如果有账号就选 登录，没账号就选 创建新账号
 
