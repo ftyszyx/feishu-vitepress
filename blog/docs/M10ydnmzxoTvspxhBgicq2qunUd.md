@@ -4,7 +4,7 @@ tags:
   - develop
 cover: /assets/FxRJb4Oc6oMJUhxo2nLc4WS8nJb.jpeg
 create_time: 1714113741
-edit_time: 1779600062
+edit_time: 1786455343
 categories:
   - skill
 ---
@@ -95,4 +95,67 @@ jobs:
 https://gitmirror.com/files.html
 
 只用在github地址前加个前缀即可
+
+# 3. 同一电脑操作两个不同的github账号
+
+### 3.1.1 为两个账号创建 SSH Key
+
+```text
+ssh-keygen -t ed25519 -C "personal@example.com" -f "$env:USERPROFILE\.ssh\id_ed25519_github_personal"
+ssh-keygen -t ed25519 -C "work@example.com" -f "$env:USERPROFILE\.ssh\id_ed25519_github_work"
+```
+
+把两个 `.pub` 公钥分别添加到对应 GitHub 账号的 `Settings > SSH and GPG keys`。
+
+### 3.1.2 配置 SSH 别名
+
+编辑 `C:\Users\zhangyuxin\.ssh\config`：
+
+```text
+Host github-personal
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_ed25519_github_personal
+    IdentitiesOnly yes
+
+Host github-work
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_ed25519_github_work
+    IdentitiesOnly yes
+```
+
+测试：
+
+```text
+ssh -T git@github-personal
+ssh -T git@github-work
+```
+
+### 3.1.3 每个仓库固定 SSH 账号
+
+个人仓库：
+
+```text
+git remote set-url origin git@github-personal:PERSONAL_USER/REPOSITORY.git
+git config --local user.name "个人用户名"
+git config --local user.email "个人邮箱"
+```
+
+工作仓库：
+
+```text
+git remote set-url origin git@github-work:ORGANIZATION/REPOSITORY.git
+git config --local user.name "工作用户名"
+git config --local user.email "工作邮箱"
+```
+
+检查配置：
+
+```text
+git remote -v
+git config --local --list
+```
+
+这样 `git push`、`git pull` 已经会固定使用对应账号。
 

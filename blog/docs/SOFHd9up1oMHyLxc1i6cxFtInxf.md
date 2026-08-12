@@ -1,6 +1,6 @@
 ---
 create_time: 1778939644
-edit_time: 1786371977
+edit_time: 1786443651
 title: lockpass_new
 categories:
   - product
@@ -95,13 +95,73 @@ vaultKey的加密过程
 </tbody>
 </table>
 
-# 4. windows软件使用
+# 4. pc端使用简介
 
 pc端：下载地址：https://lockpass.bytefuse.cn/
+
+## 4.1 注册账号
 
 第一次打开，选择要连接的服务器，可以用官网的，也可以用自建的。
 
 <img src="/assets/JNsfbRyTyozSQlxqkKhcrdCsnwd.png" src-width="1279" class="markdown-img m-auto" src-height="818" align="center"/>
 
-如果有账号就选 登录，没账号就选 创建新账号
+如果有账号就选 登录，没账号就选 创建新账号,此时会打开浏览器端的账号创建流程
+
+<img src="/assets/Uga5bkDsRoBx8yxRyPBcjco1nHd.png" src-width="416" class="markdown-img m-auto" src-height="326" align="center"/>
+
+验证完邮箱后，设置主密码(注意这个主密码一定要记住，丢失无法找回）
+
+<img src="/assets/RUNxbHdAYo8v1FxWOFZca1wQnFg.png" src-width="374" class="markdown-img m-auto" src-height="300" align="center"/>
+
+生成安全密钥
+
+<img src="/assets/CUsObdKSxoDzRcxVtEsc5bUYnfc.png" src-width="386" class="markdown-img m-auto" src-height="257" align="center"/>
+
+保存你的安全密钥，一定要保存好，丢失也是无法找回
+
+<img src="/assets/STCpbNaE5obHOUxAd9VcaZjSnHb.png" src-width="380" class="markdown-img m-auto" src-height="385" align="center"/>
+
+保存好后，点完成创建
+
+浏览器会弹出提示，点打开lockpass,
+
+<img src="/assets/SUecbprcAoTO6fxJSU3cqswhnVf.png" src-width="450" class="markdown-img m-auto" src-height="216" align="center"/>
+
+此时账号已经创建好，回到了lockpass桌面端，提示输入主密码和安全密钥
+
+<img src="/assets/G7kUbGP8boCTDhx5QFIcKZgungf.png" src-width="1279" class="markdown-img m-auto" src-height="818" align="center"/>
+
+点进入 ，会进入主界面，至此初始化完成
+
+<img src="/assets/REzKb8lNfoZnIqxVlvicRwrDn9b.png" src-width="1275" class="markdown-img m-auto" src-height="839" align="center"/>
+
+## 4.2 新建保险库
+
+<img src="/assets/J8ALbpUbpoadkFxEu9lcNgOTnoc.png" src-width="1279" class="markdown-img m-auto" src-height="818" align="center"/>
+
+## 4.3 新增密码
+
+<img src="/assets/RSGwb6zlCoJl9Nx8bzacYLH9nvQ.png" src-width="1281" class="markdown-img m-auto" src-height="850" align="center"/>
+
+选择类型
+
+<img src="/assets/YWWYbXgpIotlEAxhMW8cuAe0nld.png" src-width="579" class="markdown-img m-auto" src-height="272" align="center"/>
+
+填写信息
+
+<img src="/assets/GA2Hb3OoRo4ZWbxNX6HcmUHRnVe.png" src-width="1279" class="markdown-img m-auto" src-height="818" align="center"/>
+
+注意，密码可以点生成按键，让软件帮你生成高复杂性的密码
+
+<img src="/assets/TMoqbdsQgoGR4HxQUtPcQZDmnbb.png" src-width="1279" class="markdown-img m-auto" src-height="818" align="center"/>
+
+点完成后，项目增加成功
+
+<img src="/assets/E2uQb2uSHoLBkixP1D2ca8CBnKh.png" src-width="1272" class="markdown-img m-auto" src-height="840" align="center"/>
+
+## 4.4 密码同步
+
+只要你的服务器连接状态是在线的，密码会立即同步到服务器
+
+<img src="/assets/YBXbb6dDmo1ksOxipdrcRR2Gncb.png" src-width="629" class="markdown-img m-auto" src-height="414" align="center"/>
 
