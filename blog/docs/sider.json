@@ -853,7 +853,7 @@
         "link": "/LCjZdFvsaoerE8xWH72cepLInXd"
       },
       {
-        "text": "lockpass_new",
+        "text": "LockPass",
         "link": "/SOFHd9up1oMHyLxc1i6cxFtInxf",
         "items": [
           {
@@ -1214,6 +1214,10 @@
           {
             "text": "闲鱼真是个好平台，尤其适合卖家",
             "link": "/X0Qad1uZLomb91xZ1b0c0KHunWf"
+          },
+          {
+            "text": "我用 AI 重写了一个密码管理器",
+            "link": "/OfhJddLMxoVkWhxP1YNcBhz7nxd"
           }
         ],
         "collapsed": true
