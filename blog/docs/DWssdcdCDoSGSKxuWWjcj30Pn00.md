@@ -1,6 +1,6 @@
 ---
 create_time: 1784001398
-edit_time: 1785663638
+edit_time: 1786633232
 title: Wemory 微忆
 categories:
   - product
@@ -57,15 +57,15 @@ Wemory 在微信进程运行期间从本机内存中获取数据库解密密钥�
 
 ### 3.1.4 选择账号
 
-<img src="/assets/JnNCbGL6dobrjmxRbn3cq5AKn1d.png" src-width="1023" class="markdown-img m-auto" src-height="762" align="center"/>
+<img src="/assets/FPIHbVVMjoYcGbxeTtOcPKkxnqg.png" src-width="1070" class="markdown-img m-auto" src-height="783" align="center"/>
 
 ### 3.1.5 获取解密密钥
 
 请确保 Windows 版微信保持登录在线。
 
-<img src="/assets/Eh5Nb1fuSodpq1xoOqKcSsSjnGf.png" src-width="1017" class="markdown-img m-auto" src-height="759" align="center"/>
+<img src="/assets/Sf3Fb8e9oo08TIxBQG1cIk4wnod.png" src-width="1098" class="markdown-img m-auto" src-height="800" align="center"/>
 
-<img src="/assets/FWm6bR5xfo3rTuxCXbWceltrnze.png" src-width="1016" class="markdown-img m-auto" src-height="758" align="center"/>
+<img src="/assets/ZuGObUgwLo6FtLxfdIbceURUnUh.png" src-width="1078" class="markdown-img m-auto" src-height="805" align="center"/>
 
 ### 3.1.6 完成
 
@@ -87,19 +87,19 @@ Wemory 在微信进程运行期间从本机内存中获取数据库解密密钥�
 
 ### 3.2.2 群聊
 
-<img src="/assets/Qea1bZK1rouAkCxCPfYceXTrnGc.png" src-width="1611" class="markdown-img m-auto" src-height="1019" align="center"/>
+<img src="/assets/VIYObmdh1oZJKExOrVpcn0HTn5f.png" src-width="1288" class="markdown-img m-auto" src-height="791" align="center"/>
 
 ### 3.2.3 保留已接收的聊天消息
 
 开启后，Wemory 会在本地保留已经接收并读取到的消息。
 
-<img src="/assets/PvOLbdparoD4AFxOCRBckwiLnxc.png" src-width="959" class="markdown-img m-auto" src-height="612" align="center"/>
+<img src="/assets/RwMHbNcZRoA2YyxYYcicdxpYnbd.png" src-width="1264" class="markdown-img m-auto" src-height="812" align="center"/>
 
 ### 3.2.4 导出聊天记录
 
 选择需要导出的会话或群聊，然后点击“导出”。
 
-<img src="/assets/PMNObfwTBoEO5gxmHmrcMEoFnoh.png" src-width="1541" class="markdown-img m-auto" src-height="1073" align="center"/>
+<img src="/assets/Eq4Ub46zwowBlUxpvOcciRD5nwb.png" src-width="1168" class="markdown-img m-auto" src-height="807" align="center"/>
 
 支持导出为 HTML 或 PDF。
 
@@ -107,7 +107,7 @@ Wemory 在微信进程运行期间从本机内存中获取数据库解密密钥�
 
 ## 3.3 3.3 朋友圈：读取、保留与导出
 
-<img src="/assets/Hhy0bTDJooHORdxlBpVc2i8Vnhg.png" src-width="1279" class="markdown-img m-auto" src-height="752" align="center"/>
+<img src="/assets/L2Q1bLmbXojHIZxiLuqcrAKQngd.png" src-width="1387" class="markdown-img m-auto" src-height="811" align="center"/>
 
 ### 3.3.1 保留已读取的朋友圈
 

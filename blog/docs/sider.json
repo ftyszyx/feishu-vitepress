@@ -887,7 +887,9 @@
       },
       {
         "text": "WeiboVault：把微博完整备份到本地的工具",
-        "link": "/OOTgdLf7no3R7cxH7Cmck158nxf"
+        "link": "/OOTgdLf7no3R7cxH7Cmck158nxf",
+        "items": [],
+        "collapsed": true
       },
       {
         "text": "aimeter(ai使用量统计工具）",
@@ -1218,6 +1220,10 @@
           {
             "text": "我用 AI 重写了一个密码管理器",
             "link": "/OfhJddLMxoVkWhxP1YNcBhz7nxd"
+          },
+          {
+            "text": "openai学坏了",
+            "link": "/FIuwdyPRjooPcrxUx84cOItjnTb"
           }
         ],
         "collapsed": true
