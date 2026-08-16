@@ -888,7 +888,27 @@
       {
         "text": "WeiboVault：把微博完整备份到本地的工具",
         "link": "/OOTgdLf7no3R7cxH7Cmck158nxf",
-        "items": [],
+        "items": [
+          {
+            "text": "文章",
+            "link": "/XMs2dX4mKopawSxpGDZcuLmunqc",
+            "items": [
+              {
+                "text": "微博内容怕丢或被封如何备份？把你的微博完整备份到本地：WeiboVault 使用指南",
+                "link": "/KOH2dajQbosVHoxaic9cNygDnZg"
+              },
+              {
+                "text": "市面上微博备份软件对比",
+                "link": "/Q4fVdlRono2rzmxb5pRc9VHSn4c"
+              },
+              {
+                "text": "微博内容怎么备份到本地？5 种方法完整对比",
+                "link": "/TDzxdB2jRoqnQ1xHPgEcRah1nBf"
+              }
+            ],
+            "collapsed": true
+          }
+        ],
         "collapsed": true
       },
       {
@@ -905,6 +925,21 @@
           {
             "text": "优化记录",
             "link": "/PJY8dnXshopOA8xkW1Ucb2qJnAe"
+          },
+          {
+            "text": "文章",
+            "link": "/A9PQdcPdhoLaIxxJE8Wc2SZungb",
+            "items": [
+              {
+                "text": "Wemory：把微信记录留在自己的电脑里",
+                "link": "/MDeVdLevuog2MIx415FcRitBnfc"
+              },
+              {
+                "text": "市面上微信导出工具对比",
+                "link": "/Z09VdZG4domY8Yx1RBXcO8o0nAd"
+              }
+            ],
+            "collapsed": true
           }
         ],
         "collapsed": true
