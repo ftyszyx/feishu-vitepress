@@ -1,6 +1,6 @@
 ---
 create_time: 1784001398
-edit_time: 1786633232
+edit_time: 1786888132
 title: Wemory 微忆
 categories:
   - product
@@ -30,6 +30,7 @@ Wemory（微忆）可在 Windows 本地读取、备份和导出微信聊天记�
 4. 导出群成员列表
 5. 保留已接收的聊天消息，朋友圈防撤回
 6. 公众号批量采集和导出
+7. ai工具支持
 
 # 2. 2. 工作原理与隐私
 
@@ -107,7 +108,7 @@ Wemory 在微信进程运行期间从本机内存中获取数据库解密密钥�
 
 ## 3.3 3.3 朋友圈：读取、保留与导出
 
-<img src="/assets/L2Q1bLmbXojHIZxiLuqcrAKQngd.png" src-width="1387" class="markdown-img m-auto" src-height="811" align="center"/>
+<img src="/assets/Kw45bDAwDo3LFsxNbAtcsLDNnHd.png" src-width="1874" class="markdown-img m-auto" src-height="1095" align="center"/>
 
 ### 3.3.1 保留已读取的朋友圈
 
@@ -145,7 +146,7 @@ Wemory 在微信进程运行期间从本机内存中获取数据库解密密钥�
 
 发给自己备用
 
-<img src="/assets/FonGbg3cUoRO2bxhp9kcGhSHnc5.png" src-width="1235" class="markdown-img m-auto" src-height="247" align="center"/>
+<img src="/assets/HD3UbBxYuoTZcAxJX58cVwC3nMd.png" src-width="3648" class="markdown-img m-auto" src-height="731" align="center"/>
 
 新增采集
 
@@ -157,7 +158,7 @@ Wemory 在微信进程运行期间从本机内存中获取数据库解密密钥�
 
 在微信中点刚才的链接，
 
-<img src="/assets/VB7ub0xPzo0QjpxHYKQcDWO8nIh.png" src-width="1235" class="markdown-img m-auto" src-height="295" align="center"/>
+<img src="/assets/Nrwub1tCUobsn7x0egjcrgMMnfc.png" src-width="3648" class="markdown-img m-auto" src-height="873" align="center"/>
 
 再点获取授权
 

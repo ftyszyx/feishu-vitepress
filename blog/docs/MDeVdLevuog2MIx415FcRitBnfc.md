@@ -1,17 +1,24 @@
 ---
 create_time: 1786804436
-edit_time: 1786805061
-title: Wemory：把微信记录留在自己的电脑里
+edit_time: 1786887598
+title: Wemory：微信记录，由你作主
 categories:
   - product
 ---
 
 
- **微信记录不只是聊天窗口里的即时信息，也可能是值得长期保存的个人资料。** Wemory 是一款面向 Windows 用户的本地微信数据浏览、整理与导出工具，帮助你在自己的电脑上重新整理聊天、朋友圈、通讯录和公众号资料。
+Wemory是一款超级厉害的工具：
 
-它适合需要备份个人聊天、整理工作资料、保存家庭记忆，或希望把分散在微信里的信息导出为可检索文件的用户。Wemory 的重点不是把数据搬到第三方平台，而是让你在本机完成查看、筛选和导出。
+1. 读取和备份微信聊天记录
+2. 读取和备份微信朋友圈记录
+3. 导出好友列表
+4. 导出群成员列表
+5. 公众号批量采集和导出
+6. ai工具支持
 
-## 1.1 从“能查看”到“能整理”
+以上功能全支持，而且界面美观易用。
+
+现在介绍一下主要功能：
 
 ### 1.1.1 聊天记录：按会话浏览，按范围导出
 
@@ -21,11 +28,13 @@ Wemory 支持浏览私聊、群聊和企业会话，可按联系人或群组查�
 
 <img src="/assets/GoctbEa4noeHpkxt0DRcKPtqnZd.png" src-width="1589" class="markdown-img m-auto" src-height="1082" align="center"/>
 
+<img src="/assets/QPu2b42bKomoHOx7r42cZIdMnHd.png" src-width="763" class="markdown-img m-auto" src-height="699" align="center"/>
+
 ### 1.1.2 朋友圈：按时间重新浏览自己的记录
 
 朋友圈内容可以按时间浏览，并按需导出为 HTML 或 PDF。对于希望保存个人生活记录、整理项目过程或回顾重要阶段的用户，这是一种更适合长期阅读和备份的方式。
 
-<img src="/assets/AOZdbKAzZoWe2pxpl1zcK1gAnl4.png" src-width="1279" class="markdown-img m-auto" src-height="752" align="center"/>
+<img src="/assets/PwUtbx34Eo9O57xrWz4cKTNKnqI.png" src-width="2920" class="markdown-img m-auto" src-height="1717" align="center"/>
 
 ### 1.1.3 通讯录：联系人与群成员一并整理
 
@@ -37,18 +46,24 @@ Wemory 可以查看微信联系人和群成员，并将联系人、群成员及�
 
 公众号文章可以批量采集、集中浏览和导出，适合整理长期关注的行业资料、学习内容和个人收藏，减少重要文章散落在聊天列表中的查找成本。
 
-<img src="/assets/VuM5bkufco5LedxxkNPcJFbLn9c.png" src-width="1660" class="markdown-img m-auto" src-height="836" align="center"/>
+<img src="/assets/YWwSbSZN0oKXsQxFUfAczDE8nQs.png" src-width="1279" class="markdown-img m-auto" src-height="800" align="center"/>
 
-## 1.2 本地优先，数据由你掌控
+<img src="/assets/P8qqbcmh5oyeUOxI4ticl2Fvnrf.png" src-width="1279" class="markdown-img m-auto" src-height="800" align="center"/>
+
+# 1. AI工具支持
+
+内置了mcp服务，可以让ai帮你分析你的聊天记录
+
+ 
+
+<img src="/assets/PEP5bBcK4oyzolxnQS2cxgsTnEf.png" src-width="1899" class="markdown-img m-auto" src-height="740" align="center"/>
+
+## 1.1 本地优先，数据由你掌控
 
 <div class="callout callout-bg-5 callout-border-5 callout-color-5">
 <div class='callout-emoji'>✅</div>
-<p> **本地处理说明：**微信数据的读取、解密和导出均在本机完成，内容不会上传。联网仅用于应用更新、激活和下载必要组件；导出文件由你自行选择保存位置。</p>
+<p> **：**微信数据的读取、解密和导出均在本机完成，内容不会上传。 与微信服务器无交互，本质只是读取你本地的文件。</p>
 </div>
-
-如果你使用支持 MCP 的 AI 工具，Wemory 还可以在本机启动只读 HTTP MCP 服务，让 Codex、WorkBuddy 等工具按需读取聊天上下文，用于检索、摘要和分析。服务仅监听本机地址，并使用访问令牌验证请求；不需要时可以随时关闭。
-
-## 1.3 了解 Wemory 
 
  **项目地址：**[https://github.com/yipeng641/WechatExporter](https://github.com/yipeng641/WechatExporter)
 

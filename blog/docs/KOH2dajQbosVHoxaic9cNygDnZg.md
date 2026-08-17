@@ -1,6 +1,6 @@
 ---
 create_time: 1786792304
-edit_time: 1786803194
+edit_time: 1786845732
 title: 微博内容怕丢或被封如何备份？把你的微博完整备份到本地：WeiboVault 使用指南
 categories:
   - product
@@ -95,7 +95,11 @@ WeiboVault 不只保存微博正文，还可以按任务范围保存图片、视
 
 ## 1.7 项目与下载 
 
- **项目仓库：**[github.com/yipeng641/weibo-backup](https://github.com/yipeng641/weibo-backup)  
+ **项目仓库：** **https://github.com/ftyszyx/weibo-backup**
+
+[github.com/yipeng641/weibo-backup](https://github.com/yipeng641/weibo-backup)  
+
+https://github.com/ftyszyx/weibo-backup
 
 官网： https://weibovault.bytefuse.cn/
 
