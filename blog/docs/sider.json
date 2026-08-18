@@ -223,24 +223,6 @@
         "collapsed": true
       },
       {
-        "text": "Golang",
-        "items": [
-          {
-            "text": "编程环境",
-            "link": "/YnoZdr6NYoCG9KxSUorcgwcun2c"
-          },
-          {
-            "text": "golang语法",
-            "link": "/DDAsdLvJ2o2dGXxujRecCvxgndf"
-          },
-          {
-            "text": "一些tips",
-            "link": "/D8k8d9VN7oh1k3xGvBncB5xFnUh"
-          }
-        ],
-        "collapsed": true
-      },
-      {
         "text": "Git",
         "items": [
           {
@@ -250,20 +232,6 @@
           {
             "text": "问题汇总",
             "link": "/Ieu5dC47voqQMWx73UWcsqaGn3d"
-          }
-        ],
-        "collapsed": true
-      },
-      {
-        "text": "vue",
-        "items": [
-          {
-            "text": "基础",
-            "link": "/LzAldncMUoKF1Hxz24pcO7P9nNh"
-          },
-          {
-            "text": "一些感悟",
-            "link": "/SdkqdNmodolLeHx67bvcYKP2nEe"
           }
         ],
         "collapsed": true
@@ -354,6 +322,14 @@
                   }
                 ],
                 "collapsed": true
+              },
+              {
+                "text": "Deepseek",
+                "link": "/HHXxdwpO7oiKNZxMUL9caykNnKe"
+              },
+              {
+                "text": "Grok",
+                "link": "/HvOidg2KyohbnPx2DcocFfZfnRh"
               }
             ],
             "collapsed": true
@@ -563,6 +539,14 @@
           }
         ],
         "collapsed": true
+      },
+      {
+        "text": "基础",
+        "link": "/LzAldncMUoKF1Hxz24pcO7P9nNh"
+      },
+      {
+        "text": "一些感悟",
+        "link": "/SdkqdNmodolLeHx67bvcYKP2nEe"
       }
     ],
     "collapsed": true
