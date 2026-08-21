@@ -1,6 +1,6 @@
 ---
 create_time: 1786718182
-edit_time: 1786718720
+edit_time: 1787236924
 title: 优化记录
 categories:
   - product
@@ -36,4 +36,10 @@ categories:
 安装成功后，重启codex,直接让ai分析某个的聊天记录，ai就可以直接读取聊天记录了，并给出建议
 
 <img src="/assets/WnEnbovmHofjM9x6IKFcqQZnnGh.png" src-width="1340" class="markdown-img m-auto" src-height="627" align="center"/>
+
+# 2. 2026-8-20
+
+公众号支持采集 ：阅读量，评论数，点赞数，喜欢数，转发数
+
+<img src="/assets/RnZmbr6jgoUbkqxYKZ0cz8vsnfe.png" src-width="1079" class="markdown-img m-auto" src-height="224" align="center"/>
 
