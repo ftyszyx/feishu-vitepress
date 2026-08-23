@@ -1,6 +1,6 @@
 ---
 create_time: 1784001398
-edit_time: 1786888132
+edit_time: 1787383173
 title: Wemory 微忆
 categories:
   - product
@@ -106,6 +106,10 @@ Wemory 在微信进程运行期间从本机内存中获取数据库解密密钥�
 
 <img src="/assets/Noqtbo3qOoBK3QxUS3ecZOZpngf.png" src-width="1016" class="markdown-img m-auto" src-height="744" align="center"/>
 
+聊天记录导出效果
+
+<img src="/assets/K68JbuSUIoZ8BbxYJxIcu4iFn2b.png" src-width="1905" class="markdown-img m-auto" src-height="1341" align="center"/>
+
 ## 3.3 3.3 朋友圈：读取、保留与导出
 
 <img src="/assets/Kw45bDAwDo3LFsxNbAtcsLDNnHd.png" src-width="1874" class="markdown-img m-auto" src-height="1095" align="center"/>
@@ -181,6 +185,22 @@ Wemory 在微信进程运行期间从本机内存中获取数据库解密密钥�
 <img src="/assets/LkALbhNBMo6R5rxpDNQcCUCungG.png" src-width="1892" class="markdown-img m-auto" src-height="927" align="center"/>
 
 <img src="/assets/OaNzb2ooGoboKDxIF8XcvZZfnnc.png" src-width="907" class="markdown-img m-auto" src-height="456" align="center"/>
+
+群联系人导出的xls截图：包含群昵称
+
+<img src="/assets/DkLQb7DZ8obHMgxdk76cZlAcn1e.png" src-width="2881" class="markdown-img m-auto" src-height="874" align="center"/>
+
+好友导出，如果有设置标签，标签也会有
+
+<img src="/assets/QccKbkqzzomKL9xhgLmcs6Zan6d.png" src-width="2480" class="markdown-img m-auto" src-height="306" align="center"/>
+
+朋友资料也很齐全
+
+<img src="/assets/N17ybt6Vuony7jxspJAcYfKRnAd.png" src-width="2857" class="markdown-img m-auto" src-height="234" align="center"/>
+
+多个号友也支持导出
+
+<img src="/assets/I09ubtcjYoiv6kxbJvgcY95tnic.png" src-width="3324" class="markdown-img m-auto" src-height="296" align="center"/>
 
 # 4. 4. 常见问题
 

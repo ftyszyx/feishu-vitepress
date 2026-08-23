@@ -1,6 +1,6 @@
 ---
 create_time: 1787214155
-edit_time: 1787233525
+edit_time: 1787388812
 title: 微信聊天记录怎么导出：五种方法对比，推荐本地工具 Wemory 微忆
 categories:
   - product
@@ -12,7 +12,7 @@ categories:
 <p>很多人换手机、整理工作往来、保存家人对话时，都会卡在同一个问题： <strong>微信聊天记录怎么导出</strong>？官方备份只能在微信里恢复，截图和复制又太慢。本文对照五种常见做法，并说明什么情况下更适合用本地工具  <strong>Wemory 微忆</strong>。</p>
 </div>
 
-官网：[https://wemory.bytefuse.cn/](https://wemory.bytefuse.cn/)
+github：https://github.com/yipeng641/WechatExporter
 
 <img src="/assets/MifUbJ0c9oQIufxcBNwc6Mr6n8b.png" src-width="800" class="markdown-img m-auto" src-height="600" align="center"/>
 
@@ -54,10 +54,9 @@ Wemory 读取的是电脑本地已经存在的微信数据。换机前，建议�
 ## 2.1 操作流程
 
 1. 在电脑上登录微信 PC 版。如需导出手机里的历史记录，先用「我 → 设置 → 聊天 → 聊天记录迁移与备份」同步到电脑。
-2. 打开 [Wemory 微忆官网](https://wemory.bytefuse.cn/)，下载 Windows 10 / 11 x64 版并安装。
-3. 启动 Wemory，选择微信数据目录，完成密钥获取，连接账号。
-4. 在聊天、朋友圈、通讯录、公众号四个视图里浏览和筛选。
-5. 选择范围后导出。聊天和朋友圈支持 HTML / PDF，通讯录支持 XLSX。
+2. 启动 Wemory，选择微信数据目录，完成密钥获取，连接账号。
+3. 在聊天、朋友圈、通讯录、公众号四个视图里浏览和筛选。
+4. 选择范围后导出。聊天和朋友圈支持 HTML / PDF，通讯录支持 XLSX。
 
 首次连接需要一些时间，因为要获取密钥并建立本地索引。之后再进入会更快。
 
@@ -187,11 +186,17 @@ Wemory 读取的是电脑本地已经存在的微信数据。换机前，建议�
 很多导出工具只处理聊天。Wemory 把电脑微信里真正常用的几类数据放到同一个本地工作区。
 
 -  **聊天记录备份**：浏览私聊和群聊，再按需导出。
+
+<img src="/assets/VZAwbfbYeo2vEOx4GmecAazcngh.png" src-width="1905" class="markdown-img m-auto" src-height="1341" align="center"/>
+
 -  **朋友圈备份**：按时间查看朋友圈，并记录撤回。
 
 <img src="/assets/QrBRbtxtQoCP7txwc3tcu1i9nlb.png" src-width="800" class="markdown-img m-auto" src-height="470" align="center"/>
 
 -  **通讯录导出**：导出好友列表和群成员，联系人导出时带标签。
+
+<img src="/assets/Vp8vbeDxKoQt9AxJZeHc7mdqnWe.png" src-width="2857" class="markdown-img m-auto" src-height="234" align="center"/>
+
 -  **公众号采集**：批量采集公众号文章并导出。
 -  **本地归档**：把多个账号的联系人、会话、聊天和本地媒体保存成独立归档，再用归档查看器离线阅读。
 -  **本地 MCP**：在设置里开启后，Codex 等 AI 工具可以按需读取聊天上下文，做检索、总结和分析。服务只读、只监听本机地址，用访问令牌控制，可随时关闭。
@@ -211,7 +216,7 @@ Wemory 读取的是电脑本地已经存在的微信数据。换机前，建议�
 2.  **浏览与筛选**：查看聊天、朋友圈、通讯录和公众号。
 3.  **选择并导出**：导出 HTML、PDF 或 XLSX，保存位置由你决定。
 
-详细步骤见官网使用帮助：[https://wemory.bytefuse.cn/help/](https://wemory.bytefuse.cn/help/)
+详细步骤见官网使用帮助
 
 # 9. 怎么选
 
@@ -246,9 +251,5 @@ Wemory 读取的是电脑本地已经存在的微信数据。换机前，建议�
 
 # 11. 下载 Wemory 微忆
 
-如果你需要的是能直接打开的备份，而不是只能在微信里恢复的文件，可以从官网下载 Windows 版。
-
- 
-
-官网地址：[https://wemory.bytefuse.cn/](https://wemory.bytefuse.cn/)
+github：https://github.com/yipeng641/WechatExporter
 
