@@ -1,6 +1,6 @@
 ---
 create_time: 1786792304
-edit_time: 1786845732
+edit_time: 1787664523
 title: 微博内容怕丢或被封如何备份？把你的微博完整备份到本地：WeiboVault 使用指南
 categories:
   - product
