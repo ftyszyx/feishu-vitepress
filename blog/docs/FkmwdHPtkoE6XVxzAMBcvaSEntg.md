@@ -1,6 +1,6 @@
 ---
 create_time: 1768545722
-edit_time: 1783046174
+edit_time: 1787889141
 title: licenseHub优化记录
 categories:
   - product
@@ -74,4 +74,14 @@ categories:
 设备时间回退
 
 <img src="/assets/O08gbnwkMoSwl7x9p9ZcBbK9nBc.png" src-width="1395" class="markdown-img m-auto" src-height="101" align="center"/>
+
+# 10. 注册码支持绑定多设备
+
+<img src="/assets/FT0eb4D8yoWkWExWlowclRnCn1b.png" src-width="1004" class="markdown-img m-auto" src-height="504" align="center"/>
+
+<img src="/assets/RDUZbTqZmobFInxwET3csM4XnSg.png" src-width="2265" class="markdown-img m-auto" src-height="173" align="center"/>
+
+# 11. 增加资金总览
+
+<img src="/assets/JtDKbpnoKojallxz2UNcIRGRn4f.png" src-width="2198" class="markdown-img m-auto" src-height="448" align="center"/>
 
