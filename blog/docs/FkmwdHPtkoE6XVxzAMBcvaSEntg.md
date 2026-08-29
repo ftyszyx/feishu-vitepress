@@ -1,6 +1,6 @@
 ---
 create_time: 1768545722
-edit_time: 1787889141
+edit_time: 1787970035
 title: licenseHub优化记录
 categories:
   - product
@@ -84,4 +84,8 @@ categories:
 # 11. 增加资金总览
 
 <img src="/assets/JtDKbpnoKojallxz2UNcIRGRn4f.png" src-width="2198" class="markdown-img m-auto" src-height="448" align="center"/>
+
+# 12. 优化订单查询功能
+
+<img src="/assets/ZVG2b0O2eo4Lr4xOuxqcbtlFnhg.png" src-width="1095" class="markdown-img m-auto" src-height="316" align="center"/>
 
