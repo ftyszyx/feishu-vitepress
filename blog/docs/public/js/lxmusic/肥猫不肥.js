@@ -10,8 +10,8 @@
 const DEV_ENABLE = false
 // 服务端地址
 const API_URL = "http://music.xn--z7x900a.live"
-// 服务端配置的请求key
-const API_KEY = `114514`
+// 服务端配置的请求key(请勿将真实key硬编码提交到公开仓库,改为运行时注入)
+const API_KEY = globalThis.LX_API_KEY || ``
 // 音质配置(key为音源名称,不要乱填.如果你账号为VIP可以填写到hires)
 // 全部的支持值: ['128k', '320k', 'flac', 'flac24bit']
 const MUSIC_QUALITY = JSON.parse('{"kw":["128k","320k","flac"],"kg":["128k"],"tx":["128k"],"wy":["128k"],"mg":["128k"]}')
