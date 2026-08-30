@@ -1,6 +1,6 @@
 ---
 create_time: 1784689789
-edit_time: 1784690613
+edit_time: 1788050401
 title: Idapro
 categories:
   - skill
@@ -36,4 +36,30 @@ IDA的View有几个按钮对定位代码很重要，如下图所示：
 - Open names window 函数和参数的命名列表
 - Open functions window 程序调用的所有函数窗口
 - Open strings window 打开字符串显示窗口
+
+# 3. 安装mcp
+
+推荐装法（Grok 用无界面 idalib-mcp）
+
+GUI 插件官方已不推荐，以后会弃用。Grok 更适合无头模式：我自己 idb_open 打开 DG0701.bin。
+
+1. 激活 idalib（做一次）
+    
+uv run "C:\Program Files\IDA Professional 9.4\idalib\python\py-activate-idalib.py"
+
+1. 把 MCP 加进 Grok
+    
+grok mcp add ida-pro-mcp -- uv run idalib-mcp --stdio
+
+或在 ~/.grok/config.toml 里写：
+
+[mcp_servers.ida-pro-mcp]
+
+command = "uv"
+
+args = ["run", "idalib-mcp", "--stdio"]
+
+startup_timeout_sec = 120
+
+tool_timeout_sec = 1800
 
