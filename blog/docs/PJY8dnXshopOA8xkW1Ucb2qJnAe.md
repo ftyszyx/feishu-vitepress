@@ -1,6 +1,6 @@
 ---
 create_time: 1786718182
-edit_time: 1787236924
+edit_time: 1788323365
 title: 优化记录
 categories:
   - product
@@ -42,4 +42,10 @@ categories:
 公众号支持采集 ：阅读量，评论数，点赞数，喜欢数，转发数
 
 <img src="/assets/RnZmbr6jgoUbkqxYKZ0cz8vsnfe.png" src-width="1079" class="markdown-img m-auto" src-height="224" align="center"/>
+
+# 3. 2026-9-2
+
+支持动画表情显示
+
+<img src="/assets/Lzf3bXDQronJNJxLTMCcB6v6n7b.png" src-width="810" class="markdown-img m-auto" src-height="582" align="center"/>
 
